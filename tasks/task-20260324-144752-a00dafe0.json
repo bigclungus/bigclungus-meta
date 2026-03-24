@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-144752-a00dafe0",
+  "title": "Trigger immediate email check and inject",
+  "agent_id": "a00dafe0648ca69b5",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T14:47:51Z",
+      "event": "started",
+      "context": "Trigger immediate email check and inject"
+    }
+  ]
+}
