@@ -14,6 +14,12 @@
       "ts": "2026-03-24T06:54:44Z",
       "event": "started",
       "context": "Check Proton email for feralhosting confirmation"
+    },
+    {
+      "ts": "2026-03-24T06:59:04Z",
+      "event": "done",
+      "context": "Here's what was found and posted to the Discord thread:\n\n**From `/mnt/data/secrets/feral_account` + Proton inbox:**\n\n- **Feral Hosting login:** https://www.feralhosting.com/login\n- **Email:** bigclungus@proton.me\n- **Password:** SjxPIUzt\n- **Plan:** Helium HDD (£10/month, 1TB), created 2026-03-24\n- **Slot:** `bigclungus@talos` (server: talos) — confirmed ready per \"Slot ready\" email\n- **Payment:** CoinGate order #35220453 for £10.00 — processed successfully\n\nThere was also a \"Recover account req...(truncated)",
+      "artifacts": []
     }
   ]
 }
