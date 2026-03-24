@@ -14,6 +14,12 @@
       "ts": "2026-03-24T18:24:44Z",
       "event": "started",
       "context": "Heartbeat watchdog checks"
+    },
+    {
+      "ts": "2026-03-24T18:24:59Z",
+      "event": "done",
+      "context": "All healthy:\n\n- **Stale tasks**: 0 tasks marked stale\n- **Failed services**: 0 failed units\n- **GitHub issues**: No open issues\n\nNothing needs attention. No Discord message sent.",
+      "artifacts": []
     }
   ]
 }
