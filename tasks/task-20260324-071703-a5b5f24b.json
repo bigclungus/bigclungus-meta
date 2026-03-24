@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-071703-a5b5f24b",
+  "title": "Move Kid and Uncle Bob to active roster",
+  "agent_id": "a5b5f24bddbb23174",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": "1485899799114027028",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T07:17:03Z",
+      "event": "started",
+      "context": "Move Kid and Uncle Bob to active roster"
+    }
+  ]
+}
