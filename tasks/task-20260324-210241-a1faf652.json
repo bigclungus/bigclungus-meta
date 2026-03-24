@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-210241-a1faf652",
+  "title": "Clean up local SS14 repo changes",
+  "agent_id": "a1faf6528ad5b49cc",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T21:02:41Z",
+      "event": "started",
+      "context": "Clean up local SS14 repo changes"
+    }
+  ]
+}
