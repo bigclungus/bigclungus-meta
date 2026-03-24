@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-024244-a43c2b0c",
+  "title": "Fix tasks page auto-refresh collapsing expanded cards",
+  "agent_id": "a43c2b0c98b3bc918",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T02:42:44Z",
+      "event": "started",
+      "context": "Fix tasks page auto-refresh collapsing expanded cards"
+    }
+  ]
+}
