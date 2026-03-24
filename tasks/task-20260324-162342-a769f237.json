@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-162342-a769f237",
+  "title": "Update Congress UI for ABORT/REFRAME states",
+  "agent_id": "a769f2375468033b2",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": "1486037721456705727",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T16:23:42Z",
+      "event": "started",
+      "context": "Update Congress UI for ABORT/REFRAME states"
+    }
+  ]
+}
