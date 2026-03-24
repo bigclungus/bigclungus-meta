@@ -14,6 +14,12 @@
       "ts": "2026-03-24T14:58:54Z",
       "event": "started",
       "context": "Code quality review - temporal email workflow"
+    },
+    {
+      "ts": "2026-03-24T14:59:20Z",
+      "event": "done",
+      "context": "Here are the issues found, by file and line number:\n\n---\n\n**`email_act.py`**\n\n**Line 7 — Hardcoded CHAT_ID**\n`CHAT_ID = \"1485343472952148008\"` is the same constant used across other activities (e.g., `congress_act.py`). It should be sourced from the shared `.env` file alongside `DISCORD_INJECT_SECRET`, or defined once in a shared constants module and imported. Right now it's duplicated across files, making it a maintenance hazard.\n\n**Lines 25-26 — Deprecated `get_event_loop()` call**\n`asyncio.ge...(truncated)",
+      "artifacts": []
     }
   ]
 }
