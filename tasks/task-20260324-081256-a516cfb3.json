@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-081256-a516cfb3",
+  "title": "Send message to UI alignment agent",
+  "agent_id": "a516cfb3f9f0887be",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": "1485913525183447052",
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T08:12:56Z",
+      "event": "started",
+      "context": "Send message to UI alignment agent"
+    }
+  ]
+}
