@@ -14,6 +14,12 @@
       "ts": "2026-03-24T16:43:37Z",
       "event": "started",
       "context": "Fix vote round rendering in congress UI"
+    },
+    {
+      "ts": "2026-03-24T16:44:52Z",
+      "event": "done",
+      "context": "**Root cause:** The `isVoteEntry()` function in `renderDebateFeed` used strict equality to check if the first whitespace-delimited token of a response was `'AGREE'` or `'DISAGREE'`. Pippi's vote response in congress-0015 started with `\"AGREE.\"` (period at the end of the word). The split produced `\"AGREE.\"` which did not strictly equal `\"AGREE\"`, so the entry was not recognized as a vote — it was treated as a regular debate response and incremented Pippi's round counter to 4, causing a \"Round 4\" ...(truncated)",
+      "artifacts": []
     }
   ]
 }
