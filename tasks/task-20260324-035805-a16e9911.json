@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-035805-a16e9911",
+  "title": "Update CLAUDE.md with congress architecture",
+  "agent_id": "a16e99113383b7112",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T03:58:05Z",
+      "event": "started",
+      "context": "Update CLAUDE.md with congress architecture"
+    }
+  ]
+}
