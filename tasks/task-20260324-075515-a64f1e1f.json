@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-075515-a64f1e1f",
+  "title": "Check congress-11 GitHub tickets",
+  "agent_id": "a64f1e1f04ea15c9d",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": "1485909236755206266",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T07:55:15Z",
+      "event": "started",
+      "context": "Check congress-11 GitHub tickets"
+    }
+  ]
+}
