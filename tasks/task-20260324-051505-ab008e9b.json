@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-051505-ab008e9b",
+  "title": "Wire Grok API as Otto's congress backend",
+  "agent_id": "ab008e9be1fc7b447",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T05:15:05Z",
+      "event": "started",
+      "context": "Wire Grok API as Otto's congress backend"
+    }
+  ]
+}
