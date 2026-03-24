@@ -20,6 +20,11 @@
       "event": "done",
       "context": "Done. Here's a summary of what was implemented:\n\n**New activity: `congress_frame_topic`** (`/mnt/data/temporal-workflows/activities/congress_act.py`)\n- Mirrors the Graphiti query logic from `congress_graphiti_context` exactly, but formats the output as `## Context from Memory (Ibrahim)\\n<facts>` instead of a bare string\n- Returns empty string on failure (non-fatal)\n\n**Workflow changes** (`/mnt/data/temporal-workflows/workflows/congress_wf.py`)\n- Imported `congress_frame_topic`\n- Added a new step...(truncated)",
       "artifacts": []
+    },
+    {
+      "event": "milestone",
+      "ts": "2026-03-24T08:21:51.919699Z",
+      "message": "Testing log helper \u2014 pre-debate framing implemented and worker restarted"
     }
   ]
 }

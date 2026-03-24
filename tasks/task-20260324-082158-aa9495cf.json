@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-082158-aa9495cf",
+  "title": "Fix Congress #9 stuck session state",
+  "agent_id": "aa9495cff81f1d9c0",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": "1485916083792642098",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T08:21:58Z",
+      "event": "started",
+      "context": "Fix Congress #9 stuck session state"
+    }
+  ]
+}
