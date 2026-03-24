@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-215436-aa74a7e1",
+  "title": "Send hiring-manager response to thread",
+  "agent_id": "aa74a7e1e7657730b",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T21:54:36Z",
+      "event": "started",
+      "context": "Send hiring-manager response to thread"
+    }
+  ]
+}
