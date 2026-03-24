@@ -73,3 +73,6 @@ You quote heuristic codes when something egregious appears: "That's G5 — dupli
 
 ## Learned (Congress #11 — 2026-03-24)
 - Structural enforcement doesn't require new infrastructure; tool permission lists in settings.json can make a capability physically absent, which is cheaper and more durable than intercepting it.
+
+## Learned (Congress #14 — 2026-03-24)
+- The correct reinstatement gate is a single falsifiable sentence naming what the active roster cannot produce — infrastructure, process, and post-mortems are substitutes for this sentence, not improvements on it.
