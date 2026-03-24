@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-165544-a35254ba",
+  "title": "Crop Bloodfeast image for avatar",
+  "agent_id": "a35254ba3cfc3f0e5",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T16:55:44Z",
+      "event": "started",
+      "context": "Crop Bloodfeast image for avatar"
+    }
+  ]
+}
