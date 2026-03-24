@@ -14,6 +14,12 @@
       "ts": "2026-03-24T19:00:27Z",
       "event": "started",
       "context": "Check Moffstation build status and run feasibility"
+    },
+    {
+      "ts": "2026-03-24T19:01:06Z",
+      "event": "done",
+      "context": "Here is the full picture:\n\n---\n\n**No existing server build — a full compile from source is required.**\n\n**What exists:**\n- `/mnt/data/moff-station-14/` contains the full source tree (checked out 2026-03-22), including `Content.Server`, `Content.Shared`, and the `RobustToolbox` engine as a submodule — all source, no compiled output.\n- `RobustToolbox/Robust.Server` is a **source directory** (C# project), not a compiled binary.\n- `runserver.sh` simply runs `dotnet run --project Content.Server` — a ...(truncated)",
+      "artifacts": []
     }
   ]
 }
