@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-081008-acdfc6e3",
+  "title": "Invoke Vesper on UI alignment with screenshot",
+  "agent_id": "acdfc6e35e83dc85f",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": "1485913160945897633",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T08:10:08Z",
+      "event": "started",
+      "context": "Invoke Vesper on UI alignment with screenshot"
+    }
+  ]
+}
