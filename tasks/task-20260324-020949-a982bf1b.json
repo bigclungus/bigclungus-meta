@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-020949-a982bf1b",
+  "title": "Send healthcheck agent note on alerting",
+  "agent_id": "a982bf1b0f289fbe2",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": "1485822740828127283",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T02:09:49Z",
+      "event": "started",
+      "context": "Send healthcheck agent note on alerting"
+    }
+  ]
+}
