@@ -14,6 +14,12 @@
       "ts": "2026-03-24T03:22:10Z",
       "event": "started",
       "context": "Write invoke-persona skill file"
+    },
+    {
+      "ts": "2026-03-24T03:22:54Z",
+      "event": "done",
+      "context": "The skill file has been written. Here's a summary of what was done and what you need to know:\n\n**File written:** `/home/clungus/work/claude-config/skills/invoke-persona.md`\n\n(This is the same as `/mnt/data/claude-config/skills/invoke-persona.md` via the symlink.)\n\n**Sync script finding — action required:**\n\nThe startup sync script at `/home/clungus/work/scripts/sync-claude-config.sh` only syncs two specific files (`settings.json` and `settings.local.json`) from the staging directory to `~/.claud...(truncated)",
+      "artifacts": []
     }
   ]
 }
