@@ -14,6 +14,12 @@
       "ts": "2026-03-24T17:30:22Z",
       "event": "started",
       "context": "Mark congress 17 as failed in session JSON"
+    },
+    {
+      "ts": "2026-03-24T17:30:33Z",
+      "event": "done",
+      "context": "Done. congress-0017.json was marked `failed` with the reason \"Workflow failed before congress_check_ibrahim was registered; manually nuked\" and committed.\n\nCommit hash: `e6240fc`",
+      "artifacts": []
     }
   ]
 }
