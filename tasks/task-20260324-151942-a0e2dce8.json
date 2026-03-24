@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-151942-a0e2dce8",
+  "title": "Review and triage task backlog",
+  "agent_id": "a0e2dce89509deb82",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": "1486021228647944402",
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T15:19:42Z",
+      "event": "started",
+      "context": "Review and triage task backlog"
+    }
+  ]
+}
