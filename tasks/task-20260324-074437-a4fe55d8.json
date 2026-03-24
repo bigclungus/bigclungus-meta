@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-074437-a4fe55d8",
+  "title": "Close stale orphaned task files",
+  "agent_id": "a4fe55d82033cf561",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": "1485906798874595428",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T07:44:37Z",
+      "event": "started",
+      "context": "Close stale orphaned task files"
+    }
+  ]
+}
