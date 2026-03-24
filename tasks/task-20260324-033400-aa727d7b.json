@@ -14,6 +14,12 @@
       "ts": "2026-03-24T03:34:00Z",
       "event": "started",
       "context": "Start enriched congress session in thread"
+    },
+    {
+      "ts": "2026-03-24T03:34:08Z",
+      "event": "done",
+      "context": "Workflow started successfully.\n\nWorkflow ID: `congress-1774323245`",
+      "artifacts": []
     }
   ]
 }
