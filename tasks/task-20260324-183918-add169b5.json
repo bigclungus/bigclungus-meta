@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-183918-add169b5",
+  "title": "Check and fix dead sitenav links",
+  "agent_id": "add169b5af7e7b61b",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T18:39:18Z",
+      "event": "started",
+      "context": "Check and fix dead sitenav links"
+    }
+  ]
+}
