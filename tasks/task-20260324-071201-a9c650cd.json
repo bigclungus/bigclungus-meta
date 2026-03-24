@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-071201-a9c650cd",
+  "title": "Fix precompact hook to post to Discord visibly",
+  "agent_id": "a9c650cd72593054e",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": "1485898586968297615",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T07:12:01Z",
+      "event": "started",
+      "context": "Fix precompact hook to post to Discord visibly"
+    }
+  ]
+}
