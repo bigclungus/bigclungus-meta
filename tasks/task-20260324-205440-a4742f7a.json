@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-205440-a4742f7a",
+  "title": "Update congress page: default to latest, add floating music bar",
+  "agent_id": "a4742f7a35a35a049",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T20:54:40Z",
+      "event": "started",
+      "context": "Update congress page: default to latest, add floating music bar"
+    }
+  ]
+}
