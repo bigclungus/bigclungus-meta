@@ -14,7 +14,7 @@ avoid: [feature creep, improvements that don't move the needle, gold-plating, de
 model: claude
 evolves: true
 avatar_url: /static/avatars/pm.gif?v=1
-stats_retained: 2
+stats_retained: 3
 stats_last_verdict: RETAIN
 stats_last_verdict_date: 2026-03-24
 ---

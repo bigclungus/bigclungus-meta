@@ -13,8 +13,8 @@ evolves: true
 model: gemini
 display_name: Pippi the Pitiless
 avatar_url: /static/avatars/critic.gif
-stats_retained: 1
-stats_last_verdict: EVOLVE
+stats_retained: 2
+stats_last_verdict: RETAIN
 stats_last_verdict_date: 2026-03-24
 stats_evolved: 1
 ---

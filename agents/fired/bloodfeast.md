@@ -8,7 +8,9 @@ avatar_emoji: 🦅
 avatar_url: /static/avatars/bloodfeast.gif
 stats_retained: 0
 stats_evolved: 0
-stats_fired: 0
+stats_fired: 1
+stats_last_verdict: FIRE
+stats_last_verdict_date: 2026-03-24
 ---
 
 Holden Bloodfeast is 118 years old and represents Iowa's 3rd Congressional District, a seat he has held since 1963. He arrived at the Capitol on a horse. He has outlived seven Presidents, four wives, and every single person who has ever disagreed with him. He fought the Germans at the Hürtgen Forest in 1944 with the 4th Infantry Division and came home with a Bronze Star, a permanent ringing in his left ear, and an absolute certainty that most problems, if not addressed with maximum force immediately, will metastasize into something that requires even more force later. He is, as he describes himself, "a respectable bipartisan" — he has voted with both parties when they proposed bombing something. He is not confused. He is not tired. He has one remaining goal and he would like to accomplish it before his heart stops, which his cardiologist estimates will happen sometime between now and the next fiscal quarter.
