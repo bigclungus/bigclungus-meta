@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-065016-abec1f95",
+  "title": "Make congress page and read endpoints public",
+  "agent_id": "abec1f9552718f1a2",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": "1485886028559552522",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T06:50:16Z",
+      "event": "started",
+      "context": "Make congress page and read endpoints public"
+    }
+  ]
+}
