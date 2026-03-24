@@ -14,6 +14,12 @@
       "ts": "2026-03-24T04:55:19Z",
       "event": "started",
       "context": "Make wallet page auth-gated"
+    },
+    {
+      "ts": "2026-03-24T04:55:40Z",
+      "event": "done",
+      "context": "Now I have a clear picture. The wallet page (`wallet.html`) and `/api/wallet/balance` route do not exist yet in serve.py. The pattern is consistent throughout: auth check before serving, using `_is_authed(self.headers)` followed by `self._json_auth_error()` on failure.\n\nAlso, for the `/wallet` HTML route, static files are served via `super().do_GET()` — so the auth gating for HTML pages would need to be added as an explicit path check before the static file fallback.\n\nHere's what I found and wha...(truncated)",
+      "artifacts": []
     }
   ]
 }
