@@ -14,6 +14,12 @@
       "ts": "2026-03-24T21:08:50Z",
       "event": "started",
       "context": "Auth consolidation: cookie signing, RESTART_PASSWORD fix, allowlist"
+    },
+    {
+      "ts": "2026-03-24T21:12:12Z",
+      "event": "done",
+      "context": "All done. Here's a summary of what was implemented:\n\n---\n\n**Security fixes deployed atomically — all three services running.**\n\n**Fix 1: HMAC cookie signing**\n- Added `_sign_cookie` / `_verify_cookie` helpers (HMAC-SHA256, `username.hex_sig` format) to all three services\n- `/mnt/data/terminal/server.py`: signs cookie at OAuth callback, verifies in `_is_authed`\n- `/mnt/data/temporal/proxy.py`: verifies signature in `_is_authed`\n- `/mnt/data/hello-world/serve.py`: verifies signature in `_is_authed...(truncated)",
+      "artifacts": []
     }
   ]
 }
