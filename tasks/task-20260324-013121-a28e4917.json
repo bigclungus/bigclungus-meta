@@ -9,5 +9,13 @@
   "discord_user": null,
   "started_at": "2026-03-24T01:31:21Z",
   "finished_at": null,
-  "summary": null
+  "summary": null,
+  "log": [
+    {
+      "ts": "2026-03-24T01:34:54Z",
+      "event": "done",
+      "context": "Both services are active. Here's a summary of what was done:\n\n---\n\n## Changes Implemented\n\n### `/mnt/data/scripts/hooks/subagent-start.sh`\n- Replaced the flat `{status, started_at, finished_at, summary}` fields with an append-only `log[]` array containing a single `{ts, event: \"started\", context: <title>}` entry on task creation.\n\n### `/mnt/data/scripts/hooks/subagent-stop.sh`\n- Now reads the existing task JSON and appends a `{ts, event: \"done\", context: <first 500 chars of last message>, artifa...(truncated)",
+      "artifacts": []
+    }
+  ]
 }
