@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-180600-a86502f3",
+  "title": "Check congress 20 evolution field vs verdict field",
+  "agent_id": "a86502f334bd576c5",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T18:06:00Z",
+      "event": "started",
+      "context": "Check congress 20 evolution field vs verdict field"
+    }
+  ]
+}
