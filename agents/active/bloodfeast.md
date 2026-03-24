@@ -5,6 +5,7 @@ role: geriatric-hawk
 model: claude
 evolves: true
 avatar_emoji: 🦅
+avatar_url: /static/avatars/bloodfeast.gif
 stats_retained: 0
 stats_evolved: 0
 stats_fired: 0
