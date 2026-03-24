@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-152824-ac2d4d9e",
+  "title": "Show evolution stats in congress personality cards",
+  "agent_id": "ac2d4d9e57e9f54fb",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T15:28:24Z",
+      "event": "started",
+      "context": "Show evolution stats in congress personality cards"
+    }
+  ]
+}
