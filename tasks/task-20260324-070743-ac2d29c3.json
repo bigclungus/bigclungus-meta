@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-070743-ac2d29c3",
+  "title": "Check ux display_name in persona file",
+  "agent_id": "ac2d29c3115370166",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T07:07:43Z",
+      "event": "started",
+      "context": "Check ux display_name in persona file"
+    }
+  ]
+}
