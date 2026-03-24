@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-054426-a36f395b",
+  "title": "Congress prep: sessions + brevity",
+  "agent_id": "a36f395bb4ed795f6",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T05:44:26Z",
+      "event": "started",
+      "context": "Congress prep: sessions + brevity"
+    }
+  ]
+}
