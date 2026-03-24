@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-074921-a228e200",
+  "title": "Debug stuck congress-9 workflow",
+  "agent_id": "a228e200b18417dc8",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": "1485907808095441027",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T07:49:21Z",
+      "event": "started",
+      "context": "Debug stuck congress-9 workflow"
+    }
+  ]
+}
