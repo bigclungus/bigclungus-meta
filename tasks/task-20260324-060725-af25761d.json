@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-060725-af25761d",
+  "title": "Fix iOS Safari cookie issue in terminal server",
+  "agent_id": "af25761dc184577c8",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T06:07:25Z",
+      "event": "started",
+      "context": "Fix iOS Safari cookie issue in terminal server"
+    }
+  ]
+}
