@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-155610-ae02e677",
+  "title": "Fire CongressWorkflow for centronias resolution",
+  "agent_id": "ae02e677331530204",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": "1486030823722582276",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T15:56:10Z",
+      "event": "started",
+      "context": "Fire CongressWorkflow for centronias resolution"
+    }
+  ]
+}
