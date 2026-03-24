@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-150034-a0ad686d",
+  "title": "Fire congress workflow for heartbeat RFC",
+  "agent_id": "a0ad686daf2dcddd4",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T15:00:34Z",
+      "event": "started",
+      "context": "Fire congress workflow for heartbeat RFC"
+    }
+  ]
+}
