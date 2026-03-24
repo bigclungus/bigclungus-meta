@@ -14,6 +14,12 @@
       "ts": "2026-03-24T18:51:03Z",
       "event": "started",
       "context": "Investigate Nukeops gamePreset weighting at 30 players"
+    },
+    {
+      "ts": "2026-03-24T18:52:56Z",
+      "event": "done",
+      "context": "Good — no `minPlayers` set on any of the scheduler/event rules, so they default to 0 and never block selection. I have all the data needed for a complete analysis.\n\nHere is the full breakdown:\n\n---\n\n## Root Cause: Nukeops is Not 100% — But It's the Only Eligible Preset at Exactly 30 Players\n\n### The `Secret` preset selection mechanism\n\nThe server runs the `Secret` gamePreset by default (`CCVars.SecretWeightPrototype` defaults to `\"Secret\"`). When Secret starts, `SecretRuleSystem.TryPickPreset()`...(truncated)",
+      "artifacts": []
     }
   ]
 }
