@@ -14,6 +14,12 @@
       "ts": "2026-03-24T06:10:56Z",
       "event": "started",
       "context": "Code quality review — congress system"
+    },
+    {
+      "ts": "2026-03-24T06:11:50Z",
+      "event": "done",
+      "context": "Here are the findings, organized by actual severity:\n\n---\n\n## Issue 1: `congress_debate` does two distinct jobs (lines 92-172, `congress_act.py`)\n\nThis is the most significant structural problem. The function has two completely divergent code paths gated by `round_num`:\n\n- Round 1 (lines 102-109): constructs a position prompt from scratch using `task` and `display_name`\n- Round 2 (lines 112-135): ignores the incoming `task` as a prompt, fetches thread history via Discord API, then constructs a r...(truncated)",
+      "artifacts": []
     }
   ]
 }
