@@ -14,6 +14,12 @@
       "ts": "2026-03-24T07:35:51Z",
       "event": "started",
       "context": "Move git push to separate workflow activity"
+    },
+    {
+      "ts": "2026-03-24T07:36:57Z",
+      "event": "done",
+      "context": "All done. Here's a summary of what changed:\n\n**State found:** The git commit+push block was already inside `congress_evolve` (lines 489-508 of `congress_act.py`).\n\n**Changes made across 3 files:**\n\n1. `/mnt/data/temporal-workflows/activities/congress_act.py` — Removed the push block from `congress_evolve` and added a new `@activity.defn` function `congress_commit_evolutions(session_id: str) -> None` immediately after it with the same logic.\n\n2. `/mnt/data/temporal-workflows/workflows/congress_wf...(truncated)",
+      "artifacts": []
     }
   ]
 }
