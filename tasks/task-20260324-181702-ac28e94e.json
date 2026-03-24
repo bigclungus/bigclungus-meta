@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-181702-ac28e94e",
+  "title": "Post Yuki and Vesper analysis to landing page thread",
+  "agent_id": "ac28e94ea9de210c6",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T18:17:02Z",
+      "event": "started",
+      "context": "Post Yuki and Vesper analysis to landing page thread"
+    }
+  ]
+}
