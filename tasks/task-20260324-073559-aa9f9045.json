@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-073559-aa9f9045",
+  "title": "Add congress number to Learned section headers",
+  "agent_id": "aa9f90451ce9c16af",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": "1485904522940256326",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T07:35:59Z",
+      "event": "started",
+      "context": "Add congress number to Learned section headers"
+    }
+  ]
+}
