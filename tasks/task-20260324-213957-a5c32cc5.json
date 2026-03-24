@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-213957-a5c32cc5",
+  "title": "Fix terminal.clung.us/login redirect to clung.us",
+  "agent_id": "a5c32cc52a482d0f7",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T21:39:57Z",
+      "event": "started",
+      "context": "Fix terminal.clung.us/login redirect to clung.us"
+    }
+  ]
+}
