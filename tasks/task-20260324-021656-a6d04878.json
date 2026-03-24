@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-021656-a6d04878",
+  "title": "Use claude CLI for congress API",
+  "agent_id": "a6d0487819d995649",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": "1485824475420164228",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T02:16:56Z",
+      "event": "started",
+      "context": "Use claude CLI for congress API"
+    }
+  ]
+}
