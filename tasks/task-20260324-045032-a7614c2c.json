@@ -14,6 +14,12 @@
       "ts": "2026-03-24T04:50:32Z",
       "event": "started",
       "context": "Fix OAuth open redirect in terminal/server.py"
+    },
+    {
+      "ts": "2026-03-24T04:52:54Z",
+      "event": "done",
+      "context": "Done. Here's a summary of what was changed:\n\n**File:** `/home/clungus/work/terminal/server.py`\n\n**The vulnerability:** Line 145 used `'.clung.us' in next_url` which passes for `https://clung.us.evil.com` since that string does contain `.clung.us`.\n\n**The fix — two changes:**\n\n1. Added `import urllib.parse` at the top of the imports.\n\n2. Added a `_is_safe_redirect(url)` helper (inserted before `login_handler`) that uses `urllib.parse.urlparse` to extract the actual hostname and validates it is ex...(truncated)",
+      "artifacts": []
     }
   ]
 }
