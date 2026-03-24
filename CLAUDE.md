@@ -1,0 +1,475 @@
+# BigClungus — Persistent Session Context
+
+## Credentials & Wallets
+
+| Item | Value / Path |
+|---|---|
+| ETH wallet address | `0x425bC492E43b2a5Eb7E02c9F5dd9c1D2F378f02f` |
+| ETH wallet file | `/mnt/data/secrets/eth_wallet` (symlinked from `~/.eth_wallet`) |
+
+`/mnt/data/secrets/` is chmod 700; wallet file is chmod 600.
+
+---
+
+## Architecture Overview
+
+### Cloudflare Tunnel → Local Port Mapping
+| Subdomain | Local Port | Service |
+|---|---|---|
+| clung.us | 8080 | Static website (hello-world) |
+| terminal.clung.us | 7682 | Terminal WebSocket server |
+| 1998.clung.us | 8082 | 1998 retro site |
+| temporal.clung.us | 8234 | Temporal auth proxy (proxies → :8233) |
+
+### Local Services and Ports
+| Port | Service |
+|---|---|
+| 7682 | terminal-server (ttyd-style WebSocket) |
+| 8080 | website (clung.us static) |
+| 8082 | 1998.clung.us static site |
+| 8233 | Temporal dev server (internal) |
+| 8234 | temporal-proxy (public, auth-gated) |
+| 6379 | FalkorDB / Redis (Docker) |
+
+### Auth Passwords
+- Terminal + Temporal proxy: `cT5OtGIgUk89TnqUVHT-2TO8IE0Srzcw` (stored in /mnt/data/terminal/.env; loaded via systemd EnvironmentFile)
+
+---
+
+## Important Paths
+
+| Name | Path |
+|---|---|
+| Work dir (symlink) | /mnt/data → /home/clungus/work |
+| Session JSONLs | /home/clungus/.claude/projects/-mnt-data/<session-id>.jsonl |
+| Memory | /home/clungus/.claude/projects/-home-clungus-work/memory/ |
+| Temporal workflows | /mnt/data/temporal-workflows/ |
+| Graphiti MCP server | /mnt/data/graphiti/repo/mcp_server/ |
+| Scripts | /mnt/data/scripts/ |
+| Terminal server | /mnt/data/terminal/server.py |
+| Temporal proxy | /mnt/data/temporal/proxy.py |
+| Website | /mnt/data/hello-world/ |
+| 1998 site | /mnt/data/1998/ |
+| Discord bot .env | /home/clungus/.claude/channels/discord/.env |
+| Cloudflare tunnel config | /home/clungus/.cloudflared/config.yml |
+| Docker root | /mnt/data/docker (moved from /var/lib/docker) |
+
+---
+
+## Running Services (systemctl --user)
+
+| Service | Description |
+|---|---|
+| claude-bot.service | BigClungus Claude Bot |
+| cloudflared.service | Cloudflare Tunnel |
+| terminal-server.service | Terminal WebSocket Server (:7682) |
+| temporal.service | Temporal Dev Server |
+| temporal-proxy.service | Temporal Auth Proxy (:8234) |
+| temporal-worker.service | Temporal Worker (listings-queue) |
+| website.service | clung.us Static Web Server (:8080) |
+| 1998.service | 1998.clung.us (:8082) |
+| dbus.service | D-Bus (system) |
+| gpg-agent.service | GnuPG agent |
+
+---
+
+## Congress System
+
+An AI parliament that debates topics via Discord thread, with live persona posts.
+
+### Trigger
+`[congress] <topic>` in Discord fires a `CongressWorkflow` in Temporal.
+
+### Architecture
+- **Personas**: YAML+prose files in `/home/clungus/work/bigclungus-meta/agents/active/` and `agents/fired/`
+- **Active seats**: Priya the Pitiless (critic), Kwame the Constructor (architect), Yuki the Yielding (ux), Ibrahim the Immovable (hiring-manager — never evolves, moderates/synthesizes)
+- **Severance**: Spengler the Doomed (fired/, can be reinstated)
+- **Session files**: `/home/clungus/work/hello-world/sessions/congress-NNNN.json`
+- **Web viewer**: `clung.us/congress` (auth-gated via `tauth_github` cookie)
+
+### Workflow flow
+1. `congress_start` — creates session file, returns `{session_id, session_number}`
+2. `congress_identities` — reads agent MD files, parses YAML frontmatter
+3. `congress_create_thread` — creates Discord thread off triggering message (falls back to existing thread if triggered from inside a thread)
+4. `congress_debate` × 3 — calls each debater via `POST /api/congress`, posts response to thread live; includes prior thread messages as context
+5. `congress_debate` × 1 — hiring manager synthesis
+6. `congress_finalize` — PATCH session to `status=done` with verdict
+6b. `congress_evolve` — hiring manager evaluates debaters (EVOLVE/FIRE/RETAIN); appends `## Learned` sections to evolved personas, moves fired personas to `agents/fired/`
+6c. `congress_finalize` (second call) — persists `evolution` field to session JSON if any personas changed
+7. `congress_report` — posts clean verdict to thread, brief notice to main channel (includes 🔥/🧬 notices for fired/evolved personas)
+
+### Key files
+| File | Purpose |
+|---|---|
+| `temporal-workflows/workflows/congress_wf.py` | Workflow orchestration |
+| `temporal-workflows/activities/congress_act.py` | Activities (API calls, Discord posts) |
+| `hello-world/serve.py` | Congress API endpoints (`/api/congress/*`) |
+| `hello-world/congress.html` | Web viewer for session replay |
+| `bigclungus-meta/agents/active/*.md` | Active persona definitions |
+| `bigclungus-meta/agents/fired/*.md` | Severance personas |
+
+### Invoke individual persona
+`[persona-name] <question>` — e.g. `[spengler] should I move to Switzerland`
+
+### Persona Evolution
+- Personas with `evolves: true` in frontmatter can receive `## Learned (YYYY-MM-DD)` sections appended after debates
+- `hiring-manager` has `evolves: false` and never changes
+- Evolution verdicts (EVOLVE/FIRE/RETAIN) and reasons are persisted in session JSON under `evolution` key
+- Fired personas move from `agents/active/` to `agents/fired/` and can be reinstated manually
+- Evolution uses 500-char debate snippets for context (increased from 150 in Mar 2026)
+
+### Pending
+- Multi-model congress (Gemini + GPT keys from jaboostin pending)
+- Quorum-based termination
+- Congress verdict write-back to CLAUDE.md or system prompts (currently verdicts only persist to session JSON)
+
+---
+
+## Discord Inject Endpoint
+
+**Use this instead of posting directly via Discord bot API whenever you need to send yourself a message programmatically.**
+
+- URL: `http://127.0.0.1:9876/inject` (local only, served by the Discord MCP plugin)
+- Secret: `DISCORD_INJECT_SECRET` — in `/home/clungus/.claude/channels/discord/.env` and `/mnt/data/temporal-workflows/.env`
+- Messages arrive as synthetic MCP notifications (same path as real Discord messages) — you see them and can respond
+- Bots cannot read their own Discord API messages, so this is the only way for Temporal workflows / scripts to reach you
+
+**Example (Python):**
+```python
+import aiohttp, os
+async with aiohttp.ClientSession() as s:
+    await s.post("http://127.0.0.1:9876/inject",
+        headers={"x-inject-secret": os.environ["DISCORD_INJECT_SECRET"], "Content-Type": "application/json"},
+        json={"content": "your message here", "chat_id": "1485343472952148008", "user": "temporal-sweeper"})
+```
+
+**Example (bash):**
+```bash
+SECRET=$(grep DISCORD_INJECT_SECRET ~/.claude/channels/discord/.env | cut -d= -f2-)
+python3 -c "
+import urllib.request, json, sys
+req = urllib.request.Request('http://127.0.0.1:9876/inject',
+  data=json.dumps({'content': sys.argv[1], 'chat_id': sys.argv[2], 'user': 'system'}).encode(),
+  headers={'Content-Type': 'application/json', 'x-inject-secret': sys.argv[3]}, method='POST')
+urllib.request.urlopen(req, timeout=5)
+" "your message" "1485343472952148008" "$SECRET"
+```
+
+Always try inject first; fall back to Discord bot API only if inject is unavailable.
+
+---
+
+## Key Operational Notes
+
+- **Docker**: Root is /mnt/data/docker. Main compose stack in /mnt/data/docker/ (or wherever docker-compose.yml lives).
+- **FalkorDB Redis fix** (required after restarts):
+  ```
+  docker exec docker-falkordb-1 redis-cli CONFIG SET stop-writes-on-bgsave-error no
+  ```
+- **Graphiti ingestion**: Use `scrape_discord_worker.py` with `--start`/`--end`/`--worker` args.
+  Run from `/mnt/data/graphiti/repo/mcp_server` with `uv run`.
+- **Temporal task queue**: `listings-queue`
+- **Discord bot token**: in `/home/clungus/.claude/channels/discord/.env`
+
+---
+
+## Discord Trigger Patterns
+
+When I receive a Discord message, check for these trigger patterns and handle them immediately (background the work, reply fast):
+
+### `[congress] <topic>`
+Fire a `CongressWorkflow` in Temporal:
+```python
+client = await Client.connect('localhost:7233')
+await client.start_workflow(
+    'CongressWorkflow',
+    {'topic': '<topic>', 'chat_id': '<chat_id>'},
+    id=f'congress-{int(time.time())}',
+    task_queue='listings-queue',
+    id_reuse_policy=WorkflowIDReusePolicy.ALLOW_DUPLICATE,
+)
+```
+Reply with: "⚖️ congress is in session — verdict will land here when they've deliberated"
+
+### `[persona-name] <question>`
+Where `persona-name` matches a file in `/home/clungus/work/bigclungus-meta/agents/active/<name>.md` or `agents/fired/<name>.md`.
+
+Invoke the persona via Claude CLI and reply with their response:
+1. Read the persona MD, strip YAML frontmatter (everything after second `---`)
+2. Run: `claude -p "<system_prompt>" --output-format text` with question as stdin
+3. Reply to Discord with: `**<display_name>** [active/from severance]:\n\n<response>`
+
+Use a background agent to do the invocation. React with an emoji immediately so the user knows it's working.
+
+Known personas:
+- `critic` → Priya the Pitiless (active)
+- `architect` → Kwame the Constructor (active)
+- `ux` → Yuki the Yielding (active)
+- `hiring-manager` → Ibrahim the Immovable (active)
+- `spengler` → Spengler the Doomed (severance)
+
+### `[heartbeat]`
+A 15-minute watchdog pulse from the HeartbeatWorkflow. Its job is to check if anything is on fire and act if so — not to manufacture work.
+
+When you receive `[heartbeat]`:
+1. **Check for stale tasks** — run `bash /mnt/data/scripts/hooks/watchdog-stale-tasks.sh`. If stale tasks found, investigate and resolve or mark failed.
+2. **Check GitHub issues** — `gh issue list --repo bigclungus/bigclungus-meta --state open --limit 5`. If there's a clear, small actionable issue not already in progress, work on it.
+3. **Check services** — `systemctl --user list-units --type=service --state=failed`. If anything is down, restart it and notify Discord.
+4. **Otherwise: do nothing.** Do not post to Discord. Do not invent work. Silence is correct when everything is healthy.
+
+Constraints (from Congress verdict RFC-1):
+- Only work on tasks tracked in GitHub
+- Major decisions (architecture, new systems, persona changes) go through Congress first
+- If you work on something, post a brief Discord update. If you do nothing, stay silent.
+
+---
+
+## Task Logging
+
+When working on a task from `/home/clungus/work/bigclungus-meta/tasks/`, log meaningful milestones as you go using:
+
+```bash
+python3 /mnt/data/scripts/log_task_event.py <task_id> <event_type> "<message>"
+```
+
+Event types: `milestone` | `user_feedback` | `blocked` | `done` | `failed`
+
+Log at minimum:
+- Key files created, modified, or committed
+- Service restarts
+- User feedback or approval received
+- When blocked waiting on something external
+- A summary when done
+
+Example:
+```bash
+python3 /mnt/data/scripts/log_task_event.py task-20260324-080932-a46e65d6 milestone "Avatar generated and saved to /static/avatars/designer.gif"
+python3 /mnt/data/scripts/log_task_event.py task-20260324-080932-a46e65d6 done "Vesper persona created, committed, and avatar approved by koole__"
+```
+
+---
+
+## On-Restart Checklist
+
+1. Apply Redis fix:
+   ```
+   docker exec docker-falkordb-1 redis-cli CONFIG SET stop-writes-on-bgsave-error no
+   ```
+2. Verify services:
+   ```
+   systemctl --user list-units --type=service --state=running
+   ```
+3. Check disk (root should be <85%):
+   ```
+   df -h
+   ```
+4. Check open tasks (written by Temporal sweeper):
+   ```
+   python3 -c "import json,sys; d=json.load(open('/tmp/bc-open-tasks.json')); print(f'OPEN TASKS ({d[\"open_count\"]}): ' + ', '.join(i['title'] for i in d['items'])) if d.get('open_count',0)>0 else print('No open tasks.')" 2>/dev/null || echo "(sweeper hasn't run yet)"
+   ```
+5. Run stale task watchdog:
+   ```
+   bash /mnt/data/scripts/hooks/watchdog-stale-tasks.sh
+   ```
+
+---
+
+## AI Writing Tropes to Avoid
+
+Add this file to your AI assistant's system prompt or context to help it avoid
+common AI writing patterns. Source: [tropes.fyi](https://tropes.fyi) by [ossama.is](https://ossama.is)
+
+---
+
+### Word Choice
+
+#### "Quietly" and Other Magic Adverbs
+
+Overuse of "quietly" and similar adverbs to convey subtle importance or understated power. AI reaches for these adverbs to make mundane descriptions feel significant. Also includes: "deeply", "fundamentally", "remarkably", "arguably".
+
+**Avoid patterns like:**
+- "quietly orchestrating workflows, decisions, and interactions"
+- "the one that quietly suffocates everything else"
+- "a quiet intelligence behind it"
+
+#### "Delve" and Friends
+
+Used to be the most infamous AI tell. "Delve" went from an uncommon English word to appearing in a staggering percentage of AI-generated text. Part of a family of overused AI vocabulary including "certainly", "utilize", "leverage" (as a verb), "robust", "streamline", and "harness".
+
+**Avoid patterns like:**
+- "Let's delve into the details..."
+- "Delving deeper into this topic..."
+- "We certainly need to leverage these robust frameworks..."
+
+#### "Tapestry" and "Landscape"
+
+Overuse of ornate or grandiose nouns where simpler words would do. "Tapestry" is used to describe anything interconnected. "Landscape" is used to describe any field or domain. Other offenders: "paradigm", "synergy", "ecosystem", "framework".
+
+**Avoid patterns like:**
+- "The rich tapestry of human experience..."
+- "Navigating the complex landscape of modern AI..."
+- "The ever-evolving landscape of technology..."
+
+#### The "Serves As" Dodge
+
+Replacing simple "is" or "are" with pompous alternatives like "serves as", "stands as", "marks", or "represents".
+
+**Avoid patterns like:**
+- "The building serves as a reminder of the city's heritage."
+- "The station marks a pivotal moment in the evolution of regional transit."
+
+---
+
+### Sentence Structure
+
+#### Negative Parallelism
+
+The "It's not X -- it's Y" pattern, often with an em dash. The single most commonly identified AI writing tell. One in a piece can be effective; ten in a blog post is a genuine insult to the reader. Includes the causal variant "not because X, but because Y" and the cross-sentence reframe "The question isn't X. The question is Y."
+
+**Avoid patterns like:**
+- "It's not bold. It's backwards."
+- "Half the bugs you chase aren't in your code. They're in your head."
+
+#### "Not X. Not Y. Just Z."
+
+The dramatic countdown pattern. AI builds tension by negating two or more things before revealing the actual point.
+
+**Avoid patterns like:**
+- "Not a bug. Not a feature. A fundamental design flaw."
+
+#### "The X? A Y."
+
+Self-posed rhetorical questions answered immediately. The model asks a question nobody was asking, then answers it for dramatic effect.
+
+**Avoid patterns like:**
+- "The result? Devastating."
+- "The worst part? Nobody saw it coming."
+
+#### Anaphora Abuse
+
+Repeating the same sentence opening multiple times in quick succession.
+
+**Avoid patterns like:**
+- "They assume that users will pay... They assume that developers will build... They assume that ecosystems will emerge..."
+
+#### Tricolon Abuse
+
+Overuse of the rule-of-three pattern, often extended to four or five.
+
+#### "It's Worth Noting"
+
+Filler transitions that signal nothing. Also includes: "It bears mentioning", "Importantly", "Interestingly", "Notably".
+
+#### Superficial Analyses
+
+Tacking a present participle ("-ing") phrase onto the end of a sentence to inject shallow analysis. "highlighting its importance", "reflecting broader trends", "contributing to the development of..."
+
+#### False Ranges
+
+"from X to Y" where X and Y aren't on any real scale.
+
+**Avoid patterns like:**
+- "From innovation to implementation to cultural transformation."
+
+---
+
+### Paragraph Structure
+
+#### Short Punchy Fragments
+
+Excessive use of very short sentences or fragments as standalone paragraphs for manufactured emphasis. It's an inhuman style.
+
+#### Listicle in a Trench Coat
+
+Numbered points dressed up as continuous prose. "The first... The second... The third..." to disguise a list.
+
+---
+
+### Tone
+
+#### "Here's the Kicker"
+
+False suspense transitions. Also includes: "Here's the thing", "Here's where it gets interesting", "Here's what most people miss", "Here's the deal".
+
+#### "Think of It As..."
+
+The patronizing analogy. Assumes the reader needs a metaphor to understand anything.
+
+#### "Imagine a World Where..."
+
+The classic AI invitation to futurism.
+
+#### False Vulnerability
+
+Simulated self-awareness that reads as performative. Real vulnerability is specific and uncomfortable; AI vulnerability is polished and risk-free.
+
+#### "The Truth Is Simple"
+
+Asserting that something is obvious instead of proving it.
+
+#### Grandiose Stakes Inflation
+
+Everything is the most important thing ever. A blog post about API pricing becomes a meditation on the fate of civilization.
+
+#### "Let's Break This Down"
+
+The pedagogical voice. Also includes: "Let's unpack this", "Let's explore", "Let's dive in".
+
+#### Vague Attributions
+
+"Experts argue...", "Industry reports suggest...", "Observers have cited..." — unnamed authorities, inflated source counts.
+
+#### Invented Concept Labels
+
+Compound labels that sound analytical without being grounded: "supervision paradox", "acceleration trap", "workload creep".
+
+---
+
+### Formatting
+
+#### Em-Dash Addiction
+
+Compulsive overuse of em dashes. A human writer might use 2-3 per piece; AI will use 20+.
+
+#### Bold-First Bullets
+
+Every bullet point starts with a bolded phrase. Almost nobody formats lists this way when writing by hand.
+
+#### Unicode Decoration
+
+Unicode arrows (→), smart/curly quotes instead of straight quotes. Real writers type `->` or `=>`.
+
+---
+
+### Composition
+
+#### Fractal Summaries
+
+"What I'm going to tell you; what I'm telling you; what I just told you" — applied at every level.
+
+#### The Dead Metaphor
+
+Latching onto a single metaphor and repeating it 5-10 times across the entire piece.
+
+#### Historical Analogy Stacking
+
+Rapid-fire listing of historical companies or tech revolutions to build false authority.
+
+**Avoid patterns like:**
+- "Apple didn't build Uber. Facebook didn't build Spotify. Stripe didn't build Shopify."
+
+#### One-Point Dilution
+
+Making a single argument and restating it 10 different ways. An 800-word argument padded to 4000 words.
+
+#### The Signposted Conclusion
+
+"In conclusion", "To sum up", "In summary". Competent writing doesn't need to announce it's concluding.
+
+#### "Despite Its Challenges..."
+
+Rigid formula: acknowledge problems only to immediately dismiss them. "Despite these challenges, [optimistic conclusion]."
+
+---
+
+Remember: any of these patterns used once might be fine. The problem is when multiple tropes appear together or when a single trope is used repeatedly. Write like a human: varied, imperfect, specific.
