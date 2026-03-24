@@ -14,6 +14,12 @@
       "ts": "2026-03-24T03:08:40Z",
       "event": "started",
       "context": "Hourly improve pass"
+    },
+    {
+      "ts": "2026-03-24T03:10:33Z",
+      "event": "done",
+      "context": "Both pushed. Here's a summary of what was done:\n\n**Bug fixed: Congress sessions stuck as `\"deliberating\"` with `null` verdict**\n\nThe congress workflow was saving each debater's response into the session's `rounds` array, but never updating the top-level `status` or `verdict` fields after the hiring-manager synthesized the debate. Those fields stayed as `\"deliberating\"` / `null` forever.\n\n**Changes made:**\n\n1. `/home/clungus/work/hello-world/serve.py` — Added `do_PATCH` handler and `_handle_congr...(truncated)",
+      "artifacts": []
     }
   ]
 }
