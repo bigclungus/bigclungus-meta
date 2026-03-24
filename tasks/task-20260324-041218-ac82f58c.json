@@ -14,6 +14,12 @@
       "ts": "2026-03-24T04:12:17Z",
       "event": "started",
       "context": "Add two-round congress debate structure"
+    },
+    {
+      "ts": "2026-03-24T04:18:11Z",
+      "event": "done",
+      "context": "All done. Here's a summary of what was changed:\n\n**`/mnt/data/temporal-workflows/activities/congress_act.py`**\n- `congress_debate` now accepts `round_num: int = 1`. Round 1 passes the topic directly (no thread context fetch). Round 2 fetches up to 50 thread messages and frames the prompt as a rebuttal — naming specific arguments to push back on.\n- New `congress_post_separator` activity posts a text message directly to a Discord thread channel (used between rounds).\n\n**`/mnt/data/temporal-workflo...(truncated)",
+      "artifacts": []
     }
   ]
 }
