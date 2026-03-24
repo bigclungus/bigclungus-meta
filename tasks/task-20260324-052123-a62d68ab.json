@@ -15,5 +15,6 @@
       "event": "started",
       "context": "Create feralhosting account and buy cheapest plan with ETH"
     }
-  ]
+  ],
+  "status": "cancelled"
 }

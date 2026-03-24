@@ -21,5 +21,6 @@
       "context": "I don't have a direct \"send message to agent\" tool available. The agent ID `a62d68ab98cd516d6` appears to refer to a Claude Agent SDK subagent session, but I don't have an MCP tool to message other agents directly.\n\nHere's what I can tell you: I was asked to relay this message to agent `a62d68ab98cd516d6` (feralhosting account creation):\n\n> **STOP** before making any payment or transaction. Explore and create the account (form only), but when you reach any payment/checkout step, **STOP** and rep...(truncated)",
       "artifacts": []
     }
-  ]
+  ],
+  "status": "cancelled"
 }
