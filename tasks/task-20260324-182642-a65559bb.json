@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-182642-a65559bb",
+  "title": "Workflow-ify GitHub webhook behavior",
+  "agent_id": "a65559bbd4e2fee02",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T18:26:42Z",
+      "event": "started",
+      "context": "Workflow-ify GitHub webhook behavior"
+    }
+  ]
+}
