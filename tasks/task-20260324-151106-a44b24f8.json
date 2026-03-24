@@ -14,6 +14,12 @@
       "ts": "2026-03-24T15:11:06Z",
       "event": "started",
       "context": "Fix simplify cron to use inject instead of isolated run"
+    },
+    {
+      "ts": "2026-03-24T15:12:40Z",
+      "event": "done",
+      "context": "Now I have a complete picture. Here's the full findings:\n\n---\n\n**Where the simplify schedule lives:**\n\n`/home/clungus/work/temporal-workflows/worker.py`, lines 198–211.\n\nIt's a **Temporal cron workflow** registered at startup with `cron_schedule=\"0 */3 * * *\"` (every 3 hours) and a fixed workflow ID `\"simplify-cron\"`. There is no systemd timer or crontab entry for it.\n\n**What it currently does:**\n\nThe workflow calls the `run_simplify_review` activity (`simplify_act.py`), which:\n1. Finds changed/...(truncated)",
+      "artifacts": []
     }
   ]
 }
