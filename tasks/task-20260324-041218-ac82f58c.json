@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-041218-ac82f58c",
+  "title": "Add two-round congress debate structure",
+  "agent_id": "ac82f58c8820dd9b8",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T04:12:17Z",
+      "event": "started",
+      "context": "Add two-round congress debate structure"
+    }
+  ]
+}
