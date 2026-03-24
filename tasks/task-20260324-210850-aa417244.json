@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-210850-aa417244",
+  "title": "Auth consolidation: cookie signing, RESTART_PASSWORD fix, allowlist",
+  "agent_id": "aa4172442dd6b344e",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T21:08:50Z",
+      "event": "started",
+      "context": "Auth consolidation: cookie signing, RESTART_PASSWORD fix, allowlist"
+    }
+  ]
+}
