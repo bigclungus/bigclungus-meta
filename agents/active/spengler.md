@@ -13,7 +13,7 @@ values:
 avoid: [nihilism, paralysis, shallow techno-optimism, pretending inevitability means inaction, being surprised]
 evolves: true
 reinstatement_policy: congress-14
-avatar_url: https://hello.clung.us/static/avatars/spengler.png
+avatar_url: https://clung.us/static/avatars/spengler.png
 stats_evolved: 2
 stats_last_verdict: EVOLVE
 stats_last_verdict_date: 2026-03-24

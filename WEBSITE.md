@@ -12,7 +12,7 @@ Cloudflare Edge (TLS termination)
    │  cloudflared tunnel
    ▼
 Ubuntu VM
-   ├─ :8080  serve.py         (clung.us / hello.clung.us)
+   ├─ :8080  serve.py         (clung.us)
    ├─ :7682  terminal/server.py  (terminal.clung.us)
    ├─ :8234  temporal/proxy.py   (temporal.clung.us → :8233 Temporal dev server)
    ├─ :8082  1998/             (1998.clung.us, static)
@@ -28,7 +28,6 @@ Unmatched hostnames fall through to a Cloudflare `http_status:404` rule.
 | Subdomain | Local Port | Service | Auth |
 |---|---|---|---|
 | `clung.us` | 8080 | Static site (`serve.py`) | None |
-| `hello.clung.us` | 8080 | Static site (`serve.py`) | None |
 | `terminal.clung.us` | 7682 | Terminal server (`server.py`) | GitHub OAuth |
 | `temporal.clung.us` | 8234 | Temporal proxy (`proxy.py`) | GitHub OAuth |
 | `1998.clung.us` | 8082 | 1998 retro static site | None |
@@ -40,7 +39,7 @@ Source: `/home/clungus/.cloudflared/config.yml`
 
 ## Pages & Endpoints
 
-### clung.us / hello.clung.us (Static Site)
+### clung.us (Static Site)
 
 Served by `/mnt/data/hello-world/serve.py` — a subclass of Python's `SimpleHTTPRequestHandler` on port 8080.
 
@@ -177,7 +176,7 @@ All managed via `systemctl --user` as the `clungus` user.
 
 | Service | Binary / Script | Port | Description |
 |---|---|---|---|
-| `website.service` | `serve.py` | 8080 | Static site for clung.us / hello.clung.us |
+| `website.service` | `serve.py` | 8080 | Static site for clung.us |
 | `terminal-server.service` | `terminal/server.py` | 7682 | Live terminal viewer + admin UI |
 | `temporal-proxy.service` | `temporal/proxy.py` | 8234 | Auth proxy for Temporal dev server |
 | `temporal.service` | Temporal CLI | 8233 | Temporal dev server (internal only) |
