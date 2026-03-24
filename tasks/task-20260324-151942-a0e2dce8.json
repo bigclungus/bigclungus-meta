@@ -14,6 +14,12 @@
       "ts": "2026-03-24T15:19:42Z",
       "event": "started",
       "context": "Review and triage task backlog"
+    },
+    {
+      "ts": "2026-03-24T15:21:03Z",
+      "event": "done",
+      "context": "Now I have everything I need. Here's the full picture:\n\n---\n\n## Task Backlog Triage Report\n\n### Summary\n\n**310 local task files total.** The format is a mess — 295 files lack a top-level `status` field entirely, but most have a `log` entry with `event: done` at the end, meaning they completed fine. Formally tracked statuses:\n\n| Status | Count |\n|---|---|\n| Done (formal) | 8 |\n| Failed (formal) | 4 |\n| Cancelled (formal) | 3 |\n| Done via log event | 289 |\n| **Genuinely open/ambiguous** | **6** |\n...(truncated)",
+      "artifacts": []
     }
   ]
 }
