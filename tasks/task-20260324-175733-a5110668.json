@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-175733-a5110668",
+  "title": "Read congress 20 verdict and website structure",
+  "agent_id": "a5110668f486ed777",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T17:57:33Z",
+      "event": "started",
+      "context": "Read congress 20 verdict and website structure"
+    }
+  ]
+}
