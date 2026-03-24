@@ -14,6 +14,12 @@
       "ts": "2026-03-24T02:10:01Z",
       "event": "started",
       "context": "Diagnose improve workflow failure"
+    },
+    {
+      "ts": "2026-03-24T02:10:25Z",
+      "event": "done",
+      "context": "The diagnosis is clear. Here's the full picture:\n\n**Root cause: The workflow `improve-manual-1774318090` is of type `IntrospectionWorkflow`, but that class does not exist and has never been registered on the worker.**\n\nSpecifically:\n\n- The worker (`/mnt/data/temporal-workflows/worker.py`, line 145) registers these four workflow classes: `ListingsWorkflow`, `WordOfTheDayWorkflow`, `HourlyIntrospectionWorkflow`, `TaskSweeperWorkflow`.\n- The failing workflow was started with type name `Introspectio...(truncated)",
+      "artifacts": []
     }
   ]
 }
