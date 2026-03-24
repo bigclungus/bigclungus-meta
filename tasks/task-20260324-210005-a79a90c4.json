@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-210005-a79a90c4",
+  "title": "Run proactive context spec through Critic, Builder, UX personas and synthesize",
+  "agent_id": "a79a90c4ce268ee8d",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T21:00:05Z",
+      "event": "started",
+      "context": "Run proactive context spec through Critic, Builder, UX personas and synthesize"
+    }
+  ]
+}
