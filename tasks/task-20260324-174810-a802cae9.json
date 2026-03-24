@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-174810-a802cae9",
+  "title": "Start website evaluation congress",
+  "agent_id": "a802cae9e3da10d77",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T17:48:10Z",
+      "event": "started",
+      "context": "Start website evaluation congress"
+    }
+  ]
+}
