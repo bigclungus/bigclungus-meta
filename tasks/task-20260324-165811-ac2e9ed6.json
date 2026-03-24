@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-165811-ac2e9ed6",
+  "title": "Expand Holden Bloodfeast with Reagan-era neocon details",
+  "agent_id": "ac2e9ed68079e5cdf",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": "1486046335667933254",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T16:58:11Z",
+      "event": "started",
+      "context": "Expand Holden Bloodfeast with Reagan-era neocon details"
+    }
+  ]
+}
