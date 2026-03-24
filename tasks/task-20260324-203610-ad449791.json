@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-203610-ad449791",
+  "title": "Fire CongressWorkflow for BigClungus headline feature",
+  "agent_id": "ad4497916de8c433e",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T20:36:10Z",
+      "event": "started",
+      "context": "Fire CongressWorkflow for BigClungus headline feature"
+    }
+  ]
+}
