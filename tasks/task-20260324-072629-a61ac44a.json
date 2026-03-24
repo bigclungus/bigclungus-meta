@@ -14,6 +14,12 @@
       "ts": "2026-03-24T07:26:29Z",
       "event": "started",
       "context": "Verify congress debate context and identity clarity"
+    },
+    {
+      "ts": "2026-03-24T07:28:07Z",
+      "event": "done",
+      "context": "Worker is up and running. Here's a complete summary of what was there and what was added:\n\n---\n\n**What was there before:**\n\n- Round 1 prompt: `\"You are {name}.\"` — identity stated once mid-sentence, no list of other participants\n- Round 2 prompt (thread fetch path): `\"You are responding to your colleagues' arguments\"` — no identity statement at all, no list of others\n- Round 2 prompt (no-thread fallback): just `CONGRESS_CONTEXT + task` — nothing about identity\n- No mention of fellow debaters' na...(truncated)",
+      "artifacts": []
     }
   ]
 }
