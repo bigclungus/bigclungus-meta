@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-184722-a20ce544",
+  "title": "Diagnose website 404s",
+  "agent_id": "a20ce544b8d611db5",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T18:47:22Z",
+      "event": "started",
+      "context": "Diagnose website 404s"
+    }
+  ]
+}
