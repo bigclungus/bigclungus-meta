@@ -14,6 +14,12 @@
       "ts": "2026-03-24T08:23:47Z",
       "event": "started",
       "context": "Commit failed status UI fix"
+    },
+    {
+      "ts": "2026-03-24T08:23:54Z",
+      "event": "done",
+      "context": "Done. Commit hash: `34c0935`\n\nPushed to `main` on `github.com:bigclungus/clung.us.git` (1 file changed, 13 insertions, 3 deletions).",
+      "artifacts": []
     }
   ]
 }
