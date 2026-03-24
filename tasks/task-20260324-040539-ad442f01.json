@@ -14,6 +14,12 @@
       "ts": "2026-03-24T04:05:39Z",
       "event": "started",
       "context": "Add persona evolution via congress to congress workflow"
+    },
+    {
+      "ts": "2026-03-24T04:07:07Z",
+      "event": "done",
+      "context": "Worker is running. Done.\n\nHere's a summary of everything that was changed:\n\n**Files modified:**\n\n- `/mnt/data/temporal-workflows/activities/congress_act.py` — Added `congress_evolve` activity (calls hiring manager with structured evaluation prompt, parses `PERSONA/VERDICT/REASON/LEARNED` blocks, appends `## Learned` sections or moves files to `agents/fired/`). Updated `congress_report` signature to accept optional `evolution_results: dict` and appends fire/evolve lines to the closing message.\n\n-...(truncated)",
+      "artifacts": []
     }
   ]
 }
