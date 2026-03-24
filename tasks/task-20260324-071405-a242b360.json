@@ -14,6 +14,12 @@
       "ts": "2026-03-24T07:14:05Z",
       "event": "started",
       "context": "Fix debaters rebutting themselves in round 2"
+    },
+    {
+      "ts": "2026-03-24T07:14:47Z",
+      "event": "done",
+      "context": "Done. Here's a summary of what changed in `/mnt/data/temporal-workflows/activities/congress_act.py`:\n\n**The bug:** In the `congress_debate` activity's Round 2 path, all thread messages were collected into context without filtering. Since each debater's Round 1 post is in the thread formatted as `**Display Name**: <text>`, the debater would see their own post and respond to it.\n\n**The fix — two parts:**\n\n1. **Filter step** (lines 152-158): After fetching thread messages, each message is checked a...(truncated)",
+      "artifacts": []
     }
   ]
 }
