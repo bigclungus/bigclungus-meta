@@ -14,6 +14,12 @@
       "ts": "2026-03-24T05:48:40Z",
       "event": "started",
       "context": "Add title field to personas and congress cards"
+    },
+    {
+      "ts": "2026-03-24T05:50:00Z",
+      "event": "done",
+      "context": "All done. Here's a summary of what was changed:\n\n**Persona frontmatters** (`/home/clungus/work/bigclungus-meta/agents/active/`): Added `title:` field after `role:` in all six files — Perfectionist, Systems Architect, Optimist-Nihilist, User Advocate, Doomer, Moderator.\n\n**`/home/clungus/work/hello-world/serve.py`**: Added `'title': meta.get('title', '')` to both `load_agent_dir` (used by `_serve_agents`) and `_serve_congress_identities`.\n\n**`/home/clungus/work/hello-world/congress.html`**:\n- Add...(truncated)",
+      "artifacts": []
     }
   ]
 }
