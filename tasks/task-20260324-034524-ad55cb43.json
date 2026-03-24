@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-034524-ad55cb43",
+  "title": "Save memory about multi-model congress plan",
+  "agent_id": "ad55cb438f4d44769",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T03:45:24Z",
+      "event": "started",
+      "context": "Save memory about multi-model congress plan"
+    }
+  ]
+}
