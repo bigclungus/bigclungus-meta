@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-075037-a49a93eb",
+  "title": "Terminate congress-9 and implement Yuki UX fixes",
+  "agent_id": "a49a93ebe3d2060b4",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": "1485907896871944192",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T07:50:37Z",
+      "event": "started",
+      "context": "Terminate congress-9 and implement Yuki UX fixes"
+    }
+  ]
+}
