@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-080949-aeb42ad8",
+  "title": "Congress UI round alignment fix",
+  "agent_id": "aeb42ad892a87dbb8",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": "1485913160945897633",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T08:09:49Z",
+      "event": "started",
+      "context": "Congress UI round alignment fix"
+    }
+  ]
+}
