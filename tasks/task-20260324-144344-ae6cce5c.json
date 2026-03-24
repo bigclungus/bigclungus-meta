@@ -14,6 +14,12 @@
       "ts": "2026-03-24T14:43:44Z",
       "event": "started",
       "context": "Kill stale plugin fork tasks"
+    },
+    {
+      "ts": "2026-03-24T14:44:00Z",
+      "event": "done",
+      "context": "Both tasks have been marked as failed:\n\n- `task-20260324-144131-a1719960` — \"Complete discord plugin fork - check state and finish\"\n- `task-20260324-143629-a72512d0` — \"Fork Discord plugin, add reactions+inject, install\"",
+      "artifacts": []
     }
   ]
 }

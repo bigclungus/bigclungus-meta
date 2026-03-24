@@ -14,6 +14,12 @@
       "ts": "2026-03-24T14:36:29Z",
       "event": "started",
       "context": "Fork Discord plugin, add reactions+inject, install"
+    },
+    {
+      "event": "failed",
+      "ts": "2026-03-24T14:43:58.539722Z",
+      "message": "Agent killed mid-run \u2014 work completed successfully (inject + reactions live on port 9876)"
     }
-  ]
+  ],
+  "status": "failed"
 }
