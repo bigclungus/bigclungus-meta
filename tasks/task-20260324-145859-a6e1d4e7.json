@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-145859-a6e1d4e7",
+  "title": "Efficiency review - temporal email workflow",
+  "agent_id": "a6e1d4e7d5d4324c4",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T14:58:59Z",
+      "event": "started",
+      "context": "Efficiency review - temporal email workflow"
+    }
+  ]
+}
