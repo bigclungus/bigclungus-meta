@@ -14,6 +14,12 @@
       "ts": "2026-03-24T16:03:08Z",
       "event": "started",
       "context": "Simplify fixes - hardcoded IDs and inject dedup"
+    },
+    {
+      "ts": "2026-03-24T16:06:11Z",
+      "event": "done",
+      "context": "Both committed. Here's a summary of every change made:\n\n**Fix 1 — Import MAIN_CHANNEL_ID from constants (5 files, 6 occurrences replaced)**\n\n- `workflows/congress_wf.py`: added import inside `imports_passed_through` block; replaced default arg `\"1485343472952148008\"` and the `main_channel_id` assignment\n- `workflows/word_of_day.py`: added import; replaced default param\n- `workflows/heartbeat_wf.py`: added import; replaced positional arg in `inject_message` call\n- `worker.py`: added import at top...(truncated)",
+      "artifacts": []
     }
   ]
 }
