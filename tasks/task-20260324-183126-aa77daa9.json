@@ -14,6 +14,12 @@
       "ts": "2026-03-24T18:31:26Z",
       "event": "started",
       "context": "Check startup chain and fix GitHub issues reference"
+    },
+    {
+      "ts": "2026-03-24T18:32:00Z",
+      "event": "done",
+      "context": "Here's the full report:\n\n---\n\n**1. Linger status: ENABLED**\n\n`Linger=yes` is set for the `clungus` user. User systemd services will survive VM restarts without anyone logging in — this is correct and required.\n\n---\n\n**2. Dependency chain**\n\nAll three services are `enabled` (will start on boot). The dependency chain is:\n\n- `temporal.service` — `After=network.target`, `WantedBy=default.target`\n- `temporal-worker.service` — `After=network.target`, `WantedBy=default.target`\n- `claude-bot.service` — ...(truncated)",
+      "artifacts": []
     }
   ]
 }
