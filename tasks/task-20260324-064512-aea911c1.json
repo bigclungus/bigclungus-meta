@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-064512-aea911c1",
+  "title": "Add neutral debate panel context to congress prompts",
+  "agent_id": "aea911c190cc53282",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T06:45:12Z",
+      "event": "started",
+      "context": "Add neutral debate panel context to congress prompts"
+    }
+  ]
+}
