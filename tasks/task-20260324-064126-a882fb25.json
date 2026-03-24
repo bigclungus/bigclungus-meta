@@ -14,6 +14,12 @@
       "ts": "2026-03-24T06:41:26Z",
       "event": "started",
       "context": "Fix congress bugs: Ibrahim, thread, context, severance UI"
+    },
+    {
+      "ts": "2026-03-24T06:47:07Z",
+      "event": "done",
+      "context": "Here's a summary of what was fixed and the test results:\n\n---\n\n**Bug 1 — Ibrahim AWOL (no verdict): FIXED**\n\nRoot cause: `_call_claude_cli` in `serve.py` was passing the full persona file content (including YAML frontmatter starting with `---`) directly to the claude CLI via `-p`. The CLI interpreted `---` as an unknown option flag, causing the process to error out silently and return empty. Gemini and Grok personas worked because they use different code paths.\n\nFix: Added `_parse_frontmatter()`...(truncated)",
+      "artifacts": []
     }
   ]
 }
