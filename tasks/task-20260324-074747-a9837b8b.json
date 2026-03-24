@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-074747-a9837b8b",
+  "title": "Invoke Yuki UX persona on congress UI",
+  "agent_id": "a9837b8b70fca8c23",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": "1485907808095441027",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T07:47:47Z",
+      "event": "started",
+      "context": "Invoke Yuki UX persona on congress UI"
+    }
+  ]
+}
