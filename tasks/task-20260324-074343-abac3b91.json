@@ -14,6 +14,12 @@
       "ts": "2026-03-24T07:43:43Z",
       "event": "started",
       "context": "Audit check_open_tasks sweeper source"
+    },
+    {
+      "ts": "2026-03-24T07:44:19Z",
+      "event": "done",
+      "context": "The picture is fully clear. Here is the complete answer:\n\n---\n\n**The sweeper does not read GitHub issues at all.** It reads local JSON files from `/home/clungus/work/bigclungus-meta/tasks/` (line 17–18 and 89 of `sweeper_act.py`). This is an entirely separate task-tracking system — not GitHub Issues.\n\n**Why the phantom tasks appear:**\n\nThose tasks are real entries in that local directory with their last log entry being `\"event\": \"started\"` and no subsequent `\"event\": \"done\"` entry. The `_derive_...(truncated)",
+      "artifacts": []
     }
   ]
 }
