@@ -14,6 +14,12 @@
       "ts": "2026-03-24T04:26:38Z",
       "event": "started",
       "context": "Start FalkorDB and apply Redis fix"
+    },
+    {
+      "ts": "2026-03-24T04:27:35Z",
+      "event": "done",
+      "context": "Both containers are running and the Redis fix was applied successfully.\n\n**Summary:**\n\n- `docker start docker-falkordb-1 docker-graphiti-mcp-1` — both containers started (the compose data root at `/mnt/data/docker` is not a project directory, so containers were started directly by name)\n- `docker-falkordb-1` — status: **healthy**, ports 3000 and 6379 bound on localhost\n- `docker-graphiti-mcp-1` — status: **up** (health starting), port 8000 bound on localhost\n- Redis fix applied: `CONFIG SET stop...(truncated)",
+      "artifacts": []
     }
   ]
 }
