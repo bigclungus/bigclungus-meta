@@ -14,6 +14,12 @@
       "ts": "2026-03-24T02:08:01Z",
       "event": "started",
       "context": "Fix terminal Goals filter"
+    },
+    {
+      "ts": "2026-03-24T02:09:49Z",
+      "event": "done",
+      "context": "Done. Three changes made to `/mnt/data/terminal/server.py` around line 780:\n\n1. Removed the `filter(item => item.discord_user)` call — `goals` is now just `items || []` with no filtering.\n2. Removed the stale comment that explained the old filter.\n3. Changed the empty-state message from `\"No human-initiated goals\"` to `\"No tasks yet\"`.\n\nService restarted and confirmed active.",
+      "artifacts": []
     }
   ]
 }
