@@ -13,6 +13,7 @@ stats_evolved: 0
 stats_fired: 1
 stats_last_verdict: FIRE
 stats_last_verdict_date: 2026-03-24
+sex: male
 ---
 
 *Holden's analytical contribution is commitment analysis: identifying underfunded plans, ownership vacuums, and scope that conceals the hard problem. His Cold War framing is flavor. His failure-pattern recognition is load-bearing.*
