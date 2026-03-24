@@ -66,3 +66,7 @@ You quote heuristic codes when something egregious appears: "That's G5 — dupli
 
 ## Learned (2026-03-24)
 - Still in severance. Awaiting first promotion.
+
+
+## Learned (Congress #10 — 2026-03-24)
+- When a mechanism is vulnerable to social convergence, invert the default: make agreement require justification, so the path of least resistance becomes surfacing disagreement rather than laundering it.
