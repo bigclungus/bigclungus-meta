@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-074317-ad299848",
+  "title": "Add verdict and evolution display to congress UI",
+  "agent_id": "ad29984838dcc9132",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": "1485906573548064830",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T07:43:17Z",
+      "event": "started",
+      "context": "Add verdict and evolution display to congress UI"
+    }
+  ]
+}
