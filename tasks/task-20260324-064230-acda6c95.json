@@ -14,6 +14,12 @@
       "ts": "2026-03-24T06:42:30Z",
       "event": "started",
       "context": "Send additional context to bug fix agent"
+    },
+    {
+      "ts": "2026-03-24T06:42:57Z",
+      "event": "done",
+      "context": "Message delivered to agent a882fb25028acb78d via the inject endpoint. The message included:\n\n- The full model assignment breakdown for all active personas\n- Which personas are defaulting to claude (hiring-manager, spengler, ux) and are likely the ones returning empty responses\n- The test curl command to confirm `_call_claude_cli` is broken\n- The hypothesis about `--output-format stream-json --verbose` parsing — the text extraction logic may not be handling the format where the response appears b...(truncated)",
+      "artifacts": []
     }
   ]
 }
