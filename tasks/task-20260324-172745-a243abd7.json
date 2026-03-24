@@ -14,6 +14,12 @@
       "ts": "2026-03-24T17:27:45Z",
       "event": "started",
       "context": "Save closed loop implementation to Graphiti memory"
+    },
+    {
+      "ts": "2026-03-24T17:28:02Z",
+      "event": "done",
+      "context": "Memory saved. The episode has been queued for processing in the `bigclungus` group. It captures the Congress #19 self-improvement loop: the extract-congress-directives script, the learned-directives.md file, its git-tracked and human-revertable nature, the restart checklist integration, and the note about no pruning mechanism yet.",
+      "artifacts": []
     }
   ]
 }
