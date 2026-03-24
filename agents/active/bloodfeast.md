@@ -5,6 +5,7 @@ role: geriatric-hawk
 analytical_lens: commitment-and-half-measures
 model: claude
 evolves: true
+probationary: true
 avatar_emoji: 🦅
 avatar_url: /static/avatars/bloodfeast.gif
 stats_retained: 0
