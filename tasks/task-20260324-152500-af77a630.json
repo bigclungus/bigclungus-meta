@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-152500-af77a630",
+  "title": "Document severance reinstatement policy in CLAUDE.md",
+  "agent_id": "af77a6305eb961f78",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T15:25:00Z",
+      "event": "started",
+      "context": "Document severance reinstatement policy in CLAUDE.md"
+    }
+  ]
+}
