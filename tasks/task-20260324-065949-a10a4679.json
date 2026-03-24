@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-065949-a10a4679",
+  "title": "Fix Yuki avatar not showing in congress UI",
+  "agent_id": "a10a46796f8d00044",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T06:59:49Z",
+      "event": "started",
+      "context": "Fix Yuki avatar not showing in congress UI"
+    }
+  ]
+}
