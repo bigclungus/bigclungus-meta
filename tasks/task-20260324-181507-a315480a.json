@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-181507-a315480a",
+  "title": "Invoke Vesper UI analysis of tasks page",
+  "agent_id": "a315480ad218bf9c5",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T18:15:07Z",
+      "event": "started",
+      "context": "Invoke Vesper UI analysis of tasks page"
+    }
+  ]
+}
