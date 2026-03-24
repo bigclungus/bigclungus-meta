@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-072629-a61ac44a",
+  "title": "Verify congress debate context and identity clarity",
+  "agent_id": "a61ac44a044e88363",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": "1485901606691012732",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T07:26:29Z",
+      "event": "started",
+      "context": "Verify congress debate context and identity clarity"
+    }
+  ]
+}
