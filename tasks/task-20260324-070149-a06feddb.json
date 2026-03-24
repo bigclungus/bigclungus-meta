@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-070149-a06feddb",
+  "title": "Rename PM to Chud O'Bikeshedder and fix seat count",
+  "agent_id": "a06feddbea3e7f4c0",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": "1485895904962547743",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T07:01:49Z",
+      "event": "started",
+      "context": "Rename PM to Chud O'Bikeshedder and fix seat count"
+    }
+  ]
+}
