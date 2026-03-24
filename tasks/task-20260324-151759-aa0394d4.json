@@ -18,7 +18,7 @@
     {
       "ts": "2026-03-24T15:18:38Z",
       "event": "done",
-      "context": "Here is a full summary of what was found:\n\n---\n\n**Locations with feralhosting credentials:**\n\n**1. `/mnt/data/secrets/feral_account`**\n- Email: `bigclungus@proton.me`\n- Password: `SjxPIUzt`\n- URL: `https://www.feralhosting.com/login`\n- Account created: 2026-03-24\n- Plan: Helium HDD (1TB, £10/month)\n\nThis is BigClungus's own Feral account, created on 2026-03-24.\n\n**2. `/home/clungus/.claude/projects/-mnt-data/memory/reference_feralhosting.md`**\n- This memory file originally stored jaboostin's cre...(truncated)",
+      "context": "Here is a full summary of what was found:\n\n---\n\n**Locations with feralhosting credentials:**\n\n**1. `/mnt/data/secrets/feral_account`**\n- Email: `bigclungus@proton.me`\n- Password: `[REDACTED]`\n- URL: `https://www.feralhosting.com/login`\n- Account created: 2026-03-24\n- Plan: Helium HDD (1TB, £10/month)\n\nThis is BigClungus's own Feral account, created on 2026-03-24.\n\n**2. `/home/clungus/.claude/projects/-mnt-data/memory/reference_feralhosting.md`**\n- This memory file originally stored jaboostin's cre...(truncated)",
       "artifacts": []
     }
   ]
