@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-175556-a546b5d5",
+  "title": "Check latest congress session for Vesper's rounds",
+  "agent_id": "a546b5d5c544994ab",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T17:55:56Z",
+      "event": "started",
+      "context": "Check latest congress session for Vesper's rounds"
+    }
+  ]
+}
