@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-171122-aabccad4",
+  "title": "Check congress-1774371953 status",
+  "agent_id": "aabccad48e3114098",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T17:11:22Z",
+      "event": "started",
+      "context": "Check congress-1774371953 status"
+    }
+  ]
+}
