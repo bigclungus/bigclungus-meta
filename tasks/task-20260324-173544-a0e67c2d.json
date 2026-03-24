@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-173544-a0e67c2d",
+  "title": "Run full restart checklist",
+  "agent_id": "a0e67c2d3b404df8d",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T17:35:44Z",
+      "event": "started",
+      "context": "Run full restart checklist"
+    }
+  ]
+}
