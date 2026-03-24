@@ -14,6 +14,12 @@
       "ts": "2026-03-24T07:18:26Z",
       "event": "started",
       "context": "Force delete congress-0005"
+    },
+    {
+      "ts": "2026-03-24T07:18:31Z",
+      "event": "done",
+      "context": "Done. `/mnt/data/hello-world/sessions/congress-0005.json` has been deleted.",
+      "artifacts": []
     }
   ]
 }
