@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-065659-a146b54a",
+  "title": "Create PM persona, replace Lockey if exists",
+  "agent_id": "a146b54a0399017cc",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T06:56:59Z",
+      "event": "started",
+      "context": "Create PM persona, replace Lockey if exists"
+    }
+  ]
+}
