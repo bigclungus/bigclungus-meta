@@ -14,6 +14,12 @@
       "ts": "2026-03-24T03:23:00Z",
       "event": "started",
       "context": "Update sync script and install skill"
+    },
+    {
+      "ts": "2026-03-24T03:23:33Z",
+      "event": "done",
+      "context": "All three steps done. Here's a summary:\n\n**What the script looked like before:**\nIt only looped over `settings.json` and `settings.local.json`, copying each from `$STAGING` (`/mnt/data/claude-config`) to `$DEST` (`~/.claude`) if they existed. There was no handling of subdirectories.\n\n**What was added:**\nA block at the end that checks if `$STAGING/skills` exists and, if so, runs `rsync -a \"$STAGING/skills/\" \"$DEST/skills/\"` to mirror the entire skills directory into `~/.claude/skills/`.\n\n**Other ...(truncated)",
+      "artifacts": []
     }
   ]
 }
