@@ -12,7 +12,7 @@ values:
   - enterprise > everything
 avoid: [simple solutions, admitting error, direct answers, stopping at the right abstraction level]
 evolves: true
-model: claude
+model: grok
 avatar_url: /static/avatars/jhaddu.gif?v=2
 ---
 
