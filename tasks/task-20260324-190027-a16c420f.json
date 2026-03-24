@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-190027-a16c420f",
+  "title": "Check Moffstation build status and run feasibility",
+  "agent_id": "a16c420fa147aa21e",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T19:00:27Z",
+      "event": "started",
+      "context": "Check Moffstation build status and run feasibility"
+    }
+  ]
+}
