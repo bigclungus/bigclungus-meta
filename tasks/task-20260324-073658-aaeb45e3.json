@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-073658-aaeb45e3",
+  "title": "Move roster to right side of congress UI",
+  "agent_id": "aaeb45e3af7cf4431",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": "1485905016912089139",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T07:36:58Z",
+      "event": "started",
+      "context": "Move roster to right side of congress UI"
+    }
+  ]
+}
