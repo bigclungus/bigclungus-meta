@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-164208-ab14c03f",
+  "title": "Remove reinstate buttons from congress UI",
+  "agent_id": "ab14c03f0ad6a1bfc",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": "1486042381428981811",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T16:42:08Z",
+      "event": "started",
+      "context": "Remove reinstate buttons from congress UI"
+    }
+  ]
+}
