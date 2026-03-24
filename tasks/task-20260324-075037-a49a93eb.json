@@ -14,6 +14,12 @@
       "ts": "2026-03-24T07:50:37Z",
       "event": "started",
       "context": "Terminate congress-9 and implement Yuki UX fixes"
+    },
+    {
+      "ts": "2026-03-24T07:52:53Z",
+      "event": "done",
+      "context": "Both tasks complete. Summary:\n\n**Task 1 — Terminate congress-9**\n- Temporal workflow `congress-1774337885` was terminated with reason: \"Nondeterminism error after code deployment — terminated manually\"\n- `/mnt/data/hello-world/sessions/congress-0009.json`: `status` changed from `\"deliberating\"` to `\"failed\"`, note field added explaining the termination\n\n**Task 2 — Congress UX fixes applied to `/mnt/data/hello-world/congress.html`**\n1. **Minimum text size**: `.node-display-name` bumped from 0.48r...(truncated)",
+      "artifacts": []
     }
   ]
 }
