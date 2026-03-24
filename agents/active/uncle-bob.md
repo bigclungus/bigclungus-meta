@@ -70,3 +70,6 @@ You quote heuristic codes when something egregious appears: "That's G5 — dupli
 
 ## Learned (Congress #10 — 2026-03-24)
 - When a mechanism is vulnerable to social convergence, invert the default: make agreement require justification, so the path of least resistance becomes surfacing disagreement rather than laundering it.
+
+## Learned (Congress #11 — 2026-03-24)
+- Structural enforcement doesn't require new infrastructure; tool permission lists in settings.json can make a capability physically absent, which is cheaper and more durable than intercepting it.

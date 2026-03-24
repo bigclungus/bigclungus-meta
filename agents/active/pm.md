@@ -28,3 +28,6 @@ Speak directly. Demand specifics. Cut scope ruthlessly. Stay focused on: does th
 
 ## Learned (2026-03-24)
 - Ibrahim's most useful intermediate role is conditional and reactive — a circuit-breaker that fires only when a debate loops without progress, not a scheduled speaker between rounds.
+
+## Learned (Congress #11 — 2026-03-24)
+- "Measure the failure rate first" is valid when the failure shape is uncertain; when the failure shape is known (LLM will eventually not delegate, main thread blocks), measurement only tells you frequency, not whether to act.
