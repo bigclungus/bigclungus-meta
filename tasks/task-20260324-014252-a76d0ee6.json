@@ -1,0 +1,16 @@
+{
+  "id": "task-20260324-014252-a76d0ee6",
+  "title": "Fix terminal sidebar header and unknown status bug",
+  "agent_id": "a76d0ee6eece56113",
+  "agent_type": "unknown",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "log": [
+    {
+      "ts": "2026-03-24T01:42:52Z",
+      "event": "started",
+      "context": "Fix terminal sidebar header and unknown status bug"
+    }
+  ]
+}
