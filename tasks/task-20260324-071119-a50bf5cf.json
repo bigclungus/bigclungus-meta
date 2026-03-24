@@ -14,6 +14,12 @@
       "ts": "2026-03-24T07:11:19Z",
       "event": "started",
       "context": "Fire new congress workflow"
+    },
+    {
+      "ts": "2026-03-24T07:11:27Z",
+      "event": "done",
+      "context": "Workflow started successfully. The workflow ID is **congress-1774336284**.",
+      "artifacts": []
     }
   ]
 }
