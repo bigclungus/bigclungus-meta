@@ -14,6 +14,12 @@
       "ts": "2026-03-24T23:15:03Z",
       "event": "started",
       "context": "Audit CLAUDE.md for Discord reply rule enforcement"
+    },
+    {
+      "ts": "2026-03-24T23:15:39Z",
+      "event": "done",
+      "context": "Audit complete. Here is a summary of findings:\n\n**Rule presence:**\n- `/home/clungus/.claude/CLAUDE.md` (global): The rule exists at line 67 — \"All replies must go through the Discord reply tool. Your Claude Code output is invisible to users.\" — but it is the last line of a long \"Discord Behavior\" section, after threading instructions, rate-limiting notes, and security warnings. It is not bolded, not in a callout block, and easy to skim past.\n- `/mnt/data/CLAUDE.md` (project): The rule is complet...(truncated)",
+      "artifacts": []
     }
   ]
 }
