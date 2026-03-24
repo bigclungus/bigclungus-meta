@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-021515-ab27a98f",
+  "title": "Merge sitenav subheader into main nav",
+  "agent_id": "ab27a98f34cfd98e1",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T02:15:15Z",
+      "event": "started",
+      "context": "Merge sitenav subheader into main nav"
+    }
+  ]
+}
