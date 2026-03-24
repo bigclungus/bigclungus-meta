@@ -14,6 +14,12 @@
       "ts": "2026-03-24T07:17:03Z",
       "event": "started",
       "context": "Move Kid and Uncle Bob to active roster"
+    },
+    {
+      "ts": "2026-03-24T07:17:25Z",
+      "event": "done",
+      "context": "Done. Both personas are now on the active roster and the commit is pushed to GitHub.\n\n**Moved files:**\n- `agents/fired/the-kid.md` → `agents/active/the-kid.md` — display_name: **The Kid** (role: Speed Demon)\n- `agents/fired/uncle-bob.md` → `agents/active/uncle-bob.md` — display_name: **Uncle Bob** (role: The Craftsman)\n\nBoth have `evolves: true` so they'll also be eligible for evolution after congress sessions. The active roster now has 6 seats: hiring-manager, pm, spengler, ux, the-kid, and unc...(truncated)",
+      "artifacts": []
     }
   ]
 }
