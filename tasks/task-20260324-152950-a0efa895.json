@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-152950-a0efa895",
+  "title": "Prevent credentials from ending up in task logs",
+  "agent_id": "a0efa89557b604d3a",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T15:29:50Z",
+      "event": "started",
+      "context": "Prevent credentials from ending up in task logs"
+    }
+  ]
+}
