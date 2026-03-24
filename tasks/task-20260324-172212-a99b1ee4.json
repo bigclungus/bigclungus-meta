@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-172212-a99b1ee4",
+  "title": "Update watchdog to terminate stalled congress sessions",
+  "agent_id": "a99b1ee4bf9b23fff",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T17:22:12Z",
+      "event": "started",
+      "context": "Update watchdog to terminate stalled congress sessions"
+    }
+  ]
+}
