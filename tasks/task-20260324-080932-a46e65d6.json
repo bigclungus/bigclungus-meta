@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-080932-a46e65d6",
+  "title": "Ibrahim pre-debate framing activity",
+  "agent_id": "a46e65d6aeffae55a",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": "1485913160945897633",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T08:09:32Z",
+      "event": "started",
+      "context": "Ibrahim pre-debate framing activity"
+    }
+  ]
+}
