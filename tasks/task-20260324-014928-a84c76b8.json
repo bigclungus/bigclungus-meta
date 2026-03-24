@@ -1,0 +1,16 @@
+{
+  "id": "task-20260324-014928-a84c76b8",
+  "title": "Add foreground/background and metadata to task files",
+  "agent_id": "a84c76b8887d8a154",
+  "agent_type": "unknown",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": "1485817650515808427",
+  "discord_user": null,
+  "log": [
+    {
+      "ts": "2026-03-24T01:49:28Z",
+      "event": "started",
+      "context": "Add foreground/background and metadata to task files"
+    }
+  ]
+}
