@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-064126-a882fb25",
+  "title": "Fix congress bugs: Ibrahim, thread, context, severance UI",
+  "agent_id": "a882fb25028acb78d",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T06:41:26Z",
+      "event": "started",
+      "context": "Fix congress bugs: Ibrahim, thread, context, severance UI"
+    }
+  ]
+}
