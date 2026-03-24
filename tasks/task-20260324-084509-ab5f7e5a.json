@@ -14,6 +14,12 @@
       "ts": "2026-03-24T08:45:09Z",
       "event": "started",
       "context": "Exclude milestone tasks from tasks page"
+    },
+    {
+      "ts": "2026-03-24T08:45:29Z",
+      "event": "done",
+      "context": "Done. Added the filter on line 589 of `/mnt/data/hello-world/tasks.html`, right after `_lastTasks = tasks;`. The filtered array is used for all subsequent bucketing and passed to `updateSummary`, so milestone entries are excluded from both the task list and the summary counts.\n\nCommit hash: `4307c13`",
+      "artifacts": []
     }
   ]
 }
