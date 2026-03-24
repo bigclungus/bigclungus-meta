@@ -14,6 +14,12 @@
       "ts": "2026-03-24T17:05:16Z",
       "event": "started",
       "context": "Fire CongressWorkflow for self-improvement loop"
+    },
+    {
+      "ts": "2026-03-24T17:05:56Z",
+      "event": "done",
+      "context": "The CongressWorkflow was successfully started.\n\nWorkflow ID: `congress-1774371953`\n\nThe congress is now running on Temporal with task queue `listings-queue`. It will deliberate on the minimum viable closed loop for self-improvement between sessions and post the verdict to Discord thread in chat `1485343472952148008`.",
+      "artifacts": []
     }
   ]
 }
