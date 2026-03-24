@@ -14,6 +14,12 @@
       "ts": "2026-03-24T15:19:23Z",
       "event": "started",
       "context": "Investigate and fix Discord threading issues"
+    },
+    {
+      "event": "done",
+      "ts": "2026-03-24T16:00:19.256481Z",
+      "message": "Investigation complete: found 4 issues - inject missing is_thread, thread auto-join missing, allowlist check correct, GuildMessageThreads intent. Fixes delegated to separate task (task-20260324-154615-aa59b144)."
     }
-  ]
+  ],
+  "status": "done"
 }
