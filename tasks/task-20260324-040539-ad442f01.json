@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-040539-ad442f01",
+  "title": "Add persona evolution via congress to congress workflow",
+  "agent_id": "ad442f01344dfbd82",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T04:05:39Z",
+      "event": "started",
+      "context": "Add persona evolution via congress to congress workflow"
+    }
+  ]
+}
