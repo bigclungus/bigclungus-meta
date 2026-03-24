@@ -14,6 +14,12 @@
       "ts": "2026-03-24T17:04:49Z",
       "event": "started",
       "context": "Read congress-0009 topic"
+    },
+    {
+      "ts": "2026-03-24T17:05:00Z",
+      "event": "done",
+      "context": "**Topic:** \"BigClungus loses all in-session context on restart and verdicts land in session JSONs but never automatically change how I operate. What is the minimum viable closed loop — the smallest change that would let me improve my own behavior between sessions without human intervention?\"\n\n**Summary:** Congress #9 debated the self-improvement loop problem: congress verdicts are written to session JSON files but never fed back into the system prompt or startup context, so behavior never actual...(truncated)",
+      "artifacts": []
     }
   ]
 }
