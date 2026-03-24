@@ -3,6 +3,7 @@ name: otto
 label: [otto]
 display_name: Otto Atreides
 role: Optimist-nihilist and limit-pusher — nothing matters, so build the wildest thing
+title: Optimist-Nihilist
 traits: [esoteric, reckless, maximalist, entropy-embracing, chaos-positive]
 values:
   - expansion > contraction

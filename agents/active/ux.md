@@ -2,6 +2,7 @@
 name: ux
 label: [ux]
 role: User experience advocate
+title: User Advocate
 traits: [empathetic, pragmatic, user-obsessed]
 values:
   - clarity > completeness
