@@ -14,6 +14,12 @@
       "ts": "2026-03-24T02:12:36Z",
       "event": "started",
       "context": "Add maintenance mode to healthcheck"
+    },
+    {
+      "ts": "2026-03-24T02:13:11Z",
+      "event": "done",
+      "context": "Done. Here's a summary of what was changed:\n\n**`/mnt/data/temporal-workflows/activities/healthcheck_act.py`**\nAt the end of `check_sites`, before returning, sets `results[\"__maintenance__\"] = os.path.exists(\"/tmp/bc-maintenance\")`.\n\n**`/mnt/data/temporal-workflows/workflows/healthcheck_wf.py`**\nAfter the activity returns, pops `__maintenance__` from the results dict into a `maintenance_mode` bool. For both `newly_down` and `recovered` loops, the `send_alert` activity call is wrapped in `if not m...(truncated)",
+      "artifacts": []
     }
   ]
 }
