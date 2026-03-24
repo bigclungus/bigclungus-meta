@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-213432-afbab76a",
+  "title": "Add cache-busting to sitenav.js script tags",
+  "agent_id": "afbab76ac0de405f7",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T21:34:31Z",
+      "event": "started",
+      "context": "Add cache-busting to sitenav.js script tags"
+    }
+  ]
+}
