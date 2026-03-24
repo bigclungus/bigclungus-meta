@@ -1,0 +1,19 @@
+{
+  "id": "task-20260324-043104-af86d2f3",
+  "title": "Update congress page speech bubbles and topic modal",
+  "agent_id": "af86d2f36e94c0e8b",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-24T04:31:04Z",
+      "event": "started",
+      "context": "Update congress page speech bubbles and topic modal"
+    }
+  ]
+}
