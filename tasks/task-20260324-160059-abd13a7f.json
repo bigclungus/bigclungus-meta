@@ -14,6 +14,12 @@
       "ts": "2026-03-24T16:00:58Z",
       "event": "started",
       "context": "Code Quality Review - simplify pass"
+    },
+    {
+      "ts": "2026-03-24T16:02:24Z",
+      "event": "done",
+      "context": "Now I have enough to write a thorough review. Here are the findings:\n\n---\n\n## Code Quality Review\n\n### `temporal-workflows/activities/congress_act.py`\n\n**Massive copy-paste: `congress_graphiti_context` vs `congress_frame_topic` (lines 849–1026)**\n\nBoth functions are ~90% identical: same FalkorDB connection setup, same keyword extraction, same two-phase query loop (Entity then Episodic), same dedup pattern, same finally-block connection teardown. The only differences are the return format (one re...(truncated)",
+      "artifacts": []
     }
   ]
 }
