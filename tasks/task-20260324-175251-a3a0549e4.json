@@ -19,6 +19,11 @@
       "event": "milestone",
       "ts": "2026-03-24T17:52:51Z",
       "message": "Source verdict: **SYNTHESIS \u2014 Congress #20: clung.us Site Review**\n\nThe panel unanimously agrees the congress viewer is the crown jewel \u2014 the one component that demonstrates genuine capability rather than aesthetic n..."
+    },
+    {
+      "ts": "2026-03-24T18:10:05Z",
+      "event": "stale",
+      "message": "No dashboard implemented. index.html still shows the old \"Hello World\" page. Work not started \u2014 stale pending future effort."
     }
   ]
 }

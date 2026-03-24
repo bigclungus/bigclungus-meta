@@ -19,6 +19,11 @@
       "event": "milestone",
       "ts": "2026-03-24T15:05:38Z",
       "message": "Source verdict: The heartbeat is operationally sound \u2014 overnight drift is a real failure mode, and a 15-minute pulse with a narrow, GitHub-anchored task scope is a reasonable constraint. The \"self-improvement autonom..."
+    },
+    {
+      "ts": "2026-03-24T18:10:05Z",
+      "event": "done",
+      "message": "HeartbeatWorkflow implemented in temporal-workflows/workflows/heartbeat_wf.py, registered in worker.py. 15-minute inject pulse fires [heartbeat] to main channel."
     }
   ]
 }

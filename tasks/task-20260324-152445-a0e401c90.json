@@ -19,6 +19,11 @@
       "event": "milestone",
       "ts": "2026-03-24T15:24:45Z",
       "message": "Source verdict: Reinstatement requires a demonstrated gap \u2014 not nostalgia, not a slow news cycle, but a concrete debate where Spengler's specific lens would have changed the outcome and no active persona could fill i..."
+    },
+    {
+      "ts": "2026-03-24T18:10:05Z",
+      "event": "done",
+      "message": "Severance reinstatement policy documented in CLAUDE.md (claude-config commit 5983f48): demonstrated-gap bar, Ibrahim decides, probationary session, RETAIN/FIRE verdict."
     }
   ]
 }

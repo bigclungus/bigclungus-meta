@@ -25,6 +25,11 @@
       "event": "milestone",
       "ts": "2026-03-24T08:21:51.919699Z",
       "message": "Testing log helper \u2014 pre-debate framing implemented and worker restarted"
+    },
+    {
+      "ts": "2026-03-24T18:10:05Z",
+      "event": "done",
+      "message": "Work completed per log entry at 08:11 \u2014 congress_frame_topic activity implemented and worker restarted. Subsequent milestone was a test of the log helper, not new work."
     }
   ]
 }

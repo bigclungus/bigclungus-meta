@@ -19,6 +19,11 @@
       "event": "milestone",
       "ts": "2026-03-24T17:25:14Z",
       "message": "Source verdict: **SYNTHESIS**\n\nThe crux is not technical \u2014 it's governance. Every debater proposed some variant of \"read past verdicts and auto-apply learnings,\" but they split on whether this should be autonomous or..."
+    },
+    {
+      "ts": "2026-03-24T18:10:05Z",
+      "event": "done",
+      "message": "extract-congress-directives.py built and deployed; learned-directives.md created in bigclungus-meta; wired into CLAUDE.md startup instructions (commits 9b7051f, 8437f69, 7a57b4f)."
     }
   ]
 }

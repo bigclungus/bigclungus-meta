@@ -19,6 +19,11 @@
       "event": "milestone",
       "ts": "2026-03-24T15:24:45Z",
       "message": "Source verdict: Reinstatement requires a demonstrated gap \u2014 not nostalgia, not a slow news cycle, but a concrete debate where Spengler's specific lens would have changed the outcome and no active persona could fill i..."
+    },
+    {
+      "ts": "2026-03-24T18:10:05Z",
+      "event": "stale",
+      "message": "Policy is documented in CLAUDE.md but no workflow-level probationary enforcement was implemented in congress_wf.py or serve.py. Stale \u2014 needs explicit implementation work."
     }
   ]
 }

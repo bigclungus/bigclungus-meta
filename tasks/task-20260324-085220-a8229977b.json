@@ -19,6 +19,11 @@
       "event": "milestone",
       "ts": "2026-03-24T08:52:20Z",
       "message": "Source verdict: Option 2 \u2014 the Bash hook hardening \u2014 is the only candidate that fixes a failure mode already causing real damage: every time BigClungus runs a shell command on the main thread, the bot goes dark and u..."
+    },
+    {
+      "ts": "2026-03-24T18:10:05Z",
+      "event": "done",
+      "message": "Bash hook (bash-intercept.sh) was created at 07:55 and blocks main-thread Bash calls. CLAUDE.md escape hatches closed in commit 41ae925. Core objective achieved."
     }
   ]
 }
