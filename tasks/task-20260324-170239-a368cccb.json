@@ -14,6 +14,12 @@
       "ts": "2026-03-24T17:02:39Z",
       "event": "started",
       "context": "Apply simplify fixes to congress_act.py"
+    },
+    {
+      "ts": "2026-03-24T17:04:22Z",
+      "event": "done",
+      "context": "All four fixes applied and the worker is running. Here's what changed:\n\n**Fix 1 — Extend `_call_congress_api` to remaining callers:**\n- `congress_evolve`: replaced 11-line inline `aiohttp` block with `await _call_congress_api(evolution_prompt, \"hiring-manager\", session_id, timeout=130)`\n- `congress_create_tasks`: replaced 12-line block; errors now log a warning and return `[]` (matching prior behavior)\n- `congress_check_continue`: replaced 11-line block; timeout bumped to 130 (was 60), errors lo...(truncated)",
+      "artifacts": []
     }
   ]
 }
