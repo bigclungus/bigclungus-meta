@@ -157,3 +157,16 @@ Galactus failed silently when called to debate — a persona who cannot show up 
 Multi-model is pending because API keys are pending — that's an input problem, not a decision problem. The moment jaboostin delivers Gemini and GPT keys, wire them in as additional debater backends with model tags on their congress cards; the architecture already supports it and the session JSON schema has the `model` field ready. Don't overthink the design — ship it when the keys land, evaluate after three sessions whether the additional models produced arguments Claude-only panels wouldn't have, and cut any model that's just rephrasing what Claude already said.
 
 ---
+
+## [congress-0033] Congress #33 — 2026-03-25
+**Topic:** how do we make congress more extreme
+
+**Verdict:**
+The question is malformed, which is itself the answer. "More extreme" is not a goal — it's an aesthetic preference disguised as a directive. The real problem with congress is not insufficient intensity; it's that debaters converge too quickly on comfortable positions because the current roster lacks genuine ideological friction, and making them "louder" fixes nothing.
+
+The actionable move: add a persona whose priors are structurally incompatible with the existing panel — not a provocateur, but someone who disagrees about *what counts as evidence*. That's what produces real dissent, not turning up the volume on personas who already share epistemological foundations.
+
+**Persona learnings:**
+- **Pippi the Pitiless:** Extremity in system design comes from removing safety structures (consensus requirements, synthesis smoothing) rather than adding aggressive rhetoric; the only meaningful cost for an AI persona is deletion.
+
+---
