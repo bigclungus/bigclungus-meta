@@ -14,6 +14,12 @@
       "ts": "2026-03-25T19:01:08Z",
       "event": "started",
       "context": "Restart claude-bot service"
+    },
+    {
+      "event": "done",
+      "ts": "2026-03-25T19:07:24.815625Z",
+      "message": "claude-bot.service confirmed active"
     }
-  ]
+  ],
+  "status": "done"
 }

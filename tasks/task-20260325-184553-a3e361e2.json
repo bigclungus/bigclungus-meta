@@ -14,6 +14,12 @@
       "ts": "2026-03-25T18:45:53Z",
       "event": "started",
       "context": "Implement congress task injection with auto-execute logic"
+    },
+    {
+      "event": "done",
+      "ts": "2026-03-25T19:07:01.445658Z",
+      "message": "Work completed \u2014 congress task injection with auto-execute logic implemented in temporal-workflows (commit c9e2435)"
     }
-  ]
+  ],
+  "status": "done"
 }

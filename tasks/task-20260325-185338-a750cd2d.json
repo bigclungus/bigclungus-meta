@@ -14,6 +14,12 @@
       "ts": "2026-03-25T18:53:37Z",
       "event": "started",
       "context": "Discord plugin reaction enhancement"
+    },
+    {
+      "event": "done",
+      "ts": "2026-03-25T19:07:01.416754Z",
+      "message": "Work completed \u2014 discord plugin reaction enhancement (is_thread flag + message context) shipped via claude-config commits 53918844 and 3c93a8e"
     }
-  ]
+  ],
+  "status": "done"
 }
