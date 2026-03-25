@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-215302-a1385a71",
+  "title": "Create congressional reform thread",
+  "agent_id": "a1385a71e6da18617",
+  "agent_type": "general-purpose",
+  "session_id": "e4d4bf00-991b-4f0e-aac7-2ab4056f18c5",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T21:53:02Z",
+      "event": "started",
+      "context": "Create congressional reform thread"
+    }
+  ]
+}
