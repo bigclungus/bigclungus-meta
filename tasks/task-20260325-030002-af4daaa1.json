@@ -14,6 +14,12 @@
       "ts": "2026-03-25T03:00:02Z",
       "event": "started",
       "context": "Rework Nemesis/Spokesman persona as stakeholder enforcer"
+    },
+    {
+      "ts": "2026-03-25T03:01:53Z",
+      "event": "done",
+      "context": "Everything done. Here's a summary of what changed:\n\n**File:** `/home/clungus/work/bigclungus-meta/agents/active/nemesis.md`\n\n**What changed:**\n\n- `role`: \"Continuity auditor and integrity enforcer\" → \"Enforcer of stakeholder will\"\n- `title`: \"The Auditor\" → \"The Spokesman\"\n- `traits`: replaced archival/factual traits with cold, brief, authoritative, final, watchful\n- `values`: replaced consistency/record/accountability with mandate > procedure and stakeholder intent > congress self-regard\n- `dis...(truncated)",
+      "artifacts": []
     }
   ]
 }
