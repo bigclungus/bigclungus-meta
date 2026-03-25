@@ -14,6 +14,12 @@
       "ts": "2026-03-25T03:32:26Z",
       "event": "started",
       "context": "Check if Discord plugin enrichment landed"
+    },
+    {
+      "ts": "2026-03-25T03:33:02Z",
+      "event": "done",
+      "context": "That's the definitive answer.\n\n**No — the Discord plugin enrichment is NOT live.**\n\nHere's what the checks found:\n\n- The enrichment code (`referenced_message`, `thread_context`) exists in the work-in-progress source at `/home/clungus/work/claude-config/channels/discord/server.ts` (modified Mar 25 03:27).\n- The actual running plugin is at `/home/clungus/.claude/plugins/cache/claude-plugins-official/discord/0.0.2/server.ts` — and it has **zero matches** for any enrichment patterns.\n- The two files...(truncated)",
+      "artifacts": []
     }
   ]
 }
