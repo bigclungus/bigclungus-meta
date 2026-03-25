@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-195413-a6f41e6c",
+  "title": "Avatar variants 3 and 4",
+  "agent_id": "a6f41e6cd30ed07e1",
+  "agent_type": "general-purpose",
+  "session_id": "10aea33b-fa3c-4aaf-bdde-c2afde7dcc15",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T19:54:13Z",
+      "event": "started",
+      "context": "Avatar variants 3 and 4"
+    }
+  ]
+}
