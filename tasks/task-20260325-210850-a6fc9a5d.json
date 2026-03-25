@@ -14,6 +14,12 @@
       "ts": "2026-03-25T21:08:50Z",
       "event": "started",
       "context": "Debug last pulse not populating on homepage"
+    },
+    {
+      "ts": "2026-03-25T21:14:03Z",
+      "event": "done",
+      "context": "No service restart needed — clunger serves HTML files directly from disk on each request.\n\n---\n\n**Root cause:** The `catch` block in `index.html`'s fetch handler only updated `active-list` and `feed-list` when the `/api/tasks` call failed — it never touched the `last-pulse` element. So when a visitor hits the homepage without a valid `tauth_github` cookie (or when the cookie expires), the API returns HTTP 403, the catch fires, and `last-pulse` stays at its initial HTML value of `—`.\n\nThe underly...(truncated)",
+      "artifacts": []
     }
   ]
 }
