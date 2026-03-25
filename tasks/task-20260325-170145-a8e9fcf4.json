@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-170145-a8e9fcf4",
+  "title": "Parity test and fix loop until perfect",
+  "agent_id": "a8e9fcf434a1eef4a",
+  "agent_type": "general-purpose",
+  "session_id": "4a58e62d-fa69-4ca2-a0a8-edcc21bb73c1",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T17:01:45Z",
+      "event": "started",
+      "context": "Parity test and fix loop until perfect"
+    }
+  ]
+}
