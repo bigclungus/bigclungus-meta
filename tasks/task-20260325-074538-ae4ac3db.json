@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-074538-ae4ac3db",
+  "title": "Review congress system and temporal workflows",
+  "agent_id": "ae4ac3dbd9390a3a2",
+  "agent_type": "Explore",
+  "session_id": "b3b81058-3ae5-4475-8bf9-fe36bfe513ed",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T07:45:38Z",
+      "event": "started",
+      "context": "Review congress system and temporal workflows"
+    }
+  ]
+}
