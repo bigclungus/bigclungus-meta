@@ -14,6 +14,12 @@
       "ts": "2026-03-25T06:58:05Z",
       "event": "started",
       "context": "Fix model routing for congress debates"
+    },
+    {
+      "ts": "2026-03-25T07:00:08Z",
+      "event": "done",
+      "context": "All the `_call_congress_api` calls (for evolve, check_ibrahim, select_seats, create_tasks, vote) pass `identity` as the name, and the server-side handler uses that name to look up the model from the DB. Model routing is server-side and already works correctly.\n\nThe conclusion is clear: **the bug described in the task does not exist in the current codebase.** The model routing is already correctly implemented in `serve.py`'s `_handle_congress_post`:\n\n- It looks up the persona's model from `_PERSO...(truncated)",
+      "artifacts": []
     }
   ]
 }
