@@ -14,6 +14,12 @@
       "ts": "2026-03-25T06:35:27Z",
       "event": "started",
       "context": "Post Ferrix wolf to workshop thread"
+    },
+    {
+      "ts": "2026-03-25T06:35:39Z",
+      "event": "done",
+      "context": "Posted successfully. The message landed in thread `1486251407660290068` with message ID `1486252192561106984`. The `ferris.gif` attachment was accepted (8 KB, 64x64) and is live on Discord CDN.",
+      "artifacts": []
     }
   ]
 }
