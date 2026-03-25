@@ -19,6 +19,12 @@
       "event": "failed",
       "ts": "2026-03-25T06:05:35.137752Z",
       "message": "interrupted by bot restart 2026-03-25"
+    },
+    {
+      "ts": "2026-03-25T06:06:13Z",
+      "event": "done",
+      "context": "The workflow started successfully.\n\nWorkflow ID: `congress-1774418765`\n\n`WorkflowIDReusePolicy` needed to be imported from `temporalio.common` rather than `temporalio.client` in this version of the SDK. Otherwise the call went through cleanly — CongressWorkflow is now running on the `listings-queue` task queue with the topic \"how do we make congress more extreme\".",
+      "artifacts": []
     }
   ],
   "status": "failed"
