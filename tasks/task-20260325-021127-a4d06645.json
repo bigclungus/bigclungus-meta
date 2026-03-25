@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-021127-a4d06645",
+  "title": "Re-fire congress with full self-funding context",
+  "agent_id": "a4d06645c86340a8b",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T02:11:27Z",
+      "event": "started",
+      "context": "Re-fire congress with full self-funding context"
+    }
+  ]
+}
