@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-070936-a9692bd2",
+  "title": "Diagnose multi-model congress routing end-to-end",
+  "agent_id": "a9692bd2cd3b74814",
+  "agent_type": "general-purpose",
+  "session_id": "a73508af-b739-48f4-b9cb-a7829a4a15c0",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T07:09:36Z",
+      "event": "started",
+      "context": "Diagnose multi-model congress routing end-to-end"
+    }
+  ]
+}
