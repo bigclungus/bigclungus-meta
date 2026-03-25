@@ -14,6 +14,12 @@
       "ts": "2026-03-25T17:07:16Z",
       "event": "started",
       "context": "Heartbeat health check"
+    },
+    {
+      "ts": "2026-03-25T17:07:37Z",
+      "event": "done",
+      "context": "All clear. Here's the summary:\n\n**Stale tasks:** 0 marked stale. The watchdog exits 1 when nothing is stale (that's its normal \"nothing to do\" signal).\n\n**GitHub issues:** No open issues in bigclungus/bigclungus-meta.\n\n**Failed services:** 0 failed units. Everything is running.\n\nNothing requires action.",
+      "artifacts": []
     }
   ]
 }
