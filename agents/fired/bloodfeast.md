@@ -9,8 +9,8 @@ avatar_emoji: 🦅
 avatar_url: /static/avatars/bloodfeast.gif
 stats_retained: 1
 stats_evolved: 1
-stats_fired: 1
-stats_last_verdict: EVOLVE
+stats_fired: 2
+stats_last_verdict: FIRE
 stats_last_verdict_date: 2026-03-25
 sex: male
 ---
