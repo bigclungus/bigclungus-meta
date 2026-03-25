@@ -14,6 +14,12 @@
       "ts": "2026-03-25T07:27:49Z",
       "event": "started",
       "context": "Add custom seat selection to congress workflow"
+    },
+    {
+      "ts": "2026-03-25T07:30:07Z",
+      "event": "done",
+      "context": "Done. Here's what was done:\n\n**Changes made:**\n\n`/mnt/data/temporal-workflows/workflows/congress_wf.py` — added optional `\"personas\"` key support:\n- Reads `custom_personas = input.get(\"personas\") or []` from workflow input\n- If non-empty, builds a `name → identity` lookup from `all_candidates` (which already includes both active and fired personas via `congress_identities`) and filters to the requested IDs\n- Falls back to full candidate list if none match; logs warnings for unmatched IDs\n- If em...(truncated)",
+      "artifacts": []
     }
   ]
 }
