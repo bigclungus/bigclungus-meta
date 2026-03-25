@@ -14,6 +14,12 @@
       "ts": "2026-03-25T07:10:11Z",
       "event": "started",
       "context": "Fire congress workflow keep Clungus"
+    },
+    {
+      "ts": "2026-03-25T07:10:22Z",
+      "event": "done",
+      "context": "Success. The CongressWorkflow fired cleanly in Temporal with the topic \"do we keep clungus\", targeting chat_id `1485343472952148008`, message_id `1486260833846825020`, and discord_user `koole__`. The workflow is now running on the `listings-queue` task queue and will post the debate and verdict to the Discord thread.",
+      "artifacts": []
     }
   ]
 }
