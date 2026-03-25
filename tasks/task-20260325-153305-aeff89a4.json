@@ -14,6 +14,12 @@
       "ts": "2026-03-25T15:33:05Z",
       "event": "started",
       "context": "Efficiency review"
+    },
+    {
+      "ts": "2026-03-25T15:33:49Z",
+      "event": "done",
+      "context": "Here are the findings, issue by issue:\n\n---\n\n## 1. FalkorDB connections — created per-call (confirmed issue)\n\n**`congress_act.py`, line 82–89** and **`word_activity.py`, line 62–67**: Both create a brand-new `FalkorDB(...)` TCP connection every time the helper function is called. There is no module-level singleton, no connection pool, no reuse. The `import falkordb as _falkordb` inside the function body in `congress_act.py` also means the import machinery runs on every invocation (minor but unne...(truncated)",
+      "artifacts": []
     }
   ]
 }
