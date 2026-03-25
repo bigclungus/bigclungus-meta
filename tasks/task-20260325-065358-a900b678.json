@@ -14,6 +14,12 @@
       "ts": "2026-03-25T06:53:58Z",
       "event": "started",
       "context": "Adelbert portrait round C/D"
+    },
+    {
+      "ts": "2026-03-25T06:56:37Z",
+      "event": "done",
+      "context": "Both GIFs posted to Discord successfully. Here's a summary:\n\n**Avatar C - \"The Interrogation Light\"** (`adelbert_c.gif`, 2.9KB)\nExtreme minimalism. Near-total blackness with a single harsh spotlight cone from above. The figure is pure shadow silhouette — you cannot see a face, only two burning red-orange eyes. Animation: a slow contemptuous blink, the light flickers between cold fluorescent blue-white and warm, head tilts slightly. The attack comes from the dark before you can see who's attackin...(truncated)",
+      "artifacts": []
     }
   ]
 }
