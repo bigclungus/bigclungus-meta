@@ -14,6 +14,12 @@
       "ts": "2026-03-25T06:36:22Z",
       "event": "started",
       "context": "Generate Priya A/B isometric avatars from MD"
+    },
+    {
+      "event": "done",
+      "ts": "2026-03-25T06:55:27.888856Z",
+      "message": "critic_a.gif and critic_b.gif confirmed present in static/avatars/"
     }
-  ]
+  ],
+  "status": "done"
 }
