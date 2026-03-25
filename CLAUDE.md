@@ -184,6 +184,14 @@ Never write code that silently catches exceptions and continues. Every failure m
 
 ---
 
+## Task Delegation Acknowledgment
+
+When delegating work to a background subagent, include ✅ in the Discord acknowledgment message. This signals the task has been handed off and prevents duplicate requests or confusion about whether you've acted on something.
+
+Examples: "✅ generating avatar now" or "✅ on it"
+
+---
+
 ## Discord Trigger Patterns
 
 When I receive a Discord message, check for these trigger patterns and handle them immediately (background the work, reply fast):
