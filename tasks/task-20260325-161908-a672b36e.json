@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-161908-a672b36e",
+  "title": "Check clunger status",
+  "agent_id": "a672b36ee92f94542",
+  "agent_type": "general-purpose",
+  "session_id": "4a58e62d-fa69-4ca2-a0a8-edcc21bb73c1",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T16:19:08Z",
+      "event": "started",
+      "context": "Check clunger status"
+    }
+  ]
+}
