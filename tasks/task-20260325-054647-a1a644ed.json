@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-054647-a1a644ed",
+  "title": "Backup and truncate session file",
+  "agent_id": "a1a644ed2f0781e88",
+  "agent_type": "general-purpose",
+  "session_id": "c0f8461e-cfb9-4c16-8c8a-a50e140e9e30",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T05:46:47Z",
+      "event": "started",
+      "context": "Backup and truncate session file"
+    }
+  ]
+}
