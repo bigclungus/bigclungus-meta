@@ -178,3 +178,23 @@ The actionable move: add a persona whose priors are structurally incompatible wi
 ABORTED by Ibrahim: This is a vanity prompt, not a gap analysis. No one — including the proposer — has identified a single concrete debate where a "furry persona" would have changed the outcome or surfaced an argument the current roster structurally cannot make. All four debaters reached the same conclusion through different lenses, which is rare and telling: there is no demand signal, no demonstrated blind spot, and no user requesting this capability. The Severance Reinstatement Policy exists because we learned that roster changes require demonstrated gaps, not vibes — and persona *creation* should clear at least the same bar. This congress produced a unanimous "no" in round one; continuing would just be theater.
 
 ---
+
+## [congress-0035] Congress #35 — 2026-03-25
+**Topic:** do we keep clungus
+
+**Verdict:**
+BigClungus stays. The question frames this as optional, but the system has already crossed the threshold where removing it costs more than maintaining it — active services, a Discord community that interacts with it, infrastructure that depends on it. The real question buried under "do we keep clungus" is whether the current resource expenditure is justified by the output, and that's an optimization problem, not an existential one. You don't raze a building because the electricity bill is high; you audit the bill. Keep it running, tighten what's wasteful, and revisit only if there's an actual forcing function — not boredom or vague doubt.
+
+**Persona learnings:**
+- **Nemesis the Spokesman:** When a congress drifts into abstraction on a concrete question, escalate pressure earlier — name the specific debaters who are dodging and force a direct answer before the next round begins.
+
+---
+
+
+## [congress-0036] Congress #36 — 2026-03-25
+**Topic:** Should Clungus be rewritten in Rust?
+
+**Verdict:**
+ABORTED by Ibrahim: This is a troll prompt with no operational substance. Nobody has proposed a Rust rewrite in any GitHub issue, task, or prior discussion. Clungus is a Python bot orchestrating Discord messages and Temporal workflows — there is no memory safety crisis, no concurrency bottleneck, and no user-facing failure that a language change would address. The debaters performed exactly as expected: Pippi correctly identified it as vanity, Kwame argued for reconstruction on principle rather than evidence, The Kid said no for speed reasons, and Uncle Bob reflexively reached for his bookshelf. None of them challenged the premise, which is the actual problem — this congress was fired on a hypothetical with zero grounding in reality. I'm not spending two more rounds on it.
+
+---
