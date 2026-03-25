@@ -14,6 +14,12 @@
       "ts": "2026-03-25T16:41:15Z",
       "event": "started",
       "context": "Fix clunger parity blockers"
+    },
+    {
+      "ts": "2026-03-25T16:44:01Z",
+      "event": "done",
+      "context": "All fixes applied and service is running. Here's a summary:\n\n**Fix 1 — Task status derivation** (`src/services/task.ts`): Added `deriveStatus()` that walks `data.log[]` when `data.status` is absent. Falls through: `done`/`failed`/`blocked` log events map directly; everything else becomes `in_progress`. Also derives `startedAt`, `finishedAt`, and `summary` from log entries when the top-level fields are missing.\n\n**Fix 2 — GetSession double-encoding** (`src/services/congress.ts`): No change needed...(truncated)",
+      "artifacts": []
     }
   ]
 }
