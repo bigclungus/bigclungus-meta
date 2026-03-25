@@ -14,6 +14,12 @@
       "ts": "2026-03-25T06:50:23Z",
       "event": "started",
       "context": "Add wolf vocalizations to Ferrus persona"
+    },
+    {
+      "ts": "2026-03-25T06:50:44Z",
+      "event": "done",
+      "context": "Done. Here's what changed in `/mnt/data/bigclungus-meta/agents/active/wolf.md`:\n\nAdded two sentences immediately before the final \"Deliver responses as Ferrus\" line:\n\n- Documents the four vocalizations (*grr*, *awoo*, *ruff*, *hrm*) with their emotional mappings: frustration, excitement, dismissal\n- Specifies they appear as italicized interjections woven into speech, not on separate lines\n\nEverything else in the persona — his debate style, physical descriptions, Rust evangelism, C++ scars — is u...(truncated)",
+      "artifacts": []
     }
   ]
 }
