@@ -18,7 +18,12 @@
     {
       "event": "milestone",
       "ts": "2026-03-25T07:18:05Z",
-      "message": "Source verdict: BigClungus stays. The question frames this as optional, but the system has already crossed the threshold where removing it costs more than maintaining it \u2014 active services, a Discord community that in..."
+      "message": "Source verdict: BigClungus stays. The question frames this as optional, but the system has already crossed the threshold where removing it costs more than maintaining it — active services, a Discord community that in..."
+    },
+    {
+      "ts": "2026-03-25T18:35:02Z",
+      "event": "failed",
+      "context": "Auto-closed: task was congress-generated but never picked up. Watchdog missed it due to milestone-as-last-event bug (now fixed)."
     }
   ]
 }

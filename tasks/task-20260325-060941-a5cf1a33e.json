@@ -18,7 +18,12 @@
     {
       "event": "milestone",
       "ts": "2026-03-25T06:09:41Z",
-      "message": "Source verdict: The question is malformed, which is itself the answer. \"More extreme\" is not a goal \u2014 it's an aesthetic preference disguised as a directive. The real problem with congress is not insufficient intensit..."
+      "message": "Source verdict: The question is malformed, which is itself the answer. \"More extreme\" is not a goal — it's an aesthetic preference disguised as a directive. The real problem with congress is not insufficient intensit..."
+    },
+    {
+      "ts": "2026-03-25T18:35:02Z",
+      "event": "failed",
+      "context": "Auto-closed: task was congress-generated but never picked up. Watchdog missed it due to milestone-as-last-event bug (now fixed)."
     }
   ]
 }
