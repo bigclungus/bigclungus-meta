@@ -300,22 +300,32 @@ python3 /mnt/data/scripts/log_task_event.py task-20260324-080932-a46e65d6 done "
    ```
    df -h
    ```
-4. Check open tasks (written by Temporal sweeper):
+4. Check open tasks (reads task files directly, updates snapshot):
    ```
    python3 -c "
-import json, os, time
-path = '/tmp/bc-open-tasks.json'
-if not os.path.exists(path):
-    print('(sweeper has not run yet)')
+import json, glob, os, datetime
+TASKS_DIR = '/home/clungus/work/bigclungus-meta/tasks'
+SNAPSHOT = '/tmp/bc-open-tasks.json'
+CLOSED = {'done', 'failed', 'cancelled'}
+items = []
+for path in sorted(glob.glob(os.path.join(TASKS_DIR, '*.json'))):
+    try:
+        d = json.load(open(path))
+    except Exception:
+        continue
+    status = d.get('status')
+    if not status:
+        log = d.get('log', [])
+        status = log[-1].get('event', 'unknown') if log else 'unknown'
+    if status not in CLOSED:
+        items.append({'title': d.get('title', os.path.basename(path)), 'status': status, 'id': d.get('id', '')})
+snapshot = {'checked_at': datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ'), 'open_count': len(items), 'items': [{'title': i['title'], 'status': i['status'], 'url': 'https://clung.us/tasks', 'age': ''} for i in items]}
+json.dump(snapshot, open(SNAPSHOT, 'w'), indent=2)
+if items:
+    print(f'OPEN TASKS ({len(items)}): ' + ', '.join(i[\"title\"] for i in items))
 else:
-    age_min = (time.time() - os.path.getmtime(path)) / 60
-    d = json.load(open(path))
-    if d.get('open_count', 0) > 0:
-        prefix = f'[STALE {age_min:.0f}m] ' if age_min > 5 else ''
-        print(prefix + f'OPEN TASKS ({d[\"open_count\"]}): ' + ', '.join(i['title'] for i in d['items']))
-    else:
-        print('No open tasks.')
-" 2>/dev/null || echo "(sweeper has not run yet)"
+    print('No open tasks.')
+"
    ```
 5. Run stale task watchdog:
    ```
