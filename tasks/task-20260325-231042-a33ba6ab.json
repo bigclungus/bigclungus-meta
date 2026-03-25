@@ -14,6 +14,12 @@
       "ts": "2026-03-25T23:10:42Z",
       "event": "started",
       "context": "Confirm trust prompt in Giga screen"
+    },
+    {
+      "ts": "2026-03-25T23:11:13Z",
+      "event": "done",
+      "context": "It moved past the trust prompt. Now it's at a new prompt asking about a custom API key detected in the environment (`ANTHROPIC_API_KEY: sk-ant-...__DxcTvpqVg-laXykwAA`). The options are:\n\n1. Yes\n2. No (recommended) — currently selected (option 2 is highlighted with `o`)\n\nThe screen is now at: **\"Detected a custom API key in your environment — Do you want to use this API key?\"** with option 2 \"No (recommended)\" pre-selected.\n\nWhat should be sent next — select Yes (1) to use the custom key, or con...(truncated)",
+      "artifacts": []
     }
   ]
 }
