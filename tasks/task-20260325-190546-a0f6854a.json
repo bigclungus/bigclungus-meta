@@ -18,7 +18,13 @@
     {
       "event": "done",
       "ts": "2026-03-25T19:07:30.299291Z",
-      "message": "Task audit complete \u2014 5 stale in-progress tasks found and closed; 1 was already done in file, 4 marked done based on matching git commits"
+      "message": "Task audit complete — 5 stale in-progress tasks found and closed; 1 was already done in file, 4 marked done based on matching git commits"
+    },
+    {
+      "ts": "2026-03-25T19:07:44Z",
+      "event": "done",
+      "context": "Here's the full report:\n\n---\n\n**bc-open-tasks.json** listed 5 tasks as \"In Progress\". All 5 were genuinely done — their agents finished the work but never wrote `done` events to their task files.\n\n**Task-by-task findings:**\n\n| Task | Title | Actual State | Evidence |\n|---|---|---|---|\n| task-20260325-185903 | Implement congress persona sync and task injection | Already had `done` in log | Log entry present at 19:00:51 UTC |\n| task-20260325-184647 | Enhance Discord plugin reaction notifications w...(truncated)",
+      "artifacts": []
     }
   ],
   "status": "done"
