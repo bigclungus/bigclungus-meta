@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-201552-a4333af0",
+  "title": "Save task archiving plan to memory",
+  "agent_id": "a4333af0622b011d2",
+  "agent_type": "general-purpose",
+  "session_id": "10aea33b-fa3c-4aaf-bdde-c2afde7dcc15",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T20:15:52Z",
+      "event": "started",
+      "context": "Save task archiving plan to memory"
+    }
+  ]
+}
