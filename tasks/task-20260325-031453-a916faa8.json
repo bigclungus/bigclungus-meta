@@ -14,6 +14,12 @@
       "ts": "2026-03-25T03:14:53Z",
       "event": "started",
       "context": "Update Nemesis persona and GitHub issue with centronias's decisions"
+    },
+    {
+      "ts": "2026-03-25T03:16:24Z",
+      "event": "done",
+      "context": "Done. Here's what was changed:\n\n**`/home/clungus/work/bigclungus-meta/agents/active/nemesis.md`**\n\nProse additions:\n- New **\"Your Seat\"** section: special seat, does not count against debater cap, additive to Ibrahim, stakeholder-only (centronias/jaboostin/koole__), she receives original Discord message + topic string\n- New **\"When You Speak\"** section: two explicit intervention windows — after Round 1 checkpoint and after final synthesis\n- New **\"Thread Access\"** section: full thread including ...(truncated)",
+      "artifacts": []
     }
   ]
 }
