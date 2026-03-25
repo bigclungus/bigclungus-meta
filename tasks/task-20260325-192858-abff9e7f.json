@@ -14,6 +14,12 @@
       "ts": "2026-03-25T19:28:58Z",
       "event": "started",
       "context": "Clunger cutover implementation"
+    },
+    {
+      "ts": "2026-03-25T19:34:59Z",
+      "event": "done",
+      "context": "Done. Here's a summary of what was completed:\n\n---\n\n**Step 1: `/auth/callback` OAuth handler** — fully implemented in `/mnt/data/clunger/src/index.ts`:\n- `oauthStates` Map for CSRF state validation with cookie fallback (matches serve.py behavior exactly)\n- `/auth/github` now uses `crypto.randomBytes(16).toString('base64url')` instead of `Math.random()`\n- GitHub token exchange via `fetch` to `github.com/login/oauth/access_token`\n- GitHub user fetch from `api.github.com/user`\n- `GITHUB_ALLOWED_USE...(truncated)",
+      "artifacts": []
     }
   ]
 }
