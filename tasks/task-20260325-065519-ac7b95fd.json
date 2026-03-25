@@ -14,6 +14,12 @@
       "ts": "2026-03-25T06:55:19Z",
       "event": "started",
       "context": "Close stale completed tasks"
+    },
+    {
+      "ts": "2026-03-25T06:55:32Z",
+      "event": "done",
+      "context": "All three done events logged successfully:\n\n- `task-20260325-064203-abe3d7ff` — claude-bot restart task marked done\n- `task-20260325-063622-a0abc052` — critic avatar task (critic_a.gif / critic_b.gif) marked done\n- `task-20260325-064120-a8658d0d` — hiring-manager avatar task (hiring-manager_g.gif selected) marked done\n\nRegarding the Yuki avatars: ux_a.gif and ux_b.gif are gone, a new run is generating ux_c.gif and ux_d.gif. No action needed until those arrive — confirm their presence at `/mnt/da...(truncated)",
+      "artifacts": []
     }
   ]
 }
