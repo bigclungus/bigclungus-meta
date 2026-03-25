@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-072006-a864d699",
+  "title": "Build grazing RPG NPC map page",
+  "agent_id": "a864d699b322de5f4",
+  "agent_type": "general-purpose",
+  "session_id": "a73508af-b739-48f4-b9cb-a7829a4a15c0",
+  "discord_message_id": "1486262930696831046",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T07:20:06Z",
+      "event": "started",
+      "context": "Build grazing RPG NPC map page"
+    }
+  ]
+}
