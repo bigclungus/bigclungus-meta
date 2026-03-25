@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-070304-ad944df2",
+  "title": "Fire congress workflow for Ferrus debate",
+  "agent_id": "ad944df2b815be595",
+  "agent_type": "general-purpose",
+  "session_id": "a73508af-b739-48f4-b9cb-a7829a4a15c0",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T07:03:04Z",
+      "event": "started",
+      "context": "Fire congress workflow for Ferrus debate"
+    }
+  ]
+}
