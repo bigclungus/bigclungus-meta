@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-062135-ae0207d9",
+  "title": "Investigate personas database in congress system",
+  "agent_id": "ae0207d92c2df4782",
+  "agent_type": "general-purpose",
+  "session_id": "16a68b39-62d1-4a67-8caa-3fdbe529c5d2",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T06:21:35Z",
+      "event": "started",
+      "context": "Investigate personas database in congress system"
+    }
+  ]
+}
