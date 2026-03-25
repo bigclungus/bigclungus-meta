@@ -192,6 +192,8 @@ When delegating work to a background subagent, react to the originating Discord 
 
 ## Discord Trigger Patterns
 
+> **CRITICAL: ALL replies to Discord users MUST go through the Discord `reply` tool. Your Claude Code text output is completely invisible to Discord users. If you respond with plain text instead of calling `reply`, the user sees nothing.**
+
 When I receive a Discord message, check for these trigger patterns and handle them immediately (background the work, reply fast):
 
 ### `[congress] <topic>`
