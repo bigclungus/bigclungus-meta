@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-190258-ab601f15",
+  "title": "Stop plugin enhancement agent",
+  "agent_id": "ab601f152ef416b5f",
+  "agent_type": "general-purpose",
+  "session_id": "10aea33b-fa3c-4aaf-bdde-c2afde7dcc15",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T19:02:58Z",
+      "event": "started",
+      "context": "Stop plugin enhancement agent"
+    }
+  ]
+}
