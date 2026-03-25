@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-032659-a05c82e3",
+  "title": "Post entity news threshold research to Discord thread",
+  "agent_id": "a05c82e39881f09a4",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T03:26:59Z",
+      "event": "started",
+      "context": "Post entity news threshold research to Discord thread"
+    }
+  ]
+}
