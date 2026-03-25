@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-060523-aaa94839",
+  "title": "Fire CongressWorkflow in Temporal",
+  "agent_id": "aaa94839eea51a341",
+  "agent_type": "general-purpose",
+  "session_id": "c1806e9d-e1da-4a07-a244-5f8ab9aec7c5",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T06:05:23Z",
+      "event": "started",
+      "context": "Fire CongressWorkflow in Temporal"
+    }
+  ]
+}
