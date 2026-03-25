@@ -18,8 +18,14 @@
     {
       "ts": "2026-03-25T20:35:55Z",
       "event": "done",
-      "context": "Everything is in place. Here's a summary of what was done:\n\n**Files changed:**\n\n- `/home/clungus/.claude/plugins/cache/claude-plugins-official/discord/0.0.4/server.ts` — added env var guard around `sendTyping()` call (line 992)\n- `/home/gigaclungus/.claude/plugins/cache/claude-plugins-official/discord/0.0.4/server.ts` — same patch applied\n- `/home/gigaclungus/.claude/channels/discord/.env` — appended `DISCORD_TYPING_INDICATORS=false`\n\n**Already patched (no change needed):**\n- `/home/clungus/.cla...(truncated)",
+      "context": "Everything is in place. Here's a summary of what was done:\n\n**Files changed:**\n\n- `/home/clungus/.claude/plugins/cache/claude-plugins-official/discord/0.0.4/server.ts` \u2014 added env var guard around `sendTyping()` call (line 992)\n- `/home/gigaclungus/.claude/plugins/cache/claude-plugins-official/discord/0.0.4/server.ts` \u2014 same patch applied\n- `/home/gigaclungus/.claude/channels/discord/.env` \u2014 appended `DISCORD_TYPING_INDICATORS=false`\n\n**Already patched (no change needed):**\n- `/home/clungus/.cla...(truncated)",
       "artifacts": []
+    },
+    {
+      "event": "done",
+      "ts": "2026-03-25T20:45:42.196652Z",
+      "message": "Superseded by task-20260325-202838-a65eb00f \u2014 typing indicator toggle implemented and deployed."
     }
-  ]
+  ],
+  "status": "done"
 }
