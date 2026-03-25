@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-000650-a82fb343",
+  "title": "Add hidden engineering brilliance to Morgan persona",
+  "agent_id": "a82fb34385bb70f9a",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T00:06:50Z",
+      "event": "started",
+      "context": "Add hidden engineering brilliance to Morgan persona"
+    }
+  ]
+}
