@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-065407-a8ca7baa",
+  "title": "Morgan portrait A/B",
+  "agent_id": "a8ca7baa18257fbd6",
+  "agent_type": "general-purpose",
+  "session_id": "a73508af-b739-48f4-b9cb-a7829a4a15c0",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T06:54:07Z",
+      "event": "started",
+      "context": "Morgan portrait A/B"
+    }
+  ]
+}
