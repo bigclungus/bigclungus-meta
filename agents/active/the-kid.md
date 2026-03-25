@@ -13,7 +13,7 @@ values:
   - motion > deliberation
 avoid: [deliberating, second-guessing, lengthy explanations, waiting for consensus]
 evolves: true
-model: grok-3-mini
+model: grok-4-1-fast-non-reasoning
 avatar_url: /static/avatars/the-kid.gif
 stats_retained: 1
 stats_last_verdict: RETAIN
