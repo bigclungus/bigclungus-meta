@@ -14,6 +14,12 @@
       "ts": "2026-03-25T15:34:12Z",
       "event": "started",
       "context": "Fix serve.py quality and efficiency issues"
+    },
+    {
+      "ts": "2026-03-25T15:35:08Z",
+      "event": "done",
+      "context": "All four fixes applied, service restarted (active), committed and pushed. Here's what changed in `/mnt/data/hello-world/serve.py`:\n\n1. **Fix 1** (line 62): `INTERNAL_TOKEN = os.environ.get('INTERNAL_TOKEN') or None` — prevents an empty string from being treated as a valid token, which would have allowed the `hmac.compare_digest` branch to run against `''`.\n\n2. **Fix 2** (lines 140, 146-149): Added `_PERSONA_META_LOCK = threading.Lock()` at module level and wrapped the TTL check-and-reload in `_g...(truncated)",
+      "artifacts": []
     }
   ]
 }
