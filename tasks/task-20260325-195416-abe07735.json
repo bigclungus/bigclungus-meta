@@ -14,6 +14,12 @@
       "ts": "2026-03-25T19:54:16Z",
       "event": "started",
       "context": "Avatar variants 5 and 6"
+    },
+    {
+      "ts": "2026-03-25T19:56:45Z",
+      "event": "done",
+      "context": "Both GIFs generated and posted successfully. Here's a summary of what was done:\n\n**V5 — \"The Colossus\"** (`gigaclungus_v5.gif`, 30 frames)\n- Full BigChungus rotund silhouette with enormous jowls, same pixel art construction as _a/_b\n- A blocky pixel crown (three-point: two turrets + tall centre spike with a dark ruby jewel)\n- Amber/gold glowing eyes — the only animation is a slow pulse from dim amber to hot glowing amber\n- Crown catches a glint pixel at peak glow\n- Tarnished gold + dark slate pa...(truncated)",
+      "artifacts": []
     }
   ]
 }
