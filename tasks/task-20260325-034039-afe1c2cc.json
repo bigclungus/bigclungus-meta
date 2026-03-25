@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-034039-afe1c2cc",
+  "title": "Investigate why Nemesis didn't veto Congress 28 abort",
+  "agent_id": "afe1c2cc2c2ae048d",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T03:40:39Z",
+      "event": "started",
+      "context": "Investigate why Nemesis didn't veto Congress 28 abort"
+    }
+  ]
+}
