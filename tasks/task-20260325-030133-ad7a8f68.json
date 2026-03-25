@@ -14,6 +14,12 @@
       "ts": "2026-03-25T03:01:33Z",
       "event": "started",
       "context": "Distill Nemesis proposal into GitHub issue"
+    },
+    {
+      "ts": "2026-03-25T03:02:16Z",
+      "event": "done",
+      "context": "Issue created: https://github.com/bigclungus/bigclungus-meta/issues/45\n\n**\"Nemesis (The Spokesman): stakeholder-will enforcer for congress\"**\n\nThe issue covers:\n- The throne/parliamentarian/spokesman power structure\n- Her three narrow intervention triggers (Ibrahim reframe, persona grandstanding, verdict misses mandate)\n- What she is not (not a continuity auditor, not a debater, not punitive)\n- Current implementation status (persona file exists at `agents/active/nemesis.md`, not yet wired into t...(truncated)",
+      "artifacts": []
     }
   ]
 }
