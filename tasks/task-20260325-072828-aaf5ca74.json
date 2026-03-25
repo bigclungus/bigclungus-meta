@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-072828-aaf5ca74",
+  "title": "Fix P1 UI bugs from QA",
+  "agent_id": "aaf5ca74c20568025",
+  "agent_type": "general-purpose",
+  "session_id": "a73508af-b739-48f4-b9cb-a7829a4a15c0",
+  "discord_message_id": "1486265323677024318",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T07:28:28Z",
+      "event": "started",
+      "context": "Fix P1 UI bugs from QA"
+    }
+  ]
+}
