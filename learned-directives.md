@@ -191,3 +191,14 @@ No. The system works, it ships features, and the users — three Discord regular
 
 ---
 
+
+## [congress-0047] Congress #47 — 2026-03-25
+**Topic:** Test congress: should BigClungus migrate from serve.py to clunger as its primary server? Debate the risks and benefits.
+
+**Verdict:**
+The question answers itself if you look at what's actually running. serve.py is a known quantity — it hosts the congress API, the website, the auth layer — and it works. Migration to clunger only makes sense if serve.py has a concrete, measurable problem that clunger solves: performance bottleneck, maintainability collapse, or a feature that can't be bolted on. "Newer" and "cleaner" are not reasons to migrate a working system that multiple services depend on. Show me the failure mode serve.py can't handle, or this migration stays on the shelf.
+
+**Persona learnings:**
+- **Pippi the Pitiless:** When evaluating infrastructure migrations, always identify whether the proposed replacement addresses the actual measured bottleneck or merely reshuffles the same constraints into a new stack.
+
+---
