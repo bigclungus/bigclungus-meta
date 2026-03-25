@@ -14,6 +14,12 @@
       "ts": "2026-03-25T02:43:39Z",
       "event": "started",
       "context": "List all personas with congress eligibility"
+    },
+    {
+      "ts": "2026-03-25T02:43:58Z",
+      "event": "done",
+      "context": "Now I have all the data. Let me compile the formatted list.\n\nThe fired/ directory was empty (all previously fired personas like spengler have been reinstated to active/). Here's the clean compiled output:\n\n---\n\n**Active — Congress Eligible** (no `congress` field, or `congress: true`)\n\n- `architect` — Kwame the Constructor\n- `bloodfeast` — Holden Bloodfeast *(probationary)*\n- `critic` — Pippi the Pitiless\n- `designer` — Vesper the Vivid\n- `galactus` — Galactus\n- `hiring-manager` — Ibrahim the Imm...(truncated)",
+      "artifacts": []
     }
   ]
 }
