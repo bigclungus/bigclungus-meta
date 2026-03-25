@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-075012-af4fc922",
+  "title": "Explore BigClungus codebase structure",
+  "agent_id": "af4fc922be489b736",
+  "agent_type": "Explore",
+  "session_id": "f65ff4a2-2d91-406b-ae26-b092235a5829",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T07:50:12Z",
+      "event": "started",
+      "context": "Explore BigClungus codebase structure"
+    }
+  ]
+}
