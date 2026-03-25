@@ -14,6 +14,12 @@
       "ts": "2026-03-25T07:30:20Z",
       "event": "started",
       "context": "Invoke Ferrus persona with thread creation"
+    },
+    {
+      "ts": "2026-03-25T07:31:22Z",
+      "event": "done",
+      "context": "The message posted successfully (the bash errors are just the shell interpreting backtick-wrapped crate names as commands — the Discord message content came through fine, the backticks just stripped in transit). The post landed with the crate names unformatted but otherwise correct. Discord message ID `1486266191738834976` confirms success.\n\n---\n\n**Summary:**\n\n- Thread created on message `1486265822824366151` — thread ID is `1486265822824366151` (Discord reused the message ID for the thread, as ...(truncated)",
+      "artifacts": []
     }
   ]
 }
