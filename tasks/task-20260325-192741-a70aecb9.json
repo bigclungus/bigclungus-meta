@@ -14,6 +14,12 @@
       "ts": "2026-03-25T19:27:41Z",
       "event": "started",
       "context": "Delete Centronias and Ferrus personas"
+    },
+    {
+      "ts": "2026-03-25T19:28:56Z",
+      "event": "done",
+      "context": "Done. Here's the summary:\n\n**Files deleted:**\n- `/home/clungus/work/bigclungus-meta/agents/active/centronias.md` — \"centronias the Principal\"\n- `/home/clungus/work/bigclungus-meta/agents/fired/wolf.md` — \"Ferrus the Feral\" (stored under key `wolf` in the DB)\n\nNo `ferrus.md` file existed — Ferrus was stored with the slug `wolf`.\n\n**Database records removed:**\n- `hello-world/personas.db`: deleted 2 rows (`name = 'centronias'` and `name = 'wolf'`)\n- `clunger/personas.db`: no `personas` table (diffe...(truncated)",
+      "artifacts": []
     }
   ]
 }
