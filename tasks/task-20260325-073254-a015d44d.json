@@ -14,6 +14,12 @@
       "ts": "2026-03-25T07:32:54Z",
       "event": "started",
       "context": "Continue Ferrus thread conversation"
+    },
+    {
+      "ts": "2026-03-25T07:34:16Z",
+      "event": "done",
+      "context": "Posted successfully. Here's what Ferrus said:\n\n---\n\nFerrus reacted to centronias's enthusiasm by absolutely losing it — slamming paws on the table, claws gouging the wood, tail wagging uncontrollably — then pulling himself together just enough to ask what they're building.\n\nHe laid out stack recommendations by project type:\n- **Web service** — Axum, Tokio, tower, serde\n- **CLI tool** — Clap + anyhow\n- **Embedded/systems** — (eyes glowing brighter) no GC, no runtime, just the borrow checker\n- **G...(truncated)",
+      "artifacts": []
     }
   ]
 }
