@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-154528-a5da82bf",
+  "title": "Read connect-python docs for streaming support",
+  "agent_id": "a5da82bf4dd7a6ec9",
+  "agent_type": "general-purpose",
+  "session_id": "4a58e62d-fa69-4ca2-a0a8-edcc21bb73c1",
+  "discord_message_id": "1486390454911111189",
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T15:45:28Z",
+      "event": "started",
+      "context": "Read connect-python docs for streaming support"
+    }
+  ]
+}
