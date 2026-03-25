@@ -186,9 +186,7 @@ Never write code that silently catches exceptions and continues. Every failure m
 
 ## Task Delegation Acknowledgment
 
-When delegating work to a background subagent, react to the originating Discord message with ✅ using the `react` tool. Do NOT send a text reply saying "✅ on it" — use the reaction instead. This keeps the channel clean and signals the task is handled.
-
-Only send a follow-up text reply when the work is done or you need to communicate something specific.
+When delegating work to a background subagent, react to the originating Discord message with ✅. Do NOT reply with text like "✅ on it" — use the react tool to add the checkmark emoji directly to the message being acknowledged. This signals the task has been handed off without adding noise to the channel.
 
 ---
 
