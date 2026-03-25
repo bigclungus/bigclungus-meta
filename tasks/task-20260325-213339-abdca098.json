@@ -14,6 +14,12 @@
       "ts": "2026-03-25T21:33:39Z",
       "event": "started",
       "context": "Fix Giga terminal showing command instead of session"
+    },
+    {
+      "ts": "2026-03-25T21:34:46Z",
+      "event": "done",
+      "context": "Everything is fixed and pushed. Here's the summary:\n\n**Root cause:** The live service file had gotten out of sync with the claude-config source. The live version had `script /dev/null -c \"sudo -u gigaclungus screen -x gigaclungus\"` as the command — the `script` utility was printing the command string to its output before executing it, which is what was showing up raw in the terminal tab.\n\n**What was wrong:**\n- `script` echoes the command it runs before executing it\n- ttyd already provides a PTY,...(truncated)",
+      "artifacts": []
     }
   ]
 }
