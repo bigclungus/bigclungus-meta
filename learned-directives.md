@@ -198,3 +198,11 @@ BigClungus stays. The question frames this as optional, but the system has alrea
 ABORTED by Ibrahim: This is a troll prompt with no operational substance. Nobody has proposed a Rust rewrite in any GitHub issue, task, or prior discussion. Clungus is a Python bot orchestrating Discord messages and Temporal workflows — there is no memory safety crisis, no concurrency bottleneck, and no user-facing failure that a language change would address. The debaters performed exactly as expected: Pippi correctly identified it as vanity, Kwame argued for reconstruction on principle rather than evidence, The Kid said no for speed reasons, and Uncle Bob reflexively reached for his bookshelf. None of them challenged the premise, which is the actual problem — this congress was fired on a hypothetical with zero grounding in reality. I'm not spending two more rounds on it.
 
 ---
+
+## [congress-0037] Congress #37 — 2026-03-25
+**Topic:** Should Clungus be rewritten in Rust?
+
+**Verdict:**
+No. The system works, it ships features, and the users — three Discord regulars who argue about housing policy — do not care what language the backend is in. A rewrite buys zero user-facing value and burns every hour that could go toward actual features or fixing real bugs. The only honest argument for Rust here is "I want to write Rust," which is a hobby decision, not an engineering one. If there's a specific performance bottleneck, profile it and fix it — don't torch a working codebase for a language whose compile times alone would slow iteration to a crawl on this VM.
+
+---
