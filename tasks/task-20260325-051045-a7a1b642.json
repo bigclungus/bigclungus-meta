@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-051045-a7a1b642",
+  "title": "Commit roster model fix + backfill sessions",
+  "agent_id": "a7a1b6427e0eacb85",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T05:10:45Z",
+      "event": "started",
+      "context": "Commit roster model fix + backfill sessions"
+    }
+  ]
+}
