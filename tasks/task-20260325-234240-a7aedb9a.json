@@ -14,6 +14,12 @@
       "ts": "2026-03-25T23:42:40Z",
       "event": "started",
       "context": "Investigate Giga intervention not showing in Discord"
+    },
+    {
+      "ts": "2026-03-25T23:43:09Z",
+      "event": "done",
+      "context": "The root causes are clear. Here's the full picture:\n\n---\n\n**Root Cause 1: Wrong inject secret**\n\nGiga's `.env` has:\n```\nDISCORD_INJECT_SECRET=UyLgzH9gUYnADWXWc5sG7desjV1oupW44UHmbIF9\n```\n\nBigClungus's inject endpoint uses:\n```\nDISCORD_INJECT_SECRET=aa330b635ee444c20e27b4b79355e210c7f706523e768746ea687cecc4338db1\n```\n\nThe secrets **do not match**. Giga's inject calls are hitting `http://127.0.0.1:9876/inject` with the wrong secret, so they get rejected (HTTP 403 or 401), which is why BigClungus n...(truncated)",
+      "artifacts": []
     }
   ]
 }
