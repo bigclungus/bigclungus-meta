@@ -183,12 +183,14 @@ Fire a `CongressWorkflow` in Temporal:
 client = await Client.connect('localhost:7233')
 await client.start_workflow(
     'CongressWorkflow',
-    {'topic': '<topic>', 'chat_id': '<chat_id>'},
+    {'topic': '<topic>', 'chat_id': '<chat_id>', 'message_id': '<message_id>', 'discord_user': '<user>'},
     id=f'congress-{int(time.time())}',
     task_queue='listings-queue',
     id_reuse_policy=WorkflowIDReusePolicy.ALLOW_DUPLICATE,
 )
 ```
+**IMPORTANT:** Always pass `message_id` and `discord_user` (the username from the Discord message tag). These are required for Nemesis to activate when a stakeholder fires congress.
+
 Reply with: "⚖️ congress is in session — verdict will land here when they've deliberated"
 
 ### `[persona-name] <question>`
