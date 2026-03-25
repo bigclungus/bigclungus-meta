@@ -14,6 +14,12 @@
       "ts": "2026-03-25T17:32:31Z",
       "event": "started",
       "context": "Research ConnectRPC Python client options"
+    },
+    {
+      "ts": "2026-03-25T17:33:45Z",
+      "event": "done",
+      "context": "Here is a thorough summary of the current state of ConnectRPC Python clients as of early 2026.\n\n---\n\n## ConnectRPC from Python in 2025/2026: Full Picture\n\n### 1. Official Python SDK — `connectrpc` on PyPI\n\nThere is an official SDK. The package was previously called `connect-python` and was renamed to `connectrpc` at v0.9.0. It is actively maintained by the ConnectRPC org.\n\n- **PyPI:** `pip install connectrpc` (current: v0.9.0, released March 19, 2026)\n- **Python requirement:** >=3.10\n- **Repo:**...(truncated)",
+      "artifacts": []
     }
   ]
 }
