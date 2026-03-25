@@ -18,7 +18,13 @@
     {
       "event": "done",
       "ts": "2026-03-25T19:07:30.320466Z",
-      "message": "Task sync investigation complete \u2014 stale tasks were agent sessions that finished work but never logged done events. Closed manually."
+      "message": "Task sync investigation complete — stale tasks were agent sessions that finished work but never logged done events. Closed manually."
+    },
+    {
+      "ts": "2026-03-25T19:09:09Z",
+      "event": "done",
+      "context": "Here is the full root cause analysis:\n\n---\n\n## Root Cause: Stale Snapshot Read at Restart\n\nThe desync is a **race condition between the sweeper's 15-minute polling cycle and actual task completion**, compounded by the startup checklist reading a potentially old snapshot without any freshness check.\n\n### What happened, precisely\n\nThe sweeper (`TaskSweeperWorkflow`) runs on a `sleep(15min) → check` loop. It last ran at **19:00:02 UTC** and wrote `/tmp/bc-open-tasks.json` with 5 open tasks. At that...(truncated)",
+      "artifacts": []
     }
   ],
   "status": "done"
