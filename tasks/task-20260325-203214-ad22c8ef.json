@@ -14,6 +14,12 @@
       "ts": "2026-03-25T20:32:14Z",
       "event": "started",
       "context": "Temporal hourly GigaClungus restart cron"
+    },
+    {
+      "ts": "2026-03-25T20:34:20Z",
+      "event": "done",
+      "context": "The cron registered successfully. Everything is in place.\n\nHere's a summary of what was created and deployed:\n\n**New files:**\n\n- `/mnt/data/temporal-workflows/activities/gigaclungus_act.py` — `restart_gigaclungus` activity that runs `sudo -u gigaclungus env XDG_RUNTIME_DIR=/run/user/1002 systemctl --user restart gigaclungus.service`. Raises a `RuntimeError` on non-zero exit so failures surface explicitly.\n\n- `/mnt/data/temporal-workflows/workflows/gigaclungus_restart_wf.py` — `GigaClungusRestart...(truncated)",
+      "artifacts": []
     }
   ]
 }
