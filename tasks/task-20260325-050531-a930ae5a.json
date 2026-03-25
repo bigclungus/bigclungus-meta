@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-050531-a930ae5a",
+  "title": "Fire CongressWorkflow for multi-model topic",
+  "agent_id": "a930ae5aa5ead1560",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T05:05:31Z",
+      "event": "started",
+      "context": "Fire CongressWorkflow for multi-model topic"
+    }
+  ]
+}
