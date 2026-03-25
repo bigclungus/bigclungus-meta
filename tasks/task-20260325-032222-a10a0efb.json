@@ -14,6 +14,12 @@
       "ts": "2026-03-25T03:22:22Z",
       "event": "started",
       "context": "Enrich Discord plugin with reply and thread context"
+    },
+    {
+      "event": "done",
+      "ts": "2026-03-25T04:15:19.954742Z",
+      "message": "Enrich Discord plugin with reply and thread context \u2014 implemented in session"
     }
-  ]
+  ],
+  "status": "done"
 }

@@ -14,6 +14,12 @@
       "ts": "2026-03-25T03:29:16Z",
       "event": "started",
       "context": "Debug and fix Nemesis not firing in congress"
+    },
+    {
+      "event": "done",
+      "ts": "2026-03-25T04:15:19.978834Z",
+      "message": "Debug and fix Nemesis not firing in congress \u2014 fixed in session"
     }
-  ]
+  ],
+  "status": "done"
 }

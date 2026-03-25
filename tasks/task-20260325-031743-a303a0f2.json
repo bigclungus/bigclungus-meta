@@ -14,6 +14,12 @@
       "ts": "2026-03-25T03:17:43Z",
       "event": "started",
       "context": "Research general entity news threshold options"
+    },
+    {
+      "event": "done",
+      "ts": "2026-03-25T04:15:19.893972Z",
+      "message": "Research general entity news threshold options \u2014 completed in session, duplicate of 032538 which has done log"
     }
-  ]
+  ],
+  "status": "done"
 }

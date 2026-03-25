@@ -14,6 +14,12 @@
       "ts": "2026-03-25T03:33:19Z",
       "event": "started",
       "context": "Deploy Discord plugin enrichment to running cache"
+    },
+    {
+      "event": "done",
+      "ts": "2026-03-25T04:15:20.016872Z",
+      "message": "Deploy Discord plugin enrichment to running cache \u2014 deployed in session"
     }
-  ]
+  ],
+  "status": "done"
 }
