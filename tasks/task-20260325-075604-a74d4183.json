@@ -14,6 +14,12 @@
       "ts": "2026-03-25T07:56:04Z",
       "event": "started",
       "context": "Fix _PERSONA_META cache and learned-directives noise filter"
+    },
+    {
+      "ts": "2026-03-25T07:58:02Z",
+      "event": "done",
+      "context": "Everything is done. Here's a summary of what was changed:\n\n---\n\n**Issue 1 — Stale `_PERSONA_META` cache (`/mnt/data/hello-world/serve.py`)**\n\nReplaced the static module-level dict with a TTL-aware pattern:\n- Added `_PERSONA_META_LOADED_AT` and `_PERSONA_META_TTL = 60.0` alongside the existing cache variable.\n- Added `_get_persona_meta()` which checks elapsed monotonic time and reloads from `personas.db` if the cache is older than 60 seconds.\n- Changed the one read-path usage (model lookup at the...(truncated)",
+      "artifacts": []
     }
   ]
 }
