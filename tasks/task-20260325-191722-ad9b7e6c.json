@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-191722-ad9b7e6c",
+  "title": "Invoke jhaddu persona",
+  "agent_id": "ad9b7e6ceae54dcfe",
+  "agent_type": "general-purpose",
+  "session_id": "10aea33b-fa3c-4aaf-bdde-c2afde7dcc15",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T19:17:22Z",
+      "event": "started",
+      "context": "Invoke jhaddu persona"
+    }
+  ]
+}
