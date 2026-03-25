@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-064536-aaac0244",
+  "title": "Neon wolf rust evangelist persona",
+  "agent_id": "aaac02443e87bf9f6",
+  "agent_type": "general-purpose",
+  "session_id": "a73508af-b739-48f4-b9cb-a7829a4a15c0",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T06:45:36Z",
+      "event": "started",
+      "context": "Neon wolf rust evangelist persona"
+    }
+  ]
+}
