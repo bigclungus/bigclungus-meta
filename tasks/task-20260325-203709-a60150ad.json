@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-203709-a60150ad",
+  "title": "Debug why Giga mandate didn't stick",
+  "agent_id": "a60150ad56a1884e0",
+  "agent_type": "general-purpose",
+  "session_id": "e4d4bf00-991b-4f0e-aac7-2ab4056f18c5",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T20:37:09Z",
+      "event": "started",
+      "context": "Debug why Giga mandate didn't stick"
+    }
+  ]
+}
