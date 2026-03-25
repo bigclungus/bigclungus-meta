@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-071011-abe65b93",
+  "title": "Fire congress workflow keep Clungus",
+  "agent_id": "abe65b93dbcd937f3",
+  "agent_type": "general-purpose",
+  "session_id": "a73508af-b739-48f4-b9cb-a7829a4a15c0",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T07:10:11Z",
+      "event": "started",
+      "context": "Fire congress workflow keep Clungus"
+    }
+  ]
+}
