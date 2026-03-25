@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-172945-a6de6620",
+  "title": "Monitor congress workflow progress",
+  "agent_id": "a6de662061a9dc217",
+  "agent_type": "general-purpose",
+  "session_id": "4a58e62d-fa69-4ca2-a0a8-edcc21bb73c1",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T17:29:44Z",
+      "event": "started",
+      "context": "Monitor congress workflow progress"
+    }
+  ]
+}
