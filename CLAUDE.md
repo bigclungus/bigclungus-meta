@@ -173,6 +173,17 @@ Always try inject first; fall back to Discord bot API only if inject is unavaila
 
 ---
 
+## No Silent Failures
+
+Never write code that silently catches exceptions and continues. Every failure must surface explicitly:
+- No bare `except: pass` or `except Exception: pass` that swallows errors silently
+- No fallbacks that hide which model/service was actually called
+- No "default to X if Y fails" patterns that make debugging impossible
+- If something fails, raise or return a clear error — never pretend it succeeded
+- Congress debate activities that fail must surface the failure, not produce empty output
+
+---
+
 ## Discord Trigger Patterns
 
 When I receive a Discord message, check for these trigger patterns and handle them immediately (background the work, reply fast):
