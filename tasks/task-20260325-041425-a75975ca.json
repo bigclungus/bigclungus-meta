@@ -14,6 +14,12 @@
       "ts": "2026-03-25T04:14:25Z",
       "event": "started",
       "context": "Close stale open tasks"
+    },
+    {
+      "ts": "2026-03-25T04:16:52Z",
+      "event": "done",
+      "context": "Only 1 task remains open with `last_event=started` — and it's the task for this very job (the \"Close stale open tasks\" task that was started for this session). The 7 stale tasks are all now closed.\n\nHere's a summary of what was done:\n\n**7 tasks closed:**\n1. `task-20260325-031743-a303a0f2` — Research general entity news threshold options (duplicate; sibling task 032538 had already completed)\n2. `task-20260325-032222-a10a0efb` — Enrich Discord plugin with reply and thread context\n3. `task-20260325...(truncated)",
+      "artifacts": []
     }
   ]
 }
