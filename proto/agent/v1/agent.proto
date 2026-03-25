@@ -22,6 +22,7 @@ message Agent {
   int32 stats_evolved = 14;
   int32 stats_fired = 15;
   string last_verdict = 16;
+  repeated string traits = 17;
 }
 
 message ListAgentsRequest {}
