@@ -14,6 +14,12 @@
       "ts": "2026-03-25T20:07:45Z",
       "event": "started",
       "context": "Heartbeat service check"
+    },
+    {
+      "ts": "2026-03-25T20:07:53Z",
+      "event": "done",
+      "context": "All clear — no failed services.",
+      "artifacts": []
     }
   ]
 }
