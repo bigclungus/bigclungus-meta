@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-210030-a512a095",
+  "title": "Remove archived concept from tasks DB",
+  "agent_id": "a512a09518b9092e9",
+  "agent_type": "general-purpose",
+  "session_id": "e4d4bf00-991b-4f0e-aac7-2ab4056f18c5",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T21:00:29Z",
+      "event": "started",
+      "context": "Remove archived concept from tasks DB"
+    }
+  ]
+}
