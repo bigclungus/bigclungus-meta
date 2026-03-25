@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-072610-a2dd121b",
+  "title": "10 parallel UI QA subagents",
+  "agent_id": "a2dd121b121ef0998",
+  "agent_type": "general-purpose",
+  "session_id": "a73508af-b739-48f4-b9cb-a7829a4a15c0",
+  "discord_message_id": "1486263489373802617",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T07:26:10Z",
+      "event": "started",
+      "context": "10 parallel UI QA subagents"
+    }
+  ]
+}
