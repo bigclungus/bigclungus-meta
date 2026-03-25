@@ -14,6 +14,12 @@
       "ts": "2026-03-25T08:47:06Z",
       "event": "started",
       "context": "Investigate [improve] trigger"
+    },
+    {
+      "ts": "2026-03-25T08:47:40Z",
+      "event": "done",
+      "context": "Here's the full picture:\n\n---\n\n**What `[improve]` is**\n\n`[improve]` is sent by `HourlyIntrospectionWorkflow` — an hourly Temporal workflow defined in `/mnt/data/temporal-workflows/workflows/introspection.py`. It fires the activity `send_discord_introspection_nudge` (in `/mnt/data/temporal-workflows/activities/introspection_act.py`), which injects the string `[improve]` into BigClungus's session via the local inject endpoint (`localhost:9876`), with `user=\"temporal-sweeper\"`. That's why it shows ...(truncated)",
+      "artifacts": []
     }
   ]
 }
