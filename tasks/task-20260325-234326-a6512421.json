@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-234326-a6512421",
+  "title": "Fix Giga inject secret in env",
+  "agent_id": "a651242165a70b399",
+  "agent_type": "general-purpose",
+  "session_id": "e4d4bf00-991b-4f0e-aac7-2ab4056f18c5",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T23:43:26Z",
+      "event": "started",
+      "context": "Fix Giga inject secret in env"
+    }
+  ]
+}
