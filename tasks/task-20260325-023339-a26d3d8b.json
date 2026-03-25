@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-023339-a26d3d8b",
+  "title": "Efficiency review",
+  "agent_id": "a26d3d8b1df0d1ac0",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T02:33:39Z",
+      "event": "started",
+      "context": "Efficiency review"
+    }
+  ]
+}
