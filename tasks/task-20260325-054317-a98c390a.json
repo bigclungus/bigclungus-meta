@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-054317-a98c390a",
+  "title": "Investigate BigClungus bot failure",
+  "agent_id": "a98c390a8080a78c7",
+  "agent_type": "general-purpose",
+  "session_id": "c0f8461e-cfb9-4c16-8c8a-a50e140e9e30",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T05:43:17Z",
+      "event": "started",
+      "context": "Investigate BigClungus bot failure"
+    }
+  ]
+}
