@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-194636-a8b64a34",
+  "title": "Draft GigaClungus implementation plan",
+  "agent_id": "a8b64a34f1d8b3ed7",
+  "agent_type": "general-purpose",
+  "session_id": "10aea33b-fa3c-4aaf-bdde-c2afde7dcc15",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T19:46:36Z",
+      "event": "started",
+      "context": "Draft GigaClungus implementation plan"
+    }
+  ]
+}
