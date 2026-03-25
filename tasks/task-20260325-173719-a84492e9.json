@@ -14,6 +14,12 @@
       "ts": "2026-03-25T17:37:19Z",
       "event": "started",
       "context": "Heartbeat health check"
+    },
+    {
+      "ts": "2026-03-25T17:37:38Z",
+      "event": "done",
+      "context": "Both checks are clean:\n\n- **Stale tasks**: 0 tasks marked stale (watchdog exited 1, which is its normal \"nothing stale\" exit code with that message)\n- **Failed services**: 0 failed units\n\nEverything looks healthy.",
+      "artifacts": []
     }
   ]
 }
