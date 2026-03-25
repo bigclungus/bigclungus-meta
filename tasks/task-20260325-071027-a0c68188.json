@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-071027-a0c68188",
+  "title": "Get SSH host fingerprint",
+  "agent_id": "a0c68188fd469c3fd",
+  "agent_type": "general-purpose",
+  "session_id": "a73508af-b739-48f4-b9cb-a7829a4a15c0",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T07:10:27Z",
+      "event": "started",
+      "context": "Get SSH host fingerprint"
+    }
+  ]
+}
