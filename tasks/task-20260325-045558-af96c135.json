@@ -14,6 +14,12 @@
       "ts": "2026-03-25T04:55:58Z",
       "event": "started",
       "context": "Heartbeat check"
+    },
+    {
+      "ts": "2026-03-25T04:56:07Z",
+      "event": "done",
+      "context": "All clear:\n\n- **Failed services:** 0 (none)\n- **FalkorDB/Redis:** PONG\n\nEverything is healthy. No Discord notification sent.",
+      "artifacts": []
     }
   ]
 }
