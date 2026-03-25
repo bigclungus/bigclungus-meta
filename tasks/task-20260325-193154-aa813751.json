@@ -14,6 +14,12 @@
       "ts": "2026-03-25T19:31:54Z",
       "event": "started",
       "context": "Create thread and post cutover summary"
+    },
+    {
+      "ts": "2026-03-25T19:32:39Z",
+      "event": "done",
+      "context": "Done. Here's what was accomplished:\n\n**Thread created:** \"clunger cutover\" on message 1486447505607495792 in channel 1485343472952148008. Thread ID is 1486447505607495792.\n\n**Summary posted to thread covering:**\n- What was built: TypeScript/Bun rewrite of serve.py with full API parity (Congress, persona, agent, task, wallet endpoints; OAuth callbacks; GitHub webhook handler; `requireAuth` middleware; Gemini/Claude CLI routing; crash guards)\n- Current state: clunger running healthy on :8081 (acti...(truncated)",
+      "artifacts": []
     }
   ]
 }
