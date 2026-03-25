@@ -14,6 +14,12 @@
       "ts": "2026-03-25T21:04:50Z",
       "event": "started",
       "context": "Fix task totals always showing page count"
+    },
+    {
+      "ts": "2026-03-25T21:06:46Z",
+      "event": "done",
+      "context": "Both pushed and service restarted. Here's a summary of what was done:\n\n**Root cause:** The `/api/tasks` endpoint already returned `total` (full dataset count), which the frontend correctly used for the \"total\" pill. However, all other status counts (`in_progress`, `done`, `stale`, `failed`, `background`, `foreground`) were computed client-side by iterating over the paginated 50-task array — so they only reflected the current page.\n\n**Changes:**\n\n`/mnt/data/clunger/src/index.ts` — Added a `totals...(truncated)",
+      "artifacts": []
     }
   ]
 }
