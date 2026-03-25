@@ -14,6 +14,12 @@
       "ts": "2026-03-25T17:34:18Z",
       "event": "started",
       "context": "Rewrite congress_act.py with connectrpc Python SDK"
+    },
+    {
+      "ts": "2026-03-25T17:39:13Z",
+      "event": "done",
+      "context": "Migration complete and worker is running. Here's a summary of what was done:\n\n**Dependencies installed:**\n- `connectrpc==0.9.0` (the official connectrpc Python SDK)\n- `grpcio-tools` (for protoc-based stub generation)\n\n**Generated files** (`/mnt/data/temporal-workflows/gen/python/`):\n- `congress/v1/congress_pb2.py` — protobuf message classes from `congress.proto`\n- `persona/v1/persona_pb2.py` — protobuf message classes from `persona.proto`\n- `congress/v1/congress_connect.py` — hand-written `Metho...(truncated)",
+      "artifacts": []
     }
   ]
 }
