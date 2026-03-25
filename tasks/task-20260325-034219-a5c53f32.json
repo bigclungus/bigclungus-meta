@@ -14,6 +14,12 @@
       "ts": "2026-03-25T03:42:19Z",
       "event": "started",
       "context": "Fix discord_user threading in congress trigger"
+    },
+    {
+      "ts": "2026-03-25T03:44:54Z",
+      "event": "done",
+      "context": "Both pushed. Here's a summary of the findings and what was done:\n\n---\n\n**Root cause**\n\nThe bug was in three places forming a chain:\n\n1. `/mnt/data/temporal-workflows/workflows/congress_wf.py` — the workflow correctly extracted `discord_user` from its input dict, but then called `congress_start` passing only the plain `topic` string, discarding `discord_user`.\n\n2. `/mnt/data/temporal-workflows/activities/congress_act.py` — `congress_start` only accepted `topic: str` and only sent `{\"topic\": topic...(truncated)",
+      "artifacts": []
     }
   ]
 }
