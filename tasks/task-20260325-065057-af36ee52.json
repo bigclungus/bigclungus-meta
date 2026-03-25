@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-065057-af36ee52",
+  "title": "Debug Ibrahim portrait display",
+  "agent_id": "af36ee529041b3cb5",
+  "agent_type": "general-purpose",
+  "session_id": "a73508af-b739-48f4-b9cb-a7829a4a15c0",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T06:50:57Z",
+      "event": "started",
+      "context": "Debug Ibrahim portrait display"
+    }
+  ]
+}
