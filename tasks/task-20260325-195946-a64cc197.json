@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-195946-a64cc197",
+  "title": "Debug broken avatar rendering",
+  "agent_id": "a64cc197a53836d01",
+  "agent_type": "general-purpose",
+  "session_id": "10aea33b-fa3c-4aaf-bdde-c2afde7dcc15",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T19:59:46Z",
+      "event": "started",
+      "context": "Debug broken avatar rendering"
+    }
+  ]
+}
