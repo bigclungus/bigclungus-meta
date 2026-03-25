@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-025411-a1c2cf6b",
+  "title": "Flesh out Nemesis persona and post to Discord thread",
+  "agent_id": "a1c2cf6b19cf986b4",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T02:54:11Z",
+      "event": "started",
+      "context": "Flesh out Nemesis persona and post to Discord thread"
+    }
+  ]
+}
