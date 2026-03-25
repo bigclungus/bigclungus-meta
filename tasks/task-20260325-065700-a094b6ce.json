@@ -14,6 +14,12 @@
       "ts": "2026-03-25T06:57:00Z",
       "event": "started",
       "context": "Update Ferrus model to Grok"
+    },
+    {
+      "ts": "2026-03-25T06:57:15Z",
+      "event": "done",
+      "context": "Done. In `/mnt/data/bigclungus-meta/agents/active/wolf.md`, the frontmatter field changed from `model: claude-sonnet-4-6` to `model: grok-4-1-fast-reasoning`. Committed as `03d209d` and pushed to main.",
+      "artifacts": []
     }
   ]
 }
