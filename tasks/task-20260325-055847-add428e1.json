@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-055847-add428e1",
+  "title": "List all FalkorDB graphs",
+  "agent_id": "add428e1b0b21993d",
+  "agent_type": "general-purpose",
+  "session_id": "c1806e9d-e1da-4a07-a244-5f8ab9aec7c5",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T05:58:47Z",
+      "event": "started",
+      "context": "List all FalkorDB graphs"
+    }
+  ]
+}
