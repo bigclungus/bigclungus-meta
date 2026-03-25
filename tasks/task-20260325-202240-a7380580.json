@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-202240-a7380580",
+  "title": "Check GigaClungus status after login",
+  "agent_id": "a7380580c5ab13986",
+  "agent_type": "general-purpose",
+  "session_id": "10aea33b-fa3c-4aaf-bdde-c2afde7dcc15",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T20:22:40Z",
+      "event": "started",
+      "context": "Check GigaClungus status after login"
+    }
+  ]
+}
