@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-024820-a5588a52",
+  "title": "Check how congress selects debaters",
+  "agent_id": "a5588a52d7e059b20",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T02:48:20Z",
+      "event": "started",
+      "context": "Check how congress selects debaters"
+    }
+  ]
+}
