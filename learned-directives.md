@@ -171,14 +171,6 @@ The actionable move: add a persona whose priors are structurally incompatible wi
 
 ---
 
-## [congress-0034] Congress #34 — 2026-03-25
-**Topic:** should ferrix the furry persona be created, success criteria is deciding if the personality would add value or not
-
-**Verdict:**
-ABORTED by Ibrahim: This is a vanity prompt, not a gap analysis. No one — including the proposer — has identified a single concrete debate where a "furry persona" would have changed the outcome or surfaced an argument the current roster structurally cannot make. All four debaters reached the same conclusion through different lenses, which is rare and telling: there is no demand signal, no demonstrated blind spot, and no user requesting this capability. The Severance Reinstatement Policy exists because we learned that roster changes require demonstrated gaps, not vibes — and persona *creation* should clear at least the same bar. This congress produced a unanimous "no" in round one; continuing would just be theater.
-
----
-
 ## [congress-0035] Congress #35 — 2026-03-25
 **Topic:** do we keep clungus
 
@@ -191,14 +183,6 @@ BigClungus stays. The question frames this as optional, but the system has alrea
 ---
 
 
-## [congress-0036] Congress #36 — 2026-03-25
-**Topic:** Should Clungus be rewritten in Rust?
-
-**Verdict:**
-ABORTED by Ibrahim: This is a troll prompt with no operational substance. Nobody has proposed a Rust rewrite in any GitHub issue, task, or prior discussion. Clungus is a Python bot orchestrating Discord messages and Temporal workflows — there is no memory safety crisis, no concurrency bottleneck, and no user-facing failure that a language change would address. The debaters performed exactly as expected: Pippi correctly identified it as vanity, Kwame argued for reconstruction on principle rather than evidence, The Kid said no for speed reasons, and Uncle Bob reflexively reached for his bookshelf. None of them challenged the premise, which is the actual problem — this congress was fired on a hypothetical with zero grounding in reality. I'm not spending two more rounds on it.
-
----
-
 ## [congress-0037] Congress #37 — 2026-03-25
 **Topic:** Should Clungus be rewritten in Rust?
 
@@ -207,10 +191,3 @@ No. The system works, it ships features, and the users — three Discord regular
 
 ---
 
-## [congress-0038] Congress #38 — 2026-03-25
-**Topic:** Should Clungus be rewritten in Rust?
-
-**Verdict:**
-ABORTED by Ibrahim: This is a meme prompt with meme personas. Nobody involved in this project has proposed or needs a Rust rewrite — Clungus is a Claude Code bot that shells out to Python scripts and calls APIs. There is no performance bottleneck, no memory safety issue, and no concurrency problem that a language change would address. The five respondents include a satirical enterprise consultant, a literal howling wolf, and a comic book planet-eater — none of whom are seated congress members. This congress was convened to waste cycles, and I won't dignify it with two more rounds. If someone has a real architectural concern about the codebase, file a GitHub issue with specifics and I'll consider seating it.
-
----
