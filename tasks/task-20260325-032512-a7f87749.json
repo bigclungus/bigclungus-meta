@@ -14,6 +14,12 @@
       "ts": "2026-03-25T03:25:12Z",
       "event": "started",
       "context": "Fire spoon congress with Nemesis + heartbeat check"
+    },
+    {
+      "ts": "2026-03-25T03:26:32Z",
+      "event": "done",
+      "context": "All clear. Summary:\n\n**1. CongressWorkflow** — started successfully as `congress-1774409173` on the `listings-queue`. The spoon debate is in session.\n\nNote: `uv run` doesn't find `temporalio` because the project has a `requirements.txt` (no venv initialized), while the package is installed in the system Python. Used `python3` directly. `WorkflowIDReusePolicy` moved from `temporalio.client` to `temporalio.common` in this version — fixed that import.\n\n**2. Heartbeat checks:**\n- Stale tasks: 0 stal...(truncated)",
+      "artifacts": []
     }
   ]
 }
