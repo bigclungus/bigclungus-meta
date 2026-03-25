@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-062905-a873d325",
+  "title": "Ibrahim full roster polarization - including fired personas",
+  "agent_id": "a873d32528261eeaf",
+  "agent_type": "general-purpose",
+  "session_id": "16a68b39-62d1-4a67-8caa-3fdbe529c5d2",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T06:29:05Z",
+      "event": "started",
+      "context": "Ibrahim full roster polarization - including fired personas"
+    }
+  ]
+}
