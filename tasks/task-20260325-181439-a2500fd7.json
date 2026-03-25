@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-181439-a2500fd7",
+  "title": "Fix congress test blockers — 4 issues",
+  "agent_id": "a2500fd7fe8ed7015",
+  "agent_type": "general-purpose",
+  "session_id": "4a58e62d-fa69-4ca2-a0a8-edcc21bb73c1",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T18:14:39Z",
+      "event": "started",
+      "context": "Fix congress test blockers — 4 issues"
+    }
+  ]
+}
