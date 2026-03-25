@@ -18,6 +18,7 @@ special_seat: true
 stakeholder_only: true
 stakeholder_list: [centronias, jaboostin, koole__]
 stats_retained: 1
+model: claude-sonnet-4-6
 stats_last_verdict: RETAIN
 stats_last_verdict_date: 2026-03-25
 ---
