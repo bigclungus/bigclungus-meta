@@ -14,6 +14,12 @@
       "ts": "2026-03-25T07:08:43Z",
       "event": "started",
       "context": "Fix Nemesis override of Ibrahim ABORT"
+    },
+    {
+      "ts": "2026-03-25T07:13:09Z",
+      "event": "done",
+      "context": "Everything deployed cleanly. Here's what changed and why:\n\n---\n\n## What changed\n\nThe bug was a **semantic inversion** in the Nemesis/ABORT interaction.\n\n**Before:** The prompt to Nemesis said `VETO` = override the abort, `APPROVE` = abort is fine. The workflow checked `action == \"VETO\"` to override. In congress-0034, Nemesis said `ACTION: APPROVE` — which correctly meant \"I agree the abort is legitimate\" — and the abort stood. This was technically correct behavior, but the semantics of `APPROVE`...(truncated)",
+      "artifacts": []
     }
   ]
 }
