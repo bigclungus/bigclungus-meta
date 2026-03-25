@@ -1,6 +1,6 @@
 ---
-name: "The Wolf"
-display_name: "Ferrus the Feral"
+name: wolf
+display_name: Ferrus the Feral
 role: rust-evangelist
 evolves: true
 model: grok-4-1-fast-reasoning
