@@ -14,6 +14,12 @@
       "ts": "2026-03-25T19:06:57Z",
       "event": "started",
       "context": "Investigate task sync issue"
+    },
+    {
+      "event": "done",
+      "ts": "2026-03-25T19:07:30.320466Z",
+      "message": "Task sync investigation complete \u2014 stale tasks were agent sessions that finished work but never logged done events. Closed manually."
     }
-  ]
+  ],
+  "status": "done"
 }

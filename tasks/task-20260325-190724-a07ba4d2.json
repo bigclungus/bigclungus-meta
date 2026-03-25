@@ -14,6 +14,12 @@
       "ts": "2026-03-25T19:07:24Z",
       "event": "started",
       "context": "Heartbeat checks"
+    },
+    {
+      "ts": "2026-03-25T19:07:30Z",
+      "event": "done",
+      "context": "All services are healthy. No failed units found — 0 loaded units listed in the failed state.",
+      "artifacts": []
     }
   ]
 }
