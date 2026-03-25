@@ -14,6 +14,12 @@
       "ts": "2026-03-25T19:02:22Z",
       "event": "started",
       "context": "Discord plugin reaction context enhancement"
+    },
+    {
+      "ts": "2026-03-25T19:04:10Z",
+      "event": "done",
+      "context": "The enhancement was already fully implemented. Here's the summary:\n\n**The reaction message-text feature is already live in plugin version 0.0.4** (the installed version). The task was already done in prior commits.\n\nKey file: `/home/clungus/work/claude-config/channels/discord/server.ts` (symlinked/synced to `/home/clungus/.claude/plugins/cache/claude-plugins-official/discord/0.0.4/server.ts`)\n\nWhat the reaction handler does (lines 870-951):\n1. Fetches partial reaction/user/message objects as nee...(truncated)",
+      "artifacts": []
     }
   ]
 }
