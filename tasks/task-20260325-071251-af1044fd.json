@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-071251-af1044fd",
+  "title": "Find Discord plugin fork",
+  "agent_id": "af1044fd41d078b23",
+  "agent_type": "general-purpose",
+  "session_id": "a73508af-b739-48f4-b9cb-a7829a4a15c0",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T07:12:51Z",
+      "event": "started",
+      "context": "Find Discord plugin fork"
+    }
+  ]
+}
