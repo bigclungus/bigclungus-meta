@@ -14,6 +14,12 @@
       "ts": "2026-03-25T21:31:23Z",
       "event": "started",
       "context": "Fix Giga terminal tab showing wrong output"
+    },
+    {
+      "ts": "2026-03-25T21:32:15Z",
+      "event": "done",
+      "context": "Everything checks out. Here's the summary:\n\n**Root cause:** `screen -x` requires a real TTY to attach to an existing session. When ttyd spawns the command as a subprocess, there's no controlling terminal, so `screen` exits immediately with `Must be connected to a terminal`. The browser WebSocket connection would open and close instantly (visible in the logs — connections lasted ~157ms and ~33s), showing nothing useful.\n\n**Fix applied:** Changed the `ExecStart` in `/home/clungus/.config/systemd/u...(truncated)",
+      "artifacts": []
     }
   ]
 }
