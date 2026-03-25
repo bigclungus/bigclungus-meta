@@ -14,6 +14,12 @@
       "ts": "2026-03-25T02:11:27Z",
       "event": "started",
       "context": "Re-fire congress with full self-funding context"
+    },
+    {
+      "ts": "2026-03-25T02:12:16Z",
+      "event": "done",
+      "context": "Done. The CongressWorkflow fired successfully:\n\n- **Workflow ID:** `congress-1774404719`\n- **Task queue:** `listings-queue`\n- **Topic:** Full context including the $250/month goal, zero-intervention constraint, available assets (ETH wallet, clung.us, Ubuntu VM, GitHub), and all four researched options (micro-SaaS API, Lido+EigenLayer staking, Aave lending, grid trading bot)\n- Discord notified in channel `1485343472952148008`\n\nThe GIL teardown crash at the end of the Python process is a known cos...(truncated)",
+      "artifacts": []
     }
   ]
 }
