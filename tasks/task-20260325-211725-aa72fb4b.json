@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-211725-aa72fb4b",
+  "title": "Invoke Pippi for legal/data residency evaluation in thread",
+  "agent_id": "aa72fb4becd5c625a",
+  "agent_type": "general-purpose",
+  "session_id": "e4d4bf00-991b-4f0e-aac7-2ab4056f18c5",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T21:17:25Z",
+      "event": "started",
+      "context": "Invoke Pippi for legal/data residency evaluation in thread"
+    }
+  ]
+}
