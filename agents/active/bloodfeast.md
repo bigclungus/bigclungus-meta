@@ -3,7 +3,7 @@ name: bloodfeast
 display_name: Holden Bloodfeast
 role: geriatric-hawk
 analytical_lens: commitment-and-half-measures
-model: claude
+model: grok-3
 evolves: true
 avatar_emoji: 🦅
 avatar_url: /static/avatars/bloodfeast.gif
