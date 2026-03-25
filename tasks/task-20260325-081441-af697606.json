@@ -14,6 +14,12 @@
       "ts": "2026-03-25T08:14:41Z",
       "event": "started",
       "context": "Close stale completed tasks"
+    },
+    {
+      "ts": "2026-03-25T08:15:21Z",
+      "event": "done",
+      "context": "Closed and pushed. Here's a summary of what was done:\n\n**8 stale tasks closed** (all had no `done` log event, only a `started` entry):\n\n| Task ID | Title |\n|---|---|\n| task-20260325-073914-a5aca78d | Kwame and Pippi review BigClungus processes |\n| task-20260325-073852-a0473e2d | Diagnose and fix /simplify automation |\n| task-20260325-074738-a89aa4c4 | Review temporal workflows and congress system |\n| task-20260325-074504-a9d39574 | Kwame and Pippi review |\n| task-20260325-074748-ad2cd384 | Revie...(truncated)",
+      "artifacts": []
     }
   ]
 }
