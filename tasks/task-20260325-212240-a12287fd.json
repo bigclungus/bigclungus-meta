@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-212240-a12287fd",
+  "title": "Relay no-code-dupe constraint to terminal agent",
+  "agent_id": "a12287fd0c9190939",
+  "agent_type": "general-purpose",
+  "session_id": "e4d4bf00-991b-4f0e-aac7-2ab4056f18c5",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T21:22:40Z",
+      "event": "started",
+      "context": "Relay no-code-dupe constraint to terminal agent"
+    }
+  ]
+}
