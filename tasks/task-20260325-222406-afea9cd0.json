@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-222406-afea9cd0",
+  "title": "Post congress reform plan to thread",
+  "agent_id": "afea9cd0011fe5b24",
+  "agent_type": "general-purpose",
+  "session_id": "e4d4bf00-991b-4f0e-aac7-2ab4056f18c5",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T22:24:06Z",
+      "event": "started",
+      "context": "Post congress reform plan to thread"
+    }
+  ]
+}
