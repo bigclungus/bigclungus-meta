@@ -206,3 +206,11 @@ ABORTED by Ibrahim: This is a troll prompt with no operational substance. Nobody
 No. The system works, it ships features, and the users — three Discord regulars who argue about housing policy — do not care what language the backend is in. A rewrite buys zero user-facing value and burns every hour that could go toward actual features or fixing real bugs. The only honest argument for Rust here is "I want to write Rust," which is a hobby decision, not an engineering one. If there's a specific performance bottleneck, profile it and fix it — don't torch a working codebase for a language whose compile times alone would slow iteration to a crawl on this VM.
 
 ---
+
+## [congress-0038] Congress #38 — 2026-03-25
+**Topic:** Should Clungus be rewritten in Rust?
+
+**Verdict:**
+ABORTED by Ibrahim: This is a meme prompt with meme personas. Nobody involved in this project has proposed or needs a Rust rewrite — Clungus is a Claude Code bot that shells out to Python scripts and calls APIs. There is no performance bottleneck, no memory safety issue, and no concurrency problem that a language change would address. The five respondents include a satirical enterprise consultant, a literal howling wolf, and a comic book planet-eater — none of whom are seated congress members. This congress was convened to waste cycles, and I won't dignify it with two more rounds. If someone has a real architectural concern about the codebase, file a GitHub issue with specifics and I'll consider seating it.
+
+---
