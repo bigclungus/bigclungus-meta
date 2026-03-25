@@ -14,6 +14,12 @@
       "ts": "2026-03-25T03:45:43Z",
       "event": "started",
       "context": "Check why Nemesis still didn't veto Congress 29"
+    },
+    {
+      "ts": "2026-03-25T03:47:16Z",
+      "event": "done",
+      "context": "Good — `centronias` is in `NEMESIS_STAKEHOLDERS`, so `nemesis_active` would have been `True`. The only thing preventing Nemesis from firing was the missing registration.\n\n---\n\nHere is the full diagnosis:\n\n**Root cause: `congress_nemesis_check` was never registered with the Temporal worker.**\n\nThe Nemesis commit (234eca8, ~24 minutes before Congress #29) added the `congress_nemesis_check` activity to `congress_act.py` and wired it into `congress_wf.py`, but `worker.py` was not updated — neither t...(truncated)",
+      "artifacts": []
     }
   ]
 }
