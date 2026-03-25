@@ -14,6 +14,12 @@
       "ts": "2026-03-25T07:33:50Z",
       "event": "started",
       "context": "Check congress 37 session output"
+    },
+    {
+      "ts": "2026-03-25T07:34:21Z",
+      "event": "done",
+      "context": "Here is the full report on congress-0037:\n\n**Topic:** \"Should Clungus be rewritten in Rust?\"\n**Status:** Done\n**Triggered by:** centronias\n\n---\n\n**Roster (full list from the `roster` field):**\n\nActive personas:\n- `adelbert` — Adelbert Hominem, The Personal Attack Artist (claude-sonnet-4-6) — in roster but did NOT appear in any debate round\n- `critic` — Pippi the Pitiless (gemini) — in roster but did NOT appear in any debate round\n- `designer` — Vesper the Vivid (claude) — in roster but did NOT a...(truncated)",
+      "artifacts": []
     }
   ]
 }
