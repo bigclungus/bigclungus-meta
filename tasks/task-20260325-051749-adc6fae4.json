@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-051749-adc6fae4",
+  "title": "Add personas table + CRUD UI to congress.html",
+  "agent_id": "adc6fae4453e4922c",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T05:17:49Z",
+      "event": "started",
+      "context": "Add personas table + CRUD UI to congress.html"
+    }
+  ]
+}
