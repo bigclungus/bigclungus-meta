@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-051649-a69e1fb0",
+  "title": "Wire congress events to personas.db stats",
+  "agent_id": "a69e1fb019e78151d",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T05:16:49Z",
+      "event": "started",
+      "context": "Wire congress events to personas.db stats"
+    }
+  ]
+}
