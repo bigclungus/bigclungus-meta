@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-055151-ad818f9c",
+  "title": "Check bot logs for command error",
+  "agent_id": "ad818f9cdfd48c753",
+  "agent_type": "general-purpose",
+  "session_id": "c0f8461e-cfb9-4c16-8c8a-a50e140e9e30",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T05:51:51Z",
+      "event": "started",
+      "context": "Check bot logs for command error"
+    }
+  ]
+}
