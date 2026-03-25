@@ -14,6 +14,12 @@
       "ts": "2026-03-25T16:27:59Z",
       "event": "started",
       "context": "Ingest clunger rewrite plan into Graphiti"
+    },
+    {
+      "ts": "2026-03-25T16:30:28Z",
+      "event": "done",
+      "context": "All 6 episodes queued successfully. Here's what was ingested into Graphiti group `clunger`:\n\n**Episode 1 — Migration plan**\nFull context of the serve.py → TypeScript rewrite: rationale, what changes vs. stays Python, phase breakdown (1-6), parallel dev approach (clunger on :8081 alongside serve.py on :8080), rollback strategy, open questions.\n\n**Episode 2 — Proto contracts (all 5 services)**\nComplete RPC signatures and message field layouts for CongressService, PersonaService, AgentService, Task...(truncated)",
+      "artifacts": []
     }
   ]
 }
