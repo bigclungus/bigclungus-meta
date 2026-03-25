@@ -14,6 +14,12 @@
       "ts": "2026-03-25T18:34:23Z",
       "event": "started",
       "context": "Fix watchdog bug and close stale tasks"
+    },
+    {
+      "ts": "2026-03-25T18:36:07Z",
+      "event": "done",
+      "context": "Both commits pushed. Here's a summary of what was done:\n\n**1. Watchdog fix** (`/mnt/data/scripts/hooks/watchdog-stale-tasks.sh`, commit `66bbc1a`):\n\n- Replaced the broken `LAST_LOG_EVENT == \"started\"` check with a proper terminal-event scan. A task is now considered open if its log array contains **no** entry with `event` in `{done, failed, cancelled, stale}`.\n- Age is now calculated from `log[0].ts` (first entry, i.e. when the task was created/started) rather than the last log entry's timestamp...(truncated)",
+      "artifacts": []
     }
   ]
 }
