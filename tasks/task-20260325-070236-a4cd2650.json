@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-070236-a4cd2650",
+  "title": "Research agent session context solutions",
+  "agent_id": "a4cd26508e0a28822",
+  "agent_type": "general-purpose",
+  "session_id": "a73508af-b739-48f4-b9cb-a7829a4a15c0",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T07:02:35Z",
+      "event": "started",
+      "context": "Research agent session context solutions"
+    }
+  ]
+}
