@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-231752-a9226a01",
+  "title": "Fix Giga startup prompts permanently",
+  "agent_id": "a9226a0179fc4dff4",
+  "agent_type": "general-purpose",
+  "session_id": "e4d4bf00-991b-4f0e-aac7-2ab4056f18c5",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T23:17:52Z",
+      "event": "started",
+      "context": "Fix Giga startup prompts permanently"
+    }
+  ]
+}
