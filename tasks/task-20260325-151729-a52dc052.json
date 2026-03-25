@@ -14,6 +14,12 @@
       "ts": "2026-03-25T15:17:28Z",
       "event": "started",
       "context": "Delete HourlyIntrospectionWorkflow"
+    },
+    {
+      "ts": "2026-03-25T15:18:56Z",
+      "event": "done",
+      "context": "Worker is up and clean — no introspection startup attempt in the logs. Done.\n\n**Summary of what was removed:**\n\n- `activities/introspection_act.py` — deleted (contained `send_discord_introspection_nudge`, which posted `[improve]` to Discord)\n- `workflows/introspection.py` — deleted (contained `HourlyIntrospectionWorkflow`)\n- `worker.py` — removed: the `import` for both, the startup block that launched `hourly-introspection`, the workflow from the `workflows=` list, and the activity from the `act...(truncated)",
+      "artifacts": []
     }
   ]
 }
