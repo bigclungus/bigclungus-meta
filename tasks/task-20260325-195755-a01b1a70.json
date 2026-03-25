@@ -14,6 +14,12 @@
       "ts": "2026-03-25T19:57:55Z",
       "event": "started",
       "context": "Fix avatar GIF looping"
+    },
+    {
+      "ts": "2026-03-25T19:59:15Z",
+      "event": "done",
+      "context": "All done. Here's a summary of what was found and fixed:\n\n**Root cause:** v1 and v5 GIFs were corrupted from a previous generation run — v1 had a decompression bomb error at frame 3 (PIL reported only 7 frames), and v5 had only 2 frames instead of 30. The other GIFs appeared to have correct loop metadata already.\n\n**What was done:**\n- All 9 GIFs already had `loop=0` in their generation scripts — the scripts were correct\n- Regenerated all 9 GIFs from scratch: gigaclungus.gif, gigaclungus_a.gif, gi...(truncated)",
+      "artifacts": []
     }
   ]
 }
