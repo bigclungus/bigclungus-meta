@@ -14,6 +14,12 @@
       "ts": "2026-03-25T02:02:10Z",
       "event": "started",
       "context": "Post congress context injection result to thread"
+    },
+    {
+      "ts": "2026-03-25T02:02:26Z",
+      "event": "done",
+      "context": "Posted. The summary was sent as a reply to message `1486182455181443162` in channel `1485343472952148008`. Message ID of the reply is `1486183438393282631`.",
+      "artifacts": []
     }
   ]
 }
