@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-050019-ab4cb88c",
+  "title": "Get git diffs for simplify review",
+  "agent_id": "ab4cb88ca4b1bdb5a",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T05:00:19Z",
+      "event": "started",
+      "context": "Get git diffs for simplify review"
+    }
+  ]
+}
