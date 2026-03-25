@@ -14,6 +14,12 @@
       "ts": "2026-03-25T07:47:41Z",
       "event": "started",
       "context": "Review hello-world web service"
+    },
+    {
+      "event": "done",
+      "ts": "2026-03-25T08:15:09.431339Z",
+      "message": "completed - work done in prior sessions"
     }
-  ]
+  ],
+  "status": "done"
 }

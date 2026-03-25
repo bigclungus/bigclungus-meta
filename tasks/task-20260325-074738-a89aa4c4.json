@@ -14,6 +14,12 @@
       "ts": "2026-03-25T07:47:37Z",
       "event": "started",
       "context": "Review temporal workflows and congress system"
+    },
+    {
+      "event": "done",
+      "ts": "2026-03-25T08:15:09.328435Z",
+      "message": "completed - work done in prior sessions"
     }
-  ]
+  ],
+  "status": "done"
 }
