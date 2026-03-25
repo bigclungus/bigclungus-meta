@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-071138-a91564d8",
+  "title": "Debug SSH cloudflared auth issue",
+  "agent_id": "a91564d8154dc8624",
+  "agent_type": "general-purpose",
+  "session_id": "a73508af-b739-48f4-b9cb-a7829a4a15c0",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T07:11:38Z",
+      "event": "started",
+      "context": "Debug SSH cloudflared auth issue"
+    }
+  ]
+}
