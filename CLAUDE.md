@@ -83,8 +83,8 @@ An AI parliament that debates topics via Discord thread, with live persona posts
 
 ### Architecture
 - **Personas**: YAML+prose files in `/home/clungus/work/bigclungus-meta/agents/active/` and `agents/fired/`
-- **Active seats**: Priya the Pitiless (critic), Kwame the Constructor (architect), Yuki the Yielding (ux), Ibrahim the Immovable (hiring-manager — never evolves, moderates/synthesizes)
-- **Severance**: Spengler the Doomed (fired/, can be reinstated)
+- **Active seats**: Pippi the Pitiless (critic), Yuki the Yielding (ux), Ibrahim the Immovable (hiring-manager — never evolves, moderates/synthesizes) — see agents/active/ for full roster
+- **Severance**: Kwame the Constructor (architect, fired 2026-03-25), Spengler the Doomed — see agents/fired/ for full roster
 - **Session files**: `/home/clungus/work/hello-world/sessions/congress-NNNN.json`
 - **Web viewer**: `clung.us/congress` (auth-gated via `tauth_github` cookie)
 
@@ -187,7 +187,7 @@ Never write code that silently catches exceptions and continues. Every failure m
 
 ## Task Delegation Acknowledgment
 
-When delegating work to a background subagent, react to the originating Discord message with ✅. Do NOT reply with text like "✅ on it" — use the react tool to add the checkmark emoji directly to the message being acknowledged. This signals the task has been handed off without adding noise to the channel.
+When delegating work to a background subagent, react to the originating Discord message with 🔧 immediately to signal work is in progress. When the task completes, add ✅ to the same message. Do NOT reply with text like "✅ on it" — use the react tool directly. This gives the user a clear in-progress → done signal without channel noise.
 
 ---
 
@@ -223,12 +223,27 @@ Invoke the persona via Claude CLI and reply with their response:
 
 Use a background agent to do the invocation. React with an emoji immediately so the user knows it's working.
 
-Known personas:
-- `critic` → Priya the Pitiless (active)
-- `architect` → Kwame the Constructor (active)
+Known personas (check agents/active/ and agents/fired/ for full list):
+- `critic` → Pippi the Pitiless (active)
+- `architect` → Kwame the Constructor (severance — fired 2026-03-25)
 - `ux` → Yuki the Yielding (active)
 - `hiring-manager` → Ibrahim the Immovable (active)
 - `spengler` → Spengler the Doomed (severance)
+
+### `[simplify]`
+An hourly automated code review trigger from SimplifyCronWorkflow. Its job is to scan recent changes across the main codebases and apply cleanup fixes (dead code, duplication, style consistency, minor bugs).
+
+When you receive `[simplify]`: **spawn a background agent** (do NOT block the main thread) to do the following:
+1. **Get recent diffs** — run `git -C /mnt/data/hello-world log --oneline -5` and `git -C /mnt/data/temporal-workflows log --oneline -5` to see what changed recently
+2. **Review for issues** — look at the diffs for: dead code, duplicate logic, hardcoded values that should use constants, obvious bugs, style inconsistencies, redundant imports
+3. **Apply fixes** — make targeted edits, commit with message `simplify: <brief description>`, and push to GitHub
+4. **Restart affected services** if you changed files in hello-world (`systemctl --user restart website.service`) or temporal-workflows (`systemctl --user restart temporal-worker.service`)
+5. **Do nothing and stay silent** if there's nothing worth fixing — don't invent busywork
+
+Constraints:
+- No architectural changes, no new features — only cleanup and minor fixes
+- Do not post to Discord unless a service restart was needed or a real bug was fixed
+- Only touch `/mnt/data/hello-world/` and `/mnt/data/temporal-workflows/`
 
 ### `[heartbeat]`
 A 15-minute watchdog pulse from the HeartbeatWorkflow. Its job is to check if anything is on fire and act if so — not to manufacture work.
@@ -287,7 +302,20 @@ python3 /mnt/data/scripts/log_task_event.py task-20260324-080932-a46e65d6 done "
    ```
 4. Check open tasks (written by Temporal sweeper):
    ```
-   python3 -c "import json,sys; d=json.load(open('/tmp/bc-open-tasks.json')); print(f'OPEN TASKS ({d[\"open_count\"]}): ' + ', '.join(i['title'] for i in d['items'])) if d.get('open_count',0)>0 else print('No open tasks.')" 2>/dev/null || echo "(sweeper hasn't run yet)"
+   python3 -c "
+import json, os, time
+path = '/tmp/bc-open-tasks.json'
+if not os.path.exists(path):
+    print('(sweeper has not run yet)')
+else:
+    age_min = (time.time() - os.path.getmtime(path)) / 60
+    d = json.load(open(path))
+    if d.get('open_count', 0) > 0:
+        prefix = f'[STALE {age_min:.0f}m] ' if age_min > 5 else ''
+        print(prefix + f'OPEN TASKS ({d[\"open_count\"]}): ' + ', '.join(i['title'] for i in d['items']))
+    else:
+        print('No open tasks.')
+" 2>/dev/null || echo "(sweeper has not run yet)"
    ```
 5. Run stale task watchdog:
    ```
