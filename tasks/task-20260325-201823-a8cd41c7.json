@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-201823-a8cd41c7",
+  "title": "Fire congress workflow call 911",
+  "agent_id": "a8cd41c7325a40d3d",
+  "agent_type": "general-purpose",
+  "session_id": "10aea33b-fa3c-4aaf-bdde-c2afde7dcc15",
+  "discord_message_id": "1486459145971437618",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T20:18:23Z",
+      "event": "started",
+      "context": "Fire congress workflow call 911"
+    }
+  ]
+}
