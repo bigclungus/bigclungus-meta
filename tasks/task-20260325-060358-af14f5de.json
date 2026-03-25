@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-060358-af14f5de",
+  "title": "Mark stale tasks as failed/done",
+  "agent_id": "af14f5ded563dec4e",
+  "agent_type": "general-purpose",
+  "session_id": "c1806e9d-e1da-4a07-a244-5f8ab9aec7c5",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T06:03:58Z",
+      "event": "started",
+      "context": "Mark stale tasks as failed/done"
+    }
+  ]
+}
