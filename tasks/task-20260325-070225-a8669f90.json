@@ -14,6 +14,12 @@
       "ts": "2026-03-25T07:02:25Z",
       "event": "started",
       "context": "Verify cloudflared SSH access"
+    },
+    {
+      "ts": "2026-03-25T07:02:53Z",
+      "event": "done",
+      "context": "Note: the thread creation returned the original message ID (`1486258651818623007`) rather than a new thread ID — Discord treated this message as already being a thread anchor or the thread already existed. The message posted successfully to that channel.\n\nHere are the findings:\n\n**SSH via cloudflared: configured and working.**\n\n- `/home/clungus/.cloudflared/config.yml` has an explicit ingress rule: `ssh.clung.us` → `ssh://localhost:22`\n- Tunnel ID: `685863fc-3783-4e49-bb8d-6a405c524706`\n- `sshd`...(truncated)",
+      "artifacts": []
     }
   ]
 }
