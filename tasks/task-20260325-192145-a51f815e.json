@@ -14,6 +14,12 @@
       "ts": "2026-03-25T19:21:44Z",
       "event": "started",
       "context": "Check clunger TS rewrite status"
+    },
+    {
+      "ts": "2026-03-25T19:22:19Z",
+      "event": "done",
+      "context": "Here's the full status report:\n\n---\n\n**Clunger TypeScript Rewrite — Current State**\n\n**What exists:**\n\n- `/mnt/data/clunger/` — a standalone TypeScript project, separate repo (`github.com/bigclungus/clunger`), built on Bun + ConnectRPC\n- Has 5 services implemented: `PersonaService`, `AgentService`, `TaskService`, `WalletService`, `CongressService`\n- Also does static file serving from `/mnt/data/hello-world/` (same files as serve.py uses)\n- 10 commits on record; recent work focused on parity fixe...(truncated)",
+      "artifacts": []
     }
   ]
 }
