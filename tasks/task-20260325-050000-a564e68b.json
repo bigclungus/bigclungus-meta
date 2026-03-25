@@ -14,6 +14,12 @@
       "ts": "2026-03-25T05:00:00Z",
       "event": "started",
       "context": "Enrich congress persona cards with model + metadata"
+    },
+    {
+      "ts": "2026-03-25T05:05:04Z",
+      "event": "done",
+      "context": "Done. Here's a summary of what changed:\n\n**serve.py:**\n- Added `_inc_verdict()` helper that tallies RETAIN/EVOLVE/FIRED outcomes per persona by scanning all session files\n- `_serve_agents()` now returns `sex`, `last_verdict`, `stats_retained`, `stats_evolved`, `stats_fired` for each persona (computed from session history)\n- `_serve_congress_identities()` now returns `sex` as well\n\n**congress.html:**\n- Added `shortenModel()` helper that abbreviates long model strings: `grok-4.20-0309-reasoning` →...(truncated)",
+      "artifacts": []
     }
   ]
 }
