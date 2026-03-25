@@ -14,6 +14,12 @@
       "ts": "2026-03-25T07:25:55Z",
       "event": "started",
       "context": "Fire Rust rewrite congress with custom seats"
+    },
+    {
+      "ts": "2026-03-25T07:27:11Z",
+      "event": "done",
+      "context": "Everything went through cleanly. Here's a summary:\n\n**Custom personas support:** Not present. The `CongressWorkflow` input dict has no `personas`/`custom_seats` field. The workflow calls `congress_select_seats` with the full active+severance candidate pool and lets Ibrahim pick the roster — there's no bypass mechanism.\n\n**What was done:**\n1. Read both `congress_wf.py` and `congress_act.py` to confirm custom seat selection is unsupported at the workflow input level.\n2. Fired `CongressWorkflow` in...(truncated)",
+      "artifacts": []
     }
   ]
 }
