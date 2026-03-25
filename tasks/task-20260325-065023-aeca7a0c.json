@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-065023-aeca7a0c",
+  "title": "Add wolf vocalizations to Ferrus persona",
+  "agent_id": "aeca7a0ce82d8bb22",
+  "agent_type": "general-purpose",
+  "session_id": "a73508af-b739-48f4-b9cb-a7829a4a15c0",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T06:50:23Z",
+      "event": "started",
+      "context": "Add wolf vocalizations to Ferrus persona"
+    }
+  ]
+}
