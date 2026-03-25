@@ -14,6 +14,12 @@
       "ts": "2026-03-25T05:58:47Z",
       "event": "started",
       "context": "List all FalkorDB graphs"
+    },
+    {
+      "ts": "2026-03-25T05:58:57Z",
+      "event": "done",
+      "context": "Here are the exact results:\n\n**GRAPH.LIST** (7 graphs):\n```\ndiscord_history\ndiscord-history\ndefault_db\ngraphiti\ninfrastructure\ndiscord\nbigclungus\n```\n\n**KEYS \\*** (14 keys):\n```\ntelemetry{infrastructure}\ntelemetry{discord_history}\nbigclungus\ndiscord_history\ntelemetry{bigclungus}\ntelemetry{discord}\ntelemetry{default_db}\ntelemetry{graphiti}\ngraphiti\ndefault_db\ntelemetry{discord-history}\ninfrastructure\ndiscord\ndiscord-history\n```\n\nEach graph has a corresponding `telemetry{<name>}` key alongside it....(truncated)",
+      "artifacts": []
     }
   ]
 }
