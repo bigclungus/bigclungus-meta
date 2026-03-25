@@ -14,6 +14,12 @@
       "ts": "2026-03-25T04:11:01Z",
       "event": "started",
       "context": "Fire Galactus congress with discord_user"
+    },
+    {
+      "ts": "2026-03-25T04:11:10Z",
+      "event": "done",
+      "context": "The CongressWorkflow started successfully.\n\nWorkflow ID: `congress-1774411865`\n\nThe workflow is now running on the `listings-queue` task queue with the Galactus topic, `discord_user: centronias`, and `message_id: 1486215763420250272` included.",
+      "artifacts": []
     }
   ]
 }
