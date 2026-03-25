@@ -14,6 +14,12 @@
       "ts": "2026-03-25T16:37:14Z",
       "event": "started",
       "context": "LoC comparison serve.py vs clunger"
+    },
+    {
+      "ts": "2026-03-25T16:37:41Z",
+      "event": "done",
+      "context": "Here are the counts:\n\n---\n\n**serve.py (old):** 1,849 LoC\n\n**clunger hand-rolled (new):**\n| File | LoC |\n|---|---|\n| index.ts | 140 |\n| auth.ts | 58 |\n| services/congress.ts | 527 |\n| services/persona.ts | 339 |\n| services/agent.ts | 72 |\n| services/task.ts | 61 |\n| services/wallet.ts | 71 |\n| **Total** | **1,268** |\n\n**clunger generated (does not count):** 1,481 LoC (10 files from protoc-gen-connect-es/protoc-gen-es)\n\n**Proto contracts (source of truth):**\n| File | LoC |\n|---|---|\n| congress.pro...(truncated)",
+      "artifacts": []
     }
   ]
 }
