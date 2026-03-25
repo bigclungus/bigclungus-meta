@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-030133-ad7a8f68",
+  "title": "Distill Nemesis proposal into GitHub issue",
+  "agent_id": "ad7a8f6822a3cf6af",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T03:01:33Z",
+      "event": "started",
+      "context": "Distill Nemesis proposal into GitHub issue"
+    }
+  ]
+}
