@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-190657-a8915591",
+  "title": "Investigate task sync issue",
+  "agent_id": "a8915591ad7bff51a",
+  "agent_type": "general-purpose",
+  "session_id": "10aea33b-fa3c-4aaf-bdde-c2afde7dcc15",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T19:06:57Z",
+      "event": "started",
+      "context": "Investigate task sync issue"
+    }
+  ]
+}
