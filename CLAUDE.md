@@ -61,6 +61,7 @@
 | Service | Description |
 |---|---|
 | claude-bot.service | BigClungus Claude Bot |
+| clunger.service | TypeScript web server on :8081 (Bun, replaces serve.py) |
 | cloudflared.service | Cloudflare Tunnel |
 | terminal-server.service | Terminal WebSocket Server (:7682) |
 | temporal.service | Temporal Dev Server |
