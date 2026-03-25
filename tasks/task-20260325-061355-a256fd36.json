@@ -14,6 +14,12 @@
       "ts": "2026-03-25T06:13:55Z",
       "event": "started",
       "context": "Invoke Hume on pacificgooner question"
+    },
+    {
+      "event": "done",
+      "ts": "2026-03-25T06:30:00.204534Z",
+      "message": "Task completed ~15 mins ago \u2014 Hume invoked on pacificgooner question"
     }
-  ]
+  ],
+  "status": "done"
 }

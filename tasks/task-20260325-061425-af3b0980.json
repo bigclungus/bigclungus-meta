@@ -14,6 +14,12 @@
       "ts": "2026-03-25T06:14:25Z",
       "event": "started",
       "context": "Restart claude-bot service after delay"
+    },
+    {
+      "event": "done",
+      "ts": "2026-03-25T06:30:00.224385Z",
+      "message": "Task completed ~14 mins ago \u2014 claude-bot service restarted after delay"
     }
-  ]
+  ],
+  "status": "done"
 }

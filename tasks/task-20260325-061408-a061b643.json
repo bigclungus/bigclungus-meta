@@ -14,6 +14,12 @@
       "ts": "2026-03-25T06:14:08Z",
       "event": "started",
       "context": "Generate Hume looksmaxxer avatar"
+    },
+    {
+      "event": "done",
+      "ts": "2026-03-25T06:30:00.186043Z",
+      "message": "Task completed ~15 mins ago \u2014 Hume looksmaxxer avatar generated"
     }
-  ]
+  ],
+  "status": "done"
 }
