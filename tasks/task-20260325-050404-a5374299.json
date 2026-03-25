@@ -14,6 +14,12 @@
       "ts": "2026-03-25T05:04:04Z",
       "event": "started",
       "context": "Simplify: Fix serve.py issues + efficiency review"
+    },
+    {
+      "ts": "2026-03-25T05:05:12Z",
+      "event": "done",
+      "context": "All done. Here's a summary of what was fixed and found:\n\n**Issues fixed:**\n\n1. **`_MODEL_ALIASES` moved to module-level** — The dict is now defined once at line 327, just above `_call_llm`. `_handle_congress_post` now references `_MODEL_ALIASES` instead of rebuilding the dict on every request.\n\n2. **Unknown model now raises** — The `else` branch in `_call_llm` was replaced with `elif model_lower.startswith('claude-')` (passing `model_lower` explicitly, not `model_lower or None`) and a final `els...(truncated)",
+      "artifacts": []
     }
   ]
 }
