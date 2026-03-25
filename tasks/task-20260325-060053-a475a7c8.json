@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-060053-a475a7c8",
+  "title": "Check graphiti MCP server process and restart",
+  "agent_id": "a475a7c8541d4991b",
+  "agent_type": "general-purpose",
+  "session_id": "c1806e9d-e1da-4a07-a244-5f8ab9aec7c5",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T06:00:53Z",
+      "event": "started",
+      "context": "Check graphiti MCP server process and restart"
+    }
+  ]
+}
