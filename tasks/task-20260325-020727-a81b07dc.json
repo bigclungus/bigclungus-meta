@@ -14,6 +14,12 @@
       "ts": "2026-03-25T02:07:27Z",
       "event": "started",
       "context": "Check congress workflow status"
+    },
+    {
+      "ts": "2026-03-25T02:08:19Z",
+      "event": "done",
+      "context": "Here's the summary:\n\n**Workflow `congress-1774404374` — FAILED**\n\n- Status: 3 = FAILED\n- Started: 2026-03-25 02:06:14 UTC, closed at 02:06:15 UTC (360ms — failed on the very first activity)\n- No Discord thread was ever created\n\n**Root cause:** `congress_start` made an HTTP request to the `/api/congress` endpoint on `clung.us` and received a `401 Unauthorized` with a redirect to the GitHub auth login. The Temporal worker is calling the congress API without passing the `tauth_github` session cooki...(truncated)",
+      "artifacts": []
     }
   ]
 }
