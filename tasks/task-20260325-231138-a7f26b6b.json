@@ -14,6 +14,12 @@
       "ts": "2026-03-25T23:11:38Z",
       "event": "started",
       "context": "Confirm No on Giga API key prompt"
+    },
+    {
+      "ts": "2026-03-25T23:12:08Z",
+      "event": "done",
+      "context": "GigaClungus is now at the Claude Code main prompt and ready. The screen shows:\n\n- \"Welcome back Justin!\" with the Claude Code v2.1.83 header\n- Logged in as `justin.dhead@gmail.com`'s Organization, using Sonnet 4.6 / Claude Max\n- Working directory: `~/work`\n- Discord plugin active: \"Listening for channel messages from: plugin:discord@claude-plugins-official\"\n- Debug mode enabled, logging to `/home/gigaclungus/.claude/debug/e364bb92...txt`\n- An input prompt is active (the `o` cursor visible on lin...(truncated)",
+      "artifacts": []
     }
   ]
 }
