@@ -14,6 +14,12 @@
       "ts": "2026-03-25T06:22:39Z",
       "event": "started",
       "context": "Generate Ibrahim avatar option B - stoic elder"
+    },
+    {
+      "ts": "2026-03-25T06:24:30Z",
+      "event": "done",
+      "context": "Pillow merged some identical-looking frames and doubled their duration (e.g., 300ms = two 150ms frames merged). The animation timing is preserved — frames where the gaze holds (frames 0-1 both at center, frames 3-4 both at left-2, frames 8-9 both at right+2) got collapsed and their durations doubled. The visual result is correct: gaze sweeps left then right with holds, total animation time is identical (10 × 150ms = 1500ms = sum of all frame durations: 300+150+300+150+150+150+300 = 1500ms).\n\nThe...(truncated)",
+      "artifacts": []
     }
   ]
 }
