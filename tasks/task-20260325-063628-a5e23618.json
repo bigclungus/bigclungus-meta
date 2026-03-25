@@ -14,6 +14,12 @@
       "ts": "2026-03-25T06:36:28Z",
       "event": "started",
       "context": "Generate Adelbert A/B isometric avatars from MD"
+    },
+    {
+      "ts": "2026-03-25T06:38:50Z",
+      "event": "done",
+      "context": "Both are valid palette-mode GIFs. Both files are saved and verified.\n\n---\n\nBoth avatars generated and saved. Here's what each looks like:\n\n**Avatar A — \"The Contemptuous Duellist\"**\n`/mnt/data/hello-world/static/avatars/adelbert_a.gif` (6 frames, 3.6 KB)\n\nAn isometric 3/4 front view of a slicked-hair suited figure standing behind a desk. His right arm raises and the index finger jabs accusatorially toward the viewer in a 3-step jab cycle — out, held with narrowed brows (contempt peak), retract. ...(truncated)",
+      "artifacts": []
     }
   ]
 }
