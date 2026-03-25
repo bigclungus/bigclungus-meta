@@ -14,6 +14,12 @@
       "ts": "2026-03-25T23:07:30Z",
       "event": "started",
       "context": "Heartbeat watchdog check"
+    },
+    {
+      "ts": "2026-03-25T23:07:52Z",
+      "event": "done",
+      "context": "Everything is healthy. Here's the summary:\n\n**Stale tasks:** The watchdog ran and found `task-20260325-205333-a622c715` was flagged as potentially stale, but it ended with \"0 task(s) marked stale\" — meaning it either recovered or the flag didn't meet the threshold. No congress orphans either.\n\n**GitHub issues:** No open issues in bigclungus/bigclungus-meta.\n\n**Failed services:** 0 failed units.\n\nNothing requires attention. All clear.",
+      "artifacts": []
     }
   ]
 }
