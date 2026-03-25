@@ -14,6 +14,12 @@
       "ts": "2026-03-25T02:32:45Z",
       "event": "started",
       "context": "Gather recent diffs from all repos"
+    },
+    {
+      "ts": "2026-03-25T02:33:12Z",
+      "event": "done",
+      "context": "Here is the full diff output collected from all three repositories:\n\n---\n\n## hello-world (`HEAD~3..HEAD`, `*.py` / `*.js` / `*.html`)\n\n### HTML files (404.html, congress.html, index.html, tasks.html, wallet.html)\nAll five pages updated cache-busting query strings on sitenav assets from `?v=2` to `?v=b6d00bc`.\n\n### serve.py\nTwo changes:\n\n1. **New `_is_localhost()` helper** — checks if `client_address[0]` is `127.0.0.1` or `::1`.\n\n2. **`end_headers()` override on `Handler`** — injects `Cache-Contr...(truncated)",
+      "artifacts": []
     }
   ]
 }
