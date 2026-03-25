@@ -14,6 +14,12 @@
       "ts": "2026-03-25T15:35:42Z",
       "event": "started",
       "context": "Read congress workflow activity sequence"
+    },
+    {
+      "ts": "2026-03-25T15:36:34Z",
+      "event": "done",
+      "context": "Here is a precise, ordered description of the CongressWorkflow activities:\n\n---\n\n## CongressWorkflow — Activity-Level Flow\n\n### Pre-flight\n\n**Nemesis flag** is set at workflow entry (not an activity): if `discord_user` is in `NEMESIS_STAKEHOLDERS`, `nemesis_active = True`. This gates all Nemesis activities throughout.\n\n---\n\n### 1. `congress_start`\nCreates a new session file, returns `session_id` and `session_number`. No retries (max_attempts=1).\n\n### 2. `congress_identities`\nReads all persona MD...(truncated)",
+      "artifacts": []
     }
   ]
 }
