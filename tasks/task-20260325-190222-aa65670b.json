@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-190222-aa65670b",
+  "title": "Discord plugin reaction context enhancement",
+  "agent_id": "aa65670b730834897",
+  "agent_type": "general-purpose",
+  "session_id": "10aea33b-fa3c-4aaf-bdde-c2afde7dcc15",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T19:02:22Z",
+      "event": "started",
+      "context": "Discord plugin reaction context enhancement"
+    }
+  ]
+}
