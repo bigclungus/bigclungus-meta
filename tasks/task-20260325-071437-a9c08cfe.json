@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-071437-a9c08cfe",
+  "title": "Add model field to session round logging",
+  "agent_id": "a9c08cfe6f49ad073",
+  "agent_type": "general-purpose",
+  "session_id": "a73508af-b739-48f4-b9cb-a7829a4a15c0",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T07:14:37Z",
+      "event": "started",
+      "context": "Add model field to session round logging"
+    }
+  ]
+}
