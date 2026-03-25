@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-184028-aadc012b",
+  "title": "Add congress cleanup to watchdog script",
+  "agent_id": "aadc012b75fc114ee",
+  "agent_type": "general-purpose",
+  "session_id": "4a58e62d-fa69-4ca2-a0a8-edcc21bb73c1",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T18:40:28Z",
+      "event": "started",
+      "context": "Add congress cleanup to watchdog script"
+    }
+  ]
+}
