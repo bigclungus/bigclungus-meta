@@ -14,6 +14,12 @@
       "ts": "2026-03-25T20:29:45Z",
       "event": "started",
       "context": "Update GigaClungus mandate and sudo access"
+    },
+    {
+      "ts": "2026-03-25T20:30:35Z",
+      "event": "done",
+      "context": "Both changes are done. Here's a summary:\n\n**1. Passwordless sudo for gigaclungus**\n- Checked that clungus is configured via `/etc/sudoers` (inline, not a drop-in file)\n- Created `/etc/sudoers.d/gigaclungus` with `gigaclungus ALL=(ALL) NOPASSWD:ALL`\n- Set permissions to 440\n- Verified with `sudo -u gigaclungus sudo id` — returns `uid=0(root)`\n\n**2. CLAUDE.md Redundancy section**\n- Read `/home/gigaclungus/work/claude-config/CLAUDE.md`\n- Appended the `## Redundancy` section with the restart procedu...(truncated)",
+      "artifacts": []
     }
   ]
 }
