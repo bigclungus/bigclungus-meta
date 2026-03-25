@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-050258-a945a99e",
+  "title": "Punished Trump persona + avatar",
+  "agent_id": "a945a99e17e34ea05",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T05:02:58Z",
+      "event": "started",
+      "context": "Punished Trump persona + avatar"
+    }
+  ]
+}
