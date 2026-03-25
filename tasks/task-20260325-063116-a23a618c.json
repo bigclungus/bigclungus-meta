@@ -14,6 +14,12 @@
       "ts": "2026-03-25T06:31:16Z",
       "event": "started",
       "context": "Reroll Ibrahim E and F - gravitas with banal responsibility"
+    },
+    {
+      "ts": "2026-03-25T06:40:02Z",
+      "event": "done",
+      "context": "Both files generated successfully. Here is the summary:\n\n---\n\n**Option E — The Arbiter at Rest**\n`/mnt/data/hello-world/static/avatars/hiring-manager_e.gif`\n\nIsometric 3/4 bust, figure slightly right of center, gaze directed left-downward (off-frame). Deep charcoal suit with a subtle catch light on the right shoulder. Older face: dark skin with gray temples and crown, close-cropped hair, strong brow, settled jaw. No expression markers — mouth closed, face at its natural resting state of authorit...(truncated)",
+      "artifacts": []
     }
   ]
 }
