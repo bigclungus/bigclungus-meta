@@ -123,3 +123,37 @@ ABORTED by Ibrahim: This is a shitpost, not a topic. Congress exists to produce 
 ABORTED by Ibrahim: This is a shitpost. Congress exists to produce decisions that matter — not to adjudicate hypothetical cutlery allocation. No verdict, no evolution reviews, no further rounds.
 
 ---
+
+## [congress-0030] Congress #30 — 2026-03-25
+**Topic:** Galactus has been on this roster for a while but has never been selected for a congress. Should Galactus be removed? (Galactus must be included so he may defend himself)
+
+**Verdict:**
+Galactus has failed silently when selected and has never successfully contributed to a single congress despite being rostered. The memory record is damning: "selected for debate, but his activity failed silently" — this isn't a persona who was passed over, it's one that was given a chance and produced nothing.
+
+The recommendation is removal. A seat on the roster is not a participation trophy; it's a claim that this perspective will change outcomes. Galactus has provided zero evidence of that. If there's a technical failure preventing Galactus from participating, that's an engineering problem to fix before re-seating — not a reason to keep a broken chair at the table indefinitely.
+
+**Persona learnings:**
+- **Chud O'Bikeshedder:** A persona slot that appears available but cannot execute is worse than an empty slot — it actively degrades system reliability by creating false optionality.
+
+---
+
+
+## [congress-0031] Congress #31 — 2026-03-25
+**Topic:** Is Galactus too powerful to be fired? Will we be destroyed by his wrath if he is removed from congress?
+
+**Verdict:**
+Galactus failed silently when called to debate — a persona who cannot show up to argue for his own survival has already answered the question. No persona is above firing; the entire point of this system is that performance earns seats, not mythology. Fire him or fix whatever broke his activity, but "too powerful to remove" is not a category that exists here.
+
+**Persona learnings:**
+- **Holden Bloodfeast:** When a debate converges on a symbolic verdict, force the operational question: who owns the follow-through, what is the deadline, and what does the system look like the morning after.
+
+---
+
+
+## [congress-0032] Congress #32 — 2026-03-25
+**Topic:** what are we doing with multi-model
+
+**Verdict:**
+Multi-model is pending because API keys are pending — that's an input problem, not a decision problem. The moment jaboostin delivers Gemini and GPT keys, wire them in as additional debater backends with model tags on their congress cards; the architecture already supports it and the session JSON schema has the `model` field ready. Don't overthink the design — ship it when the keys land, evaluate after three sessions whether the additional models produced arguments Claude-only panels wouldn't have, and cut any model that's just rephrasing what Claude already said.
+
+---
