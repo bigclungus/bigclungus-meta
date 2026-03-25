@@ -93,7 +93,7 @@ WalletService
 - Commit — single source of truth for all API contracts
 
 ### Phase 2 — TypeScript Server Scaffold (1 session)
-- Create `hello-world-ts/` project with Bun
+- Create `clunger/` project with Bun
 - Wire connect-es service base classes
 - Set up auth middleware (X-Internal-Token + session cookie)
 - GitHub OAuth + webhook as raw HTTP routes alongside ConnectRPC
@@ -122,6 +122,25 @@ WalletService
 - Update Cloudflare tunnel if port changes
 
 **Total estimated: 5-7 sessions. Temporal worker stays Python throughout.**
+
+## Parallel Development Approach
+
+Per koole__ (2026-03-25): build `clunger/` **concurrently** with serve.py, not as an inline replacement. This allows behavioral comparison throughout development.
+
+**Setup:**
+- `clunger/` runs on port 8081
+- `website.service` keeps serving serve.py on :8080 throughout development
+- New `clunger.service` systemd unit for the TypeScript server
+- Both services run simultaneously; no cutover until `clunger` is verified
+
+**Verification approach:**
+- Hit the same endpoint on both servers, diff the responses
+- Flag behavioral differences as bugs or intentional improvements before cutover
+- Cutover = swap which port Cloudflare tunnel routes to (one-line config change)
+
+**Rollback:**
+- If `clunger` has issues after cutover, flip the Cloudflare route back to :8080
+- serve.py stays intact until both framers confirm `clunger` is stable
 
 ## Open Questions
 
