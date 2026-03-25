@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-173418-a7b26a37",
+  "title": "Rewrite congress_act.py with connectrpc Python SDK",
+  "agent_id": "a7b26a373a576b9ff",
+  "agent_type": "general-purpose",
+  "session_id": "4a58e62d-fa69-4ca2-a0a8-edcc21bb73c1",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T17:34:18Z",
+      "event": "started",
+      "context": "Rewrite congress_act.py with connectrpc Python SDK"
+    }
+  ]
+}
