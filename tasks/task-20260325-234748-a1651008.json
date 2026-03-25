@@ -14,6 +14,12 @@
       "ts": "2026-03-25T23:47:48Z",
       "event": "started",
       "context": "Fire Congress on heartbeat self-improvement loop"
+    },
+    {
+      "ts": "2026-03-25T23:48:04Z",
+      "event": "done",
+      "context": "Workflow started successfully. Workflow ID: `congress-1774482480`\n\nThe CongressWorkflow is now running on Temporal's `listings-queue`. The debate on the self-improvement heartbeat loop topic is in session — the verdict will post to Discord thread when deliberation concludes.",
+      "artifacts": []
     }
   ]
 }
