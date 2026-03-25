@@ -14,6 +14,12 @@
       "ts": "2026-03-25T07:20:06Z",
       "event": "started",
       "context": "Build grazing RPG NPC map page"
+    },
+    {
+      "ts": "2026-03-25T07:23:28Z",
+      "event": "done",
+      "context": "The page loads. Here's a summary of what was built:\n\n---\n\n**What was built: `/mnt/data/hello-world/grazing.html` — \"The Commons\"**\n\nA pure canvas 2D, no-framework RPG-style NPC grazing world. Key design choices:\n\n**Map:** 800x560 canvas, 16px tiles, 50x35 grid. Features grass (4 shades of seeded variation), dirt paths (horizontal + vertical crossing), a pond (bottom-left, with shimmer highlights), two top buildings + one bottom-right building, scattered trees (with trunk/canopy), and rocks. Map ...(truncated)",
+      "artifacts": []
     }
   ]
 }
