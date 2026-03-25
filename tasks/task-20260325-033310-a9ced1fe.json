@@ -14,6 +14,12 @@
       "ts": "2026-03-25T03:33:10Z",
       "event": "started",
       "context": "Fire spoon congress with discord_user passed correctly"
+    },
+    {
+      "ts": "2026-03-25T03:33:17Z",
+      "event": "done",
+      "context": "Workflow started successfully. The workflow ID is `congress-1774409596`.",
+      "artifacts": []
     }
   ]
 }
