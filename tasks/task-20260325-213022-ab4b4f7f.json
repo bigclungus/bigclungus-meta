@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-213022-ab4b4f7f",
+  "title": "Strip Giga Discord read access, wire watchdog",
+  "agent_id": "ab4b4f7f2b7cefc1d",
+  "agent_type": "general-purpose",
+  "session_id": "e4d4bf00-991b-4f0e-aac7-2ab4056f18c5",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T21:30:22Z",
+      "event": "started",
+      "context": "Strip Giga Discord read access, wire watchdog"
+    }
+  ]
+}
