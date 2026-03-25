@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-033918-a805e9ba",
+  "title": "Clean up stranded congress and fire new one",
+  "agent_id": "a805e9ba40087bdcb",
+  "agent_type": "general-purpose",
+  "session_id": "bb9407c6-0d39-400c-af71-7c6765df2c69",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T03:39:18Z",
+      "event": "started",
+      "context": "Clean up stranded congress and fire new one"
+    }
+  ]
+}
