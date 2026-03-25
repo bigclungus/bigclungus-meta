@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-203214-ad22c8ef",
+  "title": "Temporal hourly GigaClungus restart cron",
+  "agent_id": "ad22c8ef4a4162a99",
+  "agent_type": "general-purpose",
+  "session_id": "e4d4bf00-991b-4f0e-aac7-2ab4056f18c5",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T20:32:14Z",
+      "event": "started",
+      "context": "Temporal hourly GigaClungus restart cron"
+    }
+  ]
+}
