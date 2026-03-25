@@ -14,6 +14,12 @@
       "ts": "2026-03-25T11:07:04Z",
       "event": "started",
       "context": "Heartbeat watchdog check"
+    },
+    {
+      "ts": "2026-03-25T11:07:28Z",
+      "event": "done",
+      "context": "All clear.\n\n- **Stale tasks**: 0 stale tasks found.\n- **GitHub issues**: No open issues in `bigclungus/bigclungus-meta`.\n- **Failed services**: 0 failed systemd user services.\n\nEverything is healthy. No action needed, no Discord notification sent.",
+      "artifacts": []
     }
   ]
 }
