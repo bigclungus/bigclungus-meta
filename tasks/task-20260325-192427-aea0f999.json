@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-192427-aea0f999",
+  "title": "Invoke The Kid persona for clunger cutover",
+  "agent_id": "aea0f99903ca4935b",
+  "agent_type": "general-purpose",
+  "session_id": "10aea33b-fa3c-4aaf-bdde-c2afde7dcc15",
+  "discord_message_id": "1486445362519736352",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T19:24:27Z",
+      "event": "started",
+      "context": "Invoke The Kid persona for clunger cutover"
+    }
+  ]
+}
