@@ -14,6 +14,12 @@
       "ts": "2026-03-25T16:19:28Z",
       "event": "started",
       "context": "Enable clunger systemd service"
+    },
+    {
+      "ts": "2026-03-25T16:19:34Z",
+      "event": "done",
+      "context": "The command succeeded. A symlink was created at `/home/clungus/.config/systemd/user/default.target.wants/clunger.service` pointing to `/home/clungus/.config/systemd/user/clunger.service`. The `clunger.service` user unit is now enabled and will auto-start on boot.",
+      "artifacts": []
     }
   ]
 }
