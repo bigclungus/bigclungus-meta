@@ -1,0 +1,19 @@
+{
+  "id": "task-20260325-181323-a494b7a7",
+  "title": "Check congress thread routing bug",
+  "agent_id": "a494b7a72c9cd49ae",
+  "agent_type": "general-purpose",
+  "session_id": "4a58e62d-fa69-4ca2-a0a8-edcc21bb73c1",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-25T18:13:23Z",
+      "event": "started",
+      "context": "Check congress thread routing bug"
+    }
+  ]
+}
