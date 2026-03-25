@@ -14,6 +14,12 @@
       "ts": "2026-03-25T19:59:46Z",
       "event": "started",
       "context": "Debug broken avatar rendering"
+    },
+    {
+      "ts": "2026-03-25T20:00:27Z",
+      "event": "done",
+      "context": "Both posted successfully. Here's the summary:\n\n**Findings:**\n\n- Original GIF: 64x64, 40 frames — that's almost certainly why it looks broken in Discord. Discord displays bot avatars at small sizes and a 64x64 source can look blurry/compressed after Discord's own resampling.\n- Original static PNG: 64x64, RGBA — same problem.\n- The pixel art uses nearest-neighbor scaling well — at 256x256 the character (dark bear/panda face, large red eyes, visible pixel art details) looks sharp and readable.\n\n**W...(truncated)",
+      "artifacts": []
     }
   ]
 }
