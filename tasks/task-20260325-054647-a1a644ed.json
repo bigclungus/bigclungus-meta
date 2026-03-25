@@ -14,6 +14,12 @@
       "ts": "2026-03-25T05:46:47Z",
       "event": "started",
       "context": "Backup and truncate session file"
+    },
+    {
+      "ts": "2026-03-25T05:48:40Z",
+      "event": "done",
+      "context": "Everything completed successfully. Here's the summary:\n\n**File sizes:**\n- Before: 56MB\n- Backup: `/mnt/data/session-backup-bb9407c6-20260325-054738.jsonl` — 56MB (full copy preserved)\n- After truncation: 1.0MB (whole lines only, ~251 bytes trimmed from the partial first line)\n\n**Service status:** `active (running)` since 05:48:15 UTC (~13s after restart). No errors in logs — clean startup, all config files synced successfully.\n\nThe `main process exited, code=exited, status=1/FAILURE` entries in ...(truncated)",
+      "artifacts": []
     }
   ]
 }
