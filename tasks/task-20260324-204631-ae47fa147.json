@@ -19,6 +19,12 @@
       "event": "milestone",
       "ts": "2026-03-24T20:46:31Z",
       "message": "Source verdict: The feature that matters is **proactive context** \u2014 BigClungus should surface relevant information *before* being asked, triggered by conversation patterns it already observes (someone mentions a stoc..."
+    },
+    {
+      "event": "failed",
+      "ts": "2026-03-25T06:05:35.137752Z",
+      "message": "interrupted by bot restart 2026-03-25"
     }
-  ]
+  ],
+  "status": "failed"
 }

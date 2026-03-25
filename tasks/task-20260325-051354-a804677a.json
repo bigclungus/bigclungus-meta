@@ -14,6 +14,12 @@
       "ts": "2026-03-25T05:13:54Z",
       "event": "started",
       "context": "Commit CLAUDE.md refinement"
+    },
+    {
+      "event": "failed",
+      "ts": "2026-03-25T06:05:35.137752Z",
+      "message": "interrupted by bot restart 2026-03-25"
     }
-  ]
+  ],
+  "status": "failed"
 }

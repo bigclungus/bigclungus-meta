@@ -24,6 +24,12 @@
       "ts": "2026-03-24T18:10:05Z",
       "event": "stale",
       "message": "No dashboard implemented. index.html still shows the old \"Hello World\" page. Work not started \u2014 stale pending future effort."
+    },
+    {
+      "event": "failed",
+      "ts": "2026-03-25T06:05:35.137752Z",
+      "message": "interrupted by bot restart 2026-03-25"
     }
-  ]
+  ],
+  "status": "failed"
 }

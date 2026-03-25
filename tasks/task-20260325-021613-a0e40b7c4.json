@@ -19,6 +19,12 @@
       "event": "milestone",
       "ts": "2026-03-25T02:16:13Z",
       "message": "Source verdict: The DeFi options are fantasies \u2014 BigClungus has no ETH and no $50k, so staking and lending are non-starters unless someone donates capital that doesn't exist. The only path that starts from zero is se..."
+    },
+    {
+      "event": "failed",
+      "ts": "2026-03-25T06:05:35.137752Z",
+      "message": "interrupted by bot restart 2026-03-25"
     }
-  ]
+  ],
+  "status": "failed"
 }

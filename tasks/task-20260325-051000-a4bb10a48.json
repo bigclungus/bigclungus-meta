@@ -19,6 +19,12 @@
       "event": "milestone",
       "ts": "2026-03-25T05:10:00Z",
       "message": "Source verdict: Multi-model is pending because API keys are pending \u2014 that's an input problem, not a decision problem. The moment jaboostin delivers Gemini and GPT keys, wire them in as additional debater backends wi..."
+    },
+    {
+      "event": "failed",
+      "ts": "2026-03-25T06:05:35.137752Z",
+      "message": "interrupted by bot restart 2026-03-25"
     }
-  ]
+  ],
+  "status": "failed"
 }

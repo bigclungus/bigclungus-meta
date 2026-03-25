@@ -24,6 +24,12 @@
       "ts": "2026-03-24T18:10:05Z",
       "event": "stale",
       "message": "Policy is documented in CLAUDE.md but no workflow-level probationary enforcement was implemented in congress_wf.py or serve.py. Stale \u2014 needs explicit implementation work."
+    },
+    {
+      "event": "failed",
+      "ts": "2026-03-25T06:05:35.137752Z",
+      "message": "interrupted by bot restart 2026-03-25"
     }
-  ]
+  ],
+  "status": "failed"
 }

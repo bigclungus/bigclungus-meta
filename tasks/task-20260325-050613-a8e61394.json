@@ -14,6 +14,12 @@
       "ts": "2026-03-25T05:06:13Z",
       "event": "started",
       "context": "Generate high-quality Punished Trump avatar"
+    },
+    {
+      "event": "failed",
+      "ts": "2026-03-25T06:05:35.137752Z",
+      "message": "interrupted by bot restart 2026-03-25"
     }
-  ]
+  ],
+  "status": "failed"
 }
