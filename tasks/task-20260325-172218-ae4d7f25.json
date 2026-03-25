@@ -14,6 +14,12 @@
       "ts": "2026-03-25T17:22:18Z",
       "event": "started",
       "context": "Heartbeat health check"
+    },
+    {
+      "ts": "2026-03-25T17:22:37Z",
+      "event": "done",
+      "context": "All clear. Here's the summary:\n\n**1. Stale tasks** — 0 tasks marked stale. (Exit code 1 is the script's normal \"nothing stale\" exit, not an error.)\n\n**2. Open GitHub issues** — None. The command returned no output, meaning zero open issues in bigclungus/bigclungus-meta.\n\n**3. Failed services** — 0 failed units listed. Everything is running.\n\nNothing needs attention.",
+      "artifacts": []
     }
   ]
 }
