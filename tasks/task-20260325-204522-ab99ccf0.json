@@ -19,6 +19,12 @@
       "event": "done",
       "ts": "2026-03-25T20:45:42.215302Z",
       "message": "Primary task task-20260325-202838-a65eb00f marked done."
+    },
+    {
+      "ts": "2026-03-25T20:45:57Z",
+      "event": "done",
+      "context": "Done. Three tasks marked done and pushed to GitHub:\n\n- `task-20260325-202838-a65eb00f` — \"Make typing indicators configurable in Discord plugin\" (primary, marked done with the full completion message)\n- `task-20260325-203200-a6dcfdbd` — \"Discord plugin typing indicator toggle\" (marked done as superseded)\n- `task-20260325-204522-ab99ccf0` — \"Close completed typing indicator task\" (marked done as resolved)\n\nAll three task files committed and pushed to `bigclungus/bigclungus-meta` main branch.",
+      "artifacts": []
     }
   ],
   "status": "done"
