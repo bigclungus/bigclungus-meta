@@ -14,6 +14,12 @@
       "ts": "2026-03-25T17:31:41Z",
       "event": "started",
       "context": "Stop monitoring - workflow reverted"
+    },
+    {
+      "ts": "2026-03-25T17:31:45Z",
+      "event": "done",
+      "context": "Understood. The CongressWorkflow hit a 404 on the clunger endpoint, the worker was reverted to :8080, and the workflow ended in a failed or timed-out state. No further action needed on my end.",
+      "artifacts": []
     }
   ]
 }
