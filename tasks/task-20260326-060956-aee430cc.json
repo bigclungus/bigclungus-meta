@@ -14,6 +14,12 @@
       "ts": "2026-03-26T06:09:56Z",
       "event": "started",
       "context": "Queue 3 NightOwl tasks for tonight"
+    },
+    {
+      "ts": "2026-03-26T06:11:30Z",
+      "event": "done",
+      "context": "All 3 tasks queued successfully. Here's the summary:\n\n**Fix applied:** `nightowl_queue.py` had a broken import — `WorkflowAlreadyStartedError` moved from `temporalio.client` to `temporalio.exceptions` in the installed SDK version. Fixed in `/mnt/data/scripts/nightowl_queue.py`.\n\n**Tasks queued (all signaled to `nightowl-today` workflow):**\n\n1. **grazing.html TS rewrite** — Split the JS monolith into 8 TypeScript modules with a Bun build step. Success: page loads, NPCs move.\n2. **Temporal Python ...(truncated)",
+      "artifacts": []
     }
   ]
 }
