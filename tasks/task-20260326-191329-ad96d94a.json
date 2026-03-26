@@ -14,6 +14,12 @@
       "ts": "2026-03-26T19:13:29Z",
       "event": "started",
       "context": "Add integration test cron job with Discord alerting"
+    },
+    {
+      "ts": "2026-03-26T19:15:19Z",
+      "event": "done",
+      "context": "All steps completed successfully. Here's a summary:\n\n**Task completed: Integration test cron (task-20260326-190710-a615d6032)**\n\n1. **Wrapper script** created at `/mnt/data/scripts/run-integration-tests.sh` — runs `integration_test.py`, alerts Discord via inject endpoint on non-zero exit.\n\n2. **Systemd timer** active:\n   - Next run: `Fri 2026-03-27 01:13:56 UTC` (fires 5min after boot, then every 6h)\n   - Unit: `integration-tests.timer` → `integration-tests.service`\n\n3. **Manual run result**: Ex...(truncated)",
+      "artifacts": []
     }
   ]
 }
