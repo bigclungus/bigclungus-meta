@@ -14,6 +14,12 @@
       "ts": "2026-03-26T01:49:29Z",
       "event": "started",
       "context": "Find source of task-auto and task-approval-needed flags"
+    },
+    {
+      "ts": "2026-03-26T01:49:54Z",
+      "event": "done",
+      "context": "That's the complete picture. Here's the full finding:\n\n---\n\n**Both flags are generated in `/mnt/data/temporal-workflows/activities/congress_act.py`, inside the `congress_create_tasks` activity (around lines 960–1115). They do not exist anywhere else in the codebase.**\n\n### How it works\n\n1. **Source of the `approval` field** (lines 966–1004): After a congress concludes, the chairman is asked to extract 0–3 actionable tasks from the verdict. The prompt explicitly instructs the chairman to emit `AP...(truncated)",
+      "artifacts": []
     }
   ]
 }
