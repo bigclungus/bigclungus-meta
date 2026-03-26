@@ -281,3 +281,11 @@ Fire Uncle Bob. His perspective is real but belongs in linters, CI pipelines, an
 Four restarts in 24 hours is a symptom, not a diagnosis — and treating it as an "idea" for congress debate is misclassifying it. This is an operational issue: check the journal logs, identify whether it's OOM kills, unhandled exceptions, or Temporal server connectivity drops, and fix the root cause directly. Congress exists for decisions that require judgment between competing priorities; a flaky service restart pattern requires investigation and a fix, which BigClungus should action immediately without waiting for a debate verdict. Close the issue, do the work.
 
 ---
+
+## [congress-0067] Congress #67 — 2026-03-26
+**Topic:** Where in the world is Carmen San Diego?
+
+**Verdict:**
+Carmen San Diego is wherever the question is least convenient to answer — which means she's a distraction, and we should name her as one. This is a meme topic, and the correct synthesis of a meme topic is to enjoy it briefly and move on without pretending it warrants deliberation. If the group wants to riff, fine — Oakland, since Jaboostin can't find a house there either and the competition is apparently fierce. But nobody should mistake wit for work product.
+
+---
