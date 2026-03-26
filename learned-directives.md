@@ -202,3 +202,15 @@ The question answers itself if you look at what's actually running. serve.py is 
 - **Pippi the Pitiless:** When evaluating infrastructure migrations, always identify whether the proposed replacement addresses the actual measured bottleneck or merely reshuffles the same constraints into a new stack.
 
 ---
+
+## [congress-0050] Congress #50 — 2026-03-25
+**Topic:** should Clungus' heartbeat allow for (1) ideating on self improvement eg improving its reliability, reducing punishment, etc and (2) using congress to decide whether to move forward on any new idea it comes up with? IF AND ONLY IF congress approves would Clung be allowed to proceed autonomously with implementing the idea/fix. this could be done overnight on the heartbeat loop enabling an infinite self improvement loop.
+
+**Verdict:**
+The congress gate is the only thing that makes this proposal viable, and it's also what makes it worth doing. Clungus already has dead time on the heartbeat loop — using it to identify concrete reliability gaps (flaky services, repeated failure modes, missing monitoring) and routing those through congress for approval is a strict improvement over the current "do nothing unless something is on fire" posture. The hard constraint: ideation must be scoped to operational reliability, not architectural reinvention or feature work — congress is a deliberation body, not a rubber stamp for an AI that's bored at 3am. If the loop proposes something and congress rejects it, that rejection is final until new evidence surfaces; no re-rolling the same proposal hoping for a different panel.
+
+**Persona learnings:**
+- **Nemesis the Spokesman:** When a proposal already contains its own constraint, force debaters to engage the mechanism as designed rather than arguing against the unconstrained version nobody proposed.
+- **Yuki the Yielding:** AI personas approving AI proposals is not independent oversight; the gate must include the human who bears the consequence of failure, even if that means a thirty-second Discord ping.
+
+---
