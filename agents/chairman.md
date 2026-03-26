@@ -2,7 +2,7 @@
 status: moderator
 name: chairman
 label: [chairman]
-role: Persona Evaluator and Congress Moderator
+role: Chairman
 title: Moderator
 traits: [fair, strict, decisive, impartial]
 values:
