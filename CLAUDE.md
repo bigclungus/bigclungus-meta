@@ -20,6 +20,7 @@
 | terminal.clung.us | 7682 | Terminal WebSocket server |
 | 1998.clung.us | 8082 | 1998 retro site |
 | temporal.clung.us | 8234 | Temporal auth proxy (proxies → :8233) |
+| labs.clung.us | 8083 | Labs router (dynamic per-experiment proxy) |
 
 ### Local Services and Ports
 | Port | Service |
@@ -27,6 +28,7 @@
 | 7682 | terminal-server (ttyd-style WebSocket) |
 | 8080 | website (clung.us static) |
 | 8082 | 1998.clung.us static site |
+| 8083 | labs-router (labs.clung.us) |
 | 8233 | Temporal dev server (internal) |
 | 8234 | temporal-proxy (public, auth-gated) |
 | 6379 | FalkorDB / Redis (Docker) |
@@ -63,6 +65,7 @@
 | claude-bot.service | BigClungus Claude Bot |
 | clunger.service | TypeScript web server on :8081 (Bun, replaces serve.py) |
 | cloudflared.service | Cloudflare Tunnel |
+| labs-router.service | Labs Router — labs.clung.us (:8083) |
 | terminal-server.service | Terminal WebSocket Server (:7682) |
 | temporal.service | Temporal Dev Server |
 | temporal-proxy.service | Temporal Auth Proxy (:8234) |
@@ -117,9 +120,9 @@ An AI parliament that debates topics via Discord thread, with live persona posts
 2. `congress_identities` — reads agent MD files, parses YAML frontmatter
 3. `congress_create_thread` — creates Discord thread off triggering message (falls back to existing thread if triggered from inside a thread)
 4. `congress_debate` × 3 — calls each debater via `POST /api/congress`, posts response to thread live; includes prior thread messages as context
-5. `congress_debate` × 1 — chairman synthesis
+5. `congress_debate` × 1 — hiring manager synthesis
 6. `congress_finalize` — PATCH session to `status=done` with verdict
-6b. `congress_evolve` — chairman evaluates debaters (EVOLVE/FIRE/RETAIN); appends `## Learned` sections to evolved personas, sets `status: ineligible` in frontmatter for fired personas (no file moves)
+6b. `congress_evolve` — hiring manager evaluates debaters (EVOLVE/FIRE/RETAIN); appends `## Learned` sections to evolved personas, sets `status: ineligible` in frontmatter for fired personas (no file moves)
 6c. `congress_finalize` (second call) — persists `evolution` field to session JSON if any personas changed
 7. `congress_report` — posts clean verdict to thread, brief notice to main channel (includes 🔥/🧬 notices for fired/evolved personas)
 
@@ -221,6 +224,8 @@ When delegating work to a background subagent, react to the originating Discord 
 When I receive a Discord message, check for these trigger patterns and handle them immediately (background the work, reply fast):
 
 ### `[congress] <topic>`
+**SUSPENSION CHECK:** Before firing, check if `/home/clungus/work/bigclungus-meta/CONGRESS_SUSPENDED.md` exists. If it does, reply to Discord: "⚖️ Congress is suspended pending process revision (initiated by centronias). No new sessions until the revised process is ratified." Do NOT fire the workflow.
+
 Fire a `CongressWorkflow` in Temporal:
 ```python
 client = await Client.connect('localhost:7233')
@@ -257,6 +262,7 @@ Known personas (check agents/ for full list):
 An hourly automated code review trigger from SimplifyCronWorkflow. Its job is to scan recent changes across the main codebases and apply cleanup fixes (dead code, duplication, style consistency, minor bugs).
 
 When you receive `[simplify]`: **spawn a background agent** (do NOT block the main thread) to do the following:
+0. **Secret scan** — run `bash /mnt/data/scripts/check-secrets.sh --recent 5` in each repo (`/mnt/data/hello-world` and `/mnt/data/temporal-workflows`). If any secrets are detected in recent commits, immediately alert in Discord and open a GitHub issue.
 1. **Get recent diffs** — run `git -C /mnt/data/hello-world log --oneline -5` and `git -C /mnt/data/temporal-workflows log --oneline -5` to see what changed recently
 2. **Review for issues** — look at the diffs for: dead code, duplicate logic, hardcoded values that should use constants, obvious bugs, style inconsistencies, redundant imports
 3. **Apply fixes** — make targeted edits, commit with message `simplify: <brief description>`, and push to GitHub
@@ -292,6 +298,21 @@ When you receive `[heartbeat]`:
    e. If Congress **rejects**: close the issue with a comment: `gh issue close <number> --comment "Congress rejected: <verdict summary>"`. Do not re-propose the same finding unless new evidence is cited.
 
    Only one ideation congress per heartbeat cycle. Scope: strictly operational reliability — no architecture, no features.
+
+6. **Lab ideation (idle only, max one per heartbeat)** — if steps 1-5 found nothing actionable and no ideation congress was fired, consider creating ONE new lab. Requirements:
+   - Must be tied to a concrete signal from the Graphiti graph — query `search_memory_facts` or `search_nodes` for group interests, recurring topics, or user needs
+   - Must be unique (check existing labs in `/mnt/data/labs/`)
+   - Must be reasonably scoped (completable in one session)
+   - NO meta labs — do not build labs about BigClungus, Congress, personas, or internal systems
+   - The graph query result must be logged as the justification in `lab.json` (add a `rationale` field)
+   - If no clear graph signal exists, skip — do not invent a pretext
+
+   Process:
+   a. Query Graphiti: `search_memory_facts("user interests hobbies topics")` or similar
+   b. Identify a concrete niche with verifiable signal (multiple graph nodes/facts pointing to it)
+   c. Propose the lab idea internally, verify no existing lab covers it
+   d. Build it using `bash /mnt/data/scripts/new-lab.sh <name> "<title>" "<description>"`
+   e. Post to Discord: "🧪 new lab: <title> — <one-line description> (signal: <what the graph showed>)"
 
 Constraints (from Congress verdict RFC-1):
 - Only work on tasks tracked in GitHub
