@@ -14,6 +14,12 @@
       "ts": "2026-03-26T06:55:16Z",
       "event": "started",
       "context": "Queue NPC chat history to NightOwl"
+    },
+    {
+      "ts": "2026-03-26T06:55:24Z",
+      "event": "done",
+      "context": "The script ran successfully. Output:\n\n- **Detected an existing running workflow** (`nightowl-today`) and signaled it rather than starting a new one.\n- **Queued the task:** \"Commons NPC chat modal: stay open after sending a message and show conversation history. The modal should display a scrollable chat thread with the NPC's responses and user messages. Close only on ESC, click-outside, or explicit cancel — not on send. Show typing indicator while waiting for response.\"\n\nThe task has been handed...(truncated)",
+      "artifacts": []
     }
   ]
 }
