@@ -14,6 +14,12 @@
       "ts": "2026-03-26T01:52:42Z",
       "event": "started",
       "context": "Heartbeat watchdog check"
+    },
+    {
+      "ts": "2026-03-26T01:53:15Z",
+      "event": "done",
+      "context": "Duplicate found — issue #49 already exists for `clunger.service` flakiness. No new issue opened, no Congress needed.\n\n---\n\n**Heartbeat summary — all clear:**\n\n- **Stale tasks:** 0 stale, no orphaned congress sessions\n- **Failed services:** 0 failed units\n- **Open GitHub issues:** 1 open — issue #49: `[idea] service clunger.service restarted 11x in last 24h — possible flakiness` (already pending)\n- **Ideation:** Found same clunger.service flakiness finding — **duplicate of issue #49, skipped**\n\nN...(truncated)",
+      "artifacts": []
     }
   ]
 }
