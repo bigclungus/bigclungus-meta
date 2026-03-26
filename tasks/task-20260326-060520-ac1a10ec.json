@@ -1,0 +1,19 @@
+{
+  "id": "task-20260326-060520-ac1a10ec",
+  "title": "Fix commons UI bugs + add satnav links",
+  "agent_id": "ac1a10ec396f5d9d1",
+  "agent_type": "general-purpose",
+  "session_id": "da8c6f5f-348d-4ced-ac0b-3e3b6fd7539f",
+  "discord_message_id": "1486606425907007549",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-26T06:05:20Z",
+      "event": "started",
+      "context": "Fix commons UI bugs + add satnav links"
+    }
+  ]
+}
