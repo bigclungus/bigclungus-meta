@@ -14,6 +14,12 @@
       "ts": "2026-03-26T18:20:48Z",
       "event": "started",
       "context": "Diagnose and fix warthog z-order bug"
+    },
+    {
+      "ts": "2026-03-26T18:25:24Z",
+      "event": "done",
+      "context": "Done. Here's what was wrong and what was fixed:\n\n**Root cause:** The previous fix (`drawForegroundTiles`) correctly redraws tree/rock tile shapes on top of the warthog after it's drawn, but was incomplete. Tree tiles (type 4) and rock tiles (type 5) in `drawMap` **do not fill a grass background** before drawing their shapes — they draw only the trunk/canopy and rock pixels onto a transparent tile cell in the mapCache. Since the main canvas is never cleared between frames, those transparent non-s...(truncated)",
+      "artifacts": []
     }
   ]
 }
