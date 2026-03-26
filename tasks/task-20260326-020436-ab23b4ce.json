@@ -14,6 +14,12 @@
       "ts": "2026-03-26T02:04:36Z",
       "event": "started",
       "context": "Send reform context to docs agent"
+    },
+    {
+      "ts": "2026-03-26T02:04:59Z",
+      "event": "done",
+      "context": "The agent is still running (last `stop_reason` is `None` or `tool_use`, no `end_turn`). Returning: **still running**",
+      "artifacts": []
     }
   ]
 }
