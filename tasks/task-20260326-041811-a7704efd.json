@@ -14,6 +14,12 @@
       "ts": "2026-03-26T04:18:11Z",
       "event": "started",
       "context": "Fire SmallClungus congress workflow"
+    },
+    {
+      "ts": "2026-03-26T04:18:35Z",
+      "event": "done",
+      "context": "CongressWorkflow fired successfully.\n\n- Workflow ID: `congress-1774498706`\n- Topic: \"should clungus make a 'SmallClungus', a persistent agent / persona which is subservient to BigClungus, interacts in discord, and can do its own things at BigClungus's bidding?\"\n- Discord notification injected to channel `1485343472952148008`\n- Congress was not suspended, so the workflow proceeded normally",
+      "artifacts": []
     }
   ]
 }
