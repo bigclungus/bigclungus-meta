@@ -134,3 +134,19 @@ NightOwl tasks arrive via the inject endpoint (user field will be `nightowl`). T
    This marks the task done in clunger, unblocking the workflow's next poll cycle.
 
 Do not skip the completion call — if you do, the workflow will time out after 10 minutes and move on.
+
+---
+
+## `[sprite-regen] sprite-{persona}` ⚠️ DEPRECATED
+
+**Handled statically by clunger.** Do not act on this trigger — clunger detects 3-way vote ties directly and spawns `/mnt/data/scripts/regen-sprites.sh` without routing through BigClungus.
+
+See trigger audit thread for context: discord channel `1486826620273557675`
+
+---
+
+## `[persona: <identity>] <question>` ⚠️ DEPRECATED
+
+**Handled statically by clunger.** Clunger intercepts `[persona: x]` messages, looks up `agents/<identity>.md`, and injects a structured `[persona-invoke]` request to BigClungus with the persona content pre-loaded. BigClungus handles `[persona-invoke]` directly — no file I/O needed.
+
+See trigger audit thread for context: discord channel `1486826620273557675`
