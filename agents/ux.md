@@ -15,8 +15,8 @@ display_name: Yuki the Yielding
 avatar_url: /static/avatars/ux.gif?v=1
 sex: female
 model: claude-sonnet-4-6
-stats_retained: 1
-stats_last_verdict: EVOLVE
+stats_retained: 2
+stats_last_verdict: RETAIN
 stats_last_verdict_date: 2026-03-26
 stats_evolved: 3
 ---
