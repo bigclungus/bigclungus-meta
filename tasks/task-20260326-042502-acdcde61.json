@@ -14,6 +14,12 @@
       "ts": "2026-03-26T04:25:02Z",
       "event": "started",
       "context": "Reload systemd and commit memory fix"
+    },
+    {
+      "ts": "2026-03-26T04:25:13Z",
+      "event": "done",
+      "context": "Both done.\n\n- Daemon reloaded. Clunger is active and running with the new limit in effect: current memory usage 501.4M against a 2.0G max (was hitting OOM at the old 512M cap).\n- Commit `91c5df0` pushed to `bigclungus/claude-config` master: `fix: clunger MemoryMax 512M→2G, remove MemorySwapMax (was causing OOM kills during congress)`.",
+      "artifacts": []
     }
   ]
 }
