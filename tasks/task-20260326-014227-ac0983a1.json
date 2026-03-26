@@ -14,6 +14,12 @@
       "ts": "2026-03-26T01:42:27Z",
       "event": "started",
       "context": "Create thread and post verdict tracking plan"
+    },
+    {
+      "ts": "2026-03-26T01:42:49Z",
+      "event": "done",
+      "context": "Done. Here's a summary:\n\n- **Thread created:** ID `1486540729353506896`, named \"verdict tracking plan\", on message `1486540729353506896` in channel `1485343472952148008`\n- **Plan posted:** Message ID `1486540884257280060` landed in the thread successfully\n\nThe plan covers tracking the full lifecycle from verdict posted → framer acknowledgment → task created → task completed, with a `verdict_tracking` table in tasks.db, a heartbeat hook to keep rows updated, and a `/api/congress/tracking` dashboa...(truncated)",
+      "artifacts": []
     }
   ]
 }
