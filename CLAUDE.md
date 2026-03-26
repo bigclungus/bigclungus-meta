@@ -312,21 +312,9 @@ When you receive `[heartbeat]`:
       ```
       If a matching open issue already exists, skip opening a new one and skip firing Congress. The existing issue is either already in progress or pending a vote.
    b. If no match: open a GitHub issue: `gh issue create --repo bigclungus/bigclungus-meta --title "[idea] <finding>" --label idea --body "<finding>\n\nSource: heartbeat ideation scan"`. Capture the issue URL and number from the output.
-   c. **Create a thread anchor first** — POST a message to the main channel and capture its `message_id`:
-      ```bash
-      SECRET=$(grep DISCORD_INJECT_SECRET ~/.claude/channels/discord/.env | cut -d= -f2-)
-      python3 -c "
-import urllib.request, json, sys
-req = urllib.request.Request('http://127.0.0.1:9876/inject',
-  data=json.dumps({'content': '⚖️ firing ideation congress: ' + sys.argv[1], 'chat_id': '1485343472952148008', 'user': 'heartbeat'}).encode(),
-  headers={'Content-Type': 'application/json', 'x-inject-secret': sys.argv[3]}, method='POST')
-urllib.request.urlopen(req, timeout=5)
-" "<finding>" "1485343472952148008" "$SECRET"
-      ```
-      Then fetch recent messages to retrieve the `message_id` of that post. Pass it as `message_id` when firing CongressWorkflow so the thread anchors correctly.
-   d. Fire a Congress: topic = `[idea]: <finding> (GitHub issue: <url>)`, with the captured `message_id` as the thread anchor.
-   e. If Congress **approves**: create a task and implement the fix autonomously.
-   f. If Congress **rejects**: close the issue with a comment: `gh issue close <number> --comment "Congress rejected: <verdict summary>"`. Do not re-propose the same finding unless new evidence is cited.
+   c. Fire a Congress: topic = `[idea]: <finding> (GitHub issue: <url>)`. Congress will auto-create a thread anchor if no message_id is provided.
+   d. If Congress **approves**: create a task and implement the fix autonomously.
+   e. If Congress **rejects**: close the issue with a comment: `gh issue close <number> --comment "Congress rejected: <verdict summary>"`. Do not re-propose the same finding unless new evidence is cited.
 
    Only one ideation congress per heartbeat cycle. Scope: strictly operational reliability — no architecture, no features.
 
