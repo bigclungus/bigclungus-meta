@@ -14,6 +14,12 @@
       "ts": "2026-03-26T18:38:50Z",
       "event": "started",
       "context": "Check audition walker service status"
+    },
+    {
+      "ts": "2026-03-26T18:44:32Z",
+      "event": "done",
+      "context": "Service restarted cleanly on port 8110. Walkers will take ~10 seconds to spawn the first one. Everything is working.\n\n---\n\n**Summary of findings and fixes:**\n\n**Root cause:** After system restarts, `persona-audition.service` was crash-looping at startup because the code had a hardcoded default of port `8101` (the same port as `labs-diff-narrator`). The `Environment=PORT=8110` in the systemd unit file was resolving correctly after ~8 retries (~40 seconds), after which it would run fine. But durin...(truncated)",
+      "artifacts": []
     }
   ]
 }
