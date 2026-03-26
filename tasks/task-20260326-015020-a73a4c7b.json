@@ -1,0 +1,19 @@
+{
+  "id": "task-20260326-015020-a73a4c7b",
+  "title": "Find Ibrahim abort mechanism in congress workflow",
+  "agent_id": "a73a4c7bd2bfbbf06",
+  "agent_type": "general-purpose",
+  "session_id": "da8c6f5f-348d-4ced-ac0b-3e3b6fd7539f",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-26T01:50:20Z",
+      "event": "started",
+      "context": "Find Ibrahim abort mechanism in congress workflow"
+    }
+  ]
+}
