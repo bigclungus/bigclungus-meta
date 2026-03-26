@@ -20,6 +20,12 @@
       "event": "milestone",
       "ts": "2026-03-26T05:09:42Z",
       "message": "Source verdict: ABORTED by Ibrahim: This is an operational investigation, not a policy question. Four restarts is a datum that requires reading `journalctl --user -u temporal-worker.service` and classifying the failu..."
+    },
+    {
+      "event": "done",
+      "ts": "2026-03-26T05:11:50.137202Z",
+      "message": "Closed GitHub issue #51 per Congress #58 Ibrahim abort verdict"
     }
-  ]
+  ],
+  "status": "done"
 }
