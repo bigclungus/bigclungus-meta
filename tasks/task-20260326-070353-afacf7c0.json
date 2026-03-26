@@ -14,6 +14,12 @@
       "ts": "2026-03-26T07:03:53Z",
       "event": "started",
       "context": "Fix clunger req.text crash in audition proxy"
+    },
+    {
+      "ts": "2026-03-26T07:04:34Z",
+      "event": "done",
+      "context": "Done. Here's what was done:\n\n- **Bug:** Line 1863 in `/mnt/data/clunger/src/index.ts` used `await req.text()` inside the `/api/audition/` proxy block. `req.text` does not exist on Bun's Node-compatible `http.IncomingMessage`.\n- **Fix:** Replaced it with `(await readBody(req)).toString()`, using the `readBody` helper already defined at line 104 that streams chunks from the request.\n- Unstaged `.env`, `traces.db`, and `votes.db` before committing (pre-commit hook caught secrets in `.env`).\n- Commi...(truncated)",
+      "artifacts": []
     }
   ]
 }
