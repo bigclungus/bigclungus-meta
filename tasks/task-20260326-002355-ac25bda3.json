@@ -14,6 +14,12 @@
       "ts": "2026-03-26T00:23:55Z",
       "event": "started",
       "context": "Build diff-narrator lab"
+    },
+    {
+      "ts": "2026-03-26T00:28:24Z",
+      "event": "done",
+      "context": "Everything is live. Here's a summary of what was built:\n\n---\n\n**diff-narrator** is built, running, and pushed to GitHub.\n\n**What was created:**\n\n- `/mnt/data/labs/diff-narrator/src/index.ts` — Bun TypeScript server on port 8101\n- `/mnt/data/labs/diff-narrator/lab.json` — lab metadata\n- `/mnt/data/labs/diff-narrator/.gitignore` — excludes node_modules and SQLite db\n- `/home/clungus/work/claude-config/systemd/user/labs-diff-narrator.service` — systemd unit (enabled and running)\n\n**Routes:**\n- `GET...(truncated)",
+      "artifacts": []
     }
   ]
 }
