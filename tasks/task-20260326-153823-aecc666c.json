@@ -14,6 +14,12 @@
       "ts": "2026-03-26T15:38:23Z",
       "event": "started",
       "context": "Heartbeat watchdog check"
+    },
+    {
+      "ts": "2026-03-26T15:39:26Z",
+      "event": "done",
+      "context": "CongressWorkflow is running. Here's a summary of what was found and actioned:\n\n**Heartbeat results:**\n\n1. **Stale tasks:** None found.\n2. **GitHub issues:** Only #56 (code quality tooling) which was flagged to skip.\n3. **Failed services:** None.\n4. **Reliability ideation:** Found a signal — `temporal-worker.service` has restarted 4 times in the last 24 hours, indicating possible flakiness.\n   - Dedup check: No existing open issue for this.\n   - Opened GitHub issue: https://github.com/bigclungus/...(truncated)",
+      "artifacts": []
     }
   ]
 }
