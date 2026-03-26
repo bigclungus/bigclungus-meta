@@ -14,6 +14,12 @@
       "ts": "2026-03-26T06:34:53Z",
       "event": "started",
       "context": "Patch NightOwl after redesign agent finishes"
+    },
+    {
+      "ts": "2026-03-26T06:36:20Z",
+      "event": "done",
+      "context": "Everything is done. Here's a summary of what was patched and done:\n\n**Workflow patches applied to `/mnt/data/temporal-workflows/workflows/nightowl_wf.py`:**\n\n1. **Timeout changed**: `timedelta(hours=6)` → `timedelta(minutes=10)` (both in the wait_condition call and the warning log message)\n2. **Max 5 tasks queue limit added**: `add_task` signal now checks `len(self._tasks) >= 5` and drops with a warning log if full\n3. **`target_hour_utc` default was already `10`** — no change needed\n\nThe HEAD co...(truncated)",
+      "artifacts": []
     }
   ]
 }
