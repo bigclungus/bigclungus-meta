@@ -20,6 +20,11 @@
       "event": "milestone",
       "ts": "2026-03-26T19:07:10Z",
       "message": "Source verdict: Scheduled tests are the single cheapest insurance policy this system doesn't have. The heartbeat catches service failures after they happen; automated tests catch regressions before they ship. The cod..."
+    },
+    {
+      "event": "milestone",
+      "ts": "2026-03-26T19:12:12.620156Z",
+      "message": "Integration test suite created at /mnt/data/tests/integration_test.py \u2014 7 tests, all passing"
     }
   ]
 }
