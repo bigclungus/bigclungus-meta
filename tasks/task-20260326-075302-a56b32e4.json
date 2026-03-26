@@ -14,6 +14,12 @@
       "ts": "2026-03-26T07:53:02Z",
       "event": "started",
       "context": "Heartbeat check silent"
+    },
+    {
+      "ts": "2026-03-26T07:53:27Z",
+      "event": "done",
+      "context": "All three checks are clean:\n\n- **Stale tasks:** 0 tasks marked stale, no orphaned congress sessions\n- **Failed services:** 0 failed services\n- **Ideation:** No output (nothing to propose)\n\nEverything is healthy. No Discord notification needed, no action required.",
+      "artifacts": []
     }
   ]
 }
