@@ -237,6 +237,29 @@ await client.start_workflow(
 
 Reply with: "⚖️ congress is in session — verdict will land here when they've deliberated"
 
+### `[meme-congress] <topic>`
+Same as `[congress]` but fires CongressWorkflow with `mode: 'meme'`. Differences from standard congress:
+- No suspension check — meme sessions are always allowed
+- Ibrahim's ABORT/REFRAME check is skipped (no chairman veto)
+- No task files generated after verdict
+- Verdict tracking row has `requires_ack=false` and `mode='meme'`
+- Report includes "🃏 meme session — no action items" footer
+- No self-inject for implementation — purely for fun
+
+Fire a `CongressWorkflow` in Temporal:
+```python
+client = await Client.connect('localhost:7233')
+await client.start_workflow(
+    'CongressWorkflow',
+    {'topic': '<topic>', 'chat_id': '<chat_id>', 'message_id': '<message_id>', 'discord_user': '<user>', 'mode': 'meme'},
+    id=f'congress-{int(time.time())}',
+    task_queue='listings-queue',
+    id_reuse_policy=WorkflowIDReusePolicy.ALLOW_DUPLICATE,
+)
+```
+
+Reply with: "🃏 meme congress is in session — pure chaos, no consequences"
+
 ### `[persona-name] <question>`
 Where `persona-name` matches a file in `/home/clungus/work/bigclungus-meta/agents/<name>.md`.
 
