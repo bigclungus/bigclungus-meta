@@ -14,6 +14,12 @@
       "ts": "2026-03-26T15:35:58Z",
       "event": "started",
       "context": "Audit CI/pre-commit tooling gaps"
+    },
+    {
+      "ts": "2026-03-26T15:37:44Z",
+      "event": "done",
+      "context": "Task complete. Here's what was found and done:\n\n**Audit findings — significant gaps exist across all projects:**\n\n- **Pre-commit hooks**: All main projects have hooks, but every single one only runs `check-secrets.sh`. Zero code-quality checks (no linting, formatting, complexity, or duplication detection).\n\n- **GitHub Actions CI**: No `.github/workflows/` directory exists in any project. There is no lint-on-push or lint-on-PR enforcement anywhere.\n\n- **Python (`temporal-workflows`)**: No linter ...(truncated)",
+      "artifacts": []
     }
   ]
 }
