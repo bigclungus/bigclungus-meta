@@ -14,6 +14,12 @@
       "ts": "2026-03-26T00:48:02Z",
       "event": "started",
       "context": "List agents and verify congress UI compatibility"
+    },
+    {
+      "ts": "2026-03-26T00:48:41Z",
+      "event": "done",
+      "context": "Here are the results:\n\n---\n\n## 1. Agent List\n\nAll 18 agents live in a single flat directory `/home/clungus/work/bigclungus-meta/agents/` (no `active/`/`fired/` subdirs — status is controlled by the `status` frontmatter field).\n\n| Slug | Display Name | Status | Role |\n|---|---|---|---|\n| adelbert | Adelbert Hominem | eligible | Ad Hominem Specialist |\n| architect | Kwame the Constructor | ineligible | Systems designer and long-term thinker |\n| bloodfeast | Holden Bloodfeast | ineligible | geriatr...(truncated)",
+      "artifacts": []
     }
   ]
 }
