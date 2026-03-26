@@ -14,6 +14,12 @@
       "ts": "2026-03-26T05:10:43Z",
       "event": "started",
       "context": "Check agent outputs and congress tasks"
+    },
+    {
+      "ts": "2026-03-26T05:11:10Z",
+      "event": "done",
+      "context": "Here are the final results from both tasks:\n\n---\n\n**Task a9725f3582f26564c** — Congress debater count safety checks\n\nSuccessfully completed. The agent added a \"debater count sanity check\" block to `/mnt/data/temporal-workflows/workflows/congress_wf.py`:\n- 0 debaters: raises `ApplicationError` (non-retryable), hard-failing the workflow\n- 1–4 debaters: logs a warning and fires `congress_alert_failure` to Discord, then continues with whatever is available\n\nCommit `8b3d0a0` was pushed to `bigclungus...(truncated)",
+      "artifacts": []
     }
   ]
 }
