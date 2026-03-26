@@ -1,0 +1,19 @@
+{
+  "id": "task-20260326-174353-a9c1fdb8",
+  "title": "Mark terminated Congress session as cancelled",
+  "agent_id": "a9c1fdb87f23d4942",
+  "agent_type": "general-purpose",
+  "session_id": "ef1a5e01-b3c3-41d6-abd3-172f68d92559",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-26T17:43:53Z",
+      "event": "started",
+      "context": "Mark terminated Congress session as cancelled"
+    }
+  ]
+}
