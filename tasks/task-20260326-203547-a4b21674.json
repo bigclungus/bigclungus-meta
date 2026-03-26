@@ -14,6 +14,12 @@
       "ts": "2026-03-26T20:35:47Z",
       "event": "started",
       "context": "CommonsV2 Group A: velocity reconciliation + move sequencing"
+    },
+    {
+      "ts": "2026-03-26T20:39:11Z",
+      "event": "done",
+      "context": "Both fixes are committed and pushed. Summary of what was done:\n\n---\n\n**Fix 1 — `commons-v2/src/entities/local-player.ts`, `reconcile()` function:**\n\nAdded a block after the snap/smooth correction logic: when `errDist > 2` (position corrected by more than 2px), `player.pendingInputs` is cleared. Since movement in this codebase is purely input-driven (no explicit `vx`/`vy` fields), clearing pending inputs is the equivalent of zeroing velocity — it prevents the pending input replay from immediately...(truncated)",
+      "artifacts": []
     }
   ]
 }
