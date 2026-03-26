@@ -14,6 +14,12 @@
       "ts": "2026-03-26T21:04:22Z",
       "event": "started",
       "context": "CommonsV2 NPC hover UX + display names"
+    },
+    {
+      "ts": "2026-03-26T21:09:52Z",
+      "event": "done",
+      "context": "Everything is live. Here's a summary of what was done:\n\n---\n\n**Changes made to `/mnt/data/labs/commons-v2/src/`:**\n\n**1. NPC names hidden by default, show on mouseover (`renderer.ts`)**\n- `drawNPC` now takes `mouseX`/`mouseY` parameters\n- Hover is detected using the same `NPC_HIT_RADIUS = 14` hitbox as the click handler\n- Name label is only drawn when `hovered == true`, with a rounded pill background instead of a bare text shadow\n\n**2. Cursor feedback on NPC hover (`main.ts`)**\n- Added `mousemov...(truncated)",
+      "artifacts": []
     }
   ]
 }
