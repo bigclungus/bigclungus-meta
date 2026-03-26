@@ -14,6 +14,12 @@
       "ts": "2026-03-26T19:59:20Z",
       "event": "started",
       "context": "Send note about NPC avatars to render agent"
+    },
+    {
+      "ts": "2026-03-26T20:01:36Z",
+      "event": "done",
+      "context": "Task created with full requirements. Here's a summary of the findings:\n\n**Root cause:** CommonsV2's `drawNPC` in `/mnt/data/labs/commons-v2/src/renderer.ts` (lines 104–136) draws a plain 16×16 colored box using a hash of `npc.name`. It has no sprite system at all.\n\n**V1's approach (grazing.html):**\n- Loads three `sprites-batch*.js` files as globals. Each contains `drawSprite_<id>_<letter>(ctx, cx, cy)` functions using only `fillRect`. Sprites are ~20×40px, drawn from feet position upward.\n- Main...(truncated)",
+      "artifacts": []
     }
   ]
 }
