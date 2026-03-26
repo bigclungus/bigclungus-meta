@@ -14,6 +14,12 @@
       "ts": "2026-03-26T19:17:10Z",
       "event": "started",
       "context": "Queue test expansion to NightOwl"
+    },
+    {
+      "ts": "2026-03-26T19:17:20Z",
+      "event": "done",
+      "context": "The NightOwl task was queued successfully. The `nightowl-today` workflow was already running and received the signal. The task will execute at 3am PDT (10am UTC) tonight as part of the batch. No task ID is emitted by the queue script, but the signal was confirmed sent to the running workflow.",
+      "artifacts": []
     }
   ]
 }
