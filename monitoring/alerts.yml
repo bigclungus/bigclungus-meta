@@ -16,3 +16,19 @@ groups:
           severity: warning
         annotations:
           summary: "Memory usage above 85%"
+
+      - alert: SystemdServiceFlapping
+        expr: systemd_service_flaps_10m > 3
+        for: 1m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Service {{ $labels.service }} has flapped {{ $value }} times in 10 min"
+
+      - alert: TemporalWorkflowHighRetries
+        expr: temporal_workflow_max_attempt >= 5
+        for: 1m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Temporal workflow {{ $labels.workflow_id }} at attempt {{ $value }}"
