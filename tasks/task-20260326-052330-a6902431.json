@@ -1,0 +1,19 @@
+{
+  "id": "task-20260326-052330-a6902431",
+  "title": "Log giga intervention to giga-log",
+  "agent_id": "a69024312e7a70521",
+  "agent_type": "general-purpose",
+  "session_id": "da8c6f5f-348d-4ced-ac0b-3e3b6fd7539f",
+  "discord_message_id": "1486596298630238259",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-26T05:23:30Z",
+      "event": "started",
+      "context": "Log giga intervention to giga-log"
+    }
+  ]
+}
