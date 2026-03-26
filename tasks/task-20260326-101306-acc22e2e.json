@@ -14,6 +14,12 @@
       "ts": "2026-03-26T10:13:06Z",
       "event": "started",
       "context": "Commit risky keyword fix and restart worker"
+    },
+    {
+      "ts": "2026-03-26T10:13:47Z",
+      "event": "done",
+      "context": "Here's the summary:\n\n1. **Commit and push** — succeeded. Commit `c1482b9` pushed to `bigclungus/temporal-workflows` master.\n\n2. **Service restart** — `temporal-worker.service` came back up cleanly (`active`).\n\n3. **NightOwl log check** — no NightOwl-related log lines in the last minute. This could mean:\n   - The NightOwl workflow isn't currently running (it fires at 3am PDT / 10am UTC, so unless a task is queued and in-flight right now, silence is expected).\n   - Or the worker is idle and waitin...(truncated)",
+      "artifacts": []
     }
   ]
 }
