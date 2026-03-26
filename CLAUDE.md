@@ -135,7 +135,7 @@ An AI parliament that debates topics via Discord thread, with live persona posts
 | `bigclungus-meta/agents/*.md` | All persona definitions (status field: eligible/ineligible/moderator) |
 
 ### Invoke individual persona
-`[persona-name] <question>` — e.g. `[spengler] should I move to Switzerland`
+`[persona: <identity>] <question>` — e.g. `[persona: spengler] should I move to Switzerland`
 
 ### Persona Evolution
 - Personas with `evolves: true` in frontmatter can receive `## Learned (YYYY-MM-DD)` sections appended after debates
@@ -264,8 +264,8 @@ await client.start_workflow(
 
 Reply with: "🃏 meme congress is in session — pure chaos, no consequences"
 
-### `[persona-name] <question>`
-Where `persona-name` matches a file in `/home/clungus/work/bigclungus-meta/agents/<name>.md`.
+### `[persona: <identity>] <question>`
+Where `<identity>` is the persona's filename without `.md` — e.g. `[persona: critic]`, `[persona: the-correspondent]`. Matches a file at `/home/clungus/work/bigclungus-meta/agents/<identity>.md`.
 
 Invoke the persona via Claude CLI and reply with their response:
 1. Read the persona MD, strip YAML frontmatter (everything after second `---`)
@@ -273,13 +273,6 @@ Invoke the persona via Claude CLI and reply with their response:
 3. Reply to Discord with: `**<display_name>** [active/from severance]:\n\n<response>`
 
 Use a background agent to do the invocation. React with an emoji immediately so the user knows it's working.
-
-Known personas (check agents/ for full list):
-- `critic` → Pippi the Pitiless (active)
-- `architect` → Kwame the Constructor (severance — fired 2026-03-25)
-- `ux` → Yuki the Yielding (active)
-- `chairman` → Ibrahim the Immovable (active)
-- `spengler` → Spengler the Doomed (severance)
 
 ### `[simplify]`
 An hourly automated code review trigger from SimplifyCronWorkflow. Its job is to scan recent changes across the main codebases and apply cleanup fixes (dead code, duplication, style consistency, minor bugs).
