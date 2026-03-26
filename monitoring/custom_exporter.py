@@ -7,6 +7,15 @@ TEXTFILE_DIR = "/var/lib/node_exporter/textfile_collector"
 OUTPUT_FILE = f"{TEXTFILE_DIR}/custom_metrics.prom"
 INTERVAL = 30
 
+# Ensure journalctl --user works inside a systemd service context where
+# XDG_RUNTIME_DIR may not be set automatically.
+_uid = os.getuid()
+if "XDG_RUNTIME_DIR" not in os.environ:
+    os.environ["XDG_RUNTIME_DIR"] = f"/run/user/{_uid}"
+
+# Full path to the temporal binary so it is always found regardless of PATH.
+_TEMPORAL = "/home/clungus/.local/bin/temporal"
+
 
 def collect_systemd_flaps() -> dict:
     """Count start/stop transitions per user service in last 10 minutes."""
@@ -30,7 +39,7 @@ def collect_systemd_flaps() -> dict:
 def collect_temporal_retries() -> dict:
     """Get max attempt count per workflow from temporal CLI."""
     result = subprocess.run(
-        ["temporal", "workflow", "list", "--limit", "20", "--output", "json"],
+        [_TEMPORAL, "workflow", "list", "--limit", "20", "--output", "json"],
         capture_output=True, text=True, timeout=20
     )
     if result.returncode != 0:
@@ -41,9 +50,8 @@ def collect_temporal_retries() -> dict:
         return retries
     for wf in workflows:
         wf_id = wf.get("execution", {}).get("workflowId", "unknown")
-        attempt = 0
         desc = subprocess.run(
-            ["temporal", "workflow", "describe", "--workflow-id", wf_id, "--output", "json"],
+            [_TEMPORAL, "workflow", "describe", "--workflow-id", wf_id, "--output", "json"],
             capture_output=True, text=True, timeout=10
         )
         if desc.returncode != 0:
@@ -83,7 +91,18 @@ if __name__ == "__main__":
     os.makedirs(TEXTFILE_DIR, exist_ok=True)
     print(f"Custom exporter running, writing to {OUTPUT_FILE}", flush=True)
     while True:
-        flaps = collect_systemd_flaps()
-        retries = collect_temporal_retries()
-        write_metrics(flaps, retries)
+        try:
+            flaps = collect_systemd_flaps()
+        except Exception as e:
+            print(f"ERROR collect_systemd_flaps: {e}", flush=True)
+            flaps = {}
+        try:
+            retries = collect_temporal_retries()
+        except Exception as e:
+            print(f"ERROR collect_temporal_retries: {e}", flush=True)
+            retries = {}
+        try:
+            write_metrics(flaps, retries)
+        except Exception as e:
+            print(f"ERROR write_metrics: {e}", flush=True)
         time.sleep(INTERVAL)
