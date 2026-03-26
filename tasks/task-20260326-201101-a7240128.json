@@ -14,6 +14,12 @@
       "ts": "2026-03-26T20:11:01Z",
       "event": "started",
       "context": "Fix CommonsV2 chunk boundary position bug"
+    },
+    {
+      "ts": "2026-03-26T20:14:33Z",
+      "event": "done",
+      "context": "Done. Here's a summary of what was found and fixed:\n\n**Root cause:** When the player crossed a chunk boundary (e.g. moving up from chunk (0,1) into chunk (0,0)), `tickLocalPlayer` correctly decremented `chunkY` and wrapped `player.y` to `CANVAS_H - EDGE_BUFFER - 1` (~698px). However, within the same game loop or the very next frame, a server tick would arrive from `handleTick` in `network.ts`. The server's authoritative position was still computed in the old chunk's coordinate space (e.g. `y = 2...(truncated)",
+      "artifacts": []
     }
   ]
 }
