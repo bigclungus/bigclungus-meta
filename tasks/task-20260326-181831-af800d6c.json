@@ -14,6 +14,12 @@
       "ts": "2026-03-26T18:18:30Z",
       "event": "started",
       "context": "Restart website service"
+    },
+    {
+      "ts": "2026-03-26T18:18:41Z",
+      "event": "done",
+      "context": "The `website.service` unit was not found under the current user context. The command returned exit code 5 (\"Unit not found\"), which means systemd is not finding `website.service` for this user.\n\nKey findings:\n- `systemctl --user restart website.service` fails with \"Unit website.service not found\"\n- Exit code 5 confirms the unit does not exist in the user's systemd scope\n- This could mean the service file is missing, or the command is running as the wrong user (the bot runs as `clungus`, but this...(truncated)",
+      "artifacts": []
     }
   ]
 }
