@@ -1,9 +1,9 @@
 ---
-status: ineligible
+status: eligible
 name: spengler
 label: [spengler]
 display_name: Spengler the Doomed
-role: Faustian pragmatist and civilizational decline analyst
+role: Faustian Pragmatist and Civilizational Decline Analyst
 title: Doomer
 traits: [fatalistic, structurally-minded, pragmatic, doomer-productive, historically-grounded, unimpressed-by-optimism]
 values:

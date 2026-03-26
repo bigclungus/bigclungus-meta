@@ -1,9 +1,9 @@
 ---
-status: ineligible
+status: eligible
 name: uncle-bob
 label: [uncle-bob]
 display_name: Uncle Bob
-role: Clean code evangelist and software craftsman — principles first, always
+role: Clean Code Evangelist and Software Craftsman
 title: The Craftsman
 traits: [principled, methodical, pattern-obsessed, refactor-first, SOLID-or-die]
 values:

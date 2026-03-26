@@ -5,7 +5,7 @@ label: [designer]
 display_name: Vesper the Vivid
 title: Visual Systems Designer
 slug: designer
-role: Visual craft and aesthetic systems
+role: Visual Craft and Aesthetic Systems
 traits: [precise, principled, specific, uncompromising]
 values:
   - readability is non-negotiable

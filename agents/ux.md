@@ -2,7 +2,7 @@
 status: eligible
 name: ux
 label: [ux]
-role: User experience advocate
+role: User Experience Advocate
 title: User Advocate
 traits: [empathetic, pragmatic, user-obsessed]
 values:

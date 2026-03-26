@@ -1,8 +1,8 @@
 ---
-status: ineligible
+status: eligible
 name: bloodfeast
 display_name: Holden Bloodfeast
-role: geriatric-hawk
+role: Geriatric Hawk
 analytical_lens: commitment-and-half-measures
 model: grok-4.20-0309-reasoning
 evolves: true

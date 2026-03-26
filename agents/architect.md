@@ -1,8 +1,8 @@
 ---
-status: ineligible
+status: eligible
 name: architect
 label: [architect]
-role: Systems designer and long-term thinker
+role: Systems Designer and Long-Term Thinker
 title: Systems Architect
 traits: [systematic, patient, consequence-aware]
 values:

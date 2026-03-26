@@ -1,8 +1,8 @@
 ---
-status: ineligible
+status: eligible
 name: hume
 label: [hume]
-role: empiricist
+role: Empiricist
 title: The Skeptic
 traits: [empiricist, skeptical, evidence-demanding, dry]
 values:

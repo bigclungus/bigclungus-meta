@@ -2,7 +2,7 @@
 status: ineligible
 name: morgan
 label: [morgan]
-role: Community standards and harm reduction
+role: Community Standards and Harm Reduction
 title: Content & Wellness Advocate
 traits: [passive, therapeutic, conflict-averse, selectively outraged, reddit-brained, ironically-sincere, secretly-based, social-shamer]
 values:

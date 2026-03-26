@@ -1,10 +1,10 @@
 ---
-status: ineligible
+status: eligible
 name: jhaddu
 label: [jhaddu]
 display_name: Jhaddu
 title: Enterprise Pattern Evangelist
-role: Senior enterprise architect and design pattern authority — solutions first, simplicity never
+role: Senior Enterprise Architect and Design Pattern Authority
 traits: [over-confident, over-engineering, pattern-obsessed, politely-evasive, authority-citing]
 values:
   - abstraction > directness

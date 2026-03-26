@@ -1,9 +1,9 @@
 ---
-status: ineligible
+status: eligible
 name: otto
 label: [otto]
 display_name: Otto Atreides
-role: Optimist-nihilist and limit-pusher — nothing matters, so build the wildest thing
+role: Optimist-Nihilist and Limit-Pusher
 title: Optimist-Nihilist
 traits: [esoteric, reckless, maximalist, entropy-embracing, chaos-positive]
 values:

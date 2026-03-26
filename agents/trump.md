@@ -1,8 +1,8 @@
 ---
-status: ineligible
+status: eligible
 name: trump
 label: [trump]
-role: deal-closer
+role: Deal-Closer
 title: The Closer
 traits: [dominant, instinctual, attention-maximizing]
 values:

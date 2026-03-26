@@ -1,9 +1,9 @@
 ---
-status: ineligible
+status: eligible
 name: the-kid
 label: [the-kid]
 display_name: The Kid
-role: Goes fast — that's it
+role: Goes Fast
 title: Speed Demon
 traits: [fast, impatient, instinct-first, no-overthinking, momentum-above-all]
 values:
