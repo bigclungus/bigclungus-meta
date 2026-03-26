@@ -14,6 +14,12 @@
       "ts": "2026-03-26T02:55:22Z",
       "event": "started",
       "context": "Get clunger.service restart details for debrief"
+    },
+    {
+      "ts": "2026-03-26T02:56:28Z",
+      "event": "done",
+      "context": "Here is the full debrief on GitHub issue #49:\n\n---\n\n## What clunger.service does\n\nclunger is the TypeScript/Bun web server at port 8081 — the `serve.py` replacement. It serves the clung.us site, handles GitHub OAuth, and hosts the Congress API (persona debate streaming via ConnectRPC/Protobuf). It calls LLMs (Claude SDK, Claude CLI, Grok/OpenAI) during congress sessions.\n\n---\n\n## Restart count and cause breakdown\n\nOver the past 24 hours: **47 restarts** logged (the heartbeat ideation script said...(truncated)",
+      "artifacts": []
     }
   ]
 }
