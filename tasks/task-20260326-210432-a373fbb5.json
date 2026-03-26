@@ -14,6 +14,12 @@
       "ts": "2026-03-26T21:04:32Z",
       "event": "started",
       "context": "CommonsV2 dialog modal fixes"
+    },
+    {
+      "ts": "2026-03-26T21:09:44Z",
+      "event": "done",
+      "context": "All done. Here's what was changed:\n\n**`/mnt/data/labs/commons-v2/src/ui/chat-modal.ts`** (major rewrite):\n- Modal title now shows `displayName, role (slug)` — e.g. \"Ibrahim the Immovable, Chairman (chairman)\"\n- `NPC_META` lookup map with all 17 NPCs covering both display name and role\n- Portrait canvas (96×192px) added to the left of the chat dialog — draws the NPC's winning sprite at 4x scale, falls back to a colored box\n- `isModalOpen()` exported — returns true when modal is visible\n- Aestheti...(truncated)",
+      "artifacts": []
     }
   ]
 }
