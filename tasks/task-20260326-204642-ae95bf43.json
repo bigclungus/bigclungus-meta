@@ -14,6 +14,12 @@
       "ts": "2026-03-26T20:46:42Z",
       "event": "started",
       "context": "Move sprite-regen to clunger static code"
+    },
+    {
+      "ts": "2026-03-26T20:49:26Z",
+      "event": "done",
+      "context": "Done. Here's a summary of what was changed:\n\n**`/mnt/data/clunger/src/index.ts`** — `notifySpriteTie()` function:\n- Removed the second `fetch` call that injected `[sprite-regen] ${pollId}` as a Discord message to BigClungus\n- Replaced it with `Bun.spawn([\"/bin/bash\", \"/mnt/data/scripts/regen-sprites.sh\", persona])` — clunger strips the `sprite-` prefix from the poll ID and spawns the script directly as a background process\n- The `.exited` promise handler logs stdout/stderr and injects a success ...(truncated)",
+      "artifacts": []
     }
   ]
 }
