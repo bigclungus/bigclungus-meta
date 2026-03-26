@@ -1,0 +1,19 @@
+{
+  "id": "task-20260326-204843-a3e109ea",
+  "title": "Send updated instructions to TRIGGERS.md agent",
+  "agent_id": "a3e109ea26f1232e5",
+  "agent_type": "general-purpose",
+  "session_id": "ef1a5e01-b3c3-41d6-abd3-172f68d92559",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-26T20:48:43Z",
+      "event": "started",
+      "context": "Send updated instructions to TRIGGERS.md agent"
+    }
+  ]
+}
