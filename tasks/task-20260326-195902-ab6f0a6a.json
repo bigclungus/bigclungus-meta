@@ -14,6 +14,12 @@
       "ts": "2026-03-26T19:59:02Z",
       "event": "started",
       "context": "Fix CommonsV2 player render and terrain parity"
+    },
+    {
+      "ts": "2026-03-26T20:05:09Z",
+      "event": "done",
+      "context": "Server is running with 1 player (from our restart reconnect test). All fixes are in place and working.\n\nHere's a summary of what was broken and what was fixed:\n\n---\n\n**Root Causes and Fixes:**\n\n**1. Black canvas (no map rendering)**\n- Root cause: `state.map` was never set. The map only loads in `handleWelcome`, but the server never sent `type: \"welcome\"` — it only sent `type: \"tick\"` messages. The client's `onMessage` routed the initial tick to `handleTick`, which skipped map loading.\n- Fix: `co...(truncated)",
+      "artifacts": []
     }
   ]
 }
