@@ -14,6 +14,12 @@
       "ts": "2026-03-26T03:46:11Z",
       "event": "started",
       "context": "Implement meme-congress trigger"
+    },
+    {
+      "ts": "2026-03-26T03:49:43Z",
+      "event": "done",
+      "context": "Everything is done. Here's a summary of what was implemented:\n\n## `[meme-congress]` implementation complete\n\n**Files changed:**\n\n- `/mnt/data/temporal-workflows/workflows/congress_wf.py` — added `mode` param extraction (defaults `'standard'`), `is_meme` bool; skips `congress_check_ibrahim` activity when `is_meme=True`; skips `congress_create_tasks` in meme mode; passes `mode` to both `congress_finalize` and `congress_report`\n\n- `/mnt/data/temporal-workflows/activities/congress_act.py` — `congres...(truncated)",
+      "artifacts": []
     }
   ]
 }
