@@ -14,6 +14,12 @@
       "ts": "2026-03-26T10:10:17Z",
       "event": "started",
       "context": "Check NightOwl workflow execution and risky task handling"
+    },
+    {
+      "ts": "2026-03-26T10:10:39Z",
+      "event": "done",
+      "context": "Here's the full picture of what happened:\n\n**Workflow status:** Running (status code 3), started at 06:59 UTC on 2026-03-26. Two tasks are still queued (both related to the commons rewrite).\n\n**Root cause — missing activity:** The workflow woke up at exactly 10:00 UTC as scheduled, but immediately hit a hard failure:\n\n```\nNotFoundError: Activity function nightowl_flag_risky for workflow nightowl-today is not registered on this worker\n```\n\nThe workflow tried to call `nightowl_flag_risky` (presuma...(truncated)",
+      "artifacts": []
     }
   ]
 }
