@@ -14,6 +14,12 @@
       "ts": "2026-03-26T19:21:16Z",
       "event": "started",
       "context": "Build congressional audit Temporal workflow"
+    },
+    {
+      "ts": "2026-03-26T19:25:20Z",
+      "event": "done",
+      "context": "The workflow registered successfully. The log confirms:\n\n```\nCongress audit cron scheduled: id=congress-audit-cron run_id=019d2b9b-8bbe-7957-b2c2-5da097ae40d9\n```\n\nHere's a summary of what was built:\n\n**Files created:**\n\n- `/mnt/data/temporal-workflows/workflows/audit_wf.py` — `CongressAuditWorkflow`, a 4-step workflow: load sessions → audit via Claude CLI → post to Discord → save state\n- `/mnt/data/temporal-workflows/activities/audit_act.py` — 4 activities:\n  - `load_sessions_since_last_audit`:...(truncated)",
+      "artifacts": []
     }
   ]
 }
