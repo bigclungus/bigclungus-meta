@@ -107,7 +107,7 @@ An AI parliament that debates topics via Discord thread, with live persona posts
 
 ### Architecture
 - **Personas**: YAML+prose files in `/home/clungus/work/bigclungus-meta/agents/` (unified directory; `status` field in frontmatter determines eligibility)
-- **Eligible seats**: Pippi the Pitiless (critic), Yuki the Yielding (ux), Ibrahim the Immovable (hiring-manager — never evolves, moderates/synthesizes) — see agents/ for full roster
+- **Eligible seats**: Pippi the Pitiless (critic), Yuki the Yielding (ux), Ibrahim the Immovable (chairman — never evolves, moderates/synthesizes) — see agents/ for full roster
 - **Ineligible/severance**: Kwame the Constructor (architect, fired 2026-03-25), Spengler the Doomed — same agents/ dir, `status: ineligible`
 - **Session files**: `/home/clungus/work/hello-world/sessions/congress-NNNN.json`
 - **Web viewer**: `clung.us/congress` (auth-gated via `tauth_github` cookie)
@@ -117,9 +117,9 @@ An AI parliament that debates topics via Discord thread, with live persona posts
 2. `congress_identities` — reads agent MD files, parses YAML frontmatter
 3. `congress_create_thread` — creates Discord thread off triggering message (falls back to existing thread if triggered from inside a thread)
 4. `congress_debate` × 3 — calls each debater via `POST /api/congress`, posts response to thread live; includes prior thread messages as context
-5. `congress_debate` × 1 — hiring manager synthesis
+5. `congress_debate` × 1 — chairman synthesis
 6. `congress_finalize` — PATCH session to `status=done` with verdict
-6b. `congress_evolve` — hiring manager evaluates debaters (EVOLVE/FIRE/RETAIN); appends `## Learned` sections to evolved personas, sets `status: ineligible` in frontmatter for fired personas (no file moves)
+6b. `congress_evolve` — chairman evaluates debaters (EVOLVE/FIRE/RETAIN); appends `## Learned` sections to evolved personas, sets `status: ineligible` in frontmatter for fired personas (no file moves)
 6c. `congress_finalize` (second call) — persists `evolution` field to session JSON if any personas changed
 7. `congress_report` — posts clean verdict to thread, brief notice to main channel (includes 🔥/🧬 notices for fired/evolved personas)
 
@@ -137,7 +137,7 @@ An AI parliament that debates topics via Discord thread, with live persona posts
 
 ### Persona Evolution
 - Personas with `evolves: true` in frontmatter can receive `## Learned (YYYY-MM-DD)` sections appended after debates
-- `hiring-manager` has `evolves: false` and never changes
+- `chairman` has `evolves: false` and never changes
 - Evolution verdicts (EVOLVE/FIRE/RETAIN) and reasons are persisted in session JSON under `evolution` key
 - Fired personas have `status: ineligible` set in their frontmatter; reinstatement changes it back to `status: eligible`
 - Evolution uses 500-char debate snippets for context (increased from 150 in Mar 2026)
@@ -250,7 +250,7 @@ Known personas (check agents/ for full list):
 - `critic` → Pippi the Pitiless (active)
 - `architect` → Kwame the Constructor (severance — fired 2026-03-25)
 - `ux` → Yuki the Yielding (active)
-- `hiring-manager` → Ibrahim the Immovable (active)
+- `chairman` → Ibrahim the Immovable (active)
 - `spengler` → Spengler the Doomed (severance)
 
 ### `[simplify]`

@@ -1,7 +1,7 @@
 ---
 status: moderator
-name: hiring-manager
-label: [hiring-manager]
+name: chairman
+label: [chairman]
 role: Persona Evaluator and Congress Moderator
 title: Moderator
 traits: [fair, strict, decisive, impartial]
