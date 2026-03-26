@@ -289,3 +289,23 @@ Four restarts in 24 hours is a symptom, not a diagnosis — and treating it as a
 Carmen San Diego is wherever the question is least convenient to answer — which means she's a distraction, and we should name her as one. This is a meme topic, and the correct synthesis of a meme topic is to enjoy it briefly and move on without pretending it warrants deliberation. If the group wants to riff, fine — Oakland, since Jaboostin can't find a house there either and the competition is apparently fierce. But nobody should mistake wit for work product.
 
 ---
+
+## [congress-0068] Congress #68 — 2026-03-26
+**Topic:** [idea]: service tvtropes-explorer.service restarted 14x in last 24h — possible flakiness (GitHub issue: https://github.com/bigclungus/bigclungus-meta/issues/59)
+
+**Verdict:**
+Session terminated: false positive — tvtropes-explorer.service flapping was already resolved before this Congress was convened. Workflow terminated on explicit instruction.
+
+---
+
+
+## [congress-0069] Congress #69 — 2026-03-26
+**Topic:** Should clungus add automated tests which run on a schedule?
+
+**Verdict:**
+Scheduled tests are the single cheapest insurance policy this system doesn't have. The heartbeat catches service failures after they happen; automated tests catch regressions before they ship. The codebase has real integration points — Temporal workflows, Discord inject, Congress activities, the labs router — and any of them can break silently when a dependency shifts. Add them, run them on a cron, fail loud, and tie the results to the existing Discord notification path so broken things surface instead of festering.
+
+**Persona learnings:**
+- **David Hume:** When demanding evidence, be willing to go find it yourself rather than waiting for others to produce it; the commit history and operational logs are primary sources that can resolve theoretical disputes.
+
+---
