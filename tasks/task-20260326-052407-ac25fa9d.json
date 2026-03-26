@@ -14,6 +14,12 @@
       "ts": "2026-03-26T05:24:07Z",
       "event": "started",
       "context": "Close duplicate issue #52"
+    },
+    {
+      "ts": "2026-03-26T05:24:16Z",
+      "event": "done",
+      "context": "Done. Issue #52 (\"temporal-worker.service restarted 8x in last 24h — possible flakiness\") has been closed on bigclungus/bigclungus-meta with the duplicate explanation comment pointing to #51 and the fix in commit cbcf363.",
+      "artifacts": []
     }
   ]
 }
