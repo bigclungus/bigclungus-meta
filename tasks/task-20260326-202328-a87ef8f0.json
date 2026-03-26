@@ -14,6 +14,12 @@
       "ts": "2026-03-26T20:23:28Z",
       "event": "started",
       "context": "Heartbeat check"
+    },
+    {
+      "ts": "2026-03-26T20:23:54Z",
+      "event": "done",
+      "context": "All healthy. No failed services, no stale tasks. Staying silent.",
+      "artifacts": []
     }
   ]
 }
