@@ -1,0 +1,19 @@
+{
+  "id": "task-20260326-173941-a8b5f1f2",
+  "title": "Close false positive issue 59 and flag Congress",
+  "agent_id": "a8b5f1f20ddf491ee",
+  "agent_type": "general-purpose",
+  "session_id": "ef1a5e01-b3c3-41d6-abd3-172f68d92559",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-26T17:39:41Z",
+      "event": "started",
+      "context": "Close false positive issue 59 and flag Congress"
+    }
+  ]
+}
