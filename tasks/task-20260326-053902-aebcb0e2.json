@@ -14,6 +14,12 @@
       "ts": "2026-03-26T05:39:02Z",
       "event": "started",
       "context": "Add live voting to commons-vote page"
+    },
+    {
+      "ts": "2026-03-26T05:41:05Z",
+      "event": "done",
+      "context": "Both pushes successful. Here's a summary of what was done:\n\n**Backend (`/mnt/data/clunger/src/index.ts`)**\n\nAdded `restHandleVote()` plus supporting helpers:\n- `getVotesDb()` — opens `votes.db` at `/mnt/data/clunger/votes.db`, creates the `votes` table and unique index on first call\n- `POST /api/vote` — upserts a vote (one per voter per poll), returns `{ ok, counts, winner }`. Fires Discord inject notification when winner threshold (3 votes) is reached.\n- `GET /api/vote/:poll_id` — returns `{ co...(truncated)",
+      "artifacts": []
     }
   ]
 }
