@@ -14,6 +14,12 @@
       "ts": "2026-03-26T18:19:00Z",
       "event": "started",
       "context": "Investigate task list count bug"
+    },
+    {
+      "ts": "2026-03-26T18:20:56Z",
+      "event": "done",
+      "context": "The file is live. Here's a summary of what was found and done:\n\n---\n\n**Root cause:** The oscillation between \"1427 total tasks\" and \"50 tasks\" was caused by filter pill clicks calling `render(_lastTasks)` without `meta` or `totals` arguments.\n\nWhen a filter pill (e.g., \"done\", \"in_progress\") was clicked:\n1. `render(_lastTasks)` was called with no `meta`/`totals`\n2. `updateSummary` received `undefined` for `serverTotals` and fell into the fallback branch — counting only the 50 tasks on the curren...(truncated)",
+      "artifacts": []
     }
   ]
 }
