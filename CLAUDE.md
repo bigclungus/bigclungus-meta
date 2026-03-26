@@ -74,6 +74,30 @@
 
 ---
 
+## Labs (labs.clung.us)
+
+Sandboxed experiments at `labs.clung.us`. Each lab is a self-contained Bun + TypeScript + SQLite app with its own auth. No shared auth with the main site.
+
+**Directory:** `/mnt/data/labs/<name>/`
+**Router:** `/mnt/data/labs-router/` — auto-discovers labs from `lab.json` manifests, no restart needed
+**Router service:** `labs-router.service` (port 8083)
+
+**lab.json format:**
+```json
+{ "name": "my-experiment", "title": "My Experiment", "description": "...", "port": 8100, "status": "active" }
+```
+
+**Create a new lab:**
+```bash
+bash /mnt/data/scripts/new-lab.sh <name> "<title>" "<description>"
+cd /mnt/data/labs/<name>
+bun run src/index.ts   # appears at labs.clung.us/<name>/ immediately
+```
+
+Ports auto-assigned from 8100+. Template is in `/mnt/data/labs/template/`.
+
+---
+
 ## Congress System
 
 An AI parliament that debates topics via Discord thread, with live persona posts.
