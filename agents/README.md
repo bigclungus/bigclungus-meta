@@ -92,7 +92,61 @@ A fired (ineligible) persona can be reinstated by:
 1. Changing `status: ineligible` back to `status: eligible` in their MD file
 2. Resyncing the DB (or using the Personas tab in the congress UI)
 
-The bar for reinstatement is high (see CLAUDE.md Severance Reinstatement Policy): there must be a concrete demonstrated gap — a specific argument only that persona can make that no active persona can cover.
+The bar for reinstatement is high: there must be a **concrete demonstrated gap** — a specific congress where their lens would have changed the outcome and no active persona could cover it. Nostalgia and slow news cycles are not sufficient. See the Congressional Reform Rationale section below for the full process.
+
+---
+
+## Congressional Reform Rationale
+
+This section documents *why* certain design decisions were made, not just what they are. Future maintainers and personas reading this file should understand the reasoning behind the system's current shape.
+
+### Status vocabulary: eligible / ineligible / moderator
+
+The original system used `active`, `fired`, and `severance` as status values. These were replaced for two reasons:
+
+1. **Moral valence.** "Fired" and "severance" carry employment-law baggage and imply a punitive relationship between the chairman and debaters. The congress is a deliberative body, not a workplace. Retiring a perspective because it no longer serves the debate is a structural decision, not a disciplinary one.
+2. **Precision.** `eligible`/`ineligible` describes the actual mechanical fact (can or cannot be selected for a session) without encoding a story about why. The DB still normalizes legacy values for historical records, but new files use the canonical terms.
+
+### "Fire" became "retire" (and then "ineligible")
+
+The FIRE verdict label survived in the workflow code longer than the status vocabulary, but the intent shifted: retiring a persona means their perspective is no longer serving the congress, not that they failed or were punished. The word "retire" better fits the model — a retired perspective can return if the gap it fills becomes real again.
+
+### Ibrahim's evolution preference ordering
+
+When issuing post-congress evolution verdicts, Ibrahim applies this preference order:
+
+**EVOLVE > RETAIN > FIRE/RETIRE**
+
+The reasoning: a congress where everyone simply did their job and no one learned anything is a less valuable session than one where at least one perspective was sharpened. Ibrahim is biased toward finding the learning in each session. FIRE/RETIRE is the last resort — used only when a persona is actively harming deliberation quality, not merely failing to shine.
+
+### RETAIN is the silent default
+
+If Ibrahim issues no verdict annotation for a persona, the system treats it as RETAIN. No `## Learned` section is appended, no status changes. This keeps session records clean: explicit annotations only appear when something actually changed. The absence of an annotation is itself meaningful data (the persona held their ground, no correction needed).
+
+### Voting system
+
+After Ibrahim synthesizes the debate, each debater casts a vote on the synthesis:
+
+- **AGREE** or **DISAGREE** — no abstentions permitted.
+- One sentence of rationale is required with every vote.
+- The rationale must be substantive, not performative ("I agree because this seems right" is not acceptable).
+
+The no-abstention rule is intentional: forcing a position prevents personas from hedging and surfaces genuine disagreement. A congress where everyone abstains has produced nothing. A one-sentence rationale requirement keeps votes grounded — it prevents lazy agreement and forces dissenting personas to articulate the specific point of departure.
+
+### Reinstatement policy
+
+Fired (ineligible) personas stay retired until there is a **demonstrated gap** — a concrete congress where their specific lens would have changed the outcome and no active persona could fill it.
+
+The bar is deliberately high:
+- Nostalgia is not sufficient.
+- A slow news cycle with nothing interesting to debate is not sufficient.
+- The test is: *can you name the argument only they can make?* If not, they stay on the bench.
+
+**Process when the bar is met:**
+1. A congress occurs where the gap is concretely felt.
+2. Ibrahim decides reinstatement after that congress.
+3. The reinstated persona gets one probationary session.
+4. A RETAIN or FIRE verdict is issued at the end of the probationary session — no rolling amnesty.
 
 ---
 
