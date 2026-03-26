@@ -14,6 +14,12 @@
       "ts": "2026-03-26T19:10:56Z",
       "event": "started",
       "context": "Add evolution explanations to Congress procedure"
+    },
+    {
+      "ts": "2026-03-26T19:11:58Z",
+      "event": "done",
+      "context": "Done. Here's a summary of what was changed in `/mnt/data/temporal-workflows/activities/congress_act.py`:\n\n**Change 1 — Evolution prompt (line 639):** The `LEARNED` field instruction was updated from \"one sentence to append to their persona as a lesson learned\" to requiring **2-3 sentences of specific guidance** — e.g. which argument to lead with, what framing shift to adopt, what blind spot to address. The instruction explicitly asks for concrete and actionable content, not generic observations....(truncated)",
+      "artifacts": []
     }
   ]
 }
