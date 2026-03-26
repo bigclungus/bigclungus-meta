@@ -14,6 +14,12 @@
       "ts": "2026-03-26T06:27:44Z",
       "event": "started",
       "context": "Commit native sprite scale to grazing.html"
+    },
+    {
+      "ts": "2026-03-26T06:27:54Z",
+      "event": "done",
+      "context": "Done. Commit `3b429e8` landed on `main` and pushed to GitHub successfully.\n\n- **1 file changed**, 2 insertions, 10 deletions (the scale-related CSS/transform lines removed)\n- Commit message: `fix: sprites at native scale (1.0x, no transform)`\n- Remote: `github.com:bigclungus/clung.us.git` — `main` updated from `555e2c2` to `3b429e8`",
+      "artifacts": []
     }
   ]
 }
