@@ -20,6 +20,22 @@
       "event": "milestone",
       "ts": "2026-03-26T05:09:42Z",
       "message": "Source verdict: ABORTED by Ibrahim: This is an operational investigation, not a policy question. Four restarts is a datum that requires reading `journalctl --user -u temporal-worker.service` and classifying the failu..."
+    },
+    {
+      "event": "milestone",
+      "ts": "2026-03-26T05:14:48.038528Z",
+      "message": "Found root cause: reminder_wf.py line 22 used datetime.now(timezone.utc) inside a Temporal workflow, violating the determinism sandbox. This caused RestrictedWorkflowAccessError on every OnceReminderWorkflow activation. Fixed by replacing with workflow.now()."
+    },
+    {
+      "event": "milestone",
+      "ts": "2026-03-26T05:14:53.043290Z",
+      "message": "Note: the ~hourly service restarts are intentional (simplify cron pushes code changes, claude-bot restarts worker). These are NOT crashes. The reminder_wf bug caused workflow-level failures, not service crashes."
+    },
+    {
+      "event": "done",
+      "ts": "2026-03-26T05:14:57.763971Z",
+      "message": "Fixed reminder_wf.py: replaced datetime.now(timezone.utc) with workflow.now() and removed unused timezone import. Committed cbcf363, pushed to GitHub, restarted temporal-worker.service \u2014 confirmed healthy. Service restarts were intentional (simplify cron), not crashes."
     }
-  ]
+  ],
+  "status": "done"
 }

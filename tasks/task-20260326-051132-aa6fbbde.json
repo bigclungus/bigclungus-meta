@@ -14,6 +14,12 @@
       "ts": "2026-03-26T05:11:32Z",
       "event": "started",
       "context": "Investigate temporal-worker restarts and fix"
+    },
+    {
+      "ts": "2026-03-26T05:15:08Z",
+      "event": "done",
+      "context": "Here is the full investigation report:\n\n---\n\n**Root cause: `reminder_wf.py` used `datetime.now()` inside a Temporal workflow**\n\n`/mnt/data/temporal-workflows/workflows/reminder_wf.py` line 22 called `datetime.now(timezone.utc)` directly inside the `OnceReminderWorkflow` workflow function. Temporal's workflow sandbox bans non-deterministic calls like `datetime.now()` — every time the workflow was replayed (which happens on every worker restart), it threw:\n\n```\nRestrictedWorkflowAccessError: Canno...(truncated)",
+      "artifacts": []
     }
   ]
 }
