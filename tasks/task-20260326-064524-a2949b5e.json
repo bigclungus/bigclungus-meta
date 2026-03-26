@@ -14,6 +14,12 @@
       "ts": "2026-03-26T06:45:24Z",
       "event": "started",
       "context": "Fix map edge + speech modal + voted fountain"
+    },
+    {
+      "ts": "2026-03-26T06:52:47Z",
+      "event": "done",
+      "context": "All three fixes are done. Here's a summary:\n\n**Fix 1 - Map edge transition (root cause fixed):**\nThe bug was in `updateLocalPlayer()` — `isBlocked()` returns `true` for out-of-bounds tile coords, so when the player walked to the edge, the collision check hit `return; // fully blocked` before the chunk transition logic could run. Fixed by moving the edge detection block entirely before the collision check, with an early return on `crossed`. Removed the now-dead duplicate `if (crossed)` block.\n\n**...(truncated)",
+      "artifacts": []
     }
   ]
 }
