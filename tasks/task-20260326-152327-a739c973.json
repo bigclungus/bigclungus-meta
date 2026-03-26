@@ -14,6 +14,12 @@
       "ts": "2026-03-26T15:23:27Z",
       "event": "started",
       "context": "Heartbeat watchdog check"
+    },
+    {
+      "ts": "2026-03-26T15:25:33Z",
+      "event": "done",
+      "context": "Graphiti graph is empty — no signal. Per the heartbeat rules, if no clear graph signal exists, skip lab ideation and stay silent.\n\nAll heartbeat checks complete. Summary:\n\n1. **Stale tasks**: None found.\n2. **GitHub issues**: None open.\n3. **Failed services**: None.\n4. **Reliability ideation**: Script reported custom-exporter flakiness, but this is the same false positive from the prior heartbeat cycle (root cause was already fixed before issue #54 was opened). Opened and immediately closed issu...(truncated)",
+      "artifacts": []
     }
   ]
 }
