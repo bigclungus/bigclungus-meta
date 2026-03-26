@@ -14,6 +14,12 @@
       "ts": "2026-03-26T21:43:28Z",
       "event": "started",
       "context": "Diagnose and fix commons-server crashes"
+    },
+    {
+      "ts": "2026-03-26T21:46:24Z",
+      "event": "done",
+      "context": "Both tasks complete. Here's a summary:\n\n**Diagnosis (task-20260326-214258-af689faab):**\nThe 4 restarts in 24h were all clean SIGTERM shutdowns — intentional deployments, not crashes. No stack traces, no kill signals, no unclean exits. The watchdog alarm was a false positive on deployment activity.\n\nHowever, a real latent crash bug was found during code review:\n\n**Bug found in `/mnt/data/commons-server/src/index.ts`:**\nThe `/admin/congress` POST handler called `req.json().then((body) => { ... })`...(truncated)",
+      "artifacts": []
     }
   ]
 }
