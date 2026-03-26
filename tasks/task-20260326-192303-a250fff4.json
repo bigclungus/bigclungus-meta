@@ -14,6 +14,12 @@
       "ts": "2026-03-26T19:23:03Z",
       "event": "started",
       "context": "Fix CommonsV2 bundle serving"
+    },
+    {
+      "ts": "2026-03-26T19:25:27Z",
+      "event": "done",
+      "context": "The fix is complete. Here's a summary of what was wrong and what was done:\n\n**Root cause:** `/mnt/data/labs/commons-v2/src/index.ts` had a static `indexHTML` string with `<script type=\"module\" src=\"/__bundle/main.js\">` — an absolute path. When the browser loads `labs.clung.us/commons-v2/`, it resolves that absolute path to `labs.clung.us/__bundle/main.js` (no lab prefix), which the labs router correctly returns 404 for (no lab named `__bundle`).\n\n**Fix:** Converted the static `indexHTML` string ...(truncated)",
+      "artifacts": []
     }
   ]
 }
