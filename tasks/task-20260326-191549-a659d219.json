@@ -1,0 +1,19 @@
+{
+  "id": "task-20260326-191549-a659d219",
+  "title": "Build TestCronWorkflow in Temporal",
+  "agent_id": "a659d219740022bb1",
+  "agent_type": "general-purpose",
+  "session_id": "ef1a5e01-b3c3-41d6-abd3-172f68d92559",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-26T19:15:49Z",
+      "event": "started",
+      "context": "Build TestCronWorkflow in Temporal"
+    }
+  ]
+}
