@@ -14,6 +14,12 @@
       "ts": "2026-03-26T07:16:01Z",
       "event": "started",
       "context": "Save xAI key to env and call Grok for spec"
+    },
+    {
+      "ts": "2026-03-26T07:18:06Z",
+      "event": "done",
+      "context": "The xAI API key is definitively invalid — xAI's servers are rejecting it as incorrect regardless of how the HTTP request is made. This is an account/key issue on xAI's side, not a network or encoding issue.\n\nHere's a summary of what was done:\n\n**Task 1 — Save XAI_API_KEY to env file:**\n- The key already existed in `/mnt/data/temporal-workflows/.env` but with a different value (`xai-x5me...1C`).\n- Replaced it with the new key you provided (`xai-7x9F...As`). Not committed (env files are not tracke...(truncated)",
+      "artifacts": []
     }
   ]
 }
