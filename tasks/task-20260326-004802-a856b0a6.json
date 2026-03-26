@@ -1,0 +1,19 @@
+{
+  "id": "task-20260326-004802-a856b0a6",
+  "title": "List agents and verify congress UI compatibility",
+  "agent_id": "a856b0a60a8ac7871",
+  "agent_type": "general-purpose",
+  "session_id": "e4d4bf00-991b-4f0e-aac7-2ab4056f18c5",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-26T00:48:02Z",
+      "event": "started",
+      "context": "List agents and verify congress UI compatibility"
+    }
+  ]
+}
