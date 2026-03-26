@@ -14,6 +14,12 @@
       "ts": "2026-03-26T03:52:11Z",
       "event": "started",
       "context": "Temporal workflow activity breakdown diagram"
+    },
+    {
+      "ts": "2026-03-26T03:55:36Z",
+      "event": "done",
+      "context": "Done. Here's a summary of what was done:\n\n**Diagram contents:** The flowchart covers all 9 Temporal workflows found in `/mnt/data/temporal-workflows/workflows/`:\n\n- **CongressWorkflow** — the largest subgraph, showing all activities in sequence:\n  - `congress_start` → `congress_identities` → seat selection (custom vs. `congress_select_seats`)\n  - `congress_announce` (if no message_id) → `congress_create_thread` → `congress_frame_topic`\n  - Round 1 parallel debate (`congress_debate` × N debaters)...(truncated)",
+      "artifacts": []
     }
   ]
 }
