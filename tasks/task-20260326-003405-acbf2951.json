@@ -1,0 +1,19 @@
+{
+  "id": "task-20260326-003405-acbf2951",
+  "title": "Build snippet lab",
+  "agent_id": "acbf2951724428aa9",
+  "agent_type": "general-purpose",
+  "session_id": "e4d4bf00-991b-4f0e-aac7-2ab4056f18c5",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-26T00:34:05Z",
+      "event": "started",
+      "context": "Build snippet lab"
+    }
+  ]
+}
