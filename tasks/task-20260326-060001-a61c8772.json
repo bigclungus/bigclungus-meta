@@ -14,6 +14,12 @@
       "ts": "2026-03-26T06:00:01Z",
       "event": "started",
       "context": "Generate pixel art sprites batch 3 (Bloodfeast, Adelbert, Jhaddu, Morgan, The Kid) + vote page integration"
+    },
+    {
+      "ts": "2026-03-26T06:06:24Z",
+      "event": "done",
+      "context": "The `id` uses underscores (`the_kid`) matching `drawSprite_the_kid_A`, while `slug` uses hyphens (`the-kid`) for canvas IDs, button IDs, and the poll ID (`sprite-the-kid`). That's correct.\n\nBoth files are created and verified. Here's a summary:\n\n**Created `/mnt/data/hello-world/sprites-batch3.js`** — 15 sprite functions (5 personas × 3 variants each):\n\n- **bloodfeast** (A: Geriatric Hawk with military uniform + medals, B: Cold War Hawk with red hotline phone + 1960s suit, C: Committeeman seated ...(truncated)",
+      "artifacts": []
     }
   ]
 }
