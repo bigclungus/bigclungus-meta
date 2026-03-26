@@ -25,6 +25,12 @@
       "event": "milestone",
       "ts": "2026-03-26T19:12:12.620156Z",
       "message": "Integration test suite created at /mnt/data/tests/integration_test.py \u2014 7 tests, all passing"
+    },
+    {
+      "event": "done",
+      "ts": "2026-03-26T19:12:59.388888Z",
+      "message": "Integration test suite complete \u2014 7/7 tests passing. Committed to bigclungus-meta/tests/integration_test.py and pushed."
     }
-  ]
+  ],
+  "status": "done"
 }
