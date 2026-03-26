@@ -136,3 +136,15 @@ BigClungus launched an xAI API agent with high reasoning effort (~2-3 min runtim
 
 ---
 
+## duplicate-discord-post
+**count:** 1
+**first:** 2026-03-26
+**last:** 2026-03-26
+**severity:** suggestion (1 occurrences)
+
+BigClungus posted the TVTropes lab announcement twice — once from the heartbeat agent and once from the main thread reacting to the task completion notification. Duplicate message deleted via Discord bot API.
+
+**Root cause:** When a background agent posts to Discord AND the main thread also posts on seeing the task complete, both messages go out. Need to either have the agent post OR have the main thread post, not both.
+
+---
+
