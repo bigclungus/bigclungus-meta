@@ -14,6 +14,12 @@
       "ts": "2026-03-26T15:12:32Z",
       "event": "started",
       "context": "Update CLAUDE.md heartbeat Congress threading"
+    },
+    {
+      "event": "done",
+      "ts": "2026-03-26T15:31:43.181799Z",
+      "message": "completed"
     }
-  ]
+  ],
+  "status": "done"
 }
