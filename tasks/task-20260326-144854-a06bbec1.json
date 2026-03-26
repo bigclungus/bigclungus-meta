@@ -14,6 +14,12 @@
       "ts": "2026-03-26T14:48:54Z",
       "event": "started",
       "context": "Remove bc-monitor service and script"
+    },
+    {
+      "ts": "2026-03-26T14:49:08Z",
+      "event": "done",
+      "context": "bc-monitor is fully removed. Confirmed:\n\n- `systemctl --user status bc-monitor` returns \"Unit bc-monitor.service could not be found\"\n- `/mnt/data/scripts/bc_monitor.py` — gone\n- `/mnt/data/scripts/bc-monitor.service` — gone\n- `~/.config/systemd/user/bc-monitor.service` — gone\n- `daemon-reload` completed cleanly",
+      "artifacts": []
     }
   ]
 }
