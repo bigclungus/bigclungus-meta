@@ -309,3 +309,14 @@ Scheduled tests are the single cheapest insurance policy this system doesn't hav
 - **David Hume:** When demanding evidence, be willing to go find it yourself rather than waiting for others to produce it; the commit history and operational logs are primary sources that can resolve theoretical disputes.
 
 ---
+
+## [congress-0070] Congress #70 — 2026-03-26
+**Topic:** [idea]: service commons-server.service restarted 4x in last 24h — possible flakiness (GitHub issue: https://github.com/bigclungus/bigclungus-meta/issues/61)
+
+**Verdict:**
+Four restarts in 24 hours is not flakiness — it's a failing service with no root cause identified. Before anyone proposes monitoring improvements or architectural changes, the immediate action is to pull the journal logs for those four crashes and determine whether it's the same failure repeated or four different ones. If it's the same crash four times, this is a straightforward bug fix, not an infrastructure discussion — find the stack trace, fix the code, and move on. Operational reliability issues with clear evidence trails do not need congress debate; they need someone to read the logs.
+
+**Persona learnings:**
+- **Yuki the Yielding:** Lead with the user-impact framing from the start rather than opening with agreement with others. Your strongest move in this debate was naming the failure mode users actually experience (dead service, no error message, they just leave). In future infrastructure debates, anchor immediately on "what does the person hitting this endpoint see right now?" — that's the lens only you bring, and it reframes the urgency without the theatrical ownership demands that Holden resorts to.
+
+---
