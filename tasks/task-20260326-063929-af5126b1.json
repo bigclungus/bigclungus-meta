@@ -1,0 +1,19 @@
+{
+  "id": "task-20260326-063929-af5126b1",
+  "title": "Patch NightOwl to use polling status endpoint",
+  "agent_id": "af5126b1961c7b818",
+  "agent_type": "general-purpose",
+  "session_id": "da8c6f5f-348d-4ced-ac0b-3e3b6fd7539f",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-26T06:39:29Z",
+      "event": "started",
+      "context": "Patch NightOwl to use polling status endpoint"
+    }
+  ]
+}
