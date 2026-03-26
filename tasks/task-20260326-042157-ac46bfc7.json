@@ -1,0 +1,19 @@
+{
+  "id": "task-20260326-042157-ac46bfc7",
+  "title": "Investigate congress-0053 timeout and retry",
+  "agent_id": "ac46bfc7c12eb86e6",
+  "agent_type": "general-purpose",
+  "session_id": "da8c6f5f-348d-4ced-ac0b-3e3b6fd7539f",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-26T04:21:57Z",
+      "event": "started",
+      "context": "Investigate congress-0053 timeout and retry"
+    }
+  ]
+}
