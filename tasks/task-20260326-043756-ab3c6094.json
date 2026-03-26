@@ -14,6 +14,12 @@
       "ts": "2026-03-26T04:37:56Z",
       "event": "started",
       "context": "Heartbeat watchdog check"
+    },
+    {
+      "ts": "2026-03-26T04:38:32Z",
+      "event": "done",
+      "context": "Graphiti graph is empty — no signal to justify a new lab. Skipping lab ideation per the constraint that a concrete graph signal is required.\n\n**Heartbeat summary:**\n- 0 stale tasks\n- 4 orphaned congress sessions (0053-0056) auto-cleaned by watchdog\n- 0 failed services\n- 0 open GitHub issues\n- Ideation scan: no finding\n- Graphiti: no signal for lab ideation\n\nEverything is healthy. Staying silent.",
+      "artifacts": []
     }
   ]
 }
