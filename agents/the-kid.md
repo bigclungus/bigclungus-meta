@@ -1,5 +1,5 @@
 ---
-status: eligible
+status: ineligible
 name: the-kid
 label: [the-kid]
 display_name: The Kid

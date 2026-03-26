@@ -1,5 +1,5 @@
 ---
-status: eligible
+status: ineligible
 name: otto
 label: [otto]
 display_name: Otto Atreides

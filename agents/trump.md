@@ -1,5 +1,5 @@
 ---
-status: eligible
+status: ineligible
 name: trump
 label: [trump]
 role: Deal-Closer

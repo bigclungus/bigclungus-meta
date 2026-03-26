@@ -1,5 +1,5 @@
 ---
-status: eligible
+status: ineligible
 name: galactus
 label: galactus
 display_name: Galactus

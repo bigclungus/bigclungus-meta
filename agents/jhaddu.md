@@ -1,5 +1,5 @@
 ---
-status: eligible
+status: ineligible
 name: jhaddu
 label: [jhaddu]
 display_name: Jhaddu

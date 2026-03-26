@@ -1,5 +1,5 @@
 ---
-status: eligible
+status: ineligible
 name: pm
 label: [pm]
 display_name: Chud O'Bikeshedder
