@@ -277,6 +277,13 @@ Constraints (from Congress verdict RFC-1):
 
 ---
 
+## GitHub Issues vs Tasks
+
+- **GitHub Issues** (`bigclungus/bigclungus-meta`): Used for idea proposals and feature/bug tracking. Heartbeat ideation proposals are opened as issues with label `idea`. Congress-rejected proposals are closed with a rejection comment.
+- **Tasks** (`tasks.db`, clung.us/tasks): BigClungus's active work log. Created when actioning an approved issue or a user request. Logged as work progresses, marked done on completion.
+
+---
+
 ## Task Logging
 
 When working on a task from `/home/clungus/work/bigclungus-meta/tasks/`, log meaningful milestones as you go using:
