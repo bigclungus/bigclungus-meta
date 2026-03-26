@@ -14,6 +14,12 @@
       "ts": "2026-03-26T06:16:08Z",
       "event": "started",
       "context": "Fix grazing bugs + resize canvas + move fountain"
+    },
+    {
+      "ts": "2026-03-26T06:17:57Z",
+      "event": "done",
+      "context": "All 5 fixes applied and pushed (commit `ce6da92`):\n\n**Fix 1 — Block WASD when modal open:** Added an early-return check at the top of the `keydown` handler that bails if `#congress-modal-overlay` is visible.\n\n**Fix 2 — Clear keys on blur:** Added a `window.addEventListener('blur', ...)` handler that sets all `keysDown` values to false, preventing stuck movement when tabbing away.\n\n**Fix 3 — Ghost avatar:** Added `if (p.name === localPlayer.name) continue;` inside `drawRemotePlayers` loop as an a...(truncated)",
+      "artifacts": []
     }
   ]
 }
