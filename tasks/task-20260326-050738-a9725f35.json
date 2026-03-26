@@ -1,0 +1,19 @@
+{
+  "id": "task-20260326-050738-a9725f35",
+  "title": "Error on congress with fewer than 5 debaters",
+  "agent_id": "a9725f3582f26564c",
+  "agent_type": "general-purpose",
+  "session_id": "da8c6f5f-348d-4ced-ac0b-3e3b6fd7539f",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-26T05:07:37Z",
+      "event": "started",
+      "context": "Error on congress with fewer than 5 debaters"
+    }
+  ]
+}
