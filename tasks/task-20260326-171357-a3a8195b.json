@@ -14,6 +14,12 @@
       "ts": "2026-03-26T17:13:57Z",
       "event": "started",
       "context": "Save duplicate-post feedback to memory"
+    },
+    {
+      "ts": "2026-03-26T17:14:13Z",
+      "event": "done",
+      "context": "Done. Created `/home/clungus/.claude/projects/-mnt-data/memory/feedback_no_duplicate_posts.md` with the full feedback content, and appended the index entry to `MEMORY.md`.",
+      "artifacts": []
     }
   ]
 }
