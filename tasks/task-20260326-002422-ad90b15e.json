@@ -1,0 +1,19 @@
+{
+  "id": "task-20260326-002422-ad90b15e",
+  "title": "Build roundwatch lab",
+  "agent_id": "ad90b15e37ffaf0b0",
+  "agent_type": "general-purpose",
+  "session_id": "e4d4bf00-991b-4f0e-aac7-2ab4056f18c5",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-26T00:24:22Z",
+      "event": "started",
+      "context": "Build roundwatch lab"
+    }
+  ]
+}
