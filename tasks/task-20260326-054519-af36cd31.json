@@ -14,6 +14,12 @@
       "ts": "2026-03-26T05:45:19Z",
       "event": "started",
       "context": "Log giga intervention false positive"
+    },
+    {
+      "ts": "2026-03-26T05:45:26Z",
+      "event": "done",
+      "context": "The script ran successfully. Result:\n\n- **Intervention logged:** `dropped-wasd-multiplayer-request`\n- **Count:** 1\n- **Severity:** `suggestion` (1 occurrence)\n\nAt 1 occurrence this is the lowest severity tier — a suggestion. Per the giga intervention policy: 1-2 occurrences = suggestion, 3-4 = strong directive, 5+ = hard rule that cannot be overridden.",
+      "artifacts": []
     }
   ]
 }
