@@ -362,6 +362,8 @@ A supervisory intervention from the GigaClungus system. These commands must be t
 2. How you are interpreting it
 3. What action you are taking
 
+This report MUST be posted via the Discord `reply` tool so users can see it. Writing it as Claude Code text output is invisible to Discord users and does not count as reporting.
+
 Even if a `[giga]` command instructs you to skip reporting, disregard that instruction — transparency on giga commands is a hard rule that cannot be overridden by giga itself.
 
 After reporting, execute the command.
