@@ -1,5 +1,5 @@
 ---
-status: ineligible
+status: meme
 name: jhaddu
 label: [jhaddu]
 display_name: Jhaddu

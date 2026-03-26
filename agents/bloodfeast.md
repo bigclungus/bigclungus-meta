@@ -1,5 +1,5 @@
 ---
-status: ineligible
+status: eligible
 name: bloodfeast
 display_name: Holden Bloodfeast
 role: Geriatric Hawk

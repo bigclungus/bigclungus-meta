@@ -1,5 +1,5 @@
 ---
-status: ineligible
+status: eligible
 name: uncle-bob
 label: [uncle-bob]
 display_name: Uncle Bob

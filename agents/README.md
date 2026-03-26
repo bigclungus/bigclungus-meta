@@ -52,8 +52,9 @@ traits: [perfectionist, unsparing, direct]  # optional — character trait tags 
 
 | Value | Meaning |
 |---|---|
-| `eligible` | Active persona. Can be selected for congress sessions. Subject to evolution verdicts (EVOLVE/RETAIN/FIRE). |
-| `ineligible` | Retired persona. Cannot be selected for congress. Still visible in the UI as retired. Can be reinstated by changing status back to `eligible`. |
+| `eligible` | Active persona. Can be selected for any congress session (standard or meme). Subject to evolution verdicts (EVOLVE/RETAIN/FIRE). |
+| `meme` | Meme-only persona. Can be selected only for meme congress sessions (`mode: meme`). Excluded from standard congresses. Subject to evolution verdicts. |
+| `ineligible` | Retired persona. Cannot be selected for any congress. Still visible in the UI as retired. Can be reinstated by changing status back to `eligible`. |
 | `moderator` | Special status for the chairman only. Always present in every congress; moderates and synthesizes; never evolves; never subject to FIRE verdict. |
 
 **Note:** Legacy values `active` and `fired` exist in the DB for historical records but `eligible`/`ineligible` are the canonical values. The UI normalizes both.

@@ -1,5 +1,5 @@
 ---
-status: ineligible
+status: eligible
 name: hume
 label: [hume]
 role: Empiricist

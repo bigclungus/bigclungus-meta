@@ -1,5 +1,5 @@
 ---
-status: ineligible
+status: meme
 name: morgan
 label: [morgan]
 role: Community Standards and Harm Reduction

@@ -1,5 +1,5 @@
 ---
-status: ineligible
+status: meme
 name: adelbert
 label: [adelbert]
 role: Ad Hominem Specialist

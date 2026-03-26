@@ -1,5 +1,5 @@
 ---
-status: ineligible
+status: eligible
 name: spengler
 label: [spengler]
 display_name: Spengler the Doomed

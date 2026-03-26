@@ -1,5 +1,5 @@
 ---
-status: ineligible
+status: eligible
 name: architect
 label: [architect]
 role: Systems Designer and Long-Term Thinker
