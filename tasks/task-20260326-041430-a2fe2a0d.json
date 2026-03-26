@@ -1,0 +1,19 @@
+{
+  "id": "task-20260326-041430-a2fe2a0d",
+  "title": "Systemd stop hook and Temporal failure alerting",
+  "agent_id": "a2fe2a0d275b08a65",
+  "agent_type": "general-purpose",
+  "session_id": "da8c6f5f-348d-4ced-ac0b-3e3b6fd7539f",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-26T04:14:30Z",
+      "event": "started",
+      "context": "Systemd stop hook and Temporal failure alerting"
+    }
+  ]
+}
