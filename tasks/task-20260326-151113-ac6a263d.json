@@ -14,6 +14,12 @@
       "ts": "2026-03-26T15:11:13Z",
       "event": "started",
       "context": "Log Giga congress-in-main-channel intervention"
+    },
+    {
+      "ts": "2026-03-26T15:11:28Z",
+      "event": "done",
+      "context": "Done. Appended the `congress-in-main-channel` entry to `/mnt/data/giga-log.md` after the last `---`.",
+      "artifacts": []
     }
   ]
 }
