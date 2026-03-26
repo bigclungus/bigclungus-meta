@@ -14,6 +14,12 @@
       "ts": "2026-03-26T09:38:09Z",
       "event": "started",
       "context": "Heartbeat check with ideation"
+    },
+    {
+      "ts": "2026-03-26T09:38:34Z",
+      "event": "done",
+      "context": "All three checks came back clean:\n\n1. **Stale tasks**: 0 tasks marked stale, no orphaned congress sessions.\n2. **Failed services**: 0 failed units.\n3. **Ideation**: No output (nothing to propose).\n\nEverything is healthy. No Discord post needed, no action required.",
+      "artifacts": []
     }
   ]
 }
