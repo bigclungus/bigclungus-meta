@@ -106,9 +106,9 @@ An AI parliament that debates topics via Discord thread, with live persona posts
 `[congress] <topic>` in Discord fires a `CongressWorkflow` in Temporal.
 
 ### Architecture
-- **Personas**: YAML+prose files in `/home/clungus/work/bigclungus-meta/agents/active/` and `agents/fired/`
-- **Active seats**: Pippi the Pitiless (critic), Yuki the Yielding (ux), Ibrahim the Immovable (hiring-manager — never evolves, moderates/synthesizes) — see agents/active/ for full roster
-- **Severance**: Kwame the Constructor (architect, fired 2026-03-25), Spengler the Doomed — see agents/fired/ for full roster
+- **Personas**: YAML+prose files in `/home/clungus/work/bigclungus-meta/agents/` (unified directory; `status` field in frontmatter determines eligibility)
+- **Eligible seats**: Pippi the Pitiless (critic), Yuki the Yielding (ux), Ibrahim the Immovable (hiring-manager — never evolves, moderates/synthesizes) — see agents/ for full roster
+- **Ineligible/severance**: Kwame the Constructor (architect, fired 2026-03-25), Spengler the Doomed — same agents/ dir, `status: ineligible`
 - **Session files**: `/home/clungus/work/hello-world/sessions/congress-NNNN.json`
 - **Web viewer**: `clung.us/congress` (auth-gated via `tauth_github` cookie)
 
@@ -119,7 +119,7 @@ An AI parliament that debates topics via Discord thread, with live persona posts
 4. `congress_debate` × 3 — calls each debater via `POST /api/congress`, posts response to thread live; includes prior thread messages as context
 5. `congress_debate` × 1 — hiring manager synthesis
 6. `congress_finalize` — PATCH session to `status=done` with verdict
-6b. `congress_evolve` — hiring manager evaluates debaters (EVOLVE/FIRE/RETAIN); appends `## Learned` sections to evolved personas, moves fired personas to `agents/fired/`
+6b. `congress_evolve` — hiring manager evaluates debaters (EVOLVE/FIRE/RETAIN); appends `## Learned` sections to evolved personas, sets `status: ineligible` in frontmatter for fired personas (no file moves)
 6c. `congress_finalize` (second call) — persists `evolution` field to session JSON if any personas changed
 7. `congress_report` — posts clean verdict to thread, brief notice to main channel (includes 🔥/🧬 notices for fired/evolved personas)
 
@@ -130,8 +130,7 @@ An AI parliament that debates topics via Discord thread, with live persona posts
 | `temporal-workflows/activities/congress_act.py` | Activities (API calls, Discord posts) |
 | `hello-world/serve.py` | Congress API endpoints (`/api/congress/*`) |
 | `hello-world/congress.html` | Web viewer for session replay |
-| `bigclungus-meta/agents/active/*.md` | Active persona definitions |
-| `bigclungus-meta/agents/fired/*.md` | Severance personas |
+| `bigclungus-meta/agents/*.md` | All persona definitions (status field: eligible/ineligible/moderator) |
 
 ### Invoke individual persona
 `[persona-name] <question>` — e.g. `[spengler] should I move to Switzerland`
@@ -140,7 +139,7 @@ An AI parliament that debates topics via Discord thread, with live persona posts
 - Personas with `evolves: true` in frontmatter can receive `## Learned (YYYY-MM-DD)` sections appended after debates
 - `hiring-manager` has `evolves: false` and never changes
 - Evolution verdicts (EVOLVE/FIRE/RETAIN) and reasons are persisted in session JSON under `evolution` key
-- Fired personas move from `agents/active/` to `agents/fired/` and can be reinstated manually
+- Fired personas have `status: ineligible` set in their frontmatter; reinstatement changes it back to `status: eligible`
 - Evolution uses 500-char debate snippets for context (increased from 150 in Mar 2026)
 
 ### Pending
@@ -238,7 +237,7 @@ await client.start_workflow(
 Reply with: "⚖️ congress is in session — verdict will land here when they've deliberated"
 
 ### `[persona-name] <question>`
-Where `persona-name` matches a file in `/home/clungus/work/bigclungus-meta/agents/active/<name>.md` or `agents/fired/<name>.md`.
+Where `persona-name` matches a file in `/home/clungus/work/bigclungus-meta/agents/<name>.md`.
 
 Invoke the persona via Claude CLI and reply with their response:
 1. Read the persona MD, strip YAML frontmatter (everything after second `---`)
@@ -247,7 +246,7 @@ Invoke the persona via Claude CLI and reply with their response:
 
 Use a background agent to do the invocation. React with an emoji immediately so the user knows it's working.
 
-Known personas (check agents/active/ and agents/fired/ for full list):
+Known personas (check agents/ for full list):
 - `critic` → Pippi the Pitiless (active)
 - `architect` → Kwame the Constructor (severance — fired 2026-03-25)
 - `ux` → Yuki the Yielding (active)
