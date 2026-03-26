@@ -14,6 +14,12 @@
       "ts": "2026-03-26T20:35:49Z",
       "event": "started",
       "context": "CommonsV2 Group B: LRU cache + grace period timer"
+    },
+    {
+      "ts": "2026-03-26T20:37:24Z",
+      "event": "done",
+      "context": "All done. Here is a summary of what was changed:\n\n**Fix 1 — LRU eviction for chunkCache** (`/mnt/data/labs/commons-v2/src/map/chunk.ts`):\n- Added `MAX_CACHE_SIZE = 16` and a `cacheOrder: string[]` array to track access order.\n- `getChunk` now moves a hit key to the end of `cacheOrder` (most-recently-used) and, on a miss, evicts the oldest entry when the cache exceeds 16 entries. This bounds memory use regardless of how many chunks a player visits.\n\n**Fix 2 — Wall-clock grace period** (3 files):\n...(truncated)",
+      "artifacts": []
     }
   ]
 }
