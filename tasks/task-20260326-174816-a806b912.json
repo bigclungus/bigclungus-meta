@@ -14,6 +14,12 @@
       "ts": "2026-03-26T17:48:16Z",
       "event": "started",
       "context": "Delete duplicate Commons message from main channel"
+    },
+    {
+      "ts": "2026-03-26T17:48:23Z",
+      "event": "done",
+      "context": "Done. Message `1486783357856645160` was successfully deleted from channel `1485343472952148008`. The curl returned an empty body with exit code 0, which is Discord's expected response for a successful DELETE.",
+      "artifacts": []
     }
   ]
 }
