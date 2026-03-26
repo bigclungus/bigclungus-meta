@@ -1,0 +1,19 @@
+{
+  "id": "task-20260326-185817-a1bbc526",
+  "title": "Fix NPC rendering and congress building entry",
+  "agent_id": "a1bbc526da61c8bec",
+  "agent_type": "general-purpose",
+  "session_id": "ef1a5e01-b3c3-41d6-abd3-172f68d92559",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-26T18:58:17Z",
+      "event": "started",
+      "context": "Fix NPC rendering and congress building entry"
+    }
+  ]
+}
