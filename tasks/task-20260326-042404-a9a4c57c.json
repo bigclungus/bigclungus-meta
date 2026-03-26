@@ -14,6 +14,12 @@
       "ts": "2026-03-26T04:24:04Z",
       "event": "started",
       "context": "Handle clunger OOM kill and restart"
+    },
+    {
+      "ts": "2026-03-26T04:24:28Z",
+      "event": "done",
+      "context": "Done. Summary of findings:\n\n**What happened:** clunger hit its 512M `MemoryMax` ceiling — peak memory before kill was 316.3M, but congress sessions 0053 and 0054 were both in flight simultaneously (created at 04:19 and 04:22, killed at ~04:23), likely spiking above the limit when serving concurrent LLM requests.\n\n**Current state:** clunger is back up via systemd auto-restart, running at 55.8M, healthy.\n\n**Relevant paths:**\n- Service unit: `/home/clungus/.config/systemd/user/clunger.service` (`Me...(truncated)",
+      "artifacts": []
     }
   ]
 }
