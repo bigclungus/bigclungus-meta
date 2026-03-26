@@ -14,6 +14,12 @@
       "ts": "2026-03-26T21:04:12Z",
       "event": "started",
       "context": "CommonsV2 NPC terrain passability + wandering blurbs"
+    },
+    {
+      "ts": "2026-03-26T21:13:07Z",
+      "event": "done",
+      "context": "Both servers are healthy. Here's a summary of what was done:\n\n---\n\n## Summary\n\n### Issue 1: NPC terrain passability\n\n**Root cause:** The server's `map.ts` used completely different map dimensions (25×19 tiles @ 32px) from the client (50×35 tiles @ 20px). NPCs were navigating a phantom obstacle map that bore no relation to what players saw. The comment in `game-loop.ts` even acknowledged this, but the fix was never applied.\n\n**Fix in `/mnt/data/commons-server/src/`:**\n- `map.ts`: Changed `CHUNK_T...(truncated)",
+      "artifacts": []
     }
   ]
 }
