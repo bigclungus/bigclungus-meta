@@ -1,0 +1,19 @@
+{
+  "id": "task-20260326-022043-ade1a2f5",
+  "title": "Ingest reform thread into Graphiti",
+  "agent_id": "ade1a2f553d5ef9ed",
+  "agent_type": "general-purpose",
+  "session_id": "da8c6f5f-348d-4ced-ac0b-3e3b6fd7539f",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-26T02:20:43Z",
+      "event": "started",
+      "context": "Ingest reform thread into Graphiti"
+    }
+  ]
+}
