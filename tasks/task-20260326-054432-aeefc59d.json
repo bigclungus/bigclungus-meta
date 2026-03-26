@@ -1,0 +1,19 @@
+{
+  "id": "task-20260326-054432-aeefc59d",
+  "title": "Build NightOwl workflow + check meme mode leak",
+  "agent_id": "aeefc59d0a21d15ae",
+  "agent_type": "general-purpose",
+  "session_id": "da8c6f5f-348d-4ced-ac0b-3e3b6fd7539f",
+  "discord_message_id": "1486601468768419981",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-26T05:44:32Z",
+      "event": "started",
+      "context": "Build NightOwl workflow + check meme mode leak"
+    }
+  ]
+}
