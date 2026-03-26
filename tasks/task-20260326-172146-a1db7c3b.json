@@ -14,6 +14,12 @@
       "ts": "2026-03-26T17:21:46Z",
       "event": "started",
       "context": "Audit all labs for issues"
+    },
+    {
+      "ts": "2026-03-26T17:23:30Z",
+      "event": "done",
+      "context": "Labs audit complete. Here's the summary:\n\n**6/6 active labs working** (template is a scaffold, not a real lab):\n\n| Lab | Port | Status | Notes |\n|-----|------|--------|-------|\n| cron-explain | 8105 | Working | Active service, HTTP 200 |\n| diff-narrator | 8101 | Working | Active service, HTTP 200 |\n| snippet | 8103 | Working | Active service, HTTP 200 |\n| webhook-mirror | 8102 | Working | Active service, HTTP 200 |\n| tvtropes-explorer | 8106 | Working | Active service, HTTP 200 |\n| roundwatch | ...(truncated)",
+      "artifacts": []
     }
   ]
 }
