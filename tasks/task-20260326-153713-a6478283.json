@@ -14,6 +14,12 @@
       "ts": "2026-03-26T15:37:13Z",
       "event": "started",
       "context": "Add persona recusal rule to Congress"
+    },
+    {
+      "ts": "2026-03-26T15:39:10Z",
+      "event": "done",
+      "context": "All steps completed successfully. Here's a summary of what was done:\n\n**Code change** (`/mnt/data/temporal-workflows/workflows/congress_wf.py`):\nAdded a recusal block (section 2a) that runs after debaters are assembled — whether via `custom_personas` or `congress_select_seats`. It checks if any firing-related keywords are in the topic (`fire`, `fired`, `terminate`, `termination`, `severance`, `retire`, `remove`, `dismiss`, etc.) and if so, cross-references each debater's `name`, `display_name`, ...(truncated)",
+      "artifacts": []
     }
   ]
 }
