@@ -14,6 +14,12 @@
       "ts": "2026-03-26T06:53:19Z",
       "event": "started",
       "context": "Queue modal UX to NightOwl + heartbeat check"
+    },
+    {
+      "ts": "2026-03-26T06:53:50Z",
+      "event": "done",
+      "context": "Both commands completed cleanly:\n\n1. **NightOwl queue** — Task successfully signaled to the already-running `nightowl-today` workflow: modal close-on-outside-click/ESC for all overlays in `grazing.html`.\n\n2. **Heartbeat checks** — All clear:\n   - 0 stale tasks, no orphaned congress sessions\n   - 0 failed services",
+      "artifacts": []
     }
   ]
 }
