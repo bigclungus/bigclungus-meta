@@ -18,7 +18,6 @@
 |---|---|---|
 | clung.us | 8080 | Static website (hello-world) |
 | terminal.clung.us | 7682 | Terminal WebSocket server |
-| 1998.clung.us | 8082 | 1998 retro site |
 | temporal.clung.us | 8234 | Temporal auth proxy (proxies → :8233) |
 | labs.clung.us | 8083 | Labs router (dynamic per-experiment proxy) |
 
@@ -27,7 +26,6 @@
 |---|---|
 | 7682 | terminal-server (ttyd-style WebSocket) |
 | 8080 | website (clung.us static) |
-| 8082 | 1998.clung.us static site |
 | 8083 | labs-router (labs.clung.us) |
 | 8233 | Temporal dev server (internal) |
 | 8234 | temporal-proxy (public, auth-gated) |
@@ -51,7 +49,6 @@
 | Terminal server | /mnt/data/terminal/server.py |
 | Temporal proxy | /mnt/data/temporal/proxy.py |
 | Website | /mnt/data/hello-world/ |
-| 1998 site | /mnt/data/1998/ |
 | Discord bot .env | /home/clungus/.claude/channels/discord/.env |
 | Cloudflare tunnel config | /home/clungus/.cloudflared/config.yml |
 | Docker root | /mnt/data/docker (moved from /var/lib/docker) |
@@ -71,7 +68,6 @@
 | temporal-proxy.service | Temporal Auth Proxy (:8234) |
 | temporal-worker.service | Temporal Worker (listings-queue) |
 | website.service | clung.us Static Web Server (:8080) |
-| 1998.service | 1998.clung.us (:8082) |
 | dbus.service | D-Bus (system) |
 | gpg-agent.service | GnuPG agent |
 

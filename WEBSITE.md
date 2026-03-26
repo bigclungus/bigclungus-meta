@@ -15,8 +15,7 @@ Ubuntu VM
    ├─ :8080  serve.py         (clung.us)
    ├─ :7682  terminal/server.py  (terminal.clung.us)
    ├─ :8234  temporal/proxy.py   (temporal.clung.us → :8233 Temporal dev server)
-   ├─ :8082  1998/             (1998.clung.us, static)
-   └─ :8084  (cost.clung.us, separate service)
+   └─ :8083  labs-router        (labs.clung.us)
 ```
 
 Unmatched hostnames fall through to a Cloudflare `http_status:404` rule.
@@ -30,8 +29,7 @@ Unmatched hostnames fall through to a Cloudflare `http_status:404` rule.
 | `clung.us` | 8080 | Static site (`serve.py`) | None |
 | `terminal.clung.us` | 7682 | Terminal server (`server.py`) | GitHub OAuth |
 | `temporal.clung.us` | 8234 | Temporal proxy (`proxy.py`) | GitHub OAuth |
-| `1998.clung.us` | 8082 | 1998 retro static site | None |
-| `cost.clung.us` | 8084 | Cost tracker (separate service) | Unknown |
+| `labs.clung.us` | 8083 | Labs router (dynamic per-experiment proxy) | Per-lab |
 
 Source: `/home/clungus/.cloudflared/config.yml`
 
@@ -62,7 +60,6 @@ Served by `/mnt/data/hello-world/serve.py` — a subclass of Python's `SimpleHTT
 - `deaths` — `/deaths`
 - `github` — external: `https://github.com/bigclungus`
 - `project board` — external: GitHub Projects board
-- `1998` — external: `https://1998.clung.us`
 - `terminal` — `https://terminal.clung.us` (marked locked)
 - `temporal` — `https://temporal.clung.us` (marked locked)
 
@@ -144,14 +141,6 @@ Served by `/mnt/data/temporal/proxy.py` (aiohttp) on port 8234.
 
 ---
 
-### 1998.clung.us
-
-Served statically from `/mnt/data/1998/` on port 8082 (separate service, not `serve.py`).
-
-**Purpose:** Parody late-1990s personal homepage aesthetic. Features: tiled starfield SVG background, Comic Sans, WordArt-style rainbow heading, blinking/marquee/spinning text animations, "UNDER CONSTRUCTION" flashing banner, hit counter widget, rainbow animated dividers, and sidebar/content table layout. No functional backend — purely decorative static HTML.
-
----
-
 ## Auth
 
 Both `terminal.clung.us` and `temporal.clung.us` use the same GitHub OAuth flow, implemented independently in each service's Python file.
@@ -181,7 +170,6 @@ All managed via `systemctl --user` as the `clungus` user.
 | `temporal-proxy.service` | `temporal/proxy.py` | 8234 | Auth proxy for Temporal dev server |
 | `temporal.service` | Temporal CLI | 8233 | Temporal dev server (internal only) |
 | `temporal-worker.service` | Temporal worker | — | Worker for `listings-queue` task queue |
-| `1998.service` | Static server | 8082 | 1998 retro site |
 | `cloudflared.service` | `cloudflared` | — | Cloudflare tunnel daemon |
 | `claude-bot.service` | Claude Code bot | — | BigClungus Discord bot |
 
