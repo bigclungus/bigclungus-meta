@@ -1,0 +1,19 @@
+{
+  "id": "task-20260326-053918-a5f44fd0",
+  "title": "Slow down NPC movement speeds in commons",
+  "agent_id": "a5f44fd032d807fbd",
+  "agent_type": "general-purpose",
+  "session_id": "da8c6f5f-348d-4ced-ac0b-3e3b6fd7539f",
+  "discord_message_id": "1486600194073165904",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-26T05:39:18Z",
+      "event": "started",
+      "context": "Slow down NPC movement speeds in commons"
+    }
+  ]
+}
