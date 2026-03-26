@@ -14,6 +14,12 @@
       "ts": "2026-03-26T18:25:41Z",
       "event": "started",
       "context": "Redirect ghosting fix agent"
+    },
+    {
+      "ts": "2026-03-26T18:26:03Z",
+      "event": "done",
+      "context": "The ghosting issue is already fully addressed by commit `b04c57d`. That commit adds a `ctx.clearRect(0, 0, W, H)` at the top of the `loop()` function, clearing the entire canvas each frame before redrawing — which is the correct fix for ghosting trails.\n\n**Summary:**\n\n- `ad025b5` fixed z-order: grass background fills under transparent warthog areas, then foreground tiles (trees/rocks) are redrawn on top. This fixed bleed-through but not ghosting.\n- `b04c57d` (already committed on top of it) fixe...(truncated)",
+      "artifacts": []
     }
   ]
 }
