@@ -1,0 +1,19 @@
+{
+  "id": "task-20260326-054741-a0989048",
+  "title": "Fix vote notification firing multiple times",
+  "agent_id": "a0989048c2208dce5",
+  "agent_type": "general-purpose",
+  "session_id": "da8c6f5f-348d-4ced-ac0b-3e3b6fd7539f",
+  "discord_message_id": "1486602379183919224",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-26T05:47:40Z",
+      "event": "started",
+      "context": "Fix vote notification firing multiple times"
+    }
+  ]
+}
