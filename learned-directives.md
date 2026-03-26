@@ -263,3 +263,13 @@ The commons should have exactly one addition: persistent state. Personas should 
 Four restarts in 24 hours is a pattern, not noise — this needs root-cause investigation before any fix is applied. The danger here is someone slapping a restart loop or watchdog on it and calling it solved, which just hides the flakiness behind automation. Pull the journal logs for all four crashes, identify whether it's the same failure mode or four different ones, and only then decide whether this is a code bug, a resource issue, or an environmental problem. No band-aids — find the actual cause, fix it, and verify it holds.
 
 ---
+
+## [congress-0065] Congress #65 — 2026-03-26
+**Topic:** Should Uncle Bob (The Craftsman persona) be fired from Congress?
+
+**Verdict:**
+The debate has produced a clear signal beneath the surface noise. All five debaters — including Uncle Bob himself — converge on the same structural diagnosis: Congress doesn't need a dedicated "craftsmanship" seat because code quality enforcement is a tooling problem, not a deliberation problem. The real question was never "is Uncle Bob bad at debating?" but rather "does a craftsmanship perspective change congressional outcomes?" The answer, which even the sympathetic voices conceded, is no — Uncle Bob's contributions consistently reduce to "write clean code," which is correct but never load-bearing in a policy debate.
+
+Fire Uncle Bob. His perspective is real but belongs in linters, CI pipelines, and code review automation — not in a deliberative body that debates architecture, priorities, and tradeoffs. The one counterargument worth acknowledging is Hume's point that firing signals we've learned nothing from past reinstatements, but that gets the causation backwards: the lesson from r
+
+---
