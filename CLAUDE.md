@@ -106,21 +106,13 @@ An AI parliament that debates topics via Discord thread, with live persona posts
 
 ### Architecture
 - **Personas**: YAML+prose files in `/home/clungus/work/bigclungus-meta/agents/` (unified directory; `status` field in frontmatter determines eligibility)
-- **Eligible seats**: Pippi the Pitiless (critic), Yuki the Yielding (ux), Ibrahim the Immovable (chairman — never evolves, moderates/synthesizes) — see agents/ for full roster
-- **Ineligible/severance**: Kwame the Constructor (architect, fired 2026-03-25), Spengler the Doomed — same agents/ dir, `status: ineligible`
+- **Chairman**: Ibrahim the Immovable — never evolves, moderates and synthesizes, always present
 - **Session files**: `/home/clungus/work/hello-world/sessions/congress-NNNN.json`
 - **Web viewer**: `clung.us/congress` (auth-gated via `tauth_github` cookie)
 
 ### Workflow flow
-1. `congress_start` — creates session file, returns `{session_id, session_number}`
-2. `congress_identities` — reads agent MD files, parses YAML frontmatter
-3. `congress_create_thread` — creates Discord thread off triggering message (falls back to existing thread if triggered from inside a thread)
-4. `congress_debate` × 3 — calls each debater via `POST /api/congress`, posts response to thread live; includes prior thread messages as context
-5. `congress_debate` × 1 — hiring manager synthesis
-6. `congress_finalize` — PATCH session to `status=done` with verdict
-6b. `congress_evolve` — hiring manager evaluates debaters (EVOLVE/FIRE/RETAIN); appends `## Learned` sections to evolved personas, sets `status: ineligible` in frontmatter for fired personas (no file moves)
-6c. `congress_finalize` (second call) — persists `evolution` field to session JSON if any personas changed
-7. `congress_report` — posts clean verdict to thread, brief notice to main channel (includes 🔥/🧬 notices for fired/evolved personas)
+
+See `/mnt/data/CONGRESS_PROCESS.md` for the full workflow.
 
 ### Recusal rule
 **A persona cannot participate as a debater in a Congress session where their own termination is the topic.** The workflow automatically excludes them from the debater list when firing-related keywords (fire, fired, terminate, termination, severance, retire, remove, dismiss) appear in the topic alongside that persona's name, display name, role, or title.
@@ -130,19 +122,22 @@ An AI parliament that debates topics via Discord thread, with live persona posts
 |---|---|
 | `temporal-workflows/workflows/congress_wf.py` | Workflow orchestration |
 | `temporal-workflows/activities/congress_act.py` | Activities (API calls, Discord posts) |
-| `hello-world/serve.py` | Congress API endpoints (`/api/congress/*`) |
+| `clunger/src/services/congress.ts` | Congress API endpoints (`/api/congress/*`) |
 | `hello-world/congress.html` | Web viewer for session replay |
 | `bigclungus-meta/agents/*.md` | All persona definitions (status field: eligible/ineligible/moderator) |
 
 ### Invoke individual persona
-`[persona: <identity>] <question>` — e.g. `[persona: spengler] should I move to Switzerland`
+`[persona-name] <question>` — e.g. `[spengler] should I move to Switzerland`
 
 ### Persona Evolution
 - Personas with `evolves: true` in frontmatter can receive `## Learned (YYYY-MM-DD)` sections appended after debates
-- `chairman` has `evolves: false` and never changes
-- Evolution verdicts (EVOLVE/FIRE/RETAIN) and reasons are persisted in session JSON under `evolution` key
-- Fired personas have `status: ineligible` set in their frontmatter; reinstatement changes it back to `status: eligible`
-- Evolution uses 500-char debate snippets for context (increased from 150 in Mar 2026)
+- Ibrahim (chairman) has `evolves: false` and never changes
+- Evolution verdicts (EVOLVE/FIRE/RETAIN/CREATE) and reasons are persisted in session JSON under `evolution` key
+- Fired personas have `status: ineligible` set in their frontmatter
+- Evolution uses 500-char debate snippets for context
+
+### CREATE directive
+After evaluating individual debaters, Ibrahim may issue one or more CREATE directives at the meta level. CREATE is used when a structural perspective was absent from the debate and its absence meaningfully distorted the outcome. The bar is high — not for variety, but for real gaps. A CREATE produces a new persona file at `agents/<slug>.md` with `status: eligible` and `evolves: true`. Existing slugs are never overwritten.
 
 ### Pending
 - Multi-model congress (Gemini + GPT keys from jaboostin pending)
