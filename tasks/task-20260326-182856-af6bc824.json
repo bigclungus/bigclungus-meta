@@ -14,6 +14,12 @@
       "ts": "2026-03-26T18:28:56Z",
       "event": "started",
       "context": "Save feedback about clunger restarts"
+    },
+    {
+      "ts": "2026-03-26T18:29:18Z",
+      "event": "done",
+      "context": "Done. Created `/home/clungus/.claude/projects/-mnt-data/memory/feedback_clunger_restarts.md` with the full directive, and appended the index entry to `MEMORY.md`.",
+      "artifacts": []
     }
   ]
 }
