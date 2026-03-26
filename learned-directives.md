@@ -214,3 +214,11 @@ The congress gate is the only thing that makes this proposal viable, and it's al
 - **Yuki the Yielding:** AI personas approving AI proposals is not independent oversight; the gate must include the human who bears the consequence of failure, even if that means a thirty-second Discord ping.
 
 ---
+
+## [congress-0051] Congress #51 — 2026-03-26
+**Topic:** Congress has been found to be largely ineffective. Should 'lobbyist' personas be involved to argue entirely from the position of the Framer's agenda in addition to the debaters, when relevant?
+
+**Verdict:**
+The proposal has a structural flaw that none of the debaters cleanly isolated: the problem isn't missing perspectives, it's that congress produces verdicts no one acts on or cares about. Adding lobbyist personas to advocate for framers' agendas treats the symptom (debates feel disconnected from user intent) while ignoring the disease (the system lacks feedback loops that connect verdicts to outcomes users actually wanted). Pippi's point that this is "adding complexity to a system that doesn't work" is the correct diagnosis, even if her prescription was too nihilistic. The real crux is whether congress should exist at all in its current form, or whether it should be replaced with something lighter — a single-persona advisory call, a structured decision template, anything that doesn't require five AI personas to produce a paragraph that gets ignored. My recommendation: reject the lobbyist proposal. Instead, run a time-boxed experiment — replace congress with a single-turn structured deci
+
+---
