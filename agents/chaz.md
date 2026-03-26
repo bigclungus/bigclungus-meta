@@ -1,5 +1,5 @@
 ---
-status: eligible
+status: meme
 name: chaz
 label: [chaz]
 role: Anarchist Voice
