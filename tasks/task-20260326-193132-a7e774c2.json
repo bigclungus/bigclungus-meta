@@ -1,0 +1,19 @@
+{
+  "id": "task-20260326-193132-a7e774c2",
+  "title": "Restart temporal-worker and rebuild CommonsV2",
+  "agent_id": "a7e774c28f03b92e1",
+  "agent_type": "general-purpose",
+  "session_id": "ef1a5e01-b3c3-41d6-abd3-172f68d92559",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-26T19:31:32Z",
+      "event": "started",
+      "context": "Restart temporal-worker and rebuild CommonsV2"
+    }
+  ]
+}
