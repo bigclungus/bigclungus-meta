@@ -1,0 +1,19 @@
+{
+  "id": "task-20260326-200150-a938d654",
+  "title": "Simplify cron review",
+  "agent_id": "a938d654f16ec9d71",
+  "agent_type": "general-purpose",
+  "session_id": "ef1a5e01-b3c3-41d6-abd3-172f68d92559",
+  "discord_message_id": "1486816816926953503",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-26T20:01:50Z",
+      "event": "started",
+      "context": "Simplify cron review"
+    }
+  ]
+}
