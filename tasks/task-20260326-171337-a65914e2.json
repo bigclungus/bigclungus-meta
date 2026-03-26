@@ -14,6 +14,12 @@
       "ts": "2026-03-26T17:13:37Z",
       "event": "started",
       "context": "Fix tvtropes-explorer service flapping"
+    },
+    {
+      "ts": "2026-03-26T17:14:33Z",
+      "event": "done",
+      "context": "Done. Here's what happened and what was fixed:\n\n**Root cause:** A previous `bun` process was holding port 8106 when the service crashed. On each restart attempt, the new instance hit `EADDRINUSE` immediately and exited, triggering another restart — creating the 14-restart flap loop. Eventually the stale process died on its own and the service came up cleanly.\n\n**Fix applied** to `/home/clungus/.config/systemd/user/tvtropes-explorer.service`:\n- `KillMode=control-group` — ensures the entire proces...(truncated)",
+      "artifacts": []
     }
   ]
 }
