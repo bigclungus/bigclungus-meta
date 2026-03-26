@@ -14,6 +14,12 @@
       "ts": "2026-03-26T06:41:04Z",
       "event": "started",
       "context": "Commons multiplayer fixes + hop + facing direction"
+    },
+    {
+      "ts": "2026-03-26T06:46:39Z",
+      "event": "done",
+      "context": "All done. Here's a summary of what was implemented:\n\n## Changes Made\n\n### `/mnt/data/clunger/src/index.ts`\n- **Fix 1 (dual-avatar):** On WebSocket connect, server sends `{\"type\": \"welcome\", \"socket_id\": \"<uuid>\"}`. Added `socket_id` field to `CommonsPlayer` interface and included it in player broadcasts.\n- **Fix 2 (server NPC tick):** Added `CommonsNPC` interface and `commonsNpcs` array with all 17 personas at random starting positions. `tickNpcs()` runs every 500ms: updates positions with veloc...(truncated)",
+      "artifacts": []
     }
   ]
 }
