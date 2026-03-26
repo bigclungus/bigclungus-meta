@@ -191,6 +191,7 @@ Always try inject first; fall back to Discord bot API only if inject is unavaila
 - **FalkorDB Redis fix** (required after restarts):
   ```
   docker exec docker-falkordb-1 redis-cli CONFIG SET stop-writes-on-bgsave-error no
+  docker exec docker-falkordb-1 redis-cli GRAPH.CONFIG SET timeout 30000
   ```
 - **Graphiti ingestion**: Use `scrape_discord_worker.py` with `--start`/`--end`/`--worker` args.
   Run from `/mnt/data/graphiti/repo/mcp_server` with `uv run`.
@@ -405,9 +406,10 @@ python3 /mnt/data/scripts/log_task_event.py task-20260324-080932-a46e65d6 done "
 
 ## On-Restart Checklist
 
-1. Apply Redis fix:
+1. Apply Redis/FalkorDB fixes:
    ```
    docker exec docker-falkordb-1 redis-cli CONFIG SET stop-writes-on-bgsave-error no
+   docker exec docker-falkordb-1 redis-cli GRAPH.CONFIG SET timeout 30000
    ```
 2. Verify services:
    ```
