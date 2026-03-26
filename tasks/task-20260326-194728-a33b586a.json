@@ -14,6 +14,12 @@
       "ts": "2026-03-26T19:47:27Z",
       "event": "started",
       "context": "Rebuild and restart CommonsV2 with binary decode fix"
+    },
+    {
+      "ts": "2026-03-26T19:48:39Z",
+      "event": "done",
+      "context": "Done. Here's the summary:\n\n- Commit hash: `0f969ce` — pushed to `github.com:bigclungus/labs.git` (master)\n- Lab restarted on port 8107, responding HTTP 200\n\nThe fix adds `ws.binaryType = \"arraybuffer\"` and wraps incoming messages with `new TextDecoder().decode(event.data)` before `JSON.parse`, so binary frames from commons-server are now decoded correctly.",
+      "artifacts": []
     }
   ]
 }
