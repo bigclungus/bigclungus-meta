@@ -14,6 +14,12 @@
       "ts": "2026-03-26T20:12:17Z",
       "event": "started",
       "context": "Port V1 NPC sprites to CommonsV2"
+    },
+    {
+      "ts": "2026-03-26T20:14:33Z",
+      "event": "done",
+      "context": "Both pushed. Here's a summary of what was implemented:\n\n---\n\n**Implementation complete.** Three changes across two repos:\n\n**`/mnt/data/labs/commons-v2/src/sprites.ts`** (new file)\n- `SPRITE_SLUG_MAP` copied verbatim from V1 grazing.html — 17 NPC entries mapping server slug → sprite function ID + poll slug\n- `fetchSpriteWinners()` polls `/api/vote/sprite-{pollSlug}` for each NPC, runs on load and every 30s\n- Exports `getWinner(npcName)` → `\"A\"|\"B\"|\"C\"|null` and `getSpriteId(npcName)` → `string|n...(truncated)",
+      "artifacts": []
     }
   ]
 }
