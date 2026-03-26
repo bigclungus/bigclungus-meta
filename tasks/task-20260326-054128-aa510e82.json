@@ -1,0 +1,19 @@
+{
+  "id": "task-20260326-054128-aa510e82",
+  "title": "Check recent congress session duplication",
+  "agent_id": "aa510e82fafaed80e",
+  "agent_type": "general-purpose",
+  "session_id": "da8c6f5f-348d-4ced-ac0b-3e3b6fd7539f",
+  "discord_message_id": "1486600705555959858",
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-26T05:41:28Z",
+      "event": "started",
+      "context": "Check recent congress session duplication"
+    }
+  ]
+}
