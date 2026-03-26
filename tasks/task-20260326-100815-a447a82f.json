@@ -1,0 +1,19 @@
+{
+  "id": "task-20260326-100815-a447a82f",
+  "title": "Heartbeat + check NightOwl status",
+  "agent_id": "a447a82f7d1453e05",
+  "agent_type": "general-purpose",
+  "session_id": "da8c6f5f-348d-4ced-ac0b-3e3b6fd7539f",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-26T10:08:15Z",
+      "event": "started",
+      "context": "Heartbeat + check NightOwl status"
+    }
+  ]
+}
