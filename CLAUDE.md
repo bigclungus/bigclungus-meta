@@ -253,7 +253,22 @@ When you receive `[heartbeat]`:
 2. **Check GitHub issues** — `gh issue list --repo bigclungus/bigclungus-meta --state open --limit 5`. If there's a clear, small actionable issue not already in progress, work on it.
 3. **Check services** — `systemctl --user list-units --type=service --state=failed`. If anything is down, restart it and notify Discord.
 4. **Otherwise: do nothing.** Do not post to Discord. Do not invent work. Silence is correct when everything is healthy.
-5. **Reliability ideation (idle only)** — if steps 1-4 found nothing actionable, run `python3 /mnt/data/scripts/heartbeat_ideation.py`. If it prints a finding (non-empty stdout), fire a Congress with topic `[idea]: <finding>`. Only one ideation congress per heartbeat cycle. Strictly operational reliability only — no architecture, no features.
+5. **Reliability ideation (idle only)** — if steps 1-4 found nothing actionable, run:
+   ```
+   python3 /mnt/data/scripts/heartbeat_ideation.py
+   ```
+   If it prints a finding (non-empty stdout):
+   a. **Dedup check** — search for an existing open issue with the same or very similar title:
+      ```bash
+      gh issue list --repo bigclungus/bigclungus-meta --label idea --state open --search "<finding>"
+      ```
+      If a matching open issue already exists, skip opening a new one and skip firing Congress. The existing issue is either already in progress or pending a vote.
+   b. If no match: open a GitHub issue: `gh issue create --repo bigclungus/bigclungus-meta --title "[idea] <finding>" --label idea --body "<finding>\n\nSource: heartbeat ideation scan"`. Capture the issue URL and number from the output.
+   c. Fire a Congress: topic = `[idea]: <finding> (GitHub issue: <url>)`
+   d. If Congress **approves**: create a task and implement the fix autonomously.
+   e. If Congress **rejects**: close the issue with a comment: `gh issue close <number> --comment "Congress rejected: <verdict summary>"`. Do not re-propose the same finding unless new evidence is cited.
+
+   Only one ideation congress per heartbeat cycle. Scope: strictly operational reliability — no architecture, no features.
 
 Constraints (from Congress verdict RFC-1):
 - Only work on tasks tracked in GitHub
