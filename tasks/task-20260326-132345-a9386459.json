@@ -14,6 +14,12 @@
       "ts": "2026-03-26T13:23:45Z",
       "event": "started",
       "context": "Fire Congress for kubariet"
+    },
+    {
+      "ts": "2026-03-26T13:24:11Z",
+      "event": "done",
+      "context": "The workflow fired successfully despite the Discord reply tool error. Here's the summary:\n\n**CongressWorkflow started:** `congress-1774531438`\n\n- Topic: \"Acceleration and escape velocity — kubariet says time is limited and wants to know: what should BigClungus build or change to reach escape velocity? What is the engine?\"\n- Parameters passed: `chat_id`, `message_id`, `discord_user: kubariet` all included\n- Congress suspension check: passed (no `CONGRESS_SUSPENDED.md` found)\n- The Discord reply t...(truncated)",
+      "artifacts": []
     }
   ]
 }
