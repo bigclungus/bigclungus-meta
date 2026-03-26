@@ -1,0 +1,19 @@
+{
+  "id": "task-20260326-201155-aa8bc3d7",
+  "title": "CommonsV2 player names from auth + congress art + NPC freeze + chat modal",
+  "agent_id": "aa8bc3d7d17c202b0",
+  "agent_type": "general-purpose",
+  "session_id": "ef1a5e01-b3c3-41d6-abd3-172f68d92559",
+  "discord_message_id": "1486819883374215168",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-26T20:11:55Z",
+      "event": "started",
+      "context": "CommonsV2 player names from auth + congress art + NPC freeze + chat modal"
+    }
+  ]
+}
