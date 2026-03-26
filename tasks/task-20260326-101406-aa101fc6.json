@@ -14,6 +14,12 @@
       "ts": "2026-03-26T10:14:06Z",
       "event": "started",
       "context": "Check NightOwl workflow current status"
+    },
+    {
+      "ts": "2026-03-26T10:14:31Z",
+      "event": "done",
+      "context": "Here's the full status:\n\n**NightOwl workflow: FAILED**\n\n- Status: `FAILED` (status code 3)\n- Start time: 2026-03-26 06:59 UTC\n- Close time: 2026-03-26 10:00 UTC (right at fire time)\n- Tasks queued: **2** (both are the commons rewrite tasks)\n\n**Root cause:** The workflow called an activity named `nightowl_flag_risky` that doesn't exist on the worker. This activity is not registered — it's absent from the worker's available activity list. The workflow hit this missing activity at 10:00 UTC (3am PD...(truncated)",
+      "artifacts": []
     }
   ]
 }
