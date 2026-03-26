@@ -1,0 +1,19 @@
+{
+  "id": "task-20260326-204703-a4f9508d",
+  "title": "Create TRIGGERS.md and update CLAUDE.md refs",
+  "agent_id": "a4f9508dffcfddcf3",
+  "agent_type": "general-purpose",
+  "session_id": "ef1a5e01-b3c3-41d6-abd3-172f68d92559",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-26T20:47:03Z",
+      "event": "started",
+      "context": "Create TRIGGERS.md and update CLAUDE.md refs"
+    }
+  ]
+}
