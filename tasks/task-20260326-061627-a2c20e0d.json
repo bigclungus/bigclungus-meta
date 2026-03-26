@@ -14,6 +14,12 @@
       "ts": "2026-03-26T06:16:27Z",
       "event": "started",
       "context": "Queue mobile tap-to-move for NightOwl"
+    },
+    {
+      "ts": "2026-03-26T06:16:39Z",
+      "event": "done",
+      "context": "The task was queued successfully. Output:\n\n- A running NightOwl workflow was detected (`nightowl-today`) and the task was signaled to it rather than starting a new one.\n- Task queued: \"Add mobile touch support to grazing.html: tap on a tile to move the player there (pathfind or direct walk), swipe to pan if canvas larger than viewport. Must work on iOS Safari (use touch events, not pointer events for compatibility). Test on mobile viewport.\"",
+      "artifacts": []
     }
   ]
 }
