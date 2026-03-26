@@ -1,0 +1,19 @@
+{
+  "id": "task-20260326-184215-a07caec0",
+  "title": "Check audition agent result summary",
+  "agent_id": "a07caec0aeec1ba2b",
+  "agent_type": "general-purpose",
+  "session_id": "ef1a5e01-b3c3-41d6-abd3-172f68d92559",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-26T18:42:15Z",
+      "event": "started",
+      "context": "Check audition agent result summary"
+    }
+  ]
+}
