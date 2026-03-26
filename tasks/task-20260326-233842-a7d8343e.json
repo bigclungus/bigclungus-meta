@@ -14,6 +14,12 @@
       "ts": "2026-03-26T23:38:42Z",
       "event": "started",
       "context": "Handle heartbeat watchdog"
+    },
+    {
+      "ts": "2026-03-26T23:41:02Z",
+      "event": "done",
+      "context": "All done. Here's a summary of what was done this heartbeat cycle:\n\n**Step 1:** No stale tasks found.\n\n**Step 2:** Found open GitHub issue #56 (code quality tooling gaps). Steps 1 (ruff for temporal-workflows) and 2 (ESLint for clunger/labs-router) had already been completed in prior heartbeats. Implemented the remaining **step 3: GitHub Actions CI lint workflows**.\n\n- Added `.github/workflows/lint.yml` to `temporal-workflows` — runs ruff check + ruff format check on every push/PR\n- Added `.githu...(truncated)",
+      "artifacts": []
     }
   ]
 }
