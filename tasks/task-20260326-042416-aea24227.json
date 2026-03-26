@@ -14,6 +14,12 @@
       "ts": "2026-03-26T04:24:16Z",
       "event": "started",
       "context": "Retry congress after clunger restart"
+    },
+    {
+      "ts": "2026-03-26T04:24:42Z",
+      "event": "done",
+      "context": "All three steps completed:\n\n1. **clunger.service** came up immediately (was already active).\n2. **Congress retried** — workflow ID `congress-retry2-1774499072` started on `listings-queue` with the SmallClungus topic, original `chat_id`/`message_id`/`discord_user` preserved.\n3. **Inject sent** — notified self with the workflow ID. No public Discord post made.",
+      "artifacts": []
     }
   ]
 }
