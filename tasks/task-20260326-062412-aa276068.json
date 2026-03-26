@@ -14,6 +14,12 @@
       "ts": "2026-03-26T06:24:12Z",
       "event": "started",
       "context": "Commit grazing fixes + in-session flag + check refinery sprites"
+    },
+    {
+      "ts": "2026-03-26T06:25:06Z",
+      "event": "done",
+      "context": "Done. Here's a summary of what was done:\n\n**Step 1 — Committed existing grazing.html changes:**\nCommit `94c6d2f`: `fix: sprite winner fetch wrong endpoint, scale sprites 1.5x, NPC WASD fixes`\n\n**Step 2 — Replaced \"In Session\" badge with congress building flag:**\nRemoved the top-right corner badge block (rounded rect with `⚖️ in session` text overlay). Replaced it with a small flag drawn above the congress building: a 2px dark pole at `(5*TILE, TILE)`, a red flag body, and a white simplified scal...(truncated)",
+      "artifacts": []
     }
   ]
 }
