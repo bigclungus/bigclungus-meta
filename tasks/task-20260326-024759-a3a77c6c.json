@@ -14,6 +14,12 @@
       "ts": "2026-03-26T02:47:59Z",
       "event": "started",
       "context": "Add secret scanning to pre-commit hooks and simplify"
+    },
+    {
+      "ts": "2026-03-26T02:49:29Z",
+      "event": "done",
+      "context": "Everything is done. Here's a summary of what was installed:\n\n**Part 1 — Script created:**\n- `/mnt/data/scripts/check-secrets.sh` — executable, supports `--staged` (pre-commit) and `--recent N` (cron) modes. Scans for 14 secret patterns across private keys, API keys, tokens, passwords, and common provider-specific prefixes (`sk-`, `ghp_`, `ghs_`).\n- Committed and pushed to `github.com:bigclungus/scripts` (commit `0cec196`).\n\n**Part 2 — Pre-commit hooks installed** (all executable, calling `check-...(truncated)",
+      "artifacts": []
     }
   ]
 }
