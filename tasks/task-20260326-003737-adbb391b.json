@@ -14,6 +14,12 @@
       "ts": "2026-03-26T00:37:37Z",
       "event": "started",
       "context": "Heartbeat watchdog check"
+    },
+    {
+      "ts": "2026-03-26T00:38:20Z",
+      "event": "done",
+      "context": "Heartbeat complete. Summary:\n\n- Stale tasks: 0 stale, no orphaned congress sessions\n- GitHub issues: none open\n- Failed services: none\n- Ideation finding: `labs-persona-dossier.service` has restarted 12x in 24h — opened GitHub issue #48 (`https://github.com/bigclungus/bigclungus-meta/issues/48`) and sent Discord notification",
+      "artifacts": []
     }
   ]
 }
