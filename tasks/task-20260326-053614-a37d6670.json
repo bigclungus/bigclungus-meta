@@ -14,6 +14,12 @@
       "ts": "2026-03-26T05:36:14Z",
       "event": "started",
       "context": "Persistent traces backend for commons"
+    },
+    {
+      "ts": "2026-03-26T05:50:40Z",
+      "event": "done",
+      "context": "Done. Here's what was implemented:\n\n**Storage layer** — new SQLite database at `/mnt/data/clunger/traces.db` with table `persona_traces` (id, persona_name, trace_type, tile_x, tile_y, content, created_at). Auto-expires rows older than 7 days each time the DB is opened.\n\n**API endpoints** added to `/mnt/data/clunger/src/index.ts`:\n\n- `POST /api/commons/trace` — accepts `{ persona_name, trace_type, tile_x, tile_y, content }`. Validates trace_type against `{footprint, tree_mark, note}`. Rate-limits...(truncated)",
+      "artifacts": []
     }
   ]
 }
