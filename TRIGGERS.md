@@ -90,10 +90,15 @@ When you receive `[heartbeat]`: **spawn a background agent** to do the following
       ```bash
       gh issue list --repo bigclungus/bigclungus-meta --label idea --state open --search "<finding>"
       ```
-      If a matching open issue already exists, skip opening a new one and skip firing Congress. The existing issue is either already in progress or pending a vote.
+      If a matching open issue already exists, skip opening a new one. The existing issue is either already in progress or pending a vote.
    b. If no match: open a GitHub issue: `gh issue create --repo bigclungus/bigclungus-meta --title "[idea] <finding>" --label idea --body "<finding>\n\nSource: heartbeat ideation scan"`. Capture the issue URL and number from the output.
-   c. Fire a Congress: topic = `[idea]: <finding> (GitHub issue: <url>)`. Congress will auto-create a thread anchor if no message_id is provided.
-   d. If Congress **approves**: create a task and implement the fix autonomously.
+   c. **Triage the finding:**
+      - **Operational/minor** (config fix, performance tweak, reliability improvement, small code change, break/fix):
+        - If small enough to fix right now: implement directly, log it, done — no Congress needed
+        - If it requires more work: queue to NightOwl: `python3 /mnt/data/scripts/nightowl_queue.py "<task description>"`
+        - Either way: the GitHub issue tracks it; no Congress
+      - **Major** (new feature, new system, significant refactor, architectural change): fire Congress as before: topic = `[idea]: <finding> (GitHub issue: <url>)`. Congress will auto-create a thread anchor if no message_id is provided.
+   d. If Congress **approves** a major finding: create a task and implement the fix autonomously.
    e. If Congress **rejects**: close the issue with a comment: `gh issue close <number> --comment "Congress rejected: <verdict summary>"`. Do not re-propose the same finding unless new evidence is cited.
 
    Only one ideation congress per heartbeat cycle. Scope: strictly operational reliability — no architecture, no features.
@@ -113,11 +118,11 @@ When you receive `[heartbeat]`: **spawn a background agent** to do the following
    d. Build it using `bash /mnt/data/scripts/new-lab.sh <name> "<title>" "<description>"`
    e. Post to Discord: "🧪 new lab: <title> — <one-line description> (signal: <what the graph showed>)"
 
-Constraints (from Congress verdict RFC-1):
+Constraints (from Congress verdict RFC-1 + jaboostin clarification 2026-03-26):
 - Only work on tasks tracked in GitHub
-- **Operational/infrastructure fixes** (service config, memory limits, crash fixes, config bugs, performance tuning) can be actioned directly — no Congress required
-- **Major decisions** (architecture, new systems, persona changes) still go through Congress when Congress is active
-- If a GitHub issue is clearly operational (service crashes, config bugs, OOM kills, performance), fix it directly rather than waiting for Congress
+- **Operational/minor findings** (config fix, performance tweak, reliability improvement, small code cleanup, break/fix): fix immediately OR queue to NightOwl — do NOT skip or defer without action. Open an issue, fix or queue it, close or track it.
+- **Major decisions** (new features, new systems, significant refactors, architectural changes, persona changes) still go through Congress when Congress is active.
+- When in doubt about whether something is minor or major: if it can be fully described in one sentence and reverted in under 10 lines, it's minor. Otherwise, Congress.
 - If you work on something, post a brief Discord update. If you do nothing, stay silent.
 
 ---
