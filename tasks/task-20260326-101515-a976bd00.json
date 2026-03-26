@@ -14,6 +14,12 @@
       "ts": "2026-03-26T10:15:15Z",
       "event": "started",
       "context": "Restart NightOwl with 11am UTC target"
+    },
+    {
+      "ts": "2026-03-26T10:15:31Z",
+      "event": "done",
+      "context": "Script ran successfully. Here's the output:\n\n```\nStarted new NightOwlWorkflow: 019d29a4-51b0-73b8-beb6-bab4d256a18f\nQueued: commons rewrite task\nQueued: addendum task\n```\n\nA fresh `nightowl-today` workflow was started with run ID `019d29a4-51b0-73b8-beb6-bab4d256a18f`, targeting 11:00 UTC. Both tasks were queued successfully — the full commons rewrite task and the addendum pointing to the impl spec.",
+      "artifacts": []
     }
   ]
 }
