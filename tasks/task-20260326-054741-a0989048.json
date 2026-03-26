@@ -14,6 +14,12 @@
       "ts": "2026-03-26T05:47:40Z",
       "event": "started",
       "context": "Fix vote notification firing multiple times"
+    },
+    {
+      "ts": "2026-03-26T05:48:12Z",
+      "event": "done",
+      "context": "Done. Here's what was changed in `/mnt/data/clunger/src/index.ts`:\n\n**Before:** After each upsert, `getWinner()` was called on the new counts, and if any option had >= 3 votes, `notifyVoteWinner` fired — every single time that option was voted on after crossing the threshold.\n\n**Fix:** `getVoteCounts` is now called once *before* the upsert to capture `prevCounts`. After the upsert, the notification only fires if `prevCounts[winner] < 3` — meaning this vote is the one that first crossed the thres...(truncated)",
+      "artifacts": []
     }
   ]
 }
