@@ -20,6 +20,12 @@
       "event": "milestone",
       "ts": "2026-03-26T15:35:35Z",
       "message": "Source verdict: The debate has produced a clear signal beneath the surface noise. All five debaters \u2014 including Uncle Bob himself \u2014 converge on the same structural diagnosis: Congress doesn't need a dedicated \"crafts..."
+    },
+    {
+      "event": "done",
+      "ts": "2026-03-26T15:35:57.748256Z",
+      "message": "Uncle Bob set status: ineligible per Congress #65 verdict"
     }
-  ]
+  ],
+  "status": "done"
 }
