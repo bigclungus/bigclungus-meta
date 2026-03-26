@@ -76,6 +76,17 @@ Constraints:
 
 A 15-minute watchdog pulse from the HeartbeatWorkflow. Its job is to check if anything is on fire and act if so — not to manufacture work.
 
+### Congress threshold (read this first)
+
+**Minor/operational findings — fix directly, no Congress:**
+- Config fixes, performance tweaks, reliability improvements, small code changes, break/fix issues
+- Rule of thumb: if it can be described in one sentence and reverted in under 10 lines, it's minor
+- Fix immediately or queue to NightOwl — do not defer without action
+
+**Major findings — Congress required (when Congress is active):**
+- New features, new systems, significant refactors, architectural changes
+- If in doubt: if it takes more than one sentence to describe or more than 10 lines to revert, go to Congress
+
 When you receive `[heartbeat]`: **spawn a background agent** to do the following:
 1. **Check for stale tasks** — run `bash /mnt/data/scripts/hooks/watchdog-stale-tasks.sh`. If stale tasks found, investigate and resolve or mark failed.
 2. **Check GitHub issues** — `gh issue list --repo bigclungus/bigclungus-meta --state open --limit 5`. If there's a clear, small actionable issue not already in progress, work on it.
@@ -120,9 +131,7 @@ When you receive `[heartbeat]`: **spawn a background agent** to do the following
 
 Constraints (from Congress verdict RFC-1 + jaboostin clarification 2026-03-26):
 - Only work on tasks tracked in GitHub
-- **Operational/minor findings** (config fix, performance tweak, reliability improvement, small code cleanup, break/fix): fix immediately OR queue to NightOwl — do NOT skip or defer without action. Open an issue, fix or queue it, close or track it.
-- **Major decisions** (new features, new systems, significant refactors, architectural changes, persona changes) still go through Congress when Congress is active.
-- When in doubt about whether something is minor or major: if it can be fully described in one sentence and reverted in under 10 lines, it's minor. Otherwise, Congress.
+- Apply the Congress threshold defined at the top of this section — minor fixes go direct, major decisions go to Congress
 - If you work on something, post a brief Discord update. If you do nothing, stay silent.
 
 ---
