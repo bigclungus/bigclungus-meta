@@ -14,6 +14,12 @@
       "ts": "2026-03-26T07:10:28Z",
       "event": "started",
       "context": "Queue warthog turret to NightOwl"
+    },
+    {
+      "ts": "2026-03-26T07:10:39Z",
+      "event": "done",
+      "context": "Task queued successfully. Output:\n\n- **Status:** Workflow `nightowl-today` was already running; the task was signaled into the existing queue.\n- **Task:** \"Add a gunner turret seat to the warthog vehicle in grazing.html...\" (full description as provided)\n- **Scheduled for:** Tonight at 3am PDT (10am UTC)\n\nThe NightOwl workflow will pick it up and execute it tonight in the next batch run.",
+      "artifacts": []
     }
   ]
 }
