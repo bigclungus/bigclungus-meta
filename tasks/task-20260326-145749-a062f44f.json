@@ -14,6 +14,12 @@
       "ts": "2026-03-26T14:57:49Z",
       "event": "started",
       "context": "Investigate alertmanager flapping"
+    },
+    {
+      "ts": "2026-03-26T15:00:10Z",
+      "event": "done",
+      "context": "**Root cause and fix:**\n\nThe flapping was caused by two competing alertmanager instances:\n\n1. Someone ran `apt-get install prometheus-alertmanager` which installed v0.26.0 as a system service. This started first and bound both :9093 (HTTP) and :9094 (cluster gossip).\n\n2. The existing user-level `alertmanager.service` (v0.27.0 at `/usr/local/bin/alertmanager`, reading `/mnt/data/monitoring/alertmanager.yml`) tried to start afterward and crash-looped 15 times — first failing on port 9094 (cluster ...(truncated)",
+      "artifacts": []
     }
   ]
 }
