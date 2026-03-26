@@ -1,0 +1,19 @@
+{
+  "id": "task-20260326-024759-a3a77c6c",
+  "title": "Add secret scanning to pre-commit hooks and simplify",
+  "agent_id": "a3a77c6cbc3f73876",
+  "agent_type": "general-purpose",
+  "session_id": "da8c6f5f-348d-4ced-ac0b-3e3b6fd7539f",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-26T02:47:59Z",
+      "event": "started",
+      "context": "Add secret scanning to pre-commit hooks and simplify"
+    }
+  ]
+}
