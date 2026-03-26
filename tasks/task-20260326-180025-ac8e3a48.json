@@ -14,6 +14,12 @@
       "ts": "2026-03-26T18:00:25Z",
       "event": "started",
       "context": "Simplify cron scan and NightOwl re-queue"
+    },
+    {
+      "ts": "2026-03-26T18:01:44Z",
+      "event": "done",
+      "context": "These `except: pass` blocks are in graph query fallback logic (optional context enrichment for congress) — swallowing graph errors when FalkorDB is unavailable is intentional. They're pre-existing and not part of recent changes. Nothing to simplify here.\n\nThe code across both repos looks clean post recent commits. No dead code, no duplicate logic, no hardcoded values that should be constants, no obvious bugs in the recent changes.\n\n---\n\n**Summary:**\n\n**Task 1 — Simplify scan:**\n- Secret scan: cl...(truncated)",
+      "artifacts": []
     }
   ]
 }
