@@ -14,6 +14,12 @@
       "ts": "2026-03-26T19:19:25Z",
       "event": "started",
       "context": "Check temporal-worker stability"
+    },
+    {
+      "ts": "2026-03-26T19:19:41Z",
+      "event": "done",
+      "context": "**temporal-worker.service is stable and healthy.** Here's the current state:\n\n- **Status:** `active (running)` — PID 3193038, started at 19:17:05 UTC (~2 min ago at time of check)\n- **Memory:** 95.9M (peak 107.0M) — well within normal range\n- **Startup:** Clean. All dependent workflows (listings, healthcheck, heartbeat, simplify cron, giga restart cron, tasks backup cron) all reported \"already running\" — no scheduling gaps.\n- **Active work:** Healthcheck loop is firing every ~60s and reporting a...(truncated)",
+      "artifacts": []
     }
   ]
 }
