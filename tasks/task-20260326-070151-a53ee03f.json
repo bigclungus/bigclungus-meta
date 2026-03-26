@@ -14,6 +14,12 @@
       "ts": "2026-03-26T07:01:51Z",
       "event": "started",
       "context": "Fix NPC speed in server tick"
+    },
+    {
+      "ts": "2026-03-26T07:02:47Z",
+      "event": "done",
+      "context": "Done. Here's a summary of what was changed in `/mnt/data/clunger/src/index.ts`:\n\n**Changes made:**\n\n1. **`COMMONS_NPC_SPEED`**: `0.8` → `35` px per tick. At 500ms tick rate that's ~70px/sec, meaning an NPC crosses the 1000px canvas in ~14 seconds — right in the natural walking pace target.\n\n2. **Direction timer reset**: `60 + random(120)` ticks → `8 + random(8)` ticks. Old range was 30–90 seconds between turns; new range is 4–8 seconds. NPCs will walk purposefully for a few seconds then turn, ra...(truncated)",
+      "artifacts": []
     }
   ]
 }
