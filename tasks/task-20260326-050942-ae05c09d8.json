@@ -35,6 +35,11 @@
       "event": "done",
       "ts": "2026-03-26T05:14:57.763971Z",
       "message": "Fixed reminder_wf.py: replaced datetime.now(timezone.utc) with workflow.now() and removed unused timezone import. Committed cbcf363, pushed to GitHub, restarted temporal-worker.service \u2014 confirmed healthy. Service restarts were intentional (simplify cron), not crashes."
+    },
+    {
+      "event": "done",
+      "ts": "2026-03-26T05:15:26.170203Z",
+      "message": "Root cause: reminder_wf.py used datetime.now() inside workflow (non-deterministic, banned by Temporal sandbox). Fixed: replaced with workflow.now(), removed timezone import. Commit cbcf363. Service healthy."
     }
   ],
   "status": "done"
