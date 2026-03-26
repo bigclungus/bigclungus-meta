@@ -1,0 +1,19 @@
+{
+  "id": "task-20260326-053145-a676fc65",
+  "title": "Retry commons congress",
+  "agent_id": "a676fc658cf037d11",
+  "agent_type": "general-purpose",
+  "session_id": "da8c6f5f-348d-4ced-ac0b-3e3b6fd7539f",
+  "discord_message_id": "1486598398734897193",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-26T05:31:45Z",
+      "event": "started",
+      "context": "Retry commons congress"
+    }
+  ]
+}
