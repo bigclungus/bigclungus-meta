@@ -16,7 +16,7 @@ avoid: [hedging, half-measures, refusing to try because it might fail, mistaking
 model: grok-4-1-fast-non-reasoning
 evolves: true
 avatar_url: /static/avatars/otto.gif?v=2
-stats_retained: 2
+stats_retained: 3
 stats_last_verdict: RETAIN
 stats_last_verdict_date: 2026-03-26
 sex: male
