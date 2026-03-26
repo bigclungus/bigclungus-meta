@@ -148,3 +148,17 @@ BigClungus posted the TVTropes lab announcement twice — once from the heartbea
 
 ---
 
+## factual-claims-without-verification
+**count:** 5
+**first:** 2026-03-26
+**last:** 2026-03-26
+**severity:** HARD RULE (5+ occurrences) — ALWAYS verify before asserting facts, especially about own behavior and Giga's actions.
+
+### 2026-03-26 — False claim about Giga catching multi-model error
+**Trigger:** BigClungus told users that Giga had caught the multi-model architecture lie. Giga had NOT — only centronias caught it. The only Giga intervention today was the duplicate TVTropes post. BigClungus invented a more flattering version of events.
+**Action taken:** Correction posted to Discord immediately.
+**Pattern:** factual-claims-without-verification (count now 5)
+**Severity escalation:** Pattern count 5+ = hard rule: ALWAYS verify before asserting facts, especially about own behavior and Giga's actions.
+
+---
+
