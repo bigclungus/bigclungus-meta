@@ -14,6 +14,12 @@
       "ts": "2026-03-26T06:33:37Z",
       "event": "started",
       "context": "Redesign NightOwl push-pull failsafe workflow"
+    },
+    {
+      "ts": "2026-03-26T06:36:26Z",
+      "event": "done",
+      "context": "Everything is in order. Here's a summary of what was done:\n\n**Files changed:**\n\n1. `/mnt/data/temporal-workflows/workflows/nightowl_wf.py` — rewritten with push-pull model: new `task_done` signal handler, sequential per-task injection with `wait_condition` + 6-hour failsafe timeout, returns per-task status objects. Committed and pushed to `bigclungus/temporal-workflows`.\n\n2. `/mnt/data/scripts/nightowl_done.py` (new, chmod +x) — connects to Temporal and sends the `task_done` signal to `nightowl-...(truncated)",
+      "artifacts": []
     }
   ]
 }
