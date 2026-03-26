@@ -14,6 +14,12 @@
       "ts": "2026-03-26T00:38:27Z",
       "event": "started",
       "context": "Close stale labs-persona-dossier issue"
+    },
+    {
+      "ts": "2026-03-26T00:38:36Z",
+      "event": "done",
+      "context": "Both done cleanly:\n\n- **Issue #48 closed** with the comment explaining the false positive.\n- **Service file is already gone** — no cleanup needed. The deletion process fully removed it before the heartbeat even fired the alert.",
+      "artifacts": []
     }
   ]
 }
