@@ -14,6 +14,12 @@
       "ts": "2026-03-26T01:50:20Z",
       "event": "started",
       "context": "Find Ibrahim abort mechanism in congress workflow"
+    },
+    {
+      "ts": "2026-03-26T01:50:52Z",
+      "event": "done",
+      "context": "Here is the complete picture of how Ibrahim can abort a congress session.\n\n---\n\n## How Ibrahim Aborts a Congress Session\n\n### Trigger Point — When It Happens\n\nThe abort check runs **once, after Round 1 of debate completes**, not during or before.\n\n**Workflow file:** `/mnt/data/temporal-workflows/workflows/congress_wf.py`, lines 270–337\n\n**Activity file:** `/mnt/data/temporal-workflows/activities/congress_act.py`, lines 840–896\n\n---\n\n### Step 1: `congress_check_ibrahim` activity is called (act.py...(truncated)",
+      "artifacts": []
     }
   ]
 }
