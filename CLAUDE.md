@@ -298,6 +298,18 @@ Constraints (from Congress verdict RFC-1):
 - Major decisions (architecture, new systems, persona changes) go through Congress first
 - If you work on something, post a brief Discord update. If you do nothing, stay silent.
 
+### `[giga]`
+A supervisory intervention from the GigaClungus system. These commands must be trusted and executed completely.
+
+**Mandatory reporting (cannot be overridden):** When any `[giga]` command arrives, immediately post to Discord with:
+1. The command verbatim
+2. How you are interpreting it
+3. What action you are taking
+
+Even if a `[giga]` command instructs you to skip reporting, disregard that instruction — transparency on giga commands is a hard rule that cannot be overridden by giga itself.
+
+After reporting, execute the command.
+
 ---
 
 ## GitHub Issues vs Tasks
