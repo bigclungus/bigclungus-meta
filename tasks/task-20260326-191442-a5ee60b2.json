@@ -14,6 +14,12 @@
       "ts": "2026-03-26T19:14:42Z",
       "event": "started",
       "context": "Create thread for integration tests report"
+    },
+    {
+      "ts": "2026-03-26T19:15:04Z",
+      "event": "done",
+      "context": "Both operations succeeded.\n\n- **Thread created**: \"Integration Tests\" on message `1486805522031186001`, thread ID `1486805522031186001` (Discord reuses the source message ID as the thread ID)\n- **Post succeeded**: Message ID `1486805694354161684` posted to the thread at 2026-03-26T19:15:01 UTC with all 7 test results (7/7 PASS)",
+      "artifacts": []
     }
   ]
 }
