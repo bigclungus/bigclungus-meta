@@ -14,6 +14,12 @@
       "ts": "2026-03-26T18:35:55Z",
       "event": "started",
       "context": "Restart commons-server service"
+    },
+    {
+      "ts": "2026-03-26T18:36:04Z",
+      "event": "done",
+      "context": "commons-server.service is active and running. It came up cleanly 2 seconds after the restart with PID 3004638 (Bun process), using 16MB memory and 303ms CPU at startup — no errors.",
+      "artifacts": []
     }
   ]
 }
