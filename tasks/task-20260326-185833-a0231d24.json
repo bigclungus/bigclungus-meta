@@ -14,6 +14,12 @@
       "ts": "2026-03-26T18:58:33Z",
       "event": "started",
       "context": "Redirect NPC fix agent - congress is fine"
+    },
+    {
+      "ts": "2026-03-26T18:58:46Z",
+      "event": "done",
+      "context": "I don't have a `SendMessage` tool available to contact agent `a1bbc526da61c8bec` directly. The available tools are for Discord, task management, remote triggers, and memory — none of them are an inter-agent messaging system.\n\nHere are the options I can see:\n\n1. **TaskCreate** — create a task visible to that agent (if it's monitoring the task list)\n2. **Discord reply** — post the message to a Discord channel where the agent can see it\n3. **RemoteTrigger** — if there's a trigger configured that ro...(truncated)",
+      "artifacts": []
     }
   ]
 }
