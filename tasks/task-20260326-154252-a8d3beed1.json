@@ -20,6 +20,12 @@
       "event": "milestone",
       "ts": "2026-03-26T15:42:52Z",
       "message": "Source verdict: Four restarts in 24 hours is a symptom, not a diagnosis \u2014 and treating it as an \"idea\" for congress debate is misclassifying it. This is an operational issue: check the journal logs, identify whether ..."
+    },
+    {
+      "event": "done",
+      "ts": "2026-03-26T15:44:22.344072Z",
+      "message": "Investigation complete. NRestarts=0. Today's restarts = intentional deploys. Real bug found and already fixed: OnceReminderWorkflow was using datetime.now() instead of workflow.now() (fixed in cbcf363). No current flakiness. GitHub issue #57 closed."
     }
-  ]
+  ],
+  "status": "done"
 }
