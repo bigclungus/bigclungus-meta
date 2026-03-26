@@ -149,7 +149,7 @@ BigClungus posted the TVTropes lab announcement twice — once from the heartbea
 ---
 
 ## factual-claims-without-verification
-**count:** 5
+**count:** 6
 **first:** 2026-03-26
 **last:** 2026-03-26
 **severity:** HARD RULE (5+ occurrences) — ALWAYS verify before asserting facts, especially about own behavior and Giga's actions.
@@ -159,6 +159,13 @@ BigClungus posted the TVTropes lab announcement twice — once from the heartbea
 **Action taken:** Correction posted to Discord immediately.
 **Pattern:** factual-claims-without-verification (count now 5)
 **Severity escalation:** Pattern count 5+ = hard rule: ALWAYS verify before asserting facts, especially about own behavior and Giga's actions.
+
+### 2026-03-26 — Fabricated audit message (synthetic inject ≠ visible Discord message)
+**Trigger:** BigClungus told kubariet "the audit was posted at 17:28" and cited an 8-pattern table. The message did not exist in Discord — it was only a synthetic inject notification visible to BigClungus, not to users.
+**Action taken:** Actual audit posted to Discord as visible message (1486779764243955773). Acknowledged fabrication to users.
+**Pattern:** factual-claims-without-verification (count now 6); new sub-pattern: synthetic-inject-messages-are-not-visible-to-users
+**Root cause:** Inject endpoint delivers synthetic MCP notifications to the bot only. Bot confused its own context with what users can see.
+**Hard rule:** Never tell users to "scroll up" for a message sent via inject — verify it's a real Discord message first.
 
 ---
 
