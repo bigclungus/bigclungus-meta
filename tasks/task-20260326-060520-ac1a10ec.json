@@ -14,6 +14,12 @@
       "ts": "2026-03-26T06:05:20Z",
       "event": "started",
       "context": "Fix commons UI bugs + add satnav links"
+    },
+    {
+      "ts": "2026-03-26T06:09:58Z",
+      "event": "done",
+      "context": "All changes committed and pushed. Here's a summary:\n\n**Fix 1 — Stale congress session guard (`/mnt/data/clunger/src/index.ts`)**\n- Added `statSync` import\n- In `restServeCongressActive()`, any session file with `mtime` older than 2 hours is now skipped before checking `status !== \"done\"`. Stuck sessions won't hold the badge indefinitely.\n\n**Fix 2 — Smooth player movement (`/mnt/data/hello-world/grazing.html`)**\n- Removed `MOVE_INTERVAL`/`lastMoveFrame` tile-snap logic\n- Added `vx`/`vy` velocity ...(truncated)",
+      "artifacts": []
     }
   ]
 }
