@@ -1,0 +1,19 @@
+{
+  "id": "task-20260326-154318-ae233dab",
+  "title": "Investigate temporal-worker restart flakiness",
+  "agent_id": "ae233dab8b6df774b",
+  "agent_type": "general-purpose",
+  "session_id": "ef1a5e01-b3c3-41d6-abd3-172f68d92559",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-26T15:43:18Z",
+      "event": "started",
+      "context": "Investigate temporal-worker restart flakiness"
+    }
+  ]
+}
