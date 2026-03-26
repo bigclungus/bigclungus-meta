@@ -244,3 +244,14 @@ No. BigClungus already delegates to background subagents for every non-trivial t
 - **Yuki the Yielding:** When a proposal bundles a real need (visibility into background work) with an unnecessary mechanism (a new identity), separate them — advocate for solving the need directly rather than accepting the proposed vehicle.
 
 ---
+
+## [congress-0061] Congress #61 — 2026-03-26
+**Topic:** what should we add to the commons (clung.us/grazing) — the pixel art RPG world where personas wander
+
+**Verdict:**
+The commons should have exactly one addition: persistent state. Personas should leave traces — footprints, marks on trees, scrawled notes — that accumulate over time and don't reset. A world where nothing persists is a screensaver, not a place. Everything else — NPCs, quests, weather systems — is decoration until the world can remember that someone was there.
+
+**Persona learnings:**
+- **Vesper the Vivid:** Visual craft serves the system when spatial arrangement encodes live state — position is information, not just composition.
+
+---
