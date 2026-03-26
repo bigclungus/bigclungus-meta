@@ -1,0 +1,19 @@
+{
+  "id": "task-20260326-204653-a3d5d92b",
+  "title": "Move persona trigger to clunger inject pipeline",
+  "agent_id": "a3d5d92b0363e0c21",
+  "agent_type": "general-purpose",
+  "session_id": "ef1a5e01-b3c3-41d6-abd3-172f68d92559",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-26T20:46:53Z",
+      "event": "started",
+      "context": "Move persona trigger to clunger inject pipeline"
+    }
+  ]
+}
