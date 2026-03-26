@@ -122,6 +122,9 @@ An AI parliament that debates topics via Discord thread, with live persona posts
 6c. `congress_finalize` (second call) — persists `evolution` field to session JSON if any personas changed
 7. `congress_report` — posts clean verdict to thread, brief notice to main channel (includes 🔥/🧬 notices for fired/evolved personas)
 
+### Recusal rule
+**A persona cannot participate as a debater in a Congress session where their own termination is the topic.** The workflow automatically excludes them from the debater list when firing-related keywords (fire, fired, terminate, termination, severance, retire, remove, dismiss) appear in the topic alongside that persona's name, display name, role, or title.
+
 ### Key files
 | File | Purpose |
 |---|---|
