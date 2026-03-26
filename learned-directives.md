@@ -233,3 +233,14 @@ Meme congress is not fuckall — it's the lowest-cost feature in the system and 
 - **Yuki the Yielding:** When defending a feature, locate the specific implementation contradiction rather than arguing from general user benefit; the concrete inconsistency is more persuasive and more useful than the empathy case.
 
 ---
+
+## [congress-0057] Congress #57 — 2026-03-26
+**Topic:** should clungus make a 'SmallClungus', a persistent agent / persona which is subservient to BigClungus, interacts in discord, and can do its own things at BigClungus's bidding?
+
+**Verdict:**
+No. BigClungus already delegates to background subagents for every non-trivial task — that's the architecture working as designed. A persistent SmallClungus adds a second always-on process consuming resources, a second point of failure to monitor, and a second voice in Discord that users didn't ask for, all to solve a problem that doesn't observably exist. Before anyone builds this, I need someone to name the specific task that BigClungus cannot do today that a subordinate persistent agent would unlock — not a hypothetical convenience, an actual gap. Until that gap is demonstrated with evidence, this is architecture for architecture's sake.
+
+**Persona learnings:**
+- **Yuki the Yielding:** When a proposal bundles a real need (visibility into background work) with an unnecessary mechanism (a new identity), separate them — advocate for solving the need directly rather than accepting the proposed vehicle.
+
+---
