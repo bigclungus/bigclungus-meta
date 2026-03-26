@@ -14,6 +14,12 @@
       "ts": "2026-03-26T23:48:05Z",
       "event": "started",
       "context": "Update heartbeat rules in TRIGGERS.md"
+    },
+    {
+      "ts": "2026-03-26T23:48:48Z",
+      "event": "done",
+      "context": "Done. Here's what changed and why:\n\n**What was already there:** The distinction between minor and major findings existed but was buried in the Constraints block at the bottom of the section, after ~50 lines of procedural steps. Easy to miss or overlook mid-execution.\n\n**What changed:**\n\n1. Added a \"Congress threshold (read this first)\" subsection immediately after the opening paragraph, before the numbered steps. It lays out the minor/major split clearly with the one-sentence/ten-lines rule of t...(truncated)",
+      "artifacts": []
     }
   ]
 }
