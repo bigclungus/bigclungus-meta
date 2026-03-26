@@ -14,6 +14,12 @@
       "ts": "2026-03-26T17:48:38Z",
       "event": "started",
       "context": "Investigate Commons bugs"
+    },
+    {
+      "ts": "2026-03-26T17:55:22Z",
+      "event": "done",
+      "context": "Excellent — audition walkers DO have names. The \"?\" shown above walkers is intentional behavior (non-hovered walkers show \"?\" as a mystery indicator). That's by design, not a bug. Now I have full clarity on all four bugs. Let me compile the findings:\n\nHere is the complete diagnosis:\n\n---\n\n## Bug 1: Persona/NPC names showing \"?\"\n\n**Finding: This is intentional, but may be confusing.**\n\nThe `?` marks are rendered intentionally above **audition walker** figures (the mysterious candidates crossing t...(truncated)",
+      "artifacts": []
     }
   ]
 }
