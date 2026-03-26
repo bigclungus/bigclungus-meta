@@ -14,6 +14,12 @@
       "ts": "2026-03-26T05:59:42Z",
       "event": "started",
       "context": "Generate pixel art sprites batch 2 (Hume, Otto, PM, Trump, Uncle Bob, Spengler)"
+    },
+    {
+      "ts": "2026-03-26T06:04:03Z",
+      "event": "done",
+      "context": "File written to `/mnt/data/hello-world/sprites-batch2.js`.\n\nHere's a summary of what was generated:\n\n**18 sprite functions total** — 3 variants each for 6 personas:\n\n- **`drawSprite_hume_A/B/C`** — (A) powdered wig, frock coat, quill; (B) tartan kilt with plaid rects, tam o'shanter, raised skeptical eyebrow; (C) dark scholar coat, open book in both hands, pince-nez, candle with flame off to the side\n\n- **`drawSprite_otto_A/B/C`** — (A) Dune stillsuit with tubing details, family crest in gold, or...(truncated)",
+      "artifacts": []
     }
   ]
 }
