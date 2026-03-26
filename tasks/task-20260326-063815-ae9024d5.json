@@ -14,6 +14,12 @@
       "ts": "2026-03-26T06:38:15Z",
       "event": "started",
       "context": "Handle heartbeat checks"
+    },
+    {
+      "ts": "2026-03-26T06:38:45Z",
+      "event": "done",
+      "context": "All clear:\n\n- **Stale tasks**: 0 stale, no orphaned congress sessions\n- **Failed services**: 0 failed services\n- **GitHub issues**: No open issues\n\nNothing is on fire. Staying silent.",
+      "artifacts": []
     }
   ]
 }
