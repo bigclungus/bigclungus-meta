@@ -14,6 +14,12 @@
       "ts": "2026-03-26T18:28:35Z",
       "event": "started",
       "context": "Fix green tile flash from grass fill conflict"
+    },
+    {
+      "ts": "2026-03-26T18:28:57Z",
+      "event": "done",
+      "context": "Done. Removed the `grassColor` fill lines (the comment, `ctx.fillStyle = grassColor(tx, ty)`, and `ctx.fillRect(x, y, TILE, TILE)`) from `drawForegroundTiles()` in `/mnt/data/hello-world/grazing.html`. The tree/rock shapes are now redrawn directly without first painting a green square underneath. Committed as `e53789e` and pushed.",
+      "artifacts": []
     }
   ]
 }
