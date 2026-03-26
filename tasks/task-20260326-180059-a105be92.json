@@ -1,0 +1,19 @@
+{
+  "id": "task-20260326-180059-a105be92",
+  "title": "Clean spurious NightOwl task",
+  "agent_id": "a105be92ec4ce75bd",
+  "agent_type": "general-purpose",
+  "session_id": "ef1a5e01-b3c3-41d6-abd3-172f68d92559",
+  "discord_message_id": "1486786775576870973",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-26T18:00:59Z",
+      "event": "started",
+      "context": "Clean spurious NightOwl task"
+    }
+  ]
+}
