@@ -14,6 +14,12 @@
       "ts": "2026-03-26T20:36:02Z",
       "event": "started",
       "context": "CommonsV2 Group C: 20Hz server batching + LLM debounce"
+    },
+    {
+      "ts": "2026-03-26T20:38:06Z",
+      "event": "done",
+      "context": "Both fixes applied and pushed. Here's a summary:\n\n**What was found and fixed:**\n\n**Fix 1 — Client-side move throttling (`/mnt/data/labs/commons-v2/src/main.ts`)**\nThe server's game loop was already correctly running at 20Hz (50ms `setInterval`). The problem was on the client: `sendMove` was called every animation frame (~60fps) whenever the player held a movement key — the only guard was `inputSeq` deduplication, but `inputSeq` increments every frame while moving, so it was sending ~60 messages/...(truncated)",
+      "artifacts": []
     }
   ]
 }
