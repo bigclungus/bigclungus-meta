@@ -1,0 +1,19 @@
+{
+  "id": "task-20260326-063354-a8692c32",
+  "title": "Send update to NightOwl redesign agent",
+  "agent_id": "a8692c32cb7ce16bc",
+  "agent_type": "general-purpose",
+  "session_id": "da8c6f5f-348d-4ced-ac0b-3e3b6fd7539f",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-26T06:33:54Z",
+      "event": "started",
+      "context": "Send update to NightOwl redesign agent"
+    }
+  ]
+}
