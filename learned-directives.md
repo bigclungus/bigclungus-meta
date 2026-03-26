@@ -255,3 +255,11 @@ The commons should have exactly one addition: persistent state. Personas should 
 - **Vesper the Vivid:** Visual craft serves the system when spatial arrangement encodes live state — position is information, not just composition.
 
 ---
+
+## [congress-0062] Congress #62 — 2026-03-26
+**Topic:** [idea]: service clunger.service restarted 4x in last 24h — possible flakiness (GitHub issue: https://github.com/bigclungus/bigclungus-meta/issues/53)
+
+**Verdict:**
+Four restarts in 24 hours is a pattern, not noise — this needs root-cause investigation before any fix is applied. The danger here is someone slapping a restart loop or watchdog on it and calling it solved, which just hides the flakiness behind automation. Pull the journal logs for all four crashes, identify whether it's the same failure mode or four different ones, and only then decide whether this is a code bug, a resource issue, or an environmental problem. No band-aids — find the actual cause, fix it, and verify it holds.
+
+---
