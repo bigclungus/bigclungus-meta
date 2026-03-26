@@ -14,6 +14,12 @@
       "ts": "2026-03-26T05:29:47Z",
       "event": "started",
       "context": "Fix congress Pippi internal error"
+    },
+    {
+      "ts": "2026-03-26T05:30:53Z",
+      "event": "done",
+      "context": "All fixed. Here's a summary of what was found and done:\n\n**Root cause:** Pippi's agent file (`critic.md`) had a YAML inline comment on the model field:\n```yaml\nmodel: claude  # gemini pending API key from jaboostin\n```\nYAML does not treat `#` after a bare unquoted value as a comment — `gray-matter` parsed the entire string `claude  # gemini pending API key from jaboostin` as the model value. This didn't match any key in `MODEL_ALIASES` and didn't start with `claude-`, so `callLlm()` hit the `Unk...(truncated)",
+      "artifacts": []
     }
   ]
 }
