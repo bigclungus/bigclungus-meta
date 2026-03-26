@@ -14,6 +14,12 @@
       "ts": "2026-03-26T10:11:13Z",
       "event": "started",
       "context": "Commit worker fix and restart temporal worker"
+    },
+    {
+      "ts": "2026-03-26T10:11:37Z",
+      "event": "done",
+      "context": "All three steps completed successfully:\n\n1. **Commit and push** — `e7d4462` landed on master: \"fix: register nightowl_flag_risky and nightowl_poll_status activities in worker\" (3 insertions, 1 deletion in worker.py).\n\n2. **Worker restart** — Clean stop at 10:11:21, new process (PID 1910924) started at 10:11:22 and is `active`.\n\n3. **Startup logs look healthy** — Worker connected to Temporal at `localhost:7233`, all existing workflows (healthcheck, heartbeat, simplify, giga cron, tasks DB backup)...(truncated)",
+      "artifacts": []
     }
   ]
 }
