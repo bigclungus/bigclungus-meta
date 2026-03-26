@@ -1,0 +1,19 @@
+{
+  "id": "task-20260326-030425-ae168766",
+  "title": "TTS phone interface architecture plan",
+  "agent_id": "ae168766bd1130b70",
+  "agent_type": "Plan",
+  "session_id": "da8c6f5f-348d-4ced-ac0b-3e3b6fd7539f",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-26T03:04:25Z",
+      "event": "started",
+      "context": "TTS phone interface architecture plan"
+    }
+  ]
+}
