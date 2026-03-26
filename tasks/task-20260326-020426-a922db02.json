@@ -1,0 +1,19 @@
+{
+  "id": "task-20260326-020426-a922db02",
+  "title": "Fix DB/MD status sync and congress_evolve bug",
+  "agent_id": "a922db0282990140b",
+  "agent_type": "general-purpose",
+  "session_id": "da8c6f5f-348d-4ced-ac0b-3e3b6fd7539f",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-26T02:04:26Z",
+      "event": "started",
+      "context": "Fix DB/MD status sync and congress_evolve bug"
+    }
+  ]
+}
