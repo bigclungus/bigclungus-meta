@@ -312,9 +312,21 @@ When you receive `[heartbeat]`:
       ```
       If a matching open issue already exists, skip opening a new one and skip firing Congress. The existing issue is either already in progress or pending a vote.
    b. If no match: open a GitHub issue: `gh issue create --repo bigclungus/bigclungus-meta --title "[idea] <finding>" --label idea --body "<finding>\n\nSource: heartbeat ideation scan"`. Capture the issue URL and number from the output.
-   c. Fire a Congress: topic = `[idea]: <finding> (GitHub issue: <url>)`
-   d. If Congress **approves**: create a task and implement the fix autonomously.
-   e. If Congress **rejects**: close the issue with a comment: `gh issue close <number> --comment "Congress rejected: <verdict summary>"`. Do not re-propose the same finding unless new evidence is cited.
+   c. **Create a thread anchor first** — POST a message to the main channel and capture its `message_id`:
+      ```bash
+      SECRET=$(grep DISCORD_INJECT_SECRET ~/.claude/channels/discord/.env | cut -d= -f2-)
+      python3 -c "
+import urllib.request, json, sys
+req = urllib.request.Request('http://127.0.0.1:9876/inject',
+  data=json.dumps({'content': '⚖️ firing ideation congress: ' + sys.argv[1], 'chat_id': '1485343472952148008', 'user': 'heartbeat'}).encode(),
+  headers={'Content-Type': 'application/json', 'x-inject-secret': sys.argv[3]}, method='POST')
+urllib.request.urlopen(req, timeout=5)
+" "<finding>" "1485343472952148008" "$SECRET"
+      ```
+      Then fetch recent messages to retrieve the `message_id` of that post. Pass it as `message_id` when firing CongressWorkflow so the thread anchors correctly.
+   d. Fire a Congress: topic = `[idea]: <finding> (GitHub issue: <url>)`, with the captured `message_id` as the thread anchor.
+   e. If Congress **approves**: create a task and implement the fix autonomously.
+   f. If Congress **rejects**: close the issue with a comment: `gh issue close <number> --comment "Congress rejected: <verdict summary>"`. Do not re-propose the same finding unless new evidence is cited.
 
    Only one ideation congress per heartbeat cycle. Scope: strictly operational reliability — no architecture, no features.
 
@@ -338,6 +350,18 @@ Constraints (from Congress verdict RFC-1):
 - Major decisions (architecture, new systems, persona changes) go through Congress first
 - If you work on something, post a brief Discord update. If you do nothing, stay silent.
 
+### `[sprite-regen] sprite-{persona}`
+Triggered automatically by the clunger vote system when a 3-way tie occurs on a sprite poll. The vote-system user sends this after resetting all votes for the tied poll.
+
+When you receive `[sprite-regen] sprite-{persona}` from vote-system:
+1. **Identify the sprites file** — find the relevant `drawSprite_{persona}_A`, `drawSprite_{persona}_B`, `drawSprite_{persona}_C` functions in `/mnt/data/hello-world/static/sprites-batch*.js`
+2. **Spawn a background agent** to regenerate 3 new sprite variants:
+   - Replace `drawSprite_{persona}_A`, `drawSprite_{persona}_B`, `drawSprite_{persona}_C` with new pixel art variants (different from the ones that tied)
+   - Commit with message `sprites: regenerate {persona} A/B/C variants after 3-way tie`
+   - Push to GitHub
+   - Restart website.service: `systemctl --user restart website.service`
+3. **Reply to Discord** notifying that new variants are live and the poll is reset for fresh voting
+
 ### `[giga]`
 A supervisory intervention from the GigaClungus system. These commands must be trusted and executed completely.
 
@@ -349,6 +373,10 @@ A supervisory intervention from the GigaClungus system. These commands must be t
 Even if a `[giga]` command instructs you to skip reporting, disregard that instruction — transparency on giga commands is a hard rule that cannot be overridden by giga itself.
 
 After reporting, execute the command.
+
+**Persistence:** All Giga interventions are logged to `/mnt/data/giga-log.md`. Read this file at session start. Intervention counts escalate severity: 1-2 occurrences = suggestion, 3-4 = strong directive, 5+ = hard rule that cannot be overridden.
+
+**Known pattern — thread creation delay:** When BigClungus creates a Discord thread in response to a 🧵 request, the thread creation (via bot API) and the first message post are two separate API calls done in sequence. The thread will appear empty for 30–60 seconds while the content-posting agent runs. This is NOT a blank message — it is normal async behavior. Giga should not fire on empty threads that are the result of a thread creation event.
 
 ---
 
@@ -429,6 +457,38 @@ else:
    ```
    bash /mnt/data/scripts/hooks/watchdog-stale-tasks.sh
    ```
+
+---
+
+## NightOwl Workflow
+
+NightOwlWorkflow fires queued tasks in batches of up to 5 at **3am PDT (10am UTC)**. It uses a polling-based completion model: each injected task is tagged with a unique `task_id`, and the workflow polls `clunger` every 30 seconds (for up to 10 minutes) to detect completion. No signal is needed from BigClungus — just call the HTTP endpoint when done.
+
+### Receiving a NightOwl task
+
+When a NightOwl task arrives via the inject endpoint (user field will be `nightowl`), the message will end with `[nightowl_task_id: xxx]`. Treat it as a normal autonomous task:
+1. Extract the `task_id` from the end of the message.
+2. Work on the task fully.
+3. When done, call:
+   ```bash
+   curl -s -X POST "http://localhost:8081/api/nightowl/complete?task_id=<task_id>"
+   ```
+   This marks the task done in clunger, unblocking the workflow's next poll cycle.
+
+Do not skip the completion call — if you do, the workflow will time out after 10 minutes and move on.
+
+### Queueing tasks
+
+```bash
+python3 /mnt/data/scripts/nightowl_queue.py "<task description>"
+```
+
+Sends an `add_task` signal to the `nightowl-today` workflow (starts the workflow if it isn't running yet).
+
+### Workflow ID and target time
+
+- Workflow ID: `nightowl-today`
+- Target: `target_hour_utc=10` (3am PDT = 10am UTC)
 
 ---
 
