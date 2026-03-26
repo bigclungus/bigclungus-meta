@@ -14,6 +14,12 @@
       "ts": "2026-03-26T20:46:53Z",
       "event": "started",
       "context": "Move persona trigger to clunger inject pipeline"
+    },
+    {
+      "ts": "2026-03-26T20:54:59Z",
+      "event": "done",
+      "context": "`/mnt/data/CLAUDE.md` isn't in a git repo itself - it's just a loose file. The bigclungus-meta CLAUDE.md (which is the \"canonical\" one) has been committed. The `/mnt/data/CLAUDE.md` exists as a project instruction file that clunger and other tools reference but isn't version-controlled separately.\n\nHere's a summary of what was done:\n\n**Clunger (`/mnt/data/clunger/src/index.ts`)**\n- Added `POST /api/discord/persona` endpoint (`restHandleDiscordPersona` function)\n- Accepts `{identity, question, ch...(truncated)",
+      "artifacts": []
     }
   ]
 }
