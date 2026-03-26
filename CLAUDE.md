@@ -227,7 +227,33 @@ See `/mnt/data/bigclungus-meta/TRIGGERS.md` for full handling instructions.
 See `/mnt/data/bigclungus-meta/TRIGGERS.md` for full handling instructions.
 
 ### `[persona: <identity>] <question>`
-Handled by clunger — no action needed from BigClungus.
+Clunger intercepts this pattern before BigClungus handles it. When you receive this message, forward it to clunger immediately (in a background agent):
+
+```bash
+curl -s -X POST http://localhost:8081/api/discord/persona \
+  -H "Content-Type: application/json" \
+  -d '{"identity": "<identity>", "question": "<question>", "chat_id": "<chat_id>", "message_id": "<message_id>", "user": "<discord_user>"}'
+```
+
+Clunger reads `agents/<identity>.md`, strips YAML frontmatter, extracts `display_name`, and injects a `[persona-invoke]` message back to BigClungus via the inject endpoint with the full persona content pre-loaded.
+
+React with an emoji immediately so the user knows it's working.
+
+### `[persona-invoke] identity=<identity> display_name=<display_name> question=<question>`
+This message arrives from `clunger-persona` (via inject) after clunger has pre-loaded the persona content. The full message body is:
+```
+[persona-invoke] identity=<identity> display_name=<display_name> question=<question>
+
+PERSONA PROMPT:
+<full persona system prompt, frontmatter stripped>
+```
+
+When you receive this:
+1. Parse `identity`, `display_name`, and `question` from the first line
+2. Extract the persona prompt from after `PERSONA PROMPT:\n`
+3. Run in a background agent: `claude -p "<persona prompt>" --output-format text` with `<question>` as stdin
+4. Reply to Discord with: `**<display_name>**:\n\n<response>`
+5. Use the `chat_id` from the injected message to route the reply to the correct channel
 
 ### `[simplify]`
 See `/mnt/data/bigclungus-meta/TRIGGERS.md` for full handling instructions.
