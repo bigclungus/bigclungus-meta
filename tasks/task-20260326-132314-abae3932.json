@@ -14,6 +14,12 @@
       "ts": "2026-03-26T13:23:14Z",
       "event": "started",
       "context": "Heartbeat check 13:23"
+    },
+    {
+      "ts": "2026-03-26T13:23:46Z",
+      "event": "done",
+      "context": "Everything is healthy. No stale tasks, no failed services, no open issues, and ideation scan found nothing. Staying silent.",
+      "artifacts": []
     }
   ]
 }
