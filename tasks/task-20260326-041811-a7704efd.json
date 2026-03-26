@@ -1,0 +1,19 @@
+{
+  "id": "task-20260326-041811-a7704efd",
+  "title": "Fire SmallClungus congress workflow",
+  "agent_id": "a7704efd911df8502",
+  "agent_type": "general-purpose",
+  "session_id": "da8c6f5f-348d-4ced-ac0b-3e3b6fd7539f",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-26T04:18:11Z",
+      "event": "started",
+      "context": "Fire SmallClungus congress workflow"
+    }
+  ]
+}
