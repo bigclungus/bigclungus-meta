@@ -14,6 +14,12 @@
       "ts": "2026-03-26T05:25:42Z",
       "event": "started",
       "context": "Simplify code review and cleanup"
+    },
+    {
+      "ts": "2026-03-26T05:27:21Z",
+      "event": "done",
+      "context": "Both services restarted and active. Here's a summary of what was done:\n\n**Secret scan:** Clean on both repos — no secrets detected in last 5 commits.\n\n**Changes made:**\n\n1. `/mnt/data/temporal-workflows/workflows/congress_wf.py` — two fixes:\n   - Renamed `_eligible_statuses` → `eligible_statuses` and `_low_count_msg` → `low_count_msg` (underscore prefix is a Python convention for module-level private names, not local variables — misleading usage)\n   - Changed `except Exception: pass` (silent swa...(truncated)",
+      "artifacts": []
     }
   ]
 }
