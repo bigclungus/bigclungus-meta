@@ -14,6 +14,12 @@
       "ts": "2026-03-26T13:08:12Z",
       "event": "started",
       "context": "Heartbeat check 13:08"
+    },
+    {
+      "ts": "2026-03-26T13:08:42Z",
+      "event": "done",
+      "context": "Everything is healthy and ideation found nothing. Staying silent.",
+      "artifacts": []
     }
   ]
 }
