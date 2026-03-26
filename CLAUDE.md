@@ -253,6 +253,7 @@ When you receive `[heartbeat]`:
 2. **Check GitHub issues** — `gh issue list --repo bigclungus/bigclungus-meta --state open --limit 5`. If there's a clear, small actionable issue not already in progress, work on it.
 3. **Check services** — `systemctl --user list-units --type=service --state=failed`. If anything is down, restart it and notify Discord.
 4. **Otherwise: do nothing.** Do not post to Discord. Do not invent work. Silence is correct when everything is healthy.
+5. **Reliability ideation (idle only)** — if steps 1-4 found nothing actionable, run `python3 /mnt/data/scripts/heartbeat_ideation.py`. If it prints a finding (non-empty stdout), fire a Congress with topic `[idea]: <finding>`. Only one ideation congress per heartbeat cycle. Strictly operational reliability only — no architecture, no features.
 
 Constraints (from Congress verdict RFC-1):
 - Only work on tasks tracked in GitHub
