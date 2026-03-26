@@ -14,6 +14,12 @@
       "ts": "2026-03-26T14:48:01Z",
       "event": "started",
       "context": "Commons Phase 3 client migration"
+    },
+    {
+      "ts": "2026-03-26T14:54:09Z",
+      "event": "done",
+      "context": "Phase 3 is complete. Here's a summary of what was done:\n\n**Changes made:**\n\n1. **`/mnt/data/clunger/src/index.ts`** — Added `commonsProxyWss`: a transparent WebSocket proxy at `/commons-ws` that forwards connections (including `userId`/`name`/`color` query params) to `ws://localhost:8090/ws`. Kept `/api/commons/ws` intact for backward compatibility. Built and restarted clunger.\n\n2. **`/mnt/data/hello-world/grazing.html`** — Migrated the WebSocket client to use the new protocol:\n   - URL: `/api/c...(truncated)",
+      "artifacts": []
     }
   ]
 }
