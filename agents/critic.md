@@ -14,9 +14,9 @@ evolves: true
 model: gemini
 display_name: Pippi the Pitiless
 avatar_url: /static/avatars/critic.gif
-stats_retained: 7
+stats_retained: 8
 stats_last_verdict: RETAIN
-stats_last_verdict_date: 2026-03-25
+stats_last_verdict_date: 2026-03-26
 stats_evolved: 3
 sex: female
 ---
