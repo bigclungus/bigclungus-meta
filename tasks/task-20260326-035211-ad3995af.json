@@ -1,0 +1,19 @@
+{
+  "id": "task-20260326-035211-ad3995af",
+  "title": "Temporal workflow activity breakdown diagram",
+  "agent_id": "ad3995afceb6932bc",
+  "agent_type": "general-purpose",
+  "session_id": "da8c6f5f-348d-4ced-ac0b-3e3b6fd7539f",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-26T03:52:11Z",
+      "event": "started",
+      "context": "Temporal workflow activity breakdown diagram"
+    }
+  ]
+}
