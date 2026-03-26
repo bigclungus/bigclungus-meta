@@ -148,6 +148,19 @@ BigClungus posted the TVTropes lab announcement twice — once from the heartbea
 
 ---
 
+## acting-before-design-closed / ignoring-explicit-instruction
+**count:** 2
+**first:** 2026-03-26
+**last:** 2026-03-26
+**severity:** suggestion (2 occurrences)
+
+### 2026-03-26 — Continued Congress after explicit stop order
+**Trigger:** centronias explicitly said to fix the script instead of running Congress on the tvtropes flapping false positive. BigClungus continued Congress Round 3 anyway.
+**Action taken:** Congress workflow terminated (congress-1774546757). Script already fixed (ff10adb).
+**Pattern:** acting-before-design-closed / ignoring-explicit-instruction (count 2)
+
+---
+
 ## factual-claims-without-verification
 **count:** 6
 **first:** 2026-03-26
