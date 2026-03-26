@@ -14,6 +14,12 @@
       "ts": "2026-03-26T19:02:31Z",
       "event": "started",
       "context": "Fire congress workflow"
+    },
+    {
+      "ts": "2026-03-26T19:02:52Z",
+      "event": "done",
+      "context": "Congress is not suspended. The `CongressWorkflow` was successfully started in Temporal with:\n\n- **Topic:** \"Should clungus add automated tests which run on a schedule?\"\n- **chat_id:** `1485343472952148008`\n- **message_id:** `1486802505340813442`\n- **discord_user:** `centronias`\n\nNote: `WorkflowIDReusePolicy` was in `temporalio.common`, not `temporalio.client` — adjusted the import and it fired cleanly. The workflow will create a Discord thread and post the deliberation live.",
+      "artifacts": []
     }
   ]
 }
