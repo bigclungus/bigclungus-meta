@@ -19,7 +19,12 @@
     {
       "event": "milestone",
       "ts": "2026-03-25T23:59:51Z",
-      "message": "Source verdict: The congress gate is the only thing that makes this proposal viable, and it's also what makes it worth doing. Clungus already has dead time on the heartbeat loop \u2014 using it to identify concrete reliab..."
+      "message": "Source verdict: The congress gate is the only thing that makes this proposal viable, and it's also what makes it worth doing. Clungus already has dead time on the heartbeat loop — using it to identify concrete reliab..."
+    },
+    {
+      "ts": "2026-03-26T02:02:05Z",
+      "event": "stale",
+      "context": "Marked stale by watchdog — session likely ended before task completed"
     }
   ]
 }
