@@ -273,3 +273,11 @@ The debate has produced a clear signal beneath the surface noise. All five debat
 Fire Uncle Bob. His perspective is real but belongs in linters, CI pipelines, and code review automation — not in a deliberative body that debates architecture, priorities, and tradeoffs. The one counterargument worth acknowledging is Hume's point that firing signals we've learned nothing from past reinstatements, but that gets the causation backwards: the lesson from r
 
 ---
+
+## [congress-0066] Congress #66 — 2026-03-26
+**Topic:** [idea]: temporal-worker.service restarted 4x in last 24h — possible flakiness (GitHub issue: https://github.com/bigclungus/bigclungus-meta/issues/57)
+
+**Verdict:**
+Four restarts in 24 hours is a symptom, not a diagnosis — and treating it as an "idea" for congress debate is misclassifying it. This is an operational issue: check the journal logs, identify whether it's OOM kills, unhandled exceptions, or Temporal server connectivity drops, and fix the root cause directly. Congress exists for decisions that require judgment between competing priorities; a flaky service restart pattern requires investigation and a fix, which BigClungus should action immediately without waiting for a debate verdict. Close the issue, do the work.
+
+---
