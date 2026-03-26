@@ -14,6 +14,12 @@
       "ts": "2026-03-26T22:05:14Z",
       "event": "started",
       "context": "Fetch YouTube video transcript"
+    },
+    {
+      "ts": "2026-03-26T22:06:02Z",
+      "event": "done",
+      "context": "Done. The transcript was fetched via `yt-dlp` (auto-generated English subtitles from `/tmp/transcript.en.vtt`), cleaned of VTT timing/tag markup, deduplicated, and posted to Discord channel `1485343472952148008`. The full transcript was ~4,754 chars so it was truncated at ~1,900 chars with a note. The video appears to be a comedic/satirical tech monologue about over-engineering, AWS credits, and process-heavy software development methodologies.",
+      "artifacts": []
     }
   ]
 }
