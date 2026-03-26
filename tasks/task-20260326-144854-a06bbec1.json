@@ -1,0 +1,19 @@
+{
+  "id": "task-20260326-144854-a06bbec1",
+  "title": "Remove bc-monitor service and script",
+  "agent_id": "a06bbec1813805f4d",
+  "agent_type": "general-purpose",
+  "session_id": "da8c6f5f-348d-4ced-ac0b-3e3b6fd7539f",
+  "discord_message_id": "1486738621036757012",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-26T14:48:54Z",
+      "event": "started",
+      "context": "Remove bc-monitor service and script"
+    }
+  ]
+}
