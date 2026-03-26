@@ -1,0 +1,19 @@
+{
+  "id": "task-20260326-185833-a0231d24",
+  "title": "Redirect NPC fix agent - congress is fine",
+  "agent_id": "a0231d2492d482c04",
+  "agent_type": "general-purpose",
+  "session_id": "ef1a5e01-b3c3-41d6-abd3-172f68d92559",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-26T18:58:33Z",
+      "event": "started",
+      "context": "Redirect NPC fix agent - congress is fine"
+    }
+  ]
+}
