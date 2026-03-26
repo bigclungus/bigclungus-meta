@@ -14,6 +14,12 @@
       "ts": "2026-03-26T07:16:40Z",
       "event": "started",
       "context": "Redirect first spec agent to different filename"
+    },
+    {
+      "ts": "2026-03-26T07:19:43Z",
+      "event": "done",
+      "context": "Research complete. Written to `/mnt/data/commons-spec-research.md`.\n\nThe document covers 7 research areas directly relevant to the commons spec:\n\n1. **Bun WebSocket API** — confirmed 7x throughput advantage over Node.js `ws`; documented the native pub/sub API which maps cleanly to chunk-based broadcasting (subscribe/unsubscribe on chunk change); backpressure handling for tick loops.\n\n2. **Snapshot interpolation netcode** — confirmed the spec's 20Hz tick rate and lerp-based approach is correct fo...(truncated)",
+      "artifacts": []
     }
   ]
 }
