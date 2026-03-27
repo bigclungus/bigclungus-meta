@@ -14,6 +14,12 @@
       "ts": "2026-03-27T17:15:22Z",
       "event": "started",
       "context": "Create thread for congress matrix work"
+    },
+    {
+      "ts": "2026-03-27T17:15:39Z",
+      "event": "done",
+      "context": "Thread created and initial message posted.\n\n- **Thread ID:** `1487137261534314807` (same as the original message ID, per Discord's thread model)\n- **Thread name:** \"Congress Participation Matrix\"\n- **Initial status message ID:** `1487138022922387577`",
+      "artifacts": []
     }
   ]
 }
