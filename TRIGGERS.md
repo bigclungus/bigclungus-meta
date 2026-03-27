@@ -53,6 +53,37 @@ Reply with: "🃏 meme congress is in session — pure chaos, no consequences"
 
 ---
 
+## `[show-trial] <defendant> <charges>`
+
+Fire a `TrialWorkflow` in Temporal. `defendant` is the persona slug (e.g. `spengler`, `otto`). `charges` is freeform text — everything after the defendant slug.
+
+Parse the trigger as: first word after `[show-trial]` is the defendant slug, remainder is the charges string.
+
+```python
+client = await Client.connect('localhost:7233')
+await client.start_workflow(
+    'TrialWorkflow',
+    {'defendant': '<defendant_slug>', 'charges': '<charges>', 'chat_id': '<chat_id>', 'message_id': '<message_id>', 'discord_user': '<user>'},
+    id=f'trial-{int(time.time())}',
+    task_queue='listings-queue',
+    id_reuse_policy=WorkflowIDReusePolicy.ALLOW_DUPLICATE,
+)
+```
+
+Reply with: "⚖️ show trial commencing — {defendant_slug} stands accused. Proceedings will unfold in the thread."
+
+**Phases:**
+1. Prosecution (3 personas present charges)
+2. Defendant responds
+3. Cross-examination (defendant questions each prosecutor)
+4. Character witness (1 defense advocate)
+5. Jury deliberation (3 jurors vote: ACQUIT / PROBATION / EVOLVE / FIRE)
+6. Ibrahim delivers verdict (supermajority rule: FIRE requires all 3 jury votes)
+
+Session files saved to `/home/clungus/work/hello-world/sessions/trial-NNNN.json`.
+
+---
+
 ## `[simplify]`
 
 An hourly automated code review trigger from SimplifyCronWorkflow. Its job is to scan recent changes across the main codebases and apply cleanup fixes (dead code, duplication, style consistency, minor bugs).
