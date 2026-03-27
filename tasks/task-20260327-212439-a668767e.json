@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-212439-a668767e",
+  "title": "Timeline responsive layout",
+  "agent_id": "a668767e1a4f2b6ec",
+  "agent_type": "general-purpose",
+  "session_id": "083baee4-2f6f-4f81-8ced-0e9b97f43956",
+  "discord_message_id": "1487200558120042606",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T21:24:39Z",
+      "event": "started",
+      "context": "Timeline responsive layout"
+    }
+  ]
+}
