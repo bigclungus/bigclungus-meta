@@ -14,6 +14,12 @@
       "ts": "2026-03-27T00:01:29Z",
       "event": "started",
       "context": "Convert integration tests to TAP format"
+    },
+    {
+      "ts": "2026-03-27T00:03:03Z",
+      "event": "done",
+      "context": "Done. Here's a summary of what changed:\n\n**File:** `/mnt/data/bigclungus-meta/tests/integration_test.py`\n\n**What changed (output format only, zero test logic altered):**\n\n- `run_test()` now emits `ok N - <name>` on pass, or `not ok N - <name>` followed by a YAML diagnostic block (`---` / `message:` / `...`) on failure. A module-level `_test_counter` tracks the test number.\n- `__main__` block now opens with `TAP version 14` and the plan line `1..7`, iterates a `TESTS` list instead of calling `run...(truncated)",
+      "artifacts": []
     }
   ]
 }
