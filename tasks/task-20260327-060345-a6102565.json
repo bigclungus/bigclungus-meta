@@ -14,6 +14,12 @@
       "ts": "2026-03-27T06:03:45Z",
       "event": "started",
       "context": "Apply simplify fixes"
+    },
+    {
+      "ts": "2026-03-27T06:07:56Z",
+      "event": "done",
+      "context": "All 12 fixes applied and pushed across all three repos. Here's a summary:\n\n---\n\n**All fixes applied — nothing skipped.**\n\n**`/mnt/data/scripts/` (commit `d60d039`)**\n\n- **Fix 1**: Created `/mnt/data/scripts/common.py` with `DB_PATH`, `EMBED_MODEL`, `EMBED_DIMS`, and `get_openai_key()`. Both `history-ingest.py` and `history` now import from it, removing ~30 lines of duplicated code each.\n- **Fix 2**: Removed the unused `api_key: str` parameter from `open_db()` in `history-ingest.py` and updated t...(truncated)",
+      "artifacts": []
     }
   ]
 }
