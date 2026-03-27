@@ -14,6 +14,12 @@
       "ts": "2026-03-27T17:03:37Z",
       "event": "started",
       "context": "Search sqlite-vec for \"coconut\""
+    },
+    {
+      "ts": "2026-03-27T17:03:48Z",
+      "event": "done",
+      "context": "Here are the results from the Discord history semantic search for \"coconut\" (top 5 nearest results):\n\n1. **[2026-03-25 07:06] centronias:** \"koole is koole__ tho\"\n2. **[2026-03-26 06:54] centronias:** \"um\"\n3. **[2026-03-25 21:32] kubariet:** (attachment)\n4. **[2026-03-25 21:33] jaboostin:** (attachment)\n5. **[2026-03-27 01:45] jaboostin:** (attachment)\n\nNone of the results are actually about coconuts -- the nearest matches are just the closest vectors in the embedding space, and they're all pret...(truncated)",
+      "artifacts": []
     }
   ]
 }
