@@ -14,6 +14,12 @@
       "ts": "2026-03-27T17:39:13Z",
       "event": "started",
       "context": "Post vote fix to matrix thread"
+    },
+    {
+      "ts": "2026-03-27T17:39:22Z",
+      "event": "done",
+      "context": "Message posted successfully to thread 1487137261534314807. The vote fix summary was delivered with both bug descriptions, the recovery stats (87 votes across 18 sessions), and the note about 52 sessions correctly showing participation dots.",
+      "artifacts": []
     }
   ]
 }
