@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-162651-a5da0212",
+  "title": "Route all Claude models through CLI, use short names",
+  "agent_id": "a5da02124382ce5be",
+  "agent_type": "general-purpose",
+  "session_id": "b8a58c15-c6f1-48c2-b033-87763f636706",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T16:26:51Z",
+      "event": "started",
+      "context": "Route all Claude models through CLI, use short names"
+    }
+  ]
+}
