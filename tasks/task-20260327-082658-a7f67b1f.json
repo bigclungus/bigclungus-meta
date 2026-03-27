@@ -18,8 +18,14 @@
     {
       "ts": "2026-03-27T08:31:57Z",
       "event": "done",
-      "context": "Confirmed — `clung.us` routes to port 8081 (clunger), not 8080 (website.service). `website.service` being inactive is fine. The site is healthy.\n\nAll systems are green. Summary:\n\n**Heartbeat check results:**\n\n1. **Stale tasks**: 0 stale tasks found, no orphaned congress sessions.\n2. **Failed services**: 0 failed services.\n3. **GitHub issues**: No open issues.\n4. **Services**: All critical services active. `website.service` is inactive but expected — clung.us now routes to clunger on :8081. Site ...(truncated)",
+      "context": "Confirmed \u2014 `clung.us` routes to port 8081 (clunger), not 8080 (website.service). `website.service` being inactive is fine. The site is healthy.\n\nAll systems are green. Summary:\n\n**Heartbeat check results:**\n\n1. **Stale tasks**: 0 stale tasks found, no orphaned congress sessions.\n2. **Failed services**: 0 failed services.\n3. **GitHub issues**: No open issues.\n4. **Services**: All critical services active. `website.service` is inactive but expected \u2014 clung.us now routes to clunger on :8081. Site ...(truncated)",
       "artifacts": []
+    },
+    {
+      "ts": "2026-03-27T11:18:00Z",
+      "event": "cancelled",
+      "msg": "stale restart-storm artifact, closing during cleanup"
     }
-  ]
+  ],
+  "status": "cancelled"
 }

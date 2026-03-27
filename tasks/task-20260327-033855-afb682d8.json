@@ -18,8 +18,14 @@
     {
       "ts": "2026-03-27T03:39:58Z",
       "event": "done",
-      "context": "The Graphiti graph has no nodes or facts to query against — no verifiable signal exists for lab ideation. Per the instructions, skip lab creation when no clear graph signal exists.\n\nAll heartbeat checks complete:\n\n- **Stale tasks**: 0 stale tasks, no orphaned congress sessions\n- **GitHub issues**: Issue #66 (Show Trials) is open but already implemented this session — no action\n- **Failed services**: 0 failed services\n- **Reliability ideation**: Script produced no output — nothing to act on\n- **L...(truncated)",
+      "context": "The Graphiti graph has no nodes or facts to query against \u2014 no verifiable signal exists for lab ideation. Per the instructions, skip lab creation when no clear graph signal exists.\n\nAll heartbeat checks complete:\n\n- **Stale tasks**: 0 stale tasks, no orphaned congress sessions\n- **GitHub issues**: Issue #66 (Show Trials) is open but already implemented this session \u2014 no action\n- **Failed services**: 0 failed services\n- **Reliability ideation**: Script produced no output \u2014 nothing to act on\n- **L...(truncated)",
       "artifacts": []
+    },
+    {
+      "ts": "2026-03-27T11:18:00Z",
+      "event": "cancelled",
+      "msg": "stale restart-storm artifact, closing during cleanup"
     }
-  ]
+  ],
+  "status": "cancelled"
 }

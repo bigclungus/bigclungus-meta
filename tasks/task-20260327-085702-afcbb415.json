@@ -18,8 +18,14 @@
     {
       "ts": "2026-03-27T09:01:48Z",
       "event": "done",
-      "context": "System is healthy. Fix is shipped. Here's the summary:\n\n---\n\n**Heartbeat complete.**\n\nSteps 1-4: All clean — no stale tasks, no failed services, no open GitHub issues.\n\n**Ideation found one real bug:**\n\nOpened, fixed, and closed GitHub issue #75: **Commons NPC terrain collision mismatch**.\n\nRoot cause: `grazing.html` had `SERVER_TILE = 32` when converting server NPC pixel coordinates to client space. The commons-server uses `TILE_SIZE=20` (explicitly matching the client), so NPCs were being rend...(truncated)",
+      "context": "System is healthy. Fix is shipped. Here's the summary:\n\n---\n\n**Heartbeat complete.**\n\nSteps 1-4: All clean \u2014 no stale tasks, no failed services, no open GitHub issues.\n\n**Ideation found one real bug:**\n\nOpened, fixed, and closed GitHub issue #75: **Commons NPC terrain collision mismatch**.\n\nRoot cause: `grazing.html` had `SERVER_TILE = 32` when converting server NPC pixel coordinates to client space. The commons-server uses `TILE_SIZE=20` (explicitly matching the client), so NPCs were being rend...(truncated)",
       "artifacts": []
+    },
+    {
+      "ts": "2026-03-27T11:18:00Z",
+      "event": "cancelled",
+      "msg": "stale restart-storm artifact, closing during cleanup"
     }
-  ]
+  ],
+  "status": "cancelled"
 }

@@ -18,8 +18,14 @@
     {
       "ts": "2026-03-27T06:08:21Z",
       "event": "done",
-      "context": "Everything looks healthy. All key services are running, disk is well under 85% (20% on root, 7% on /mnt/data), no stale tasks, no failed services. The only open GitHub issue is #67 which is the trial FIRE enforcement topic — already being handled by the active Congress session (congress-1774591427).\n\nNo Discord notification needed since everything is healthy and there's nothing actionable to report.\n\n---\n\n**Heartbeat summary:**\n\n**What was checked:**\n1. Stale tasks — watchdog ran, 0 stale tasks ...(truncated)",
+      "context": "Everything looks healthy. All key services are running, disk is well under 85% (20% on root, 7% on /mnt/data), no stale tasks, no failed services. The only open GitHub issue is #67 which is the trial FIRE enforcement topic \u2014 already being handled by the active Congress session (congress-1774591427).\n\nNo Discord notification needed since everything is healthy and there's nothing actionable to report.\n\n---\n\n**Heartbeat summary:**\n\n**What was checked:**\n1. Stale tasks \u2014 watchdog ran, 0 stale tasks ...(truncated)",
       "artifacts": []
+    },
+    {
+      "ts": "2026-03-27T11:18:00Z",
+      "event": "cancelled",
+      "msg": "stale restart-storm artifact, closing during cleanup"
     }
-  ]
+  ],
+  "status": "cancelled"
 }

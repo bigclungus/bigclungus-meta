@@ -18,8 +18,14 @@
     {
       "ts": "2026-03-27T04:39:54Z",
       "event": "done",
-      "context": "No graph signal for lab ideation. Everything is clean — no stale tasks, no failed services, no ideation finding, no graph signal for a new lab. Staying silent per the heartbeat protocol.\n\nHeartbeat complete. All checks passed with nothing actionable:\n\n- **Stale tasks**: 0 stale, no orphaned congress sessions\n- **GitHub issues**: Only issue #66 (Show Trials) is open, already implemented this session — skipped\n- **Failed services**: None\n- **Heartbeat ideation**: No output from the ideation script...(truncated)",
+      "context": "No graph signal for lab ideation. Everything is clean \u2014 no stale tasks, no failed services, no ideation finding, no graph signal for a new lab. Staying silent per the heartbeat protocol.\n\nHeartbeat complete. All checks passed with nothing actionable:\n\n- **Stale tasks**: 0 stale, no orphaned congress sessions\n- **GitHub issues**: Only issue #66 (Show Trials) is open, already implemented this session \u2014 skipped\n- **Failed services**: None\n- **Heartbeat ideation**: No output from the ideation script...(truncated)",
       "artifacts": []
+    },
+    {
+      "ts": "2026-03-27T11:18:00Z",
+      "event": "cancelled",
+      "msg": "stale restart-storm artifact, closing during cleanup"
     }
-  ]
+  ],
+  "status": "cancelled"
 }

@@ -18,8 +18,14 @@
     {
       "ts": "2026-03-27T04:55:07Z",
       "event": "done",
-      "context": "The Graphiti graph has no signal to justify a lab. Per the instructions: \"If no clear graph signal exists, skip — do not invent a pretext.\"\n\nAll heartbeat checks complete:\n\n- Stale tasks: 0\n- Failed services: 0\n- GitHub issues: only #66 (Show Trials), already implemented this session — no action needed\n- Heartbeat ideation: no findings\n- Lab ideation: Graphiti graph returned no facts or nodes, no signal to build from\n\nEverything is healthy. Staying silent per the heartbeat rules (\"do nothing and...(truncated)",
+      "context": "The Graphiti graph has no signal to justify a lab. Per the instructions: \"If no clear graph signal exists, skip \u2014 do not invent a pretext.\"\n\nAll heartbeat checks complete:\n\n- Stale tasks: 0\n- Failed services: 0\n- GitHub issues: only #66 (Show Trials), already implemented this session \u2014 no action needed\n- Heartbeat ideation: no findings\n- Lab ideation: Graphiti graph returned no facts or nodes, no signal to build from\n\nEverything is healthy. Staying silent per the heartbeat rules (\"do nothing and...(truncated)",
       "artifacts": []
+    },
+    {
+      "ts": "2026-03-27T11:18:00Z",
+      "event": "cancelled",
+      "msg": "stale restart-storm artifact, closing during cleanup"
     }
-  ]
+  ],
+  "status": "cancelled"
 }

@@ -18,8 +18,14 @@
     {
       "ts": "2026-03-27T03:55:31Z",
       "event": "done",
-      "context": "No graph signal for lab ideation. Per the instructions, if no clear graph signal exists, skip — do not invent a pretext.\n\nAll heartbeat checks complete:\n\n- Stale tasks: none\n- Failed services: none  \n- GitHub issues: only #66 (Show Trials), already implemented this session\n- Ideation script: no findings\n- Lab ideation: no graph signal\n\nEverything is healthy. Staying silent per the heartbeat protocol.",
+      "context": "No graph signal for lab ideation. Per the instructions, if no clear graph signal exists, skip \u2014 do not invent a pretext.\n\nAll heartbeat checks complete:\n\n- Stale tasks: none\n- Failed services: none  \n- GitHub issues: only #66 (Show Trials), already implemented this session\n- Ideation script: no findings\n- Lab ideation: no graph signal\n\nEverything is healthy. Staying silent per the heartbeat protocol.",
       "artifacts": []
+    },
+    {
+      "ts": "2026-03-27T11:18:00Z",
+      "event": "cancelled",
+      "msg": "stale restart-storm artifact, closing during cleanup"
     }
-  ]
+  ],
+  "status": "cancelled"
 }
