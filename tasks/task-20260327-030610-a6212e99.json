@@ -14,6 +14,12 @@
       "ts": "2026-03-27T03:06:10Z",
       "event": "started",
       "context": "Check temporal worker status and logs"
+    },
+    {
+      "ts": "2026-03-27T03:06:40Z",
+      "event": "done",
+      "context": "The service is currently healthy. Here's the summary:\n\n**Current state:** Running cleanly. Active for ~55 seconds as of the check, PID 680350, no errors in the current process.\n\n**What caused the flapping:** The logs show a clean systemd-initiated stop/start at 03:05:33 UTC — `Stopping...` then `Started` — with no crash or error preceding it. The prior process (PID 658472) ran fine and logged one benign WARN:\n\n```\nTask not found when completing error=status: 'Some requested entity was not found'...(truncated)",
+      "artifacts": []
     }
   ]
 }
