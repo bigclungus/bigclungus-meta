@@ -14,6 +14,12 @@
       "ts": "2026-03-27T05:31:18Z",
       "event": "started",
       "context": "Discord watchdog + reconnect fix"
+    },
+    {
+      "ts": "2026-03-27T05:34:27Z",
+      "event": "done",
+      "context": "Everything is in place. Here's a summary of what was done:\n\n---\n\n**Remediation 1: Watchdog script**\n\nCreated `/mnt/data/scripts/discord-watchdog.sh`:\n- Primary check: uses `ss` (falls back to `lsof`) to test whether port 9876 is listening\n- Secondary check: inbox staleness is calculated but used as informational only — a quiet channel with no new files is not treated as a failure\n- On port-down: logs the failure and runs `systemctl --user restart claude-bot.service`, logging the exit code\n- Ever...(truncated)",
+      "artifacts": []
     }
   ]
 }
