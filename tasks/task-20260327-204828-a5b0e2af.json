@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-204828-a5b0e2af",
+  "title": "IRC reincarnation social visit",
+  "agent_id": "a5b0e2afb80191ed6",
+  "agent_type": "general-purpose",
+  "session_id": "083baee4-2f6f-4f81-8ced-0e9b97f43956",
+  "discord_message_id": "1487191518140698754",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T20:48:28Z",
+      "event": "started",
+      "context": "IRC reincarnation social visit"
+    }
+  ]
+}
