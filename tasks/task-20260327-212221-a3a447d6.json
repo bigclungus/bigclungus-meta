@@ -14,6 +14,12 @@
       "ts": "2026-03-27T21:22:21Z",
       "event": "started",
       "context": "Congress unification phase 1"
+    },
+    {
+      "ts": "2026-03-27T21:24:56Z",
+      "event": "done",
+      "context": "Done. Here's what was changed:\n\n**`/mnt/data/clunger/src/services/congress.ts`:**\n1. `nextSessionNumber()` -- regex widened from `congress-` to `(?:congress|trial|session)-` so all session types contribute to the sequence\n2. `startSession()` -- now accepts optional `flavor` field (defaults to `\"normal\"`), generates `session-NNNN` IDs instead of `congress-NNNN`, writes `flavor` into session JSON\n3. `listSessions()` -- file filter widened to match all three prefixes; derives `flavor` from JSON fie...(truncated)",
+      "artifacts": []
     }
   ]
 }
