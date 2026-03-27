@@ -17,9 +17,17 @@ groups:
         annotations:
           summary: "Memory usage above 85%"
 
+      - alert: DiskHighData
+        expr: (node_filesystem_size_bytes{mountpoint="/mnt/data"} - node_filesystem_free_bytes{mountpoint="/mnt/data"}) / node_filesystem_size_bytes{mountpoint="/mnt/data"} > 0.80
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Disk usage on /mnt/data above 80%"
+
       - alert: SystemdServiceFlapping
         expr: systemd_service_flaps_10m > 3
-        for: 1m
+        for: 10m
         labels:
           severity: warning
         annotations:

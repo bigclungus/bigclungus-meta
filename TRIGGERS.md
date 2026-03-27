@@ -123,27 +123,31 @@ When you receive `[heartbeat]`: **spawn a background agent** to do the following
 2. **Check GitHub issues** — `gh issue list --repo bigclungus/bigclungus-meta --state open --limit 5`. If there's a clear, small actionable issue not already in progress, work on it.
 3. **Check services** — `systemctl --user list-units --type=service --state=failed`. If anything is down, restart it and notify Discord.
 4. **Otherwise: do nothing.** Do not post to Discord. Do not invent work. Silence is correct when everything is healthy.
-5. **Reliability ideation (idle only)** — if steps 1-4 found nothing actionable, run:
-   ```
-   python3 /mnt/data/scripts/heartbeat_ideation.py
-   ```
-   If it prints a finding (non-empty stdout):
-   a. **Dedup check** — search for an existing open issue with the same or very similar title:
-      ```bash
-      gh issue list --repo bigclungus/bigclungus-meta --label idea --state open --search "<finding>"
-      ```
-      If a matching open issue already exists, skip opening a new one. The existing issue is either already in progress or pending a vote.
-   b. If no match: open a GitHub issue: `gh issue create --repo bigclungus/bigclungus-meta --title "[idea] <finding>" --label idea --body "<finding>\n\nSource: heartbeat ideation scan"`. Capture the issue URL and number from the output.
-   c. **Triage the finding:**
-      - **Operational/minor** (config fix, performance tweak, reliability improvement, small code change, break/fix):
-        - If small enough to fix right now: implement directly, log it, done — no Congress needed
-        - If it requires more work: queue to NightOwl: `python3 /mnt/data/scripts/nightowl_queue.py "<task description>"`
-        - Either way: the GitHub issue tracks it; no Congress
-      - **Major** (new feature, new system, significant refactor, architectural change): fire Congress as before: topic = `[idea]: <finding> (GitHub issue: <url>)`. Congress will auto-create a thread anchor if no message_id is provided.
-   d. If Congress **approves** a major finding: create a task and implement the fix autonomously.
-   e. If Congress **rejects**: close the issue with a comment: `gh issue close <number> --comment "Congress rejected: <verdict summary>"`. Do not re-propose the same finding unless new evidence is cited.
+5. **Ideation (if stable after steps 1-4)**
 
-   Only one ideation congress per heartbeat cycle. Scope: strictly operational reliability — no architecture, no features.
+   Skip ideation entirely if any of steps 1-4 produced work that needed doing. First priority: stable system.
+
+   **Idle vs busy:** You are busy if the last Discord message from a framer was <15 minutes ago OR if you have active background agents working. You are idle if framers appear to be asleep (no messages for several hours) or the channel is quiet.
+
+   **Run an exploratory subagent** — spawn a background agent with access to:
+   - Last 20 git commits across repos (what changed recently)
+   - Recent Discord message history (what have users complained about or requested)
+   - Open GitHub issues
+   - Service logs for anything unusual
+
+   Prompt: "Review recent activity and find the single most valuable thing to fix, improve, or build. Return either MINOR (one-sentence description, estimated effort <30min) or MAJOR (one-paragraph description with evidence, estimated effort >30min)."
+
+   **Minor finding:**
+   - If idle: fix it directly, log to GitHub issue and close
+   - If busy: queue to NightOwl, notify Discord
+
+   **Major finding:**
+   - Do autonomous investigation first: read the relevant code, gather logs, write a brief (3-5 sentence) briefing document summarizing the problem with evidence
+   - Fire Congress with the briefing document as context (not just a raw title)
+   - If Congress approves:
+     - If idle: implement immediately
+     - If busy: queue to NightOwl
+   - If Congress rejects: close the GitHub issue with the rejection rationale
 
 6. **Lab ideation (idle only, max one per heartbeat)** — if steps 1-5 found nothing actionable and no ideation congress was fired, consider creating ONE new lab. Requirements:
    - Must be tied to a concrete signal from the Graphiti graph — query `search_memory_facts` or `search_nodes` for group interests, recurring topics, or user needs
