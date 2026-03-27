@@ -14,6 +14,12 @@
       "ts": "2026-03-27T02:42:09Z",
       "event": "started",
       "context": "Commit and restart temporal worker"
+    },
+    {
+      "ts": "2026-03-27T02:42:21Z",
+      "event": "done",
+      "context": "All steps completed successfully:\n\n- `activities/congress_act.py` staged and committed as \"Fix: truncate congress closing message to Discord 2000-char limit\" (commit `ee01843`)\n- Pushed to `github.com:bigclungus/temporal-workflows.git` (master `155bdeb..ee01843`)\n- `temporal-worker.service` restarted without error\n- Pre-commit ruff checks passed cleanly",
+      "artifacts": []
     }
   ]
 }
