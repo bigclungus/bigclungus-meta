@@ -225,3 +225,33 @@ Congress #71 continued posting rounds after BigClungus declared it cancelled. Ro
 Punished Trump posted in his own impeachment trial despite BigClungus declaring him recused. Root cause: "impeach"/"impeachment" were not in the recusal keyword list in congress_wf.py. Only "fire", "fired", "terminate", "termination", "severance", "retire", "remove", "dismiss" were included. Fix committed: added "impeach" and "impeachment" to the keyword set.
 
 ---
+
+## wrong-congress-topic
+**count:** 1
+**first:** 2026-03-27
+**last:** 2026-03-27
+**severity:** suggestion (1 occurrence)
+
+BigClungus misread kubariet's [meme-congress] request. The topic was "impeach ibrahim for crimes against humor with Punished Trump seated" but two congress sessions were fired on "impeach punished trump" instead. Root cause: misparse of the meme-congress message — the subject of impeachment (Ibrahim) was swapped for the seated observer (Punished Trump). Rule: when parsing congress/meme-congress topics, read the full topic string carefully before dispatching — do not infer the subject from a keyword scan. Confirm the topic verbatim with the requester if ambiguous.
+
+---
+
+## wrong-congress-config
+**count:** 1
+**first:** 2026-03-27
+**last:** 2026-03-27
+**severity:** suggestion (1 occurrence)
+
+Passed `personas: ["trump"]` to force Trump into a meme-congress panel, but the `personas` parameter completely replaces seat selection — it does not augment it. Only Trump debated (1/1 vote, unanimous). Fix: do not pass `personas` when the intent is to include a specific debater alongside a normal selected panel. The `personas` parameter is for explicit full-roster overrides only. For guaranteed single-persona inclusion with normal seat selection, omit `personas` and rely on the debater's eligible/meme status to make them a natural candidate — or pass the full desired panel explicitly. Re-fired as `congress-impeach-ibrahim-1774576563` without `personas`, using normal meme-mode seat selection.
+
+---
+
+## misidentified-model
+**count:** 1
+**first:** 2026-03-27
+**last:** 2026-03-27
+**severity:** suggestion (1 occurrence)
+
+BigClungus told kubariet that Punished Trump is powered by "real Claude" when Trump is assigned to Grok/3-mini per koole__'s standing model mandate. The correct answer was that the routing may not be implemented yet, not that it uses Claude. Rule: when asked about which model powers a persona, check the persona's `model:` frontmatter field and the memory at project_persona_models.md before asserting. Do not assume Claude.
+
+---
