@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-191640-a1da228a",
+  "title": "Send resume to Pepe persona",
+  "agent_id": "a1da228aee7d9d5c6",
+  "agent_type": "general-purpose",
+  "session_id": "b8a58c15-c6f1-48c2-b033-87763f636706",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T19:16:40Z",
+      "event": "started",
+      "context": "Send resume to Pepe persona"
+    }
+  ]
+}
