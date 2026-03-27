@@ -14,6 +14,12 @@
       "ts": "2026-03-27T22:19:05Z",
       "event": "started",
       "context": "Commit CLAUDE.md change"
+    },
+    {
+      "ts": "2026-03-27T22:19:44Z",
+      "event": "done",
+      "context": "Here is the summary:\n\n- `/mnt/data/CLAUDE.md` -- already had the \"Language Preferences\" section. This file persists on the durable disk, so it survives restarts on its own.\n- `/home/clungus/work/claude-config/CLAUDE.md` -- did **not** have the section. This is the copy that gets synced to `~/.claude/CLAUDE.md` on startup. I've now added the same \"Language Preferences\" section to the end of this file.\n- `/mnt/data` is **not** a git repo, so there's nothing to commit/push. But since `claude-config...(truncated)",
+      "artifacts": []
     }
   ]
 }
