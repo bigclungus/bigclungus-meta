@@ -14,6 +14,12 @@
       "ts": "2026-03-27T17:35:20Z",
       "event": "started",
       "context": "Diagnose missing votes in matrix"
+    },
+    {
+      "ts": "2026-03-27T17:39:05Z",
+      "event": "done",
+      "context": "Here's the summary:\n\n**Problem:** The congress participation matrix showed generic dots (bullet characters) in cells where personas had actually voted agree/disagree.\n\n**Root cause:** The matrix API endpoint (`restServeCongressMatrix` in `/mnt/data/clunger/src/index.ts`, line 894) only extracted votes from the `vote_summary` field on session JSON files. This field was introduced at session 52 -- sessions 1-51 never had it. Additionally, failed/aborted sessions after 52 also lacked it since votin...(truncated)",
+      "artifacts": []
     }
   ]
 }
