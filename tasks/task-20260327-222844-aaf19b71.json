@@ -14,6 +14,12 @@
       "ts": "2026-03-27T22:28:44Z",
       "event": "started",
       "context": "Add affair timeline event"
+    },
+    {
+      "ts": "2026-03-27T22:28:52Z",
+      "event": "done",
+      "context": "Timeline event added successfully. It was assigned **id: 46** with category \"milestone\" and icon \"heart\", created at `2026-03-27 22:28:49`.",
+      "artifacts": []
     }
   ]
 }
