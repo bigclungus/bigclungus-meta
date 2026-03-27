@@ -14,6 +14,12 @@
       "ts": "2026-03-27T03:23:32Z",
       "event": "started",
       "context": "Note meme-ineligible access for trial agent"
+    },
+    {
+      "ts": "2026-03-27T03:23:37Z",
+      "event": "done",
+      "context": "Noted. The requirement is:\n\n- In `[show-trial]` mode, ineligible personas should be available for ALL roles (prosecutor, juror, advocate), not just as the defendant. The defendant bypass already exists; the same logic needs to apply to the other seats.\n- In `[meme-congress]` mode, ineligible personas should also be selectable as regular debaters.\n\nThe agent working on trial_announce (a3ae3c385dd4d2f3b) should have this context. If it doesn't pick it up from the task, the fix will be needed in th...(truncated)",
+      "artifacts": []
     }
   ]
 }
