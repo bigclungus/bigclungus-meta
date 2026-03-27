@@ -14,6 +14,12 @@
       "ts": "2026-03-26T23:59:35Z",
       "event": "started",
       "context": "Implement missing v1 features in commons v2"
+    },
+    {
+      "ts": "2026-03-27T00:08:33Z",
+      "event": "done",
+      "context": "All changes committed and pushed. Here's the summary:\n\n## What was implemented\n\n**Files created:**\n- `/mnt/data/labs/commons-v2/src/entities/warthog.ts` — Warthog vehicle client-side: E-key join/leave, proximity boarding check (60px), WASD driving only when in driver seat (seat 0), pixel-accurate military vehicle rendering with colored seat-occupant heads, \"[E] board / [E] exit\" hint labels\n- `/mnt/data/labs/commons-v2/src/entities/walker.ts` — Audition walkers: polls `/api/audition/walkers` eve...(truncated)",
+      "artifacts": []
     }
   ]
 }
