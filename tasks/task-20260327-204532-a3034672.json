@@ -14,6 +14,12 @@
       "ts": "2026-03-27T20:45:32Z",
       "event": "started",
       "context": "Fix terminal black bar"
+    },
+    {
+      "ts": "2026-03-27T20:48:16Z",
+      "event": "done",
+      "context": "The fix is in place. Here's what I found and changed:\n\n**Root cause:** The shared `sitenav.js` (loaded from `clung.us/sitenav.js`) injects a fixed-position navigation bar and then adds `padding-top` to the `<body>` equal to the nav's height, so page content isn't hidden beneath it. The terminal page at `/mnt/data/terminal/server.py` overrides `.sitenav { position: relative }` so the nav participates in the flex column layout instead of floating. But the JS still applies the `padding-top` to the ...(truncated)",
+      "artifacts": []
     }
   ]
 }
