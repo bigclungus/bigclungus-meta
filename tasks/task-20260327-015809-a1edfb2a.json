@@ -14,6 +14,12 @@
       "ts": "2026-03-27T01:58:09Z",
       "event": "started",
       "context": "Stop — do NOT terminate congress #77"
+    },
+    {
+      "ts": "2026-03-27T01:58:18Z",
+      "event": "done",
+      "context": "No output from the temporal workflow list command, which means no Congress workflows are currently in the Running state. Congress #77 is not running.\n\nTo summarize what was found: the `temporal workflow list` query for running CongressWorkflow instances returned empty — no active congress workflows exist. Either the workflow completed naturally, was already terminated before this message arrived, or timed out. No terminate command was issued from this session.",
+      "artifacts": []
     }
   ]
 }
