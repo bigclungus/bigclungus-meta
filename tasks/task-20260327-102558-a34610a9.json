@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-102558-a34610a9",
+  "title": "Investigate Discord fetch failure",
+  "agent_id": "a34610a9fb1d5ad3f",
+  "agent_type": "general-purpose",
+  "session_id": "14ea2ebc-e5bb-427c-8502-7829da80ffb5",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T10:25:58Z",
+      "event": "started",
+      "context": "Investigate Discord fetch failure"
+    }
+  ]
+}
