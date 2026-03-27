@@ -14,6 +14,12 @@
       "ts": "2026-03-27T10:18:01Z",
       "event": "started",
       "context": "Clean up duplicate tasks"
+    },
+    {
+      "ts": "2026-03-27T11:05:00Z",
+      "event": "done",
+      "msg": "closed during cleanup \u2014 work completed in this session"
     }
-  ]
+  ],
+  "status": "done"
 }

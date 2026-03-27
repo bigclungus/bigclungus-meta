@@ -14,6 +14,12 @@
       "ts": "2026-03-27T10:01:26Z",
       "event": "started",
       "context": "NightOwl task 2: congress verdict tracking system"
+    },
+    {
+      "ts": "2026-03-27T11:05:00Z",
+      "event": "failed",
+      "msg": "closed during cleanup \u2014 created during restart storm; congress verdict tracking is tracked separately in open task task-20260326-015509-5bedfef7"
     }
-  ]
+  ],
+  "status": "failed"
 }

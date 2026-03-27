@@ -14,6 +14,12 @@
       "ts": "2026-03-27T10:01:44Z",
       "event": "started",
       "context": "NightOwl task 4: clunger memory leak investigation"
+    },
+    {
+      "ts": "2026-03-27T11:05:00Z",
+      "event": "failed",
+      "msg": "closed during cleanup \u2014 created during restart storm; no work performed; re-queue if investigation still needed"
     }
-  ]
+  ],
+  "status": "failed"
 }

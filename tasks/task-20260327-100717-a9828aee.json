@@ -14,6 +14,12 @@
       "ts": "2026-03-27T10:07:17Z",
       "event": "started",
       "context": "Heartbeat reliability ideation"
+    },
+    {
+      "ts": "2026-03-27T11:05:00Z",
+      "event": "cancelled",
+      "msg": "closed during cleanup \u2014 duplicate; superseded by task-20260327-103724-af0cbc92"
     }
-  ]
+  ],
+  "status": "cancelled"
 }

@@ -14,6 +14,12 @@
       "ts": "2026-03-27T10:01:16Z",
       "event": "started",
       "context": "NightOwl task 1: investigate claude-bot restart loop"
+    },
+    {
+      "ts": "2026-03-27T11:05:00Z",
+      "event": "failed",
+      "msg": "closed during cleanup \u2014 created during restart storm; no work performed; bot flapping bug fixed separately in f7a05cb"
     }
-  ]
+  ],
+  "status": "failed"
 }

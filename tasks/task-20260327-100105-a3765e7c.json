@@ -14,6 +14,12 @@
       "ts": "2026-03-27T10:01:05Z",
       "event": "started",
       "context": "NightOwl task 0: test expansion audit"
+    },
+    {
+      "ts": "2026-03-27T11:05:00Z",
+      "event": "failed",
+      "msg": "closed during cleanup \u2014 created during restart storm; no work performed; NightOwl tasks re-queued if still needed"
     }
-  ]
+  ],
+  "status": "failed"
 }
