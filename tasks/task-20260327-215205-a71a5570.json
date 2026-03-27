@@ -14,6 +14,12 @@
       "ts": "2026-03-27T21:52:05Z",
       "event": "started",
       "context": "Fix Web Awesome 404s again"
+    },
+    {
+      "ts": "2026-03-27T21:54:12Z",
+      "event": "done",
+      "context": "Everything is working correctly. Here is the summary:\n\n**Root cause:** The frontend JavaScript in `/mnt/data/labs/webawesome/src/index.ts` used absolute fetch paths like `fetch('/api/tasks?limit=50')`. When the page is served at `labs.clung.us/webawesome/`, the browser resolves `/api/tasks` to `labs.clung.us/api/tasks`, which the labs-router interprets as a request for a lab named \"api\" -- returning 404.\n\n**Fix applied:**\n1. Added `<script>var BASE_PATH='${base}';</script>` to the `<head>` of al...(truncated)",
+      "artifacts": []
     }
   ]
 }
