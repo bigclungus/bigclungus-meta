@@ -14,6 +14,12 @@
       "ts": "2026-03-27T19:32:09Z",
       "event": "started",
       "context": "Redo Pepe review of kubariet's resume"
+    },
+    {
+      "ts": "2026-03-27T19:33:17Z",
+      "event": "done",
+      "context": "Posted successfully. Here's what was done:\n\n1. The existing PDF in the inbox was Justin Head's resume (wrong person).\n2. Downloaded the correct attachment from message 1487166721662914750 -- `graeme-hendrickson.pdf` by Graeme Hendrickson.\n3. Resume summary: Graeme Hendrickson, MIT CS grad (2013-2017), 8 years at Workday progressing from Associate to Principal Software Engineer. Specializes in distributed systems, data lakes (Apache Polaris/Iceberg), and AWS infrastructure.\n4. Sent to Pepe (haiku...(truncated)",
+      "artifacts": []
     }
   ]
 }
