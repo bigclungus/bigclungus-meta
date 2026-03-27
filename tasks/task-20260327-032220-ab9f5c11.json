@@ -14,6 +14,12 @@
       "ts": "2026-03-27T03:22:20Z",
       "event": "started",
       "context": "Debug trial-trump2 failure"
+    },
+    {
+      "ts": "2026-03-27T03:22:31Z",
+      "event": "done",
+      "context": "**Root cause: `trial_announce` activity failed with:**\n\n```\nApplicationError: trial_announce: could not obtain a thread ID for the trial.\n```\n\nThis is in `/mnt/data/temporal-workflows/activities/trial_act.py` at line 105. The activity tried to create or look up a Discord thread for the trial session but came back empty-handed — no thread ID was returned.\n\nThere was also an earlier import error (`ImportError: cannot import name 'trial_load_defendant' from 'activities.trial_act'`) that caused the ...(truncated)",
+      "artifacts": []
     }
   ]
 }
