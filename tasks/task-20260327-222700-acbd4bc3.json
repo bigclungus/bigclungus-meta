@@ -14,6 +14,12 @@
       "ts": "2026-03-27T22:27:00Z",
       "event": "started",
       "context": "Check trial matrix display"
+    },
+    {
+      "ts": "2026-03-27T22:28:55Z",
+      "event": "done",
+      "context": "Everything is working. Here's a summary:\n\n**Problem:** Trial session files (`trial-*.json`) use a completely different schema than congress files. The matrix endpoint was reading congress-specific field names (`session_number`, `topic`, `status`, `roster`, `rounds`, `vote_summary`) and getting `null` for all of them when parsing trial files.\n\n**Trial schema differences:**\n- `trial_number` instead of `session_number`\n- `charges` instead of `topic`\n- `verdict` instead of `status`\n- `saved_at` inst...(truncated)",
+      "artifacts": []
     }
   ]
 }
