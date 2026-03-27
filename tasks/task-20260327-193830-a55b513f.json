@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-193830-a55b513f",
+  "title": "Send correct resume to real Pepe 70B",
+  "agent_id": "a55b513f948c01000",
+  "agent_type": "general-purpose",
+  "session_id": "b8a58c15-c6f1-48c2-b033-87763f636706",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T19:38:30Z",
+      "event": "started",
+      "context": "Send correct resume to real Pepe 70B"
+    }
+  ]
+}
