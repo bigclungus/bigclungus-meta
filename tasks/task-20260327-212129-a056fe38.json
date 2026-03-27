@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-212129-a056fe38",
+  "title": "Swap graph viz to Sigma.js",
+  "agent_id": "a056fe382244c264c",
+  "agent_type": "general-purpose",
+  "session_id": "083baee4-2f6f-4f81-8ced-0e9b97f43956",
+  "discord_message_id": "1487199683855122433",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T21:21:29Z",
+      "event": "started",
+      "context": "Swap graph viz to Sigma.js"
+    }
+  ]
+}
