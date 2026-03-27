@@ -14,6 +14,12 @@
       "ts": "2026-03-27T01:15:26Z",
       "event": "started",
       "context": "Delete emoji polls from refinery"
+    },
+    {
+      "ts": "2026-03-27T01:15:53Z",
+      "event": "done",
+      "context": "Done. No clunger restart needed — polls are data-driven from the filesystem, so the frontend will reflect the change immediately on the next API call.\n\nSummary:\n- Polls are stored as markdown files in `/mnt/data/hello-world/polls/`\n- Deleted all 4 emoji polls: `emoji-done-v1.md`, `emoji-error-v1.md`, `emoji-thinking-v1.md`, `emoji-working-v1.md`\n- Remaining polls: `commons-fountain-v1.md` and `congress-building-v1.md`\n- No restart required — `/api/polls` reads the directory at request time",
+      "artifacts": []
     }
   ]
 }
