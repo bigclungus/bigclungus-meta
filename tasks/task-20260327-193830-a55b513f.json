@@ -14,6 +14,12 @@
       "ts": "2026-03-27T19:38:30Z",
       "event": "started",
       "context": "Send correct resume to real Pepe 70B"
+    },
+    {
+      "ts": "2026-03-27T19:43:53Z",
+      "event": "done",
+      "context": "**Result:** Pepe 70B failed. The request to `pepe` model via the LiteLLM proxy at `127.0.0.1:4100` timed out after the full 5-minute window (exit code 124). No fallback was used, no haiku was substituted. The failure was posted to Discord thread `1487164838793969846`. The proxy may be down or Pepe 70B may be unreachable/overloaded.",
+      "artifacts": []
     }
   ]
 }
