@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-101846-a0e946f2",
+  "title": "Fetch recent Discord messages",
+  "agent_id": "a0e946f2079d8a0ec",
+  "agent_type": "general-purpose",
+  "session_id": "a39370ca-bbb7-42db-b3ad-49edd7155068",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T10:18:46Z",
+      "event": "started",
+      "context": "Fetch recent Discord messages"
+    }
+  ]
+}
