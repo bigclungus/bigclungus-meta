@@ -14,6 +14,12 @@
       "ts": "2026-03-27T01:54:42Z",
       "event": "started",
       "context": "Diagnose why only Trump in meme-congress"
+    },
+    {
+      "ts": "2026-03-27T01:55:10Z",
+      "event": "done",
+      "context": "The root cause is clear from the logs. Here's what happened:\n\n**Root Cause: Non-meme personas requested but only meme-eligible pool was available**\n\nThe `[meme-congress]` trigger for workflow `congress-1774576418` was invoked with `custom_personas = ['trump', 'spengler', 'vesper', 'otto', 'dax']`. Here's how it unraveled:\n\n1. **`congress_identities` built the eligible pool using `status='meme'`** — this returned only the meme-eligible personas: `['adelbert', 'bloodfeast', 'chaz', 'critic', 'desi...(truncated)",
+      "artifacts": []
     }
   ]
 }
