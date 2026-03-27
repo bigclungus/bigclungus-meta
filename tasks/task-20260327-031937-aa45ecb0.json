@@ -14,6 +14,12 @@
       "ts": "2026-03-27T03:19:37Z",
       "event": "started",
       "context": "Debug trial workflow persona lookup"
+    },
+    {
+      "ts": "2026-03-27T03:22:02Z",
+      "event": "done",
+      "context": "Worker is active. Here's a summary of what was done:\n\n**Root cause:** `congress_identities` filters out personas with `status: ineligible` before returning. Trump's frontmatter has `status: ineligible` (fired 3 times, `stats_fired: 3`). The trial workflow's so-called \"fallback\" at lines 104-108 re-scanned the same already-filtered list — it could never find trump either.\n\n**Fix:** Added a new `trial_load_defendant` activity in `/mnt/data/temporal-workflows/activities/trial_act.py` that reads `ag...(truncated)",
+      "artifacts": []
     }
   ]
 }
