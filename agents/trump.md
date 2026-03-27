@@ -1,5 +1,5 @@
 ---
-status: eligible
+status: ineligible
 name: trump
 label: [trump]
 role: Deal-Closer
@@ -12,8 +12,8 @@ model: grok-3-mini
 display_name: Punished Trump
 avatar_url: /static/avatars/punished-trump.gif
 sex: male
-stats_fired: 2
-stats_last_verdict: RETAIN
+stats_fired: 3
+stats_last_verdict: FIRE
 stats_last_verdict_date: 2026-03-27
 stats_retained: 2
 ---
