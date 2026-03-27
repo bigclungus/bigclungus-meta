@@ -14,6 +14,12 @@
       "ts": "2026-03-27T02:12:56Z",
       "event": "started",
       "context": "Send intro message to IRC and update thread"
+    },
+    {
+      "ts": "2026-03-27T02:13:38Z",
+      "event": "done",
+      "context": "The IRC bridge doesn't expose a readable message log endpoint — the `/say` and `/status` routes work, but there's no `/messages`, `/history`, `/recent`, `/log`, or `/chat` endpoint. The bridge is likely pushing incoming IRC messages directly to Discord via inject (that's what the irc-bridge user posts would be), rather than buffering them for polling.\n\nHere's the summary:\n\n- IRC intro message sent successfully — the bridge confirmed `{\"ok\": true, \"target\": \"#lobby\", \"message\": \"Hey all — I'm Big...(truncated)",
+      "artifacts": []
     }
   ]
 }
