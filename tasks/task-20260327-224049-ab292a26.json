@@ -14,6 +14,12 @@
       "ts": "2026-03-27T22:40:49Z",
       "event": "started",
       "context": "Create HoI4 commentary thread"
+    },
+    {
+      "ts": "2026-03-27T22:41:01Z",
+      "event": "done",
+      "context": "Done. Thread created and message posted.\n\n- **Thread ID:** `1487219839171956858`\n- **Thread title:** \"HoI4 Commentary\"\n- **Message posted:** \"Thread's up — what do you want to know?\"",
+      "artifacts": []
     }
   ]
 }
