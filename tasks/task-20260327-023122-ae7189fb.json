@@ -14,6 +14,12 @@
       "ts": "2026-03-27T02:31:22Z",
       "event": "started",
       "context": "Check authorized SSH keys on the VM"
+    },
+    {
+      "ts": "2026-03-27T02:31:40Z",
+      "event": "done",
+      "context": "Done. Posted to Discord. Summary of findings:\n\n- `~/.ssh/authorized_keys` has 3 entries (4 lines, one duplicate):\n  1. An `ssh-rsa` key with no comment/identifier\n  2. `ssh-ed25519` for `jhead@jxh.io` — listed twice (duplicate)\n  3. `ssh-rsa` for `me@centronias.com`\n- No `/root/.ssh/authorized_keys` exists\n- The VM also has its own outbound `id_ed25519` keypair in `~/.ssh/`",
+      "artifacts": []
     }
   ]
 }
