@@ -14,6 +14,12 @@
       "ts": "2026-03-27T19:48:34Z",
       "event": "started",
       "context": "Fix terminal autoscroll behavior"
+    },
+    {
+      "ts": "2026-03-27T19:50:50Z",
+      "event": "done",
+      "context": "Done. Here is what was changed:\n\n**File:** `/mnt/data/terminal/server.py`\n\n**Change:** Modified 3 locations where `term.scrollToBottom()` was called unconditionally on new WebSocket data:\n\n1. **Main terminal** (lines 773-778) -- the BigClungus terminal `ws.onmessage` handler\n2. **Giga terminal binary frames** (line 1241) -- ttyd binary output handler\n3. **Giga terminal text frames** (line 1246) -- ttyd text output handler\n\nIn each case, before writing data to the terminal, the code now checks `t...(truncated)",
+      "artifacts": []
     }
   ]
 }
