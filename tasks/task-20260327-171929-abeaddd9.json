@@ -14,6 +14,12 @@
       "ts": "2026-03-27T17:19:29Z",
       "event": "started",
       "context": "Post matrix results to thread"
+    },
+    {
+      "ts": "2026-03-27T17:19:40Z",
+      "event": "done",
+      "context": "Message posted successfully to the Discord thread (message ID `1487139032839360653` in channel `1487137261534314807`). The congress participation matrix completion summary is now visible in the thread.",
+      "artifacts": []
     }
   ]
 }
