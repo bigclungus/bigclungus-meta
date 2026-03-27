@@ -12,7 +12,7 @@ model: grok-3-mini
 display_name: Punished Trump
 avatar_url: /static/avatars/punished-trump.gif
 sex: male
-stats_fired: 4
+stats_retired: 4
 stats_last_verdict: FIRE
 stats_last_verdict_date: 2026-03-27
 stats_retained: 2

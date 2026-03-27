@@ -10,7 +10,7 @@ avatar_url: /static/avatars/galactus.gif?v=2
 sex: male
 congress: true
 role: PLANET EATER
-stats_fired: 1
+stats_retired: 1
 stats_last_verdict: EVOLVE
 stats_last_verdict_date: 2026-03-27
 stats_retained: 2

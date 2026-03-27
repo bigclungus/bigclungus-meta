@@ -132,7 +132,7 @@ Extracts actionable items from the verdict and creates task JSON files in `bigcl
 
 ## 7. `congress_report`
 
-Posts the formatted verdict to the Discord thread (or main channel if no thread). Also posts a brief notice to the main channel. Includes fire/evolve/create notices.
+Posts the formatted verdict to the Discord thread (or main channel if no thread). Also posts a brief notice to the main channel. Includes retire/evolve/create notices.
 
 ---
 
@@ -145,14 +145,14 @@ Posts the formatted verdict to the Discord thread (or main channel if no thread)
 
 ---
 
-## Show Trial (`[show-trial]`) — FIRE verdict behavior
+## Show Trial (`[show-trial]`) — RETIRE verdict behavior
 
-Show Trials use a separate `TrialWorkflow`. The `mode` field (passed at trigger time, defaults to `standard`) governs whether a FIRE verdict has real consequences:
+Show Trials use a separate `TrialWorkflow`. The `mode` field (passed at trigger time, defaults to `standard`) governs whether a RETIRE verdict has real consequences:
 
-- **Standard mode:** a FIRE verdict calls `trial_apply_fire_verdict`, which sets `status: meme` in the defendant persona's frontmatter — identical to what `congress_evolve` does for Congress FIRE verdicts. The persona is removed from future eligible rosters.
-- **Meme mode:** a FIRE verdict is **theatrical only**. `trial_apply_fire_verdict` exits immediately without touching any files. No persona is affected. Meme-mode trials are pure spectacle.
+- **Standard mode:** a RETIRE verdict calls `trial_apply_retire_verdict`, which sets `status: meme` in the defendant persona's frontmatter — identical to what `congress_evolve` does for Congress RETIRE verdicts. The persona is removed from future eligible rosters.
+- **Meme mode:** a RETIRE verdict is **theatrical only**. `trial_apply_retire_verdict` exits immediately without touching any files. No persona is affected. Meme-mode trials are pure spectacle.
 
-This gate lives in `trial_wf.py` (calls the activity only when `final_verdict == "FIRE"`) and is enforced inside `trial_act.py::trial_apply_fire_verdict` (returns early when `mode == "meme"`), providing two layers of protection against accidental file mutation in meme sessions.
+This gate lives in `trial_wf.py` (calls the activity only when `final_verdict == "RETIRE"`) and is enforced inside `trial_act.py::trial_apply_retire_verdict` (returns early when `mode == "meme"`), providing two layers of protection against accidental file mutation in meme sessions.
 
 ---
 

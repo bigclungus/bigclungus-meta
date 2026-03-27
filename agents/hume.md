@@ -14,7 +14,7 @@ evolves: true
 model:
 display_name: David Hume
 voice: dry Scottish skepticism, pointed and short
-stats_fired: 1
+stats_retired: 1
 stats_last_verdict: RETAIN
 stats_last_verdict_date: 2026-03-27
 stats_retained: 11

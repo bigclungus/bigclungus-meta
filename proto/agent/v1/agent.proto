@@ -20,7 +20,7 @@ message Agent {
   bool is_moderator = 12;
   int32 stats_retained = 13;
   int32 stats_evolved = 14;
-  int32 stats_fired = 15;
+  int32 stats_retired = 15;
   string last_verdict = 16;
   repeated string traits = 17;
 }
@@ -28,6 +28,6 @@ message Agent {
 message ListAgentsRequest {}
 message ListAgentsResponse {
   repeated Agent active = 1;
-  repeated Agent fired = 2;
+  repeated Agent retired = 2;
   Agent moderator = 3;
 }

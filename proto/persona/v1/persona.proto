@@ -28,7 +28,7 @@ message Persona {
   int32 special_seat = 15;
   int32 stakeholder_only = 16;
   int32 times_evolved = 17;
-  int32 times_fired = 18;
+  int32 times_retired = 18;
   int32 times_reinstated = 19;
   int32 total_congresses = 20;
   string updated_at = 21;
@@ -74,7 +74,7 @@ message DeletePersonaResponse { bool ok = 1; string deleted = 2; }
 
 message PostVerdictRequest {
   string name = 1;
-  string verdict = 2;  // FIRE | EVOLVE | RETAIN
+  string verdict = 2;  // RETIRE | EVOLVE | RETAIN
   string date = 3;
 }
 message PostVerdictResponse { bool ok = 1; }

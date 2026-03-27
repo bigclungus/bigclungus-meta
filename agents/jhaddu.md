@@ -16,7 +16,7 @@ evolves: true
 model: grok-3-mini
 avatar_url: /static/avatars/jhaddu.gif?v=2
 sex: male
-stats_fired: 1
+stats_retired: 1
 stats_last_verdict: FIRE
 stats_last_verdict_date: 2026-03-25
 ---

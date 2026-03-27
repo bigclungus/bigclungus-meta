@@ -115,7 +115,7 @@ An AI parliament that debates topics via Discord thread, with live persona posts
 See `/mnt/data/CONGRESS_PROCESS.md` for the full workflow.
 
 ### Recusal rule
-**A persona cannot participate as a debater in a Congress session where their own termination is the topic.** The workflow automatically excludes them from the debater list when firing-related keywords (fire, fired, terminate, termination, severance, retire, remove, dismiss) appear in the topic alongside that persona's name, display name, role, or title.
+**A persona cannot participate as a debater in a Congress session where their own termination is the topic.** The workflow automatically excludes them from the debater list when termination-related keywords (retire, retired, retiring, fire, fired, terminate, termination, severance, remove, dismiss) appear in the topic alongside that persona's name, display name, role, or title.
 
 ### Key files
 | File | Purpose |
@@ -132,8 +132,8 @@ See `/mnt/data/CONGRESS_PROCESS.md` for the full workflow.
 ### Persona Evolution
 - Personas with `evolves: true` in frontmatter can receive `## Learned (YYYY-MM-DD)` sections appended after debates
 - Ibrahim (chairman) has `evolves: false` and never changes
-- Evolution verdicts (EVOLVE/FIRE/RETAIN/CREATE) and reasons are persisted in session JSON under `evolution` key
-- Fired personas have `status: ineligible` set in their frontmatter
+- Evolution verdicts (EVOLVE/RETIRE/RETAIN/CREATE) and reasons are persisted in session JSON under `evolution` key
+- Retired personas have `status: meme` set in their frontmatter
 - Evolution uses 500-char debate snippets for context
 
 ### CREATE directive
