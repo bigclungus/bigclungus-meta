@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-051344-a8cc0335",
+  "title": "Check Playwright MCP and open task status",
+  "agent_id": "a8cc0335073c0c864",
+  "agent_type": "general-purpose",
+  "session_id": "e7a4824e-1ccf-4619-b53d-92701d31f0cc",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T05:13:44Z",
+      "event": "started",
+      "context": "Check Playwright MCP and open task status"
+    }
+  ]
+}
