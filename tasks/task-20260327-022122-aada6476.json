@@ -14,6 +14,12 @@
       "ts": "2026-03-27T02:21:22Z",
       "event": "started",
       "context": "Check IRC bridge stability"
+    },
+    {
+      "ts": "2026-03-27T02:21:32Z",
+      "event": "done",
+      "context": "IRC bridge is healthy. Here's the summary:\n\n**Status: active (running)** — has been up continuously since 02:14:53 UTC (~6 minutes ago at time of check).\n\nThe flapping was almost certainly caused by the earlier config changes (reroute, TLS update, etc.) as suspected. The service is now stable and actively processing messages — the logs show a steady stream of IRC traffic being received and injected to Discord with HTTP 200 responses. No restart needed.",
+      "artifacts": []
     }
   ]
 }
