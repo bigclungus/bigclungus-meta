@@ -14,6 +14,12 @@
       "ts": "2026-03-27T21:39:38Z",
       "event": "started",
       "context": "Review moffstation PR 1180"
+    },
+    {
+      "ts": "2026-03-27T21:41:11Z",
+      "event": "done",
+      "context": "Here is the full review:\n\n---\n\n**PR #1180: Tweaks on crew monitor**\nAuthor: CasaleBalthazar (StudMuffin) | +130 / -14 | 5 files\n\n**What it does:**\nTwo crew monitor improvements: (1) crew members on the nav map now show their job icon instead of a generic green dot, and (2) the AI entity gets a \"Warp\" button per crew member to teleport its eye to that location.\n\n---\n\n**Security concern -- this is the big one:**\n\n`NavMapWarpRequest` is a predictive network event (`RaisePredictiveEvent`) handled by...(truncated)",
+      "artifacts": []
     }
   ]
 }
