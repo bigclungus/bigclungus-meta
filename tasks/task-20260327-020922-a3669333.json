@@ -14,6 +14,12 @@
       "ts": "2026-03-27T02:09:22Z",
       "event": "started",
       "context": "Run heartbeat cycle"
+    },
+    {
+      "ts": "2026-03-27T02:10:16Z",
+      "event": "done",
+      "context": "The service is configured correctly — `Restart=on-failure` with `RestartSec=15`. The \"5 restarts in 24h\" the heartbeat detected were likely triggered when the service was killed externally (e.g., manually stopped/restarted during config changes, like when the IRC backend was switched from `georgelarson.me:6667` to `wss://nullclaw.georgelarson.me`). The port-in-use error came from an older code version that didn't have `ReusableHTTPServer`.\n\nLooking at the current state: the service is running fi...(truncated)",
+      "artifacts": []
     }
   ]
 }
