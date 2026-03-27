@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-054043-ac3082fe",
+  "title": "Send message to redirect history agent",
+  "agent_id": "ac3082fea0852fb9e",
+  "agent_type": "general-purpose",
+  "session_id": "f3bebd5d-c75d-43d4-94cd-0d10c07e17db",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T05:40:43Z",
+      "event": "started",
+      "context": "Send message to redirect history agent"
+    }
+  ]
+}
