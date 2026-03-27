@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-171917-afc216ac",
+  "title": "Invoke trump persona via clunger",
+  "agent_id": "afc216ac408047dd8",
+  "agent_type": "general-purpose",
+  "session_id": "b8a58c15-c6f1-48c2-b033-87763f636706",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T17:19:17Z",
+      "event": "started",
+      "context": "Invoke trump persona via clunger"
+    }
+  ]
+}
