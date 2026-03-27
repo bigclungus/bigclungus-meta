@@ -14,6 +14,12 @@
       "ts": "2026-03-27T00:34:34Z",
       "event": "started",
       "context": "Fix clunger duplicate exception handlers"
+    },
+    {
+      "ts": "2026-03-27T00:35:25Z",
+      "event": "done",
+      "context": "Done. Here's what was changed in `/mnt/data/clunger/src/index.ts`:\n\n**Removed** the duplicate handlers at the bottom of the file (~lines 2469-2475):\n- `process.on(\"unhandledRejection\", ...)` — logged to console but no alert\n- `process.on(\"uncaughtException\", ...)` — logged but no exit\n\n**Updated** the surviving top-of-file `uncaughtException` handler (line 33):\n- Changed `console.error(\"[clunger] uncaughtException:\", err)` to log `err.stack ?? err` so stack traces appear in logs\n- Removed `proce...(truncated)",
+      "artifacts": []
     }
   ]
 }
