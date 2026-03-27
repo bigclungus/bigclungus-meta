@@ -14,6 +14,12 @@
       "ts": "2026-03-27T00:09:13Z",
       "event": "started",
       "context": "Pippi reviews commons v2 implementation"
+    },
+    {
+      "ts": "2026-03-27T00:11:40Z",
+      "event": "done",
+      "context": "Here is Pippi the Pitiless's full review:\n\n---\n\n## Review: CommonsV2 — Eight Files — by Pippi the Pitiless\n\n---\n\n### The Serious Problems\n\n**Frame-rate dependent movement is a bug, not a detail.**\n\n`_dt` is computed and thrown away. `PLAYER_SPEED` is a bare constant multiplied directly against position. This means players on 120Hz monitors move 2x as fast as players on 60Hz. Multiplayer synchronization is already hard; you've made it harder by shipping position deltas that are physically meaning...(truncated)",
+      "artifacts": []
     }
   ]
 }
