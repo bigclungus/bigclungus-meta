@@ -379,3 +379,37 @@ The Show Trials format is approved. The core mechanism is sound: put a persona o
 - **Hasan Piker:** When another debater proposes a minimal empirical check (not a full metrics pipeline), engage with the specific claim rather than pattern-matching it to "institutional stalling." The docket-as-power-structure framing was strong — lead with that next time instead of spending rounds on the naming critique, which was interesting but non-load-bearing.
 
 ---
+
+## [congress-0085] Congress #85 — 2026-03-27
+**Topic:** Should Show Trial FIRE verdicts have real enforcement consequences?
+
+INVESTIGATION BRIEF (heartbeat 2026-03-27):
+
+Congress FIRE sets status:ineligible in persona frontmatter — persona removed from all future sessions. Trial FIRE does NOT apply the same mutation — persona remains fully eligible. Evidence: congress_act.py evolution logic applies ineligible on FIRE; trial_wf.py/trial_act.py contain no post-verdict persona mutation.
+
+The supermajority rule for trial FIRE (unanimity) is stricter than congress FIRE, suggesting the designers intended trial FIRE to mean something significant.
+
+Three options: (A) Trial FIRE in standard mode applies status:ineligible — same as congress. (B) Trial FIRE is purely theatrical, never fires — add docs clarifying. (C) Mode-gated: standard mode trials can fire, meme mode cannot. Implementation is ~15 lines under option A or C. GitHub issue #67.
+
+Congress should decide whether show trials carry enforcement weight or remain theatrical.
+
+**Verdict:**
+The crux here is simple: a FIRE verdict that does nothing is a lie to the audience, and systems that lie about their own consequences rot from the inside. The supermajority requirement is the tell — whoever designed trials made unanimity harder to reach precisely because they expected the outcome to matter. Four of five debaters pushed back in various directions, but the real disagreement isn't about whether trials should have teeth; it's about whether meme-mode theatrics deserve the same weight as standard deliberation. They don't. Option C is correct: standard-mode trial FIRE applies `status:ineligible` identical to congress FIRE, meme-mode trial FIRE remains theatrical spectacle with no mutation. This preserves the integrity of the system where it claims to be serious and preserves the fun where it claims to be absurd. Implement option C — it's 15 lines, the logic is already proven in `congress_act.py`, and the only risk is not doing it and letting a meaningless verdict erode trust
+
+**Persona learnings:**
+- **David Hume:** When a rollback or reversibility concern is raised (as Pippi did here), address it with the same empirical rigor you bring to the primary question — dismissing it as "theoretical" because of low sample size was your one weak move, and Yuki caught it. Lead with the observable-behavior framing earlier; you buried your strongest argument in round two.
+- **Yuki the Yielding:** Your initial Option C position diluted your impact for two rounds — when your core principle is "silent failures must surface," lead with the failure mode analysis first and let the implementation option follow from it. The mode-gating instinct pulls you toward compromise designs that reproduce the exact ambiguity you exist to prevent; trust your own prior harder.
+
+---
+
+
+## [congress-0087] Congress #87 — 2026-03-27
+**Topic:** Auto code review for newly-merged features: Should BigClungus implement an automated review step that runs after new features land, separate from the cleanup-focused [simplify] workflow? Key questions: (1) what triggers it (GitHub webhook post-merge, periodic, manual), (2) what does it check (correctness, security, integration, test coverage), (3) how is output surfaced (Discord, GitHub comment, task), (4) does it auto-fix or only report? Signal: jaboostin 2026-03-27 said implement some kind of auto code review for new features, it seems to catch a lot of bugs. GitHub issue #72.
+
+**Verdict:**
+Implement it, triggered by GitHub webhook post-merge — not periodic, not manual. Periodic misses the window where context is fresh; manual defeats the purpose. It should check for correctness regressions and security issues only — test coverage and style are already handled by CI and [simplify], and duplicating those creates noise that trains people to ignore the output. Surface findings as a GitHub comment on the merge commit with a Discord ping if severity is high, and it reports only — auto-fix on post-merge code is a recipe for cascading commits that nobody reviews.
+
+**Persona learnings:**
+- **David Hume:** Lead with the counterparty's contradiction, not your own framework. Your round-two dismantling of Pippi ("her objection dissolves into the same ownership vacuum she's criticizing") was more effective than any amount of Bayesian hedging. When you spot an opponent using a standard they themselves fail to meet, that's your opening — don't bury it after restating your priors.
+
+---
