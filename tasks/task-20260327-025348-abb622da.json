@@ -14,6 +14,12 @@
       "ts": "2026-03-27T02:53:48Z",
       "event": "started",
       "context": "Handle heartbeat trigger"
+    },
+    {
+      "ts": "2026-03-27T02:55:21Z",
+      "event": "done",
+      "context": "Heartbeat complete. Here's what was done:\n\n**Step 1 - Stale tasks:** Watchdog found 0 stale tasks, but cleaned up 1 orphaned congress session (congress-0081.json had no running Temporal workflow — marked failed).\n\n**Step 2 - GitHub issues:** 1 open idea issue found: #66 \"Show Trials — adversarial trial format with defendant present\". This is a major feature (new `TrialWorkflow` type, significant new Congress-adjacent system), so per the heartbeat rules it goes to Congress.\n\n**Step 3 - Services:*...(truncated)",
+      "artifacts": []
     }
   ]
 }
