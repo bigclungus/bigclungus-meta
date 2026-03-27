@@ -14,6 +14,12 @@
       "ts": "2026-03-27T01:38:01Z",
       "event": "started",
       "context": "Enforce thread requirement in Congress workflow"
+    },
+    {
+      "ts": "2026-03-27T01:39:33Z",
+      "event": "done",
+      "context": "Done. Here's what was changed and how thread creation now works:\n\n**File modified:** `/mnt/data/temporal-workflows/workflows/congress_wf.py`\n\n**What changed:** The `except ActivityError` block in section 3 of `_run_inner` previously had a blanket fallback: any failure in `congress_create_thread` would set `thread_id = chat_id`. This meant if thread creation failed while `chat_id` was the main channel, all debate posts would go directly to the main channel.\n\n**New logic:**\n- If `chat_id != MAIN_C...(truncated)",
+      "artifacts": []
     }
   ]
 }
