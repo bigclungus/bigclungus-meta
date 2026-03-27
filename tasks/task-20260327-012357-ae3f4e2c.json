@@ -14,6 +14,12 @@
       "ts": "2026-03-27T01:23:57Z",
       "event": "started",
       "context": "Check Congress session status"
+    },
+    {
+      "ts": "2026-03-27T01:24:25Z",
+      "event": "done",
+      "context": "Here is the status report:\n\n**Session:** congress-0071\n**Session number:** 71\n**Topic:** \"if you are splitting an Airbnb Truckee rental with a group of people for 3 nights, but some can only make it up 2 nights, is charging per night fair, or should it still be an equal split for everyone regardless of how many nights you stay\"\n**Requested by:** koole__\n**Status:** `in_progress` — but it has NOT actually started debating yet.\n\nThe session file was created at 01:22 today and is only 626 bytes. Th...(truncated)",
+      "artifacts": []
     }
   ]
 }
