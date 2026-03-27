@@ -66,8 +66,8 @@ The congress system maps short aliases to full model IDs at inference time:
 
 | Alias | Resolves to |
 |---|---|
-| `claude` | claude-sonnet-4-6 (or current default Claude) |
-| `opus` | claude-opus-4-5 (or current opus) |
+| `claude` | claude-opus-4-6 (or current default Claude) |
+| `opus` | claude-opus-4-6 (or current opus) |
 | `gemini` | gemini-2.5-pro |
 | `grok` | grok-3 |
 | Full model ID | Used as-is |
