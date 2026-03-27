@@ -312,7 +312,7 @@ Semantic search over Discord message history via sqlite-vec + OpenAI embeddings.
 - You need to recall what was discussed/decided about a topic
 - A user asks "do you remember when..." or references earlier work
 
-**Ingest:** Runs every 10 minutes via cron (`history-ingest.py`). DB at `/mnt/data/data/discord-history.db`.
+**Ingest:** Temporal schedule `history-ingest-1m` (every 1 min, SKIP overlap). DB at `/mnt/data/data/discord-history.db`.
 
 ---
 
