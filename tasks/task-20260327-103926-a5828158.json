@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-103926-a5828158",
+  "title": "Startup checklist",
+  "agent_id": "a58281582b1c007ea",
+  "agent_type": "general-purpose",
+  "session_id": "db3c82eb-c225-4d82-82c6-32440f6377a3",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T10:39:26Z",
+      "event": "started",
+      "context": "Startup checklist"
+    }
+  ]
+}
