@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-173520-a32a3e24",
+  "title": "Diagnose missing votes in matrix",
+  "agent_id": "a32a3e2472cd9bd1d",
+  "agent_type": "general-purpose",
+  "session_id": "b8a58c15-c6f1-48c2-b033-87763f636706",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T17:35:20Z",
+      "event": "started",
+      "context": "Diagnose missing votes in matrix"
+    }
+  ]
+}
