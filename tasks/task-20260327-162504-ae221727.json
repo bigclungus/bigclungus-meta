@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-162504-ae221727",
+  "title": "Post monorepo plan to Discord thread",
+  "agent_id": "ae221727b8c5701ca",
+  "agent_type": "general-purpose",
+  "session_id": "b8a58c15-c6f1-48c2-b033-87763f636706",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T16:25:03Z",
+      "event": "started",
+      "context": "Post monorepo plan to Discord thread"
+    }
+  ]
+}
