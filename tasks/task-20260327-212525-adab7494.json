@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-212525-adab7494",
+  "title": "Congress unification phase 2",
+  "agent_id": "adab74945ea1c9c5c",
+  "agent_type": "general-purpose",
+  "session_id": "083baee4-2f6f-4f81-8ced-0e9b97f43956",
+  "discord_message_id": "1487200737229410305",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T21:25:25Z",
+      "event": "started",
+      "context": "Congress unification phase 2"
+    }
+  ]
+}
