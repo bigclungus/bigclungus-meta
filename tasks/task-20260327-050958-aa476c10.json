@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-050958-aa476c10",
+  "title": "Remove labs-nav NightOwl queue item",
+  "agent_id": "aa476c10c00d9ca7d",
+  "agent_type": "general-purpose",
+  "session_id": "e3ea5000-d340-46d8-a63c-960e3baff74f",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T05:09:57Z",
+      "event": "started",
+      "context": "Remove labs-nav NightOwl queue item"
+    }
+  ]
+}
