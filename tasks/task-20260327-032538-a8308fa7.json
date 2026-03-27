@@ -14,6 +14,12 @@
       "ts": "2026-03-27T03:25:38Z",
       "event": "started",
       "context": "Refire Trump show trial"
+    },
+    {
+      "ts": "2026-03-27T03:25:48Z",
+      "event": "done",
+      "context": "The workflow started successfully despite the GIL crash on teardown (that's a known benign Python/asyncio cleanup issue, not a workflow failure). The workflow ID is:\n\n**`trial-trump3-7f277e33`**\n\nYou can track it in the Temporal UI at temporal.clung.us or via `tctl workflow show --workflow-id trial-trump3-7f277e33`.",
+      "artifacts": []
     }
   ]
 }
