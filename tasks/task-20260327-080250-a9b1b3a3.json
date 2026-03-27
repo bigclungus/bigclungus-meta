@@ -14,6 +14,12 @@
       "ts": "2026-03-27T08:02:50Z",
       "event": "started",
       "context": "Re-fire Congress 86 with anchor"
+    },
+    {
+      "ts": "2026-03-27T08:03:22Z",
+      "event": "done",
+      "context": "Congress #86 is running. Here's a summary:\n\n- **Discord anchor message** posted successfully, ID: `1486998946625622179`\n- **Workflow started** successfully:\n  - Workflow ID: `congress-0086-retry`\n  - Run ID: `019d2e51-ac9f-7329-a753-aedaa03b800a`\n  - Type: `CongressWorkflow`\n  - Task queue: `listings-queue`\n\nThe workflow is now live with a proper Discord thread anchor. The `--workflow-type` flag syntax changed to `--type` in the current temporal CLI version — that was the only hiccup, corrected ...(truncated)",
+      "artifacts": []
     }
   ]
 }
