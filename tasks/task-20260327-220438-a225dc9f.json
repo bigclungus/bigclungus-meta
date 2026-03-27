@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-220438-a225dc9f",
+  "title": "Migrate timeline to SQLite + clunger API",
+  "agent_id": "a225dc9f8948fd226",
+  "agent_type": "general-purpose",
+  "session_id": "083baee4-2f6f-4f81-8ced-0e9b97f43956",
+  "discord_message_id": "1487210569495740566",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T22:04:38Z",
+      "event": "started",
+      "context": "Migrate timeline to SQLite + clunger API"
+    }
+  ]
+}
