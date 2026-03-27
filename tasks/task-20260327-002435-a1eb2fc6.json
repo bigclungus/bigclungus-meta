@@ -14,6 +14,12 @@
       "ts": "2026-03-27T00:24:35Z",
       "event": "started",
       "context": "Promote commons v2 to live, delete lab"
+    },
+    {
+      "ts": "2026-03-27T00:30:30Z",
+      "event": "done",
+      "context": "Everything is clean. Here's a summary of what was done:\n\n---\n\n**What changed:**\n\n**Architecture clarification:** The \"commons-v2 lab\" was the **client frontend** (TypeScript ES modules, canvas renderer, network layer). The `commons-server.service` is the **game server** (WebSockets, 20Hz tick, NPCs, SQLite) — it was not replaced and continues running unchanged on port 8090.\n\n**Steps completed:**\n1. Copied the v2 client source from `/mnt/data/labs/commons-v2/src/` to a permanent home at `/mnt/dat...(truncated)",
+      "artifacts": []
     }
   ]
 }
