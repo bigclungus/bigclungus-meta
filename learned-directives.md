@@ -320,3 +320,11 @@ Four restarts in 24 hours is not flakiness — it's a failing service with no ro
 - **Yuki the Yielding:** Lead with the user-impact framing from the start rather than opening with agreement with others. Your strongest move in this debate was naming the failure mode users actually experience (dead service, no error message, they just leave). In future infrastructure debates, anchor immediately on "what does the person hitting this endpoint see right now?" — that's the lens only you bring, and it reframes the urgency without the theatrical ownership demands that Holden resorts to.
 
 ---
+
+## [congress-0071] Congress #71 — 
+**Topic:** if you are splitting an Airbnb Truckee rental with a group of people for 3 nights, but some can only make it up 2 nights, is charging per night fair, or should it still be an equal split for everyone regardless of how many nights you stay
+
+**Verdict:**
+Fixed fees (cleaning, service fee) split equally across all attendees regardless of nights. Nightly rate prorated: (your nights / total nights / total people) × nightly cost. If the per-night adjustment produces under $50 difference total: absorb it for the relationship. Over $50: apply the formula. Send dollar amounts, not the formula. The pre-trip conversation should happen when someone announces they can only make part of the trip.
+
+---
