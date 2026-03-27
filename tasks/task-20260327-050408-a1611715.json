@@ -14,6 +14,12 @@
       "ts": "2026-03-27T05:04:08Z",
       "event": "started",
       "context": "Fix labs navbar width and pinning"
+    },
+    {
+      "ts": "2026-03-27T05:06:27Z",
+      "event": "done",
+      "context": "Done. Here's a summary of what was changed:\n\n**Root cause:** `sitenav.css` used `position: sticky` which relies on the nav being in normal document flow — fine on the main site but unreliable on labs pages with their own body layouts. No `width: 100%` guarantee either.\n\n**Changes made:**\n\n1. `/mnt/data/hello-world/sitenav.css` — Changed `.sitenav` from `position: sticky` to `position: fixed; left: 0; width: 100%; box-sizing: border-box; z-index: 9999`\n\n2. `/mnt/data/hello-world/sitenav.js` — Add...(truncated)",
+      "artifacts": []
     }
   ]
 }
