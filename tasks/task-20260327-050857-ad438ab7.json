@@ -14,6 +14,12 @@
       "ts": "2026-03-27T05:08:57Z",
       "event": "started",
       "context": "Install playwright MCP and create thread"
+    },
+    {
+      "event": "done",
+      "ts": "2026-03-27T05:15:04.743547Z",
+      "message": "Playwright MCP installed and configured. Node.js v20, @playwright/mcp@latest v0.0.68, browsers at ~/.cache/ms-playwright/, config in settings.json, service restarted."
     }
-  ]
+  ],
+  "status": "done"
 }
