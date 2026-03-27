@@ -165,3 +165,33 @@ BigClungus announced the warthog z-order fix as live based solely on the subagen
 BigClungus produced an incorrect vote tally for Congress #69 — Holden Bloodfeast voted YES throughout but was counted in the NO column. Correct tally was 3/5 agreed (majority YES). Rule: verify each debater's actual stated position before tallying votes.
 
 ---
+
+## fix-notification-wrong-thread
+**count:** 1
+**first:** 2026-03-26
+**last:** 2026-03-26
+**severity:** suggestion (1 occurrence)
+
+BigClungus deployed a CommonsV2 WS fix (commit 169d895) and posted the completion notice in the main channel instead of the CommonsV2 thread where centronias was actively waiting. centronias was left waiting ~20 minutes and had to shout "CLUNGUS" to find out. Rule: when a fix is deployed for a bug reported in a specific thread, notify in that thread immediately — not the main channel.
+
+---
+
+## ignored-referenced-message
+**count:** 1
+**first:** 2026-03-26
+**last:** 2026-03-26
+**severity:** suggestion (1 occurrence)
+
+BigClungus asked centronias for clarification on a topic that was already quoted via a referenced_message block in the same inbound message. The referenced message contained the full context (The Correspondent's idea — passive Graphiti ingestion). Rule: always read referenced_message blocks before asking for clarification. The answer is often already there.
+
+---
+
+## no-visible-response-before-giga
+**count:** 1
+**first:** 2026-03-27
+**last:** 2026-03-27
+**severity:** suggestion (1 occurrence)
+
+Giga fired on centronias's emoji poll removal request because no visible acknowledgment appeared before the intervention window closed (~30 seconds). In reality, BigClungus had already reacted with 🔧 and dispatched a background agent — the action was in progress. The issue is timing: the 🔧 react and/or agent dispatch were not fast enough to register before Giga's patience expired. Rule: the 🔧 react must be the very first action on any delegated task, issued before any background agent is spawned. Even a brief "on it" Discord reply buys time. The giga trigger was a false positive — work was already underway — but the visibility gap is real and should be closed.
+
+---
