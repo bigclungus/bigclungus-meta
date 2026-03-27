@@ -1,5 +1,5 @@
 ---
-status: ineligible
+status: meme
 name: the-kid
 label: [the-kid]
 display_name: The Kid

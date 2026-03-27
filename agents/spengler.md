@@ -1,5 +1,5 @@
 ---
-status: ineligible
+status: meme
 name: spengler
 label: [spengler]
 display_name: Spengler the Doomed

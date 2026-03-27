@@ -1,5 +1,5 @@
 ---
-status: ineligible
+status: meme
 name: architect
 label: [architect]
 role: Systems Designer and Long-Term Thinker

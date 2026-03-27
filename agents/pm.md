@@ -1,5 +1,5 @@
 ---
-status: ineligible
+status: meme
 name: pm
 label: [pm]
 display_name: Chud O'Bikeshedder

@@ -1,5 +1,5 @@
 ---
-status: ineligible
+status: meme
 name: the-correspondent
 label: [the-correspondent]
 display_name: The Correspondent

@@ -1,5 +1,5 @@
 ---
-status: ineligible
+status: meme
 name: otto
 label: [otto]
 display_name: Otto Atreides

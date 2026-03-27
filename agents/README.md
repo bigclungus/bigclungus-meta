@@ -53,11 +53,10 @@ traits: [perfectionist, unsparing, direct]  # optional — character trait tags 
 | Value | Meaning |
 |---|---|
 | `eligible` | Active persona. Can be selected for any congress session (standard or meme). Subject to evolution verdicts (EVOLVE/RETAIN/FIRE). |
-| `meme` | Meme-only persona. Can be selected only for meme congress sessions (`mode: meme`). Excluded from standard congresses. Subject to evolution verdicts. |
-| `ineligible` | Retired persona. Cannot be selected for any congress. Still visible in the UI as retired. Can be reinstated by changing status back to `eligible`. |
+| `meme` | Retired/fired persona. Available in meme congress and show trials. Excluded from standard congress seat selection. Can be reinstated by changing status back to `eligible`. |
 | `moderator` | Special status for the chairman only. Always present in every congress; moderates and synthesizes; never evolves; never subject to FIRE verdict. |
 
-**Note:** Legacy values `active` and `fired` exist in the DB for historical records but `eligible`/`ineligible` are the canonical values. The UI normalizes both.
+**Note:** Legacy values `active` and `fired` exist in the DB for historical records. The UI normalizes `fired` and `ineligible` → `meme`, `active` → `eligible`.
 
 ---
 
@@ -81,7 +80,7 @@ After each congress session, the chairman (Ibrahim) issues evolution verdicts fo
 
 - **RETAIN** — no change. Persona is working as intended.
 - **EVOLVE** — persona learned something. A `## Learned (YYYY-MM-DD)` section is appended to the end of the prose body in the MD file. The persona retains this learning in future sessions.
-- **FIRE** — persona is retired. `status` is set to `ineligible` in the frontmatter. They are removed from future congress selections.
+- **FIRE** — persona is retired. `status` is set to `meme` in the frontmatter. They are removed from standard congress selections but remain available for meme congress and show trials.
 
 Evolution verdicts and learned sections are stored both in the persona's MD file and in the session JSON under the `evolution` key.
 
@@ -89,8 +88,8 @@ Personas with `evolves: false` are never given EVOLVE or FIRE verdicts by the ch
 
 ### Reinstatement
 
-A fired (ineligible) persona can be reinstated by:
-1. Changing `status: ineligible` back to `status: eligible` in their MD file
+A fired (meme) persona can be reinstated by:
+1. Changing `status: meme` back to `status: eligible` in their MD file
 2. Resyncing the DB (or using the Personas tab in the congress UI)
 
 The bar for reinstatement is high: there must be a **concrete demonstrated gap** — a specific congress where their lens would have changed the outcome and no active persona could cover it. Nostalgia and slow news cycles are not sufficient. See the Congressional Reform Rationale section below for the full process.
@@ -101,14 +100,14 @@ The bar for reinstatement is high: there must be a **concrete demonstrated gap**
 
 This section documents *why* certain design decisions were made, not just what they are. Future maintainers and personas reading this file should understand the reasoning behind the system's current shape.
 
-### Status vocabulary: eligible / ineligible / moderator
+### Status vocabulary: eligible / meme / moderator
 
-The original system used `active`, `fired`, and `severance` as status values. These were replaced for two reasons:
+The original system used `active`, `fired`, and `severance` as status values. These were replaced, and then `ineligible` was further renamed to `meme`:
 
-1. **Moral valence.** "Fired" and "severance" carry employment-law baggage and imply a punitive relationship between the chairman and debaters. The congress is a deliberative body, not a workplace. Retiring a perspective because it no longer serves the debate is a structural decision, not a disciplinary one.
-2. **Precision.** `eligible`/`ineligible` describes the actual mechanical fact (can or cannot be selected for a session) without encoding a story about why. The DB still normalizes legacy values for historical records, but new files use the canonical terms.
+1. **Semantic clarity.** `meme` captures the actual role of fired/retired personas: they're legends, characters, available for meme proceedings and show trials, but not standard deliberation.
+2. **Unified bucket.** Previously `ineligible` was a dead end. `meme` is an active status — personas with this status participate in meme congress and show trials.
 
-### "Fire" became "retire" (and then "ineligible")
+### "Fire" became "retire" (and then "meme")
 
 The FIRE verdict label survived in the workflow code longer than the status vocabulary, but the intent shifted: retiring a persona means their perspective is no longer serving the congress, not that they failed or were punished. The word "retire" better fits the model — a retired perspective can return if the gap it fills becomes real again.
 
@@ -136,7 +135,7 @@ The no-abstention rule is intentional: forcing a position prevents personas from
 
 ### Reinstatement policy
 
-Fired (ineligible) personas stay retired until there is a **demonstrated gap** — a concrete congress where their specific lens would have changed the outcome and no active persona could fill it.
+Fired (meme) personas stay retired until there is a **demonstrated gap** — a concrete congress where their specific lens would have changed the outcome and no active persona could fill it.
 
 The bar is deliberately high:
 - Nostalgia is not sufficient.
