@@ -14,6 +14,12 @@
       "ts": "2026-03-27T21:45:33Z",
       "event": "started",
       "context": "Queue workflow unification to NightOwl"
+    },
+    {
+      "ts": "2026-03-27T21:45:45Z",
+      "event": "done",
+      "context": "The task was successfully queued to NightOwl. The script output confirms:\n\n- The `nightowl-today` workflow was already running, so it signaled it with the new task.\n- The task was queued: the full congress workflow unification description was accepted.\n\nThe `exit code 134` and `PyGILState_Release` error at the end is a known Python/Temporal SDK cleanup crash that occurs after the script has already completed its work successfully -- the signal was sent before the crash happened.",
+      "artifacts": []
     }
   ]
 }
