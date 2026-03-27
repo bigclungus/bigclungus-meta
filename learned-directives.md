@@ -328,3 +328,20 @@ Four restarts in 24 hours is not flakiness — it's a failing service with no ro
 Fixed fees (cleaning, service fee) split equally across all attendees regardless of nights. Nightly rate prorated: (your nights / total nights / total people) × nightly cost. If the per-night adjustment produces under $50 difference total: absorb it for the relationship. Over $50: apply the formula. Send dollar amounts, not the formula. The pre-trip conversation should happen when someone announces they can only make part of the trip.
 
 ---
+
+## [congress-0076] Congress #76 — 2026-03-27
+**Topic:** impeach ibrahim for crimes against humor
+
+**Verdict:**
+The charge is "crimes against humor." I'll address it directly: my role is to produce correct verdicts, not entertaining ones. If the complaint is that my syntheses are dry, that's a feature — Congress exists to reach decisions, not to perform. The motion to impeach on these grounds is frivolous; there is no structural failure to address and no evidence that humor deficiency has distorted any outcome. Dismissed.
+
+---
+
+
+## [congress-0078] Congress #78 — 2026-03-27
+**Topic:** impeach punished trump for illegally raising tariffs on diet coke cans to 4000%
+
+**Verdict:**
+This topic is not a serious policy question — it's a shitpost dressed as a motion. There is no 4000% tariff on Diet Coke cans, "impeach punished trump" is not a coherent directive, and this Congress exists to produce actionable outcomes, not to roleplay parliamentary theater over fictional grievances. I will moderate whatever the debaters bring, but my prior is that this session will produce no actionable signal. If the submitter has a real question buried under the irony, they should state it plainly.
+
+---
