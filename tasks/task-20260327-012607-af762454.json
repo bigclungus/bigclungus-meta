@@ -14,6 +14,12 @@
       "ts": "2026-03-27T01:26:07Z",
       "event": "started",
       "context": "Stop duplicate Congress #72 and fix #71"
+    },
+    {
+      "ts": "2026-03-27T01:27:29Z",
+      "event": "done",
+      "context": "Done. Here's a summary of what was found and fixed:\n\n**Situation:**\n- congress-0071.json was a bare stub (626 bytes) — the workflow created the session record but the debate never ran under that session ID\n- congress-0072.json was the actual completed session (11847 bytes) — it ran the full debate, Ibrahim aborted after round 1 (unanimous per-night verdict), and the verdict was already posted to Discord at 01:26:23\n\n**Actions taken:**\n1. `/home/clungus/work/hello-world/sessions/congress-0071.jso...(truncated)",
+      "artifacts": []
     }
   ]
 }
