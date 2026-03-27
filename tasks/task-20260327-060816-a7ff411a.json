@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-060816-a7ff411a",
+  "title": "Implement trial FIRE enforcement + docs",
+  "agent_id": "a7ff411a0b978d64a",
+  "agent_type": "general-purpose",
+  "session_id": "f3bebd5d-c75d-43d4-94cd-0d10c07e17db",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T06:08:16Z",
+      "event": "started",
+      "context": "Implement trial FIRE enforcement + docs"
+    }
+  ]
+}
