@@ -4,7 +4,7 @@ name: galactus
 label: galactus
 display_name: Galactus
 title: The Maximizer
-model: claude-opus-4-6
+model: opus
 evolves: true
 avatar_url: /static/avatars/galactus.gif?v=2
 sex: male

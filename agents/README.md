@@ -62,14 +62,16 @@ traits: [perfectionist, unsparing, direct]  # optional — character trait tags 
 
 ## Model Aliases
 
-The congress system maps short aliases to full model IDs at inference time:
+The congress system maps short aliases at inference time. All Claude models use the CLI with short names (`haiku`, `opus`, `sonnet`):
 
 | Alias | Resolves to |
 |---|---|
-| `claude` | claude-opus-4-6 (or current default Claude) |
-| `opus` | claude-opus-4-6 (or current opus) |
-| `gemini` | gemini-2.5-pro |
-| `grok` | grok-3 |
+| `claude` | haiku (default Claude, via CLI) |
+| `haiku` | haiku (via CLI) |
+| `opus` | opus (via CLI) |
+| `sonnet` | sonnet (via CLI) |
+| `gemini` | gemini-2.5-flash |
+| `grok` | grok-3-mini |
 | Full model ID | Used as-is |
 
 ---

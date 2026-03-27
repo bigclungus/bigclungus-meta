@@ -14,7 +14,7 @@ evolves: true
 display_name: Yuki the Yielding
 avatar_url: /static/avatars/ux.gif?v=1
 sex: female
-model: claude-haiku-4-5
+model: haiku
 stats_retained: 5
 stats_last_verdict: RETAIN
 stats_last_verdict_date: 2026-03-27
