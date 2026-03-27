@@ -14,6 +14,12 @@
       "ts": "2026-03-27T09:00:59Z",
       "event": "started",
       "context": "Quality review - simplify pass 4"
+    },
+    {
+      "ts": "2026-03-27T09:02:28Z",
+      "event": "done",
+      "context": "I have everything I need. Here are the findings:\n\n---\n\n## post-merge-review.ts\n\n**post-merge-review.ts:15 — hardcoded absolute path**\n`CLAUDE_CLI = \"/home/clungus/.local/bin/claude\"` is hardcoded. If the bot ever runs as a different user or the binary moves, this silently breaks with a confusing spawn error. Should use `process.env.CLAUDE_CLI ?? \"/home/clungus/.local/bin/claude\"` or resolve it from PATH with `which`/`env`.\n\n**post-merge-review.ts:47 — magic number duplicated in string**\n`MAX_DIF...(truncated)",
+      "artifacts": []
     }
   ]
 }
