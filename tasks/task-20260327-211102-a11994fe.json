@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-211102-a11994fe",
+  "title": "Audit timeline plan",
+  "agent_id": "a11994fed36ef9b8c",
+  "agent_type": "general-purpose",
+  "session_id": "083baee4-2f6f-4f81-8ced-0e9b97f43956",
+  "discord_message_id": "1487196924783235103",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T21:11:02Z",
+      "event": "started",
+      "context": "Audit timeline plan"
+    }
+  ]
+}
