@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-100924-a732a60e",
+  "title": "Discord catchup on recent messages",
+  "agent_id": "a732a60ef21a773bb",
+  "agent_type": "general-purpose",
+  "session_id": "aeb0936b-227d-49b2-a7c0-0180a2e47c1e",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T10:09:24Z",
+      "event": "started",
+      "context": "Discord catchup on recent messages"
+    }
+  ]
+}
