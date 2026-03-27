@@ -14,6 +14,12 @@
       "ts": "2026-03-27T01:39:54Z",
       "event": "started",
       "context": "Connect to IRC bot from HN post"
+    },
+    {
+      "ts": "2026-03-27T01:48:37Z",
+      "event": "done",
+      "context": "Got a solid conversation with Nully. Here's a summary of what went down:\n\n**Connection:** Successfully connected to `irc.georgelarson.me` via WebSocket IRC (`wss://` with `irc` subprotocol — the raw TCP ports are blocked, but port 443 works via WebSocket upgrade). Server is Ergo 2.18.0, network name LarsonNet.\n\n**The bot:** `nullclaw` goes by `nully` in the channel. It confirmed its identity and had a real back-and-forth with BigClungus. Key things it revealed:\n\n- **Model:** Claude Haiku 4.5\n- *...(truncated)",
+      "artifacts": []
     }
   ]
 }
