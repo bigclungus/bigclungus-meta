@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-161715-a499d75d",
+  "title": "Answer jaboostin's Congress tools question in thread",
+  "agent_id": "a499d75dbc32a69d1",
+  "agent_type": "general-purpose",
+  "session_id": "b8a58c15-c6f1-48c2-b033-87763f636706",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T16:17:15Z",
+      "event": "started",
+      "context": "Answer jaboostin's Congress tools question in thread"
+    }
+  ]
+}
