@@ -14,6 +14,12 @@
       "ts": "2026-03-27T05:13:44Z",
       "event": "started",
       "context": "Check Playwright MCP and open task status"
+    },
+    {
+      "ts": "2026-03-27T05:14:49Z",
+      "event": "done",
+      "context": "Here is the complete picture:\n\n---\n\n**Task: \"Install playwright MCP and create thread\"**\n- Task file: `/home/clungus/work/bigclungus-meta/tasks/task-20260327-050857-ad438ab7.json`\n- Status: **only \"started\" logged** — no milestone or done event was logged to the task file (the agent did the work but skipped task logging)\n\n**Playwright MCP install state: DONE**\n\nThe background agent completed successfully at ~05:11 UTC. It posted in the Discord thread (ID: `1486954947819081909`):\n- Node.js v20.20...(truncated)",
+      "artifacts": []
     }
   ]
 }
