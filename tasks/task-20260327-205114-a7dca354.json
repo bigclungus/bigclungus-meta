@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-205114-a7dca354",
+  "title": "Check persona avatar polls",
+  "agent_id": "a7dca35496bc839a1",
+  "agent_type": "general-purpose",
+  "session_id": "083baee4-2f6f-4f81-8ced-0e9b97f43956",
+  "discord_message_id": "1487192240253304923",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T20:51:14Z",
+      "event": "started",
+      "context": "Check persona avatar polls"
+    }
+  ]
+}
