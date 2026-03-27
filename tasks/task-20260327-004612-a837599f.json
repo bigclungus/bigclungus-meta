@@ -14,6 +14,12 @@
       "ts": "2026-03-27T00:46:12Z",
       "event": "started",
       "context": "Deep check LiteLLM usage including Graphiti"
+    },
+    {
+      "ts": "2026-03-27T00:47:16Z",
+      "event": "done",
+      "context": "That's conclusive. Here's the definitive answer:\n\n**litellm is NOT called at runtime by anything you run.**\n\nFindings:\n\n1. **Graphiti source code** (`/mnt/data/graphiti/repo/`) — zero references to `litellm` in any `.py` file. Not imported, not called.\n\n2. **graphiti-core package dependencies** — `litellm` is not listed as a `Requires-Dist` anywhere. The package depends on `openai`, `anthropic`, `neo4j`, `pydantic`, etc. — no litellm.\n\n3. **Graphiti's venv** (`mcp_server/.venv/`) — litellm is no...(truncated)",
+      "artifacts": []
     }
   ]
 }
