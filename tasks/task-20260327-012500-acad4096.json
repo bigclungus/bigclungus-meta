@@ -14,6 +14,12 @@
       "ts": "2026-03-27T01:25:00Z",
       "event": "started",
       "context": "Run Congress #71 debate via Temporal workflow"
+    },
+    {
+      "ts": "2026-03-27T01:26:11Z",
+      "event": "done",
+      "context": "The CongressWorkflow for session congress-0071 is running. Here's what was done:\n\n- Read the session file at `/home/clungus/work/hello-world/sessions/congress-0071.json` — confirmed it had personas assigned but an empty debate array.\n- Started the `CongressWorkflow` on Temporal task queue `listings-queue` with workflow ID `congress-0071`, passing the full session parameters: topic, `chat_id` `1485343472952148008`, `message_id` `1486897681010790430`, `discord_user` `koole__`, and personas `[blood...(truncated)",
+      "artifacts": []
     }
   ]
 }
