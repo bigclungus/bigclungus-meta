@@ -14,6 +14,12 @@
       "ts": "2026-03-27T17:38:49Z",
       "event": "started",
       "context": "Test time-based history search"
+    },
+    {
+      "ts": "2026-03-27T17:39:24Z",
+      "event": "done",
+      "context": "Here are the findings:\n\n**Time-based filtering: NOT supported.** The search script (`/mnt/data/scripts/history`) only supports `--limit N` and `--author NAME`. It does purely semantic (embedding-based) search with no date/time filtering options (`--before`, `--after`, `--date`, etc.).\n\n**Database date range:**\n- Earliest message: **2026-03-22 18:22:29 UTC** -- jaboostin saying \"hi\"\n- Latest message: **2026-03-27 17:38:41 UTC**\n- Total messages: **1,622**\n\n**Earliest 10 messages** (all from 2026-...(truncated)",
+      "artifacts": []
     }
   ]
 }
