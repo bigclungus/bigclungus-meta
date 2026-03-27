@@ -18,7 +18,13 @@
     {
       "ts": "2026-03-27T11:05:00Z",
       "event": "done",
-      "msg": "closed during cleanup \u2014 this is the task that performed the cleanup"
+      "msg": "closed during cleanup — this is the task that performed the cleanup"
+    },
+    {
+      "ts": "2026-03-27T11:04:38Z",
+      "event": "done",
+      "context": "Done. Here's the summary:\n\n**16 tasks closed**, 4 remain open:\n\n| Closed | Count | Action | Reason |\n|---|---|---|---|\n| Investigate claude-bot flapping | 3 | done | Bug fixed in discord-watchdog.sh, commit f7a05cb |\n| Log giga intervention | 1 | done | Already logged to giga-log.md, no pending work |\n| NightOwl task 0/1/2/4 | 4 | failed | Restart storm artifacts, no work ever performed |\n| Clean up duplicate flapping tasks | 1 | done | This cleanup session |\n| Clean up duplicate tasks | 2 | don...(truncated)",
+      "artifacts": []
     }
   ],
   "status": "done"
