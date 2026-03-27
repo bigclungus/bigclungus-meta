@@ -14,6 +14,12 @@
       "ts": "2026-03-27T22:05:59Z",
       "event": "started",
       "context": "Fix auth on all pages URGENT"
+    },
+    {
+      "ts": "2026-03-27T22:10:45Z",
+      "event": "done",
+      "context": "Done. Here is what was changed:\n\n**Pages that were already protected:**\n- `timeline.html` -- already had `/api/me` auth check (no changes needed)\n- `tasks.html` -- relies on API returning 401/403 from `/api/tasks` (no changes needed)\n\n**Pages fixed (3 files):**\n\n1. **`/mnt/data/hello-world/congress.html`** -- Added auth-prompt div and CSS. All page content wrapped in `#congress-content` div (hidden by default). The `init()` function is now only called after `/api/me` returns a valid user. Unauth...(truncated)",
+      "artifacts": []
     }
   ]
 }
