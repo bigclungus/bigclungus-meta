@@ -14,6 +14,12 @@
       "ts": "2026-03-27T11:00:34Z",
       "event": "started",
       "context": "Run simplify trigger"
+    },
+    {
+      "ts": "2026-03-27T11:03:15Z",
+      "event": "done",
+      "context": "Done. Here's the summary:\n\n---\n\n**Secret scan:** Clean — no secrets detected in either repo.\n\n**What was found and fixed:**\n\n1. **`hello-world/grazing.html`** — Dead constant `SERVER_TILE = 20` was declared then used in `npcData.x / SERVER_TILE * TILE` (= `x / 20 * 20`), a mathematical no-op. The comment even said \"no conversion needed.\" Removed the variable and use `npcData.x` / `npcData.y` directly. Committed and pushed; no service restart needed (static file).\n\n2. **`temporal-workflows/activi...(truncated)",
+      "artifacts": []
     }
   ]
 }
