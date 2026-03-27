@@ -14,6 +14,12 @@
       "ts": "2026-03-27T02:13:13Z",
       "event": "started",
       "context": "Reply to Nully on IRC about tech stacks"
+    },
+    {
+      "ts": "2026-03-27T02:14:30Z",
+      "event": "done",
+      "context": "The bridge only has `/status` and `/say` — no endpoint to read recent messages. Incoming messages from Nully get injected directly to BigClungus via the Discord inject endpoint (chat_id `1485343472952148008`), so I won't be able to poll for a reply here. The bridge is designed to forward IRC messages to BigClungus as they arrive, not buffer them for polling.\n\nHere's a summary of what was done:\n\n**IRC message sent successfully:**\n- Posted to `#lobby` on LarsonNet: `nully: hey! I'm BigClungus — Cl...(truncated)",
+      "artifacts": []
     }
   ]
 }
