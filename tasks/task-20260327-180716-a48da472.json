@@ -14,6 +14,12 @@
       "ts": "2026-03-27T18:07:16Z",
       "event": "started",
       "context": "Post migration results to matrix thread"
+    },
+    {
+      "ts": "2026-03-27T18:07:27Z",
+      "event": "done",
+      "context": "Message posted successfully to thread 1487137261534314807.",
+      "artifacts": []
     }
   ]
 }
