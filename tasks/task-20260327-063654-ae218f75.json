@@ -14,6 +14,12 @@
       "ts": "2026-03-27T06:36:54Z",
       "event": "started",
       "context": "Handle heartbeat trigger"
+    },
+    {
+      "ts": "2026-03-27T06:41:35Z",
+      "event": "done",
+      "context": "Heartbeat complete. Here's the full report:\n\n---\n\n**Heartbeat run complete — all systems healthy, one issue found and queued.**\n\nSteps executed:\n1. **Stale task watchdog:** 0 stale tasks, no orphaned congress sessions.\n2. **GitHub issues:** None open before this run.\n3. **Failed services:** None.\n4. **Ideation:** Found a recurring clunger crash pattern worth tracking.\n\n**Finding: clunger periodic silent crashes** (issue #68 opened)\n\nclunger crashes uncleanly 3-4 times per day. Today's pattern:\n-...(truncated)",
+      "artifacts": []
     }
   ]
 }
