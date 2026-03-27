@@ -197,11 +197,14 @@ def test_commons_ws():
             )
             sock.sendall(handshake.encode())
 
-            # Read HTTP upgrade response
+            # Read HTTP upgrade response.
+            # Bun often coalesces the HTTP 101 response and the first WS frame
+            # into a single TCP segment. We must not discard bytes after the
+            # \r\n\r\n header boundary — they're the start of WS frames.
             resp_buf = b""
             deadline = time.time() + TIMEOUT
             while b"\r\n\r\n" not in resp_buf and time.time() < deadline:
-                chunk = sock.recv(1024)
+                chunk = sock.recv(4096)
                 if not chunk:
                     break
                 resp_buf += chunk
@@ -211,10 +214,15 @@ def test_commons_ws():
                 sock.close()
                 return
 
+            # Seed the WS frame reader with any bytes that arrived after the
+            # HTTP headers in the same TCP segment (Bun coalesces frequently).
+            header_end = resp_buf.find(b"\r\n\r\n") + 4
+            ws_preamble = resp_buf[header_end:]
+
             # Read WebSocket frames — server sends welcome tick immediately.
             # The message may be fragmented across multiple frames; reassemble.
             sock.settimeout(TIMEOUT)
-            raw = b""
+            raw = ws_preamble
             deadline = time.time() + TIMEOUT
 
             def read_exact(n: int) -> bytes:
