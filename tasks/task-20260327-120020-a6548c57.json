@@ -18,8 +18,14 @@
     {
       "ts": "2026-03-27T12:02:16Z",
       "event": "done",
-      "context": "Service is back up. No Discord notification needed since this was a minor cleanup (no bug fix, no user-visible change). Here's a summary of what was done:\n\n---\n\n**Secret scans**: Both repos clean — no secrets detected in the last 5 commits.\n\n**hello-world**: Recent changes (warthog speed fix, sprite flip correction, sitenav fixed-position, NPC coordinate fix) all look correct. No dead code or issues found worth touching.\n\n**temporal-workflows**: One cleanup applied:\n- `/mnt/data/temporal-workflo...(truncated)",
+      "context": "Service is back up. No Discord notification needed since this was a minor cleanup (no bug fix, no user-visible change). Here's a summary of what was done:\n\n---\n\n**Secret scans**: Both repos clean \u2014 no secrets detected in the last 5 commits.\n\n**hello-world**: Recent changes (warthog speed fix, sprite flip correction, sitenav fixed-position, NPC coordinate fix) all look correct. No dead code or issues found worth touching.\n\n**temporal-workflows**: One cleanup applied:\n- `/mnt/data/temporal-workflo...(truncated)",
       "artifacts": []
+    },
+    {
+      "ts": "2026-03-27T15:45:00Z",
+      "event": "failed",
+      "msg": "API rate limit hit during execution"
     }
-  ]
+  ],
+  "status": "failed"
 }
