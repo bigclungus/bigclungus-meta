@@ -14,6 +14,12 @@
       "ts": "2026-03-27T16:40:29Z",
       "event": "started",
       "context": "Set up CCR with Grok and test"
+    },
+    {
+      "ts": "2026-03-27T16:59:21Z",
+      "event": "done",
+      "context": "Results posted to Discord thread successfully. Here's the summary:\n\n---\n\n**Results:**\n\n1. **CCR (claude-code-router) v2.0.0 does not work** for a clean Grok-only setup. It has hardcoded AWS CodeWhisperer and shuaihong-openai providers baked into the binary that always load, and built-in routing rules that override the configured default provider for \"thinking\" category requests, sending them to CodeWhisperer instead of xAI.\n\n2. **Custom proxy works.** Built a lightweight aiohttp-based proxy at `...(truncated)",
+      "artifacts": []
     }
   ]
 }
