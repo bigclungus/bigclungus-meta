@@ -14,6 +14,12 @@
       "ts": "2026-03-27T22:25:27Z",
       "event": "started",
       "context": "Change /api/me to return 401"
+    },
+    {
+      "ts": "2026-03-27T22:27:02Z",
+      "event": "done",
+      "context": "Done. Here's the summary:\n\n**Change made:** `/mnt/data/clunger/src/index.ts` line 2204-2212 — `/api/me` now returns HTTP 401 with `{\"error\": \"Not authenticated\"}` for unauthenticated requests instead of 200 with `{\"username\": null}`.\n\n**Callers audited (7 files, no changes needed):**\n\n| File | How it calls /api/me | Already handles 401? |\n|---|---|---|\n| `hello-world/grazing.html` (auth check, line 408) | Checks `r.status === 401 \\|\\| r.status === 403` | Yes |\n| `hello-world/grazing.html` (playe...(truncated)",
+      "artifacts": []
     }
   ]
 }
