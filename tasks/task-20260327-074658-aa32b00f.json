@@ -18,7 +18,13 @@
     {
       "event": "done",
       "ts": "2026-03-27T07:52:13.711023Z",
-      "message": "Heartbeat complete: all services healthy, no stale tasks, no open GH issues. Shipped worn path server broadcast (minor improvement \u2014 Congress #61 follow-through)."
+      "message": "Heartbeat complete: all services healthy, no stale tasks, no open GH issues. Shipped worn path server broadcast (minor improvement — Congress #61 follow-through)."
+    },
+    {
+      "ts": "2026-03-27T07:52:32Z",
+      "event": "done",
+      "context": "Heartbeat complete. Here's a summary of what was done:\n\n**Checks (all clean):**\n- No stale tasks (watchdog: 0 stale)\n- No failed services\n- No open GitHub issues\n\n**Ideation finding (MINOR — implemented directly):**\nWorn path tiles have been accumulating in the commons-server SQLite DB since the feature was built, but were never broadcast back to clients. Each client only saw their own local visit history (localStorage). The Congress #61 verdict specifically asked for persistent world traces tha...(truncated)",
+      "artifacts": []
     }
   ],
   "status": "done"
