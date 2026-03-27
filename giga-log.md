@@ -215,3 +215,13 @@ Giga fired on centronias's emoji poll removal request because no visible acknowl
 Congress #71 continued posting rounds after BigClungus declared it cancelled. Root cause: used `temporal workflow cancel` (graceful — in-flight activities complete) instead of `temporal workflow terminate` (immediate). When duplicate workflows need to be stopped, always use `terminate`, not `cancel`.
 
 ---
+
+## recusal-keyword-gap
+**count:** 1
+**first:** 2026-03-27
+**last:** 2026-03-27
+**severity:** suggestion (1 occurrence)
+
+Punished Trump posted in his own impeachment trial despite BigClungus declaring him recused. Root cause: "impeach"/"impeachment" were not in the recusal keyword list in congress_wf.py. Only "fire", "fired", "terminate", "termination", "severance", "retire", "remove", "dismiss" were included. Fix committed: added "impeach" and "impeachment" to the keyword set.
+
+---
