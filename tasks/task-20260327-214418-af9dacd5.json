@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-214418-af9dacd5",
+  "title": "Timeline spacing + zebra stripes",
+  "agent_id": "af9dacd520fe5aaa0",
+  "agent_type": "general-purpose",
+  "session_id": "083baee4-2f6f-4f81-8ced-0e9b97f43956",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T21:44:18Z",
+      "event": "started",
+      "context": "Timeline spacing + zebra stripes"
+    }
+  ]
+}
