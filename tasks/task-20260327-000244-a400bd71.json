@@ -14,6 +14,12 @@
       "ts": "2026-03-27T00:02:44Z",
       "event": "started",
       "context": "Add Kubariet to terminal GitHub allowlist"
+    },
+    {
+      "ts": "2026-03-27T00:03:13Z",
+      "event": "done",
+      "context": "Everything is working. Here's the summary:\n\n**Allowlist location:** `/mnt/data/.env.shared`, line 3 — `GITHUB_ALLOWED_USERS` (a shared env file loaded by terminal-server, temporal-proxy, and website services; the old entry in `/mnt/data/terminal/.env` was deprecated and commented out pointing here).\n\n**Before:**\n```\nGITHUB_ALLOWED_USERS=jhead,jaboostin,koole__,Centronias,BigClungus,campbelln508,lynchifer\n```\n\n**After:**\n```\nGITHUB_ALLOWED_USERS=jhead,jaboostin,koole__,Centronias,BigClungus,campb...(truncated)",
+      "artifacts": []
     }
   ]
 }
