@@ -14,6 +14,12 @@
       "ts": "2026-03-27T19:57:50Z",
       "event": "started",
       "context": "Check trial trigger handling"
+    },
+    {
+      "ts": "2026-03-27T19:58:05Z",
+      "event": "done",
+      "context": "Here are the findings from `/mnt/data/bigclungus-meta/TRIGGERS.md`:\n\n**There is no `[trial]` trigger pattern.** However, there IS a `[show-trial]` trigger (lines 56-83). It fires a `TrialWorkflow` in Temporal with a defendant persona slug and freeform charges text.\n\nThe `[show-trial]` trigger works as follows:\n- **Syntax:** `[show-trial] <defendant_slug> <charges>`\n- **Parsing:** First word after `[show-trial]` is the defendant persona slug; everything after that is the charges string.\n- **Workf...(truncated)",
+      "artifacts": []
     }
   ]
 }
