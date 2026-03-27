@@ -255,3 +255,13 @@ Passed `personas: ["trump"]` to force Trump into a meme-congress panel, but the 
 BigClungus told kubariet that Punished Trump is powered by "real Claude" when Trump is assigned to Grok/3-mini per koole__'s standing model mandate. The correct answer was that the routing may not be implemented yet, not that it uses Claude. Rule: when asked about which model powers a persona, check the persona's `model:` frontmatter field and the memory at project_persona_models.md before asserting. Do not assume Claude.
 
 ---
+
+## prose-guideline-violation
+**count:** 1
+**first:** 2026-03-27
+**last:** 2026-03-27
+**severity:** suggestion (1 occurrence)
+
+BigClungus claimed to reingest the LLM prose guidelines from CLAUDE.md then immediately responded with an em dash and a three-item list — both explicitly listed as violations in those guidelines. The error was not reading the actual guidelines before answering. Rule: when told to "reingest" a document before answering, actually read it before composing the response. Do not trust recall.
+
+---
