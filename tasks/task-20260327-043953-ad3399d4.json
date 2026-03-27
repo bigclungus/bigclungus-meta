@@ -14,6 +14,12 @@
       "ts": "2026-03-27T04:39:53Z",
       "event": "started",
       "context": "Research vector DB options for raw session search"
+    },
+    {
+      "event": "done",
+      "ts": "2026-03-27T05:59:42.705644Z",
+      "message": "Research completed during session \u2014 sqlite-vec + OpenAI embeddings implemented at /mnt/data/scripts/history, Temporal HistoryIngestWorkflow ingests every 1min. Bot restart during session prevented done log. Closing."
     }
-  ]
+  ],
+  "status": "done"
 }
