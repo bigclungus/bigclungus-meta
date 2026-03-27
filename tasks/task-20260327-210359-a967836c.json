@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-210359-a967836c",
+  "title": "Plan congress unification",
+  "agent_id": "a967836c59de83db8",
+  "agent_type": "Plan",
+  "session_id": "083baee4-2f6f-4f81-8ced-0e9b97f43956",
+  "discord_message_id": "1487194910791827497",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T21:03:59Z",
+      "event": "started",
+      "context": "Plan congress unification"
+    }
+  ]
+}
