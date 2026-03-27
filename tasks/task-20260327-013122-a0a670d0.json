@@ -14,6 +14,12 @@
       "ts": "2026-03-27T01:31:22Z",
       "event": "started",
       "context": "Kill all running Congress workflows immediately"
+    },
+    {
+      "ts": "2026-03-27T01:32:36Z",
+      "event": "done",
+      "context": "All clear. Here's the full situation:\n\n**Congress-0071 is done — no action needed.**\n\n- `congress-0071` status in Temporal: **Completed** (not Running). It finished ~6 minutes ago.\n- The `Running` list shows zero congress workflows. The only running congress-related thing is `congress-audit-cron` which is a normal recurring cron, not a session workflow.\n- The orphaned `claude -p` subprocesses (synthesis vote round, 11 processes) were already dead by the time I tried to kill them — they finished ...(truncated)",
+      "artifacts": []
     }
   ]
 }
