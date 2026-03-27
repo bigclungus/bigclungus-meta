@@ -14,6 +14,12 @@
       "ts": "2026-03-27T01:32:13Z",
       "event": "started",
       "context": "Stop Congress Airbnb agent and kill its workflows"
+    },
+    {
+      "ts": "2026-03-27T01:33:34Z",
+      "event": "done",
+      "context": "Clean. Here's the full summary:\n\n**What was found:**\n\n- **Temporal:** `congress-0071` (CongressWorkflow for Airbnb topic) was already in `Completed` state — no running CongressWorkflow instances existed. No workflow needed termination.\n- **Processes:** The workflow's post-debate evolution activity had spawned lingering `claude -p` subprocesses running Ibrahim's verdict/evolution phase. These were still executing outside of Temporal's control:\n  - A bash wrapper (PID 292076) running the evolution...(truncated)",
+      "artifacts": []
     }
   ]
 }
