@@ -24,7 +24,13 @@
     {
       "ts": "2026-03-26T03:48:20Z",
       "event": "stale",
-      "context": "Marked stale by watchdog — session likely ended before task completed"
+      "context": "Marked stale by watchdog \u2014 session likely ended before task completed"
+    },
+    {
+      "event": "failed",
+      "ts": "2026-03-27T07:20:06.458533Z",
+      "message": "Superseded \u2014 congress ran 34+ more sessions (#52-#85) since this task was created. The process concerns it addressed were addressed through continued use and evolution of congress, not via this task."
     }
-  ]
+  ],
+  "status": "failed"
 }
