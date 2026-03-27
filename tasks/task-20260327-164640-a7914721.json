@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-164640-a7914721",
+  "title": "Fire meme-congress coconut tree",
+  "agent_id": "a7914721affc6897d",
+  "agent_type": "general-purpose",
+  "session_id": "b8a58c15-c6f1-48c2-b033-87763f636706",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T16:46:40Z",
+      "event": "started",
+      "context": "Fire meme-congress coconut tree"
+    }
+  ]
+}
