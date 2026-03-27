@@ -14,6 +14,12 @@
       "ts": "2026-03-27T22:04:38Z",
       "event": "started",
       "context": "Migrate timeline to SQLite + clunger API"
+    },
+    {
+      "ts": "2026-03-27T22:09:12Z",
+      "event": "done",
+      "context": "All 44 events migrated and served. Here is what was done:\n\n**Changes across 3 repos:**\n\n### 1. `/mnt/data/clunger/src/index.ts` (clunger repo)\n- Added SQLite timeline database initialization at `/mnt/data/clunger/timeline.db` with WAL mode\n- Schema: `timeline_events` table with id, date, title, description, category, icon, url, source, created_at\n- Four REST endpoints:\n  - `GET /api/timeline` -- public, returns all events sorted by date\n  - `POST /api/timeline` -- auth required (tauth_github or ...(truncated)",
+      "artifacts": []
     }
   ]
 }
