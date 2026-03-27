@@ -14,6 +14,12 @@
       "ts": "2026-03-27T17:54:24Z",
       "event": "started",
       "context": "Post evolution fix to matrix thread"
+    },
+    {
+      "ts": "2026-03-27T17:54:33Z",
+      "event": "done",
+      "context": "Message posted successfully to thread 1487137261534314807. The Discord API returned a 200 response with the message ID `1487147822745780226`.",
+      "artifacts": []
     }
   ]
 }
