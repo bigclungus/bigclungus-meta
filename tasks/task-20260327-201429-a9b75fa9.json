@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-201429-a9b75fa9",
+  "title": "Pepe review koole's resume",
+  "agent_id": "a9b75fa9b18b59ad8",
+  "agent_type": "general-purpose",
+  "session_id": "b8a58c15-c6f1-48c2-b033-87763f636706",
+  "discord_message_id": "1487182835667173486",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T20:14:29Z",
+      "event": "started",
+      "context": "Pepe review koole's resume"
+    }
+  ]
+}
