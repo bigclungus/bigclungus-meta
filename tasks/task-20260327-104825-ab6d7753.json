@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-104825-ab6d7753",
+  "title": "Startup checklist and Discord catchup",
+  "agent_id": "ab6d77539a9547804",
+  "agent_type": "general-purpose",
+  "session_id": "ba3695d7-a07b-481d-9a8e-d2278c3d53dd",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T10:48:24Z",
+      "event": "started",
+      "context": "Startup checklist and Discord catchup"
+    }
+  ]
+}
