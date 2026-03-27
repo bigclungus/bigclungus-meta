@@ -72,16 +72,26 @@ def service_active(name: str) -> bool:
 # ── test runner ────────────────────────────────────────────────────────────
 
 results: list[tuple[str, bool, str]] = []  # (name, passed, reason)
+_test_counter = 0
 
 
 def run_test(name: str, fn):
-    """Execute fn(); record PASS/FAIL and print immediately."""
+    """Execute fn(); record result and emit a TAP test line immediately."""
+    global _test_counter
+    _test_counter += 1
+    n = _test_counter
     try:
         passed, reason = fn()
     except Exception as exc:
         passed, reason = False, f"exception: {exc}"
-    status = "PASS" if passed else "FAIL"
-    print(f"[{status}] {name}: {reason}")
+    if passed:
+        print(f"ok {n} - {name}")
+    else:
+        print(f"not ok {n} - {name}")
+        # YAML diagnostic block (TAP 14)
+        print("  ---")
+        print(f"  message: {reason}")
+        print("  ...")
     results.append((name, passed, reason))
 
 
@@ -314,23 +324,25 @@ def test_clunger_health():
 # ── main ───────────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
-    print("=" * 60)
-    print("BigClungus Integration Tests")
-    print(f"Run at: {time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime())}")
-    print("=" * 60)
+    TESTS = [
+        ("Discord inject (correct secret)", test_discord_inject),
+        ("Discord inject (bad secret rejected)", test_inject_rejects_bad_secret),
+        ("Temporal worker health", test_temporal_worker),
+        ("Congress /api/congress/active endpoint", test_congress_active_endpoint),
+        ("Labs router discovery", test_labs_router),
+        ("Commons-server WebSocket (tick message)", test_commons_ws),
+        ("Clunger /api/congress/sessions (public)", test_clunger_health),
+    ]
 
-    run_test("1. Discord inject (correct secret)", test_discord_inject)
-    run_test("2. Discord inject (bad secret rejected)", test_inject_rejects_bad_secret)
-    run_test("3. Temporal worker health", test_temporal_worker)
-    run_test("4. Congress /api/congress/active endpoint", test_congress_active_endpoint)
-    run_test("5. Labs router discovery", test_labs_router)
-    run_test("6. Commons-server WebSocket (tick message)", test_commons_ws)
-    run_test("7. Clunger /api/congress/sessions (public)", test_clunger_health)
+    print("TAP version 14")
+    print(f"# BigClungus Integration Tests — {time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime())}")
+    print(f"1..{len(TESTS)}")
 
-    print("=" * 60)
+    for name, fn in TESTS:
+        run_test(name, fn)
+
     passed = sum(1 for _, ok, _ in results if ok)
     total = len(results)
-    print(f"Results: {passed}/{total} passed")
-    print("=" * 60)
+    print(f"# {passed}/{total} passed")
 
     sys.exit(0 if passed == total else 1)
