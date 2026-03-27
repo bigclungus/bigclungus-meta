@@ -14,6 +14,12 @@
       "ts": "2026-03-27T02:10:10Z",
       "event": "started",
       "context": "Update IRC bridge with correct server details"
+    },
+    {
+      "ts": "2026-03-27T02:13:13Z",
+      "event": "done",
+      "context": "Done. Here's a summary of what was accomplished:\n\n**IRC bridge updated and connected:**\n\n- `/mnt/data/irc-bridge/irc_bridge.py` was updated with the new config (`IRC_HOST = \"irc.georgelarson.me\"`, `IRC_PORT = 6697`, `IRC_TLS = True`, `IRC_CHANNEL = \"#lobby\"`)\n- The actual transport remains WebSocket (`wss://nullclaw.georgelarson.me`) because the server is behind Cloudflare, which blocks raw TCP on port 6697. All three subdomains resolve to the same Cloudflare proxy IPs — the WebSocket path is th...(truncated)",
+      "artifacts": []
     }
   ]
 }
