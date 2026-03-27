@@ -14,6 +14,12 @@
       "ts": "2026-03-27T00:26:21Z",
       "event": "started",
       "context": "Close duplicate heartbeat issue #63"
+    },
+    {
+      "ts": "2026-03-27T00:26:46Z",
+      "event": "done",
+      "context": "Done. Issue #63 has been commented on with the duplicate explanation and closed. The comment references #62 and explains that exit code 1 is Claude Code's standard clean exit, not a crash or OOM, and that auto-restart is functioning correctly.",
+      "artifacts": []
     }
   ]
 }
