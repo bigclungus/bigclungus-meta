@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-155355-a7695feb",
+  "title": "Find sonnet uses and post to thread",
+  "agent_id": "a7695feb722fc6fd2",
+  "agent_type": "general-purpose",
+  "session_id": "b8a58c15-c6f1-48c2-b033-87763f636706",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T15:53:55Z",
+      "event": "started",
+      "context": "Find sonnet uses and post to thread"
+    }
+  ]
+}
