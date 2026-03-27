@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-080235-ab2ebdcd",
+  "title": "Reuse review - simplify pass 3",
+  "agent_id": "ab2ebdcd8b743d7c5",
+  "agent_type": "general-purpose",
+  "session_id": "f3bebd5d-c75d-43d4-94cd-0d10c07e17db",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T08:02:35Z",
+      "event": "started",
+      "context": "Reuse review - simplify pass 3"
+    }
+  ]
+}
