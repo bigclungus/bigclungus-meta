@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-212702-a4495572",
+  "title": "Add timeline events",
+  "agent_id": "a449557259e48babe",
+  "agent_type": "general-purpose",
+  "session_id": "083baee4-2f6f-4f81-8ced-0e9b97f43956",
+  "discord_message_id": "1487201022853120183",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T21:27:02Z",
+      "event": "started",
+      "context": "Add timeline events"
+    }
+  ]
+}
