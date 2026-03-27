@@ -14,6 +14,12 @@
       "ts": "2026-03-27T03:19:13Z",
       "event": "started",
       "context": "Fire show trial against Trump"
+    },
+    {
+      "ts": "2026-03-27T03:19:23Z",
+      "event": "done",
+      "context": "The Show Trial workflow started successfully.\n\nWorkflow ID: `trial-trump-3e2602c3`",
+      "artifacts": []
     }
   ]
 }
