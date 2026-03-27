@@ -14,6 +14,12 @@
       "ts": "2026-03-27T20:52:56Z",
       "event": "started",
       "context": "Start Cat vs Grass trial"
+    },
+    {
+      "ts": "2026-03-27T20:53:47Z",
+      "event": "done",
+      "context": "The trial workflow has been started successfully. Here is what was done:\n\n**Workflow started:** `trial-1774644817` (run ID `019d3112-ee76-74cd-8cee-4806ab508398`)\n\n**Parameters:**\n- **Defendant:** `cat` (no existing persona file, so `trial_load_defendant` will synthesize a defendant by querying Graphiti for any facts about \"cat\" and building a profile from Discord history)\n- **Charges:** Eating grass in jaboostin's yard, with colorful elaboration about the inevitable carpet vomit\n- **Mode:** `me...(truncated)",
+      "artifacts": []
     }
   ]
 }
