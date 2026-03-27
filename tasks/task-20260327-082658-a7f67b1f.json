@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-082658-a7f67b1f",
+  "title": "Handle heartbeat trigger",
+  "agent_id": "a7f67b1fed71a95c8",
+  "agent_type": "general-purpose",
+  "session_id": "f3bebd5d-c75d-43d4-94cd-0d10c07e17db",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T08:26:58Z",
+      "event": "started",
+      "context": "Handle heartbeat trigger"
+    }
+  ]
+}
