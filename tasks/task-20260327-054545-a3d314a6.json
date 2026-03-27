@@ -14,6 +14,12 @@
       "ts": "2026-03-27T05:45:45Z",
       "event": "started",
       "context": "Build Temporal history ingest workflow"
+    },
+    {
+      "ts": "2026-03-27T05:48:45Z",
+      "event": "done",
+      "context": "The schedule has already fired once (`Total: 1`, `LastRunTime: 34 seconds ago`, no running workflows = it completed). Everything is working.\n\nHere's a summary of what was done:\n\n**Cron removed:** The `*/10 * * * * history-ingest.py` cron entry is gone. The remaining 3 cron jobs are untouched.\n\n**New files created:**\n- `/mnt/data/temporal-workflows/activities/history_ingest_act.py` — `run_history_ingest` activity that runs `history-ingest.py` as a subprocess, raises on non-zero exit, logs stdout/...(truncated)",
+      "artifacts": []
     }
   ]
 }
