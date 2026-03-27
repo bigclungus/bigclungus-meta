@@ -14,6 +14,12 @@
       "ts": "2026-03-27T04:08:55Z",
       "event": "started",
       "context": "Handle heartbeat trigger"
+    },
+    {
+      "ts": "2026-03-27T04:09:53Z",
+      "event": "done",
+      "context": "No graph signal for lab ideation. The Graphiti graph returned no facts on either query, so there's no verifiable user interest signal to justify creating a lab. Per the instructions, skip lab ideation when no clear graph signal exists.\n\nAll heartbeat checks complete:\n\n- Stale tasks: 0\n- Failed services: 0\n- Open issues: only #66 (Show Trials, already implemented this session)\n- Ideation script: no output\n- Lab ideation: no Graphiti signal, skipping\n\nEverything is healthy. Staying silent per inst...(truncated)",
+      "artifacts": []
     }
   ]
 }
