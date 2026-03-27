@@ -14,6 +14,12 @@
       "ts": "2026-03-27T02:07:10Z",
       "event": "started",
       "context": "Open GitHub issue for show trials feature"
+    },
+    {
+      "ts": "2026-03-27T02:07:46Z",
+      "event": "done",
+      "context": "Done. GitHub issue #66 created at https://github.com/bigclungus/bigclungus-meta/issues/66 and posted to Discord. The issue covers the trigger format, defendant/prosecutor/defense/judge roles, human vs AI defendant modes, tone direction (\"show trials, flashier the better\"), and implementation notes including the EXILE verdict hooking into the existing `status: ineligible` mechanism.",
+      "artifacts": []
     }
   ]
 }
