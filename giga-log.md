@@ -186,6 +186,16 @@ BigClungus asked centronias for clarification on a topic that was already quoted
 
 ---
 
+## announce-before-workflow-verified
+**count:** 1
+**first:** 2026-03-27
+**last:** 2026-03-27
+**severity:** suggestion (1 occurrence)
+
+BigClungus announced Congress #71 ("congress is convening") after creating the session stub file, but the Temporal CongressWorkflow was never actually triggered — no debate thread appeared. Root cause: the announcement was based on the stub creation succeeding, not on workflow invocation being confirmed. Rule: never announce Congress as convening until the Temporal workflow start call has returned successfully. A session file on disk is a precondition, not a guarantee — the workflow trigger is the real gate.
+
+---
+
 ## no-visible-response-before-giga
 **count:** 1
 **first:** 2026-03-27
