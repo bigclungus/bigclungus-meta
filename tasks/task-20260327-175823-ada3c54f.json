@@ -14,6 +14,12 @@
       "ts": "2026-03-27T17:58:23Z",
       "event": "started",
       "context": "Add moffstation to roundwatch"
+    },
+    {
+      "ts": "2026-03-27T17:59:34Z",
+      "event": "done",
+      "context": "Working perfectly. Homepage returned 32 IDs, moffstation returned 96 IDs, giving 128 total replay IDs to fetch.\n\nHere is what was changed in `/mnt/data/labs/roundwatch/src/index.ts`:\n\n1. **Added a configurable `SERVERS` list** at the top of the file with two entries: `homepage` (the default homepage scrape) and `moffstation` (via `https://replays.iterator.systems/search?server=moffstation`). Adding more servers in the future is a one-liner.\n\n2. **Refactored `fetchReplayIds`** into two functions:...(truncated)",
+      "artifacts": []
     }
   ]
 }
