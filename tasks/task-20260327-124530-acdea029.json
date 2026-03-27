@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-124530-acdea029",
+  "title": "Handle giga intervention and reply to relarey via bot API",
+  "agent_id": "acdea0291c9f76a7c",
+  "agent_type": "general-purpose",
+  "session_id": "b8a58c15-c6f1-48c2-b033-87763f636706",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T12:45:30Z",
+      "event": "started",
+      "context": "Handle giga intervention and reply to relarey via bot API"
+    }
+  ]
+}
