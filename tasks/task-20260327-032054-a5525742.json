@@ -14,6 +14,12 @@
       "ts": "2026-03-27T03:20:54Z",
       "event": "started",
       "context": "Commit Trump reinstatement and fire trial"
+    },
+    {
+      "ts": "2026-03-27T03:21:18Z",
+      "event": "done",
+      "context": "Both done:\n\n- **Commit hash:** `85925f2` — \"Reinstate trump persona as eligible (for show trial)\" pushed to `bigclungus/bigclungus-meta` main\n- **Workflow ID:** `trial-trump2-d60259a7` — TrialWorkflow started on `listings-queue`, defendant: trump, charges: taking too much framer attention away from other personas",
+      "artifacts": []
     }
   ]
 }
