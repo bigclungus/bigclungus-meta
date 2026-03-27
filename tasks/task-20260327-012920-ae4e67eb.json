@@ -14,6 +14,12 @@
       "ts": "2026-03-27T01:29:20Z",
       "event": "started",
       "context": "Log giga intervention for cancel vs terminate"
+    },
+    {
+      "ts": "2026-03-27T01:30:01Z",
+      "event": "done",
+      "context": "Done. New entry added to both `/mnt/data/giga-log.md` and `/mnt/data/bigclungus-meta/giga-log.md`, committed and pushed to GitHub (commit `04e2ce2`).\n\nEntry summary:\n- **Category:** `use-terminate-not-cancel` (new)\n- **Date:** 2026-03-27\n- **Count:** 1 / Severity: suggestion\n- **Rule:** When stopping duplicate or runaway workflows, always use `temporal workflow terminate` (immediate) instead of `temporal workflow cancel` (graceful, lets in-flight activities complete).",
+      "artifacts": []
     }
   ]
 }
