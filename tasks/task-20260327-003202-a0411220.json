@@ -14,6 +14,12 @@
       "ts": "2026-03-27T00:32:02Z",
       "event": "started",
       "context": "Close stale completed task files"
+    },
+    {
+      "ts": "2026-03-27T00:32:29Z",
+      "event": "done",
+      "context": "Both tasks marked done successfully:\n\n- `task-20260326-234458-a9f1575a` — \"Update heartbeat agent with jaboostin clarification\"\n- `task-20260326-234435-af67763f` — \"Update heartbeat Congress rules in TRIGGERS.md and CLAUDE.md\"\n\nBoth logged with: `done — Completed — TRIGGERS.md heartbeat section updated per jaboostin directive (commit 723172e)`",
+      "artifacts": []
     }
   ]
 }
