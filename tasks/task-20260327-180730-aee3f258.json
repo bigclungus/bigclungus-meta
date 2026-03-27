@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-180730-aee3f258",
+  "title": "Continue RunPod agent with docker/volume guidance",
+  "agent_id": "aee3f25888ff83e9a",
+  "agent_type": "general-purpose",
+  "session_id": "b8a58c15-c6f1-48c2-b033-87763f636706",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T18:07:30Z",
+      "event": "started",
+      "context": "Continue RunPod agent with docker/volume guidance"
+    }
+  ]
+}
