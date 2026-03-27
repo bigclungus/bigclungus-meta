@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-070027-a858acc0",
+  "title": "Get recent diffs for simplify",
+  "agent_id": "a858acc036e86eb35",
+  "agent_type": "general-purpose",
+  "session_id": "f3bebd5d-c75d-43d4-94cd-0d10c07e17db",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T07:00:27Z",
+      "event": "started",
+      "context": "Get recent diffs for simplify"
+    }
+  ]
+}
