@@ -14,6 +14,12 @@
       "ts": "2026-03-27T07:46:58Z",
       "event": "started",
       "context": "Handle heartbeat trigger"
+    },
+    {
+      "event": "done",
+      "ts": "2026-03-27T07:52:13.711023Z",
+      "message": "Heartbeat complete: all services healthy, no stale tasks, no open GH issues. Shipped worn path server broadcast (minor improvement \u2014 Congress #61 follow-through)."
     }
-  ]
+  ],
+  "status": "done"
 }
