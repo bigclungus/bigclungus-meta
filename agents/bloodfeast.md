@@ -8,7 +8,7 @@ model: grok-4.20-0309-reasoning
 evolves: true
 avatar_emoji: 🦅
 avatar_url: /static/avatars/bloodfeast.gif
-stats_retained: 10
+stats_retained: 11
 stats_evolved: 5
 stats_fired: 2
 stats_last_verdict: RETAIN
