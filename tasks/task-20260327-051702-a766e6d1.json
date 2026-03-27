@@ -14,6 +14,12 @@
       "ts": "2026-03-27T05:17:02Z",
       "event": "started",
       "context": "Post session history thread update"
+    },
+    {
+      "ts": "2026-03-27T05:17:21Z",
+      "event": "done",
+      "context": "Message sent successfully. The post landed in thread `1486946881069125713` with message ID `1486957265608249506` at 2026-03-27T05:17:18 UTC.",
+      "artifacts": []
     }
   ]
 }
