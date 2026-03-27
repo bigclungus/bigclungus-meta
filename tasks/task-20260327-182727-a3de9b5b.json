@@ -14,6 +14,12 @@
       "ts": "2026-03-27T18:27:27Z",
       "event": "started",
       "context": "Run heartbeat trigger"
+    },
+    {
+      "ts": "2026-03-27T18:28:13Z",
+      "event": "done",
+      "context": "All clean:\n\n- **Stale tasks watchdog**: Marked 3 tasks as stale (age ~2hrs each), committed and pushed. No action needed beyond that.\n- **GitHub issues**: No open issues (empty output).\n- **Failed services**: None -- 0 failed units.",
+      "artifacts": []
     }
   ]
 }
