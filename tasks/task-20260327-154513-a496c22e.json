@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-154513-a496c22e",
+  "title": "Run heartbeat check after downtime",
+  "agent_id": "a496c22e1c7c5bf27",
+  "agent_type": "general-purpose",
+  "session_id": "b8a58c15-c6f1-48c2-b033-87763f636706",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T15:45:13Z",
+      "event": "started",
+      "context": "Run heartbeat check after downtime"
+    }
+  ]
+}
