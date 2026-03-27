@@ -103,11 +103,11 @@ def test_discord_inject():
         "DISCORD_INJECT_SECRET",
         "aa330b635ee444c20e27b4b79355e210c7f706523e768746ea687cecc4338db1",
     )
-    # Use a dry-run-style test message that won't actually disturb the channel;
-    # we ping with user="integration-test" and a known-safe chat_id.
+    # Use a clearly-automated message so it's visually obvious in the channel
+    # that this is a health check, not a real user message.
     status, body = http_post(
         "http://127.0.0.1:9876/inject",
-        body={"content": "[integration-test] inject endpoint check", "chat_id": "1485343472952148008", "user": "integration-test"},
+        body={"content": "🧪 inject-health-check", "chat_id": "1485343472952148008", "user": "integration-test"},
         headers={"x-inject-secret": secret},
     )
     if status == 200:
