@@ -19,6 +19,11 @@
       "event": "milestone",
       "ts": "2026-03-27T06:31:02.116516Z",
       "message": "Queued to NightOwl for implementation (centronias-approved, no GH issue exists yet)"
+    },
+    {
+      "event": "milestone",
+      "ts": "2026-03-27T12:09:03.290014Z",
+      "message": "Re-queued to NightOwl 2026-03-27 \u2014 previous nightowl run did not implement it (verdict_tracking table not found in tasks.db)"
     }
   ]
 }
