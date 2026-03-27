@@ -14,6 +14,12 @@
       "ts": "2026-03-27T01:20:52Z",
       "event": "started",
       "context": "Run Congress on Airbnb cost splitting"
+    },
+    {
+      "ts": "2026-03-27T01:36:12Z",
+      "event": "done",
+      "context": "Congress #71 complete. Here's what was done:\n\n**Full workflow executed:**\n\n1. Read CONGRESS_PROCESS.md and all eligible persona files\n2. Created session record (`congress-0071.json`)\n3. Ibrahim generated a pre-debate context brief identifying the crux: access-secured vs consumption-based cost allocation\n4. Ran 3 full debate rounds with 5 personas: Bloodfeast, Hume, Pippi, Galactus, Yuki\n5. Ibrahim checkpoint after Round 1: CONTINUE (genuine dissent between coalition vs per-night camps)\n6. Posted...(truncated)",
+      "artifacts": []
     }
   ]
 }
