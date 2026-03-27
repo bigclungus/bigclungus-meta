@@ -186,6 +186,26 @@ Do not skip the completion call — if you do, the workflow will time out after 
 
 ---
 
+## Post-Merge Code Review (GitHub push webhook)
+
+Fires automatically on every push to the default branch (`main` or `master`) of any bigclungus repo that has the webhook configured.
+
+**Checks:** Correctness regressions, security vulnerabilities (data loss, auth bypass, injection, broken integrations).
+
+**Does NOT check:** Style, formatting, test coverage, code organization. CI and `[simplify]` handle those.
+
+**Output:**
+- GitHub commit comment with findings (always posted, even for LGTM)
+- Discord ping to main channel if any HIGH severity finding is found
+
+**Report-only:** Never auto-fixes. Post-merge auto-commits create cascading unreviewed changes.
+
+**Implementation:** `clunger/src/services/post-merge-review.ts` — hooked into the `/webhook/github` handler on `push` events.
+
+GitHub issue #72.
+
+---
+
 ## `[sprite-regen] sprite-{persona}` ⚠️ DEPRECATED
 
 **Handled statically by clunger.** Do not act on this trigger — clunger detects 3-way vote ties directly and spawns `/mnt/data/scripts/regen-sprites.sh` without routing through BigClungus.
