@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-160403-a035e3a2",
+  "title": "Check for post-merge review comments",
+  "agent_id": "a035e3a23b6ab0315",
+  "agent_type": "general-purpose",
+  "session_id": "b8a58c15-c6f1-48c2-b033-87763f636706",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T16:04:03Z",
+      "event": "started",
+      "context": "Check for post-merge review comments"
+    }
+  ]
+}
