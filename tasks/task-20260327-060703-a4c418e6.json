@@ -14,6 +14,12 @@
       "ts": "2026-03-27T06:07:02Z",
       "event": "started",
       "context": "Handle heartbeat trigger"
+    },
+    {
+      "ts": "2026-03-27T06:08:21Z",
+      "event": "done",
+      "context": "Everything looks healthy. All key services are running, disk is well under 85% (20% on root, 7% on /mnt/data), no stale tasks, no failed services. The only open GitHub issue is #67 which is the trial FIRE enforcement topic — already being handled by the active Congress session (congress-1774591427).\n\nNo Discord notification needed since everything is healthy and there's nothing actionable to report.\n\n---\n\n**Heartbeat summary:**\n\n**What was checked:**\n1. Stale tasks — watchdog ran, 0 stale tasks ...(truncated)",
+      "artifacts": []
     }
   ]
 }
