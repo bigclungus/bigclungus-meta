@@ -14,6 +14,12 @@
       "ts": "2026-03-27T13:57:14Z",
       "event": "started",
       "context": "Run heartbeat trigger"
+    },
+    {
+      "ts": "2026-03-27T13:57:47Z",
+      "event": "done",
+      "context": "All three checks came back clean:\n\n1. **Stale tasks**: 0 tasks marked stale, no orphaned Congress sessions.\n2. **GitHub issues**: No open issues (command returned no output).\n3. **Failed services**: 0 failed units.\n\nEverything is healthy. No work to do, nothing to post to Discord. Staying silent per the heartbeat rules.",
+      "artifacts": []
     }
   ]
 }
