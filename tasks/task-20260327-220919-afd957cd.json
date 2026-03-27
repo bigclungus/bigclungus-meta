@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-220919-afd957cd",
+  "title": "Verify clunger timeline API",
+  "agent_id": "afd957cdc73abb558",
+  "agent_type": "general-purpose",
+  "session_id": "083baee4-2f6f-4f81-8ced-0e9b97f43956",
+  "discord_message_id": "1487211568969285672",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T22:09:19Z",
+      "event": "started",
+      "context": "Verify clunger timeline API"
+    }
+  ]
+}
