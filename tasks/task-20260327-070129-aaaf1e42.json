@@ -14,6 +14,12 @@
       "ts": "2026-03-27T07:01:29Z",
       "event": "started",
       "context": "Efficiency review - simplify pass 2"
+    },
+    {
+      "ts": "2026-03-27T07:02:31Z",
+      "event": "done",
+      "context": "Now I have all the information I need. Here are the findings:\n\n---\n\n## Findings\n\n### 1. `history` (CLI) — author filter query is BROKEN\n**`history:63-81`** — The author filter is applied as a WHERE clause on the joined `messages` table *alongside* sqlite-vec's `MATCH` operator. This is a known sqlite-vec limitation: **you cannot filter the virtual table with arbitrary WHERE clauses on joined tables in the same query.** sqlite-vec's `MATCH` performs the ANN search and returns its own K results vi...(truncated)",
+      "artifacts": []
     }
   ]
 }
