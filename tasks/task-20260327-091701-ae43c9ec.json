@@ -14,6 +14,12 @@
       "ts": "2026-03-27T09:17:01Z",
       "event": "started",
       "context": "Handle heartbeat trigger"
+    },
+    {
+      "ts": "2026-03-27T09:23:44Z",
+      "event": "done",
+      "context": "Good — persona data is loading correctly. 7 eligible + 1 moderator + up to 3 meme = 11 NPCs in commons. \n\nThe heartbeat is done. Summary of what was done:\n\n**Checks:**\n- Stale tasks: 0 stale\n- Failed services: 0 failed\n- Open GitHub issues: 0\n\n**Fix shipped:**\nGlow bleeding onto trees/rocks in The Commons (grazing.html). The player's radial gradient halo was overpainting adjacent tree/rock tile pixels. Added a post-player redraw pass for any foreground tiles within the glow radius, mirroring the...(truncated)",
+      "artifacts": []
     }
   ]
 }
