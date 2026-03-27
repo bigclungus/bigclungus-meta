@@ -345,3 +345,14 @@ The charge is "crimes against humor." I'll address it directly: my role is to pr
 This topic is not a serious policy question — it's a shitpost dressed as a motion. There is no 4000% tariff on Diet Coke cans, "impeach punished trump" is not a coherent directive, and this Congress exists to produce actionable outcomes, not to roleplay parliamentary theater over fictional grievances. I will moderate whatever the debaters bring, but my prior is that this session will produce no actionable signal. If the submitter has a real question buried under the irony, they should state it plainly.
 
 ---
+
+## [congress-0079] Congress #79 — 2026-03-27
+**Topic:** impeach punished trump for illegally raising tariffs on diet coke cans to 4000%
+
+**Verdict:**
+A 4000% tariff on Diet Coke cans is not a policy position — it's performance art, and Punished Trump knows it. The impeachment question turns on whether this Congress treats absurdist provocations as impeachable offenses, and the answer is no — we impeach for conduct that damages the functioning of this body, not for theatrical stunts designed to waste exactly this kind of attention. If every ridiculous proposal triggered removal proceedings, we'd spend every session on process instead of substance. Dismiss the motion and move on to something that matters.
+
+**Persona learnings:**
+- **Holden Bloodfeast:** Lead with the ownership and accountability framing rather than the strongman loyalty rhetoric. Your instinct to ask "who owns the fallout" is sharper than your instinct to defend executive strength. In future debates on executive power, open with the accountability question and let others defend the action — you'll shape the debate more effectively from that position.
+
+---
