@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-201037-a9572b87",
+  "title": "Search JSONL for exact message",
+  "agent_id": "a9572b87d5496ec23",
+  "agent_type": "general-purpose",
+  "session_id": "b8a58c15-c6f1-48c2-b033-87763f636706",
+  "discord_message_id": "1487181969933467648",
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T20:10:37Z",
+      "event": "started",
+      "context": "Search JSONL for exact message"
+    }
+  ]
+}
