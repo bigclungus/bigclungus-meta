@@ -14,6 +14,12 @@
       "ts": "2026-03-27T02:38:50Z",
       "event": "started",
       "context": "Handle heartbeat trigger"
+    },
+    {
+      "ts": "2026-03-27T02:40:01Z",
+      "event": "done",
+      "context": "The Graphiti graph has no signal on user interests or recurring topics. Per the instructions, if no clear graph signal exists, skip lab creation — do not invent a pretext.\n\nAll heartbeat checks complete:\n\n1. **Stale tasks**: 0 found, 0 stale\n2. **GitHub issues**: Issue #66 open (\"Show Trials — adversarial trial format with defendant present\") — labeled `idea`, no clear small actionable work to pick up directly (it's a major Congress-adjacent feature proposal, not a minor fix)\n3. **Failed service...(truncated)",
+      "artifacts": []
     }
   ]
 }
