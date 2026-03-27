@@ -20,6 +20,17 @@
       "event": "milestone",
       "ts": "2026-03-27T06:07:52Z",
       "message": "Source verdict: The crux here is simple: a FIRE verdict that does nothing is a lie to the audience, and systems that lie about their own consequences rot from the inside. The supermajority requirement is the tell \u2014 w..."
+    },
+    {
+      "event": "milestone",
+      "ts": "2026-03-27T06:09:56.351884Z",
+      "message": "Added meme-mode theatrical-only comment in trial_apply_fire_verdict and updated CONGRESS_PROCESS.md with Show Trial FIRE section"
+    },
+    {
+      "event": "done",
+      "ts": "2026-03-27T06:11:33.310965Z",
+      "message": "meme-mode theatrical-only documented in trial_act.py and CONGRESS_PROCESS.md (bigclungus-meta 125efcf)"
     }
-  ]
+  ],
+  "status": "done"
 }

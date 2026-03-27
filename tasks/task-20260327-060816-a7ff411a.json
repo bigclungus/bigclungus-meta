@@ -14,6 +14,12 @@
       "ts": "2026-03-27T06:08:16Z",
       "event": "started",
       "context": "Implement trial FIRE enforcement + docs"
+    },
+    {
+      "ts": "2026-03-27T06:11:51Z",
+      "event": "done",
+      "context": "Both tasks are done. Here's a summary of what was implemented:\n\n**Task 1 — Mode-gated FIRE enforcement:**\n\n- Added `trial_apply_fire_verdict(defendant, defendant_display, mode)` activity to `/mnt/data/temporal-workflows/activities/trial_act.py`\n- In standard mode: reads the persona's `.md` file from `AGENTS_DIR`, runs the same `re.sub` replacing `status: <anything>` with `status: meme` that `congress_evolve` uses in `congress_act.py`. Includes the same path-traversal safety checks.\n- In meme mod...(truncated)",
+      "artifacts": []
     }
   ]
 }
