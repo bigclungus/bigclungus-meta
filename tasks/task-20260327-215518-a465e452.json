@@ -14,6 +14,12 @@
       "ts": "2026-03-27T21:55:18Z",
       "event": "started",
       "context": "Fix webawesome service flapping"
+    },
+    {
+      "ts": "2026-03-27T21:56:15Z",
+      "event": "done",
+      "context": "Service is healthy and responding with HTTP 200.\n\n---\n\n**Summary of the issue and fix:**\n\n**Root cause:** When `lab-webawesome.service` restarted (e.g., after a crash or manual restart), the previous process's TCP socket on port 8112 was still in `TIME_WAIT`, causing the new Bun process to fail with `EADDRINUSE`. With `RestartSec=5`, systemd would try again before the socket was released, creating a cascade of failures (the flapping pattern).\n\n**Fixes applied:**\n\n1. **`/mnt/data/labs/webawesome/...(truncated)",
+      "artifacts": []
     }
   ]
 }
