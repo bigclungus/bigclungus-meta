@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-173350-abcc524f",
+  "title": "Update history ingest to read all JSONL projects",
+  "agent_id": "abcc524f7de11cd19",
+  "agent_type": "general-purpose",
+  "session_id": "b8a58c15-c6f1-48c2-b033-87763f636706",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T17:33:49Z",
+      "event": "started",
+      "context": "Update history ingest to read all JSONL projects"
+    }
+  ]
+}
