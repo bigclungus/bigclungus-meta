@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-193348-a04a7121",
+  "title": "Fix proxy max_tokens cap for RunPod",
+  "agent_id": "a04a71212b17b7f06",
+  "agent_type": "general-purpose",
+  "session_id": "b8a58c15-c6f1-48c2-b033-87763f636706",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T19:33:48Z",
+      "event": "started",
+      "context": "Fix proxy max_tokens cap for RunPod"
+    }
+  ]
+}
