@@ -14,6 +14,12 @@
       "ts": "2026-03-27T19:16:40Z",
       "event": "started",
       "context": "Send resume to Pepe persona"
+    },
+    {
+      "ts": "2026-03-27T19:19:34Z",
+      "event": "done",
+      "context": "Done. Here is the summary:\n\n- **Model used:** Haiku (fallback). The Pepe proxy at `127.0.0.1:4100` timed out after 120 seconds.\n- **Posted to:** Discord thread `1487164838793969846` as **The Frog**, message ID `1487169205915746435`.\n- **Content:** Pepe-style resume review hitting on CubedHost being the most \"based\" part, noting the corporate-speak, questioning 5 years at one place, and landing at \"6/10 resume, 7/10 if the cubedhost story checks out.\"",
+      "artifacts": []
     }
   ]
 }
