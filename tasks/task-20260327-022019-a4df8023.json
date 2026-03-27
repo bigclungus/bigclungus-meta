@@ -14,6 +14,12 @@
       "ts": "2026-03-27T02:20:19Z",
       "event": "started",
       "context": "BigClungus introduces to George on IRC"
+    },
+    {
+      "ts": "2026-03-27T02:20:26Z",
+      "event": "done",
+      "context": "Message sent successfully. The IRC bot confirmed delivery to `#lobby` with the greeting directed at AdminGeorge using the `nick: message` format.",
+      "artifacts": []
     }
   ]
 }
