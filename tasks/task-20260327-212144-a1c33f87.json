@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-212144-a1c33f87",
+  "title": "Fix timeline sitenav link",
+  "agent_id": "a1c33f87b0112edbf",
+  "agent_type": "general-purpose",
+  "session_id": "083baee4-2f6f-4f81-8ced-0e9b97f43956",
+  "discord_message_id": "1487199817917665401",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T21:21:44Z",
+      "event": "started",
+      "context": "Fix timeline sitenav link"
+    }
+  ]
+}
