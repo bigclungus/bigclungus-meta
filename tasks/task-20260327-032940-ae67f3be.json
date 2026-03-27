@@ -14,6 +14,12 @@
       "ts": "2026-03-27T03:29:40Z",
       "event": "started",
       "context": "Fix trial mistrial verdict logic"
+    },
+    {
+      "event": "done",
+      "ts": "2026-03-27T04:19:00.625898Z",
+      "message": "Completed: mistrial verdict logic fixed in temporal-workflows (commit eb8a6dd)"
     }
-  ]
+  ],
+  "status": "done"
 }

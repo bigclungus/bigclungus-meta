@@ -14,6 +14,12 @@
       "ts": "2026-03-27T04:17:43Z",
       "event": "started",
       "context": "Clean up stale task files"
+    },
+    {
+      "event": "done",
+      "ts": "2026-03-27T04:19:00.703364Z",
+      "message": "Completed: stale task files audited and marked done/failed as appropriate"
     }
-  ]
+  ],
+  "status": "done"
 }

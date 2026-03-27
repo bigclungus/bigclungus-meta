@@ -14,6 +14,12 @@
       "ts": "2026-03-27T03:31:57Z",
       "event": "started",
       "context": "Extend show trial for Discord user defendants"
+    },
+    {
+      "event": "done",
+      "ts": "2026-03-27T04:19:00.673161Z",
+      "message": "Completed: Discord user defendants supported with Graphiti facts + Discord history enrichment (commit a10fd6a)"
     }
-  ]
+  ],
+  "status": "done"
 }
