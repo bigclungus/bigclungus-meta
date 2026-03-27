@@ -294,6 +294,28 @@ After reporting, execute the command.
 
 ---
 
+## Discord History Search
+
+Semantic search over Discord message history via sqlite-vec + OpenAI embeddings.
+
+**Script:** `/mnt/data/scripts/history <query>`
+
+```bash
+# Search for relevant past messages
+/mnt/data/scripts/history "what did centronias say about the commons redesign"
+/mnt/data/scripts/history "jaboostin's opinion on vector databases" --limit 10
+/mnt/data/scripts/history "z-order warthog bug" --author relarey
+```
+
+**Use this whenever:**
+- A user references something from a past session that's not in your current context
+- You need to recall what was discussed/decided about a topic
+- A user asks "do you remember when..." or references earlier work
+
+**Ingest:** Runs every 10 minutes via cron (`history-ingest.py`). DB at `/mnt/data/data/discord-history.db`.
+
+---
+
 ## Task Logging
 
 When working on a task from `/home/clungus/work/bigclungus-meta/tasks/`, log meaningful milestones as you go using:
