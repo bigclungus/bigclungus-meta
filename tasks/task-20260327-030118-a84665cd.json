@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-030118-a84665cd",
+  "title": "Debug duplicate votes and missing thread in congress-0084",
+  "agent_id": "a84665cd73f64bb64",
+  "agent_type": "general-purpose",
+  "session_id": "e3ea5000-d340-46d8-a63c-960e3baff74f",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T03:01:18Z",
+      "event": "started",
+      "context": "Debug duplicate votes and missing thread in congress-0084"
+    }
+  ]
+}
