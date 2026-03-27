@@ -205,3 +205,13 @@ BigClungus announced Congress #71 ("congress is convening") after creating the s
 Giga fired on centronias's emoji poll removal request because no visible acknowledgment appeared before the intervention window closed (~30 seconds). In reality, BigClungus had already reacted with 🔧 and dispatched a background agent — the action was in progress. The issue is timing: the 🔧 react and/or agent dispatch were not fast enough to register before Giga's patience expired. Rule: the 🔧 react must be the very first action on any delegated task, issued before any background agent is spawned. Even a brief "on it" Discord reply buys time. The giga trigger was a false positive — work was already underway — but the visibility gap is real and should be closed.
 
 ---
+
+## use-terminate-not-cancel
+**count:** 1
+**first:** 2026-03-27
+**last:** 2026-03-27
+**severity:** suggestion (1 occurrence)
+
+Congress #71 continued posting rounds after BigClungus declared it cancelled. Root cause: used `temporal workflow cancel` (graceful — in-flight activities complete) instead of `temporal workflow terminate` (immediate). When duplicate workflows need to be stopped, always use `terminate`, not `cancel`.
+
+---
