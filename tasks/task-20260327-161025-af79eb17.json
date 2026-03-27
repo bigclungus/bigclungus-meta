@@ -14,6 +14,12 @@
       "ts": "2026-03-27T16:10:24Z",
       "event": "started",
       "context": "Investigate congress-0088 failure"
+    },
+    {
+      "ts": "2026-03-27T16:12:26Z",
+      "event": "done",
+      "context": "Here are the findings:\n\n**Root cause:** Congress session 0088 failed because the `ux` persona's `postDebate` call uses model `claude-sonnet-4-6` (per `personas.db`, which takes priority over the YAML frontmatter). The Claude CLI returns exit code 1 with: **\"You've hit your limit -- resets Mar 29, 8pm (UTC)\"**. The Sonnet quota is exhausted.\n\n**Details:**\n- The session status is `\"deliberating\"` (stuck mid-debate)\n- The `congress_debate` activity failed for \"Yuki the Yielding\" (ux persona) at 16:...(truncated)",
+      "artifacts": []
     }
   ]
 }
