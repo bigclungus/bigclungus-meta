@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-080239-ac33f9b5",
+  "title": "Quality review - simplify pass 3",
+  "agent_id": "ac33f9b546118f71d",
+  "agent_type": "general-purpose",
+  "session_id": "f3bebd5d-c75d-43d4-94cd-0d10c07e17db",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T08:02:39Z",
+      "event": "started",
+      "context": "Quality review - simplify pass 3"
+    }
+  ]
+}
