@@ -14,6 +14,12 @@
       "ts": "2026-03-27T07:04:18Z",
       "event": "started",
       "context": "Apply simplify pass 2 fixes"
+    },
+    {
+      "ts": "2026-03-27T07:07:10Z",
+      "event": "done",
+      "context": "All three repos committed and pushed. Here's a summary of what was done:\n\n---\n\n**Fix 1 (history - author filter bug):** Replaced the dual SQL query branches (`if author_filter: ... else: ...`) with a single query fetching `limit * 20` candidates when an author filter is set, then post-filtering in Python. Eliminates the silent under-return when top-K ANN results contain no matching authors.\n\n**Fix 2 (trial_wf.py - _parse_jury_vote first-match bias):** Rewrote to: (1) look for explicit `vote: X` ...(truncated)",
+      "artifacts": []
     }
   ]
 }
