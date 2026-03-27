@@ -14,6 +14,12 @@
       "ts": "2026-03-27T19:08:30Z",
       "event": "started",
       "context": "Handle pepe persona invoke"
+    },
+    {
+      "ts": "2026-03-27T19:08:41Z",
+      "event": "done",
+      "context": "Clunger accepted the request and injected the persona-invoke back. The `[persona-invoke]` message for Pepe will arrive via the inject endpoint, and I'll handle it when it comes through.\n\n**Summary:** Forwarded the `[pepe] what should I do` request to clunger at `localhost:8081/api/discord/persona`. Clunger returned `ok: true` with display name \"Pepe\" and confirmed the inject was sent. The persona-invoke flow will complete when the injected message arrives back.",
+      "artifacts": []
     }
   ]
 }
