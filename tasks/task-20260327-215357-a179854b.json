@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-215357-a179854b",
+  "title": "Audit timeline events",
+  "agent_id": "a179854bd26271bc2",
+  "agent_type": "general-purpose",
+  "session_id": "083baee4-2f6f-4f81-8ced-0e9b97f43956",
+  "discord_message_id": "1487207991458533530",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T21:53:57Z",
+      "event": "started",
+      "context": "Audit timeline events"
+    }
+  ]
+}
