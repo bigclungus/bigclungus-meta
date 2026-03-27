@@ -14,6 +14,12 @@
       "ts": "2026-03-27T02:43:37Z",
       "event": "started",
       "context": "Refire robot arm congress"
+    },
+    {
+      "ts": "2026-03-27T02:43:44Z",
+      "event": "done",
+      "context": "Workflow started successfully.\n\nWorkflow ID: `congress-robotarm2-c9d2ae5a`",
+      "artifacts": []
     }
   ]
 }
