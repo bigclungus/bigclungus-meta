@@ -14,6 +14,12 @@
       "ts": "2026-03-27T01:26:48Z",
       "event": "started",
       "context": "Cancel Congress #71 Temporal workflow"
+    },
+    {
+      "ts": "2026-03-27T01:27:11Z",
+      "event": "done",
+      "context": "Both tasks are complete:\n\n1. **Temporal workflow cancelled** - `temporal workflow cancel --workflow-id congress-0071` succeeded on the first attempt (no termination needed).\n\n2. **Session file updated** - `/home/clungus/work/hello-world/sessions/congress-0071.json` already had `status: \"cancelled\"` set (appears the cancellation handler updated it automatically). The `cancel_reason` field has been updated to: \"Duplicate of congress-0072 which already produced a verdict\".",
+      "artifacts": []
     }
   ]
 }
