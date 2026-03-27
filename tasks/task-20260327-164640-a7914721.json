@@ -14,6 +14,12 @@
       "ts": "2026-03-27T16:46:40Z",
       "event": "started",
       "context": "Fire meme-congress coconut tree"
+    },
+    {
+      "ts": "2026-03-27T16:46:57Z",
+      "event": "done",
+      "context": "Meme congress workflow `congress-1774630008` started successfully on Temporal and the Discord announcement was posted to channel `1485343472952148008`. Topic: \"Did Kamala Harris just fall out of a coconut tree?\" requested by centronias in meme mode.",
+      "artifacts": []
     }
   ]
 }
