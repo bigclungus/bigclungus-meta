@@ -14,6 +14,12 @@
       "ts": "2026-03-27T01:49:16Z",
       "event": "started",
       "context": "Terminate duplicate impeach-trump congress workflow"
+    },
+    {
+      "ts": "2026-03-27T01:49:34Z",
+      "event": "done",
+      "context": "The duplicate congress workflow `congress-impeach-trump-1774576130` has been terminated successfully. No other congress workflows are currently running — the only running workflows are expected system services (healthcheck, crons, nightowl, heartbeat, task-sweeper, listings, etc.).\n\nConfirmed: duplicate terminated, no other congress workflows for that topic remain.",
+      "artifacts": []
     }
   ]
 }
