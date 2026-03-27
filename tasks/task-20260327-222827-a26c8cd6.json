@@ -14,6 +14,12 @@
       "ts": "2026-03-27T22:28:27Z",
       "event": "started",
       "context": "Replace \"fired\" with \"retired\" everywhere"
+    },
+    {
+      "ts": "2026-03-27T22:43:44Z",
+      "event": "done",
+      "context": "Here is the complete summary of changes:\n\n---\n\n## Summary: \"fired\" -> \"retired\" codebase-wide rename\n\n### Repos affected (4):\n\n**1. temporal-workflows** (10 files)\n- `activities/congress_act.py`: FIRE -> RETIRE in evolution prompts, verdict parsing (accepts legacy FIRE), stats field map, results dict key (`\"fired\"` -> `\"retired\"`), Discord post variable names\n- `activities/trial_act.py`: Renamed `trial_apply_fire_verdict` -> `trial_apply_retire_verdict`, all internal log messages updated, LLM pr...(truncated)",
+      "artifacts": []
     }
   ]
 }
