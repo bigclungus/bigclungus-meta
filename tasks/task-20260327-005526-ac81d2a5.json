@@ -14,6 +14,12 @@
       "ts": "2026-03-27T00:55:26Z",
       "event": "started",
       "context": "Close #65 and debug heartbeat dedup fix"
+    },
+    {
+      "ts": "2026-03-27T01:00:40Z",
+      "event": "done",
+      "context": "Done. Here's the summary:\n\n---\n\n**Root cause: two bugs in `is_duplicate_finding`**\n\nBug 1 — Dynamic count in search term. The finding string contains the current failure count (e.g. `\"has failed 2x in last 24h\"`). The dedup took the first 60 chars verbatim as the search term, so when the count changed to `4x` on the next heartbeat cycle the query no longer matched the existing `2x` issue. GitHub does exact token matching, not fuzzy matching.\n\nBug 2 — Em-dash kills the GitHub search API. Every fi...(truncated)",
+      "artifacts": []
     }
   ]
 }
