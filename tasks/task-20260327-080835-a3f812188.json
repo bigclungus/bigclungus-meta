@@ -20,6 +20,17 @@
       "event": "milestone",
       "ts": "2026-03-27T08:08:35Z",
       "message": "Source verdict: Implement it, triggered by GitHub webhook post-merge \u2014 not periodic, not manual. Periodic misses the window where context is fresh; manual defeats the purpose. It should check for correctness regressi..."
+    },
+    {
+      "event": "milestone",
+      "ts": "2026-03-27T08:15:53.379483Z",
+      "message": "scope boundaries documented in TRIGGERS.md"
+    },
+    {
+      "event": "done",
+      "ts": "2026-03-27T08:16:36.023533Z",
+      "message": "TRIGGERS.md updated \u2014 bigclungus-meta 272ed72"
     }
-  ]
+  ],
+  "status": "done"
 }
