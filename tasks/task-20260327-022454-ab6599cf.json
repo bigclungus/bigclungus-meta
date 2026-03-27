@@ -14,6 +14,12 @@
       "ts": "2026-03-27T02:24:54Z",
       "event": "started",
       "context": "Log prose-violation giga intervention"
+    },
+    {
+      "ts": "2026-03-27T02:26:04Z",
+      "event": "done",
+      "context": "`/mnt/data` (and its symlink `/home/clungus/work`) is not itself a git repo. The `giga-log.md` at `/mnt/data/giga-log.md` is a standalone file outside any repo. The canonical versioned copy lives in `bigclungus-meta/giga-log.md`, which has been committed and pushed.\n\nDone. Here is a summary of what was done:\n\n- Read `/mnt/data/giga-log.md` to match the existing format (count/first/last/severity/description pattern).\n- Appended the new `prose-guideline-violation` entry to both `/mnt/data/giga-log...(truncated)",
+      "artifacts": []
     }
   ]
 }
