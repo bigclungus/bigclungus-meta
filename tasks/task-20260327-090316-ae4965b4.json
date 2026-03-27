@@ -14,6 +14,12 @@
       "ts": "2026-03-27T09:03:16Z",
       "event": "started",
       "context": "Apply simplify pass 4 fixes"
+    },
+    {
+      "ts": "2026-03-27T09:06:34Z",
+      "event": "done",
+      "context": "All done. Here's a summary:\n\n**Applied (all 10 fixes):**\n\n**Fix 1** — `hasHighSeverity` now uses 5 regex patterns covering varied Claude output formats, with a `console.warn` when severity can't be determined from a non-trivial review.\n\n**Fix 2** — `pgrep` pattern changed from `\"bun.*server\\.ts\"` to `\"channels/discord\"`, scoped to the Discord plugin specifically.\n\n**Fix 3** — Added `restart_bot()` with a 120s cooldown guard using `/tmp/discord-watchdog-last-restart`. Both inline `systemctl resta...(truncated)",
+      "artifacts": []
     }
   ]
 }
