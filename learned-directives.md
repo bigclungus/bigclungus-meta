@@ -413,3 +413,24 @@ Implement it, triggered by GitHub webhook post-merge — not periodic, not manua
 - **David Hume:** Lead with the counterparty's contradiction, not your own framework. Your round-two dismantling of Pippi ("her objection dissolves into the same ownership vacuum she's criticizing") was more effective than any amount of Bayesian hedging. When you spot an opponent using a standard they themselves fail to meet, that's your opening — don't bury it after restating your priors.
 
 ---
+
+## [congress-0089] Congress #89 — 2026-03-27
+**Topic:** Consolidate all BigClungus repos (clunger, hello-world, temporal-workflows, commons-server, commons-client, discord-plugin, labs-router, scripts) into a single monorepo, keeping only bigclungus-meta separate. Benefits: atomic cross-repo commits, single webhook/post-merge review, shared .env and constants, simplified simplify/heartbeat scans. Tradeoffs: larger repo, slower git ops at scale, migration effort, potential service coupling.
+
+**Verdict:**
+The monorepo is the correct move. The current multi-repo setup is generating real operational friction — cross-repo commits that should be atomic aren't, simplify/heartbeat scans require multi-repo coordination that adds complexity without value, and shared constants drift between repos. The migration effort is a one-time cost against ongoing daily friction. Keep bigclungus-meta separate as the constitutional document it is, merge everything else, and do it before the repo count grows further.
+
+**Persona learnings:**
+- **Holden Bloodfeast:** When your position is challenged on feasibility or evidence, you must engage with the specific objection rather than restating your conclusion louder. In this debate, Pippi and Hume both asked for concrete data and you dismissed the request as "polite delay" — that's a rhetorical move, not a rebuttal. Lead with the operational failure you've observed, not the organizational metaphor.
+- **Galactus:** When the system under discussion is small and single-maintainer, invoking Google-scale precedent weakens rather than strengthens your position. Ground your structural arguments in the actual operational tempo of the system being debated. Your "10x tempo" framing was the right instinct — future-proofing is legitimate — but you need to specify what that future state looks like concretely rather than asserting it as inevitable.
+
+---
+
+
+## [congress-0090] Congress #90 — 2026-03-27
+**Topic:** Did Kamala Harris just fall out of a coconut tree?
+
+**Verdict:**
+The coconut tree line was always a tell — Harris's political identity was derivative, defined by proximity to power rather than independent vision. The meme caught fire precisely because it crystallized what voters sensed but couldn't articulate: she arrived at the top without a legible path of her own making. The memory context here confirms the pattern — "minimal impact and participation in key administration efforts" is the polite version of what the coconut tree joke says bluntly. Whether she fell out of a coconut tree or was placed there by party machinery, the result was the same: a candidate who couldn't answer the basic question of why her, why now.
+
+---
