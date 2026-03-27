@@ -14,6 +14,12 @@
       "ts": "2026-03-27T18:03:01Z",
       "event": "started",
       "context": "Check RunPod key and deploy Pepe 70B"
+    },
+    {
+      "ts": "2026-03-27T19:03:00Z",
+      "event": "done",
+      "msg": "Pepe 70B deployed on RunPod serverless, proxy integrated"
     }
-  ]
+  ],
+  "status": "done"
 }

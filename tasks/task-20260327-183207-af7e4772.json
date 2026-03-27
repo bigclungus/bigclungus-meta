@@ -20,6 +20,12 @@
       "event": "done",
       "context": "Posted to Discord. Here's the summary:\n\n## Results\n\n**Proxy integration complete** -- `/mnt/data/ccr/proxy.py` now routes `pepe`/`pepe-70b` model requests to RunPod serverless endpoint `o1b0e41cm3obbh`. Key changes:\n\n- Added `RUNPOD_API_KEY` env var (read from `/mnt/data/clunger/.env`)\n- `is_pepe_model()` check routes any model starting with \"pepe\" to `handle_runpod_pepe()`\n- Uses RunPod's OpenAI-compatible format: `{\"input\": {\"openai_route\": \"/v1/chat/completions\", \"openai_input\": {...}}}`\n- As...(truncated)",
       "artifacts": []
+    },
+    {
+      "ts": "2026-03-27T19:03:00Z",
+      "event": "done",
+      "msg": "Pepe 70B deployed on RunPod serverless, proxy integrated"
     }
-  ]
+  ],
+  "status": "done"
 }
