@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-201205-a545f32e",
+  "title": "Find queue-operation for msg 3",
+  "agent_id": "a545f32e4fbeeb0d9",
+  "agent_type": "general-purpose",
+  "session_id": "b8a58c15-c6f1-48c2-b033-87763f636706",
+  "discord_message_id": "1487182315384865010",
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T20:12:05Z",
+      "event": "started",
+      "context": "Find queue-operation for msg 3"
+    }
+  ]
+}
