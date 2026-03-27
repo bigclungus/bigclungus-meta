@@ -14,6 +14,12 @@
       "ts": "2026-03-27T23:43:28Z",
       "event": "started",
       "context": "Check Bokoen1 progress + cleanup"
+    },
+    {
+      "ts": "2026-03-27T23:44:00Z",
+      "event": "done",
+      "context": "Here are the results:\n\n**Downloaded transcripts:** 191 files in `/tmp/bokoen1/`\n\n**Graphiti ingestion:** 28 episodes in the `bokoen1_transcripts` group (27 real transcripts + 1 \"Test Bokoen1\" entry). So roughly 27 unique transcripts made it into Graphiti.\n\nThat's more than the 19 you expected from the first agent -- looks like a second batch partially succeeded too, getting about 8 more in before failing.\n\n**Summary:**\n- 191 transcripts downloaded to `/tmp/bokoen1/`\n- 28 episodes ingested into G...(truncated)",
+      "artifacts": []
     }
   ]
 }
