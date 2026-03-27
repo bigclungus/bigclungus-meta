@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-194834-a3f91aa4",
+  "title": "Fix terminal autoscroll behavior",
+  "agent_id": "a3f91aa4e4d8d4ccc",
+  "agent_type": "general-purpose",
+  "session_id": "b8a58c15-c6f1-48c2-b033-87763f636706",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T19:48:34Z",
+      "event": "started",
+      "context": "Fix terminal autoscroll behavior"
+    }
+  ]
+}
