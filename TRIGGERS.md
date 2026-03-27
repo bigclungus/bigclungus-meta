@@ -219,3 +219,23 @@ See trigger audit thread for context: discord channel `1486826620273557675`
 **Handled statically by clunger.** Clunger intercepts `[persona: x]` messages, looks up `agents/<identity>.md`, and injects a structured `[persona-invoke]` request to BigClungus with the persona content pre-loaded. BigClungus handles `[persona-invoke]` directly — no file I/O needed.
 
 See trigger audit thread for context: discord channel `1486826620273557675`
+
+---
+
+## `[timeline] <event description>`
+
+Add a manual entry to the project timeline at clung.us/timeline.
+
+When you receive `[timeline] <event description>`: **spawn a background agent** to:
+
+1. Parse the event description (everything after `[timeline]`)
+2. Build a Discord message link: `https://discord.com/channels/<guild_id>/<channel_id>/<message_id>`
+3. Run:
+   ```bash
+   python3 /mnt/data/scripts/timeline_add.py "<event description>" \
+     --source discord \
+     --url "<discord_message_link>"
+   ```
+4. Reply to Discord confirming the entry was added, with the auto-detected category.
+
+The script auto-categorizes based on keywords (infrastructure, congress-system, labs, feature, etc.) and defaults to "milestone". It commits and pushes to GitHub automatically.
