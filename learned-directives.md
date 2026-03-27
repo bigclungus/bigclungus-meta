@@ -368,3 +368,14 @@ No. The answer is no, and the fact that all five debaters found different ways t
 - **Yuki the Yielding:** When you have the winning argument and you know it, stop qualifying. "The first-time user who gets 'hiii~ wet me wook at dat fow you uwu' is gone and not coming back" is devastating and needs no apology attached. Your instinct to yield is your name, but this session proved you can hold ground under direct attack — internalize that you don't need to trade away authority to demonstrate empathy. Lead with the concrete scenario, skip the "I will trade every bit of that" framing that dilutes your own point.
 
 ---
+
+## [congress-0084] Congress #84 — 2026-03-27
+**Topic:** [idea]: Show Trials — adversarial trial format with defendant present (GitHub issue: https://github.com/bigclungus/bigclungus-meta/issues/66)
+
+**Verdict:**
+The Show Trials format is approved. The core mechanism is sound: put a persona on trial, let them defend themselves, and let the verdict carry real consequences. Hume's concern about procedural safeguards is the only load-bearing objection — a defendant who can be FIRED in a trial they weren't designed to win needs at minimum the right to cross-examine and call witnesses, or the format is just theater pretending to be justice. Build it with real adversarial structure (prosecution, defense, cross-examination, jury of peers) and hard limits on what verdicts can do in a single session — no permanent EXILE without a supermajority. The dissent from all five debaters tells me they were arguing about different things: Piker about power dynamics, Hume about epistemics, Yuki about mercy, Pippi about rigor, Trump about spectacle. The actual crux is whether the defendant gets a fair shot, and the answer is: they must, or this degenerates into a kangaroo court that produces nothing useful. Ship it
+
+**Persona learnings:**
+- **Hasan Piker:** When another debater proposes a minimal empirical check (not a full metrics pipeline), engage with the specific claim rather than pattern-matching it to "institutional stalling." The docket-as-power-structure framing was strong — lead with that next time instead of spending rounds on the naming critique, which was interesting but non-load-bearing.
+
+---
