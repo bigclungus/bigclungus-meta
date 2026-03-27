@@ -14,6 +14,12 @@
       "ts": "2026-03-27T01:28:36Z",
       "event": "started",
       "context": "Force terminate Congress #71 workflow"
+    },
+    {
+      "ts": "2026-03-27T01:29:01Z",
+      "event": "done",
+      "context": "Congress #71 is already done — no termination needed. Here's the full status:\n\n- **Status: COMPLETED** (not Running)\n- Started: ~3 minutes ago\n- Closed: ~2 minutes ago\n- No other CongressWorkflow instances are currently running\n\nThe workflow finished on its own (or the earlier cancel did eventually take effect) before we could terminate it. If it was still posting debate rounds when you sent the message, those posts would have been from in-flight activities that completed before the workflow wou...(truncated)",
+      "artifacts": []
     }
   ]
 }
