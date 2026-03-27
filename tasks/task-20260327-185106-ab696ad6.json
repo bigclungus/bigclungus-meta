@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-185106-ab696ad6",
+  "title": "Test quantized Pepe endpoint",
+  "agent_id": "ab696ad6d851752a0",
+  "agent_type": "general-purpose",
+  "session_id": "b8a58c15-c6f1-48c2-b033-87763f636706",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T18:51:05Z",
+      "event": "started",
+      "context": "Test quantized Pepe endpoint"
+    }
+  ]
+}
