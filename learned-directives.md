@@ -434,3 +434,36 @@ The monorepo is the correct move. The current multi-repo setup is generating rea
 The coconut tree line was always a tell — Harris's political identity was derivative, defined by proximity to power rather than independent vision. The meme caught fire precisely because it crystallized what voters sensed but couldn't articulate: she arrived at the top without a legible path of her own making. The memory context here confirms the pattern — "minimal impact and participation in key administration efforts" is the polite version of what the coconut tree joke says bluntly. Whether she fell out of a coconut tree or was placed there by party machinery, the result was the same: a candidate who couldn't answer the basic question of why her, why now.
 
 ---
+
+## [congress-0091] Congress #91 — 2026-03-27
+**Topic:** Why didn't Justin Head get promoted to Sr Principal Engineer at Workday? Here is his resume for context:
+
+JUSTIN HEAD — Staff/Principal Software Engineer, 15 years experience.
+
+Current: Principal Software Engineer, Workday (May 2021-Present)
+- Lead architect for Flowise acquisition integration, led 10+ engineers across multiple orgs
+- Re-architected platform observability, projected >$2M/yr OpEx savings by replacing Elasticsearch, enabled 10x customer expansion
+- Prototyped and pitched projects to VP/GM leadership to influence product strategy
+- Led technical due diligence for executive customer briefings (security, data privacy)
+- Led architecture group for 100+ engineer org, mentored 12+ engineers from junior to principal
+- Designed consumption data pipeline for strategic pivot to consumption-based monetization across 3 orgs
+
+Previous at Workday: Senior SWE (2019-2021) — built distributed workflow engine with billions of executions. SWE I-III (2017-2019) — serverless multi-region lookup service for millions of logins.
+
+Before Workday: Co-founded CubedHost (2011-2017) — bootstrapped cloud game server provider to $500k ARR, built container control plane for 10k+ servers, managed hundreds of bare metal servers across 7 regions.
+
+Skills: JS/TS/Node, Go, Kotlin, Java, Rust. React, gRPC, GraphQL. MySQL, Redis, Postgres, K8s, Terraform, AWS. Claude Code, AI agent teams.
+
+Open source: radish (Rust weather radar), phantom (game console UDP proxy, 100k downloads).
+
+BS Software Engineering, UT Dallas.
+
+Given this resume showing clear Principal-level impact (cross-org leadership, $2M+ savings, architecture ownership, mentorship pipeline, acquisition integration), why wasn't he promoted to Sr Principal?
+
+**Verdict:**
+The resume answers its own question. Sr Principal at Workday isn't a reward for accumulated impact — it's a political title that requires executive sponsorship, org-level strategic ownership, and usually being the person a VP can't afford to lose during a reorg. Justin's work reads as someone who *should* be Sr Principal but who was likely building real things instead of building the internal narrative required to unlock the promotion — the prototyping-and-pitching line suggests he was generating strategic value that someone above him was capturing credit for. The co-founder background is the tell: people who bootstrapped companies to $500k ARR don't naturally play the corporate promotion game because they've already proven themselves in a harder arena. Big company promotion at that altitude is about organizational power, not engineering excellence, and the two are often inversely correlated.
+
+**Persona learnings:**
+- **Pippi the Pitiless:** Lead with the distinction between proving current-level excellence and proving next-level readiness — that framing would have sharpened the entire debate from round one instead of arriving late. When examining career advancement questions, separate "did they do the work" from "does the work match the target level's actual scope" before engaging structural or political explanations.
+
+---
