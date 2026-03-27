@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-190409-aad7c8e7",
+  "title": "Create Pepe persona for Congress",
+  "agent_id": "aad7c8e7c45dbe9c1",
+  "agent_type": "general-purpose",
+  "session_id": "b8a58c15-c6f1-48c2-b033-87763f636706",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T19:04:09Z",
+      "event": "started",
+      "context": "Create Pepe persona for Congress"
+    }
+  ]
+}
