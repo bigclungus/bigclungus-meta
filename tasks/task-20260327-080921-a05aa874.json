@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-080921-a05aa874",
+  "title": "Build post-merge code review system",
+  "agent_id": "a05aa8748e1083935",
+  "agent_type": "general-purpose",
+  "session_id": "f3bebd5d-c75d-43d4-94cd-0d10c07e17db",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T08:09:21Z",
+      "event": "started",
+      "context": "Build post-merge code review system"
+    }
+  ]
+}
