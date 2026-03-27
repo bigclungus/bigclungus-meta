@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-192838-a540eb0f",
+  "title": "Get UX persona review of refinery page",
+  "agent_id": "a540eb0fd94124cd3",
+  "agent_type": "general-purpose",
+  "session_id": "b8a58c15-c6f1-48c2-b033-87763f636706",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T19:28:38Z",
+      "event": "started",
+      "context": "Get UX persona review of refinery page"
+    }
+  ]
+}
