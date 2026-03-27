@@ -14,6 +14,12 @@
       "ts": "2026-03-27T18:51:05Z",
       "event": "started",
       "context": "Test quantized Pepe endpoint"
+    },
+    {
+      "ts": "2026-03-27T19:03:05Z",
+      "event": "done",
+      "context": "Done. Here's the summary:\n\n- **Endpoint:** `o1b0e41cm3obbh` (Pepe 70B GPTQ)\n- **Cold start time:** ~298 seconds (~5 minutes) — jobs submitted during cold start sat IN_QUEUE and earlier ones expired before the worker was ready\n- **Inference time:** ~3 seconds for 100 output tokens\n- **Model output:** Successfully generated coherent text in a Pepe-style voice\n- **Health at test time:** 2 workers running, 1 throttled, 0 idle/ready — consistent with cold start behavior\n- **Results posted** to Discor...(truncated)",
+      "artifacts": []
     }
   ]
 }
