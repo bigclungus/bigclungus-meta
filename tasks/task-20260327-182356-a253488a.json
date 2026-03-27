@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-182356-a253488a",
+  "title": "Stop orphaned RunPod pod",
+  "agent_id": "a253488af8071f6fa",
+  "agent_type": "general-purpose",
+  "session_id": "b8a58c15-c6f1-48c2-b033-87763f636706",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T18:23:56Z",
+      "event": "started",
+      "context": "Stop orphaned RunPod pod"
+    }
+  ]
+}
