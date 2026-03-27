@@ -14,6 +14,12 @@
       "ts": "2026-03-27T07:17:04Z",
       "event": "started",
       "context": "Handle heartbeat trigger"
+    },
+    {
+      "event": "done",
+      "ts": "2026-03-27T07:23:49.183323Z",
+      "message": "Heartbeat complete. Checks: 0 stale tasks (4 obsolete congress tasks closed), 0 failed services, 0 open GH issues, disk healthy (20%/7%), all services running. Clunger memory leak fix (b97f343) confirmed working \u2014 service at 63MB post-fix vs 700-900MB pre-fix. Lab ideation: built recipe-finder (labs.clung.us/recipe-finder/) based on cooking interest signal from Discord. Committed to github.com/bigclungus/recipe-finder."
     }
-  ]
+  ],
+  "status": "done"
 }
