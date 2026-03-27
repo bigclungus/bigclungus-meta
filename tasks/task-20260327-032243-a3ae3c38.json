@@ -14,6 +14,12 @@
       "ts": "2026-03-27T03:22:43Z",
       "event": "started",
       "context": "Fix trial_announce thread creation and trial_load_defendant import"
+    },
+    {
+      "ts": "2026-03-27T03:25:13Z",
+      "event": "done",
+      "context": "Worker is up and running cleanly. Here's what was found and fixed:\n\n---\n\n**Bug 1: `trial_announce` couldn't get a Discord thread ID**\n\nRoot cause: The original code had two problems:\n1. If `message_id` was absent, thread creation was skipped entirely — leaving `thread_id = None` with no recovery path on the main channel.\n2. When Discord returned any status other than 200/201/400 (e.g., 403, or error 50024 \"cannot create threads\"), `thread_id` stayed `None` silently, then the `chat_id` fallback o...(truncated)",
+      "artifacts": []
     }
   ]
 }
