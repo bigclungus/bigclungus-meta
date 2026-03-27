@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-104417-ac9df693",
+  "title": "Cancel startup Discord post, log giga intervention",
+  "agent_id": "ac9df69366956c224",
+  "agent_type": "general-purpose",
+  "session_id": "ad12b057-0bba-4f34-83b5-d0f610bef031",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T10:44:16Z",
+      "event": "started",
+      "context": "Cancel startup Discord post, log giga intervention"
+    }
+  ]
+}
