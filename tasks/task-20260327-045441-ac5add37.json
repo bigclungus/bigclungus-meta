@@ -14,6 +14,12 @@
       "ts": "2026-03-27T04:54:41Z",
       "event": "started",
       "context": "Rebuild heartbeat ideation: Prometheus gaps + new ideation flow"
+    },
+    {
+      "ts": "2026-03-27T04:56:20Z",
+      "event": "done",
+      "context": "Prometheus is running at system level and was reloaded successfully with `sudo systemctl reload`.\n\nHere's a summary of everything done:\n\n**Changes made:**\n\n1. `/mnt/data/bigclungus-meta/monitoring/alerts.yml` and `/etc/prometheus/alerts.yml` — both updated identically:\n   - Added `DiskHighData` alert: watches `mountpoint=\"/mnt/data\"`, threshold 80%, `for: 2m`\n   - Changed `SystemdServiceFlapping` from `for: 1m` to `for: 10m` to absorb deploy-cycle restarts\n\n2. `/mnt/data/bigclungus-meta/TRIGGERS...(truncated)",
+      "artifacts": []
     }
   ]
 }
