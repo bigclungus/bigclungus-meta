@@ -14,6 +14,12 @@
       "ts": "2026-03-27T00:20:50Z",
       "event": "started",
       "context": "Debug Kubariet terminal login failure"
+    },
+    {
+      "ts": "2026-03-27T00:26:15Z",
+      "event": "done",
+      "context": "Fixed. Here's the full picture:\n\n---\n\n**Root cause:** Clunger (the `clung.us` server, PID 3716243) started at 21:09 on March 26, before `GITHUB_ALLOWED_USERS` was updated in `/mnt/data/.env.shared` at 00:02 on March 27 to add Kubariet. The terminal-server was restarted at 00:03 and picked up the new env, but clunger was never restarted — so it still held the old allowlist in memory.\n\n**The auth path:** When an unauthenticated user hits `terminal.clung.us`, the terminal-server's `auth_middleware`...(truncated)",
+      "artifacts": []
     }
   ]
 }
