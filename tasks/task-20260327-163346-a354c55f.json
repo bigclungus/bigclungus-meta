@@ -1,0 +1,19 @@
+{
+  "id": "task-20260327-163346-a354c55f",
+  "title": "Research claude-code-router",
+  "agent_id": "a354c55f2cc522434",
+  "agent_type": "general-purpose",
+  "session_id": "b8a58c15-c6f1-48c2-b033-87763f636706",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-27T16:33:46Z",
+      "event": "started",
+      "context": "Research claude-code-router"
+    }
+  ]
+}
