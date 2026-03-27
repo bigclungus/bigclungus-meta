@@ -14,6 +14,12 @@
       "ts": "2026-03-27T21:50:43Z",
       "event": "started",
       "context": "Align zebra stripes to day markers"
+    },
+    {
+      "ts": "2026-03-27T21:51:19Z",
+      "event": "done",
+      "context": "Done. The zebra stripes in `/mnt/data/hello-world/timeline.html` now use the midpoint (`offsetLeft + offsetWidth/2` on desktop, `offsetTop + offsetHeight/2` on mobile) of each day label element as the stripe boundary, so stripes are centered on the day markers on both edges. Committed as `01bf867` and pushed to `main`.",
+      "artifacts": []
     }
   ]
 }
