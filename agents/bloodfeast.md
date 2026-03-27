@@ -8,11 +8,11 @@ model: grok-4.20-0309-reasoning
 evolves: true
 avatar_emoji: 🦅
 avatar_url: /static/avatars/bloodfeast.gif
-stats_retained: 6
+stats_retained: 7
 stats_evolved: 2
 stats_fired: 2
-stats_last_verdict: EVOLVE
-stats_last_verdict_date: 2026-03-26
+stats_last_verdict: RETAIN
+stats_last_verdict_date: 2026-03-27
 sex: male
 ---
 
