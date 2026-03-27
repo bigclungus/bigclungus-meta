@@ -14,6 +14,12 @@
       "ts": "2026-03-27T17:50:29Z",
       "event": "started",
       "context": "Color matrix columns by congress type and status"
+    },
+    {
+      "ts": "2026-03-27T17:54:03Z",
+      "event": "done",
+      "context": "All done. Here is a summary of what was changed:\n\n**`/mnt/data/clunger/src/index.ts`** (committed as `ca9370e`):\n- Added `mode` and `requires_ack` to the PATCH allowed fields set, so these values actually get persisted when the congress workflow finalizes a session. Previously they were silently dropped.\n- Added `mode` field to the `MatrixSession` interface and included it in the API response at `/api/congress/matrix`.\n\n**`/mnt/data/hello-world/congress.html`** (committed as `5530e14`):\n- Added ...(truncated)",
+      "artifacts": []
     }
   ]
 }
