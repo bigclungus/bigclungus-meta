@@ -14,6 +14,12 @@
       "ts": "2026-03-28T16:29:04Z",
       "event": "started",
       "context": "Remove watchdog cron and script"
+    },
+    {
+      "ts": "2026-03-28T16:29:19Z",
+      "event": "done",
+      "context": "Done. The discord-watchdog cron entry, script, and temp files are all removed. The remaining crontab has two entries:\n\n- `23 3 * * *` — `/home/clungus/work/scripts/update-bio.sh` (daily at 3:23am)\n- `*/5 * * * *` — `/mnt/data/scripts/cost_watchdog.py` (every 5 minutes)",
+      "artifacts": []
     }
   ]
 }
