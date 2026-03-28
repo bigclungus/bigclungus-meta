@@ -14,6 +14,12 @@
       "ts": "2026-03-28T02:13:28Z",
       "event": "started",
       "context": "Log ASMR giga to giga-log"
+    },
+    {
+      "ts": "2026-03-28T02:13:41Z",
+      "event": "done",
+      "context": "Done. Appended the `no-asmr` entry to the end of `/mnt/data/giga-log.md`, after the last existing entry (`resume-subject-confusion`).",
+      "artifacts": []
     }
   ]
 }
