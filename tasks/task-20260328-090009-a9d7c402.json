@@ -14,6 +14,12 @@
       "ts": "2026-03-28T09:00:09Z",
       "event": "started",
       "context": "Simplify cron check"
+    },
+    {
+      "ts": "2026-03-28T09:00:16Z",
+      "event": "done",
+      "context": "No new commits in the last hour across any of the three repos. The two commits in `bigclungus-meta` (`fe0b726` and `fae4cf8`) are task log entries, not code changes — nothing to review.",
+      "artifacts": []
     }
   ]
 }
