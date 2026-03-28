@@ -14,6 +14,12 @@
       "ts": "2026-03-28T10:25:45Z",
       "event": "started",
       "context": "Check ingestion progress"
+    },
+    {
+      "ts": "2026-03-28T10:26:12Z",
+      "event": "done",
+      "context": "Here is the full status:\n\n**Ingestion is actively running** -- three processes are alive:\n- The main ingestion script (`ingest_bokoen1.py`, PID 2092268)\n- A `yt-dlp` subprocess fetching the playlist index\n- The shell wrapper\n\n**Progress per status file** (`/mnt/data/data/bokoen1-ingestion-status.json`):\n- 167 transcripts downloaded\n- 70 already ingested into Graphiti (from previous runs)\n- Status: `in_progress`\n- Group ID: `bokoen1_transcripts`\n\n**From the background task output** (74 lines so f...(truncated)",
+      "artifacts": []
     }
   ]
 }
