@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-114411-a69db804",
+  "title": "Clean up stale task files",
+  "agent_id": "a69db804b1b02fada",
+  "agent_type": "general-purpose",
+  "session_id": "d85cfa21-ac13-49bd-a459-80cf940f3507",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T11:44:11Z",
+      "event": "started",
+      "context": "Clean up stale task files"
+    }
+  ]
+}
