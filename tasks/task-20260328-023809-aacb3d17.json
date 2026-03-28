@@ -14,6 +14,12 @@
       "ts": "2026-03-28T02:38:09Z",
       "event": "started",
       "context": "Whisper thread status update"
+    },
+    {
+      "ts": "2026-03-28T02:38:45Z",
+      "event": "done",
+      "context": "Status update posted successfully to the Whisper/VC Discord thread (chat_id `1487268335543648339`). The message was delivered via the Discord bot API since the inject endpoint was unavailable after the restart.",
+      "artifacts": []
     }
   ]
 }
