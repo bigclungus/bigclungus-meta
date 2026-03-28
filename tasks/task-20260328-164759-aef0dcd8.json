@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-164759-aef0dcd8",
+  "title": "Fix plugin auto-reconnect",
+  "agent_id": "aef0dcd8e1153a99e",
+  "agent_type": "general-purpose",
+  "session_id": "cd97d7fe-d103-4d13-98e8-c7a6e540cf95",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T16:47:59Z",
+      "event": "started",
+      "context": "Fix plugin auto-reconnect"
+    }
+  ]
+}
