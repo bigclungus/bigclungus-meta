@@ -18,7 +18,13 @@
     {
       "ts": "2026-03-28T04:08:16Z",
       "event": "stale",
-      "context": "Marked stale by watchdog — session likely ended before task completed"
+      "context": "Marked stale by watchdog \u2014 session likely ended before task completed"
+    },
+    {
+      "event": "failed",
+      "ts": "2026-03-28T10:49:39.702366Z",
+      "message": "Never started - voice feature requires design and possibly Congress approval"
     }
-  ]
+  ],
+  "status": "failed"
 }
