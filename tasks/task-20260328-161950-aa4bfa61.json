@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-161950-aa4bfa61",
+  "title": "Clean stale tasks from prev sessions",
+  "agent_id": "aa4bfa61da1bd189b",
+  "agent_type": "general-purpose",
+  "session_id": "11c8017b-0506-440c-8e8d-6482380f8d94",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T16:19:50Z",
+      "event": "started",
+      "context": "Clean stale tasks from prev sessions"
+    }
+  ]
+}
