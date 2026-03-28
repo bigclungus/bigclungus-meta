@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-040026-ac9b88a0",
+  "title": "Fix Discord message delivery",
+  "agent_id": "ac9b88a0bf6fa333c",
+  "agent_type": "general-purpose",
+  "session_id": "1bd50f6d-edd5-403d-9a36-c438e4f76896",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T04:00:25Z",
+      "event": "started",
+      "context": "Fix Discord message delivery"
+    }
+  ]
+}
