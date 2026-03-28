@@ -14,6 +14,12 @@
       "ts": "2026-03-28T10:18:09Z",
       "event": "started",
       "context": "Make transcript ingestion survive restarts"
+    },
+    {
+      "ts": "2026-03-28T10:20:19Z",
+      "event": "done",
+      "context": "Everything is set up. Here's a summary of what was done:\n\n**1. Progress tracking file created:** `/mnt/data/data/bokoen1-ingestion-status.json`\n- Tracks total downloaded (167), ingested count (70), status (`in_progress`), and the persistent transcript directory\n\n**2. Transcripts copied to persistent storage:** `/mnt/data/data/bokoen1-transcripts/` (167 files)\n- Previously only in `/tmp/bokoen1/` which would be wiped on reboot\n\n**3. NightOwl task queued** for the next 3am PDT run\n- Includes instr...(truncated)",
+      "artifacts": []
     }
   ]
 }
