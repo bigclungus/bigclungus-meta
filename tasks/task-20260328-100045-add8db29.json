@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-100045-add8db29",
+  "title": "NightOwl: JS to TS conversion",
+  "agent_id": "add8db2933884af26",
+  "agent_type": "general-purpose",
+  "session_id": "39a8007c-3c86-47f0-b762-f5bf8cf2f776",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T10:00:45Z",
+      "event": "started",
+      "context": "NightOwl: JS to TS conversion"
+    }
+  ]
+}
