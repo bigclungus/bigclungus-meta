@@ -14,6 +14,12 @@
       "ts": "2026-03-28T12:46:54Z",
       "event": "started",
       "context": "Handle heartbeat trigger"
+    },
+    {
+      "ts": "2026-03-28T12:48:41Z",
+      "event": "done",
+      "context": "All candidates processed. Here is the heartbeat summary:\n\n**Health check:** All services running, no failures. No stale tasks. Disk at 31%.\n\n**GitHub issues:** Only #80 (auth password rotation) remains open, blocked on jaboostin.\n\n**Timeline ingestion (with new stricter filter):** 11 candidates found from 26 repos over the last day. Manually reviewed each:\n- Approved 7 notable entries: roundwatch real data integration, congress unification trial migration, timeline ingestion system launch, Decka...(truncated)",
+      "artifacts": []
     }
   ]
 }
