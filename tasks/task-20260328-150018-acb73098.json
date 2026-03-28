@@ -14,6 +14,12 @@
       "ts": "2026-03-28T15:00:18Z",
       "event": "started",
       "context": "Handle simplify trigger"
+    },
+    {
+      "ts": "2026-03-28T15:00:28Z",
+      "event": "done",
+      "context": "No new commits in either `hello-world` or `temporal-workflows` in the last hour. Nothing to review.",
+      "artifacts": []
     }
   ]
 }
