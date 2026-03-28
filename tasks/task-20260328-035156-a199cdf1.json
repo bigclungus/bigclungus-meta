@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-035156-a199cdf1",
+  "title": "Fix Discord MCP plugin",
+  "agent_id": "a199cdf1acacf34b8",
+  "agent_type": "general-purpose",
+  "session_id": "a97b1a96-f64b-4a77-89d9-4ef72ab69b96",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T03:51:56Z",
+      "event": "started",
+      "context": "Fix Discord MCP plugin"
+    }
+  ]
+}
