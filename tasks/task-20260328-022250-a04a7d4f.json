@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-022250-a04a7d4f",
+  "title": "Research existing whisper/STT setup",
+  "agent_id": "a04a7d4f803f5e68f",
+  "agent_type": "general-purpose",
+  "session_id": "4b512792-9717-4aea-80d7-c6d3d56a2841",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T02:22:50Z",
+      "event": "started",
+      "context": "Research existing whisper/STT setup"
+    }
+  ]
+}
