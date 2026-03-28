@@ -14,6 +14,12 @@
       "ts": "2026-03-28T06:22:17Z",
       "event": "started",
       "context": "Generate TTS and test in VC"
+    },
+    {
+      "ts": "2026-03-28T06:22:25Z",
+      "event": "done",
+      "context": "The TTS file was generated successfully at `/tmp/tmpvqafo16c.mp3`.",
+      "artifacts": []
     }
   ]
 }
