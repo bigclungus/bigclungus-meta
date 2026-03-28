@@ -14,6 +14,12 @@
       "ts": "2026-03-28T03:45:59Z",
       "event": "started",
       "context": "Check sync script logic"
+    },
+    {
+      "ts": "2026-03-28T03:46:11Z",
+      "event": "done",
+      "context": "The script does **not** recursively copy all subdirectories. It syncs only a hardcoded list of specific files and one directory. Here is the relevant sync logic verbatim:\n\n```bash\nfor f in settings.json settings.local.json; do\n  if [ -f \"$STAGING/$f\" ]; then\n    cp \"$STAGING/$f\" \"$DEST/$f\"\n    echo \"Synced $f\"\n  fi\ndone\n\nif [ -f \"$STAGING/installed_plugins.json\" ]; then\n  cp \"$STAGING/installed_plugins.json\" \"$DEST/plugins/installed_plugins.json\"\n  echo \"Synced plugins/installed_plugins.json\"\nfi...(truncated)",
+      "artifacts": []
     }
   ]
 }
