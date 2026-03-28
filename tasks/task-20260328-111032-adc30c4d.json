@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-111032-adc30c4d",
+  "title": "Fix transcript to include human messages",
+  "agent_id": "adc30c4d4378a56d5",
+  "agent_type": "general-purpose",
+  "session_id": "1472c3c4-27d0-4800-9541-cb30a7f5ef18",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T11:10:32Z",
+      "event": "started",
+      "context": "Fix transcript to include human messages"
+    }
+  ]
+}
