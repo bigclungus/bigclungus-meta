@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-161757-a980531a",
+  "title": "Check session ID in logs",
+  "agent_id": "a980531ae179f343a",
+  "agent_type": "general-purpose",
+  "session_id": "5c57794c-7dfd-4667-b6b8-b731b5f7a78e",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T16:17:57Z",
+      "event": "started",
+      "context": "Check session ID in logs"
+    }
+  ]
+}
