@@ -14,6 +14,12 @@
       "ts": "2026-03-28T17:48:08Z",
       "event": "started",
       "context": "List FalkorDB graph stats"
+    },
+    {
+      "ts": "2026-03-28T17:48:27Z",
+      "event": "done",
+      "context": "Here are the results:\n\n| Graph | Nodes | Edges |\n|---|---|---|\n| discord_history | 3,674 | 10,640 |\n| discord-history | 0 | 0 |\n| default_db | 0 | 0 |\n| graphiti | 0 | 0 |\n| infrastructure | 0 | 0 |\n| discord | 0 | 0 |\n| bigclungus | 79 | 129 |\n| clunger | 123 | 209 |\n| bokoen1_transcripts | 685 | 1,965 |\n\nFour graphs have data: `discord_history` is the largest (3,674 nodes, 10,640 edges), followed by `bokoen1_transcripts`, `clunger`, and `bigclungus`. The remaining five graphs (`discord-history...(truncated)",
+      "artifacts": []
     }
   ]
 }
