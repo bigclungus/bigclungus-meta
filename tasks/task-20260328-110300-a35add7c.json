@@ -14,6 +14,12 @@
       "ts": "2026-03-28T11:03:00Z",
       "event": "started",
       "context": "Queue Bokoen1 NightOwl task"
+    },
+    {
+      "ts": "2026-03-28T11:03:11Z",
+      "event": "done",
+      "context": "Task queued successfully. The NightOwl workflow was already running (`nightowl-today`), so the task was signaled to it. It will execute at 3am PDT (10am UTC) in the next batch: \"Resume Bokoen1 transcript ingestion into bokoen1_transcripts group.\"",
+      "artifacts": []
     }
   ]
 }
