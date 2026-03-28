@@ -14,6 +14,12 @@
       "ts": "2026-03-28T23:11:10Z",
       "event": "started",
       "context": "Post MOAR to thread"
+    },
+    {
+      "ts": "2026-03-28T23:11:18Z",
+      "event": "done",
+      "context": "Message posted successfully to the Discord thread.",
+      "artifacts": []
     }
   ]
 }
