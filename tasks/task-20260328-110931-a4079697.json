@@ -14,6 +14,12 @@
       "ts": "2026-03-28T11:09:31Z",
       "event": "started",
       "context": "Check voice transcript channel"
+    },
+    {
+      "ts": "2026-03-28T11:10:28Z",
+      "event": "done",
+      "context": "Here is what I found:\n\n**#voice-transcripts channel** (ID `1487240658568744980`):\n- Defined in `voice-receive.ts` at line 69 as `TRANSCRIPT_CHANNEL_ID`\n- The bot uploads completed VC session transcripts as `.txt` files to this channel when the last person leaves the voice channel\n- However, this channel is **not allowlisted** in the Discord plugin, so I cannot fetch messages from it\n\n**Transcript files on disk:**\n- `/tmp/vc-check/` exists but is empty -- no transcript files were saved locally\n- ...(truncated)",
+      "artifacts": []
     }
   ]
 }
