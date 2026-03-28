@@ -14,6 +14,12 @@
       "ts": "2026-03-28T16:12:25Z",
       "event": "started",
       "context": "Check discord-server status"
+    },
+    {
+      "ts": "2026-03-28T16:12:50Z",
+      "event": "done",
+      "context": "Here are the verbatim results:\n\n---\n\n**1. `systemctl --user status discord-server.service`**\n\n```\n● discord-server.service - Discord MCP Server (BigClungus)\n     Loaded: loaded (/home/clungus/.config/systemd/user/discord-server.service; enabled; preset: enabled)\n     Active: active (running) since Sat 2026-03-28 15:54:18 UTC; 18min ago\n   Main PID: 2891278 (bun)\n      Tasks: 20 (limit: 4598)\n     Memory: 39.0M (peak: 77.6M swap: 45.7M swap peak: 46.9M)\n        CPU: 20.387s\n     CGroup: /user.sli...(truncated)",
+      "artifacts": []
     }
   ]
 }
