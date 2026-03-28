@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-024441-ae1d1a17",
+  "title": "Check Discord plugin status",
+  "agent_id": "ae1d1a1798328ff2d",
+  "agent_type": "general-purpose",
+  "session_id": "43e9d2af-7d2b-4765-a796-49da1a9b6141",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T02:44:41Z",
+      "event": "started",
+      "context": "Check Discord plugin status"
+    }
+  ]
+}
