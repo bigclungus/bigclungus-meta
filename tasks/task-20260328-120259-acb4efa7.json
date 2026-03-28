@@ -14,6 +14,12 @@
       "ts": "2026-03-28T12:02:59Z",
       "event": "started",
       "context": "Join VC and speak now"
+    },
+    {
+      "ts": "2026-03-28T12:03:19Z",
+      "event": "done",
+      "context": "Done. Joined the \"allies\" voice channel (General was empty) and greeted Relariiy with \"Good morning, Relariiy.\" via TTS audio.",
+      "artifacts": []
     }
   ]
 }
