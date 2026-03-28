@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-032835-a9203ef7",
+  "title": "Test screen stuff command",
+  "agent_id": "a9203ef74a9ad7afe",
+  "agent_type": "general-purpose",
+  "session_id": "17540a00-4192-4cb1-8cb5-3c89bef93d82",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T03:28:35Z",
+      "event": "started",
+      "context": "Test screen stuff command"
+    }
+  ]
+}
