@@ -14,6 +14,12 @@
       "ts": "2026-03-28T17:50:39Z",
       "event": "started",
       "context": "Delete empty FalkorDB graphs"
+    },
+    {
+      "ts": "2026-03-28T17:50:57Z",
+      "event": "done",
+      "context": "All 5 empty graphs deleted successfully. Remaining graphs (4): `discord_history`, `bokoen1_transcripts`, `clunger`, `bigclungus`. None of the deleted ones (`discord-history`, `default_db`, `graphiti`, `infrastructure`, `discord`) appear in the list.",
+      "artifacts": []
     }
   ]
 }
