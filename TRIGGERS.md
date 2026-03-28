@@ -149,7 +149,14 @@ When you receive `[heartbeat]`: **spawn a background agent** to do the following
      - If busy: queue to NightOwl
    - If Congress rejects: close the GitHub issue with the rejection rationale
 
-6. **Lab ideation (idle only, max one per heartbeat)** — if steps 1-5 found nothing actionable and no ideation congress was fired, consider creating ONE new lab. Requirements:
+6. **Timeline ingestion** -- scan repos for notable recent commits and auto-post to the timeline.
+   ```bash
+   python3 /mnt/data/scripts/timeline_ingest.py --since 1
+   python3 /mnt/data/scripts/timeline_approve.py --approve-all
+   ```
+   This runs `timeline_ingest.py` with a 1-day lookback to find new notable commits, then `timeline_approve.py --approve-all` to post any candidates to the clunger timeline API and clear the candidates file. Failures here are non-fatal -- log and continue.
+
+7. **Lab ideation (idle only, max one per heartbeat)** — if steps 1-5 found nothing actionable and no ideation congress was fired, consider creating ONE new lab. Requirements:
    - Must be tied to a concrete signal from the Graphiti graph — query `search_memory_facts` or `search_nodes` for group interests, recurring topics, or user needs
    - Must be unique (check existing labs in `/mnt/data/labs/`)
    - Must be reasonably scoped (completable in one session)
