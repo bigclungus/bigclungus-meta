@@ -14,6 +14,12 @@
       "ts": "2026-03-28T18:38:13Z",
       "event": "started",
       "context": "Verify website is back up"
+    },
+    {
+      "ts": "2026-03-28T18:38:34Z",
+      "event": "done",
+      "context": "Everything is up and healthy after the crash:\n\n| Service | Status | Local Test | HTTP Code |\n|---|---|---|---|\n| **clunger** (clung.us, :8081) | active (running), up ~5min | `localhost:8081` | **200** |\n| **cloudflared** (tunnel) | active (running), 4 QUIC connections registered | `clung.us` | **200** |\n| **labs-router** (:8083) | running | `localhost:8083` | **200** |\n| **terminal-server** (:7682) | running | `localhost:7682` | **302** (redirect to login, expected) |\n\nAll four tunnel-dependent ...(truncated)",
+      "artifacts": []
     }
   ]
 }
