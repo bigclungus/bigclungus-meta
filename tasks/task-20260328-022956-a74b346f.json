@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-022956-a74b346f",
+  "title": "Consolidate discord plugin changes",
+  "agent_id": "a74b346f443c70d16",
+  "agent_type": "general-purpose",
+  "session_id": "4b512792-9717-4aea-80d7-c6d3d56a2841",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T02:29:56Z",
+      "event": "started",
+      "context": "Consolidate discord plugin changes"
+    }
+  ]
+}
