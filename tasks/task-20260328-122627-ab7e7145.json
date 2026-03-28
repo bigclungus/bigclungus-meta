@@ -14,6 +14,12 @@
       "ts": "2026-03-28T12:26:27Z",
       "event": "started",
       "context": "Check timeline entry cleanup status"
+    },
+    {
+      "ts": "2026-03-28T12:27:20Z",
+      "event": "done",
+      "context": "Here are my findings:\n\n**Timeline data location:** `/mnt/data/clunger/timeline.db` -- a SQLite database with a `timeline_events` table, served via clunger's REST API at `/api/timeline`.\n\n**Current state: 49 entries total.** All entries are system-level milestones, features, infrastructure changes, and key events. There are **no individual congress/trial session entries** (e.g., \"Congress #42: Should we add dark mode?\" or \"Trial #3: The Case Against Otto\").\n\nThe entries that reference congress ar...(truncated)",
+      "artifacts": []
     }
   ]
 }
