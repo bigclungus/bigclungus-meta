@@ -14,6 +14,12 @@
       "ts": "2026-03-28T03:16:01Z",
       "event": "started",
       "context": "Debug channel tag format"
+    },
+    {
+      "ts": "2026-03-28T03:16:31Z",
+      "event": "done",
+      "context": "Done. The fix in `/mnt/data/start-claude-bot.sh` changes the `--dangerously-load-development-channels` value from bare `\"discord\"` to the tagged format `\"plugin:discord@claude-channel-discord\"`, where:\n- `discord` is the channel name (as declared in the plugin's MCP source attribute)\n- `claude-channel-discord` is the plugin package name (from `/mnt/data/discord-plugin/package.json`)",
+      "artifacts": []
     }
   ]
 }
