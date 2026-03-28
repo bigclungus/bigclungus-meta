@@ -14,6 +14,12 @@
       "ts": "2026-03-28T11:06:51Z",
       "event": "started",
       "context": "Handle heartbeat trigger"
+    },
+    {
+      "ts": "2026-03-28T11:11:53Z",
+      "event": "done",
+      "context": "Good, the Proton credentials are only in the global CLAUDE.md (local overlay, not committed). The project CLAUDE.md in bigclungus-meta only has the terminal auth password.\n\n**Heartbeat summary:**\n\n1. **Stale tasks:** None found.\n2. **GitHub issues:** None open (before this heartbeat).\n3. **Failed services:** None. All services healthy, all healthchecks passing.\n4. **Disk:** 31% used, fine.\n5. **Ideation findings:**\n   - **MINOR (fixed):** Clunger `.env` with API keys was tracked in git (private ...(truncated)",
+      "artifacts": []
     }
   ]
 }
