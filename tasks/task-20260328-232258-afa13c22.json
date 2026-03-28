@@ -14,6 +14,12 @@
       "ts": "2026-03-28T23:22:57Z",
       "event": "started",
       "context": "Post MP ready to thread"
+    },
+    {
+      "ts": "2026-03-28T23:23:12Z",
+      "event": "done",
+      "context": "Both messages posted successfully to Discord thread `1487537381547708508`.",
+      "artifacts": []
     }
   ]
 }
