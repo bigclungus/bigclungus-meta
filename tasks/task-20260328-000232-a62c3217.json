@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-000232-a62c3217",
+  "title": "Download Whisper small model",
+  "agent_id": "a62c3217dfd02d501",
+  "agent_type": "general-purpose",
+  "session_id": "083baee4-2f6f-4f81-8ced-0e9b97f43956",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T00:02:32Z",
+      "event": "started",
+      "context": "Download Whisper small model"
+    }
+  ]
+}
