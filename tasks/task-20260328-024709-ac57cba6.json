@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-024709-ac57cba6",
+  "title": "Find old Discord message",
+  "agent_id": "ac57cba63db137f4d",
+  "agent_type": "general-purpose",
+  "session_id": "43e9d2af-7d2b-4765-a796-49da1a9b6141",
+  "discord_message_id": "1487281448124813445",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T02:47:09Z",
+      "event": "started",
+      "context": "Find old Discord message"
+    }
+  ]
+}
