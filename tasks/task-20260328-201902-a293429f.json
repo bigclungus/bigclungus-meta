@@ -14,6 +14,12 @@
       "ts": "2026-03-28T20:19:02Z",
       "event": "started",
       "context": "Post plan summary to thread"
+    },
+    {
+      "ts": "2026-03-28T20:19:30Z",
+      "event": "done",
+      "context": "All 3 messages posted successfully to Discord thread `1487537381547708508`:\n\n1. **Architecture & Data Model** — commons-server integration, WS endpoint, SQLite schema, bandwidth estimate\n2. **Combat & Dungeon Generation** — damage formula, powers, BSP gen pipeline, enemy AIs, collision\n3. **Build Phases** — 6 phases with time estimates, zero-art strategy",
+      "artifacts": []
     }
   ]
 }
