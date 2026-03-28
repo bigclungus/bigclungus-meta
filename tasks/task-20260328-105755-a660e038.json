@@ -14,6 +14,12 @@
       "ts": "2026-03-28T10:57:55Z",
       "event": "started",
       "context": "Fix voice transcript bugs"
+    },
+    {
+      "ts": "2026-03-28T10:59:33Z",
+      "event": "done",
+      "context": "Here is a summary of the changes made to `/mnt/data/discord-plugin/server.ts`:\n\n**Bug 1: Bot speech not logged to transcript** -- Three changes:\n1. **Added `text` parameter to the `speak` tool schema** (line ~690): New optional `text` property so callers can pass the spoken text for transcript logging.\n2. **Parse `spokenText` from args** (line ~831): `const spokenText = args.text as string | undefined`\n3. **Call `logBotSpeech` after successful playback** (lines ~889-893): After the audio finishe...(truncated)",
+      "artifacts": []
     }
   ]
 }
