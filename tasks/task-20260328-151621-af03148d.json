@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-151621-af03148d",
+  "title": "Plan Discord plugin decoupling",
+  "agent_id": "af03148da3b457ada",
+  "agent_type": "Plan",
+  "session_id": "9d3a7a6c-fa33-4af8-9205-836e0c432301",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T15:16:21Z",
+      "event": "started",
+      "context": "Plan Discord plugin decoupling"
+    }
+  ]
+}
