@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-015730-af6b5426",
+  "title": "Join Discord VC test",
+  "agent_id": "af6b54269dac89e09",
+  "agent_type": "general-purpose",
+  "session_id": "1cc1a705-d77e-4211-91a5-8b826a8b2723",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T01:57:30Z",
+      "event": "started",
+      "context": "Join Discord VC test"
+    }
+  ]
+}
