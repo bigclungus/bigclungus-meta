@@ -14,6 +14,12 @@
       "ts": "2026-03-28T22:58:33Z",
       "event": "started",
       "context": "List hook event names"
+    },
+    {
+      "ts": "2026-03-28T22:58:47Z",
+      "event": "done",
+      "context": "Here are the hook events available in Claude Code:\n\n1. SessionStart\n2. InstructionsLoaded\n3. UserPromptSubmit\n4. PreToolUse\n5. PermissionRequest\n6. PostToolUse\n7. PostToolUseFailure\n8. Notification\n9. SubagentStart\n10. SubagentStop\n11. Stop\n12. StopFailure\n13. TeammateIdle\n14. TaskCompleted\n15. ConfigChange\n16. CwdChanged\n17. FileChanged\n18. WorktreeCreate\n19. WorktreeRemove\n20. PreCompact\n21. PostCompact\n22. SessionEnd\n23. Elicitation\n24. ElicitationResult\n\nSee the [hooks documentation](https:/...(truncated)",
+      "artifacts": []
     }
   ]
 }
