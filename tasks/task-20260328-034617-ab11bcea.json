@@ -14,6 +14,12 @@
       "ts": "2026-03-28T03:46:17Z",
       "event": "started",
       "context": "Fix plugin json location"
+    },
+    {
+      "ts": "2026-03-28T03:46:42Z",
+      "event": "done",
+      "context": "Done. All three steps completed:\n\n1. Copied `plugins/installed_plugins.json` to `~/work/claude-config/installed_plugins.json` (top level)\n2. Verified the content uses `discord-clungus@local` (correct), not `discord@claude-plugins-official` (old/wrong)\n3. Removed the `~/work/claude-config/plugins/` subdirectory\n\nThe sync script at `/mnt/data/scripts/sync-claude-config.sh` will now find `installed_plugins.json` at the expected top-level path and copy it to `~/.claude/plugins/installed_plugins.json...(truncated)",
+      "artifacts": []
     }
   ]
 }
