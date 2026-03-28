@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-184845-a44a7c1a",
+  "title": "Plan Claude Code repo scaffold",
+  "agent_id": "a44a7c1a7fa9b9df6",
+  "agent_type": "general-purpose",
+  "session_id": "5aac769e-2e6e-4bd3-a873-645eb001e989",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T18:48:45Z",
+      "event": "started",
+      "context": "Plan Claude Code repo scaffold"
+    }
+  ]
+}
