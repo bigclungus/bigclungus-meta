@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-032309-a5fef98d",
+  "title": "Find and read bio HTML",
+  "agent_id": "a5fef98d63fe9d8fe",
+  "agent_type": "Explore",
+  "session_id": "890d6293-347d-4856-8ea2-1951e06be219",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T03:23:09Z",
+      "event": "started",
+      "context": "Find and read bio HTML"
+    }
+  ]
+}
