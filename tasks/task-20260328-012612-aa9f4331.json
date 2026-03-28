@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-012612-aa9f4331",
+  "title": "Find kubariet resume review",
+  "agent_id": "aa9f43317ccce6ef3",
+  "agent_type": "general-purpose",
+  "session_id": "1cc1a705-d77e-4211-91a5-8b826a8b2723",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T01:26:12Z",
+      "event": "started",
+      "context": "Find kubariet resume review"
+    }
+  ]
+}
