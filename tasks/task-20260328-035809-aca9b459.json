@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-035809-aca9b459",
+  "title": "Debug Discord plugin messages",
+  "agent_id": "aca9b459dc463ec87",
+  "agent_type": "general-purpose",
+  "session_id": "1bd50f6d-edd5-403d-9a36-c438e4f76896",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T03:58:09Z",
+      "event": "started",
+      "context": "Debug Discord plugin messages"
+    }
+  ]
+}
