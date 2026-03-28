@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-162708-a2441bd7",
+  "title": "Debug claude-bot crash loop",
+  "agent_id": "a2441bd70ef843622",
+  "agent_type": "general-purpose",
+  "session_id": "5c57794c-7dfd-4667-b6b8-b731b5f7a78e",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T16:27:08Z",
+      "event": "started",
+      "context": "Debug claude-bot crash loop"
+    }
+  ]
+}
