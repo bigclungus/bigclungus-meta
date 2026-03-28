@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-123340-a97c271f",
+  "title": "Generate TTS and speak in VC",
+  "agent_id": "a97c271fa41b15280",
+  "agent_type": "general-purpose",
+  "session_id": "9d3a7a6c-fa33-4af8-9205-836e0c432301",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T12:33:40Z",
+      "event": "started",
+      "context": "Generate TTS and speak in VC"
+    }
+  ]
+}
