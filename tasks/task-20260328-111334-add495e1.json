@@ -14,6 +14,12 @@
       "ts": "2026-03-28T11:13:34Z",
       "event": "started",
       "context": "Restart discord plugin"
+    },
+    {
+      "event": "done",
+      "ts": "2026-03-28T11:44:24.407346Z",
+      "message": "Stale from previous session, no longer actionable"
     }
-  ]
+  ],
+  "status": "done"
 }
