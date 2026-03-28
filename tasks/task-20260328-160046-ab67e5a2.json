@@ -14,6 +14,12 @@
       "ts": "2026-03-28T16:00:46Z",
       "event": "started",
       "context": "Startup checklist and Discord catchup"
+    },
+    {
+      "ts": "2026-03-28T16:02:20Z",
+      "event": "done",
+      "context": "The Discord MCP tools (`fetch_messages`, `reply`, `react`) are not available through ToolSearch -- they're likely provided directly by the Discord MCP plugin at runtime and aren't deferred tools. I can't invoke them from this context.\n\nHere is the full startup checklist report:\n\n---\n\n**1. Session Number**\n- Session name: **The Second Clungus XLVIII** (written to `/tmp/clungus-session-name.txt` shows XLVII, but the script output the new one as XLVIII)\n\n**2. Redis/FalkorDB Fixes**\n- `stop-writes-o...(truncated)",
+      "artifacts": []
     }
   ]
 }
