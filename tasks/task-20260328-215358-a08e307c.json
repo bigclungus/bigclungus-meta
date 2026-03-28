@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-215358-a08e307c",
+  "title": "Post movement fix to thread",
+  "agent_id": "a08e307c5fe2a793d",
+  "agent_type": "general-purpose",
+  "session_id": "5aac769e-2e6e-4bd3-a873-645eb001e989",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T21:53:58Z",
+      "event": "started",
+      "context": "Post movement fix to thread"
+    }
+  ]
+}
