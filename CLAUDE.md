@@ -16,7 +16,7 @@
 ### Cloudflare Tunnel → Local Port Mapping
 | Subdomain | Local Port | Service |
 |---|---|---|
-| clung.us | 8080 | Static website (hello-world) |
+| clung.us | 8081 | Clunger (Bun/TypeScript web server) |
 | terminal.clung.us | 7682 | Terminal WebSocket server |
 | temporal.clung.us | 8234 | Temporal auth proxy (proxies → :8233) |
 | labs.clung.us | 8083 | Labs router (dynamic per-experiment proxy) |
@@ -25,7 +25,7 @@
 | Port | Service |
 |---|---|
 | 7682 | terminal-server (ttyd-style WebSocket) |
-| 8080 | website (clung.us static) |
+| 8081 | clunger (clung.us, Bun/TypeScript) |
 | 8083 | labs-router (labs.clung.us) |
 | 8233 | Temporal dev server (internal) |
 | 8234 | temporal-proxy (public, auth-gated) |
@@ -67,7 +67,6 @@
 | temporal.service | Temporal Dev Server |
 | temporal-proxy.service | Temporal Auth Proxy (:8234) |
 | temporal-worker.service | Temporal Worker (listings-queue) |
-| website.service | clung.us Static Web Server (:8080) |
 | dbus.service | D-Bus (system) |
 | gpg-agent.service | GnuPG agent |
 
