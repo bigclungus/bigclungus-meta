@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-041911-a2a497f3",
+  "title": "Check Discord plugin config",
+  "agent_id": "a2a497f37136b55d5",
+  "agent_type": "Explore",
+  "session_id": "47ada5f4-6e25-4188-9fa8-aa92490d2f93",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T04:19:10Z",
+      "event": "started",
+      "context": "Check Discord plugin config"
+    }
+  ]
+}
