@@ -14,6 +14,12 @@
       "ts": "2026-03-28T12:23:35Z",
       "event": "started",
       "context": "Get VC channel ID"
+    },
+    {
+      "ts": "2026-03-28T12:23:41Z",
+      "event": "done",
+      "context": "Here are the cached voice channels from `/tmp/vc-channels.json`:\n\n**Guild ID:** `1008814210144292894`\n\n| Channel Name | Channel ID | Type |\n|---|---|---|\n| General | `1008814210618245225` | 2 (voice) |\n| allies | `1325567700029931560` | 2 (voice) |\n\nTwo voice channels available: **General** and **allies**.",
+      "artifacts": []
     }
   ]
 }
