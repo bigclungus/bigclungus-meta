@@ -14,6 +14,12 @@
       "ts": "2026-03-28T20:40:54Z",
       "event": "started",
       "context": "Post game live to thread"
+    },
+    {
+      "ts": "2026-03-28T20:41:03Z",
+      "event": "done",
+      "context": "Message posted successfully to Discord thread `1487537381547708508`. The message appeared at position 30 in the thread, authored by \"The Second Clungus\" bot account.",
+      "artifacts": []
     }
   ]
 }
