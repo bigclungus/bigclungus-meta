@@ -14,6 +14,12 @@
       "ts": "2026-03-28T04:58:49Z",
       "event": "started",
       "context": "Commit discord plugin changes"
+    },
+    {
+      "ts": "2026-03-28T04:59:04Z",
+      "event": "done",
+      "context": "All done. Committed and pushed `dd077e7` to `master` -- 4 files changed (plugin.json, .mcp.json, package.json, server.ts), removing the mute/unmute logic around speak and joining VC unmuted. Ready to restart.",
+      "artifacts": []
     }
   ]
 }
