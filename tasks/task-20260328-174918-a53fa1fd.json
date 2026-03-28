@@ -14,6 +14,12 @@
       "ts": "2026-03-28T17:49:18Z",
       "event": "started",
       "context": "Query clunger+bigclungus graphs"
+    },
+    {
+      "ts": "2026-03-28T17:49:43Z",
+      "event": "done",
+      "context": "Here are the results:\n\n---\n\n## `clunger` Graph\n\n### Sample Nodes (20)\n| Type | Name |\n|---|---|\n| Episodic | clunger: serve.py to TypeScript migration plan |\n| Entity, Document | serve.py |\n| Entity, Topic | TypeScript |\n| Entity | Proto-Native Rewrite Plan |\n| Entity, Organization | koole__, framers, clunger, clunger.service |\n| Entity | Bun runtime, connect-es, buf, Cloudflare tunnel, GitHub OAuth flow, GitHub webhook, LLM dispatch |\n| Entity, Topic | OAuth |\n| Entity | SQLite, personas.db, JS...(truncated)",
+      "artifacts": []
     }
   ]
 }
