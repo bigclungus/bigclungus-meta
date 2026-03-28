@@ -14,6 +14,12 @@
       "ts": "2026-03-28T15:34:36Z",
       "event": "started",
       "context": "Test discord-server and setup systemd"
+    },
+    {
+      "ts": "2026-03-28T15:40:25Z",
+      "event": "done",
+      "context": "Here is the report:\n\n---\n\n**Dependencies**: Installed cleanly. Had to add `ffmpeg-static` (transitive dep from discord.js voice/prism-media) and copy the `@discordjs/opus` v137 prebuild from the existing `/mnt/data/discord-plugin/` (Bun's native module ABI version wasn't in the published package).\n\n**TypeScript/runtime errors found and fixed**:\n1. **Missing `ffmpeg-static`** -- added via `bun add ffmpeg-static`\n2. **Missing opus native prebuild** for Bun v137 -- copied from existing discord-plug...(truncated)",
+      "artifacts": []
     }
   ]
 }
