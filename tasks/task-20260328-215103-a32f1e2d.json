@@ -14,6 +14,12 @@
       "ts": "2026-03-28T21:51:03Z",
       "event": "started",
       "context": "Fix player movement stuck at 1px"
+    },
+    {
+      "ts": "2026-03-28T21:53:41Z",
+      "event": "done",
+      "context": "The fix is in place. Here's what I found:\n\n**Root cause:** In `/mnt/data/commons-server/src/dungeon/dungeon-manager.ts` line 275, `d_move` messages from the client were only accepted when `instance.status === \"running\"`. However, since every floor template has a boss (`boss_type_id: 1/2/3`), the boss is spawned at floor init time. On the very first tick, `/mnt/data/commons-server/src/dungeon/dungeon-loop.ts` line 601 sets `instance.status = \"boss\"` because the boss exists with HP > 0. From that ...(truncated)",
+      "artifacts": []
     }
   ]
 }
