@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-015339-ac1efd4b",
+  "title": "Research Discord VC capabilities",
+  "agent_id": "ac1efd4bd8ddf286c",
+  "agent_type": "general-purpose",
+  "session_id": "1cc1a705-d77e-4211-91a5-8b826a8b2723",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T01:53:39Z",
+      "event": "started",
+      "context": "Research Discord VC capabilities"
+    }
+  ]
+}
