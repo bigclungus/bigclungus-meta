@@ -14,6 +14,12 @@
       "ts": "2026-03-28T11:51:39Z",
       "event": "started",
       "context": "Investigate transcript thread context"
+    },
+    {
+      "ts": "2026-03-28T11:53:14Z",
+      "event": "done",
+      "context": "Here is the complete analysis:\n\n---\n\n## Summary of the Issue\n\nrelarey tested the VC transcription feature. It records human speech (via Whisper STT) and bot speech (via `logBotSpeech`), then compiles a .txt transcript when the last human leaves VC. The test revealed that **only bot messages appeared in the transcript, not human messages**.\n\n## Root Cause\n\nThe code in `voice-receive.ts` is actually correct -- the `flushBuffer` function (line 438-446 in the `claude-config` version) does push human...(truncated)",
+      "artifacts": []
     }
   ]
 }
