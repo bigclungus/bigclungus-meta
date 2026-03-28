@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-111220-aa247c62",
+  "title": "Send redirect to fix agent",
+  "agent_id": "aa247c626a5009fb9",
+  "agent_type": "general-purpose",
+  "session_id": "1472c3c4-27d0-4800-9541-cb30a7f5ef18",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T11:12:20Z",
+      "event": "started",
+      "context": "Send redirect to fix agent"
+    }
+  ]
+}
