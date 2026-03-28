@@ -14,6 +14,12 @@
       "ts": "2026-03-28T03:51:56Z",
       "event": "started",
       "context": "Fix Discord MCP plugin"
+    },
+    {
+      "ts": "2026-03-28T03:54:00Z",
+      "event": "done",
+      "context": "No separate bun process for the discord plugin is running, which confirms the plugin crashed on startup and was never started. The claude process itself (PID 1412412) is the current session.\n\nThe fix (symlink) is in place. The service needs to be restarted for the plugin to load. Since restarting will kill this session, I'll report the findings and the restart can be done externally.\n\nHere is the diagnosis and fix:\n\n**Root cause:** The Discord MCP plugin (`discord-clungus@local`) fails to start ...(truncated)",
+      "artifacts": []
     }
   ]
 }
