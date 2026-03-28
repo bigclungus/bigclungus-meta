@@ -14,6 +14,12 @@
       "ts": "2026-03-28T22:00:26Z",
       "event": "started",
       "context": "Reply to emoji thread"
+    },
+    {
+      "ts": "2026-03-28T22:00:43Z",
+      "event": "done",
+      "context": "Thread created and reply posted successfully. The thread \"Custom Emoji Memory\" is live on message 1487572023621451967, and the response explains the two approaches (individual memory saves vs. batch dump) plus offers to pull the full server emoji list for annotation.",
+      "artifacts": []
     }
   ]
 }
