@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-035620-a4802509",
+  "title": "Clean up stale startup tasks",
+  "agent_id": "a4802509367dc26cf",
+  "agent_type": "general-purpose",
+  "session_id": "1bd50f6d-edd5-403d-9a36-c438e4f76896",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T03:56:20Z",
+      "event": "started",
+      "context": "Clean up stale startup tasks"
+    }
+  ]
+}
