@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-215103-a32f1e2d",
+  "title": "Fix player movement stuck at 1px",
+  "agent_id": "a32f1e2d383c52da0",
+  "agent_type": "general-purpose",
+  "session_id": "5aac769e-2e6e-4bd3-a873-645eb001e989",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T21:51:03Z",
+      "event": "started",
+      "context": "Fix player movement stuck at 1px"
+    }
+  ]
+}
