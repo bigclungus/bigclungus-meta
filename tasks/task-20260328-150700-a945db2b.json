@@ -14,6 +14,12 @@
       "ts": "2026-03-28T15:07:00Z",
       "event": "started",
       "context": "Heartbeat #17 quick check"
+    },
+    {
+      "ts": "2026-03-28T15:07:08Z",
+      "event": "done",
+      "context": "**Heartbeat #17 report:**\n\n- **All 8 services active:** claude-bot, clunger, cloudflared, temporal, temporal-worker, temporal-proxy, terminal-server, labs-router\n- **Timeline candidates:** none\n\nEverything green.",
+      "artifacts": []
     }
   ]
 }
