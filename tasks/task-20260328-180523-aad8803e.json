@@ -14,6 +14,12 @@
       "ts": "2026-03-28T18:05:23Z",
       "event": "started",
       "context": "Debug Discord DM delivery"
+    },
+    {
+      "event": "done",
+      "ts": "2026-03-28T19:14:43.233401Z",
+      "message": "DM delivery fixed: added fallback strategies for recipientId resolution in access.ts. Discord-server restarted and DMs verified working with centronias."
     }
-  ]
+  ],
+  "status": "done"
 }
