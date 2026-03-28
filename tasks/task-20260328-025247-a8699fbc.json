@@ -14,6 +14,12 @@
       "ts": "2026-03-28T02:52:47Z",
       "event": "started",
       "context": "Check timeline source links"
+    },
+    {
+      "ts": "2026-03-28T02:53:15Z",
+      "event": "done",
+      "context": "Here are the findings:\n\n**Database schema** (`/mnt/data/clunger/src/index.ts`, line 1283-1292): The `timeline_events` table has a `url` column, and the API returns it in the JSON. However, every entry currently has `\"url\": null` -- no source URLs have been populated for any events.\n\n**API** (`/mnt/data/clunger/src/index.ts`, line 2423): `GET /api/timeline` returns all columns including `url`. The `POST` endpoint (line 2441) accepts a `url` field when creating entries. So the plumbing for source ...(truncated)",
+      "artifacts": []
     }
   ]
 }
