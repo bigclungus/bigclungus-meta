@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-023621-aac6000b",
+  "title": "On-restart checklist",
+  "agent_id": "aac6000b4e18228cf",
+  "agent_type": "general-purpose",
+  "session_id": "19b963b3-b30b-4097-a9ea-5e0785b66af3",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T02:36:20Z",
+      "event": "started",
+      "context": "On-restart checklist"
+    }
+  ]
+}
