@@ -14,6 +14,12 @@
       "ts": "2026-03-28T18:39:40Z",
       "event": "started",
       "context": "Handle heartbeat trigger"
+    },
+    {
+      "ts": "2026-03-28T18:44:29Z",
+      "event": "done",
+      "context": "Here is the full heartbeat report:\n\n---\n\n## Heartbeat Health Check Report (2026-03-28 ~18:41 UTC)\n\n### Services Status\n\n**Running (29 services):** All expected services are up, including temporal-worker, clunger, cloudflared, discord-server, temporal, and all lab services.\n\n**Failed (1):** `discord-ingest.service` (Discord -> Graphiti incremental ingestion). This is a timer-triggered service that failed on its last run. It will retry on next timer tick. Non-critical since it just feeds the Graph...(truncated)",
+      "artifacts": []
     }
   ]
 }
