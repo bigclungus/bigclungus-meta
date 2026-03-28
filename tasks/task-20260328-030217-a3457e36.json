@@ -14,6 +14,12 @@
       "ts": "2026-03-28T03:02:17Z",
       "event": "started",
       "context": "Fix discord plugin issues"
+    },
+    {
+      "ts": "2026-03-28T03:05:49Z",
+      "event": "done",
+      "context": "All done. Here is a summary of the changes:\n\n**1. Voice helper extraction** (`/mnt/data/discord-plugin/server.ts`, lines 78-115):\n- Added `connectToVoice(channelId, guildId, adapterCreator, client, injectSecret)` -- handles `joinVoiceChannel`, `entersState`, and `setupVoiceReceive` attachment\n- Added `disconnectFromVoice(guildId)` -- handles teardown cleanup and `connection.destroy()`, returns boolean\n- `join_voice` tool handler (line 812), `leave_voice` handler (line 820), `voiceStateUpdate` au...(truncated)",
+      "artifacts": []
     }
   ]
 }
