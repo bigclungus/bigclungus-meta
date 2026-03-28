@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-023019-a579de3b",
+  "title": "Build STT into Discord plugin",
+  "agent_id": "a579de3b64de3adb3",
+  "agent_type": "general-purpose",
+  "session_id": "4b512792-9717-4aea-80d7-c6d3d56a2841",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T02:30:19Z",
+      "event": "started",
+      "context": "Build STT into Discord plugin"
+    }
+  ]
+}
