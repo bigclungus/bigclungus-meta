@@ -14,6 +14,12 @@
       "ts": "2026-03-28T02:48:30Z",
       "event": "started",
       "context": "Add swap and boost memory"
+    },
+    {
+      "ts": "2026-03-28T02:49:25Z",
+      "event": "done",
+      "context": "All done. Here is the full summary:\n\n**Step 1-2 -- Baseline:**\n- Existing swap: `/swap.img` 2GB (1.1GB used)\n- RAM: 3.8GB total, ~2.0GB used, 361MB free\n- Disk: 86GB available on `/mnt/data`\n\n**Step 3-4 -- New swap created:**\n- Created `/mnt/data/swapfile2` (4GB), enabled successfully\n- Total swap now 6GB (2GB original + 4GB new), 4.9GB free\n- Available memory effectively increased from ~1.25GB to ~5.15GB headroom\n\n**Step 5 -- Persistence:**\n- Added `/mnt/data/swapfile2 none swap sw 0 0` to `/et...(truncated)",
+      "artifacts": []
     }
   ]
 }
