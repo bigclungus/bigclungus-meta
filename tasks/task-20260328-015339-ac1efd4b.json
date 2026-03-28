@@ -14,6 +14,12 @@
       "ts": "2026-03-28T01:53:39Z",
       "event": "started",
       "context": "Research Discord VC capabilities"
+    },
+    {
+      "ts": "2026-03-28T01:54:44Z",
+      "event": "done",
+      "context": "Here is the full research report:\n\n---\n\n## What's Already Built\n\nThe `/mnt/data/voice-transcriber/` project is a **complete, well-structured bot** ready to join voice, capture per-user audio, transcribe with Whisper, and post speaker-labeled transcriptions to a text channel. Key files:\n\n- **`bot.py`** (396 lines) -- Full Discord bot using py-cord with `!join`, `!leave`, `!status` commands. Uses a custom `TranscriptionSink` that buffers per-user PCM in 8-second chunks, dispatches to a thread pool...(truncated)",
+      "artifacts": []
     }
   ]
 }
