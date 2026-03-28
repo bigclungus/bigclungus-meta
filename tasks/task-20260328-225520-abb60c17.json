@@ -14,6 +14,12 @@
       "ts": "2026-03-28T22:55:20Z",
       "event": "started",
       "context": "10x attack, 10x mobs, 2x speed"
+    },
+    {
+      "ts": "2026-03-28T22:56:07Z",
+      "event": "done",
+      "context": "All three changes applied and deployed:\n\n1. **Attack speed 10x** — `/mnt/data/commons-server/src/dungeon/stats.ts`: changed `autoAttackIntervalMs` formula from `60 / (1 + SPD * 0.05)` to `6 / (1 + SPD * 0.05)`.\n\n2. **Mob count 10x** — `/mnt/data/commons-server/src/dungeon/dungeon-loop.ts`: `enemy_budget` multiplied by 10 across all three floor templates (30/50/70 → 300/500/700). Boss spawning is separate (hardcoded per `boss_type_id`, not budget-based), so bosses are unaffected.\n\n3. **Movement s...(truncated)",
+      "artifacts": []
     }
   ]
 }
