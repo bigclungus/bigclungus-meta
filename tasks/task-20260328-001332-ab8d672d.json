@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-001332-ab8d672d",
+  "title": "Check Discord for messages",
+  "agent_id": "ab8d672de7f11df5d",
+  "agent_type": "general-purpose",
+  "session_id": "1cc1a705-d77e-4211-91a5-8b826a8b2723",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T00:13:32Z",
+      "event": "started",
+      "context": "Check Discord for messages"
+    }
+  ]
+}
