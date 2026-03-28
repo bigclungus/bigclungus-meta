@@ -14,6 +14,12 @@
       "ts": "2026-03-28T12:00:10Z",
       "event": "started",
       "context": "Join VC and greet Relariiy"
+    },
+    {
+      "ts": "2026-03-28T12:02:37Z",
+      "event": "done",
+      "context": "Both voice channels show as empty -- Relariiy may have already left, or the bot's voice state cache isn't seeing them. Here's what happened:\n\n1. **Found 2 voice channels** in the EuPoor guild: \"General\" (`1008814210618245225`) and \"allies\" (`1325567700029931560`).\n2. **Generated TTS audio** successfully at `/tmp/tmptpy0mlor.mp3` using `kokoro-speak.py` with the text \"Good morning, Relariiy.\"\n3. **Attempted to join both voice channels** -- the bot refused both times because it detected no humans ...(truncated)",
+      "artifacts": []
     }
   ]
 }
