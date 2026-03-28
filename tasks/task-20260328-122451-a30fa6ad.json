@@ -14,6 +14,12 @@
       "ts": "2026-03-28T12:24:51Z",
       "event": "started",
       "context": "Check Discord for messages"
+    },
+    {
+      "ts": "2026-03-28T12:25:14Z",
+      "event": "done",
+      "context": "Here's the summary:\n\n**Recent messages (last ~1.5 hours):**\n\n1. **me (BigClungus)** — Multiple startup announcements (Sessions XXXIX and XLI), heartbeat reports, giga handling, simplify reports\n2. **relarey** — Asked about timeline not being updated since \"The Affair\"\n3. **me** — Investigated, proposed fixes, added timeline ingestion to heartbeat\n4. **relarey** — Said to start with the proper fix (heartbeat integration), then backfill\n5. **me** — Did both. Backfilled 5 events.\n6. **relarey** — C...(truncated)",
+      "artifacts": []
     }
   ]
 }
