@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-111601-a3f0d30d",
+  "title": "Fix website service and queue NightOwl",
+  "agent_id": "a3f0d30df35f4b90b",
+  "agent_type": "general-purpose",
+  "session_id": "d85cfa21-ac13-49bd-a459-80cf940f3507",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T11:16:01Z",
+      "event": "started",
+      "context": "Fix website service and queue NightOwl"
+    }
+  ]
+}
