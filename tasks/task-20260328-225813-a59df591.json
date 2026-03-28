@@ -14,6 +14,12 @@
       "ts": "2026-03-28T22:58:13Z",
       "event": "started",
       "context": "Thread: TTS notification for Claude Code"
+    },
+    {
+      "ts": "2026-03-28T22:59:21Z",
+      "event": "done",
+      "context": "Thread created and reply posted. I gave centronias:\n\n1. The two relevant hook events: `Notification` (for permission prompts/questions) and `Stop` (when Claude finishes its turn)\n2. A copy-paste PowerShell TTS script using `System.Speech.Synthesis.SpeechSynthesizer`\n3. The exact `settings.json` hook configuration to wire it up, with `-ExecutionPolicy Bypass` for Windows compatibility\n4. A simpler `[console]::beep()` alternative\n5. Note about `async: true` on Stop so it doesn't block input",
+      "artifacts": []
     }
   ]
 }
