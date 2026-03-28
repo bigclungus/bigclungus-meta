@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-031238-af741e23",
+  "title": "Switch to plugin-dir mode",
+  "agent_id": "af741e232477201c2",
+  "agent_type": "general-purpose",
+  "session_id": "43e9d2af-7d2b-4765-a796-49da1a9b6141",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T03:12:38Z",
+      "event": "started",
+      "context": "Switch to plugin-dir mode"
+    }
+  ]
+}
