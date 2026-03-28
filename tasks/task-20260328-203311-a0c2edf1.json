@@ -14,6 +14,12 @@
       "ts": "2026-03-28T20:33:11Z",
       "event": "started",
       "context": "Post build complete to thread"
+    },
+    {
+      "ts": "2026-03-28T20:33:22Z",
+      "event": "done",
+      "context": "Message posted successfully to Discord thread `1487537381547708508`. The build completion announcement was delivered at 2026-03-28T20:33:19Z as message ID `1487550176066539694`.",
+      "artifacts": []
     }
   ]
 }
