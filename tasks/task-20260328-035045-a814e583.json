@@ -14,6 +14,12 @@
       "ts": "2026-03-28T03:50:45Z",
       "event": "started",
       "context": "Purge old discord plugin refs"
+    },
+    {
+      "event": "done",
+      "ts": "2026-03-28T03:56:34.083339Z",
+      "message": "Closing stale task from previous session"
     }
-  ]
+  ],
+  "status": "done"
 }

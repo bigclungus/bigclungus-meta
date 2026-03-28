@@ -14,6 +14,12 @@
       "ts": "2026-03-28T03:51:50Z",
       "event": "started",
       "context": "Fix Discord MCP plugin"
+    },
+    {
+      "event": "done",
+      "ts": "2026-03-28T03:56:34.164131Z",
+      "message": "Closing stale task from previous session"
     }
-  ]
+  ],
+  "status": "done"
 }

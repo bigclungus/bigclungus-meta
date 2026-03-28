@@ -14,6 +14,12 @@
       "ts": "2026-03-28T03:24:29Z",
       "event": "started",
       "context": "Find CLI flag to skip prompt"
+    },
+    {
+      "event": "done",
+      "ts": "2026-03-28T03:56:33.669912Z",
+      "message": "Closing stale task from previous session"
     }
-  ]
+  ],
+  "status": "done"
 }
