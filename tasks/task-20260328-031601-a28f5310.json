@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-031601-a28f5310",
+  "title": "Debug channel tag format",
+  "agent_id": "a28f53106dfaec713",
+  "agent_type": "general-purpose",
+  "session_id": "17540a00-4192-4cb1-8cb5-3c89bef93d82",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T03:16:01Z",
+      "event": "started",
+      "context": "Debug channel tag format"
+    }
+  ]
+}
