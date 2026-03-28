@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-162150-a660bc7f",
+  "title": "Discord catchup on startup",
+  "agent_id": "a660bc7f31cb739ea",
+  "agent_type": "general-purpose",
+  "session_id": "c67e6b13-ec93-41ea-a823-e316148ef87d",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T16:21:50Z",
+      "event": "started",
+      "context": "Discord catchup on startup"
+    }
+  ]
+}
