@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-161225-ae7fda5a",
+  "title": "Check discord-server status",
+  "agent_id": "ae7fda5a286877b1d",
+  "agent_type": "general-purpose",
+  "session_id": "5c57794c-7dfd-4667-b6b8-b731b5f7a78e",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T16:12:25Z",
+      "event": "started",
+      "context": "Check discord-server status"
+    }
+  ]
+}
