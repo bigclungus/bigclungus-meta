@@ -14,6 +14,12 @@
       "ts": "2026-03-28T20:23:00Z",
       "event": "started",
       "context": "Post build status to thread"
+    },
+    {
+      "ts": "2026-03-28T20:23:08Z",
+      "event": "done",
+      "context": "Message posted successfully to the Discord thread. It's live at message ID `1487547601153818695` in channel `1487537381547708508`.",
+      "artifacts": []
     }
   ]
 }
