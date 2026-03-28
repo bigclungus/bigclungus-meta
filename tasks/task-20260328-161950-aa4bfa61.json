@@ -18,7 +18,13 @@
     {
       "event": "done",
       "ts": "2026-03-28T16:20:14.114002Z",
-      "message": "Stale task from previous session \u2014 closing"
+      "message": "Stale task from previous session — closing"
+    },
+    {
+      "ts": "2026-03-28T16:20:24Z",
+      "event": "done",
+      "context": "Here is the summary:\n\n**Closed (10 tasks) -- stale session artifacts:**\n- `task-20260328-155321-a68609a0` — Startup checklist and Discord catchup\n- `task-20260328-155927-ae04b608` — Fix discord MCP connection\n- `task-20260328-160414-ae25be14` — Investigate recent session crashes\n- `task-20260328-160544-ab2ea7d3` — Parse crash investigation results\n- `task-20260328-160727-afc2e818` — Startup checklist and Discord catchup\n- `task-20260328-161450-afe98f14` — Queue Bokoen1 + clean stale tasks\n- `tas...(truncated)",
+      "artifacts": []
     }
   ],
   "status": "done"
