@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-025247-a8699fbc",
+  "title": "Check timeline source links",
+  "agent_id": "a8699fbc441437a91",
+  "agent_type": "general-purpose",
+  "session_id": "43e9d2af-7d2b-4765-a796-49da1a9b6141",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T02:52:47Z",
+      "event": "started",
+      "context": "Check timeline source links"
+    }
+  ]
+}
