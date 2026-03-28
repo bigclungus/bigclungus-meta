@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-104032-a6a8ecbf",
+  "title": "Check recent startup posts",
+  "agent_id": "a6a8ecbfe3cbd43f1",
+  "agent_type": "general-purpose",
+  "session_id": "6f39db78-2fa2-4ae1-b73f-761ea988d046",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T10:40:32Z",
+      "event": "started",
+      "context": "Check recent startup posts"
+    }
+  ]
+}
