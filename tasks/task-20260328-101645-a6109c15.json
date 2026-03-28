@@ -14,6 +14,12 @@
       "ts": "2026-03-28T10:16:45Z",
       "event": "started",
       "context": "Handle heartbeat trigger"
+    },
+    {
+      "ts": "2026-03-28T10:20:13Z",
+      "event": "done",
+      "context": "Here's the heartbeat summary:\n\n**Health checks (all clear):**\n- 0 stale tasks, no orphaned congress sessions\n- 0 open GitHub issues\n- 0 failed services (29 running healthy)\n- Disk: 31% on root, 12% on /mnt/data\n- All healthcheck pings OK (clung.us, temporal.clung.us, terminal.clung.us)\n\n**Bug found and fixed (MINOR):**\n- The Discord history ingest (`/mnt/data/scripts/history-ingest.py`) had stopped ingesting messages since ~03:13 UTC today. The Discord plugin was renamed from `plugin:discord:dis...(truncated)",
+      "artifacts": []
     }
   ]
 }
