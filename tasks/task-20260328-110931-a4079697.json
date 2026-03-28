@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-110931-a4079697",
+  "title": "Check voice transcript channel",
+  "agent_id": "a40796972c5baed21",
+  "agent_type": "general-purpose",
+  "session_id": "1472c3c4-27d0-4800-9541-cb30a7f5ef18",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T11:09:31Z",
+      "event": "started",
+      "context": "Check voice transcript channel"
+    }
+  ]
+}
