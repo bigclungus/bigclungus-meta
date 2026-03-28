@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-034617-ab11bcea",
+  "title": "Fix plugin json location",
+  "agent_id": "ab11bceab885892b7",
+  "agent_type": "general-purpose",
+  "session_id": "17540a00-4192-4cb1-8cb5-3c89bef93d82",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T03:46:17Z",
+      "event": "started",
+      "context": "Fix plugin json location"
+    }
+  ]
+}
