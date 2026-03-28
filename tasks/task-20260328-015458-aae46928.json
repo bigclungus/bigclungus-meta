@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-015458-aae46928",
+  "title": "Post VC findings to thread",
+  "agent_id": "aae469287286bb860",
+  "agent_type": "general-purpose",
+  "session_id": "1cc1a705-d77e-4211-91a5-8b826a8b2723",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T01:54:58Z",
+      "event": "started",
+      "context": "Post VC findings to thread"
+    }
+  ]
+}
