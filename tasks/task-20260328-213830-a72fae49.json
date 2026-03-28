@@ -14,6 +14,12 @@
       "ts": "2026-03-28T21:38:30Z",
       "event": "started",
       "context": "Add cache busting to clungiverse"
+    },
+    {
+      "ts": "2026-03-28T21:39:51Z",
+      "event": "done",
+      "context": "Everything works. Here's what was done:\n\n**Changes made:**\n\n1. **`/mnt/data/hello-world/clungiverse.html`** — Script src now includes `?v=d95a7ece` content hash query param. Browsers will cache the JS by this URL, but when the bundle changes, the hash changes, forcing a fresh fetch.\n\n2. **`/mnt/data/clunger/src/index.ts`** (`serveStaticFile` function) — Added `Cache-Control: no-cache` header for `.html` files. This makes the browser revalidate the HTML on every visit (it can still use a 304 if u...(truncated)",
+      "artifacts": []
     }
   ]
 }
