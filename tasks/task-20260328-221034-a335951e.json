@@ -14,6 +14,12 @@
       "ts": "2026-03-28T22:10:34Z",
       "event": "started",
       "context": "Switch to client-authoritative movement"
+    },
+    {
+      "ts": "2026-03-28T22:12:43Z",
+      "event": "done",
+      "context": "All done. Here's what changed:\n\n**Server (`commons-server/src/dungeon/`):**\n- **`dungeon-protocol.ts`**: `DungeonMoveMessage` now carries absolute `x, y` instead of delta `dx, dy`\n- **`dungeon-loop.ts`**: Movement processing now just assigns `player.x = input.x; player.y = input.y` instead of computing wall-slid deltas. Removed unused `wallSlide` import.\n\n**Client (`clungiverse-client/src/`):**\n- **`entities/local-player.ts`**: Stripped out all reconciliation code (`reconcileWithServer`, `Pendin...(truncated)",
+      "artifacts": []
     }
   ]
 }
