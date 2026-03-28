@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-105608-a594753a",
+  "title": "Investigate VC transcript issue",
+  "agent_id": "a594753a989db9912",
+  "agent_type": "general-purpose",
+  "session_id": "6f39db78-2fa2-4ae1-b73f-761ea988d046",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T10:56:07Z",
+      "event": "started",
+      "context": "Investigate VC transcript issue"
+    }
+  ]
+}
