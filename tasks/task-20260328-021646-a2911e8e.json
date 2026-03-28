@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-021646-a2911e8e",
+  "title": "Add speak tool to Discord plugin",
+  "agent_id": "a2911e8e23527e3fe",
+  "agent_type": "general-purpose",
+  "session_id": "4b512792-9717-4aea-80d7-c6d3d56a2841",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T02:16:46Z",
+      "event": "started",
+      "context": "Add speak tool to Discord plugin"
+    }
+  ]
+}
