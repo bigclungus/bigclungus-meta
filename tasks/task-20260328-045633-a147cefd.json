@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-045633-a147cefd",
+  "title": "Fix bot muted state in VC",
+  "agent_id": "a147cefda877b7292",
+  "agent_type": "general-purpose",
+  "session_id": "c292e4ea-af5d-4856-aa25-4a8040477813",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T04:56:33Z",
+      "event": "started",
+      "context": "Fix bot muted state in VC"
+    }
+  ]
+}
