@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-020902-a9bf42cf",
+  "title": "Read learned directives + giga log",
+  "agent_id": "a9bf42cf58819fd9f",
+  "agent_type": "general-purpose",
+  "session_id": "4b512792-9717-4aea-80d7-c6d3d56a2841",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T02:09:02Z",
+      "event": "started",
+      "context": "Read learned directives + giga log"
+    }
+  ]
+}
