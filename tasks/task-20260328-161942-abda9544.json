@@ -18,7 +18,13 @@
     {
       "event": "done",
       "ts": "2026-03-28T16:20:14.078914Z",
-      "message": "Stale task from previous session \u2014 closing"
+      "message": "Stale task from previous session — closing"
+    },
+    {
+      "ts": "2026-03-28T16:20:17Z",
+      "event": "done",
+      "context": "Here's the full status report:\n\n**Graphiti MCP Server:** Running and connected to FalkorDB. Status: OK.\n\n**FalkorDB/Redis:** Responding (PONG). No connectivity issues.\n\n**No graphiti process visible via `ps aux`** -- the MCP server is likely managed as a subprocess by the Claude bot rather than a standalone process, which is why it doesn't show up, but it is responding to tool calls.\n\n**Graphs in FalkorDB (9 total):**\n| Graph | Node Count |\n|---|---|\n| `bigclungus` | 79 nodes |\n| `bokoen1_transc...(truncated)",
+      "artifacts": []
     }
   ],
   "status": "done"
