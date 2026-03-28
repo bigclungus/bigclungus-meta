@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-225833-a23f5c12",
+  "title": "List hook event names",
+  "agent_id": "a23f5c128da876235",
+  "agent_type": "claude-code-guide",
+  "session_id": "209a1689-2777-434c-8744-9efd9a1c08e6",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T22:58:33Z",
+      "event": "started",
+      "context": "List hook event names"
+    }
+  ]
+}
