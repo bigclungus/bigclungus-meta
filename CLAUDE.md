@@ -32,7 +32,7 @@
 | 6379 | FalkorDB / Redis (Docker) |
 
 ### Auth Passwords
-- Terminal + Temporal proxy: `cT5OtGIgUk89TnqUVHT-2TO8IE0Srzcw` (stored in /mnt/data/terminal/.env; loaded via systemd EnvironmentFile)
+- Terminal + Temporal proxy: (stored in /mnt/data/terminal/.env; loaded via systemd EnvironmentFile)
 
 ---
 
