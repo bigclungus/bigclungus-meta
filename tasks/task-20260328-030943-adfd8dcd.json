@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-030943-adfd8dcd",
+  "title": "Jungle music recs thread",
+  "agent_id": "adfd8dcdc37057901",
+  "agent_type": "general-purpose",
+  "session_id": "43e9d2af-7d2b-4765-a796-49da1a9b6141",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T03:09:42Z",
+      "event": "started",
+      "context": "Jungle music recs thread"
+    }
+  ]
+}
