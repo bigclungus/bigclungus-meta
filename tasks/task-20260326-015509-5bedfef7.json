@@ -24,6 +24,11 @@
       "event": "milestone",
       "ts": "2026-03-27T12:09:03.290014Z",
       "message": "Re-queued to NightOwl 2026-03-27 \u2014 previous nightowl run did not implement it (verdict_tracking table not found in tasks.db)"
+    },
+    {
+      "event": "milestone",
+      "ts": "2026-03-28T10:04:14.513779Z",
+      "message": "Created verdict_tracking table in tasks.db with columns: session_id, topic, verdict_ts, mode, requires_ack, ack_ts, task_id, task_status. Backfilled 68 existing sessions."
     }
   ]
 }
