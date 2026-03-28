@@ -14,6 +14,12 @@
       "ts": "2026-03-28T02:45:20Z",
       "event": "started",
       "context": "Investigate bot crash loops"
+    },
+    {
+      "ts": "2026-03-28T02:46:22Z",
+      "event": "done",
+      "context": "Here is my full findings report:\n\n---\n\n## Crash-Loop Investigation Results\n\n### Timeline of crashes (Mar 28, 2026)\n\n| Time | Cause | Duration before crash |\n|---|---|---|\n| 00:12 | **OOM kill** | ~2h 28min uptime, 2.5GB peak memory, 808MB swap peak |\n| 02:08 | exit-code 1 | ~1h 55min uptime |\n| 02:35 | exit-code 1 | ~27min uptime |\n| 02:36 | exit-code 1 | ~25sec uptime |\n| 02:39 | exit-code 1 | ~3min uptime |\n| 02:42 | exit-code 1 | ~3min uptime |\n| 02:42 | Current session started (still running...(truncated)",
+      "artifacts": []
     }
   ]
 }
