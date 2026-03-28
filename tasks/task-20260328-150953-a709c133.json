@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-150953-a709c133",
+  "title": "Research channel plugin transport",
+  "agent_id": "a709c133223c43508",
+  "agent_type": "general-purpose",
+  "session_id": "9d3a7a6c-fa33-4af8-9205-836e0c432301",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T15:09:53Z",
+      "event": "started",
+      "context": "Research channel plugin transport"
+    }
+  ]
+}
