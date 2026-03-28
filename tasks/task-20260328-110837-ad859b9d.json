@@ -14,6 +14,12 @@
       "ts": "2026-03-28T11:08:36Z",
       "event": "started",
       "context": "Respond to relarey in VC"
+    },
+    {
+      "ts": "2026-03-28T11:09:15Z",
+      "event": "done",
+      "context": "Neither voice channel has anyone in it currently. It seems relarey may have left the voice channel. The TTS audio was generated successfully at `/tmp/tmp1hgejd1d.mp3`, but the bot can't join an empty voice channel -- it requires at least one human present. Once relarey rejoins a voice channel, I can join and play the audio.",
+      "artifacts": []
     }
   ]
 }
