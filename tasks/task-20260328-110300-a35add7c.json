@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-110300-a35add7c",
+  "title": "Queue Bokoen1 NightOwl task",
+  "agent_id": "a35add7c8072fd4bb",
+  "agent_type": "general-purpose",
+  "session_id": "1472c3c4-27d0-4800-9541-cb30a7f5ef18",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T11:03:00Z",
+      "event": "started",
+      "context": "Queue Bokoen1 NightOwl task"
+    }
+  ]
+}
