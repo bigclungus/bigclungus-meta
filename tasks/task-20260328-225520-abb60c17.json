@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-225520-abb60c17",
+  "title": "10x attack, 10x mobs, 2x speed",
+  "agent_id": "abb60c17b23925f7f",
+  "agent_type": "general-purpose",
+  "session_id": "5aac769e-2e6e-4bd3-a873-645eb001e989",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T22:55:20Z",
+      "event": "started",
+      "context": "10x attack, 10x mobs, 2x speed"
+    }
+  ]
+}
