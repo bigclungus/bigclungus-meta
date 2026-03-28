@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-034409-a723bbb2",
+  "title": "Rename discord plugin fork",
+  "agent_id": "a723bbb28a0ffa40d",
+  "agent_type": "general-purpose",
+  "session_id": "17540a00-4192-4cb1-8cb5-3c89bef93d82",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T03:44:09Z",
+      "event": "started",
+      "context": "Rename discord plugin fork"
+    }
+  ]
+}
