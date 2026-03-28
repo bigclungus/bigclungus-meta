@@ -14,6 +14,12 @@
       "ts": "2026-03-28T18:49:30Z",
       "event": "started",
       "context": "Fix flapping tvtropes lab service"
+    },
+    {
+      "ts": "2026-03-28T18:50:13Z",
+      "event": "done",
+      "context": "Fixed. Here's the summary:\n\n**Root cause:** Two duplicate systemd services were fighting over port 8106:\n- `labs-tvtropes-explorer.service` (the canonical labs-prefixed one, RestartSec=5)\n- `tvtropes-explorer.service` (an older duplicate, RestartSec=30, with `ExecStopPost=/bin/sh -c 'fuser -k 8106/tcp || true'`)\n\nThe flap cycle was: `labs-` grabs port 8106 → `tvtropes-explorer` tries to start, gets EADDRINUSE, fails → its ExecStopPost kills whatever holds port 8106 (the `labs-` process) → `labs-...(truncated)",
+      "artifacts": []
     }
   ]
 }
