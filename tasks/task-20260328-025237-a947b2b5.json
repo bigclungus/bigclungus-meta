@@ -14,6 +14,12 @@
       "ts": "2026-03-28T02:52:37Z",
       "event": "started",
       "context": "Check VC integration status"
+    },
+    {
+      "ts": "2026-03-28T02:54:31Z",
+      "event": "done",
+      "context": "Here is the complete status report on VC integration:\n\n---\n\n**VC Integration Status**\n\n**Code written (not deployed):**\n\nThe fork at `/mnt/data/discord-plugin/` (commit `bf41b5e`, \"feat: add voice support\") has full VC code, but the **currently installed plugin** is still on commit `31d667b` (the prior version without voice). The voice commit adds ~1,012 lines across 4 files.\n\n**What's been built:**\n\n1. **`voice-receive.ts`** -- Complete STT pipeline:\n   - Subscribes to per-user audio streams in...(truncated)",
+      "artifacts": []
     }
   ]
 }
