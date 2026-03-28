@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-123227-ac5d39d9",
+  "title": "Investigate timeline entries added",
+  "agent_id": "ac5d39d9b478bdbe7",
+  "agent_type": "general-purpose",
+  "session_id": "9d3a7a6c-fa33-4af8-9205-836e0c432301",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T12:32:27Z",
+      "event": "started",
+      "context": "Investigate timeline entries added"
+    }
+  ]
+}
