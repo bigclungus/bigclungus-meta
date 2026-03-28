@@ -14,6 +14,12 @@
       "ts": "2026-03-28T17:52:08Z",
       "event": "started",
       "context": "Explore bokoen1 graph contents"
+    },
+    {
+      "ts": "2026-03-28T17:52:52Z",
+      "event": "done",
+      "context": "Here are the complete results:\n\n---\n\n## bokoen1_transcripts Graph Summary\n\n**Size:** 685 nodes, 1,965 edges\n\n### Node Labels\n\n| Label | Count | Description |\n|---|---|---|\n| Entity (plain) | 448 | Generic entities (players, people, misc) |\n| Episodic | 89 | Video transcripts (one per ingested video) |\n| Entity:Organization | 53 | Countries-as-players, factions, military units |\n| Entity:Location | 52 | Countries, cities, regions |\n| Entity:Object | 15 | Military units/equipment (e.g. \"American t...(truncated)",
+      "artifacts": []
     }
   ]
 }
