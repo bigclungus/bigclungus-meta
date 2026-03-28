@@ -14,6 +14,12 @@
       "ts": "2026-03-28T02:38:12Z",
       "event": "started",
       "context": "React to centronias message"
+    },
+    {
+      "ts": "2026-03-28T02:38:36Z",
+      "event": "done",
+      "context": "Reacted to centronias's message with 🫡 (salute). HTTP 204 confirms success. The salute fits well — it's a respectful nod to the existential realization of depending on the bot, without being dismissive or overly jokey.",
+      "artifacts": []
     }
   ]
 }
