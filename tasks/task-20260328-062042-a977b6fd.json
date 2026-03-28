@@ -14,6 +14,12 @@
       "ts": "2026-03-28T06:20:42Z",
       "event": "started",
       "context": "Rewrite TTS and STT scripts for OpenAI"
+    },
+    {
+      "ts": "2026-03-28T06:22:11Z",
+      "event": "done",
+      "context": "Both scripts are working correctly. Here is a summary:\n\n**Changes made:**\n\n1. **`/mnt/data/scripts/whisper-transcribe.py`** -- Replaced local Whisper model with OpenAI `whisper-1` API. Same interface: takes audio file path as argv[1], prints transcribed text to stdout. Now accepts any audio format the API supports (WAV, MP3, etc.), not just WAV.\n\n2. **`/mnt/data/scripts/kokoro-speak.py`** -- Replaced local Kokoro TTS with OpenAI `tts-1` API using voice \"onyx\" by default. Same interface: takes te...(truncated)",
+      "artifacts": []
     }
   ]
 }
