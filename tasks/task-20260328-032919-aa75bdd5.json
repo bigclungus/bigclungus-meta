@@ -14,6 +14,12 @@
       "ts": "2026-03-28T03:29:19Z",
       "event": "started",
       "context": "Check if expect is installed"
+    },
+    {
+      "ts": "2026-03-28T03:29:27Z",
+      "event": "done",
+      "context": "**Results:**\n\n- `expect` is **not installed** -- `which expect` returns \"command not found\"\n- `dpkg` shows no `expect` package installed\n- However, `python3-pexpect` (4.9-2) is installed, which is the Python equivalent for automating interactive applications",
+      "artifacts": []
     }
   ]
 }
