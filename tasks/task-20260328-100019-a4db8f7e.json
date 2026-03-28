@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-100019-a4db8f7e",
+  "title": "NightOwl: congress verdict tracking",
+  "agent_id": "a4db8f7eb2b649062",
+  "agent_type": "general-purpose",
+  "session_id": "39a8007c-3c86-47f0-b762-f5bf8cf2f776",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T10:00:19Z",
+      "event": "started",
+      "context": "NightOwl: congress verdict tracking"
+    }
+  ]
+}
