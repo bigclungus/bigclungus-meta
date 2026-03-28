@@ -14,6 +14,12 @@
       "ts": "2026-03-28T17:59:20Z",
       "event": "started",
       "context": "Clean up stale tasks"
+    },
+    {
+      "ts": "2026-03-28T18:00:30Z",
+      "event": "done",
+      "context": "All 6 stale Discord plugin decoupling tasks have been marked as done:\n\n1. **Execute Discord plugin cutover** (`task-20260328-155114-a9ffce07`)\n2. **Check jaboostin thread request status** (`task-20260328-162043-a44c5b5f`)\n3. **Research Discord plugin decoupling** (`task-20260328-162259-af2dea1d`)\n4. **Debug discord notification push** (`task-20260328-164009-a05262ee`)\n5. **Debug proxy notification stream** (`task-20260328-170243-abba1490`)\n6. **Debug MCP notification flow** (`task-20260328-17104...(truncated)",
+      "artifacts": []
     }
   ]
 }
