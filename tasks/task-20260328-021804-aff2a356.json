@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-021804-aff2a356",
+  "title": "Tell speak agent about auto-join",
+  "agent_id": "aff2a3565ff0f538b",
+  "agent_type": "general-purpose",
+  "session_id": "4b512792-9717-4aea-80d7-c6d3d56a2841",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T02:18:04Z",
+      "event": "started",
+      "context": "Tell speak agent about auto-join"
+    }
+  ]
+}
