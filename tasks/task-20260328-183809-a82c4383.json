@@ -14,6 +14,12 @@
       "ts": "2026-03-28T18:38:09Z",
       "event": "started",
       "context": "Debug DMs for centronias"
+    },
+    {
+      "ts": "2026-03-28T18:45:35Z",
+      "event": "done",
+      "context": "Everything is clean. Let me do a quick summary of the changes.\n\n---\n\n**Root cause:** The `fetchAllowedChannel` function in `/mnt/data/discord-server/src/access.ts` checks `(ch as any).recipientId` on DM channels to verify the recipient is in the allowlist. In discord.js v14, `DMChannel.recipientId` is only set when the API response includes `data.recipients` (in the `_patch` method). When a DM channel is fetched or exists as a partial in the cache, `recipientId` can be `undefined`, causing `acce...(truncated)",
+      "artifacts": []
     }
   ]
 }
