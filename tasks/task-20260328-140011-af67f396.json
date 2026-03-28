@@ -14,6 +14,12 @@
       "ts": "2026-03-28T14:00:11Z",
       "event": "started",
       "context": "Handle simplify trigger"
+    },
+    {
+      "ts": "2026-03-28T14:00:36Z",
+      "event": "done",
+      "context": "No secrets detected, no new commits since the last simplify run. Nothing to do.\n\n**Simplify run results:**\n- **Secret scan**: Clean across both `hello-world` and `temporal-workflows` (last 5 commits each).\n- **New commits since last run (~50 min ago)**: None in either repo.\n- **Action taken**: None. No changes to review, no fixes needed, no services restarted.",
+      "artifacts": []
     }
   ]
 }
