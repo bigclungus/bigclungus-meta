@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-161635-a4fad816",
+  "title": "End-to-end test MCP proxy",
+  "agent_id": "a4fad8160e381fe0d",
+  "agent_type": "general-purpose",
+  "session_id": "5c57794c-7dfd-4667-b6b8-b731b5f7a78e",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T16:16:35Z",
+      "event": "started",
+      "context": "End-to-end test MCP proxy"
+    }
+  ]
+}
