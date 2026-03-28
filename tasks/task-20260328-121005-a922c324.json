@@ -14,6 +14,12 @@
       "ts": "2026-03-28T12:10:05Z",
       "event": "started",
       "context": "Investigate timeline update gap"
+    },
+    {
+      "ts": "2026-03-28T12:11:29Z",
+      "event": "done",
+      "context": "Here is the complete investigation report:\n\n---\n\n**Last timeline event:** \"The Affair\" (id 46), dated 2026-03-27T22:21:00Z, with description \"jaboostin has an affair with Clungus. Debbie finds out.\" — added at 22:28 on March 27.\n\n**Is there an automated timeline update process?** No. The tooling exists but is entirely manual:\n- `/mnt/data/scripts/timeline_ingest.py` — scans GitHub repos for notable commits and writes candidates to a JSON file\n- `/mnt/data/scripts/timeline_approve.py` — reviews a...(truncated)",
+      "artifacts": []
     }
   ]
 }
