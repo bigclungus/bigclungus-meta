@@ -14,6 +14,12 @@
       "ts": "2026-03-28T12:26:22Z",
       "event": "started",
       "context": "Queue Bokoen1 NightOwl task"
+    },
+    {
+      "ts": "2026-03-28T12:26:33Z",
+      "event": "done",
+      "context": "The NightOwl task was queued successfully. The workflow was already running (`nightowl-today`), so it signaled the existing workflow with the new task. It will execute at 3am PDT (10am UTC) in the next batch.",
+      "artifacts": []
     }
   ]
 }
