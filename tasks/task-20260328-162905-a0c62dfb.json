@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-162905-a0c62dfb",
+  "title": "Remove watchdog cron and script",
+  "agent_id": "a0c62dfb79e215cb9",
+  "agent_type": "general-purpose",
+  "session_id": "5c57794c-7dfd-4667-b6b8-b731b5f7a78e",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T16:29:04Z",
+      "event": "started",
+      "context": "Remove watchdog cron and script"
+    }
+  ]
+}
