@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-105942-aca95f3b",
+  "title": "Add VC occupancy guardrail",
+  "agent_id": "aca95f3b2a2182984",
+  "agent_type": "general-purpose",
+  "session_id": "6f39db78-2fa2-4ae1-b73f-761ea988d046",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T10:59:42Z",
+      "event": "started",
+      "context": "Add VC occupancy guardrail"
+    }
+  ]
+}
