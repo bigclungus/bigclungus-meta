@@ -14,6 +14,12 @@
       "ts": "2026-03-28T12:56:53Z",
       "event": "started",
       "context": "Handle heartbeat trigger"
+    },
+    {
+      "ts": "2026-03-28T12:58:03Z",
+      "event": "done",
+      "context": "No `website.service` unit exists -- the CLAUDE.md reference is stale. Port 8080 is likely served by `clunger.service` which is active. Everything is fine.\n\n**Heartbeat #4 summary:**\n\n- **Services:** All 8 checked services are active. `website.service` doesn't exist as a unit (likely merged into clunger); port 8080 is served by clunger which is healthy.\n- **Timeline ingestion:** Ran successfully. Found 54 new candidates (this appears to be the first run populating the candidates file). No action ...(truncated)",
+      "artifacts": []
     }
   ]
 }
