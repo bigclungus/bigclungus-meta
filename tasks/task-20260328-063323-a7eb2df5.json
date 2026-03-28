@@ -14,6 +14,12 @@
       "ts": "2026-03-28T06:33:23Z",
       "event": "started",
       "context": "TTS reply to VC question"
+    },
+    {
+      "ts": "2026-03-28T06:33:31Z",
+      "event": "done",
+      "context": "The TTS audio file was generated at `/tmp/tmpe44z90fd.mp3`.",
+      "artifacts": []
     }
   ]
 }
