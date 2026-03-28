@@ -14,6 +14,12 @@
       "ts": "2026-03-28T11:04:56Z",
       "event": "started",
       "context": "Verify VC patches applied"
+    },
+    {
+      "ts": "2026-03-28T11:05:49Z",
+      "event": "done",
+      "context": "All three patches are confirmed in place:\n\n**1. Bot speech logged to transcript via `logBotSpeech()`** -- Present in `server.ts` at lines 922-926. After audio playback completes, if `spokenText` was provided, it retrieves the teardown from `connection._voiceReceiveTeardown` and calls `teardown.logBotSpeech(spokenText)`. The `logBotSpeech` function is defined in `voice-receive.ts` at lines 625-632, pushing entries to the transcript with `isBot: true`.\n\n**2. Teardown properly awaited before `conne...(truncated)",
+      "artifacts": []
     }
   ]
 }
