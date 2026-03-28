@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-161848-a6e15d84",
+  "title": "Check Discord for recent messages",
+  "agent_id": "a6e15d8473dfc3e6b",
+  "agent_type": "general-purpose",
+  "session_id": "11c8017b-0506-440c-8e8d-6482380f8d94",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T16:18:48Z",
+      "event": "started",
+      "context": "Check Discord for recent messages"
+    }
+  ]
+}
