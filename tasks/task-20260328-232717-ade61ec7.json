@@ -14,6 +14,12 @@
       "ts": "2026-03-28T23:27:17Z",
       "event": "started",
       "context": "Read GitHub username from auth"
+    },
+    {
+      "ts": "2026-03-28T23:28:28Z",
+      "event": "done",
+      "context": "Here is what was done:\n\n**Findings:**\n- The `tauth_github` cookie format is `username.hmac_signature` (HMAC-SHA256 signed with `COOKIE_SECRET`)\n- Clunger already has a `GET /api/me` endpoint at `/mnt/data/clunger/src/index.ts:2435` that returns `{ username: \"...\" }` for authenticated users or 401 for anonymous\n- The hardcoded `'Adventurer'` was at `/mnt/data/clungiverse-client/src/main.ts:106`\n\n**Fix applied to `/mnt/data/clungiverse-client/src/main.ts`:**\n1. Added `fetchUsername()` async functi...(truncated)",
+      "artifacts": []
     }
   ]
 }
