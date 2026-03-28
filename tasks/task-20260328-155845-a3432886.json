@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-155845-a3432886",
+  "title": "Check discord bot status",
+  "agent_id": "a34328863df09aeb6",
+  "agent_type": "general-purpose",
+  "session_id": "9736bd7e-59e4-453a-8ab2-fcbdeaee901d",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T15:58:45Z",
+      "event": "started",
+      "context": "Check discord bot status"
+    }
+  ]
+}
