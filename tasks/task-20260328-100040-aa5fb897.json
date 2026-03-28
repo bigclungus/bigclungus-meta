@@ -14,6 +14,12 @@
       "ts": "2026-03-28T10:00:40Z",
       "event": "started",
       "context": "NightOwl: congress workflow unification"
+    },
+    {
+      "ts": "2026-03-28T10:07:33Z",
+      "event": "done",
+      "context": "Task completed. Here's a summary:\n\n**What was done:**\n\n1. **Created `/mnt/data/temporal-workflows/workflows/session_wf.py`** - the unified `SessionWorkflow` class containing all logic for congress, meme-congress, and show-trial sessions. It uses a `_resolve_flavor()` function to determine the session type from input, then branches to `_run_congress()` or `_run_trial()`. Error handling and failure alerting are shared at the top level.\n\n2. **Reduced `congress_wf.py` and `trial_wf.py` to thin re-ex...(truncated)",
+      "artifacts": []
     }
   ]
 }
