@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-160348-a26967c0",
+  "title": "Catch up on Discord",
+  "agent_id": "a26967c02c0f80459",
+  "agent_type": "general-purpose",
+  "session_id": "0a3984ba-da48-4e09-bd10-807a664177a8",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T16:03:48Z",
+      "event": "started",
+      "context": "Catch up on Discord"
+    }
+  ]
+}
