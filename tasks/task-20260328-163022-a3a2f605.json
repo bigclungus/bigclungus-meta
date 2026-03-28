@@ -14,6 +14,12 @@
       "ts": "2026-03-28T16:30:22Z",
       "event": "started",
       "context": "Update CLAUDE.md discord architecture"
+    },
+    {
+      "ts": "2026-03-28T16:31:39Z",
+      "event": "done",
+      "context": "Done. Here's what was updated:\n\n**`/mnt/data/CLAUDE.md`** (project-level):\n- Added port 9877 (discord-server) to the Local Services and Ports table\n- Added `discord-server.service` to the Running Services table\n- Added `/mnt/data/discord-server/` to the Important Paths table\n- Added a new \"Discord Architecture\" subsection under Architecture Overview explaining the two-piece design (persistent gateway + thin proxy) and that discord-server can be restarted independently\n\n**`/home/clungus/work/clau...(truncated)",
+      "artifacts": []
     }
   ]
 }
