@@ -14,6 +14,12 @@
       "ts": "2026-03-28T20:51:08Z",
       "event": "started",
       "context": "Debug missing start button"
+    },
+    {
+      "ts": "2026-03-28T20:54:33Z",
+      "event": "done",
+      "context": "Hash changed from `b627aae5...` to `70e2d930...`, confirming the rebuild produced a new bundle.\n\nHere's the summary:\n\n**Root cause:** The Start Dungeon button was rendered at Y=720 (110px header + 580px grid of 2x2 persona cards at 280px each + 30px gap). On most laptop screens with browser chrome, the viewport height is ~650-720px, putting the button below the visible area. Combined with `overflow: hidden` on the body, there was no way to scroll to it.\n\n**Fix applied** to `/mnt/data/clungiverse...(truncated)",
+      "artifacts": []
     }
   ]
 }
