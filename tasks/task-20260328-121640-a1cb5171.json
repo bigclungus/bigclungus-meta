@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-121640-a1cb5171",
+  "title": "Add VC setup to startup",
+  "agent_id": "a1cb5171dc7039386",
+  "agent_type": "general-purpose",
+  "session_id": "13f30e25-213d-4ba9-831f-a8630e84d766",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T12:16:40Z",
+      "event": "started",
+      "context": "Add VC setup to startup"
+    }
+  ]
+}
