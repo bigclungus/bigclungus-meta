@@ -14,6 +14,12 @@
       "ts": "2026-03-28T10:56:07Z",
       "event": "started",
       "context": "Investigate VC transcript issue"
+    },
+    {
+      "ts": "2026-03-28T10:57:07Z",
+      "event": "done",
+      "context": "Here is the complete investigation report:\n\n---\n\n**Finding: The voice transcription system only transcribes human users' speech, not the bot's own speech. There are two separate issues.**\n\n### How the system works\n\nThe voice transcription pipeline is in `/mnt/data/discord-plugin/voice-receive.ts`. When BigClungus joins a voice channel (auto-join or manual), `setupVoiceReceive()` is called. It:\n\n1. Listens for `connection.receiver.speaking` events (fired when a user starts transmitting audio)\n2. ...(truncated)",
+      "artifacts": []
     }
   ]
 }
