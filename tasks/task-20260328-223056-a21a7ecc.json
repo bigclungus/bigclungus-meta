@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-223056-a21a7ecc",
+  "title": "Radius-based fog of war + hide mobs",
+  "agent_id": "a21a7ecc5e43e6a0a",
+  "agent_type": "general-purpose",
+  "session_id": "5aac769e-2e6e-4bd3-a873-645eb001e989",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T22:30:56Z",
+      "event": "started",
+      "context": "Radius-based fog of war + hide mobs"
+    }
+  ]
+}
