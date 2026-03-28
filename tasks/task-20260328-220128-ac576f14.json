@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-220128-ac576f14",
+  "title": "Fix rubberbanding with better prediction",
+  "agent_id": "ac576f14d5915ab0a",
+  "agent_type": "general-purpose",
+  "session_id": "5aac769e-2e6e-4bd3-a873-645eb001e989",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T22:01:28Z",
+      "event": "started",
+      "context": "Fix rubberbanding with better prediction"
+    }
+  ]
+}
