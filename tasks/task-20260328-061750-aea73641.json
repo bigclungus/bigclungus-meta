@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-061750-aea73641",
+  "title": "Research Discord voice plugin for OpenAI TTS",
+  "agent_id": "aea736413ad69f43a",
+  "agent_type": "general-purpose",
+  "session_id": "39a8007c-3c86-47f0-b762-f5bf8cf2f776",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T06:17:50Z",
+      "event": "started",
+      "context": "Research Discord voice plugin for OpenAI TTS"
+    }
+  ]
+}
