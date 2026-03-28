@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-035900-a73125ad",
+  "title": "Check plugin logs and fix",
+  "agent_id": "a73125addad24c859",
+  "agent_type": "general-purpose",
+  "session_id": "1bd50f6d-edd5-403d-9a36-c438e4f76896",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T03:59:00Z",
+      "event": "started",
+      "context": "Check plugin logs and fix"
+    }
+  ]
+}
