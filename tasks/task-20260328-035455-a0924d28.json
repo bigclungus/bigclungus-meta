@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-035455-a0924d28",
+  "title": "Discord catchup - threads",
+  "agent_id": "a0924d28a31a1cb88",
+  "agent_type": "general-purpose",
+  "session_id": "1bd50f6d-edd5-403d-9a36-c438e4f76896",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T03:54:55Z",
+      "event": "started",
+      "context": "Discord catchup - threads"
+    }
+  ]
+}
