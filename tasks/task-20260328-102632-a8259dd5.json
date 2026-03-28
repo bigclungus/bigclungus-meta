@@ -1,0 +1,19 @@
+{
+  "id": "task-20260328-102632-a8259dd5",
+  "title": "Find voice-transcripts channel and build feature",
+  "agent_id": "a8259dd5be9ae3a03",
+  "agent_type": "general-purpose",
+  "session_id": "39a8007c-3c86-47f0-b762-f5bf8cf2f776",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-28T10:26:32Z",
+      "event": "started",
+      "context": "Find voice-transcripts channel and build feature"
+    }
+  ]
+}
