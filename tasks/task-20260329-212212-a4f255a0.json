@@ -1,0 +1,19 @@
+{
+  "id": "task-20260329-212212-a4f255a0",
+  "title": "Check discord-server SSE stream health",
+  "agent_id": "a4f255a09912a7f71",
+  "agent_type": "general-purpose",
+  "session_id": "b5db222b-1a92-4725-a617-75c2c8992195",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-29T21:22:12Z",
+      "event": "started",
+      "context": "Check discord-server SSE stream health"
+    }
+  ]
+}
