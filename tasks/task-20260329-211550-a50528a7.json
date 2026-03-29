@@ -1,0 +1,19 @@
+{
+  "id": "task-20260329-211550-a50528a7",
+  "title": "Check SSE stream ownership and notification flow",
+  "agent_id": "a50528a73defd0d4b",
+  "agent_type": "general-purpose",
+  "session_id": "b5db222b-1a92-4725-a617-75c2c8992195",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-29T21:15:50Z",
+      "event": "started",
+      "context": "Check SSE stream ownership and notification flow"
+    }
+  ]
+}
