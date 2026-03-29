@@ -1,0 +1,19 @@
+{
+  "id": "task-20260329-020112-ac7cdc83",
+  "title": "Fix claude CLI path in Temporal worker",
+  "agent_id": "ac7cdc83d4687c7a1",
+  "agent_type": "general-purpose",
+  "session_id": "5aac769e-2e6e-4bd3-a873-645eb001e989",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-29T02:01:12Z",
+      "event": "started",
+      "context": "Fix claude CLI path in Temporal worker"
+    }
+  ]
+}
