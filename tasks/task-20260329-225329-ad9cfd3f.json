@@ -1,0 +1,19 @@
+{
+  "id": "task-20260329-225329-ad9cfd3f",
+  "title": "Check plugin running state and connection",
+  "agent_id": "ad9cfd3f236ccada8",
+  "agent_type": "general-purpose",
+  "session_id": "b2392096-6ce5-4ae4-820f-91ca3597c55e",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-29T22:53:29Z",
+      "event": "started",
+      "context": "Check plugin running state and connection"
+    }
+  ]
+}
