@@ -1,0 +1,19 @@
+{
+  "id": "task-20260329-015436-aa769fed",
+  "title": "Block game start on mob gen workflow completion",
+  "agent_id": "aa769fed976acd88e",
+  "agent_type": "general-purpose",
+  "session_id": "5aac769e-2e6e-4bd3-a873-645eb001e989",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-29T01:54:36Z",
+      "event": "started",
+      "context": "Block game start on mob gen workflow completion"
+    }
+  ]
+}
