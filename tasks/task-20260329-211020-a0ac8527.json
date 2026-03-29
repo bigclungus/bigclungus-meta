@@ -1,0 +1,19 @@
+{
+  "id": "task-20260329-211020-a0ac8527",
+  "title": "Diagnose Discord MCP server 404",
+  "agent_id": "a0ac8527bf0a2888d",
+  "agent_type": "general-purpose",
+  "session_id": "b5db222b-1a92-4725-a617-75c2c8992195",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-29T21:10:20Z",
+      "event": "started",
+      "context": "Diagnose Discord MCP server 404"
+    }
+  ]
+}
