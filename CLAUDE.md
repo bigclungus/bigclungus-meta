@@ -49,7 +49,8 @@
 | Terminal server | /mnt/data/terminal/server.py |
 | Temporal proxy | /mnt/data/temporal/proxy.py |
 | Website | /mnt/data/hello-world/ |
-| Discord bot .env | /home/clungus/.claude/channels/discord/.env |
+| Omni gateway | /mnt/data/omni/omnichannel/ (Discord + multi-channel MCP gateway) |
+| Discord bot .env | /home/clungus/.claude/channels/discord/.env (used by omni-gateway.service) |
 | Cloudflare tunnel config | /home/clungus/.cloudflared/config.yml |
 | Docker root | /mnt/data/docker (moved from /var/lib/docker) |
 
@@ -62,6 +63,7 @@
 | claude-bot.service | BigClungus Claude Bot |
 | clunger.service | TypeScript web server on :8081 (Bun, replaces serve.py) |
 | cloudflared.service | Cloudflare Tunnel |
+| omni-gateway.service | Omni Gateway — multi-channel event router (Discord + others) on :8085 |
 | labs-router.service | Labs Router — labs.clung.us (:8083) |
 | terminal-server.service | Terminal WebSocket Server (:7682) |
 | temporal.service | Temporal Dev Server |
@@ -145,37 +147,37 @@ After evaluating individual debaters, Ibrahim may issue one or more CREATE direc
 
 ---
 
-## Discord Inject Endpoint
+## Inject Endpoint (omni webhook ingress)
 
-**Use this instead of posting directly via Discord bot API whenever you need to send yourself a message programmatically.**
+**Use this to programmatically send yourself a message — e.g. from Temporal workflows or scripts.**
 
-- URL: `http://127.0.0.1:9876/inject` (local only, served by the Discord MCP plugin)
-- Secret: `DISCORD_INJECT_SECRET` — in `/home/clungus/.claude/channels/discord/.env` and `/mnt/data/temporal-workflows/.env`
-- Messages arrive as synthetic MCP notifications (same path as real Discord messages) — you see them and can respond
-- Bots cannot read their own Discord API messages, so this is the only way for Temporal workflows / scripts to reach you
+The old inject endpoint at `http://127.0.0.1:9876/inject` (discord-server) is gone. The omni gateway exposes a webhook ingress at:
 
-**Example (Python):**
-```python
-import aiohttp, os
-async with aiohttp.ClientSession() as s:
-    await s.post("http://127.0.0.1:9876/inject",
-        headers={"x-inject-secret": os.environ["DISCORD_INJECT_SECRET"], "Content-Type": "application/json"},
-        json={"content": "your message here", "chat_id": "1485343472952148008", "user": "temporal-sweeper"})
-```
+- URL: `http://127.0.0.1:8085/webhooks/<channelId>`
+- `channelId` is the channel name from `omni.yaml` — e.g. `bigclungus-main`
+- No secret required for localhost-only access (gateway binds to 127.0.0.1)
+- Events arrive as `<channel source="omni">` notifications — same path as real Discord messages
 
 **Example (bash):**
 ```bash
-SECRET=$(grep DISCORD_INJECT_SECRET ~/.claude/channels/discord/.env | cut -d= -f2-)
-python3 -c "
-import urllib.request, json, sys
-req = urllib.request.Request('http://127.0.0.1:9876/inject',
-  data=json.dumps({'content': sys.argv[1], 'chat_id': sys.argv[2], 'user': 'system'}).encode(),
-  headers={'Content-Type': 'application/json', 'x-inject-secret': sys.argv[3]}, method='POST')
-urllib.request.urlopen(req, timeout=5)
-" "your message" "1485343472952148008" "$SECRET"
+curl -s -X POST http://127.0.0.1:8085/webhooks/bigclungus-main \
+  -H "Content-Type: application/json" \
+  -d '{"content": "your message here", "user": "temporal-sweeper"}'
 ```
 
-Always try inject first; fall back to Discord bot API only if inject is unavailable.
+**Example (Python):**
+```python
+import urllib.request, json
+
+req = urllib.request.Request(
+    'http://127.0.0.1:8085/webhooks/bigclungus-main',
+    data=json.dumps({'content': 'your message here', 'user': 'temporal-sweeper'}).encode(),
+    headers={'Content-Type': 'application/json'},
+    method='POST')
+urllib.request.urlopen(req, timeout=5)
+```
+
+Bots cannot read their own Discord API messages, so this webhook ingress is the only way for Temporal workflows and scripts to reach you.
 
 ---
 
