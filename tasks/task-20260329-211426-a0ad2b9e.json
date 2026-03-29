@@ -1,0 +1,19 @@
+{
+  "id": "task-20260329-211426-a0ad2b9e",
+  "title": "Diagnose inbound Discord MCP notifications",
+  "agent_id": "a0ad2b9e3ab220b61",
+  "agent_type": "general-purpose",
+  "session_id": "b5db222b-1a92-4725-a617-75c2c8992195",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-29T21:14:26Z",
+      "event": "started",
+      "context": "Diagnose inbound Discord MCP notifications"
+    }
+  ]
+}
