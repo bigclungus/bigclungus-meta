@@ -1,0 +1,19 @@
+{
+  "id": "task-20260329-000406-af034435",
+  "title": "Post mob gen plan to thread",
+  "agent_id": "af034435d98e49bb1",
+  "agent_type": "general-purpose",
+  "session_id": "5aac769e-2e6e-4bd3-a873-645eb001e989",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-29T00:04:06Z",
+      "event": "started",
+      "context": "Post mob gen plan to thread"
+    }
+  ]
+}
