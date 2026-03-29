@@ -1,0 +1,19 @@
+{
+  "id": "task-20260329-224705-a2cac3e4",
+  "title": "Check git history for discord-plugin server.ts",
+  "agent_id": "a2cac3e46b8233b49",
+  "agent_type": "general-purpose",
+  "session_id": "b2392096-6ce5-4ae4-820f-91ca3597c55e",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-29T22:47:05Z",
+      "event": "started",
+      "context": "Check git history for discord-plugin server.ts"
+    }
+  ]
+}
