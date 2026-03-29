@@ -14,6 +14,12 @@
       "ts": "2026-03-29T01:00:00Z",
       "event": "started",
       "context": "Close retry mob gen tasks"
+    },
+    {
+      "ts": "2026-03-29T01:00:13Z",
+      "event": "done",
+      "context": "Both tasks marked as done successfully:\n\n- `task-20260329-003353-a3a6decf` (Phase A retry) — logged `done`: \"Completed: built and deployed\"\n- `task-20260329-003426-a9198b5d` (Phase C retry) — logged `done`: \"Completed: built and deployed\"",
+      "artifacts": []
     }
   ]
 }
