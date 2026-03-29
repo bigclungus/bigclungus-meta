@@ -1,0 +1,19 @@
+{
+  "id": "task-20260329-230422-a9264cd6",
+  "title": "Restart claude-bot after removing plugin-dir flag",
+  "agent_id": "a9264cd61eaf13dca",
+  "agent_type": "general-purpose",
+  "session_id": "b2392096-6ce5-4ae4-820f-91ca3597c55e",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-29T23:04:22Z",
+      "event": "started",
+      "context": "Restart claude-bot after removing plugin-dir flag"
+    }
+  ]
+}
