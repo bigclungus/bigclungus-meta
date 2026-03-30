@@ -14,6 +14,12 @@
       "ts": "2026-03-30T06:47:46Z",
       "event": "started",
       "context": "Heartbeat health check"
+    },
+    {
+      "ts": "2026-03-30T06:49:06Z",
+      "event": "done",
+      "context": "Heartbeat summary:\n\n**Failed services:** None. All services clean.\n\n**Stale tasks:** 0 tasks marked stale. No orphaned congress sessions found.\n\n**Timeline ingestion:** Scanned 29 repos for commits in the last hour. Found 0 new candidates — nothing to approve or reject. (The high commit counts on bigclungus-meta/clungiverse-client/etc. are historical, not from the last hour window.)\n\nEverything looks healthy. No action required.",
+      "artifacts": []
     }
   ]
 }
