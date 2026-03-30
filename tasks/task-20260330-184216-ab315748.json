@@ -1,0 +1,19 @@
+{
+  "id": "task-20260330-184216-ab315748",
+  "title": "Delete weak timeline entries and update scraper",
+  "agent_id": "ab31574858a1a3a8f",
+  "agent_type": "general-purpose",
+  "session_id": "cd5c6ab2-9176-47d3-b93e-4e96320e5feb",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-30T18:42:16Z",
+      "event": "started",
+      "context": "Delete weak timeline entries and update scraper"
+    }
+  ]
+}
