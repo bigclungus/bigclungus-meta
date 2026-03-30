@@ -237,12 +237,13 @@ See trigger audit thread for context: discord channel `1486826620273557675`
 
 ## `[memory-sweep] file=<filename>`
 
-Injected by `memory-sweep-cron.py` daily at 9am UTC. Contains the full content of one memory file that needs re-verification.
+Injected by `memory-sweep-cron.py` every 4 hours. Contains the full content of one memory file that needs re-verification. At most 5 are dispatched per run (oldest-first).
 
 When received:
 1. Parse `file=<filename>` from the first line (format: `[memory-sweep] file=<filename>`)
 2. Extract the memory content from after `MEMORY CONTENT:\n`
 3. Spin up a background subagent with this prompt:
+   - **Archive first:** before making any changes to the memory file, copy it to `/mnt/data/data/memory-archive/YYYY-MM-DD/<filename>` (create the date directory if it doesn't exist). Use today's UTC date for YYYY-MM-DD.
    - Read the memory content carefully
    - Identify verifiable claims: file paths (do they exist?), service names (is the service registered in systemctl?), feature/code assertions (does the code match what the memory says?)
    - Read the relevant files and run checks to verify each claim
@@ -250,9 +251,25 @@ When received:
    - If any claims are stale or wrong: update the memory body with corrected information AND update the `> last verified:` line with a brief summary of what changed
    - If the memory is entirely obsolete (the thing it describes no longer exists at all): delete the file and remove its entry from `/home/clungus/.claude/projects/-mnt-data/memory/MEMORY.md`
    - After writing the verified line, remove the lock file: `os.unlink("/tmp/memory-sweep.lock")` or `rm -f /tmp/memory-sweep.lock`
+   - Post the result to the Memory Sweeper Discord thread (channel_id=1488205394659639407): one line summarising what was done (e.g. "✅ `feedback_foo.md` — all claims accurate" or "✏️ `feedback_bar.md` — updated stale path")
 4. React with ✅ when done
 
 **Note:** The lock file at `/tmp/memory-sweep.lock` prevents the cron from firing again while a sweep is in progress. The subagent MUST remove it when finished (whether claims passed, were corrected, or the file was deleted). If the agent crashes without removing it and the lock is >2 hours old, the next cron run will clear it automatically.
+
+---
+
+## `[memory-sweep-complete] count=N files: file1.md, file2.md, ...`
+
+Sent by `memory-sweep-cron.py` after all individual `[memory-sweep]` messages for the current run have been dispatched.
+
+When received:
+1. Parse `count=N` and the file list from the message
+2. Post to the Memory Sweeper Discord thread (channel_id=1488205394659639407):
+   ```
+   Memory sweep dispatched for N memories: file1.md, file2.md, ...
+   Individual results will follow as each sweep completes.
+   ```
+3. No subagent needed — this is a lightweight notification step only.
 
 ---
 
