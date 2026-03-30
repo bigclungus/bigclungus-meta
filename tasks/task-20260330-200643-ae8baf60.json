@@ -1,0 +1,19 @@
+{
+  "id": "task-20260330-200643-ae8baf60",
+  "title": "Recount LOC excluding json/md/yaml",
+  "agent_id": "ae8baf60b53933e6f",
+  "agent_type": "general-purpose",
+  "session_id": "cd5c6ab2-9176-47d3-b93e-4e96320e5feb",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-30T20:06:43Z",
+      "event": "started",
+      "context": "Recount LOC excluding json/md/yaml"
+    }
+  ]
+}
