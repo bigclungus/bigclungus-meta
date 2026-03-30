@@ -1,0 +1,19 @@
+{
+  "id": "task-20260330-200209-a5a4018b",
+  "title": "Fetch centronias image for advice",
+  "agent_id": "a5a4018b86aec4f4c",
+  "agent_type": "general-purpose",
+  "session_id": "cd5c6ab2-9176-47d3-b93e-4e96320e5feb",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-30T20:02:08Z",
+      "event": "started",
+      "context": "Fetch centronias image for advice"
+    }
+  ]
+}
