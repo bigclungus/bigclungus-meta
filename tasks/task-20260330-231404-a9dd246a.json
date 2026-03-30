@@ -1,0 +1,19 @@
+{
+  "id": "task-20260330-231404-a9dd246a",
+  "title": "Restore lobby notification to new channel",
+  "agent_id": "a9dd246ac91ec5020",
+  "agent_type": "general-purpose",
+  "session_id": "cd5c6ab2-9176-47d3-b93e-4e96320e5feb",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-30T23:14:04Z",
+      "event": "started",
+      "context": "Restore lobby notification to new channel"
+    }
+  ]
+}
