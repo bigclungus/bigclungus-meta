@@ -14,6 +14,12 @@
       "ts": "2026-03-30T12:00:17Z",
       "event": "started",
       "context": "Handle simplify trigger"
+    },
+    {
+      "event": "done",
+      "ts": "2026-03-30T12:17:32.726670Z",
+      "message": "Simplify pass complete \u2014 dead code removed from hello-world and temporal-workflows, leftover changes from crash cleaned up and pushed."
     }
-  ]
+  ],
+  "status": "done"
 }
