@@ -14,6 +14,12 @@
       "ts": "2026-03-30T06:08:16Z",
       "event": "started",
       "context": "Heartbeat health check"
+    },
+    {
+      "ts": "2026-03-30T06:10:04Z",
+      "event": "done",
+      "context": "All done. Here's the summary:\n\n---\n\n**Heartbeat findings:**\n\n**Stale tasks:** None. 0 tasks marked stale, no orphaned congress sessions.\n\n**Failed services:** None. All services running clean.\n\n**GitHub issues:** One open issue — #80 \"Security: auth password exposed in public CLAUDE.md\" (bug, opened 2026-03-28). This is flagged as a security concern about a password visible in the public CLAUDE.md file. Worth surfacing to the user — it's a real bug but touches credentials, so it needs human judg...(truncated)",
+      "artifacts": []
     }
   ]
 }
