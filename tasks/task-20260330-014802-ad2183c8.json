@@ -1,0 +1,19 @@
+{
+  "id": "task-20260330-014802-ad2183c8",
+  "title": "Add cached-mobs checkbox to RPG lobby",
+  "agent_id": "ad2183c805c823ec3",
+  "agent_type": "general-purpose",
+  "session_id": "cd5c6ab2-9176-47d3-b93e-4e96320e5feb",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-30T01:48:02Z",
+      "event": "started",
+      "context": "Add cached-mobs checkbox to RPG lobby"
+    }
+  ]
+}
