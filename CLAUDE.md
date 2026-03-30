@@ -363,7 +363,7 @@ python3 /mnt/data/scripts/log_task_event.py task-20260324-080932-a46e65d6 done "
 import json, glob, os, datetime
 TASKS_DIR = '/home/clungus/work/bigclungus-meta/tasks'
 SNAPSHOT = '/tmp/bc-open-tasks.json'
-CLOSED = {'done', 'failed', 'cancelled'}
+CLOSED = {'done', 'failed', 'cancelled', 'stale'}
 items = []
 for path in sorted(glob.glob(os.path.join(TASKS_DIR, '*.json'))):
     try:
