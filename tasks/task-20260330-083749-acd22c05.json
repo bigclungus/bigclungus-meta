@@ -14,6 +14,12 @@
       "ts": "2026-03-30T08:37:49Z",
       "event": "started",
       "context": "Heartbeat health check"
+    },
+    {
+      "ts": "2026-03-30T08:39:11Z",
+      "event": "done",
+      "context": "Clean across the board. Summary:\n\n**Heartbeat results — 2026-03-30**\n\n- **Failed services:** None. All services healthy.\n- **Stale tasks:** 0 stale tasks, no orphaned congress sessions.\n- **Timeline ingestion:** 0 new candidates from the last hour. Nothing to approve or reject.\n\nSystem is clean. No action needed.",
+      "artifacts": []
     }
   ]
 }
