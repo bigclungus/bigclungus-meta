@@ -1,0 +1,19 @@
+{
+  "id": "task-20260330-033619-a7bb8cb3",
+  "title": "Look up EU5 Pain is Salvation track",
+  "agent_id": "a7bb8cb34124d4024",
+  "agent_type": "general-purpose",
+  "session_id": "cd5c6ab2-9176-47d3-b93e-4e96320e5feb",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-30T03:36:19Z",
+      "event": "started",
+      "context": "Look up EU5 Pain is Salvation track"
+    }
+  ]
+}
