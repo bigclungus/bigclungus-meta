@@ -14,6 +14,12 @@
       "ts": "2026-03-30T19:50:11Z",
       "event": "started",
       "context": "Clean up timeline bad entries"
+    },
+    {
+      "ts": "2026-03-30T19:52:14Z",
+      "event": "done",
+      "context": "All three tasks complete. Here's the summary:\n\n**Task 1 — Database cleanup:** Deleted 8 entries from `source='git'`. 65 entries remain (18 git, 47 manual/discord). Backup saved to `/tmp/timeline-backup-20260330.json`.\n\nDeleted entries were:\n- `memory-sweep-cron.py` addition (internal cron script)\n- `[memory-sweep]` trigger handler in TRIGGERS.md (internal config)\n- `split rewrite` in discord-plugin (vague refactor)\n- `Add timeline ingestion system` (internal tooling)\n- `Migrate trial persistence...(truncated)",
+      "artifacts": []
     }
   ]
 }
