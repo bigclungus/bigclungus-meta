@@ -14,6 +14,12 @@
       "ts": "2026-03-30T23:24:45Z",
       "event": "started",
       "context": "Debug missing pickup visuals in clungiverse"
+    },
+    {
+      "ts": "2026-03-30T23:31:32Z",
+      "event": "done",
+      "context": "Root cause and fix:\n\n**Root cause:** Stale bundle. Two commits added floor pickup rendering to the source (`clungiverse-client/src/renderer/dungeon-renderer.ts`) — \"Render HP heart pickups distinctly\" and \"Add client rendering for temp powerups\" — but the build script (`bash build.sh`) was never re-run. The served bundle at `/mnt/data/hello-world/static/clungiverse/main.js` was from 07:01, while the source was last modified at 23:18. The rendering code was fully absent from what players download...(truncated)",
+      "artifacts": []
     }
   ]
 }
