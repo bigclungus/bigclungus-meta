@@ -14,6 +14,12 @@
       "ts": "2026-03-30T08:27:51Z",
       "event": "started",
       "context": "Heartbeat health check"
+    },
+    {
+      "ts": "2026-03-30T08:29:24Z",
+      "event": "done",
+      "context": "Here's the heartbeat summary:\n\n**Failed services:** None. All clear.\n\n**Stale tasks:** 0 stale tasks, no orphaned congress sessions.\n\n**Timeline ingestion:** 0 new candidates found. Nothing to approve or reject.\n\n**Ideation findings:**\n\n- \"bug/problem/broken\" search surfaced a few older items (terminal not updating from 2026-03-23, labs/trees+rocks complaints from relarey on 2026-03-26, and jaboostin's knowledge graph browser-crash concern from 2026-03-27). These appear to be pre-existing known ...(truncated)",
+      "artifacts": []
     }
   ]
 }
