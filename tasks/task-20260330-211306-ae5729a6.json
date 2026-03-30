@@ -1,0 +1,19 @@
+{
+  "id": "task-20260330-211306-ae5729a6",
+  "title": "Update lobby notification spec",
+  "agent_id": "ae5729a6fb2c7773a",
+  "agent_type": "general-purpose",
+  "session_id": "cd5c6ab2-9176-47d3-b93e-4e96320e5feb",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-30T21:13:06Z",
+      "event": "started",
+      "context": "Update lobby notification spec"
+    }
+  ]
+}
