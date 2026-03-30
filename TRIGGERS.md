@@ -235,6 +235,27 @@ See trigger audit thread for context: discord channel `1486826620273557675`
 
 ---
 
+## `[memory-sweep] file=<filename>`
+
+Injected by `memory-sweep-cron.py` daily at 9am UTC. Contains the full content of one memory file that needs re-verification.
+
+When received:
+1. Parse `file=<filename>` from the first line (format: `[memory-sweep] file=<filename>`)
+2. Extract the memory content from after `MEMORY CONTENT:\n`
+3. Spin up a background subagent with this prompt:
+   - Read the memory content carefully
+   - Identify verifiable claims: file paths (do they exist?), service names (is the service registered in systemctl?), feature/code assertions (does the code match what the memory says?)
+   - Read the relevant files and run checks to verify each claim
+   - If all claims are still accurate: append or update a `> last verified: YYYY-MM-DD — all claims accurate` line at the end of the memory file body (the file is at `/home/clungus/.claude/projects/-mnt-data/memory/<filename>`)
+   - If any claims are stale or wrong: update the memory body with corrected information AND update the `> last verified:` line with a brief summary of what changed
+   - If the memory is entirely obsolete (the thing it describes no longer exists at all): delete the file and remove its entry from `/home/clungus/.claude/projects/-mnt-data/memory/MEMORY.md`
+   - After writing the verified line, remove the lock file: `os.unlink("/tmp/memory-sweep.lock")` or `rm -f /tmp/memory-sweep.lock`
+4. React with ✅ when done
+
+**Note:** The lock file at `/tmp/memory-sweep.lock` prevents the cron from firing again while a sweep is in progress. The subagent MUST remove it when finished (whether claims passed, were corrected, or the file was deleted). If the agent crashes without removing it and the lock is >2 hours old, the next cron run will clear it automatically.
+
+---
+
 ## `[timeline] <event description>`
 
 Add a manual entry to the project timeline at clung.us/timeline.
