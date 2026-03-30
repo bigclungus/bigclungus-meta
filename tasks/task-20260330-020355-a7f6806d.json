@@ -1,0 +1,19 @@
+{
+  "id": "task-20260330-020355-a7f6806d",
+  "title": "Send nearest-neighbor requirement to sprite agent",
+  "agent_id": "a7f6806d36d818c43",
+  "agent_type": "general-purpose",
+  "session_id": "cd5c6ab2-9176-47d3-b93e-4e96320e5feb",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-30T02:03:55Z",
+      "event": "started",
+      "context": "Send nearest-neighbor requirement to sprite agent"
+    }
+  ]
+}
