@@ -14,6 +14,12 @@
       "ts": "2026-03-30T06:22:23Z",
       "event": "started",
       "context": "Remove unused AUTH_PASSWORD from terminal env"
+    },
+    {
+      "ts": "2026-03-30T06:23:33Z",
+      "event": "done",
+      "context": "Done. Here's a summary of what was found and changed:\n\n**Findings:**\n- `/mnt/data/terminal/server.py` references only `RESTART_PASSWORD` (for a `/restart` endpoint protected by a JSON body password). `AUTH_PASSWORD` appears nowhere in the file.\n- `/mnt/data/temporal/proxy.py` uses only GitHub OAuth (`tauth_github` cookie + HMAC/`COOKIE_SECRET`). No password auth path exists.\n- No other active code in `/mnt/data` references `AUTH_PASSWORD` — only session backup JSONLs and a task tracking file.\n\n*...(truncated)",
+      "artifacts": []
     }
   ]
 }
