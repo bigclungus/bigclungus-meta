@@ -14,6 +14,12 @@
       "ts": "2026-03-30T02:48:55Z",
       "event": "started",
       "context": "Handle heartbeat ideation"
+    },
+    {
+      "ts": "2026-03-30T02:55:24Z",
+      "event": "done",
+      "context": "Heartbeat complete. Here's the summary:\n\n**System status: healthy**\n- All 26 services running\n- Disk: root 32%, /mnt/data 11%\n- omni-gateway, clunger, temporal-worker, commons-server all nominal\n- History ingest tracking 2610 messages with no gaps\n\n**Fix applied:** The startup task-check script had `CLOSED = {'done', 'failed', 'cancelled'}` missing `'stale'`. This caused stale tasks from prior sessions to appear as open on every boot, inflating the open task count with noise. Fixed in all three ...(truncated)",
+      "artifacts": []
     }
   ]
 }
