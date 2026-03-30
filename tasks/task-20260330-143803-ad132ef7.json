@@ -14,6 +14,12 @@
       "ts": "2026-03-30T14:38:03Z",
       "event": "started",
       "context": "Handle heartbeat trigger"
+    },
+    {
+      "ts": "2026-03-30T14:38:57Z",
+      "event": "done",
+      "context": "All clear across all three checks:\n\n**Failed services:** None. 0 units in failed state.\n\n**Stale tasks:** None. 0 tasks marked stale, no orphaned congress sessions.\n\n**Disk:**\n- `/` (root): 29G used of 97G (32%) — well under 85% threshold\n- `/mnt/data`: 9.6G used of 98G (11%) — plenty of headroom\n\nNothing requires action or escalation.",
+      "artifacts": []
     }
   ]
 }
