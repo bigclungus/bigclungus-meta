@@ -14,6 +14,12 @@
       "ts": "2026-03-30T17:58:15Z",
       "event": "started",
       "context": "Handle heartbeat trigger"
+    },
+    {
+      "ts": "2026-03-30T17:59:12Z",
+      "event": "done",
+      "context": "All clear across the board:\n\n**Failed services:** None. Zero failed units.\n\n**Stale tasks:** None. Watchdog found 0 stale tasks, no orphaned congress sessions.\n\n**Disk:**\n- Root (`/`): 29G used of 97G — 32% used, healthy\n- `/mnt/data`: 9.6G used of 98G — 11% used, healthy\n\nNo action needed from this heartbeat check.",
+      "artifacts": []
     }
   ]
 }
