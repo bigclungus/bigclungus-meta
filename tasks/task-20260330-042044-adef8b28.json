@@ -1,0 +1,19 @@
+{
+  "id": "task-20260330-042044-adef8b28",
+  "title": "Research property records and Airbnb revenue",
+  "agent_id": "adef8b287b628e3d7",
+  "agent_type": "general-purpose",
+  "session_id": "cd5c6ab2-9176-47d3-b93e-4e96320e5feb",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-30T04:20:44Z",
+      "event": "started",
+      "context": "Research property records and Airbnb revenue"
+    }
+  ]
+}
