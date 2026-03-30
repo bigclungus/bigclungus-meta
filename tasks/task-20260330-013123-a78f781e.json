@@ -14,6 +14,12 @@
       "ts": "2026-03-30T01:31:23Z",
       "event": "started",
       "context": "Extract and save attachment image"
+    },
+    {
+      "ts": "2026-03-30T01:31:46Z",
+      "event": "done",
+      "context": "The data contained 1 item of type `text`. That text was itself a JSON object with the structure:\n\n- `contentType`: `image/png`\n- `encoding`: `base64`\n- `content`: the base64-encoded PNG data\n- `size`: (file size metadata)\n\nThe image was successfully extracted and saved to `/tmp/centronias-image.png` — 530,008 bytes (roughly 518 KB).",
+      "artifacts": []
     }
   ]
 }
