@@ -14,6 +14,12 @@
       "ts": "2026-03-30T01:26:42Z",
       "event": "started",
       "context": "Fix RPG mob gen parallel + dungeon placement"
+    },
+    {
+      "ts": "2026-03-30T01:34:39Z",
+      "event": "done",
+      "context": "Both pushed. Here's a summary of what was changed:\n\n---\n\n## Summary\n\n### Issue 1 — Stat gen and sprite gen run in parallel per mob\n\n**File:** `/mnt/data/temporal-workflows/workflows/mob_gen_wf.py`\n\nThe old code ran in two sequential batches: (1) generate ALL stats one-by-one, saving each, then (2) launch ALL sprites in parallel. The new code defines a `process_mob(entity)` coroutine that runs the full pipeline for one mob: `generate_mob_stats` → `save_mob_stats` → `generate_mob_sprite`. All mob ...(truncated)",
+      "artifacts": []
     }
   ]
 }
