@@ -1,0 +1,19 @@
+{
+  "id": "task-20260330-191517-aa1af459",
+  "title": "Zillow income calculation",
+  "agent_id": "aa1af45928a3dc369",
+  "agent_type": "general-purpose",
+  "session_id": "cd5c6ab2-9176-47d3-b93e-4e96320e5feb",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-30T19:15:17Z",
+      "event": "started",
+      "context": "Zillow income calculation"
+    }
+  ]
+}
