@@ -1,0 +1,19 @@
+{
+  "id": "task-20260330-204824-a5fa58e7",
+  "title": "Debug grazing.html dungeon building rendering",
+  "agent_id": "a5fa58e76857b08e8",
+  "agent_type": "general-purpose",
+  "session_id": "cd5c6ab2-9176-47d3-b93e-4e96320e5feb",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-30T20:48:24Z",
+      "event": "started",
+      "context": "Debug grazing.html dungeon building rendering"
+    }
+  ]
+}
