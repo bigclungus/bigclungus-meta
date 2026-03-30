@@ -1,0 +1,19 @@
+{
+  "id": "task-20260330-024341-a86da241",
+  "title": "Update mob preview screen layout",
+  "agent_id": "a86da241d37e66558",
+  "agent_type": "general-purpose",
+  "session_id": "cd5c6ab2-9176-47d3-b93e-4e96320e5feb",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-30T02:43:41Z",
+      "event": "started",
+      "context": "Update mob preview screen layout"
+    }
+  ]
+}
