@@ -1,0 +1,19 @@
+{
+  "id": "task-20260330-181807-ac06c6f9",
+  "title": "Audit timeline items and create thread",
+  "agent_id": "ac06c6f9e3881d92c",
+  "agent_type": "general-purpose",
+  "session_id": "cd5c6ab2-9176-47d3-b93e-4e96320e5feb",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-30T18:18:07Z",
+      "event": "started",
+      "context": "Audit timeline items and create thread"
+    }
+  ]
+}
