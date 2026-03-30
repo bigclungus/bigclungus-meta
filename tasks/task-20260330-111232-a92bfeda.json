@@ -14,6 +14,12 @@
       "ts": "2026-03-30T11:12:32Z",
       "event": "started",
       "context": "Check Bokoen1 ingestion status"
+    },
+    {
+      "event": "done",
+      "ts": "2026-03-30T11:47:00.652103Z",
+      "message": "Bokoen1 ingestion complete \u2014 167 transcripts in bokoen1_transcripts group, 200 episodic nodes total."
     }
-  ]
+  ],
+  "status": "done"
 }
