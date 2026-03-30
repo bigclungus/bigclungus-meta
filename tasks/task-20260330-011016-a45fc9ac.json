@@ -14,6 +14,12 @@
       "ts": "2026-03-30T01:10:16Z",
       "event": "started",
       "context": "Test omni inject endpoint"
+    },
+    {
+      "ts": "2026-03-30T01:10:28Z",
+      "event": "done",
+      "context": "Here are the results for both requests:\n\n**POST http://127.0.0.1:8085/inject**\n- Status: `404 Not Found`\n- Body: `{\"error\":\"not found\"}`\n\n**POST http://127.0.0.1:8085/webhooks/bigclungus-main**\n- Status: `200 OK`\n- Body: `{\"ok\":true,\"eventId\":\"fe23e68b-595c-4693-b987-ac16c8c9e829\"}`\n\nSummary: Port 8085 is live and responding. The `/inject` route does not exist on this server (404), but the `/webhooks/bigclungus-main` route works and accepted the payload successfully, returning an event ID.",
+      "artifacts": []
     }
   ]
 }
