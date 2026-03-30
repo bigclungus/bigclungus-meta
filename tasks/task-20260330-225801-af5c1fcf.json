@@ -14,6 +14,12 @@
       "ts": "2026-03-30T22:58:00Z",
       "event": "started",
       "context": "Fix lobby notification to post to Discord directly"
+    },
+    {
+      "ts": "2026-03-30T22:58:57Z",
+      "event": "done",
+      "context": "Done. Here's a summary of what changed:\n\n**`/mnt/data/commons-server/src/index.ts`**\nReplaced the omni webhook call (`http://127.0.0.1:8085/webhooks/bigclungus-main`) with a direct Discord API POST to `https://discord.com/api/v10/channels/1485343472952148008/messages` using `Authorization: Bot ${token}`. Added a guard that warns to console if `DISCORD_BOT_TOKEN` is unset rather than silently failing.\n\n**`/home/clungus/.config/systemd/user/commons-server.service`**\nAdded `EnvironmentFile=/home/cl...(truncated)",
+      "artifacts": []
     }
   ]
 }
