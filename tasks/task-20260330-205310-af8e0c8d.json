@@ -1,0 +1,19 @@
+{
+  "id": "task-20260330-205310-af8e0c8d",
+  "title": "Add cache bust to grazing.html",
+  "agent_id": "af8e0c8d6d99c1a6a",
+  "agent_type": "general-purpose",
+  "session_id": "cd5c6ab2-9176-47d3-b93e-4e96320e5feb",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-30T20:53:10Z",
+      "event": "started",
+      "context": "Add cache bust to grazing.html"
+    }
+  ]
+}
