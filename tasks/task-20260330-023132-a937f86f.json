@@ -1,0 +1,19 @@
+{
+  "id": "task-20260330-023132-a937f86f",
+  "title": "Find OpenAI/Anthropic API keys and switch mob gen to SDK",
+  "agent_id": "a937f86f3e4df80e2",
+  "agent_type": "general-purpose",
+  "session_id": "cd5c6ab2-9176-47d3-b93e-4e96320e5feb",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-30T02:31:32Z",
+      "event": "started",
+      "context": "Find OpenAI/Anthropic API keys and switch mob gen to SDK"
+    }
+  ]
+}
