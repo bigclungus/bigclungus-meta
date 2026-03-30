@@ -1,0 +1,19 @@
+{
+  "id": "task-20260330-162205-afd897ad",
+  "title": "Update memory sweeper spec",
+  "agent_id": "afd897ad43003bf8a",
+  "agent_type": "general-purpose",
+  "session_id": "cd5c6ab2-9176-47d3-b93e-4e96320e5feb",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-30T16:22:05Z",
+      "event": "started",
+      "context": "Update memory sweeper spec"
+    }
+  ]
+}
