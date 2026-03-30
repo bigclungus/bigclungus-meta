@@ -14,6 +14,12 @@
       "ts": "2026-03-30T18:00:14Z",
       "event": "started",
       "context": "Handle simplify trigger"
+    },
+    {
+      "ts": "2026-03-30T18:07:28Z",
+      "event": "done",
+      "context": "Everything is clean. Here is a summary of what was done:\n\n---\n\n**temporal-workflows** — 2 dead code removals, committed and pushed:\n\n1. **`congress_fetch_thread_content` activity** (`activities/congress_act.py`, 27 lines): Registered in `worker.py` and defined with `@activity.defn`, but never called by any workflow. Removed the function definition and both references in `worker.py` (the import and the registration list).\n\n2. **`gen/python/agent/` directory** (4 files, 102 lines): Generated proto...(truncated)",
+      "artifacts": []
     }
   ]
 }
