@@ -1,0 +1,19 @@
+{
+  "id": "task-20260330-193149-a9836a24",
+  "title": "Fetch Crundle images",
+  "agent_id": "a9836a244237ae394",
+  "agent_type": "general-purpose",
+  "session_id": "cd5c6ab2-9176-47d3-b93e-4e96320e5feb",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-30T19:31:49Z",
+      "event": "started",
+      "context": "Fetch Crundle images"
+    }
+  ]
+}
