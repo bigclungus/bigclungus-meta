@@ -14,6 +14,12 @@
       "ts": "2026-03-30T01:47:14Z",
       "event": "started",
       "context": "Get full session name and update"
+    },
+    {
+      "ts": "2026-03-30T01:47:23Z",
+      "event": "done",
+      "context": "Complete output:\n\n- Script output: `The Second Clungus C`\n- Session name file (`/tmp/clungus-session-name.txt`): `Clungus VIII`\n\nThe script printed \"The Second Clungus C\" (which appears to be a truncated or in-progress line from the script), and the session name stored in the temp file is **Clungus VIII**.",
+      "artifacts": []
     }
   ]
 }
