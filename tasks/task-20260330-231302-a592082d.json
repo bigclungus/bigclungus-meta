@@ -14,6 +14,12 @@
       "ts": "2026-03-30T23:13:02Z",
       "event": "started",
       "context": "Update: just remove Discord lobby notification entirely"
+    },
+    {
+      "ts": "2026-03-30T23:13:49Z",
+      "event": "done",
+      "context": "Done. The Discord notification block has been removed from `POST /api/clungiverse/lobby/create` in `/mnt/data/commons-server/src/index.ts`. The change was already present (agent a8efe60972bdf82a3 had already removed it), so I committed and pushed it. The service restarted cleanly. No button, no endpoint, no notification — lobby creation is now silent.",
+      "artifacts": []
     }
   ]
 }
