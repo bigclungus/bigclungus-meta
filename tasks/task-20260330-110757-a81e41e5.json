@@ -14,6 +14,12 @@
       "ts": "2026-03-30T11:07:57Z",
       "event": "started",
       "context": "Heartbeat health check"
+    },
+    {
+      "ts": "2026-03-30T11:09:28Z",
+      "event": "done",
+      "context": "Heartbeat findings:\n\n**Failed services:** None. All services healthy.\n\n**Stale tasks:** 0 tasks marked stale. No orphaned congress sessions.\n\n**Timeline ingestion:** 0 new candidates found across all repos in the last 24 hours. Nothing pending approval.\n\n**Bokoen1 ingestion:** Still in progress — 89/167 transcripts ingested (78 remaining). Last resumed at 2026-03-30T10:01:00Z via NightOwl task `nightowl-1774864800-0`. A NightOwl task should be queued to continue if it hasn't completed.",
+      "artifacts": []
     }
   ]
 }
