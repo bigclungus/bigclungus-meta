@@ -1,0 +1,19 @@
+{
+  "id": "task-20260330-012642-a8a4a999",
+  "title": "Fix RPG mob gen parallel + dungeon placement",
+  "agent_id": "a8a4a999bcf1f1d00",
+  "agent_type": "general-purpose",
+  "session_id": "cd5c6ab2-9176-47d3-b93e-4e96320e5feb",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-30T01:26:42Z",
+      "event": "started",
+      "context": "Fix RPG mob gen parallel + dungeon placement"
+    }
+  ]
+}
