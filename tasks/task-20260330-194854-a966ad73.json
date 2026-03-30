@@ -1,0 +1,19 @@
+{
+  "id": "task-20260330-194854-a966ad73",
+  "title": "Update Crundle grammar/speech patterns",
+  "agent_id": "a966ad73ec85e0439",
+  "agent_type": "general-purpose",
+  "session_id": "cd5c6ab2-9176-47d3-b93e-4e96320e5feb",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-30T19:48:54Z",
+      "event": "started",
+      "context": "Update Crundle grammar/speech patterns"
+    }
+  ]
+}
