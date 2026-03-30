@@ -14,6 +14,12 @@
       "ts": "2026-03-30T10:47:56Z",
       "event": "started",
       "context": "Heartbeat health check"
+    },
+    {
+      "ts": "2026-03-30T10:49:21Z",
+      "event": "done",
+      "context": "All clean. Here's the summary:\n\n**Heartbeat Results — 2026-03-30**\n\n- **Failed services:** None. All services healthy.\n- **Stale tasks:** 0 tasks marked stale. No orphaned congress sessions.\n- **Timeline ingestion:** Scanned 29 repos for commits since ~1 hour ago. Found 0 new candidates — nothing to approve or reject.\n\nNothing requires action.",
+      "artifacts": []
     }
   ]
 }
