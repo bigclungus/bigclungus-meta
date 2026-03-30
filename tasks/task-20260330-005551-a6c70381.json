@@ -14,6 +14,12 @@
       "ts": "2026-03-30T00:55:51Z",
       "event": "started",
       "context": "Build inject proxy service"
+    },
+    {
+      "ts": "2026-03-30T00:57:53Z",
+      "event": "done",
+      "context": "Everything done. Here's the summary:\n\n**Service started successfully.** `inject.service` is active and running on `127.0.0.1:9876`.\n\n**Test curl result:** The proxy worked correctly — it received the POST, logged the message, stripped `chat_id`, and forwarded `{content, user}` to `http://127.0.0.1:8085/webhooks/bigclungus-main`. It got back a `404` from omni (expected — omni-gateway isn't running yet or the `bigclungus-main` webhook isn't registered). The proxy itself is functioning correctly en...(truncated)",
+      "artifacts": []
     }
   ]
 }
