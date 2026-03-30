@@ -14,6 +14,12 @@
       "ts": "2026-03-30T10:07:55Z",
       "event": "started",
       "context": "Heartbeat health check"
+    },
+    {
+      "ts": "2026-03-30T10:09:18Z",
+      "event": "done",
+      "context": "All clean. Here's the summary:\n\n**Heartbeat findings:**\n\n- **Failed services:** None. All user services healthy.\n- **Stale tasks:** None marked stale. No orphaned congress sessions found.\n- **Timeline ingestion:** Scanned 29 repos since ~24h ago. Found 0 new candidates (the repos with commits — bigclungus-meta at 218, temporal-workflows at 11, etc. — had no commits in the last hour window specifically). Nothing pending approval.\n\nNo action needed.",
+      "artifacts": []
     }
   ]
 }
