@@ -14,6 +14,12 @@
       "ts": "2026-03-30T06:17:47Z",
       "event": "started",
       "context": "Heartbeat health check"
+    },
+    {
+      "ts": "2026-03-30T06:19:18Z",
+      "event": "done",
+      "context": "All checks complete. Here's the summary:\n\n**Failed services:** None. All services running clean.\n\n**Stale tasks:** None. 0 tasks marked stale, no orphaned congress sessions.\n\n**Timeline ingestion:** 2 candidates found and both approved:\n- `claude-config`: \"Add inject.service systemd unit\" (infrastructure, posted as id=101)\n- `clungiverse-client`: \"feat: add mob preview countdown screen before dungeon start\" (feature, posted as id=102)\n\nNo action items — system is healthy.",
+      "artifacts": []
     }
   ]
 }
