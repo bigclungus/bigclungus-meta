@@ -14,6 +14,12 @@
       "ts": "2026-03-30T05:00:20Z",
       "event": "started",
       "context": "Run simplify code review pass"
+    },
+    {
+      "ts": "2026-03-30T05:03:19Z",
+      "event": "done",
+      "context": "Fix applied and service restarted. Here's a summary:\n\n**Bug found and fixed in `/mnt/data/temporal-workflows/workflows/mob_gen_wf.py`:**\n\nThe \"parallelize stat+sprite gen\" change introduced a naming mismatch. It was passing `entity[\"name\"]` as both `entity_name` and `display_name` to `generate_mob_sprite`, so the generated JS function slug was based on raw entity names (e.g. `drawSprite_microservices`) rather than the LLM-assigned display names the client expects (e.g. `drawSprite_distributed_ch...(truncated)",
+      "artifacts": []
     }
   ]
 }
