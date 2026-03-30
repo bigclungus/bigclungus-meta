@@ -14,6 +14,12 @@
       "ts": "2026-03-30T21:28:27Z",
       "event": "started",
       "context": "Handle heartbeat trigger"
+    },
+    {
+      "ts": "2026-03-30T21:29:22Z",
+      "event": "done",
+      "context": "All clear. No actionable findings:\n\n- **Stale tasks**: 0 stale, no orphaned congress sessions\n- **Failed services**: none\n- **Disk**: `/` at 32%, `/mnt/data` at 11% — well clear of 85%\n- **GitHub issues**: no open issues\n- **Services**: clung.us 200, temporal.clung.us 302 (auth redirect, expected), terminal.clung.us 302 (auth redirect, expected) — all healthy\n- **Recent commits**: none in the last 24h\n\nNothing to post to Discord.",
+      "artifacts": []
     }
   ]
 }
