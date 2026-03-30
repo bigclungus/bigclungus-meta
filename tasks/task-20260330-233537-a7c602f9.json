@@ -14,6 +14,12 @@
       "ts": "2026-03-30T23:35:37Z",
       "event": "started",
       "context": "Post fix summary to Discord dungeon thread"
+    },
+    {
+      "ts": "2026-03-30T23:35:50Z",
+      "event": "done",
+      "context": "Message posted successfully. The Discord message landed in channel 1488270313119682741 (the dungeon thread) with message ID `1488320858131792042`. The content was delivered with all formatting intact — bold headers, em dashes, inline code, and the arrow symbol all came through correctly.",
+      "artifacts": []
     }
   ]
 }
