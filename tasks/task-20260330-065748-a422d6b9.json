@@ -14,6 +14,12 @@
       "ts": "2026-03-30T06:57:48Z",
       "event": "started",
       "context": "Heartbeat health check"
+    },
+    {
+      "ts": "2026-03-30T06:59:12Z",
+      "event": "done",
+      "context": "All clear. Here's the summary:\n\n**Heartbeat results:**\n\n- **Failed services:** None. 0 failed units.\n- **Stale tasks:** None. Watchdog found 0 stale tasks and no orphaned congress sessions.\n- **Timeline ingestion:** 0 new candidates found from the last hour. Nothing to approve or reject.\n\nSystem is healthy, no action required.",
+      "artifacts": []
     }
   ]
 }
