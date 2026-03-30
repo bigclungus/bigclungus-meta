@@ -14,6 +14,12 @@
       "ts": "2026-03-30T01:43:15Z",
       "event": "started",
       "context": "Heartbeat reliability check"
+    },
+    {
+      "ts": "2026-03-30T01:48:09Z",
+      "event": "done",
+      "context": "Here's the heartbeat report:\n\n---\n\n**What was found:**\n\nDuring system startup (~01:00 UTC 2026-03-30), `SimplifyCronWorkflow` in Temporal was failing with repeated 404 errors on `http://127.0.0.1:9876/inject`. Investigation showed:\n\n- `inject.service` started at `00:56:18` but `omni-gateway.service` wasn't running yet (first entry appeared at `01:07:45`)\n- The inject proxy had `After=omni-gateway.service` but no `Requires=`, so systemd started it regardless\n- During the gap, inject passed omni's...(truncated)",
+      "artifacts": []
     }
   ]
 }
