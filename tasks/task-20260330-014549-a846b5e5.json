@@ -1,0 +1,19 @@
+{
+  "id": "task-20260330-014549-a846b5e5",
+  "title": "Close completed stale tasks",
+  "agent_id": "a846b5e5b084baf0d",
+  "agent_type": "general-purpose",
+  "session_id": "cd5c6ab2-9176-47d3-b93e-4e96320e5feb",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-30T01:45:48Z",
+      "event": "started",
+      "context": "Close completed stale tasks"
+    }
+  ]
+}
