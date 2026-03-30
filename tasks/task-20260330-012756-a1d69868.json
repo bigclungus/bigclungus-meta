@@ -14,6 +14,12 @@
       "ts": "2026-03-30T01:27:56Z",
       "event": "started",
       "context": "Remove gigaclungus watchdog cron"
+    },
+    {
+      "ts": "2026-03-30T01:28:43Z",
+      "event": "done",
+      "context": "Done. Here's what was found and removed:\n\n**No crontab** — `gigaclungus` had no crontab entries.\n\n**Systemd timer found and removed:**\n- `/home/gigaclungus/.config/systemd/user/bigclungus-watchdog.timer` — fired every 5 minutes (2min after boot, then every 5min), running `watchdog-bigclungus.sh`\n- `/home/gigaclungus/.config/systemd/user/bigclungus-watchdog.service` — the oneshot service unit\n- Symlink in `timers.target.wants/` removed by `systemctl disable`\n\nBoth unit files deleted, daemon reloa...(truncated)",
+      "artifacts": []
     }
   ]
 }
