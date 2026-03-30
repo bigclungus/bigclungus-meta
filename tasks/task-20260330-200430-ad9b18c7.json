@@ -1,0 +1,19 @@
+{
+  "id": "task-20260330-200430-ad9b18c7",
+  "title": "Count lines of code written by BigClungus",
+  "agent_id": "ad9b18c7c3425e7a3",
+  "agent_type": "general-purpose",
+  "session_id": "cd5c6ab2-9176-47d3-b93e-4e96320e5feb",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-30T20:04:30Z",
+      "event": "started",
+      "context": "Count lines of code written by BigClungus"
+    }
+  ]
+}
