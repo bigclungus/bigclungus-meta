@@ -14,6 +14,12 @@
       "ts": "2026-03-30T21:13:06Z",
       "event": "started",
       "context": "Update lobby notification spec"
+    },
+    {
+      "ts": "2026-03-30T21:14:07Z",
+      "event": "done",
+      "context": "Done. Here's what changed in `/mnt/data/commons-server/src/index.ts`:\n\n- **Moved** the Discord notification from `POST /api/clungiverse/lobby/:id/join` to `POST /api/clungiverse/lobby/create`\n- **Updated** the message from `\"joined a Clungiverse lobby! Quick join: ...\"` to `\"created a Clungiverse lobby! Join here: ...\"` so the copy makes sense for a creation event\n- **Removed** the notification block from the join handler entirely\n\nThe commons-server will need a restart to pick this up. The agen...(truncated)",
+      "artifacts": []
     }
   ]
 }
