@@ -1,0 +1,19 @@
+{
+  "id": "task-20260330-212544-a58808bb",
+  "title": "Upload skill file to Discord and delete from repo",
+  "agent_id": "a58808bba7f6778bb",
+  "agent_type": "general-purpose",
+  "session_id": "cd5c6ab2-9176-47d3-b93e-4e96320e5feb",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-30T21:25:44Z",
+      "event": "started",
+      "context": "Upload skill file to Discord and delete from repo"
+    }
+  ]
+}
