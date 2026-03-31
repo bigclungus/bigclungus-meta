@@ -14,6 +14,12 @@
       "ts": "2026-03-31T10:00:11Z",
       "event": "started",
       "context": "Simplify pass 4 - remaining diff review"
+    },
+    {
+      "ts": "2026-03-31T10:01:32Z",
+      "event": "done",
+      "context": "Two `from '../state'` value imports could be merged in hud.ts, but that's style not a bug — not touching it.\n\nOne actionable finding was fixed. Here's the summary:\n\n---\n\n**One bug found and fixed:**\n\n`hud.ts` and `results.ts` both had `PERSONAS` (and `TEMP_POWERUP_META`, `TEMP_POWERUP_MAX_DURATIONS`) moved into `import type` statements. These are runtime `const` values — putting them in `import type` causes TypeScript to erase them at compile time, breaking all persona color lookups and powerup ...(truncated)",
+      "artifacts": []
     }
   ]
 }
