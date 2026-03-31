@@ -14,6 +14,12 @@
       "ts": "2026-03-31T01:38:39Z",
       "event": "started",
       "context": "Heartbeat reliability check"
+    },
+    {
+      "ts": "2026-03-31T01:40:36Z",
+      "event": "done",
+      "context": "No open GitHub issues. All checks complete. Here's the summary:\n\n---\n\n**Heartbeat scan results — 2026-03-31**\n\n**Stale tasks:** 0 stale tasks, 0 orphaned congress sessions. Clean.\n\n**Failed services:** None. All services up.\n\n**GitHub issues:** 0 open issues.\n\n**Timeline ingest:** 2 keyword-match candidates found (dungeon tile addition in commons-server, cache-busting strings in clung.us). Both rejected — single-tile map edits and cache header tweaks are not timeline-worthy milestones.\n\n**Recent...(truncated)",
+      "artifacts": []
     }
   ]
 }
