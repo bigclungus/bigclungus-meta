@@ -14,6 +14,12 @@
       "ts": "2026-03-31T17:59:41Z",
       "event": "started",
       "context": "Heartbeat reliability scan"
+    },
+    {
+      "ts": "2026-03-31T18:01:59Z",
+      "event": "done",
+      "context": "All these are logged warnings, not silent passes. The healthcheck_act records failure state, persona_polls_act logs warnings for non-critical steps (avatar generation, sprite generation, git push).\n\nThe codebase is clean. Here's the summary:\n\n---\n\n**Heartbeat scan complete — codebase is clean.**\n\nThe actual uncommitted changes are minimal:\n- `hello-world/index.html`: One remaining silent catch converted to `console.warn('[index] metrics fetch failed:', err.message)` — a good change, not a proble...(truncated)",
+      "artifacts": []
     }
   ]
 }
