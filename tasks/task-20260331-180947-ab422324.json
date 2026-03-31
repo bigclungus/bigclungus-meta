@@ -14,6 +14,12 @@
       "ts": "2026-03-31T18:09:47Z",
       "event": "started",
       "context": "Heartbeat reliability scan"
+    },
+    {
+      "ts": "2026-03-31T18:19:16Z",
+      "event": "done",
+      "context": "The omni gateway looks clean. All the key areas are covered. Here's the summary:\n\n---\n\n**Heartbeat scan complete.**\n\n**One bug fixed:**\n\n`/mnt/data/commons-server/src/audition.ts` — stale inject URL and dead code:\n- `DISCORD_INJECT_URL` was pointing to `http://127.0.0.1:9876/inject` (old discord-server, long gone). Updated to `http://127.0.0.1:8085/webhooks/bigclungus-main` (omni gateway).\n- Removed `getInjectSecret()` function and the `x-inject-secret` header from `notifyDiscord()` — the omni w...(truncated)",
+      "artifacts": []
     }
   ]
 }
