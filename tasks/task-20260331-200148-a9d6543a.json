@@ -1,0 +1,19 @@
+{
+  "id": "task-20260331-200148-a9d6543a",
+  "title": "Untrack db-shm/wal and commit",
+  "agent_id": "a9d6543ac7c96b6d2",
+  "agent_type": "general-purpose",
+  "session_id": "17bfb128-7a5a-4d7c-99f2-768209785acc",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-31T20:01:48Z",
+      "event": "started",
+      "context": "Untrack db-shm/wal and commit"
+    }
+  ]
+}
