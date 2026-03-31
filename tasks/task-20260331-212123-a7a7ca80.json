@@ -1,0 +1,19 @@
+{
+  "id": "task-20260331-212123-a7a7ca80",
+  "title": "Re-fire congress with correct channel ID",
+  "agent_id": "a7a7ca80123d8c1b1",
+  "agent_type": "general-purpose",
+  "session_id": "17bfb128-7a5a-4d7c-99f2-768209785acc",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-31T21:21:23Z",
+      "event": "started",
+      "context": "Re-fire congress with correct channel ID"
+    }
+  ]
+}
