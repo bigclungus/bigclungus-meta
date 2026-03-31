@@ -14,6 +14,12 @@
       "ts": "2026-03-31T09:59:10Z",
       "event": "started",
       "context": "Run heartbeat with ideation"
+    },
+    {
+      "ts": "2026-03-31T09:59:37Z",
+      "event": "done",
+      "context": "Done. Heartbeat posted. Summary of what was reported:\n\n- **Services:** 0 failed, all clean\n- **Ideation flagged:** Voice/TTS — real user signal from jaboostin (CPU-only TTS models, male whisper voice, OpenAI offload suggestion) and relarey (VC warmup in startup). Not AI-generated noise.\n- **Open ideas:** 4 issues listed (dungeon lobby ping, user profiles, Clungiverse roguelite, listing sentiment persistence)",
+      "artifacts": []
     }
   ]
 }
