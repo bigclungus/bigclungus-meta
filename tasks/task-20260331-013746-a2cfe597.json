@@ -14,6 +14,12 @@
       "ts": "2026-03-31T01:37:46Z",
       "event": "started",
       "context": "Implement spectator mode and revival"
+    },
+    {
+      "ts": "2026-03-31T01:43:15Z",
+      "event": "done",
+      "context": "Clean build, 97.54 KB output.\n\nHere is a summary of what was implemented and every file changed:\n\n---\n\n## Changes made\n\n### Feature 1: Spectator mode after death\n\n**Server — `/mnt/data/commons-server/src/dungeon/dungeon-protocol.ts`**\n- Added `spectating: boolean` field to `DungeonPlayerSnapshot`\n\n**Server — `/mnt/data/commons-server/src/dungeon/dungeon-loop.ts`**\n- `buildPlayerSnapshots`: computes `spectating = isDead && anyAlive` for each player snapshot — dead players whose party is still ali...(truncated)",
+      "artifacts": []
     }
   ]
 }
