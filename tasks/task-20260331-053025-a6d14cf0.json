@@ -1,0 +1,19 @@
+{
+  "id": "task-20260331-053025-a6d14cf0",
+  "title": "Disable and remove dead service units",
+  "agent_id": "a6d14cf0f35d67091",
+  "agent_type": "general-purpose",
+  "session_id": "cd5c6ab2-9176-47d3-b93e-4e96320e5feb",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-31T05:30:25Z",
+      "event": "started",
+      "context": "Disable and remove dead service units"
+    }
+  ]
+}
