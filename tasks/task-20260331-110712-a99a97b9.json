@@ -1,0 +1,19 @@
+{
+  "id": "task-20260331-110712-a99a97b9",
+  "title": "Fix complexity lint errors",
+  "agent_id": "a99a97b943ce2f6f6",
+  "agent_type": "general-purpose",
+  "session_id": "04e925d1-bf58-4638-b119-a8b7d97830c0",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-31T11:07:12Z",
+      "event": "started",
+      "context": "Fix complexity lint errors"
+    }
+  ]
+}
