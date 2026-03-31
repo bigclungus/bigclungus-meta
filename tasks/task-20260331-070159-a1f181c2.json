@@ -14,6 +14,12 @@
       "ts": "2026-03-31T07:01:59Z",
       "event": "started",
       "context": "Code reuse review"
+    },
+    {
+      "ts": "2026-03-31T07:03:23Z",
+      "event": "done",
+      "context": "Now I have a complete picture. Let me compile the findings.\n\n---\n\nHere are the reuse issues found in the new code:\n\n## 1. `drawSparkline`, `fmtBytes`, `fmtUptime`/`fmtMem`, `badgeClass`, `renderContainers` — duplicated between `index.html` and `cockpit.html`\n\nThese are nearly identical implementations copy-pasted into both files:\n\n- `drawSparkline` — `hello-world/cockpit.html:340` and `hello-world/index.html:931` — identical algorithm, only differs in `const` vs `var`\n- `fmtBytes` — `cockpit.htm...(truncated)",
+      "artifacts": []
     }
   ]
 }
