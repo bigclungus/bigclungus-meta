@@ -14,6 +14,12 @@
       "ts": "2026-03-31T13:01:28Z",
       "event": "started",
       "context": "Simplify reuse review"
+    },
+    {
+      "ts": "2026-03-31T13:02:06Z",
+      "event": "done",
+      "context": "Perfect. Now let me compile my findings:\n\n## Code Reuse Review Report\n\n### Key Finding: **Duplication in Alerting Pattern**\n\n**watchdog-heartbeat.sh** introduces a curl-based alert pattern that duplicates existing implementations across the codebase:\n\n**Pattern 1: curl in Bash** (watchdog-heartbeat.sh, lines 33-36)\n```bash\ncurl -s -X POST \"$INJECT_URL\" \\\n  -H \"Content-Type: application/json\" \\\n  -d \"{\\\"content\\\": \\\"...\\\", \\\"user\\\": \\\"heartbeat-watchdog\\\"}\" \\\n  --max-time 5 || echo \"WARN: inject ...(truncated)",
+      "artifacts": []
     }
   ]
 }
