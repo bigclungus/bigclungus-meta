@@ -14,6 +14,12 @@
       "ts": "2026-03-31T05:32:42Z",
       "event": "started",
       "context": "Build full cockpit metrics dashboard"
+    },
+    {
+      "ts": "2026-03-31T05:35:51Z",
+      "event": "done",
+      "context": "Clean build, no errors. Done.\n\n---\n\n**Summary of changes:**\n\n**`/mnt/data/clunger/src/index.ts`** — Added two new functions and two new route handlers:\n\n- `restCockpitMetrics()` — reads CPU delta from `/proc/stat` (two reads 500ms apart), RAM from `/proc/meminfo`, disk from `df -h`, and network rx/tx from `/proc/net/dev`. Route: `GET /api/cockpit/metrics`.\n- `restCockpitContainers()` — runs `docker ps -a --format '{{json .}}'` and parses each line as JSON. Route: `GET /api/cockpit/containers`.\n-...(truncated)",
+      "artifacts": []
     }
   ]
 }
