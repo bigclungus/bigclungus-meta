@@ -14,6 +14,12 @@
       "ts": "2026-03-31T07:39:05Z",
       "event": "started",
       "context": "Run heartbeat"
+    },
+    {
+      "ts": "2026-03-31T07:39:14Z",
+      "event": "done",
+      "context": "Done. No failed services were detected — posted \"💓 heartbeat — all clear\" to Discord via the webhook. The inject returned `{\"ok\":true}`.",
+      "artifacts": []
     }
   ]
 }
