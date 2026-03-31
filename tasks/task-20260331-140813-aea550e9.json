@@ -14,6 +14,12 @@
       "ts": "2026-03-31T14:08:13Z",
       "event": "started",
       "context": "Run ESLint on codebase and report"
+    },
+    {
+      "ts": "2026-03-31T14:08:42Z",
+      "event": "done",
+      "context": "Results:\n\n**commons-client**: 22 problems — 6 errors, 16 warnings\n- Errors are likely type issues; warnings are mostly `no-console` statements\n\n**clungiverse-client**: 20 problems — 7 errors, 13 warnings\n- Errors include `no-non-null-assertion` violations (e.g. `lobby.ts:320`, `results.ts:24`) and unnecessary optional chains\n\n**clunger**: 0 problems — clean",
+      "artifacts": []
     }
   ]
 }
