@@ -14,6 +14,12 @@
       "ts": "2026-03-31T21:43:22Z",
       "event": "started",
       "context": "Add multimodel preflight check to Congress"
+    },
+    {
+      "ts": "2026-03-31T21:46:39Z",
+      "event": "done",
+      "context": "Done. Here's what was changed and why:\n\n**Files modified:**\n\n- `/mnt/data/temporal-workflows/activities/congress_act.py` — new `congress_preflight_check` activity added at the bottom. It inspects each debater's `model` field, classifies as `grok`, `gemini`, or `claude`, then:\n  - For grok: sends a minimal `POST /v1/messages` to `http://127.0.0.1:4100` with `max_tokens=1`. A 403 (no credits) or connection error raises `ApplicationError(non_retryable=True)` with a message pointing to the xAI conso...(truncated)",
+      "artifacts": []
     }
   ]
 }
