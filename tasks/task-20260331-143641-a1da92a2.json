@@ -1,0 +1,19 @@
+{
+  "id": "task-20260331-143641-a1da92a2",
+  "title": "Delete discord-bridge, scrape_discord files, fix references",
+  "agent_id": "a1da92a2700eaae9d",
+  "agent_type": "general-purpose",
+  "session_id": "04e925d1-bf58-4638-b119-a8b7d97830c0",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-31T14:36:41Z",
+      "event": "started",
+      "context": "Delete discord-bridge, scrape_discord files, fix references"
+    }
+  ]
+}
