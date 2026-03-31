@@ -14,6 +14,12 @@
       "ts": "2026-03-31T16:49:36Z",
       "event": "started",
       "context": "Heartbeat reliability scan"
+    },
+    {
+      "ts": "2026-03-31T16:52:42Z",
+      "event": "done",
+      "context": "Scan complete. Here's what was found and done:\n\n---\n\n**Finding: Missing fetch timeouts in 4 files** (minor — implemented directly)\n\nAll other changed files are clean. The one class of issue that persisted across the latest batch of fixes:\n\n**Files fixed (commit `bab036f`):**\n\n- `/mnt/data/commons-client/src/entities/walker.ts` — 5 fetch calls (`pollWalkers`, `keepWalker`, `dismissWalker`, `pauseWalker`, `resumeWalker`) had no timeout. Added `AbortSignal.timeout(8_000)` to each.\n- `/mnt/data/comm...(truncated)",
+      "artifacts": []
     }
   ]
 }
