@@ -14,6 +14,12 @@
       "ts": "2026-03-31T18:20:05Z",
       "event": "started",
       "context": "Heartbeat reliability scan"
+    },
+    {
+      "ts": "2026-03-31T18:24:57Z",
+      "event": "done",
+      "context": "Clean. Timeout is present, error is thrown (not swallowed).\n\n---\n\n**Scan complete. Codebase is clean.**\n\n**Actually uncommitted changes** (the git status at conversation start had stale data; the real uncommitted changes are):\n\n1. `/mnt/data/commons-server/src/audition.ts` — Port 9876 → 8085 + removal of dead `DISCORD_INJECT_SECRET` requirement. Correct, has timeout, throws on failure.\n2. `/mnt/data/hello-world/index.html` — Silent metrics `.catch(() => {})` converted to `console.warn`. Correct ...(truncated)",
+      "artifacts": []
     }
   ]
 }
