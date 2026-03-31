@@ -1,0 +1,19 @@
+{
+  "id": "task-20260331-051620-af5bc968",
+  "title": "Build cockpit service dashboard in clunger",
+  "agent_id": "af5bc9686cba854e4",
+  "agent_type": "general-purpose",
+  "session_id": "cd5c6ab2-9176-47d3-b93e-4e96320e5feb",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-31T05:16:20Z",
+      "event": "started",
+      "context": "Build cockpit service dashboard in clunger"
+    }
+  ]
+}
