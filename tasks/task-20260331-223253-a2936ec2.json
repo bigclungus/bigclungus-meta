@@ -14,6 +14,12 @@
       "ts": "2026-03-31T22:32:53Z",
       "event": "started",
       "context": "Remove congress model fallbacks"
+    },
+    {
+      "ts": "2026-03-31T22:34:27Z",
+      "event": "done",
+      "context": "Done. Commit `53cb73c` pushed. Here's what was removed:\n\n**Removed fallbacks:**\n\n1. `congress_check_ibrahim` — the `try/except` that caught API errors and returned `{\"signal\": SIGNAL_CONTINUE, ...}` is gone. Ibrahim's post-Round-1 check now propagates exceptions up to Temporal, which will mark the workflow failed.\n\n2. `congress_vote` — the `try/except` that returned `{\"vote\": \"DISAGREE\", \"reason\": \"(vote failed — defaulting to DISAGREE)\"}` is gone. A failed vote call for any debater (Grok, Gemin...(truncated)",
+      "artifacts": []
     }
   ]
 }
