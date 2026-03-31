@@ -14,6 +14,12 @@
       "ts": "2026-03-31T05:05:11Z",
       "event": "started",
       "context": "Check lint agent leftover state"
+    },
+    {
+      "ts": "2026-03-31T05:07:10Z",
+      "event": "done",
+      "context": "## Summary\n\n**Dirty/Modified Files:**\n20 modified TypeScript/config files in `commons-server/` and `hello-world/`:\n- Modified: package.json, audition.ts, all dungeon modules (boss-ai.ts, collision.ts, combat.ts, dungeon-generation.ts, dungeon-loop.ts, dungeon-manager.ts, dungeon-protocol.ts, dungeon-snapshots.ts, enemy-ai.ts, loot.ts, mob-registry.ts, stats.ts), game-loop.ts, index.ts, map.ts, npc-ai.ts, persistence.ts, sitenav.ts\n- Untracked directories: ccr/, db/, yucla/\n- Untracked file: comm...(truncated)",
+      "artifacts": []
     }
   ]
 }
