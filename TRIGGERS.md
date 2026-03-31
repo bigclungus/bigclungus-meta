@@ -131,7 +131,7 @@ When you receive `[heartbeat]`: **spawn a background agent** to do the following
 
    **Run an exploratory subagent** — spawn a background agent with access to:
    - Last 20 git commits across repos (what changed recently)
-   - Recent Discord message history (what have users complained about or requested)
+   - Recent Discord message history (what have users complained about or requested) — use `/mnt/data/scripts/history "<query>" --limit 20` for this; if querying Graphiti instead, always pass `group_ids=["discord_history"]` explicitly (the default group is `main`, which is empty)
    - Open GitHub issues
    - Service logs for anything unusual
 
