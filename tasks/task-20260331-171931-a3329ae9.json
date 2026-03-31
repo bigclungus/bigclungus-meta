@@ -14,6 +14,12 @@
       "ts": "2026-03-31T17:19:31Z",
       "event": "started",
       "context": "Heartbeat reliability scan"
+    },
+    {
+      "ts": "2026-03-31T17:21:49Z",
+      "event": "done",
+      "context": "Everything looks healthy. The scan is complete.\n\n---\n\n**Heartbeat scan findings:**\n\n**One fix applied (minor):**\n\n- `/mnt/data/hello-world/index.html` line 1026: Silent `.catch(function () { /* silent — metrics failure doesn't break the page */ })` on the `fetchMetrics` fetch. Replaced with `console.warn('[index] metrics fetch failed:', err.message)` so errors are visible in devtools. GitHub issue #4 opened and closed.\n\n**Everything else: clean.**\n\nAll modified files reviewed:\n- `commons-client/...(truncated)",
+      "artifacts": []
     }
   ]
 }
