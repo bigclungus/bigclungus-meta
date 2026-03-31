@@ -14,6 +14,12 @@
       "ts": "2026-03-31T20:30:30Z",
       "event": "started",
       "context": "Investigate CostWatchdogWorkflow ghost"
+    },
+    {
+      "ts": "2026-03-31T20:31:41Z",
+      "event": "done",
+      "context": "Terminated. Here is the full picture:\n\n---\n\n**Finding: Orphaned cron workflow, no implementation exists**\n\n- Workflow ID: `cost-watchdog-cron`, type `CostWatchdogWorkflow`, task queue `listings-queue`\n- It was started ~4 hours ago as a cron workflow (`WorkflowTaskFailed` at every scheduled tick with cause `WorkflowWorkerUnhandledFailure`)\n- `CostWatchdogWorkflow` does **not exist anywhere in the codebase** — no `.py` or `.ts` file references it, and it is not registered in `/mnt/data/temporal-wo...(truncated)",
+      "artifacts": []
     }
   ]
 }
