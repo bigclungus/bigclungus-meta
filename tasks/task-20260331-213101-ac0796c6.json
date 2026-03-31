@@ -1,0 +1,19 @@
+{
+  "id": "task-20260331-213101-ac0796c6",
+  "title": "Investigate congress UI avatar issue",
+  "agent_id": "ac0796c63b37e2dcb",
+  "agent_type": "general-purpose",
+  "session_id": "17bfb128-7a5a-4d7c-99f2-768209785acc",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-31T21:31:01Z",
+      "event": "started",
+      "context": "Investigate congress UI avatar issue"
+    }
+  ]
+}
