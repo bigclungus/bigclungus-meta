@@ -1,0 +1,19 @@
+{
+  "id": "task-20260331-214322-a1fcca85",
+  "title": "Add multimodel preflight check to Congress",
+  "agent_id": "a1fcca85f9e985f2f",
+  "agent_type": "general-purpose",
+  "session_id": "17bfb128-7a5a-4d7c-99f2-768209785acc",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-31T21:43:22Z",
+      "event": "started",
+      "context": "Add multimodel preflight check to Congress"
+    }
+  ]
+}
