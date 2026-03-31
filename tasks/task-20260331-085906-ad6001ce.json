@@ -14,6 +14,12 @@
       "ts": "2026-03-31T08:59:06Z",
       "event": "started",
       "context": "Run heartbeat with ideation"
+    },
+    {
+      "ts": "2026-03-31T08:59:29Z",
+      "event": "done",
+      "context": "Heartbeat posted. Summary:\n\n- **Failed services:** 0\n- **Open idea issues checked:** #88 (house listing sentiment reactions) and #89 (Clungiverse roguelite) — both from today, no duplication\n- **Ideation flagged:** User profile pages at `clung.us/u/<username>` — OAuth-linked persistent identity showing congress vote history, house listing reactions, and persona affinity. Derived from the auth/login history showing recurring account-switching friction. Not covered by any open issue.",
+      "artifacts": []
     }
   ]
 }
