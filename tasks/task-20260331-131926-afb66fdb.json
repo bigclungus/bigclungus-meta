@@ -14,6 +14,12 @@
       "ts": "2026-03-31T13:19:26Z",
       "event": "started",
       "context": "Heartbeat scan — docker configs and systemd units"
+    },
+    {
+      "ts": "2026-03-31T13:24:03Z",
+      "event": "done",
+      "context": "Heartbeat scan complete. Here's what was found and fixed:\n\n**Issues found and fixed (both minor/ops):**\n\n1. **`commons-server.service` missing crash alert** — `ExecStopPost=/mnt/data/scripts/service-crash-alert.sh %n` was present on cloudflared, clunger, and temporal-worker, but missing from commons-server. Added it so commons-server crashes will surface as Discord notifications.\n\n2. **`clunger/src/index.ts` server callback had no top-level error boundary** — The `http.createServer()` async call...(truncated)",
+      "artifacts": []
     }
   ]
 }
