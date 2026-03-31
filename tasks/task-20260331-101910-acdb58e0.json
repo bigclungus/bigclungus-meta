@@ -1,0 +1,19 @@
+{
+  "id": "task-20260331-101910-acdb58e0",
+  "title": "Run heartbeat",
+  "agent_id": "acdb58e0694890fd5",
+  "agent_type": "general-purpose",
+  "session_id": "04e925d1-bf58-4638-b119-a8b7d97830c0",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-31T10:19:10Z",
+      "event": "started",
+      "context": "Run heartbeat"
+    }
+  ]
+}
