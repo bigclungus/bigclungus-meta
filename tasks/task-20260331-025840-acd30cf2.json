@@ -14,6 +14,12 @@
       "ts": "2026-03-31T02:58:40Z",
       "event": "started",
       "context": "Heartbeat reliability check"
+    },
+    {
+      "ts": "2026-03-31T03:00:07Z",
+      "event": "done",
+      "context": "The open task \"Heartbeat reliability check\" is this current heartbeat scan itself (started at 2026-03-31T02:58:40Z with status \"started\"). That's expected — it's the task for this very run. No actual stale work.\n\nHere's the full heartbeat report:\n\n---\n\n**Heartbeat Scan Results — 2026-03-31**\n\n**Services:** All 26 expected services are running. No failed units. Everything up:\n- claude-bot, omni-gateway, clunger, cloudflared, temporal (+ worker + proxy), terminal-server, labs-router, all labs serv...(truncated)",
+      "artifacts": []
     }
   ]
 }
