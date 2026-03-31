@@ -15,5 +15,6 @@
       "event": "started",
       "context": "Fix heartbeat ideation Graphiti query"
     }
-  ]
+  ],
+  "status": "done"
 }

@@ -21,5 +21,6 @@
       "context": "The Graphiti search is now working correctly.\n\nHere's a summary of what was found and fixed:\n\n**Root Cause**\n\nTwo compounding issues:\n\n1. **Stale FalkorDB connection in the Docker container**: The `docker-graphiti-mcp-1` container had been running for 3+ days. The graphiti client inside had a stale/broken connection to FalkorDB. When MCP search tools were called, the search returned empty instantly (without even calling OpenAI for embeddings) -- meaning the FalkorDB query itself was silently fai...(truncated)",
       "artifacts": []
     }
-  ]
+  ],
+  "status": "done"
 }

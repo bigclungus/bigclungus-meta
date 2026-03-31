@@ -15,5 +15,6 @@
       "event": "started",
       "context": "Build yucla Kotlin library"
     }
-  ]
+  ],
+  "status": "cancelled"
 }
