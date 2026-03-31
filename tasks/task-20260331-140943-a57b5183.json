@@ -14,6 +14,12 @@
       "ts": "2026-03-31T14:09:43Z",
       "event": "started",
       "context": "Get full ESLint breakdown by category"
+    },
+    {
+      "ts": "2026-03-31T14:10:19Z",
+      "event": "done",
+      "context": "Here is the full organized summary of ESLint findings across both packages.\n\n---\n\n## commons-client — 22 problems (6 errors, 16 warnings)\n\n### `@typescript-eslint/restrict-template-expressions` (6 errors)\nAll in `src/map/worn-paths.ts` — numbers used directly in template literal expressions.\n\n- `worn-paths.ts:72:20` — `Invalid type \"number\" of template literal expression`\n- `worn-paths.ts:72:29`\n- `worn-paths.ts:83:18`\n- `worn-paths.ts:83:27`\n- `worn-paths.ts:94:33`\n- `worn-paths.ts:94:42`\n\n### ...(truncated)",
+      "artifacts": []
     }
   ]
 }
