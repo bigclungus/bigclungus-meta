@@ -14,6 +14,12 @@
       "ts": "2026-03-31T17:00:32Z",
       "event": "started",
       "context": "Simplify reuse review"
+    },
+    {
+      "ts": "2026-03-31T17:02:43Z",
+      "event": "done",
+      "context": "I now have a complete picture. Here is the full findings report.\n\n---\n\n## Reuse Review: Fetch Timeout Patterns\n\n### What the changes did\n\nThe last 6 commits added `AbortSignal.timeout()` to ~27 call sites across 8 files. There is no existing `fetchWithTimeout` helper anywhere in this codebase — no such utility exists in `commons-client/src/utils/`, `clunger/src/utils/`, or any shared location.\n\n---\n\n### Consistency of the pattern itself\n\nThe pattern is used directly and consistently — always `{ ...(truncated)",
+      "artifacts": []
     }
   ]
 }
