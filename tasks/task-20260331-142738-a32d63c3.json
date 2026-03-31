@@ -14,6 +14,12 @@
       "ts": "2026-03-31T14:27:38Z",
       "event": "started",
       "context": "Audit scripts for Temporal migration candidates"
+    },
+    {
+      "ts": "2026-03-31T14:28:12Z",
+      "event": "done",
+      "context": "Now I have a comprehensive view of the scripts. Let me compile my analysis and output the categorized list.\n\n## Analysis Report: Temporal Workflow Assessment\n\nI've analyzed all executable scripts in `/mnt/data/scripts/`. Here's the categorized breakdown:\n\n### SHOULD BE TEMPORAL WORKFLOWS\n\n**High Priority (Clear Multi-Step, Stateful, Long-Running):**\n\n1. **history-ingest.py** — Incrementally reads Claude session JSONLs, extracts Discord messages, embeds with OpenAI, stores in sqlite-vec. Handles ...(truncated)",
+      "artifacts": []
     }
   ]
 }
