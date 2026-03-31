@@ -14,6 +14,12 @@
       "ts": "2026-03-31T07:29:05Z",
       "event": "started",
       "context": "Run heartbeat with ideation"
+    },
+    {
+      "ts": "2026-03-31T07:29:37Z",
+      "event": "done",
+      "context": "Done. Here's the summary:\n\n- **Services:** 0 failed\n- **Open ideas:** 1 — house listing sentiment persistence (#88)\n- **Ideation scan:** History showed active Clungiverse RPG/multiplayer discussion, but that work is already in-flight (modified files across `clungiverse-client/` and `commons-client/`). No genuinely new untracked ideas surfaced.\n- **Discord post:** Sent successfully via webhook.",
+      "artifacts": []
     }
   ]
 }
