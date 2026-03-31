@@ -1,0 +1,19 @@
+{
+  "id": "task-20260331-150251-ad473339",
+  "title": "Redirect healthcheck alerts to inject endpoint",
+  "agent_id": "ad4733391f84290c3",
+  "agent_type": "general-purpose",
+  "session_id": "04e925d1-bf58-4638-b119-a8b7d97830c0",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-31T15:02:51Z",
+      "event": "started",
+      "context": "Redirect healthcheck alerts to inject endpoint"
+    }
+  ]
+}
