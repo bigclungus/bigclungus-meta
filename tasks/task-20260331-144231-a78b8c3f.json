@@ -1,0 +1,19 @@
+{
+  "id": "task-20260331-144231-a78b8c3f",
+  "title": "Investigate terminal.clung.us latency",
+  "agent_id": "a78b8c3fb1c9bb14b",
+  "agent_type": "general-purpose",
+  "session_id": "04e925d1-bf58-4638-b119-a8b7d97830c0",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-31T14:42:31Z",
+      "event": "started",
+      "context": "Investigate terminal.clung.us latency"
+    }
+  ]
+}
