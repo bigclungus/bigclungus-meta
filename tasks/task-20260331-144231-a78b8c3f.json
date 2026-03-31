@@ -14,6 +14,12 @@
       "ts": "2026-03-31T14:42:31Z",
       "event": "started",
       "context": "Investigate terminal.clung.us latency"
+    },
+    {
+      "ts": "2026-03-31T14:46:19Z",
+      "event": "done",
+      "context": "The Discord message was mangled slightly (backtick-quoted inline code got eaten by bash substitution). The message went through successfully regardless. Here's the full summary:\n\n---\n\n**Root cause identified and resolved.**\n\nThe terminal-server.service Python/aiohttp process had been running for 39 minutes and gotten into a tight error loop — every incoming request was immediately throwing `ClientConnectionResetError: Cannot write to closing transport`, causing the process to spin at **90.9% CPU...(truncated)",
+      "artifacts": []
     }
   ]
 }
