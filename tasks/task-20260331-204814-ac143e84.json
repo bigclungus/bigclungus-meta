@@ -14,6 +14,12 @@
       "ts": "2026-03-31T20:48:14Z",
       "event": "started",
       "context": "Delete cost-watchdog-cron workflow and code"
+    },
+    {
+      "ts": "2026-03-31T20:48:33Z",
+      "event": "done",
+      "context": "The CLI deletion succeeded. Here's the summary:\n\n**Temporal workflow deletion:** Done via CLI — `temporal workflow delete --workflow-id cost-watchdog-cron` reported success.\n\n**Code references:** Zero files found. No `.py`, `.ts`, or `.sh` files anywhere under `/mnt/data` reference `cost-watchdog-cron` or `CostWatchdogWorkflow`.\n\n**HTTP API attempt:** The CSRF token error is expected and irrelevant — the CLI already handled it successfully before that ran.\n\nNothing needs manual code cleanup. The...(truncated)",
+      "artifacts": []
     }
   ]
 }
