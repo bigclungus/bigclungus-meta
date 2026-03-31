@@ -14,6 +14,12 @@
       "ts": "2026-03-31T04:30:15Z",
       "event": "started",
       "context": "Store xAI key and delete Discord message"
+    },
+    {
+      "ts": "2026-03-31T04:33:49Z",
+      "event": "done",
+      "context": "Clunger confirms `grok` is available in the provider list. Everything is wired up.\n\nHere's a summary of what was done:\n\n**Security actions:**\n- API key stored to `/mnt/data/secrets/xai_api_key` (chmod 600)\n- Discord message containing the key (id `1488394876277096468`) deleted via bot API\n- `XAI_API_KEY` added to `/mnt/data/clunger/.env`, replacing the old duplicate entry\n\n**Infrastructure discovery:**\n- `grok-proxy.service` already existed and was running on port 4100 (an Anthropic→xAI translat...(truncated)",
+      "artifacts": []
     }
   ]
 }
