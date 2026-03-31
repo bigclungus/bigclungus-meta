@@ -1,0 +1,19 @@
+{
+  "id": "task-20260331-140047-aaf66c46",
+  "title": "Simplify reuse review",
+  "agent_id": "aaf66c46b9a1453ca",
+  "agent_type": "Explore",
+  "session_id": "04e925d1-bf58-4638-b119-a8b7d97830c0",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-31T14:00:47Z",
+      "event": "started",
+      "context": "Simplify reuse review"
+    }
+  ]
+}
