@@ -14,6 +14,12 @@
       "ts": "2026-03-31T11:00:21Z",
       "event": "started",
       "context": "Code reuse review"
+    },
+    {
+      "ts": "2026-03-31T11:02:30Z",
+      "event": "done",
+      "context": "Here is the full code reuse review findings:\n\n---\n\n## Code Reuse Review Findings\n\n### REAL ISSUES\n\n**1. Duplicate `SpriteFn` type + window lookup — `commons-client/src/renderer.ts:174` and `commons-client/src/ui/chat-modal.ts:56`**\n\nBoth files independently declare the same local `type SpriteFn = (ctx: CanvasRenderingContext2D, x: number, y: number) => void` and perform identical window-cast lookups:\n```ts\n(window as Record<string, SpriteFn | undefined>)[`drawSprite_${spriteId}_${winner}`] ?? nu...(truncated)",
+      "artifacts": []
     }
   ]
 }
