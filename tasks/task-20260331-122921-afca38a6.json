@@ -14,6 +14,12 @@
       "ts": "2026-03-31T12:29:20Z",
       "event": "started",
       "context": "Heartbeat codebase scan"
+    },
+    {
+      "ts": "2026-03-31T12:32:19Z",
+      "event": "done",
+      "context": "Scan complete. Here's the summary:\n\n**Findings:**\n\n1. **`patchSession` dead keys in `ALLOWED` list** (`clunger/src/services/congress.ts`) — `defendant`, `charges`, and `flavor` were in the `ALLOWED` array and the `Record<AllowedKey, ...>` type, but those fields don't exist in the `PatchSessionRequest` protobuf schema. At runtime they silently returned `undefined` and were never applied. No user-visible impact (trial workflow correctly uses the REST PATCH path instead), but the incomplete `Record...(truncated)",
+      "artifacts": []
     }
   ]
 }
