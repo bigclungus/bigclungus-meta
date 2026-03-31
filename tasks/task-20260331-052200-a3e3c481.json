@@ -14,6 +14,12 @@
       "ts": "2026-03-31T05:22:00Z",
       "event": "started",
       "context": "Update index.html to use cockpit status API"
+    },
+    {
+      "ts": "2026-03-31T05:22:09Z",
+      "event": "done",
+      "context": "Done. Changed line 720 in `/mnt/data/hello-world/index.html` from `fetch('/api/ops/health')` to `fetch('/api/cockpit/status')`. No restart needed — static file served directly.",
+      "artifacts": []
     }
   ]
 }
