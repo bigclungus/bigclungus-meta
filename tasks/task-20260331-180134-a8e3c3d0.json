@@ -1,0 +1,19 @@
+{
+  "id": "task-20260331-180134-a8e3c3d0",
+  "title": "Restart temporal worker for new listings cron",
+  "agent_id": "a8e3c3d08d555ba04",
+  "agent_type": "general-purpose",
+  "session_id": "04e925d1-bf58-4638-b119-a8b7d97830c0",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-31T18:01:34Z",
+      "event": "started",
+      "context": "Restart temporal worker for new listings cron"
+    }
+  ]
+}
