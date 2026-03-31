@@ -1,0 +1,19 @@
+{
+  "id": "task-20260331-235952-a1749bae",
+  "title": "Heartbeat check",
+  "agent_id": "a1749bae4dbaee19e",
+  "agent_type": "general-purpose",
+  "session_id": "17bfb128-7a5a-4d7c-99f2-768209785acc",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-31T23:59:52Z",
+      "event": "started",
+      "context": "Heartbeat check"
+    }
+  ]
+}
