@@ -14,6 +14,12 @@
       "ts": "2026-03-31T14:09:36Z",
       "event": "started",
       "context": "Heartbeat scan — Temporal schedules and worker health"
+    },
+    {
+      "ts": "2026-03-31T14:11:04Z",
+      "event": "done",
+      "context": "Scan complete. Summary of findings:\n\n**Healthy:**\n- `history-ingest-1m` schedule: firing every minute on time, COMPLETED status\n- `temporal-worker.service`: running, processing workflows\n- Running workflows: `healthcheck-loop`, `simplify-cron`, `drift-scan-daily`, `test-cron`, `tasks-db-backup-cron`, `congress-audit-cron`, `heartbeat`, `task-sweeper` — all nominal\n- Only one schedule registered (`history-ingest-1m`), no orphaned schedules\n\n**Issue found:**\n- OpenAI quota exhausted as of 14:09 UT...(truncated)",
+      "artifacts": []
     }
   ]
 }
