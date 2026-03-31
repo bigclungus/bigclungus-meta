@@ -14,6 +14,12 @@
       "ts": "2026-03-31T16:19:34Z",
       "event": "started",
       "context": "Heartbeat reliability scan"
+    },
+    {
+      "ts": "2026-03-31T16:23:24Z",
+      "event": "done",
+      "context": "Scan complete. Here's what was found and fixed:\n\n---\n\n**Fixes applied (commit d3e1844):**\n\n**Missing fetch timeouts — clunger/src/index.ts:**\n- `notifySpriteTie`: 3 fire-and-forget inject calls had no timeout (could hang indefinitely if omni-gateway was slow)\n- `notifyVoteWinner`: same\n- `handleInject` retry loop: the omni fetch had no per-attempt timeout (retries could each hang forever)\n- `handleTemporalProxy` and `handleLabsProxy`: pass-through proxy fetches had no timeout (30s added — reason...(truncated)",
+      "artifacts": []
     }
   ]
 }
