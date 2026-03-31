@@ -1,0 +1,19 @@
+{
+  "id": "task-20260331-000401-ae2cbd96",
+  "title": "Check Clungiverse playable characters",
+  "agent_id": "ae2cbd96906bf779f",
+  "agent_type": "general-purpose",
+  "session_id": "cd5c6ab2-9176-47d3-b93e-4e96320e5feb",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-31T00:04:01Z",
+      "event": "started",
+      "context": "Check Clungiverse playable characters"
+    }
+  ]
+}
