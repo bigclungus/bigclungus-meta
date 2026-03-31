@@ -14,6 +14,12 @@
       "ts": "2026-03-31T05:28:31Z",
       "event": "started",
       "context": "Archive COCKPIT Discord thread"
+    },
+    {
+      "ts": "2026-03-31T05:28:38Z",
+      "event": "done",
+      "context": "The COCKPIT thread (ID 1488405261625327731) has been successfully archived. The API response confirms:\n\n- `\"archived\": true` in the `thread_metadata`\n- Archive timestamp: `2026-03-31T05:28:35.300666+00:00`\n- Thread had 51 messages, was created earlier today at `2026-03-31T05:11:27`",
+      "artifacts": []
     }
   ]
 }
