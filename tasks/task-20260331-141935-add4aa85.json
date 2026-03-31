@@ -1,0 +1,19 @@
+{
+  "id": "task-20260331-141935-add4aa85",
+  "title": "Heartbeat scan — persona model routing and clunger personas",
+  "agent_id": "add4aa8533aa96d3b",
+  "agent_type": "general-purpose",
+  "session_id": "04e925d1-bf58-4638-b119-a8b7d97830c0",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-31T14:19:35Z",
+      "event": "started",
+      "context": "Heartbeat scan — persona model routing and clunger personas"
+    }
+  ]
+}
