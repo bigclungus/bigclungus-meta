@@ -14,6 +14,12 @@
       "ts": "2026-03-31T10:59:15Z",
       "event": "started",
       "context": "Handle heartbeat ideation"
+    },
+    {
+      "ts": "2026-03-31T11:05:21Z",
+      "event": "done",
+      "context": "Done. Here's a summary of what was done:\n\n**Graphiti query results:** Graphiti showed a pattern of endpoint drift — services and ports that changed during the omni migration hadn't been updated in all the places that reference them.\n\n**Two ideas identified and implemented:**\n\n1. **Integration tests broken since omni migration** (issue #99, now closed): `tests/integration_test.py` was failing 4/7 tests because it still referenced the old `discord-server` inject port (9876, gone) and a separate la...(truncated)",
+      "artifacts": []
     }
   ]
 }
