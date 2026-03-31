@@ -1,0 +1,19 @@
+{
+  "id": "task-20260331-091935-a00fc612",
+  "title": "Open GitHub issue for dungeon lobby notifications",
+  "agent_id": "a00fc6124092c3646",
+  "agent_type": "general-purpose",
+  "session_id": "04e925d1-bf58-4638-b119-a8b7d97830c0",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-31T09:19:35Z",
+      "event": "started",
+      "context": "Open GitHub issue for dungeon lobby notifications"
+    }
+  ]
+}
