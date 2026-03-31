@@ -14,6 +14,12 @@
       "ts": "2026-03-31T03:18:39Z",
       "event": "started",
       "context": "Heartbeat reliability check"
+    },
+    {
+      "ts": "2026-03-31T03:20:46Z",
+      "event": "done",
+      "context": "Everything looks clean. One minor observation from clunger logs: `GEMINI_API_KEY not set — gemini personas will fail` — this is a known issue (jaboostin needs to provide that key). Not actionable by me.\n\nHistory ingest is running fine (every minute, 0 new messages per run — likely because 4318+ JSONL files are being scanned and nothing new has come in recently). All 3 public sites are responding OK per healthcheck.\n\nHere's the full heartbeat scan summary:\n\n---\n\n**Heartbeat Reliability Scan — 202...(truncated)",
+      "artifacts": []
     }
   ]
 }
