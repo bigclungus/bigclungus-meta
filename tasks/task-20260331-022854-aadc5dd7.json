@@ -14,6 +14,12 @@
       "ts": "2026-03-31T02:28:54Z",
       "event": "started",
       "context": "Heartbeat reliability check"
+    },
+    {
+      "ts": "2026-03-31T02:31:31Z",
+      "event": "done",
+      "context": "Heartbeat scan complete. Here's the summary:\n\n**Stale tasks:** 0 stale tasks, no deliberating congress orphans.\n\n**GitHub issues:** 0 open issues.\n\n**Failed services:** None. All 26 expected services are running, including claude-bot, omni-gateway, clunger, temporal, cloudflared, commons-server, all labs, and supporting services.\n\n**Timeline ingestion:** 3 candidates found from the last 24 hours — all rejected as minor (cache-busting script tags, a dungeon tile addition). Not milestone-worthy.\n\n...(truncated)",
+      "artifacts": []
     }
   ]
 }
