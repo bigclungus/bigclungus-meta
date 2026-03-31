@@ -14,6 +14,12 @@
       "ts": "2026-03-31T04:00:12Z",
       "event": "started",
       "context": "Simplify cron pass"
+    },
+    {
+      "ts": "2026-03-31T04:04:38Z",
+      "event": "done",
+      "context": "Also remove the stale `DISCORD_INJECT_SECRET` from `.env` files — but since those aren't committed to git, just note the cleanup was done locally.\n\nSummary of what the simplify pass did:\n\n**Secret scan:** Clean — no secrets detected in recent commits.\n\n**Fixes applied (1 commit pushed: `aee4adc`):**\n\n1. `/mnt/data/clunger/src/utils/inject.ts` — `injectDiscord()` was swallowing HTTP errors silently (no `resp.ok` check). Now throws `Error: injectDiscord failed: HTTP <status>` on non-2xx responses,...(truncated)",
+      "artifacts": []
     }
   ]
 }
