@@ -14,6 +14,12 @@
       "ts": "2026-03-31T05:16:20Z",
       "event": "started",
       "context": "Build cockpit service dashboard in clunger"
+    },
+    {
+      "ts": "2026-03-31T05:20:34Z",
+      "event": "done",
+      "context": "Done. Here's what was built:\n\n**Files changed:**\n- `/mnt/data/clunger/src/index.ts` — added `COCKPIT_SERVICES` allowlist (10 services), plus three functions: `restCockpitStatus`, `restCockpitLogs`, `restCockpitRestart`. Added route handlers for `/api/cockpit/status` (GET), `/api/cockpit/logs/:service` (GET), `/api/cockpit/restart` (POST), and the `/cockpit` page route with auth redirect.\n- `/mnt/data/hello-world/cockpit.html` — dashboard page: service table with status badges, uptime, memory, re...(truncated)",
+      "artifacts": []
     }
   ]
 }
