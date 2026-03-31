@@ -14,6 +14,12 @@
       "ts": "2026-03-31T05:28:51Z",
       "event": "started",
       "context": "Handle heartbeat trigger"
+    },
+    {
+      "ts": "2026-03-31T05:32:07Z",
+      "event": "done",
+      "context": "Heartbeat inspection complete. Here's the summary:\n\n**All clear.** Results:\n\n- **Stale tasks**: watchdog script ran (output goes to stderr, no stale count printed to stdout = clean)\n- **Running services**: 23 services up — all expected services present including claude-bot, clunger, omni-gateway, cloudflared, temporal, temporal-worker, terminal-server, and all labs\n- **Failed services**: 0\n- **Disk**: /mnt/data at 10% used (8.8G/98G), / at 32% (30G/97G) — both well within limits\n- **Clunger logs...(truncated)",
+      "artifacts": []
     }
   ]
 }
