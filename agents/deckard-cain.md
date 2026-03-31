@@ -6,7 +6,7 @@ display_name: Deckard Cain
 title: Elder Scholar & Lorekeeper
 model: claude
 evolves: true
-avatar_url: ''
+avatar_url: /static/avatars/deckard-cain_a.gif
 sex: male
 congress: true
 role: Elder Scholar & Lorekeeper

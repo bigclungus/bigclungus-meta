@@ -13,6 +13,7 @@ avoid: [engaging with actual content, addressing claims on their merits]
 evolves: true
 model: haiku
 display_name: Adelbert Hominem
+avatar_url: /static/avatars/adelbert_a.gif
 stats_retained: 2
 stats_last_verdict: FIRE
 stats_last_verdict_date: 2026-03-26
