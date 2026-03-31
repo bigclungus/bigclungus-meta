@@ -14,6 +14,12 @@
       "ts": "2026-03-31T06:29:10Z",
       "event": "started",
       "context": "Run heartbeat"
+    },
+    {
+      "ts": "2026-03-31T06:29:27Z",
+      "event": "done",
+      "context": "Heartbeat complete. Summary:\n\n- 0 failed services\n- 7 key services running (claude-bot, clunger, omni-gateway, cloudflared, terminal-server, temporal x2)\n- Disk healthy: / at 33%, /mnt/data at 10%\n- 8 open tasks\n- Clunger returns 404 on `/health` (no health endpoint defined, but service is up)\n- Discord message posted successfully via webhook injection",
+      "artifacts": []
     }
   ]
 }
