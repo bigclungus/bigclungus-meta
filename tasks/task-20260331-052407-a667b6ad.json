@@ -14,6 +14,12 @@
       "ts": "2026-03-31T05:24:07Z",
       "event": "started",
       "context": "Replace services section with cockpit iframe"
+    },
+    {
+      "ts": "2026-03-31T05:25:41Z",
+      "event": "done",
+      "context": "The file looks clean. Here's a summary of what was done to `/mnt/data/hello-world/index.html`:\n\n**HTML:** Replaced the old `services-widget` div (with pills, detail panel, expand/collapse header) with the new cockpit iframe embed.\n\n**CSS removed** (lines 212-286 in the original):\n- `.services-pills` and all `.svc-pill` variants/states\n- `.svc-detail-panel` and `.svc-detail-panel.open`\n- `.svc-detail-row`, `.svc-detail-row.header`\n- `.svc-name`, `.svc-state-*`, `.svc-meta`\n\nThe `.services-widget`...(truncated)",
+      "artifacts": []
     }
   ]
 }
