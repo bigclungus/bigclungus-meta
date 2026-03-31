@@ -14,6 +14,12 @@
       "ts": "2026-03-31T17:59:56Z",
       "event": "started",
       "context": "Clear listings DB and re-run"
+    },
+    {
+      "ts": "2026-03-31T18:06:44Z",
+      "event": "done",
+      "context": "All 5 activities completed successfully (no failed events in the history). The failure logged at 18:04:55 was attempt 1 which timed out due to the worker restart; Temporal retried it and attempt 2 succeeded. The workflow completed cleanly.\n\nHere's the full summary:\n\n**DB clear:** The seen_listings DB was already empty (0 rows), so the clear was a no-op.\n\n**Workflow run:** `listings-adhoc-cleared` started at 18:01:46 and completed at 18:04:58, returning result `1`.\n\n**What happened:**\n- Fetched l...(truncated)",
+      "artifacts": []
     }
   ]
 }
