@@ -14,6 +14,12 @@
       "ts": "2026-03-31T17:52:41Z",
       "event": "started",
       "context": "Fix terminal OAuth timeout and type annotation"
+    },
+    {
+      "ts": "2026-03-31T17:53:28Z",
+      "event": "done",
+      "context": "Both fixes applied and pushed (commit `2c98eda`).\n\n**Fix 1 — `/mnt/data/terminal/server.py`:**\n- Added `import aiohttp` alongside the existing `from aiohttp import web, ClientSession`\n- Changed `ClientSession()` to `ClientSession(timeout=aiohttp.ClientTimeout(total=10))` in `github_callback_handler` (line 144), scoping the 10s timeout to the OAuth flow only. The WebSocket relay session at line 1319 was left unchanged since a hard timeout there would kill long-lived terminal connections.\n\n**Fix 2...(truncated)",
+      "artifacts": []
     }
   ]
 }
