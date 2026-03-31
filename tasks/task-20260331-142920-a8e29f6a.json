@@ -1,0 +1,19 @@
+{
+  "id": "task-20260331-142920-a8e29f6a",
+  "title": "Find deletable files in codebase",
+  "agent_id": "a8e29f6aecd06fc5e",
+  "agent_type": "Explore",
+  "session_id": "04e925d1-bf58-4638-b119-a8b7d97830c0",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-31T14:29:20Z",
+      "event": "started",
+      "context": "Find deletable files in codebase"
+    }
+  ]
+}
