@@ -14,6 +14,12 @@
       "ts": "2026-03-31T16:02:04Z",
       "event": "started",
       "context": "Simplify: Code reuse review"
+    },
+    {
+      "ts": "2026-03-31T16:03:55Z",
+      "event": "done",
+      "context": "Now I have a complete picture. Here are the findings:\n\n---\n\n## Reuse Review Findings\n\n### 1. `_get_openai_key()` — triplicated, ignoring `scripts/common.py`\n\nThree activities each define an identical `_get_openai_key()` function with the same env-probe logic and the same three `.env` search paths:\n\n- `/mnt/data/temporal-workflows/activities/bokoen1_ingest_act.py:28`\n- `/mnt/data/temporal-workflows/activities/discord_ingest_act.py:43`\n- `/mnt/data/temporal-workflows/activities/history_ingest_act....(truncated)",
+      "artifacts": []
     }
   ]
 }
