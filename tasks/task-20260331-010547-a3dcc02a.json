@@ -14,6 +14,12 @@
       "ts": "2026-03-31T01:05:47Z",
       "event": "started",
       "context": "Scan JSONL for human: prefixes"
+    },
+    {
+      "ts": "2026-03-31T01:06:08Z",
+      "event": "done",
+      "context": "Here are the findings from scanning the session JSONL file:\n\n**Yes, \"human:\" prefixes exist in the raw file**, but they appear in a specific and telling context.\n\n**Where they appear:**\n\n1. Lines 5612, 5652, 5736, 5775, 5850 — These are `type: \"assistant\"` entries where the model's response `text` field begins with `Human: <...>`. This is the hallucination pattern: the model generated text that starts with `\"Human: <channel source=...>\"` rather than receiving an actual user turn. These are assis...(truncated)",
+      "artifacts": []
     }
   ]
 }
