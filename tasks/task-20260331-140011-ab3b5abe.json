@@ -14,6 +14,12 @@
       "ts": "2026-03-31T14:00:11Z",
       "event": "started",
       "context": "Get recent commits diff for simplify"
+    },
+    {
+      "ts": "2026-03-31T14:00:37Z",
+      "event": "done",
+      "context": "Here is the full output:\n\n**git log (last 10 commits):**\n```\n632460c fix: congress.html retiredPool filter missed 'ineligible' status\ne14ec50 fix: surface silent exception swallows in cockpit and congress-directives\n23b0870 fix: add crash alert to commons-server; wrap clunger server callback in try/catch\nf9c567c fix: personaFindMdPath returns null on frontmatter parse error\ne979097 fix: move logging import to module level in inject_act\nb97fe94 fix: log workout loadPrefs errors instead of swallow...(truncated)",
+      "artifacts": []
     }
   ]
 }
