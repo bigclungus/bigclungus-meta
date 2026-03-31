@@ -14,6 +14,12 @@
       "ts": "2026-03-31T07:09:05Z",
       "event": "started",
       "context": "Run heartbeat with ideation"
+    },
+    {
+      "ts": "2026-03-31T07:09:28Z",
+      "event": "done",
+      "context": "Done. Here's what was found:\n\n- **Failed services:** 0\n- **Open idea issues:** 1 — issue #88 (house listing sentiment reactions, ya/naw buttons to shape future listings). Already tracked, nothing new to open.\n- **History scan:** The \"bug/problem\" hits were all older or already resolved (labs fix, terminal issue from 3/23, graph viz crash from 3/27). Nothing new actionable.\n- **Discord post:** Sent successfully via inject webhook.",
+      "artifacts": []
     }
   ]
 }
