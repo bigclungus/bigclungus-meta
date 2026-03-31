@@ -14,6 +14,12 @@
       "ts": "2026-03-31T01:48:40Z",
       "event": "started",
       "context": "Heartbeat reliability check"
+    },
+    {
+      "ts": "2026-03-31T01:51:14Z",
+      "event": "done",
+      "context": "All checks complete. Here's the heartbeat scan summary:\n\n**Stale tasks:** 0 stale tasks found, no orphaned congress sessions.\n\n**GitHub issues:** 0 open issues. Nothing actionable.\n\n**Failed services:** 0. All services healthy.\n\n**Timeline ingestion:** 4 candidates scanned from the last 24 hours of commits across 29 repos.\n- Approved (2): \"Add heal tracking to dungeon player stats\" (commons-server) and \"Add minimap, bigger combat text, and heal stats to dungeon HUD\" (clungiverse-client) -- both ...(truncated)",
+      "artifacts": []
     }
   ]
 }
