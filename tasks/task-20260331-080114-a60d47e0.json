@@ -14,6 +14,12 @@
       "ts": "2026-03-31T08:01:14Z",
       "event": "started",
       "context": "Efficiency review pass 2"
+    },
+    {
+      "ts": "2026-03-31T08:02:25Z",
+      "event": "done",
+      "context": "I have enough information now. Here are the findings:\n\n---\n\n**Efficiency issues found — not caught by the previous pass:**\n\n**1. `clungiverse-client/src/scenes/dungeon.ts` — `sendMove` called every frame unconditionally**\n\n`tickLocalMovement` (lines ~560-562) calls `network.sendMove(...)` every rAF frame whenever the local player exists, regardless of whether position or facing changed. This replaced the old code which had the same issue, so it's pre-existing — but the refactor didn't add the mi...(truncated)",
+      "artifacts": []
     }
   ]
 }
