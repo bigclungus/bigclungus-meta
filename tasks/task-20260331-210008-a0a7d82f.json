@@ -14,6 +14,12 @@
       "ts": "2026-03-31T21:00:08Z",
       "event": "started",
       "context": "Get git diff for simplify"
+    },
+    {
+      "ts": "2026-03-31T21:00:22Z",
+      "event": "done",
+      "context": "Here is the full output:\n\n**Stat:**\n```\nlabs/webhook-mirror/src/index.ts | 2 +-\n 1 file changed, 1 insertion(+), 1 deletion(-)\n```\n\n**Full diff:**\n```diff\ndiff --git a/labs/webhook-mirror/src/index.ts b/labs/webhook-mirror/src/index.ts\nindex f17d748..9dac884 100644\n--- a/labs/webhook-mirror/src/index.ts\n+++ b/labs/webhook-mirror/src/index.ts\n@@ -347,7 +347,7 @@ function viewerPage(id: string, publicBase: string, base: string): Response {\n           document.getElementById('requests-container').i...(truncated)",
+      "artifacts": []
     }
   ]
 }
