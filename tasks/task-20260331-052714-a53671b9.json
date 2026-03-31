@@ -14,6 +14,12 @@
       "ts": "2026-03-31T05:27:14Z",
       "event": "started",
       "context": "Replace cockpit iframe with native status table"
+    },
+    {
+      "ts": "2026-03-31T05:28:04Z",
+      "event": "done",
+      "context": "Looks good. The changes are in place. Here's a summary of what was done:\n\n**Changes made to `/mnt/data/hello-world/index.html`:**\n\n1. **Replaced the iframe** — The `<iframe src=\"/cockpit\">` is gone. In its place is a `<div class=\"services-table-wrap\">` that renders a proper `<table>` element dynamically.\n\n2. **Added CSS** (inside the existing `<style>` block, under the services widget section):\n   - `.services-table-wrap` — max-height 300px, overflow-y auto, dark border + bg matching `#0d0d14`\n ...(truncated)",
+      "artifacts": []
     }
   ]
 }
