@@ -14,6 +14,12 @@
       "ts": "2026-03-31T02:06:12Z",
       "event": "started",
       "context": "Holistic clungiverse refactor pass"
+    },
+    {
+      "ts": "2026-03-31T02:13:00Z",
+      "event": "done",
+      "context": "Both pushed. Here's the summary:\n\n---\n\n## Refactor Summary\n\n### Problems Found\n\n**Server:**\n- `dungeon-loop.ts` (1820 lines) — god file mixing game simulation, wire serialization, and persistence in one module. The snapshot builders and persistence had zero coupling to the tick logic and could be cleanly separated.\n- `dungeon-manager.ts` and `dungeon-loop.ts` both define their own `globalSendFn`/`SendFn` — dual coupling point for the same concept.\n- `PERSONA_STATS` duplicated between client (`st...(truncated)",
+      "artifacts": []
     }
   ]
 }
