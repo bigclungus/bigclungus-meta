@@ -14,6 +14,12 @@
       "ts": "2026-03-31T17:29:33Z",
       "event": "started",
       "context": "Heartbeat reliability scan"
+    },
+    {
+      "ts": "2026-03-31T17:33:18Z",
+      "event": "done",
+      "context": "One finding, fixed and closed:\n\n**`/mnt/data/commons-server/src/audition.ts`** — two `fetch()` calls were missing `AbortSignal.timeout()`:\n- Line 66: Anthropic API call in `callClaude()` (walker persona generation) — now has 30s timeout\n- Line 352: Discord inject call in `notifyDiscord()` — now has 8s timeout\n\nBoth could hang indefinitely if the upstream service was slow or unresponsive, blocking the audition pipeline.\n\nFixed in commit `9b513b6`, pushed, GitHub issue #5 opened and closed.\n\nEvery...(truncated)",
+      "artifacts": []
     }
   ]
 }
