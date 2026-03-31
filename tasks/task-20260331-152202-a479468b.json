@@ -1,0 +1,19 @@
+{
+  "id": "task-20260331-152202-a479468b",
+  "title": "Migrate scripts 1-6 to Temporal workflows",
+  "agent_id": "a479468bf1138f3e5",
+  "agent_type": "general-purpose",
+  "session_id": "04e925d1-bf58-4638-b119-a8b7d97830c0",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-31T15:22:02Z",
+      "event": "started",
+      "context": "Migrate scripts 1-6 to Temporal workflows"
+    }
+  ]
+}
