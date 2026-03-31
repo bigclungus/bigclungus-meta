@@ -14,6 +14,12 @@
       "ts": "2026-03-31T15:02:51Z",
       "event": "started",
       "context": "Redirect healthcheck alerts to inject endpoint"
+    },
+    {
+      "ts": "2026-03-31T15:03:56Z",
+      "event": "done",
+      "context": "Done. Here's what changed:\n\n**File:** `/mnt/data/temporal-workflows/activities/healthcheck_act.py`\n\nThe `send_alert` activity previously called the Discord bot API directly (`POST {DISCORD_API}/channels/{MAIN_CHANNEL_ID}/messages` with a bot token). It now POSTs to `http://127.0.0.1:8085/webhooks/bigclungus-main` with `{\"content\": message, \"user\": \"healthcheck\"}`, routing alerts through the omni inject endpoint so they arrive as injected messages to BigClungus rather than as direct public Discor...(truncated)",
+      "artifacts": []
     }
   ]
 }
