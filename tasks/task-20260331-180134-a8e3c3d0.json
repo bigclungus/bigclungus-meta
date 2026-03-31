@@ -14,6 +14,12 @@
       "ts": "2026-03-31T18:01:34Z",
       "event": "started",
       "context": "Restart temporal worker for new listings cron"
+    },
+    {
+      "ts": "2026-03-31T18:02:16Z",
+      "event": "done",
+      "context": "The service is now `active (running)`. The heartbeat queue-full messages in the log are from a previously running workflow activity (not a crash), and the worker process is healthy.\n\nSummary:\n\nThe restart initially failed due to a typo introduced in a recent edit to `/mnt/data/temporal-workflows/activities/discord_ingest_act.py` — line 19 imported `MAIN_MAIN_CHANNEL_ID` (doubled \"MAIN_\") instead of the correct `MAIN_CHANNEL_ID`. Fixed the import, restarted, and the service is now `active (runnin...(truncated)",
+      "artifacts": []
     }
   ]
 }
