@@ -14,6 +14,12 @@
       "ts": "2026-03-31T18:03:29Z",
       "event": "started",
       "context": "Apply simplify pass fixes"
+    },
+    {
+      "event": "done",
+      "ts": "2026-03-31T19:33:58.842345Z",
+      "message": "Original task superseded by retry task-20260331-180504-a0128177 which completed all 6 simplify fixes successfully."
     }
-  ]
+  ],
+  "status": "done"
 }
