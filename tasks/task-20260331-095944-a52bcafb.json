@@ -14,6 +14,12 @@
       "ts": "2026-03-31T09:59:44Z",
       "event": "started",
       "context": "Open GitHub issue for TTS quality/latency"
+    },
+    {
+      "ts": "2026-03-31T09:59:56Z",
+      "event": "done",
+      "context": "Issue created: https://github.com/bigclungus/bigclungus-meta/issues/92\n\nTitle: \"TTS quality / latency: consider OpenAI offload or better local model\" — labeled `idea`, filed against `bigclungus/bigclungus-meta`.",
+      "artifacts": []
     }
   ]
 }
