@@ -14,6 +14,12 @@
       "ts": "2026-03-31T21:20:16Z",
       "event": "started",
       "context": "Diagnose congress failure"
+    },
+    {
+      "ts": "2026-03-31T21:21:02Z",
+      "event": "done",
+      "context": "The root cause is clear. Here's the diagnosis:\n\n**Root cause: `thread_id` was set to the literal string `\"cli\"` instead of a Discord snowflake ID.**\n\nThe workflow was triggered via CLI (the `discord_user` is `\"cli-user\"` and `thread_id` is `\"cli\"`). When `congress_create_thread` attempted to create a Discord thread, it sent `channel_id: \"cli\"` to the Discord API, which rejected it with `NUMBER_TYPE_COERCE` — Discord expects a numeric snowflake, not a string like `\"cli\"`.\n\nThe cascade:\n1. `congre...(truncated)",
+      "artifacts": []
     }
   ]
 }
