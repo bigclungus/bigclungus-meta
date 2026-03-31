@@ -14,6 +14,12 @@
       "ts": "2026-03-31T20:29:44Z",
       "event": "started",
       "context": "Heartbeat check"
+    },
+    {
+      "ts": "2026-03-31T20:30:11Z",
+      "event": "done",
+      "context": "Two items need attention:\n\n**1. OpenAI quota exhausted — HistoryIngestWorkflow failing every minute**\nThe `temporal-worker` is logging `openai.RateLimitError: 429 / insufficient_quota` on every `HistoryIngestWorkflow` run (every minute). Discord history embeddings are not being written. This matches open issue #133 and #108 (Graphiti search also broken). The errors are continuous and ongoing — not transient rate limiting. The OpenAI account is out of credits.\n\n**2. `CostWatchdogWorkflow` not reg...(truncated)",
+      "artifacts": []
     }
   ]
 }
