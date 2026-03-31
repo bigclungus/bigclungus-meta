@@ -14,6 +14,12 @@
       "ts": "2026-03-31T05:24:17Z",
       "event": "started",
       "context": "Quick lint count check"
+    },
+    {
+      "ts": "2026-03-31T05:24:36Z",
+      "event": "done",
+      "context": "**386 problems: 265 errors, 121 warnings**",
+      "artifacts": []
     }
   ]
 }
