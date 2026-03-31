@@ -14,6 +14,12 @@
       "ts": "2026-03-31T14:46:37Z",
       "event": "started",
       "context": "Fix ClientConnectionResetError in terminal server and cleanup node_modules_canvas"
+    },
+    {
+      "ts": "2026-03-31T14:48:51Z",
+      "event": "done",
+      "context": "Both tasks done.\n\n**Task 1 — terminal-server fix**\n\n`/mnt/data/terminal/server.py` lines ~1387 and ~1397. Wrapped both `ws.send_bytes(chunk)` calls in try/except catching `ConnectionResetError`, `aiohttp.ClientConnectionResetError`, and `aiohttp.ServerConnectionError`:\n- Initial backfill send: returns early if client already gone\n- Tail loop send: breaks out of the loop on disconnect\n\nterminal-server.service restarted and is `active`.\n\n**Task 2 — untrack node_modules_canvas**\n\n- `git rm -r --cac...(truncated)",
+      "artifacts": []
     }
   ]
 }
