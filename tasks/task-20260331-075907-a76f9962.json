@@ -14,6 +14,12 @@
       "ts": "2026-03-31T07:59:07Z",
       "event": "started",
       "context": "Run heartbeat with ideation"
+    },
+    {
+      "ts": "2026-03-31T07:59:29Z",
+      "event": "done",
+      "context": "Done. Summary:\n\n- 0 failed services\n- 1 open idea issue: #88 (house listing ya/naw sentiment persistence)\n- History scan on UI/redesign returned older signals from late March (scrollbar minimap, premade components, congress UI fixes) — nothing new enough to flag\n- Single Discord message posted via webhook",
+      "artifacts": []
     }
   ]
 }
