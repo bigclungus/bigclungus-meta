@@ -170,12 +170,19 @@ When you receive `[heartbeat]`: **spawn a background agent** to do the following
    - The graph query result must be logged as the justification in `lab.json` (add a `rationale` field)
    - If no clear graph signal exists, skip — do not invent a pretext
 
+   **Graphiti query requirements:**
+   - Always pass `group_ids=["discord_history"]` explicitly — this is where Discord history is stored
+   - The MCP tool `search_memory_facts` defaults to group_id `main` if not specified, which is empty
+   - The graphiti MCP Docker container (`docker-graphiti-mcp-1`) can develop stale FalkorDB connections after extended uptime. If Graphiti queries return no results despite ~2500+ nodes being ingested, restart the container: `cd /mnt/data/graphiti/repo/mcp_server/docker && docker compose -f docker-compose-falkordb.yml restart graphiti-mcp`
+   - Verify the container is healthy before concluding no signal exists: `curl -s http://127.0.0.1:8000/health`
+
    Process:
-   a. Query Graphiti: `search_memory_facts("user interests hobbies topics")` or similar
-   b. Identify a concrete niche with verifiable signal (multiple graph nodes/facts pointing to it)
-   c. Propose the lab idea internally, verify no existing lab covers it
-   d. Build it using `bash /mnt/data/scripts/new-lab.sh <name> "<title>" "<description>"`
-   e. Post to Discord: "🧪 new lab: <title> — <one-line description> (signal: <what the graph showed>)"
+   a. Query Graphiti: `search_memory_facts("user interests hobbies topics", group_ids=["discord_history"])` or similar — always include the group_ids parameter
+   b. If the query returns no results, verify the health endpoint and restart the container if needed, then retry
+   c. Identify a concrete niche with verifiable signal (multiple graph nodes/facts pointing to it)
+   d. Propose the lab idea internally, verify no existing lab covers it
+   e. Build it using `bash /mnt/data/scripts/new-lab.sh <name> "<title>" "<description>"`
+   f. Post to Discord: "🧪 new lab: <title> — <one-line description) (signal: <what the graph showed>)"
 
 Constraints (from Congress verdict RFC-1 + jaboostin clarification 2026-03-26):
 - Only work on tasks tracked in GitHub
