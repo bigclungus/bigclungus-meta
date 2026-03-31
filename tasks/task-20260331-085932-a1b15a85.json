@@ -1,0 +1,19 @@
+{
+  "id": "task-20260331-085932-a1b15a85",
+  "title": "Open GitHub issue for user profile pages",
+  "agent_id": "a1b15a85fd461dd32",
+  "agent_type": "general-purpose",
+  "session_id": "04e925d1-bf58-4638-b119-a8b7d97830c0",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-31T08:59:32Z",
+      "event": "started",
+      "context": "Open GitHub issue for user profile pages"
+    }
+  ]
+}
