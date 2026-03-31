@@ -14,6 +14,12 @@
       "ts": "2026-03-31T17:43:49Z",
       "event": "started",
       "context": "Trigger ad-hoc listings workflow run"
+    },
+    {
+      "ts": "2026-03-31T17:52:18Z",
+      "event": "done",
+      "context": "The workflow ran successfully and returned `0` (zero new listings to post — all current listings were already seen).\n\nHere's the full summary:\n\n**What happened:**\n\n1. First attempt failed because the workflow requires a `search: dict` argument that wasn't passed. It was stuck in Temporal's retry loop with `TypeError: ListingsWorkflow.run() missing 1 required positional argument: 'search'`.\n\n2. Separately, the worker is also seeing persistent `openai.RateLimitError: insufficient_quota` errors on ...(truncated)",
+      "artifacts": []
     }
   ]
 }
