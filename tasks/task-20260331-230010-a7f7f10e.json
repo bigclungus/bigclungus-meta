@@ -1,0 +1,19 @@
+{
+  "id": "task-20260331-230010-a7f7f10e",
+  "title": "Get git diff for simplify",
+  "agent_id": "a7f7f10ec257007ae",
+  "agent_type": "general-purpose",
+  "session_id": "17bfb128-7a5a-4d7c-99f2-768209785acc",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-31T23:00:10Z",
+      "event": "started",
+      "context": "Get git diff for simplify"
+    }
+  ]
+}
