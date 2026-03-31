@@ -1,0 +1,19 @@
+{
+  "id": "task-20260331-050943-a78a5ffe",
+  "title": "CLAUDE.md cleanup and yucla/ccr removal",
+  "agent_id": "a78a5ffe5f51dbc0d",
+  "agent_type": "general-purpose",
+  "session_id": "cd5c6ab2-9176-47d3-b93e-4e96320e5feb",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-31T05:09:43Z",
+      "event": "started",
+      "context": "CLAUDE.md cleanup and yucla/ccr removal"
+    }
+  ]
+}
