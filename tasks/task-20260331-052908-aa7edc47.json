@@ -1,0 +1,19 @@
+{
+  "id": "task-20260331-052908-aa7edc47",
+  "title": "Add restart buttons to dashboard service table",
+  "agent_id": "aa7edc4750f86a204",
+  "agent_type": "general-purpose",
+  "session_id": "cd5c6ab2-9176-47d3-b93e-4e96320e5feb",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-31T05:29:08Z",
+      "event": "started",
+      "context": "Add restart buttons to dashboard service table"
+    }
+  ]
+}
