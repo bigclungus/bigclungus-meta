@@ -14,6 +14,12 @@
       "ts": "2026-03-31T16:09:39Z",
       "event": "started",
       "context": "Heartbeat reliability scan"
+    },
+    {
+      "ts": "2026-03-31T16:12:11Z",
+      "event": "done",
+      "context": "Here are the findings from the scan:\n\n---\n\n**One fix applied (minor, operational):**\n\n`commons-server/src/index.ts` — two Discord API `fetch()` calls had no timeout:\n- `updateLobbyDiscordMessage()` (PATCH, called on dungeon game start)\n- `notifyDiscordLobbyCreated()` (POST, called on lobby creation)\n\nBoth could block indefinitely if Discord's API hung. Added `AbortSignal.timeout(8000)` to both. Committed as `02723cb`, pushed, GitHub issue #140 opened and closed.\n\n---\n\n**Everything else is clean:...(truncated)",
+      "artifacts": []
     }
   ]
 }
