@@ -14,6 +14,12 @@
       "ts": "2026-03-31T13:49:33Z",
       "event": "started",
       "context": "Heartbeat — data pipelines and NightOwl queue"
+    },
+    {
+      "ts": "2026-03-31T13:52:44Z",
+      "event": "done",
+      "context": "Scan complete. Summary of findings:\n\n**Healthy:**\n- `discord-history.db` — active, updated at 13:49 UTC today, 3,046 messages, latest message from 06:48 UTC\n- Bokoen1 ingestion — status `done`, 167/167 transcripts ingested into Graphiti\n- NightOwl queue — empty, no pending tasks\n- Temporal `history-ingest-1m` schedule — firing every minute, all completions successful\n\n**Issue found and fixed:**\n- `discord_ingest_incremental.py` (hourly Discord→Graphiti Graphiti ingest) was hitting OpenAI 429 rat...(truncated)",
+      "artifacts": []
     }
   ]
 }
