@@ -14,6 +14,12 @@
       "ts": "2026-03-31T02:20:14Z",
       "event": "started",
       "context": "Heartbeat reliability check"
+    },
+    {
+      "ts": "2026-03-31T02:22:08Z",
+      "event": "done",
+      "context": "All checks complete. Here's the full heartbeat scan report:\n\n---\n\n**Heartbeat Scan Results — 2026-03-31**\n\n**Stale tasks:** 0 stale tasks. No deliberating congress sessions orphaned.\n\n**GitHub issues:** No open issues returned (repo is clean or within limits).\n\n**Failed services:** 0 failed services. All services running normally.\n\n**Timeline ingestion:** 3 candidates found across repos (commons-server, clung.us, clunger). All 3 rejected as routine maintenance (tile addition, cache-busting strin...(truncated)",
+      "artifacts": []
     }
   ]
 }
