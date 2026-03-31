@@ -14,6 +14,12 @@
       "ts": "2026-03-31T05:33:58Z",
       "event": "started",
       "context": "Current lint count across all packages"
+    },
+    {
+      "ts": "2026-03-31T05:34:18Z",
+      "event": "done",
+      "context": "**✖ 377 problems (256 errors, 121 warnings)**",
+      "artifacts": []
     }
   ]
 }
