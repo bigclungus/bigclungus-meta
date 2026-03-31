@@ -1,0 +1,19 @@
+{
+  "id": "task-20260331-142417-ab32d170",
+  "title": "Archive Discord thread via API",
+  "agent_id": "ab32d1707072c41ec",
+  "agent_type": "general-purpose",
+  "session_id": "04e925d1-bf58-4638-b119-a8b7d97830c0",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-31T14:24:17Z",
+      "event": "started",
+      "context": "Archive Discord thread via API"
+    }
+  ]
+}
