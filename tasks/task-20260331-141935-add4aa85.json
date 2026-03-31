@@ -14,6 +14,12 @@
       "ts": "2026-03-31T14:19:35Z",
       "event": "started",
       "context": "Heartbeat scan — persona model routing and clunger personas"
+    },
+    {
+      "ts": "2026-03-31T14:21:54Z",
+      "event": "done",
+      "context": "Scan complete. Here's what was found:\n\n**Model routing works correctly overall.** The `callLlm` function in `/mnt/data/clunger/src/services/congress.ts` handles all expected model types: grok (via xai proxy at `:4100`), gemini (via CLI), and claude (via CLI). No silent fallbacks — unknown models throw explicitly.\n\n**One real issue — GitHub issue #134 opened:**\n- `bloodfeast` is the only `eligible` persona with a grok model (`grok-4.20-0309-reasoning`)\n- The xai team account at the grok proxy has...(truncated)",
+      "artifacts": []
     }
   ]
 }
