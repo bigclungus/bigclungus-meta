@@ -14,6 +14,12 @@
       "ts": "2026-03-31T15:09:29Z",
       "event": "started",
       "context": "Heartbeat — misc scan while terminal fix runs"
+    },
+    {
+      "ts": "2026-03-31T15:10:04Z",
+      "event": "done",
+      "context": "Scan complete. All systems healthy:\n\n- **omni-gateway**: No errors/warnings in last 30 min\n- **graphiti-mcp**: Operates as stdio MCP spawned by claude-bot (no separate service unit — this is by design), confirmed available in session\n- **commons-server**: Active and healthy, spawning audition walkers normally\n\nNo issues found, no action needed.",
+      "artifacts": []
     }
   ]
 }
