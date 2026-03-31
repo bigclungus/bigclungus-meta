@@ -14,6 +14,12 @@
       "ts": "2026-03-31T15:52:14Z",
       "event": "started",
       "context": "Fix activity heartbeat calls #138"
+    },
+    {
+      "ts": "2026-03-31T15:53:11Z",
+      "event": "done",
+      "context": "Done. Here's what was changed:\n\n**Activities:**\n- `/mnt/data/temporal-workflows/activities/bokoen1_ingest_act.py` — added `activity.heartbeat(f\"processed {i}/{len(to_ingest)}: {name}\")` at the top of the per-transcript loop in `_ingest_transcripts`. `activity` was already imported.\n- `/mnt/data/temporal-workflows/activities/discord_ingest_act.py` — added `activity.heartbeat(f\"ingested {ingested} episodes, processing {i}/{total}: ...\")` at the top of the per-group loop in `_ingest_into_graphiti`....(truncated)",
+      "artifacts": []
     }
   ]
 }
