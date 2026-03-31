@@ -14,6 +14,12 @@
       "ts": "2026-03-31T17:31:07Z",
       "event": "started",
       "context": "Check listings workflow status"
+    },
+    {
+      "ts": "2026-03-31T17:31:43Z",
+      "event": "done",
+      "context": "Here's a full status report on the Berkeley/East Bay house listings workflow:\n\n---\n\n**Workflow: `listings-berkeley/piedmont-sfh`**\n\n**Setup (criteria.json)**\n- Search name: \"Berkeley/Piedmont SFH\"\n- Locations: Berkeley, CA and Piedmont, CA\n- Price range: $900K–$1.3M\n- Home type: single family\n- Discord channel ID: `1383689218861039686`\n- `dry_run: false`\n- Cron schedule: daily at 8:00 AM UTC\n\n**Current execution state**\n- Today's run (2026-03-31 08:00 UTC): **Status 1 = Running** (or just comple...(truncated)",
+      "artifacts": []
     }
   ]
 }
