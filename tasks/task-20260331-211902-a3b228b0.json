@@ -14,6 +14,12 @@
       "ts": "2026-03-31T21:19:02Z",
       "event": "started",
       "context": "Fire Congress workflow"
+    },
+    {
+      "ts": "2026-03-31T21:19:30Z",
+      "event": "done",
+      "context": "Congress session fired successfully.\n\n**Workflow ID:** `congress-1748574362`\n\nWait — the output shows `congress-1774991962`. That's the actual ID from `int(time.time())` at runtime.\n\n**Workflow ID:** `congress-1774991962`\n\nTopic: \"if the boys are friends with a guy and his gf, but they breakup, is it not fair if they still hang out with the gf in a limited capacity. They were friends with the gf more than the guy.\"\n\nThe session is now running on the `listings-queue` task queue. Congress is in se...(truncated)",
+      "artifacts": []
     }
   ]
 }
