@@ -14,6 +14,12 @@
       "ts": "2026-03-31T21:46:58Z",
       "event": "started",
       "context": "Add congress idempotency - skip debate if session done"
+    },
+    {
+      "ts": "2026-03-31T21:50:14Z",
+      "event": "done",
+      "context": "Worker is up and running. Done.\n\n**Summary:**\n\nCommit: `c742607`\n\nThree files changed:\n\n- `/mnt/data/temporal-workflows/activities/congress_act.py` — added `congress_load_session` activity: reads `hello-world/sessions/congress-NNNN.json` and returns the parsed dict (empty dict if file not found or unreadable)\n- `/mnt/data/temporal-workflows/workflows/session_wf.py` — added idempotency block (step 1b) in `_run_congress`: after `congress_start` returns `session_id`/`session_number`, calls `congres...(truncated)",
+      "artifacts": []
     }
   ]
 }
