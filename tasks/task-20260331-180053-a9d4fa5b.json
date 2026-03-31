@@ -14,6 +14,12 @@
       "ts": "2026-03-31T18:00:53Z",
       "event": "started",
       "context": "Add Marin search to listings criteria"
+    },
+    {
+      "ts": "2026-03-31T18:01:27Z",
+      "event": "done",
+      "context": "Done. Here's a summary of what was done and what was found:\n\n**What changed:**\n- `/mnt/data/temporal-workflows/criteria.json` — added a second entry under `searches` for \"Marin SFH\" with the 6 Marin locations, same price range ($900k–$1.3M), same home type (sfh), same Discord channel ID, and `dry_run: false`.\n\n**No workflow or worker changes needed:**\n- `listings.py` (`ListingsWorkflow`) already accepts a single search dict and loops over its locations — it was already multi-location capable.\n- ...(truncated)",
+      "artifacts": []
     }
   ]
 }
