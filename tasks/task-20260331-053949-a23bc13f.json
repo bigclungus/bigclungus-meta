@@ -14,6 +14,12 @@
       "ts": "2026-03-31T05:39:49Z",
       "event": "started",
       "context": "Handle heartbeat trigger"
+    },
+    {
+      "ts": "2026-03-31T05:40:25Z",
+      "event": "done",
+      "context": "All clear. Here's the summary:\n\n- **Failed services:** None\n- **Disk usage:** `/` at 32% (97G total, 30G used), `/mnt/data` at 10% (98G total, 8.8G used) — both well within limits\n- **Clunger logs:** Running normally. One pre-existing warning: `GEMINI_API_KEY not set` — gemini personas will fail, but this is not new\n- **Discord post:** Sent to channel `1485343472952148008` successfully",
+      "artifacts": []
     }
   ]
 }
