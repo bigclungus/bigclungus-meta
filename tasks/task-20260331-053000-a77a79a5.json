@@ -1,0 +1,19 @@
+{
+  "id": "task-20260331-053000-a77a79a5",
+  "title": "Remove dead services and add descriptions to cockpit",
+  "agent_id": "a77a79a53ce2c85be",
+  "agent_type": "general-purpose",
+  "session_id": "cd5c6ab2-9176-47d3-b93e-4e96320e5feb",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-31T05:30:00Z",
+      "event": "started",
+      "context": "Remove dead services and add descriptions to cockpit"
+    }
+  ]
+}
