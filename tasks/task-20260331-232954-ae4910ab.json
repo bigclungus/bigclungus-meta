@@ -14,6 +14,12 @@
       "ts": "2026-03-31T23:29:54Z",
       "event": "started",
       "context": "Heartbeat check"
+    },
+    {
+      "ts": "2026-03-31T23:30:10Z",
+      "event": "done",
+      "context": "**Needs attention:**\n\n**HistoryIngestWorkflow failing continuously** — `run_history_ingest` activity has been failing every minute for the entire 30-min window. The error is `raise self._make_status_error_from_response(err.response)` which is likely an API status error (not OpenAI quota — that's filtered). This matches GitHub issue #133 (OpenAI quota exhausted for history-ingest embeddings), so it may be the same root cause just surfacing differently. Worth verifying whether this is actually the...(truncated)",
+      "artifacts": []
     }
   ]
 }
