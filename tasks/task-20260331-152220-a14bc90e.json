@@ -1,0 +1,19 @@
+{
+  "id": "task-20260331-152220-a14bc90e",
+  "title": "Simplify quality review",
+  "agent_id": "a14bc90e96a8d347c",
+  "agent_type": "Explore",
+  "session_id": "04e925d1-bf58-4638-b119-a8b7d97830c0",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-31T15:22:20Z",
+      "event": "started",
+      "context": "Simplify quality review"
+    }
+  ]
+}
