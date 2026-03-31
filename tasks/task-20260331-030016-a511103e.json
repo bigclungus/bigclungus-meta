@@ -14,6 +14,12 @@
       "ts": "2026-03-31T03:00:16Z",
       "event": "started",
       "context": "Simplify cron pass"
+    },
+    {
+      "ts": "2026-03-31T03:04:27Z",
+      "event": "done",
+      "context": "Clunger is back up. The simplify pass is complete.\n\nSummary of what was done:\n\n**Bug fixed: dead inject endpoint across clunger**\n\nAll inject calls in `/mnt/data/clunger/src/index.ts` and `/mnt/data/clunger/src/utils/inject.ts` were pointing at the defunct `discord-server` endpoint (`127.0.0.1:9876/inject`) with an `x-inject-secret` header that no longer exists. The omni gateway replaced that service and exposes a no-secret endpoint at `127.0.0.1:8085/webhooks/bigclungus-main`.\n\nAffected call si...(truncated)",
+      "artifacts": []
     }
   ]
 }
