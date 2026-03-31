@@ -14,6 +14,12 @@
       "ts": "2026-03-31T15:29:40Z",
       "event": "started",
       "context": "Heartbeat reliability scan"
+    },
+    {
+      "ts": "2026-03-31T15:32:31Z",
+      "event": "done",
+      "context": "Scan complete. Here's a summary of what was found and fixed:\n\n**4 issues fixed:**\n\n1. `/mnt/data/omni/omnichannel/packages/gateway/src/ipc.ts` — The `onInvoke(...).then(...)` chain had no `.catch()`. Any thrown error from an invoke handler would produce an unhandled promise rejection. Added `.catch()` that logs to stderr and sends `invoke_result ok=false` back to the client.\n\n2. `/mnt/data/clunger/src/utils/inject.ts` — `injectDiscord()` had no fetch timeout. If omni-gateway is slow or unrespons...(truncated)",
+      "artifacts": []
     }
   ]
 }
