@@ -14,6 +14,12 @@
       "ts": "2026-03-31T16:39:30Z",
       "event": "started",
       "context": "Heartbeat reliability scan"
+    },
+    {
+      "ts": "2026-03-31T16:42:07Z",
+      "event": "done",
+      "context": "Heartbeat scan complete. Three minor fixes found and implemented.\n\n**Issues fixed (commit 51d4ea9, closes #1):**\n\n1. `/mnt/data/commons-client/src/sprites.ts` — `fetchSpriteWinners` was rethrowing inside `.catch`, which creates an unhandled promise rejection that goes nowhere. Fixed to `console.warn` and swallow. Also added an 8s timeout to the fetch itself.\n\n2. `/mnt/data/commons-client/src/main.ts` — `/api/me` fetch (line 246) had no timeout. If the server hangs, this blocks the entire game st...(truncated)",
+      "artifacts": []
     }
   ]
 }
