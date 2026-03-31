@@ -14,6 +14,12 @@
       "ts": "2026-03-31T21:59:50Z",
       "event": "started",
       "context": "Heartbeat check"
+    },
+    {
+      "ts": "2026-03-31T22:00:06Z",
+      "event": "done",
+      "context": "**Two issues need attention:**\n\n**Issue #134 — Grok API: no credits on xai team account (bug, opened 14:21 UTC)**\nThe xai team account has no credits, meaning any congress session involving bloodfeast will fail at the Grok API call. This is a live bug for congress functionality.\n\n**Issue #133 — OpenAI quota exhausted: history-ingest embeddings failing (bug, opened 14:10 UTC)**\nDiscord history ingestion is broken — embeddings can't be generated. The `/mnt/data/scripts/history` search tool will ha...(truncated)",
+      "artifacts": []
     }
   ]
 }
