@@ -14,6 +14,12 @@
       "ts": "2026-03-31T05:42:33Z",
       "event": "started",
       "context": "Verify cockpit is live and clunger running"
+    },
+    {
+      "ts": "2026-03-31T05:43:36Z",
+      "event": "done",
+      "context": "Status summary:\n\n1. **clunger.service** — running, active since 05:34:45 UTC (about 8 minutes ago), PID 3612577, using ~62.8MB RAM.\n\n2. **Cockpit metrics endpoint** — returned **403**. This is expected behavior: the endpoint is auth-gated and the test cookie `tauth_github=test` is not a valid session token. The server is responding, which confirms clunger is up and routing correctly.\n\n3. **cockpit.html** — exists at `/mnt/data/hello-world/cockpit.html`, 20,500 bytes, last modified **2026-03-31 0...(truncated)",
+      "artifacts": []
     }
   ]
 }
