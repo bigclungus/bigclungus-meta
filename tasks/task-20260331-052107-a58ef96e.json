@@ -1,0 +1,19 @@
+{
+  "id": "task-20260331-052107-a58ef96e",
+  "title": "Add cockpit to main dashboard sitenav",
+  "agent_id": "a58ef96ef73d0d17f",
+  "agent_type": "general-purpose",
+  "session_id": "cd5c6ab2-9176-47d3-b93e-4e96320e5feb",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-31T05:21:07Z",
+      "event": "started",
+      "context": "Add cockpit to main dashboard sitenav"
+    }
+  ]
+}
