@@ -14,6 +14,12 @@
       "ts": "2026-03-31T03:54:46Z",
       "event": "started",
       "context": "Set up opinionated TypeScript linter"
+    },
+    {
+      "ts": "2026-03-31T04:00:59Z",
+      "event": "done",
+      "context": "Done. Here's the summary:\n\n---\n\n**Setup complete.** Config lives at `/mnt/data/eslint.config.mjs`, `package.json` at root has `lint` and `lint:fix` scripts. Committed and pushed to `bigclungus/clungus` as commit `54bcb2a`.\n\n**Config shape:**\n- Uses ESLint 10 flat config format\n- Spreads all three `@typescript-eslint` presets: `strict`, `stylistic`, `strict-type-checked`\n- `projectService: true` for type-aware rules (auto-discovers per-package tsconfigs)\n- All the key rules from the spec are expl...(truncated)",
+      "artifacts": []
     }
   ]
 }
