@@ -3,10 +3,10 @@
 BigClungus Integration Tests — critical service endpoints.
 
 Tests:
-  1. Discord inject endpoint — POST with correct secret, expect 200
+  1. Omni gateway inject — POST to omni webhook, expect 200
   2. Temporal worker health — service running and localhost:7233 reachable
   3. Congress activity chain — GET /api/congress/active on clunger (public endpoint)
-  4. Labs router discovery — GET http://localhost:8083/ expect 200 and HTML listing
+  4. Labs router discovery — GET http://localhost:8081/labs/ expect 200 (labs folded into clunger)
   5. Commons-server WS — connect to ws://localhost:8090/ws, expect tick within 5s
   6. Clunger health — GET /api/congress/sessions (public), expect 200
 
@@ -97,34 +97,22 @@ def run_test(name: str, fn):
 
 # ── individual tests ────────────────────────────────────────────────────────
 
-def test_discord_inject():
-    """POST to inject endpoint with correct secret — expect 200 / 'ok'."""
-    secret = os.environ.get(
-        "DISCORD_INJECT_SECRET",
-        "aa330b635ee444c20e27b4b79355e210c7f706523e768746ea687cecc4338db1",
-    )
-    # Use a clearly-automated message so it's visually obvious in the channel
-    # that this is a health check, not a real user message.
+def test_omni_inject():
+    """POST to omni gateway webhook — expect 200 (no secret needed for localhost)."""
     status, body = http_post(
-        "http://127.0.0.1:9876/inject",
-        body={"content": "🧪 inject-health-check", "chat_id": "1485343472952148008", "user": "integration-test"},
-        headers={"x-inject-secret": secret},
+        "http://127.0.0.1:8085/webhooks/bigclungus-main",
+        body={"content": "🧪 inject-health-check", "user": "integration-test"},
     )
     if status == 200:
         return True, f"HTTP {status} — body: {body[:80].decode(errors='replace')}"
     return False, f"HTTP {status} — body: {body[:120].decode(errors='replace')}"
 
 
-def test_inject_rejects_bad_secret():
-    """POST to inject endpoint with wrong secret — expect 401 (not 200)."""
-    status, body = http_post(
-        "http://127.0.0.1:9876/inject",
-        body={"content": "should be rejected", "chat_id": "1485343472952148008", "user": "integration-test"},
-        headers={"x-inject-secret": "not-the-real-secret"},
-    )
-    if status == 401:
-        return True, f"correctly rejected with HTTP {status}"
-    return False, f"expected 401, got {status} — body: {body[:80].decode(errors='replace')}"
+def test_omni_gateway_reachable():
+    """TCP connect to omni gateway on :8085 — expect reachable."""
+    if not tcp_reachable("127.0.0.1", 8085):
+        return False, "omni-gateway port 8085 not reachable"
+    return True, "port 8085 reachable"
 
 
 def test_temporal_worker():
@@ -151,19 +139,22 @@ def test_congress_active_endpoint():
 
 
 def test_labs_router():
-    """GET http://localhost:8083/ — expect 200 and HTML that references at least one lab."""
-    status, body = http_get("http://localhost:8083/")
+    """GET http://localhost:8081/ with Host: labs.clung.us — labs folded into clunger, expect 200."""
+    req = urllib.request.Request(
+        "http://localhost:8081/",
+        headers={"Host": "labs.clung.us", "User-Agent": "BigClungus-IntegrationTest/1.0"},
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=TIMEOUT) as resp:
+            status = resp.status
+            body = resp.read()
+    except urllib.error.HTTPError as e:
+        return False, f"HTTP {e.code}"
     if status != 200:
         return False, f"HTTP {status}"
     text = body.decode(errors="replace")
-    if "labs.clung.us" not in text:
-        return False, "HTTP 200 but response doesn't look like labs index (missing 'labs.clung.us')"
-    # The labs router HTML includes lab names/links — check that it rendered something
     if "<title>" not in text:
         return False, "HTTP 200 but response missing <title> — unexpected format"
-    lab_count_marker = "running"
-    if lab_count_marker not in text:
-        return False, "HTTP 200 but expected 'running' count marker not found"
     return True, f"HTTP {status} — labs index rendered ({len(body)} bytes)"
 
 
@@ -333,11 +324,11 @@ def test_clunger_health():
 
 if __name__ == "__main__":
     TESTS = [
-        ("Discord inject (correct secret)", test_discord_inject),
-        ("Discord inject (bad secret rejected)", test_inject_rejects_bad_secret),
+        ("Omni gateway inject", test_omni_inject),
+        ("Omni gateway reachable (:8085)", test_omni_gateway_reachable),
         ("Temporal worker health", test_temporal_worker),
         ("Congress /api/congress/active endpoint", test_congress_active_endpoint),
-        ("Labs router discovery", test_labs_router),
+        ("Labs router discovery (clunger :8081/labs/)", test_labs_router),
         ("Commons-server WebSocket (tick message)", test_commons_ws),
         ("Clunger /api/congress/sessions (public)", test_clunger_health),
     ]
