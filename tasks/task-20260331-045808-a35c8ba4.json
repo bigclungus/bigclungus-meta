@@ -14,6 +14,11 @@
       "ts": "2026-03-31T04:58:08Z",
       "event": "started",
       "context": "Build yucla Kotlin library"
+    },
+    {
+      "event": "cancelled",
+      "ts": "2026-03-31T08:07:23.936215Z",
+      "message": "Duplicate task, cancelled"
     }
   ],
   "status": "cancelled"
