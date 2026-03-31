@@ -14,6 +14,12 @@
       "ts": "2026-03-31T05:30:00Z",
       "event": "started",
       "context": "Remove dead services and add descriptions to cockpit"
+    },
+    {
+      "ts": "2026-03-31T05:30:46Z",
+      "event": "done",
+      "context": "Both tasks done and clunger is active.\n\n**Summary:**\n\n- **Task 1** (`/mnt/data/clunger/src/index.ts`): Removed `labs-router.service` and `temporal-proxy.service` from `COCKPIT_SERVICES`. Array now has 8 entries instead of 10.\n\n- **Task 2** (`/mnt/data/hello-world/cockpit.html`): Added a dedicated `description` column after the service name column. Descriptions truncate at 40 chars with an ellipsis, displayed in muted grey (`#888`). Removed the old inline sub-line rendering. Updated `colspan` fro...(truncated)",
+      "artifacts": []
     }
   ]
 }
