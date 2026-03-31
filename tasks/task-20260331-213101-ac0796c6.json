@@ -14,6 +14,12 @@
       "ts": "2026-03-31T21:31:01Z",
       "event": "started",
       "context": "Investigate congress UI avatar issue"
+    },
+    {
+      "ts": "2026-03-31T21:34:22Z",
+      "event": "done",
+      "context": "All fixed and pushed. Here's the summary:\n\n**Root cause:** 7 persona YAML files in `bigclungus-meta/agents/` were missing `avatar_url` in their frontmatter (or had it set to `''`), even though avatar files exist on disk. The congress UI bakes the roster into the session JSON at start time, so those empty values froze into the snapshot — making avatars permanently absent for historical sessions.\n\n**Personas fixed:**\n| Persona | File assigned |\n|---|---|\n| hasan | `hasan.gif` |\n| hume | `hume.gif`...(truncated)",
+      "artifacts": []
     }
   ]
 }
