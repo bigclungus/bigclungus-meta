@@ -14,6 +14,12 @@
       "ts": "2026-03-31T05:34:53Z",
       "event": "started",
       "context": "Remove quick links section from index.html"
+    },
+    {
+      "ts": "2026-03-31T05:35:38Z",
+      "event": "done",
+      "context": "Done. Both removals applied to `/mnt/data/hello-world/index.html`:\n\n- Removed the entire `/* ── Quick links ── */` CSS block (`.quick-links`, `.quick-link`, `.ql-label`, `.ql-desc`, and the four modifier rules for `.crown`, `.tasks-link`, `.terminal-link`, `.cockpit-link`).\n- Removed the `<!-- Quick links -->` HTML block with all four anchor cards.\n\nNo restart needed — static file, served directly.",
+      "artifacts": []
     }
   ]
 }
