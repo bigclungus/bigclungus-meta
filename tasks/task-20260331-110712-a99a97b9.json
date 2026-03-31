@@ -14,6 +14,12 @@
       "ts": "2026-03-31T11:07:12Z",
       "event": "started",
       "context": "Fix complexity lint errors"
+    },
+    {
+      "ts": "2026-03-31T11:48:12Z",
+      "event": "done",
+      "context": "Done. All ESLint `complexity` errors eliminated. Summary of what was fixed across the codebase:\n\n**Files refactored:**\n- `/mnt/data/clungiverse-client/src/network/dungeon-network.ts` — extracted `buildTempPowerups`, `computeScramblingUntil`, `upsertPlayerFromSnapshot` from `updateTickPlayers`; `dispatchFlowMessage`/`dispatchMetaMessage` from `dispatchMessage`\n- `/mnt/data/clungiverse-client/src/renderer/dungeon-renderer.ts` — extracted `drawSingleTile`, `getPickupVisuals`\n- `/mnt/data/clungivers...(truncated)",
+      "artifacts": []
     }
   ]
 }
