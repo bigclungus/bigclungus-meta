@@ -14,6 +14,12 @@
       "ts": "2026-03-31T03:38:43Z",
       "event": "started",
       "context": "Heartbeat reliability check"
+    },
+    {
+      "ts": "2026-03-31T03:40:26Z",
+      "event": "done",
+      "context": "That's the current task (this very run). That's expected. The system is healthy overall. Let me compile the full findings.\n\n---\n\n**Heartbeat scan complete. All clear.**\n\n**Stale tasks:** 0 stale tasks, 0 congress orphans. The one open task (`task-20260331-033843-a7919f9e`) is the current heartbeat run itself.\n\n**GitHub issues:** 0 open issues.\n\n**Failed services:** None. All key services are running: `claude-bot`, `clunger`, `cloudflared`, `omni-gateway`, `temporal`, `temporal-worker`, `terminal...(truncated)",
+      "artifacts": []
     }
   ]
 }
