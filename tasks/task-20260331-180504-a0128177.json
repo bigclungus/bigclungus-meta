@@ -14,6 +14,12 @@
       "ts": "2026-03-31T18:05:04Z",
       "event": "started",
       "context": "Apply simplify pass fixes (retry)"
+    },
+    {
+      "ts": "2026-03-31T18:14:32Z",
+      "event": "done",
+      "context": "All 6 fixes applied, committed, and pushed. Here's what changed:\n\n**Fix 1 - `_discord_headers()` moved to utils.py:**\n- Removed the duplicate definition from `congress_act.py` (which used an inline `os.environ.get`)\n- `utils.py` already had it using `get_discord_token()` — that version is now the canonical one\n- `congress_act.py` now imports it from `.utils`\n- `trial_act.py` now imports it from `.utils` instead of from `.congress_act`\n- `sweeper_act.py` and `audit_act.py` inline header dicts rep...(truncated)",
+      "artifacts": []
     }
   ]
 }
