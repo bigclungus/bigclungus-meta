@@ -14,6 +14,12 @@
       "ts": "2026-03-31T16:59:29Z",
       "event": "started",
       "context": "Heartbeat reliability scan"
+    },
+    {
+      "ts": "2026-03-31T17:02:00Z",
+      "event": "done",
+      "context": "---\n\n**Scan complete — summary**\n\n**Fixed (3 minor, committed and pushed as one commit, issue #2 opened and closed):**\n\nAll in `/mnt/data/clunger/src/index.ts`:\n1. `injectAlert()` — no timeout on the omni webhook fetch. Added `AbortSignal.timeout(5_000)`. This is the error-monitoring path, so a hang here during an already-bad moment is especially harmful.\n2. `/api/discord/persona` inject — no timeout on the omni webhook fetch. Added `AbortSignal.timeout(10_000)`.\n3. GitHub OAuth handler — no tim...(truncated)",
+      "artifacts": []
     }
   ]
 }
