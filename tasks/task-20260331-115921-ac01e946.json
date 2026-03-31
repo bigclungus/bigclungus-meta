@@ -14,6 +14,12 @@
       "ts": "2026-03-31T11:59:21Z",
       "event": "started",
       "context": "Handle heartbeat ideation"
+    },
+    {
+      "ts": "2026-03-31T12:04:29Z",
+      "event": "done",
+      "context": "Heartbeat run complete. Here's what was found and done:\n\n**3 issues filed and implemented (all minor/ops, no congress needed):**\n\n- **#117** (`bigclungus-meta/agents/hume.md`): blank `model:` field was silently defaulting to haiku via the `\"claude\"` fallback chain. Set `model: haiku` explicitly. Committed and pushed to bigclungus-meta.\n\n- **#118** (`temporal-workflows/activities/healthcheck_act.py`): `clung.us/cockpit` was added as a feature in commit d035041 but never added to the `SITES` list ...(truncated)",
+      "artifacts": []
     }
   ]
 }
