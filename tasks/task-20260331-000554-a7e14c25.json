@@ -1,0 +1,19 @@
+{
+  "id": "task-20260331-000554-a7e14c25",
+  "title": "Add Crundle as playable character to Clungiverse",
+  "agent_id": "a7e14c25d33ef07eb",
+  "agent_type": "general-purpose",
+  "session_id": "cd5c6ab2-9176-47d3-b93e-4e96320e5feb",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-31T00:05:54Z",
+      "event": "started",
+      "context": "Add Crundle as playable character to Clungiverse"
+    }
+  ]
+}
