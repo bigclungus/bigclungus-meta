@@ -14,6 +14,12 @@
       "ts": "2026-03-31T21:21:23Z",
       "event": "started",
       "context": "Re-fire congress with correct channel ID"
+    },
+    {
+      "ts": "2026-03-31T21:22:04Z",
+      "event": "done",
+      "context": "Workflow fired successfully.\n\nNew workflow ID: **`congress-1774992118`**\n\nIt was started with the correct `chat_id: \"1485343472952148008\"` (the real Discord channel snowflake) instead of `\"cli\"`, so Discord delivery should work this time. All four params — topic, chat_id, message_id, discord_user — were passed as a dict matching the `CongressWorkflow` signature confirmed in TRIGGERS.md.",
+      "artifacts": []
     }
   ]
 }
