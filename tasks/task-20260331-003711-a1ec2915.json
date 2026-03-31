@@ -1,0 +1,19 @@
+{
+  "id": "task-20260331-003711-a1ec2915",
+  "title": "Download sprite, make white transparent, install as Crundle avatar",
+  "agent_id": "a1ec2915203ca3ad2",
+  "agent_type": "general-purpose",
+  "session_id": "cd5c6ab2-9176-47d3-b93e-4e96320e5feb",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-31T00:37:11Z",
+      "event": "started",
+      "context": "Download sprite, make white transparent, install as Crundle avatar"
+    }
+  ]
+}
