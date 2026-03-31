@@ -14,6 +14,12 @@
       "ts": "2026-03-31T17:39:10Z",
       "event": "started",
       "context": "Evaluate listings output and suggest improvements"
+    },
+    {
+      "ts": "2026-03-31T17:39:50Z",
+      "event": "done",
+      "context": "Now I have a complete picture. Here's the analysis:\n\n---\n\n## Current Post Format\n\nA typical post looks like this in Discord:\n\n```\n**1 new listing found**\n\n[Embed]\nTitle: 2345 Woolsey St, Berkeley, CA 94705\nDescription:\n  **4 bed / 2.0 bath  |  1,850 sqft  |  $1,150,000**\n  [View listing](https://www.redfin.com/...)\nImage: [primary photo]\nColor: green\nReactions: 👍 👎\n```\n\nThat's it. Terse, functional, and not very compelling.\n\n---\n\n## Data Available but Unused\n\nFrom `redfin.py`, the fetched dict c...(truncated)",
+      "artifacts": []
     }
   ]
 }
