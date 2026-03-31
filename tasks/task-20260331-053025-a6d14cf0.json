@@ -14,6 +14,12 @@
       "ts": "2026-03-31T05:30:25Z",
       "event": "started",
       "context": "Disable and remove dead service units"
+    },
+    {
+      "ts": "2026-03-31T05:30:49Z",
+      "event": "done",
+      "context": "Done. Here's what was found and cleaned up:\n\n**Both unit files were in `/home/clungus/.config/systemd/user/`:**\n\n- `/home/clungus/.config/systemd/user/labs-router.service` — pointed to the now-defunct `/mnt/data/labs-router` directory (labs routing was folded into clunger)\n- `/home/clungus/.config/systemd/user/temporal-proxy.service` — pointed to `/home/clungus/work/temporal/proxy.py` (temporal proxy was folded into clunger)\n\nNo copies were found in the work dir or `/mnt/data`. Both files were d...(truncated)",
+      "artifacts": []
     }
   ]
 }
