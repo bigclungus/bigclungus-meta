@@ -14,6 +14,12 @@
       "ts": "2026-03-31T05:21:21Z",
       "event": "started",
       "context": "Remove old ops health route from clunger"
+    },
+    {
+      "ts": "2026-03-31T05:21:57Z",
+      "event": "done",
+      "context": "Done. All three pieces removed and clunger is running cleanly:\n\n1. `SERVICES_HEALTH` array (6-entry old list) — removed from `/mnt/data/clunger/src/index.ts` around line 728\n2. `restServeOpsHealth` function — removed (it was the only consumer of `SERVICES_HEALTH`)\n3. Route handler block for `GET /api/ops/health` — removed around line 2848\n\nClunger restarted and is `active (running)` on port 8081.",
+      "artifacts": []
     }
   ]
 }
