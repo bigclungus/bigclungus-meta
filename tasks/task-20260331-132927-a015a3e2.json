@@ -14,6 +14,12 @@
       "ts": "2026-03-31T13:29:27Z",
       "event": "started",
       "context": "Heartbeat — broad anti-pattern sweep"
+    },
+    {
+      "ts": "2026-03-31T13:32:21Z",
+      "event": "done",
+      "context": "Scan complete. Here's what was found and done:\n\n**Silent exception swallows fixed (2 items):**\n\n1. `/mnt/data/terminal/server.py` line 2342 — `except Exception: pass` in the cockpit `/system-status` handler when running `docker ps`. Docker container nodes would silently not appear in the graph if docker was unavailable. Fixed to `print(f'[cockpit] docker ps failed: {exc}')`.\n\n2. `/mnt/data/scripts/extract-congress-directives.py` line 64 — `except Exception:` with no logging when parsing a JSON-s...(truncated)",
+      "artifacts": []
     }
   ]
 }
