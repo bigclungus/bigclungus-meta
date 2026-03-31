@@ -1,0 +1,19 @@
+{
+  "id": "task-20260331-182005-afbee00c",
+  "title": "Heartbeat reliability scan",
+  "agent_id": "afbee00cf8d876a7d",
+  "agent_type": "general-purpose",
+  "session_id": "04e925d1-bf58-4638-b119-a8b7d97830c0",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-31T18:20:05Z",
+      "event": "started",
+      "context": "Heartbeat reliability scan"
+    }
+  ]
+}
