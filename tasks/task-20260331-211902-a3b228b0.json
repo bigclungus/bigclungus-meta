@@ -1,0 +1,19 @@
+{
+  "id": "task-20260331-211902-a3b228b0",
+  "title": "Fire Congress workflow",
+  "agent_id": "a3b228b0d458bdc1c",
+  "agent_type": "general-purpose",
+  "session_id": "17bfb128-7a5a-4d7c-99f2-768209785acc",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-31T21:19:02Z",
+      "event": "started",
+      "context": "Fire Congress workflow"
+    }
+  ]
+}
