@@ -1,0 +1,19 @@
+{
+  "id": "task-20260331-112920-a57ac404",
+  "title": "Handle heartbeat ideation",
+  "agent_id": "a57ac404a4e467e55",
+  "agent_type": "general-purpose",
+  "session_id": "04e925d1-bf58-4638-b119-a8b7d97830c0",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-03-31T11:29:20Z",
+      "event": "started",
+      "context": "Handle heartbeat ideation"
+    }
+  ]
+}
