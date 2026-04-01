@@ -14,6 +14,12 @@
       "ts": "2026-04-01T03:47:30Z",
       "event": "started",
       "context": "Research EU5 MP autosave frequency"
+    },
+    {
+      "ts": "2026-04-01T03:48:13Z",
+      "event": "done",
+      "context": "I have enough information from the searches. Here's a concise factual summary:\n\n---\n\n**Europa Universalis V — Autosave & Save Info**\n\n**Autosave frequency (singleplayer)**\nBy default, EU5 autosaves every 6 months of in-game time. Players report it can also be set to yearly, quarterly (3 months), or monthly — this is configurable in the game setup menu before starting a session, not from within an ongoing game. As of patch 1.02, some players have noted the setting is harder to locate in the UI.\n\n...(truncated)",
+      "artifacts": []
     }
   ]
 }
