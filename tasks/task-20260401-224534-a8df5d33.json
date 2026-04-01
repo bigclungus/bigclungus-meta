@@ -1,0 +1,19 @@
+{
+  "id": "task-20260401-224534-a8df5d33",
+  "title": "Debug congress session failure",
+  "agent_id": "a8df5d3368da7afb2",
+  "agent_type": "general-purpose",
+  "session_id": "17bfb128-7a5a-4d7c-99f2-768209785acc",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-01T22:45:34Z",
+      "event": "started",
+      "context": "Debug congress session failure"
+    }
+  ]
+}
