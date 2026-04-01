@@ -1,0 +1,19 @@
+{
+  "id": "task-20260401-181013-ab504c94",
+  "title": "Fix mobile lobby layout",
+  "agent_id": "ab504c9413cd7040d",
+  "agent_type": "general-purpose",
+  "session_id": "17bfb128-7a5a-4d7c-99f2-768209785acc",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-01T18:10:13Z",
+      "event": "started",
+      "context": "Fix mobile lobby layout"
+    }
+  ]
+}
