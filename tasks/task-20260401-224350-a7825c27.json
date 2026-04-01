@@ -1,0 +1,19 @@
+{
+  "id": "task-20260401-224350-a7825c27",
+  "title": "Build Discord history backfill",
+  "agent_id": "a7825c2706378bc77",
+  "agent_type": "general-purpose",
+  "session_id": "17bfb128-7a5a-4d7c-99f2-768209785acc",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-01T22:43:50Z",
+      "event": "started",
+      "context": "Build Discord history backfill"
+    }
+  ]
+}
