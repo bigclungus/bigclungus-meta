@@ -14,6 +14,12 @@
       "ts": "2026-04-01T21:13:33Z",
       "event": "started",
       "context": "Build non-rect rooms server-side"
+    },
+    {
+      "ts": "2026-04-01T21:19:55Z",
+      "event": "done",
+      "context": "All five shapes are appearing with roughly the expected distribution. Here is a summary of all changes made:\n\n---\n\n## Summary of changes\n\n### Server: `/mnt/data/commons-server/src/dungeon/dungeon-generation.ts`\n- Added `RoomShape` type (`\"rect\" | \"L\" | \"circle\" | \"cross\" | \"cave\"`) and `shape`/`tileSet` fields to the `Room` interface\n- Added `pickRoomShape()` with weighted random selection (rect 40%, L 20%, circle 15%, cross 10%, cave 15%) and minimum size constraints\n- Implemented five shape ca...(truncated)",
+      "artifacts": []
     }
   ]
 }
