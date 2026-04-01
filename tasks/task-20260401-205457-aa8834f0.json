@@ -14,6 +14,12 @@
       "ts": "2026-04-01T20:54:57Z",
       "event": "started",
       "context": "Fix v2 visual issues"
+    },
+    {
+      "ts": "2026-04-01T20:56:39Z",
+      "event": "done",
+      "context": "Build succeeded. Here is a summary of the three fixes:\n\n**Issue 1 — Footstep particles (`particle-renderer.ts`)**\n- Increased particle count from 1-2 to 2-3 per step\n- Increased particle size from 1-1.5px to 2-3.5px\n- Increased lifetime from 200-300ms to 350-500ms\n- Increased spawn spread from 6px to 10px horizontally\n- Increased velocity so puffs travel further before fading\n- Reduced spawn interval from 80ms to 60ms for denser trail\n\n**Issue 2 — Decorations (`decoration-renderer.ts`)**\n- Intro...(truncated)",
+      "artifacts": []
     }
   ]
 }
