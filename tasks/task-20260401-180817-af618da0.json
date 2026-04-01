@@ -1,0 +1,19 @@
+{
+  "id": "task-20260401-180817-af618da0",
+  "title": "Download koole screenshot",
+  "agent_id": "af618da03a744c18a",
+  "agent_type": "general-purpose",
+  "session_id": "17bfb128-7a5a-4d7c-99f2-768209785acc",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-01T18:08:17Z",
+      "event": "started",
+      "context": "Download koole screenshot"
+    }
+  ]
+}
