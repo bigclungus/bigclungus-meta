@@ -1,0 +1,19 @@
+{
+  "id": "task-20260401-182012-a8a11ddf",
+  "title": "Get git diff for review",
+  "agent_id": "a8a11ddfffbc60f2a",
+  "agent_type": "general-purpose",
+  "session_id": "17bfb128-7a5a-4d7c-99f2-768209785acc",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-01T18:20:12Z",
+      "event": "started",
+      "context": "Get git diff for review"
+    }
+  ]
+}
