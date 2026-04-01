@@ -14,6 +14,12 @@
       "ts": "2026-04-01T18:08:17Z",
       "event": "started",
       "context": "Download koole screenshot"
+    },
+    {
+      "ts": "2026-04-01T18:08:25Z",
+      "event": "done",
+      "context": "Downloaded successfully. The image is saved at `/tmp/koole-mobile-screenshot.png` (924KB).",
+      "artifacts": []
     }
   ]
 }
