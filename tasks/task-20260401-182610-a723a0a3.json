@@ -14,6 +14,12 @@
       "ts": "2026-04-01T18:26:10Z",
       "event": "started",
       "context": "Replace d-pad with joystick"
+    },
+    {
+      "ts": "2026-04-01T18:27:36Z",
+      "event": "done",
+      "context": "Build succeeded. Here is what changed in `/mnt/data/clungiverse-client/src/main.ts`:\n\n**Removed:**\n- The entire `createDpad()` function (~165 lines) -- the CSS grid layout, 9-cell button grid, `activeTouches` map, `getBtnKeyAtPoint`, `setVisualPressed`, `pressKeys`/`releaseKeys` helpers, all `.dpad-btn` / `.dpad-dir-*` CSS rules, and the diagonal arrow CSS\n\n**Added:**\n- `createTouchControls()` function implementing a virtual joystick:\n  - **Base**: 100px diameter semi-transparent dark circle (`r...(truncated)",
+      "artifacts": []
     }
   ]
 }
