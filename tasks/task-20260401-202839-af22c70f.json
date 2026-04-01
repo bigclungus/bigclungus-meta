@@ -14,6 +14,12 @@
       "ts": "2026-04-01T20:28:39Z",
       "event": "started",
       "context": "Fix broken Graphiti bot hook"
+    },
+    {
+      "ts": "2026-04-01T20:30:53Z",
+      "event": "done",
+      "context": "Both files pass syntax checks. Here's a summary of everything found and fixed:\n\n---\n\n**Root cause:** The hook has been broken since the Discord integration migrated to the omni system. Three distinct issues prevented it from working:\n\n**Fix 1 -- Tool name mismatch in settings.json** (`/home/clungus/work/claude-config/settings.json`):\n- The MCP server key was `\"discord\"`, producing tool name `mcp__discord__omni_dispatch`\n- The running bot has tools registered as `mcp__omni__omni_dispatch` (visibl...(truncated)",
+      "artifacts": []
     }
   ]
 }
