@@ -14,6 +14,12 @@
       "ts": "2026-04-01T18:18:21Z",
       "event": "started",
       "context": "Fix zoom + d-pad slide"
+    },
+    {
+      "ts": "2026-04-01T18:19:08Z",
+      "event": "done",
+      "context": "Build succeeded. The build script auto-updated the cache-busting hash in `clungiverse.html` to `e5de2f28`.\n\nHere's what was changed:\n\n**Issue 1 — Anti-zoom (`/mnt/data/hello-world/clungiverse.html`):**\n- Added `gesturestart`, `gesturechange`, `gestureend` listeners with `preventDefault()` to block iOS pinch zoom\n- Added `dblclick` prevention to block double-tap zoom\n- Added `touchmove` prevention for multi-finger gestures\n- All listeners use `{ passive: false }` so `preventDefault()` actually wo...(truncated)",
+      "artifacts": []
     }
   ]
 }
