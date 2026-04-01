@@ -14,6 +14,12 @@
       "ts": "2026-04-01T21:31:44Z",
       "event": "started",
       "context": "Remove clungiverse v1 client"
+    },
+    {
+      "ts": "2026-04-01T21:33:19Z",
+      "event": "done",
+      "context": "Done. Here's what happened:\n\n- Removed `clungiverse-client/` (v1) -- 25 tracked files, 5,446 lines deleted\n- Cleaned up untracked leftovers (node_modules, dist) from the v1 directory\n- No references to the v1 client path were found in config files, scripts, or service files\n- `clungiverse.html` already points to `/clungiverse/main.js` and `/static/clungiverse/mob-sprites.js`, which are in the shared output directory (`/mnt/data/hello-world/static/clungiverse/`) -- both v1 and v2 built to the sam...(truncated)",
+      "artifacts": []
     }
   ]
 }
