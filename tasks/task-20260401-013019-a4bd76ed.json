@@ -14,6 +14,12 @@
       "ts": "2026-04-01T01:30:19Z",
       "event": "started",
       "context": "Diagnose recurring temporal-worker API errors"
+    },
+    {
+      "ts": "2026-04-01T01:30:36Z",
+      "event": "done",
+      "context": "Clear diagnosis. Here's the full picture:\n\n**Workflow:** `HistoryIngestWorkflow` (scheduled every minute, e.g. `history-ingest-scheduled-2026-04-01T01:29:00Z`)\n\n**Activity:** `run_history_ingest` in `/mnt/data/temporal-workflows/activities/history_ingest_act.py`\n\n**Exact call chain:**\n- `run_history_ingest` (line 497) → `_run_history_ingest_sync` (line 458) → `embed_batch` (line 359) → `client.embeddings.create(...)` → POST `https://api.openai.com/v1/embeddings`\n\n**Error:** HTTP 429 `insufficien...(truncated)",
+      "artifacts": []
     }
   ]
 }
