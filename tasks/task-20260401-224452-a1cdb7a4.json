@@ -14,6 +14,12 @@
       "ts": "2026-04-01T22:44:52Z",
       "event": "started",
       "context": "Fire congress session"
+    },
+    {
+      "ts": "2026-04-01T22:45:26Z",
+      "event": "done",
+      "context": "Congress session fired successfully.\n\n- **Workflow ID**: `congress-1753083513`\n- **Topic**: \"All things considered rate Crusoe vs. Workday for a SWE's future career\"\n- **Requested by**: koole__\n- **Discord reply posted** to chat_id `1485343472952148008` confirming session is in progress\n- The CongressWorkflow will handle thread creation, persona selection, debate rounds, and verdict posting autonomously via Temporal.",
+      "artifacts": []
     }
   ]
 }
