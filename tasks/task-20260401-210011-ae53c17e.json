@@ -14,6 +14,12 @@
       "ts": "2026-04-01T21:00:11Z",
       "event": "started",
       "context": "Simplify review of recent changes"
+    },
+    {
+      "ts": "2026-04-01T21:01:12Z",
+      "event": "done",
+      "context": "Yes, `main.js` is a bundled build artifact from the TypeScript sources. The changes are:\n\n1. **`clungiverse-client-v2/src/renderer/decoration-renderer.ts`** -- Introduces a scale factor `k = TILE_SIZE / 8` and multiplies all hardcoded pixel values by it. This makes decorations scale with tile size instead of being fixed-pixel. Every decoration type (bones, weapon_rack, blood_splatter, etc.) gets the same mechanical transformation: multiply coordinates/sizes by `k`, bump alpha values slightly.\n\n2...(truncated)",
+      "artifacts": []
     }
   ]
 }
