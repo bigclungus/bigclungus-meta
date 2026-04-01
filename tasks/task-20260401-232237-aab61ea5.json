@@ -1,0 +1,19 @@
+{
+  "id": "task-20260401-232237-aab61ea5",
+  "title": "Check system resource usage",
+  "agent_id": "aab61ea5e39fcf914",
+  "agent_type": "general-purpose",
+  "session_id": "00542c92-f1c1-4c5e-9cbc-1c33ac987603",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-01T23:22:37Z",
+      "event": "started",
+      "context": "Check system resource usage"
+    }
+  ]
+}
