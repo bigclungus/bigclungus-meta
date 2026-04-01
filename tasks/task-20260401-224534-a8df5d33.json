@@ -14,6 +14,12 @@
       "ts": "2026-04-01T22:45:34Z",
       "event": "started",
       "context": "Debug congress session failure"
+    },
+    {
+      "ts": "2026-04-01T22:52:09Z",
+      "event": "done",
+      "context": "The workflow is progressing well -- activities completing every 30-40 seconds, which is normal for debate rounds. The session is running successfully now.\n\nHere's the summary of findings and actions taken:\n\n**Root cause:** Two issues caused the congress-session-0094 failure:\n1. **Primary:** The `congress_preflight_check` activity failed with a non-retryable `ApplicationError` because persona \"Holden Bloodfeast\" has `model: grok-4.20-0309-reasoning`, and the xAI account has no credits (HTTP 403: ...(truncated)",
+      "artifacts": []
     }
   ]
 }
