@@ -14,6 +14,12 @@
       "ts": "2026-04-01T03:38:06Z",
       "event": "started",
       "context": "Research SOTA computer use models 2025-2026"
+    },
+    {
+      "ts": "2026-04-01T03:40:24Z",
+      "event": "done",
+      "context": "I now have enough information for a comprehensive summary. Here it is:\n\n---\n\n# State of Computer Use / GUI Agent Models — Early 2026\n\n## 1. Top Models for Computer Use Right Now\n\n### Anthropic Claude (Sonnet 4.6 / Opus 4.6)\nCurrently the strongest general-purpose computer use models available via API. Both score ~72.5–72.7% on OSWorld-Verified, which is near the human baseline of ~72.36%. The progression over 16 months was remarkable: 14.9% (Sonnet 3.5) → 28% → 42.2% → 61.4% (Sonnet 4.5) → 72.5%...(truncated)",
+      "artifacts": []
     }
   ]
 }
