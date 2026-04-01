@@ -14,6 +14,12 @@
       "ts": "2026-04-01T20:32:41Z",
       "event": "started",
       "context": "Verify and commit Graphiti fixes"
+    },
+    {
+      "ts": "2026-04-01T20:33:25Z",
+      "event": "done",
+      "context": "Done. Commit `53b0b1a` pushed to `main`. Summary of what was verified and committed:\n\n1. **`claude-config/settings.json`** -- MCP server key renamed `discord` -> `omni`, matcher updated to `mcp__omni__omni_dispatch`. No other files reference the old `mcp__discord` key.\n\n2. **`scripts/hooks/post-discord-reply.sh`** -- Field paths updated for omni schema (`channelId`, `replyHandle` instead of `chat_id`, `reply_to`). Added capability filter so only `reply`/`send_message` events are processed.\n\n3. *...(truncated)",
+      "artifacts": []
     }
   ]
 }
