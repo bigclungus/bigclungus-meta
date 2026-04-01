@@ -1,0 +1,19 @@
+{
+  "id": "task-20260401-215245-a8533cac",
+  "title": "Deep audit since March 22",
+  "agent_id": "a8533cac3e4b586f1",
+  "agent_type": "general-purpose",
+  "session_id": "17bfb128-7a5a-4d7c-99f2-768209785acc",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-01T21:52:45Z",
+      "event": "started",
+      "context": "Deep audit since March 22"
+    }
+  ]
+}
