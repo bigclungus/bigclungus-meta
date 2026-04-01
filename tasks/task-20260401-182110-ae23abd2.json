@@ -14,6 +14,12 @@
       "ts": "2026-04-01T18:21:10Z",
       "event": "started",
       "context": "Efficiency review"
+    },
+    {
+      "ts": "2026-04-01T18:22:13Z",
+      "event": "done",
+      "context": "Here are the findings:\n\n---\n\n## Efficiency Review\n\n### 1. Hot-path: `computeCardLayout()` called every frame (lobby.ts:619)\n\n`computeCardLayout(h, w)` is called inside `render()`, which fires every animation frame. It does `Math.ceil`, `Math.floor`, `Math.min`, and allocates a new `CardLayout` object each time. On desktop the result only changes when the canvas resizes. This should be memoized (cache on `w,h`) or recomputed only on resize.\n\n### 2. Hot-path: `setVisualPressed()` linear scan (main...(truncated)",
+      "artifacts": []
     }
   ]
 }
