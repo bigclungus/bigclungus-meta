@@ -14,6 +14,12 @@
       "ts": "2026-04-01T00:10:21Z",
       "event": "started",
       "context": "Create EU5 mod thread"
+    },
+    {
+      "ts": "2026-04-01T00:10:36Z",
+      "event": "done",
+      "context": "Both steps succeeded.\n\n- Thread ID: `1488691889791045765` (named \"EU5 CLI Mod\", auto-archives after 24h)\n- Opening message posted successfully (message ID `1488692006535565504`): \"let's go. what are we building — what does the mod do?\"",
+      "artifacts": []
     }
   ]
 }
