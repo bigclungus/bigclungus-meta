@@ -14,6 +14,12 @@
       "ts": "2026-04-01T23:23:13Z",
       "event": "started",
       "context": "Get git diff for simplify review"
+    },
+    {
+      "ts": "2026-04-01T23:23:31Z",
+      "event": "done",
+      "context": "The output is very large (1.2MB). Here's a summary of what's in the diff:\n\n**Uncommitted changes:** Only a regenerated `hello-world/sessions/context-brief.json` (cache file, trivial).\n\n**Last 5 commits (HEAD~5..HEAD):**\n\nThe full diff is saved at `/home/clungus/.claude/projects/-mnt-data/17bfb128-7a5a-4d7c-99f2-768209785acc/tool-results/bu29axql2.txt` (1.2MB). The commits are:\n\n1. **`5a188d4`** — fix: register `startup_check_heartbeat` activity in worker\n2. **`55319c2`** — feat: full Discord his...(truncated)",
+      "artifacts": []
     }
   ]
 }
