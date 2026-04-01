@@ -14,6 +14,12 @@
       "ts": "2026-04-01T23:25:32Z",
       "event": "started",
       "context": "Fix simplify review findings"
+    },
+    {
+      "ts": "2026-04-01T23:28:24Z",
+      "event": "done",
+      "context": "All 8 fixes applied and pushed as commit `7f1ce3d`:\n\n1. **Fix 1** (`scripts/discord_backfill.py`): Removed local `DB_PATH`, `LOCAL_EMBED_MODEL`, `LOCAL_EMBED_DIMS`, `serialize_f32()`, `get_bot_token()`. Now imports from `common.py`. Uses `get_local_model()` instead of direct `SentenceTransformer()`.\n\n2. **Fix 2** (`temporal-workflows/activities/history_ingest_act.py`): Removed local `_local_model`, `_get_local_model()`, `embed_batch_local()`, and duplicated constants (`DB_PATH`, `EMBED_MODEL`, `...(truncated)",
+      "artifacts": []
     }
   ]
 }
