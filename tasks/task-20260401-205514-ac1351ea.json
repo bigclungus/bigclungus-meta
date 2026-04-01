@@ -14,6 +14,12 @@
       "ts": "2026-04-01T20:55:14Z",
       "event": "started",
       "context": "Research dungeon gen for room shapes"
+    },
+    {
+      "ts": "2026-04-01T20:57:06Z",
+      "event": "done",
+      "context": "I have all the information needed. Here is the structured summary:\n\n---\n\n## Dungeon Generation Research Summary\n\n### Current Room Generation Algorithm\n\nThe system uses **Binary Space Partitioning (BSP)** in `/mnt/data/commons-server/src/dungeon/dungeon-generation.ts`.\n\n1. **BSP Split**: A root node covering the full grid (200x150 tiles for floor 1, scaling up 15% per floor) is recursively split into leaf nodes. Split depth is 5-7 depending on floor number. Minimum leaf size is 30 tiles.\n2. **Roo...(truncated)",
+      "artifacts": []
     }
   ]
 }
