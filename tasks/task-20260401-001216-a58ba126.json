@@ -14,6 +14,12 @@
       "ts": "2026-04-01T00:12:16Z",
       "event": "started",
       "context": "Research EU5 modding feasibility"
+    },
+    {
+      "ts": "2026-04-01T00:25:22Z",
+      "event": "done",
+      "context": "I now have enough to write a thorough research summary. Here it is:\n\n---\n\n## EU5 / Project Caesar — External Control Modding Feasibility Research\n\n### 1. Game Status\n\nEU5 (Europa Universalis V) is fully released. It launched on **November 4, 2025** after being developed internally under the codename \"Project Caesar\" starting around 2020. It was announced May 8, 2025. It is available on Steam (app ID 3450310) and has a live, active modding community.\n\n---\n\n### 2. Engine\n\nEU5 runs on **Clausewitz ...(truncated)",
+      "artifacts": []
     }
   ]
 }
