@@ -14,6 +14,12 @@
       "ts": "2026-04-01T19:05:59Z",
       "event": "started",
       "context": "Clungiverse v2 Phase 3"
+    },
+    {
+      "ts": "2026-04-01T19:09:43Z",
+      "event": "done",
+      "context": "Both `tsc --noEmit` (zero errors) and `build.sh` succeeded. Here's what was added:\n\n---\n\n**Phase 3 Visual Enhancements — Summary**\n\n**Files modified:**\n- `/mnt/data/clungiverse-client-v2/src/renderer/tile-renderer.ts` — Enhancements 1, 2, 5\n- `/mnt/data/clungiverse-client-v2/src/renderer/entity-renderer.ts` — Enhancement 8\n- `/mnt/data/clungiverse-client-v2/src/renderer/particle-renderer.ts` — Enhancements 6, 7\n- `/mnt/data/clungiverse-client-v2/src/scenes/dungeon.ts` — Wiring for enhancements 3...(truncated)",
+      "artifacts": []
     }
   ]
 }
