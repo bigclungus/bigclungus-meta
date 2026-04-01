@@ -14,6 +14,12 @@
       "ts": "2026-04-01T18:10:13Z",
       "event": "started",
       "context": "Fix mobile lobby layout"
+    },
+    {
+      "ts": "2026-04-01T18:13:43Z",
+      "event": "done",
+      "context": "Build succeeds, same hash (deterministic). Here's a summary of all changes made:\n\n---\n\n**File modified:** `/mnt/data/clungiverse-client/src/scenes/lobby.ts`\n\n**Changes made to fix all 5 mobile layout issues:**\n\n1. **Single-column layout on narrow screens** (fixes problems 1, 2, 3): `GRID_COLS` is no longer a constant. `computeCardLayout()` now switches from 2 columns to 1 column when `canvasW < 500px`. Cards are centered and stacked vertically, so nothing gets cut off on the right side.\n\n2. **Ca...(truncated)",
+      "artifacts": []
     }
   ]
 }
