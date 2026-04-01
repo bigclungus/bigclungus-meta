@@ -1,0 +1,19 @@
+{
+  "id": "task-20260401-181329-abe4dcb2",
+  "title": "Tell layout agent about Safari",
+  "agent_id": "abe4dcb242d44e62e",
+  "agent_type": "general-purpose",
+  "session_id": "17bfb128-7a5a-4d7c-99f2-768209785acc",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-01T18:13:29Z",
+      "event": "started",
+      "context": "Tell layout agent about Safari"
+    }
+  ]
+}
