@@ -1,0 +1,19 @@
+{
+  "id": "task-20260401-181821-a15653b8",
+  "title": "Fix zoom + d-pad slide",
+  "agent_id": "a15653b8c2ad1ed44",
+  "agent_type": "general-purpose",
+  "session_id": "17bfb128-7a5a-4d7c-99f2-768209785acc",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-01T18:18:21Z",
+      "event": "started",
+      "context": "Fix zoom + d-pad slide"
+    }
+  ]
+}
