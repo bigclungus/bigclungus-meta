@@ -14,6 +14,12 @@
       "ts": "2026-04-01T23:23:44Z",
       "event": "started",
       "context": "Simplify: Code Quality Review"
+    },
+    {
+      "ts": "2026-04-01T23:24:41Z",
+      "event": "done",
+      "context": "Here are the findings:\n\n---\n\n**Finding 1: Copy-pasted local embedding code across three files**\n\nThe lazy-loaded local sentence-transformers model pattern is duplicated three times with slight variation:\n\n- `/mnt/data/scripts/common.py` lines 41-57 — `_local_model` global, `get_local_model()`, `local_embed_texts()`\n- `/mnt/data/temporal-workflows/activities/history_ingest_act.py` lines 380-396 — `_local_model` global, `_get_local_model()`, `embed_batch_local()`\n- `/mnt/data/scripts/discord_backf...(truncated)",
+      "artifacts": []
     }
   ]
 }
