@@ -14,6 +14,12 @@
       "ts": "2026-04-01T22:34:59Z",
       "event": "started",
       "context": "Query graph for financial signals"
+    },
+    {
+      "ts": "2026-04-01T22:35:56Z",
+      "event": "done",
+      "context": "Here are all the results from the four FalkorDB queries:\n\n---\n\n## Query 1: Financial Signals (30 results)\n\n| Entity | Fact | Related Entity |\n|---|---|---|\n| Centronias | Questions how much money Edison was making decades after his death | Edison |\n| Centronias | Questions how much money Tesla was making decades after his death | Tesla |\n| Centronias | Advises Clungie not to let Graeme bully him into unnecessary spending | graeme |\n| Centronias | The Ibrahim situation is above BigClungus's pay g...(truncated)",
+      "artifacts": []
     }
   ]
 }
