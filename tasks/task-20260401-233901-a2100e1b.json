@@ -1,0 +1,19 @@
+{
+  "id": "task-20260401-233901-a2100e1b",
+  "title": "Calculate Bokoen1 ingestion cost",
+  "agent_id": "a2100e1b54f5819ee",
+  "agent_type": "general-purpose",
+  "session_id": "17bfb128-7a5a-4d7c-99f2-768209785acc",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-01T23:39:01Z",
+      "event": "started",
+      "context": "Calculate Bokoen1 ingestion cost"
+    }
+  ]
+}
