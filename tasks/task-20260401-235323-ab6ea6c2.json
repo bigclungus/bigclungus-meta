@@ -14,6 +14,12 @@
       "ts": "2026-04-01T23:53:23Z",
       "event": "started",
       "context": "Design Discord replacement in thread"
+    },
+    {
+      "ts": "2026-04-01T23:55:52Z",
+      "event": "done",
+      "context": "All 7 messages posted successfully to the Discord thread. Here's what was done:\n\n**Thread created:** \"Discord Replacement -- Design Doc\" on jaboostin's message (thread ID `1489049982731288616`)\n\n**Design doc posted across 7 messages covering:**\n\n1. **Overview & Tech Stack** -- SolidJS frontend, Tauri v2 desktop, Bun backend, PostgreSQL, Redis. Each choice explained with rationale.\n\n2. **Real-time Architecture** -- WebSocket gateway for messaging, mediasoup SFU for voice/video/screenshare, coturn...(truncated)",
+      "artifacts": []
     }
   ]
 }
