@@ -14,6 +14,12 @@
       "ts": "2026-04-01T18:19:23Z",
       "event": "started",
       "context": "Fix iOS magnifier + selection"
+    },
+    {
+      "ts": "2026-04-01T18:19:47Z",
+      "event": "done",
+      "context": "All changes applied to `/mnt/data/hello-world/clungiverse.html`:\n\n1. **CSS additions** to `#game-canvas`: Added `-webkit-touch-callout: none`, `-webkit-user-select: none`, `user-select: none`, and `-webkit-tap-highlight-color: transparent` to prevent the iOS magnifier loupe and canvas selection highlight.\n\n2. **JS additions**: Added a document-level `contextmenu` listener (prevents iOS magnifier on long press anywhere on the page) and a `selectstart` listener on the canvas element (prevents the ...(truncated)",
+      "artifacts": []
     }
   ]
 }
