@@ -14,6 +14,12 @@
       "ts": "2026-04-01T23:39:01Z",
       "event": "started",
       "context": "Calculate Bokoen1 ingestion cost"
+    },
+    {
+      "ts": "2026-04-01T23:39:37Z",
+      "event": "done",
+      "context": "Replied to relarey with the cost estimate. Key findings:\n\n- Only **167 transcripts** were ingested (not 10K) — the Bokoen1 channel has 167 HoI4 videos\n- Total text: **1.4MB** (~360K tokens)\n- Ingestion status: **done** (completed 2026-03-30)\n- Estimated total cost: **$0.50 - $1.50**, dominated by GPT-4o-mini entity extraction calls. Embeddings were negligible (~$0.01).",
+      "artifacts": []
     }
   ]
 }
