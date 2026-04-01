@@ -14,6 +14,12 @@
       "ts": "2026-04-01T20:28:46Z",
       "event": "started",
       "context": "Upgrade Congress Graphiti queries"
+    },
+    {
+      "ts": "2026-04-01T20:32:31Z",
+      "event": "done",
+      "context": "The trial_act passes a `slug` (username/entity name) which works fine with fulltext search -- it'll match against entity names. The interface is unchanged (takes a string, returns a list of strings).\n\nThe changes are complete. Here's a summary:\n\n---\n\n**Modified file:** `/mnt/data/temporal-workflows/activities/congress_act.py`\n\n**What changed:**\n\n1. **New helper `_sanitize_fulltext_query()`** -- extracts meaningful keywords from topic text, strips punctuation, splits hyphenated words into compone...(truncated)",
+      "artifacts": []
     }
   ]
 }
