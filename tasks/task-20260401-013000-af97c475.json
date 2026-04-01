@@ -14,6 +14,12 @@
       "ts": "2026-04-01T01:30:00Z",
       "event": "started",
       "context": "Heartbeat check"
+    },
+    {
+      "ts": "2026-04-01T01:30:12Z",
+      "event": "done",
+      "context": "**Attention needed: temporal-worker recurring API errors**\n\nThe temporal-worker has been throwing `_make_status_error_from_response` every ~60 seconds for the entire 30-minute window. These are HTTP status errors from an API client (not OpenAI — those are filtered). This looks like a workflow hitting a non-OpenAI API endpoint and getting consistent error responses.\n\nEverything else is clear:\n- No failed services\n- temporal-worker and cloudflared both active\n- Disk: 10% used (8.8G / 98G) — fine\n\n...(truncated)",
+      "artifacts": []
     }
   ]
 }
