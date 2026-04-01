@@ -14,6 +14,12 @@
       "ts": "2026-04-01T18:08:29Z",
       "event": "started",
       "context": "Fix mobile d-pad and satnav"
+    },
+    {
+      "ts": "2026-04-01T18:09:50Z",
+      "event": "done",
+      "context": "All changes are verified. Both tasks are complete. Here's a summary:\n\n## Task 1: Fixed mobile double-tap zoom on d-pad\n\n**Files modified:**\n- `/mnt/data/clungiverse-client/src/main.ts` — Added `touch-action: manipulation`, `-webkit-touch-callout: none`, `-webkit-user-select: none`, and `user-select: none` to `.dpad-btn` CSS. Changed `.dpad-fire` from `touch-action: none` to `touch-action: manipulation` (and added `-webkit-touch-callout: none`).\n- `/mnt/data/hello-world/clungiverse.html` — Update...(truncated)",
+      "artifacts": []
     }
   ]
 }
