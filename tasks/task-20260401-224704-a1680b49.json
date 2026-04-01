@@ -1,0 +1,19 @@
+{
+  "id": "task-20260401-224704-a1680b49",
+  "title": "Research Graphiti LLM swapping",
+  "agent_id": "a1680b49b23d20db8",
+  "agent_type": "general-purpose",
+  "session_id": "17bfb128-7a5a-4d7c-99f2-768209785acc",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-01T22:47:04Z",
+      "event": "started",
+      "context": "Research Graphiti LLM swapping"
+    }
+  ]
+}
