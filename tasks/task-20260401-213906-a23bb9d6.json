@@ -14,6 +14,12 @@
       "ts": "2026-04-01T21:39:06Z",
       "event": "started",
       "context": "Commit workspace and deploy"
+    },
+    {
+      "ts": "2026-04-01T21:39:41Z",
+      "event": "done",
+      "context": "Everything is done:\n\n- **Commit**: `bd286f4` — `feat: consolidate clungiverse into Bun workspace with shared types` (already committed and pushed to GitHub)\n- **Deployment**: `commons-server.service` is **active (running)**, started successfully at 21:39:34 UTC. Server is listening on :8090 with 20Hz tick, 19 NPCs loaded, dungeon loop running at 16Hz.",
+      "artifacts": []
     }
   ]
 }
