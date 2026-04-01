@@ -14,6 +14,12 @@
       "ts": "2026-04-01T04:34:53Z",
       "event": "started",
       "context": "Clungiverse mobile + d-pad"
+    },
+    {
+      "ts": "2026-04-01T04:37:48Z",
+      "event": "done",
+      "context": "Done. Here's a summary of what was found and fixed:\n\n**What was broken on mobile:**\n\n1. The lobby and transition scenes used `window.addEventListener('click', ...)` exclusively. On mobile/iOS, `click` events on a canvas-covered viewport are unreliable or fire with a 300ms delay — persona card taps and powerup selections would silently fail.\n\n2. The party roster sidebar was rendered at `canvasWidth - 200px`, which on a 390px phone screen placed it at x=190, overlapping the centered persona grid.\n...(truncated)",
+      "artifacts": []
     }
   ]
 }
