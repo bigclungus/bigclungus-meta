@@ -1,0 +1,19 @@
+{
+  "id": "task-20260401-013019-a4bd76ed",
+  "title": "Diagnose recurring temporal-worker API errors",
+  "agent_id": "a4bd76edfa64e465e",
+  "agent_type": "general-purpose",
+  "session_id": "17bfb128-7a5a-4d7c-99f2-768209785acc",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-01T01:30:19Z",
+      "event": "started",
+      "context": "Diagnose recurring temporal-worker API errors"
+    }
+  ]
+}
