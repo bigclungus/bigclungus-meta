@@ -14,6 +14,12 @@
       "ts": "2026-04-01T18:22:46Z",
       "event": "started",
       "context": "Fix simplify review findings"
+    },
+    {
+      "ts": "2026-04-01T18:25:50Z",
+      "event": "done",
+      "context": "That's the `clampScroll` function definition itself. All good -- no remaining inline clamp patterns.\n\nHere is a summary of all changes made:\n\n**lobby.ts** (`/mnt/data/clungiverse-client/src/scenes/lobby.ts`):\n1. **Removed no-op `touchEndHandler`** -- deleted the empty handler definition, its `addEventListener` call, its cleanup in `exit()`, and its module-level variable declaration.\n2. **Made `computeCardLayout` pure** -- added `maxScroll` to the `CardLayout` interface; the function now returns ...(truncated)",
+      "artifacts": []
     }
   ]
 }
