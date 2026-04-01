@@ -14,6 +14,12 @@
       "ts": "2026-04-01T21:51:49Z",
       "event": "started",
       "context": "Fix retro quick wins"
+    },
+    {
+      "ts": "2026-04-01T21:53:16Z",
+      "event": "done",
+      "context": "All three fixes committed and pushed in `57bc4f4`:\n\n**1. Removed Gemini API key warning** (`/mnt/data/clunger/src/index.ts`): Removed the `else if` branch at line 3815-3817 that logged \"GEMINI_API_KEY not set\" when the Gemini CLI was already present. The CLI check remains; only the redundant API key warning is gone.\n\n**2. Added circuit breaker to history-ingest** (`/mnt/data/temporal-workflows/activities/history_ingest_act.py`): \n- On each 429/rate-limit error during embedding, a failure counter...(truncated)",
+      "artifacts": []
     }
   ]
 }
