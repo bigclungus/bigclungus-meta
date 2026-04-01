@@ -14,6 +14,12 @@
       "ts": "2026-04-01T22:56:13Z",
       "event": "started",
       "context": "Commit congress resilience fixes"
+    },
+    {
+      "ts": "2026-04-01T22:56:45Z",
+      "event": "done",
+      "context": "Done. Committed and pushed `0494626` with the two congress resilience files:\n- `temporal-workflows/activities/congress_act.py` (preflight graceful downgrade)\n- `temporal-workflows/workflows/session_wf.py` (try/except around sequential debate loop)\n\nThe `.db` files and other unrelated changes were left unstaged as requested.",
+      "artifacts": []
     }
   ]
 }
