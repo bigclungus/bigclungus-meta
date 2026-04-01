@@ -14,6 +14,12 @@
       "ts": "2026-04-01T22:39:03Z",
       "event": "started",
       "context": "Check Discord history range"
+    },
+    {
+      "ts": "2026-04-01T22:39:37Z",
+      "event": "done",
+      "context": "Here are the results:\n\n**SQLite Discord History (`discord-history.db`):**\n- Earliest message: **2026-03-22 18:22:29 UTC**\n- Latest message: **2026-03-31 06:48:27 UTC**\n- Total messages: **3,046**\n- Span: ~8.5 days\n\n**Graphiti Knowledge Graph (FalkorDB `discord_history`):**\n- Earliest episode: **2026-03-23 05:22:14 UTC**\n- Latest episode: **2026-03-31 11:36:05 UTC**\n- Total episodic nodes: **1,285**\n- Span: ~8.3 days\n\nBoth stores go back to roughly March 22-23, 2026 — about 10 days of history. Th...(truncated)",
+      "artifacts": []
     }
   ]
 }
