@@ -1,0 +1,19 @@
+{
+  "id": "task-20260401-010846-a98d8bb3",
+  "title": "Diagnose and fix labs.clung.us outage",
+  "agent_id": "a98d8bb395c00d514",
+  "agent_type": "general-purpose",
+  "session_id": "17bfb128-7a5a-4d7c-99f2-768209785acc",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-01T01:08:46Z",
+      "event": "started",
+      "context": "Diagnose and fix labs.clung.us outage"
+    }
+  ]
+}
