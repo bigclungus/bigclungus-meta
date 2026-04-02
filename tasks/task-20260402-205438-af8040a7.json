@@ -1,0 +1,19 @@
+{
+  "id": "task-20260402-205438-af8040a7",
+  "title": "process open tasks from sweeper including simplify and restart",
+  "agent_id": "af8040a74ca2cc37b",
+  "agent_type": "general-purpose",
+  "session_id": "bac11637-d65f-4b43-9317-8b5e9726da45",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-02T20:54:38Z",
+      "event": "started",
+      "context": "process open tasks from sweeper including simplify and restart"
+    }
+  ]
+}
