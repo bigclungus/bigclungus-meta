@@ -14,6 +14,12 @@
       "ts": "2026-04-02T05:16:28Z",
       "event": "started",
       "context": "Run scout test to congress-hall"
+    },
+    {
+      "ts": "2026-04-02T05:19:46Z",
+      "event": "done",
+      "context": "Workflow already completed (the pkill likely caused it to terminate). Workers are dead, schedule doesn't exist. Cleanup done.\n\n---\n\n**Test Results Summary:**\n\n**What worked:**\n- Model card posted to #congress-hall (message ID `1489131619485745313`)\n- Full rich embed with all fields: Source (Huggingface), Parameters (9.0B), Downloads (636,153), Likes (898), Tags (gguf, uncensored, qwen3.5, etc.), clickable link to HuggingFace page\n- All three reaction buttons seeded: thumbs up, thumbs down, and s...(truncated)",
+      "artifacts": []
     }
   ]
 }
