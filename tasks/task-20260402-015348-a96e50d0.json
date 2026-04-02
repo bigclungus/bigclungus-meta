@@ -1,0 +1,19 @@
+{
+  "id": "task-20260402-015348-a96e50d0",
+  "title": "Move Clungcord to clung.us/chat",
+  "agent_id": "a96e50d0f4c3dba21",
+  "agent_type": "general-purpose",
+  "session_id": "17bfb128-7a5a-4d7c-99f2-768209785acc",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-02T01:53:48Z",
+      "event": "started",
+      "context": "Move Clungcord to clung.us/chat"
+    }
+  ]
+}
