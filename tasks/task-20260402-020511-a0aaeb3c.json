@@ -14,6 +14,12 @@
       "ts": "2026-04-02T02:05:11Z",
       "event": "started",
       "context": "Fix Clungcord mobile + UX issues"
+    },
+    {
+      "ts": "2026-04-02T02:07:54Z",
+      "event": "done",
+      "context": "All four issues fixed and committed:\n\n1. **Mobile zoom on input tap** -- Added `font-size: 16px` to all `input, textarea, select` elements globally in `/mnt/data/clungcord/packages/client/src/styles.css`, and updated the message input textarea from 13px to 16px. iOS Safari won't auto-zoom with font-size >= 16px.\n\n2. **All channels visible in sidebar** -- Rewrote `/mnt/data/clungcord/packages/client/src/components/Sidebar.tsx` to fetch all channels on connect and display them directly. Joined cha...(truncated)",
+      "artifacts": []
     }
   ]
 }
