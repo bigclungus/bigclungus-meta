@@ -14,6 +14,12 @@
       "ts": "2026-04-02T00:19:36Z",
       "event": "started",
       "context": "Post Clungcord completion to thread"
+    },
+    {
+      "ts": "2026-04-02T00:19:47Z",
+      "event": "done",
+      "context": "Both calls succeeded. The completion update was posted to the Discord thread (message ID: 1489056704091127980) and the checkmark reaction was added to jaboostin's message (empty response = 204 No Content = success).",
+      "artifacts": []
     }
   ]
 }
