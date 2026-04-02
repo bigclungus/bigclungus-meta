@@ -14,6 +14,12 @@
       "ts": "2026-04-02T02:09:14Z",
       "event": "started",
       "context": "Add default channel instruction"
+    },
+    {
+      "ts": "2026-04-02T02:10:21Z",
+      "event": "done",
+      "context": "These are pre-existing errors unrelated to my change (TSX/JSX config issues). My change only touches the `app.ts` store file. The logic is correct: channels are sorted by `created_at` ascending, and the first one (oldest, which is \"general\") is auto-selected.\n\nDone. Here is what was changed:\n\n**File:** `/mnt/data/clungcord/packages/client/src/stores/app.ts`\n\nIn the `\"ready\"` event handler, the channels received from the server are now sorted by `created_at` ascending before being stored in state...(truncated)",
+      "artifacts": []
     }
   ]
 }
