@@ -14,6 +14,12 @@
       "ts": "2026-04-02T02:18:45Z",
       "event": "started",
       "context": "Debug empty channel list deeply"
+    },
+    {
+      "ts": "2026-04-02T02:23:21Z",
+      "event": "done",
+      "context": "Both pushed. Here's the summary:\n\n---\n\n**Root cause:** The Clungcord WebSocket messages were arriving as binary Blob objects instead of strings, and the client silently swallowed the resulting parse errors.\n\n**The chain of failure:**\n1. Bun's WebSocket server (`packages/server`) sends JSON as binary frames\n2. Clunger's Node.js `ws` proxy (`/chat/ws`) forwarded raw `Buffer` objects without converting to text\n3. The browser received binary WebSocket frames as `Blob` objects\n4. `JSON.parse(blob)` t...(truncated)",
+      "artifacts": []
     }
   ]
 }
