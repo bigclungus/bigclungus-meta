@@ -1,0 +1,19 @@
+{
+  "id": "task-20260402-084758-a78fa474",
+  "title": "Remove dangerously allow channel from Giga startup",
+  "agent_id": "a78fa474ffb5e2347",
+  "agent_type": "general-purpose",
+  "session_id": "17bfb128-7a5a-4d7c-99f2-768209785acc",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-02T08:47:58Z",
+      "event": "started",
+      "context": "Remove dangerously allow channel from Giga startup"
+    }
+  ]
+}
