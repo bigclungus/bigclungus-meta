@@ -14,6 +14,12 @@
       "ts": "2026-04-02T04:47:48Z",
       "event": "started",
       "context": "Add left-click context menu"
+    },
+    {
+      "ts": "2026-04-02T04:48:46Z",
+      "event": "done",
+      "context": "The server serves from `client/dist`, which is exactly where the build output goes. No server restart needed since these are static files.\n\nHere is a summary of the changes:\n\n**File modified:** `/mnt/data/clungcord/packages/client/src/components/MessagePane.tsx`\n\n**What was done:**\n1. Added a `handleMessageClick` function (after `handleContextMenu`) that opens the context menu on left-click, with guards to avoid interfering with:\n   - Text selection (checks `window.getSelection()`)\n   - Clicks o...(truncated)",
+      "artifacts": []
     }
   ]
 }
