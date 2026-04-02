@@ -1,0 +1,19 @@
+{
+  "id": "task-20260402-024346-a2c920a0",
+  "title": "Build Giga omni gateway",
+  "agent_id": "a2c920a0ef47f2cbb",
+  "agent_type": "general-purpose",
+  "session_id": "17bfb128-7a5a-4d7c-99f2-768209785acc",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-02T02:43:46Z",
+      "event": "started",
+      "context": "Build Giga omni gateway"
+    }
+  ]
+}
