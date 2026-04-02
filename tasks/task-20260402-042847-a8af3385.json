@@ -14,6 +14,12 @@
       "ts": "2026-04-02T04:28:47Z",
       "event": "started",
       "context": "Clungcord emoji system"
+    },
+    {
+      "ts": "2026-04-02T04:34:23Z",
+      "event": "done",
+      "context": "Clean start, no errors. Here is a summary of all changes made:\n\n---\n\n**Files modified:**\n\n1. `/mnt/data/clungcord/packages/shared/src/types.ts` -- Added `Reaction` and `CustomEmoji` interfaces; added `reactions?: Reaction[]` to the `Message` interface.\n\n2. `/mnt/data/clungcord/packages/shared/src/events.ts` -- Added `reaction_add` and `reaction_remove` to `ServerEvent` union type, importing the new types.\n\n3. `/mnt/data/clungcord/packages/server/src/db.ts` -- Added `reactions` table (message_id,...(truncated)",
+      "artifacts": []
     }
   ]
 }
