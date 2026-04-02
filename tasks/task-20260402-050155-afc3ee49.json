@@ -14,6 +14,12 @@
       "ts": "2026-04-02T05:01:55Z",
       "event": "started",
       "context": "Build emoji.gg search feature"
+    },
+    {
+      "ts": "2026-04-02T05:06:19Z",
+      "event": "done",
+      "context": "Server started cleanly. Here's a summary of all changes made:\n\n---\n\n## Changes Made\n\n### Server (`/mnt/data/clungcord/packages/server/src/`)\n\n**`db.ts`** -- Added migration to add `use_count INTEGER NOT NULL DEFAULT 0` column to the `custom_emojis` table.\n\n**`routes/emojis.ts`** -- Three additions:\n- `listEmojis()` now orders by `use_count DESC, name` instead of just `name`\n- `incrementEmojiUseCount(emojiName)` -- bumps use_count for a custom emoji by name\n- emoji.gg proxy: `getEmojiGGTrending()...(truncated)",
+      "artifacts": []
     }
   ]
 }
