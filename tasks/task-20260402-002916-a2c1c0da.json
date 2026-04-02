@@ -1,0 +1,19 @@
+{
+  "id": "task-20260402-002916-a2c1c0da",
+  "title": "Debug Clungcord message sending bug",
+  "agent_id": "a2c1c0da693dca765",
+  "agent_type": "general-purpose",
+  "session_id": "17bfb128-7a5a-4d7c-99f2-768209785acc",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-02T00:29:15Z",
+      "event": "started",
+      "context": "Debug Clungcord message sending bug"
+    }
+  ]
+}
