@@ -14,6 +14,12 @@
       "ts": "2026-04-02T01:59:14Z",
       "event": "started",
       "context": "Remove chat.clung.us tunnel entry"
+    },
+    {
+      "ts": "2026-04-02T02:00:00Z",
+      "event": "done",
+      "context": "Done. Removed the `chat.clung.us` ingress entry (which pointed to `localhost:8120`) from `/home/clungus/.cloudflared/config.yml`. Cloudflared restarted successfully and is active.",
+      "artifacts": []
     }
   ]
 }
