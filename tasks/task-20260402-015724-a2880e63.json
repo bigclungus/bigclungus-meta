@@ -14,6 +14,12 @@
       "ts": "2026-04-02T01:57:24Z",
       "event": "started",
       "context": "Commit and deploy clung.us/chat + fixes"
+    },
+    {
+      "ts": "2026-04-02T01:59:07Z",
+      "event": "done",
+      "context": "All tasks completed:\n\n1. **Commits and pushes**: Both repos were already committed/pushed (clungcord had the `/chat` base path commit, main repo had clunger proxy changes).\n\n2. **Services restarted**: Both `clunger.service` and `clungcord.service` restarted.\n\n3. **Sticky scroll fix** in `/mnt/data/clungcord/packages/client/src/components/MessagePane.tsx`:\n   - Tightened auto-scroll threshold from 100px to 50px\n   - Added `hasNewBelow` signal to track when new messages arrive while scrolled up\n  ...(truncated)",
+      "artifacts": []
     }
   ]
 }
