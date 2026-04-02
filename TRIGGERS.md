@@ -93,7 +93,7 @@ When you receive `[simplify]`: **spawn a background agent** (do NOT block the ma
 1. **Get recent diffs** — run `git -C /mnt/data/hello-world log --oneline -5` and `git -C /mnt/data/temporal-workflows log --oneline -5` to see what changed recently
 2. **Review for issues** — look at the diffs for: dead code, duplicate logic, hardcoded values that should use constants, obvious bugs, style inconsistencies, redundant imports
 3. **Apply fixes** — make targeted edits, commit with message `simplify: <brief description>`, and push to GitHub
-4. **Restart affected services** if you changed files in hello-world (`systemctl --user restart website.service`) or temporal-workflows (`systemctl --user restart temporal-worker.service`)
+4. **Restart affected services** if you changed files in hello-world (no restart needed for static files; restart clunger.service only if clunger/src/ changed) or temporal-workflows (`systemctl --user restart temporal-worker.service`)
 5. **Do nothing and stay silent** if there's nothing worth fixing — don't invent busywork
 
 Constraints:
