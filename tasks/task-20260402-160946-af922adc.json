@@ -14,6 +14,12 @@
       "ts": "2026-04-02T16:09:46Z",
       "event": "started",
       "context": "run on-restart checklist as background subagent"
+    },
+    {
+      "ts": "2026-04-02T16:10:54Z",
+      "event": "done",
+      "context": "**Restart checklist complete** (ran via background Bash at /tmp/restart-checklist.log).\n\n- Redis/FalkorDB fixes applied successfully.\n- All 26 services active (claude-bot.service, omni-gateway.service, clunger.service, temporal.service, terminal-server.service, labs-*.service etc.).\n- Disk 35% on root (/dev/mapper/ubuntu--vg-ubuntu--lv).\n- 4 open tasks logged to /tmp/bc-open-tasks.json.\n- extract-congress-directives.py: no new directives (/home/clungus/.claude/CLAUDE.md + /mnt/data/CLAUDE.md unc...(truncated)",
+      "artifacts": []
     }
   ]
 }
