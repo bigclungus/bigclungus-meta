@@ -14,6 +14,12 @@
       "ts": "2026-04-02T08:49:31Z",
       "event": "started",
       "context": "Inject task to Giga via webhook"
+    },
+    {
+      "ts": "2026-04-02T08:51:44Z",
+      "event": "done",
+      "context": "Giga's claude process is at 11.9% CPU and has been running for about 2:42 (it started at 08:48, about 3 minutes ago). It's actively processing.\n\nHere's the summary:\n\n**Findings:**\n\n1. **Giga's inject mechanism**: Giga has its own omni gateway running on **port 8086** (BigClungus uses 8085), configured via `/mnt/data/omni/omnichannel/omni-giga.yaml`. The gateway process runs as the `clungus` user (PID 411362), and Giga's MCP server (PID 1059243) connects to it via the IPC socket at `/mnt/data/omn...(truncated)",
+      "artifacts": []
     }
   ]
 }
