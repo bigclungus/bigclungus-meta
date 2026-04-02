@@ -1,0 +1,19 @@
+{
+  "id": "task-20260402-204657-ae2fa38a",
+  "title": "restart claude-bot.service",
+  "agent_id": "ae2fa38ad19fdc5bf",
+  "agent_type": "general-purpose",
+  "session_id": "6e457a76-d639-4c73-8930-ab74edfc55cb",
+  "discord_message_id": "omni_i1rg9jre",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-02T20:46:57Z",
+      "event": "started",
+      "context": "restart claude-bot.service"
+    }
+  ]
+}
