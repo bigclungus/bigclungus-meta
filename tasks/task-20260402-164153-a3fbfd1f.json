@@ -14,6 +14,12 @@
       "ts": "2026-04-02T16:41:53Z",
       "event": "started",
       "context": "audit context bloat and cache costs"
+    },
+    {
+      "ts": "2026-04-02T16:43:24Z",
+      "event": "done",
+      "context": "### Context Audit Summary\n\n**File Sizes & Token Estimates** (chars/4 ≈ tokens; line-counted via tools):\n| File | Lines | Chars | Est. Tokens |\n|------|-------|-------|-------------|\n| `/home/clungus/.claude/CLAUDE.md` (global) | 447 | 21,877 | ~5.5k |\n| `/mnt/data/CLAUDE.md` (project) | 677 | 28,806 | ~7.2k |\n| `/home/clungus/.claude/projects/-mnt-data/memory/MEMORY.md` (index) | 43 | 5,753 | ~1.4k |\n| Memory dir total (~43 files, avg 800 chars) | - | ~35k | ~9k |\n| **Core context subtotal** | -...(truncated)",
+      "artifacts": []
     }
   ]
 }
