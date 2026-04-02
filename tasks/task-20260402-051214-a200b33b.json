@@ -1,0 +1,19 @@
+{
+  "id": "task-20260402-051214-a200b33b",
+  "title": "Add skip signal to workflow",
+  "agent_id": "a200b33baeb2e1c3e",
+  "agent_type": "general-purpose",
+  "session_id": "17bfb128-7a5a-4d7c-99f2-768209785acc",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-02T05:12:14Z",
+      "event": "started",
+      "context": "Add skip signal to workflow"
+    }
+  ]
+}
