@@ -14,6 +14,12 @@
       "ts": "2026-04-02T18:37:48Z",
       "event": "started",
       "context": "check xai usage and balance"
+    },
+    {
+      "ts": "2026-04-02T18:39:18Z",
+      "event": "done",
+      "context": "**xAI/Grok API Usage Summary (2026-04-02)**\n\n- **Services**: \n  - `xai-proxy.service` (Bun/TS on 127.0.0.1:8099): Active, proxies Anthropic `/v1/messages` to `api.x.ai` (maps `claude-sonnet-4-6` → `grok-4-1-fast-reasoning`). ~1042 proxy calls today (heavily used); proxy calls since Mar: ~1042+ (limited log sample).\n  - `grok-proxy.service` (Python on 127.0.0.1:4100): Active but minimal recent activity (last proxying Mar 31/Apr 1, RunPod-related logs older).\n\n- **API Key**: Valid (`xai-d7Rm...zb`...(truncated)",
+      "artifacts": []
     }
   ]
 }
