@@ -14,6 +14,12 @@
       "ts": "2026-04-02T05:32:02Z",
       "event": "started",
       "context": "Add send button to Clungcord input"
+    },
+    {
+      "ts": "2026-04-02T05:32:41Z",
+      "event": "done",
+      "context": "Build succeeded. Here's a summary of what was done:\n\n**Changes made:**\n\n1. **`/mnt/data/clungcord/packages/client/src/components/MessagePane.tsx`** -- Added a send button right after the emoji button inside the `input-wrapper`. It uses a paper plane SVG icon. On click, it calls `__richInput.extractText()` on the input ref, sends the trimmed text via `handleSend()`, and clears the input with `__richInput.clear()`. Same flow as pressing Enter.\n\n2. **`/mnt/data/clungcord/packages/client/src/styles....(truncated)",
+      "artifacts": []
     }
   ]
 }
