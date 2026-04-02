@@ -14,6 +14,12 @@
       "ts": "2026-04-02T04:10:01Z",
       "event": "started",
       "context": "Add Clungiverse features"
+    },
+    {
+      "ts": "2026-04-02T04:12:10Z",
+      "event": "done",
+      "context": "Build deployed successfully with cache-busting hash updated. Here is a summary of all changes:\n\n---\n\n**Feature 1: Dungeon music (YouTube IFrame API)**\n\n- **New file:** `/mnt/data/clungiverse-client-v2/src/audio.ts` -- Music module that:\n  - Loads the YouTube IFrame API on demand\n  - Creates a hidden 1x1 iframe player for video `HG1CZEt8cA0` starting at `t=1742s`\n  - Loops playback (via `playlist` playerVar + end-state seek fallback)\n  - Exports `startMusic()`, `stopMusic()`, `toggleMute()`, `sho...(truncated)",
+      "artifacts": []
     }
   ]
 }
