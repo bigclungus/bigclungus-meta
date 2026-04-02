@@ -14,6 +14,12 @@
       "ts": "2026-04-02T05:00:33Z",
       "event": "started",
       "context": "Reaction tooltip with users"
+    },
+    {
+      "ts": "2026-04-02T05:01:26Z",
+      "event": "done",
+      "context": "Build succeeded. No server changes were needed since the reaction data already includes user IDs and the client already has `state.users` with all user info.\n\n**Summary:** Updated `/mnt/data/clungcord/packages/client/src/components/MessagePane.tsx` to resolve reaction user IDs to display names (falling back to username, then \"User {id}\") and show them in the tooltip. The tooltip now renders as:\n\n```\n:emoji_name:\nuser1, user2, user3\n```\n\nThe server API already returns user IDs in the `Reaction.us...(truncated)",
+      "artifacts": []
     }
   ]
 }
