@@ -1,0 +1,19 @@
+{
+  "id": "task-20260402-051933-a98b9a18",
+  "title": "Full scout test with skip",
+  "agent_id": "a98b9a1861bdd33ba",
+  "agent_type": "general-purpose",
+  "session_id": "17bfb128-7a5a-4d7c-99f2-768209785acc",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-02T05:19:33Z",
+      "event": "started",
+      "context": "Full scout test with skip"
+    }
+  ]
+}
