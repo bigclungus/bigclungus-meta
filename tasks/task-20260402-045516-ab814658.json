@@ -14,6 +14,12 @@
       "ts": "2026-04-02T04:55:16Z",
       "event": "started",
       "context": "Add character to leaderboard"
+    },
+    {
+      "ts": "2026-04-02T04:56:29Z",
+      "event": "done",
+      "context": "Build succeeded. Here's what was done:\n\n**Changes made to `/mnt/data/clungiverse-client-v2/src/scenes/results.ts`:**\n\n- Added a **\"Character\" column** to the leaderboard between \"Result\" and \"Party\"\n- The Character column displays each party member's persona slug with capitalized first letter (e.g., \"Holden\", \"Spengler\"), rendered in a light purple (`#bb99dd`) to visually distinguish it from other columns\n- Widened the leaderboard layout from 480px to 560px (shifted `colX` from `w/2 - 240` to `w...(truncated)",
+      "artifacts": []
     }
   ]
 }
