@@ -14,6 +14,12 @@
       "ts": "2026-04-02T05:01:02Z",
       "event": "started",
       "context": "Test scout workflow run"
+    },
+    {
+      "ts": "2026-04-02T05:07:38Z",
+      "event": "done",
+      "context": "No changes to `model_scout_wf.py` — the file has always used `workflow.now()`. The sandbox error on test-1 is puzzling. Possibly a transient issue with the Temporal sandbox initializing, or the old worker process from the inline bash (not nohup) had some environment difference.\n\nThe important result is: **test-2 succeeded end-to-end through the scout phase**. Let me summarize the findings.\n\n---\n\nHere are the test results:\n\n## Worker Startup\nWorker started successfully. Imports clean, connected t...(truncated)",
+      "artifacts": []
     }
   ]
 }
