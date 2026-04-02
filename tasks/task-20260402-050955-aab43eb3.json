@@ -14,6 +14,12 @@
       "ts": "2026-04-02T05:09:55Z",
       "event": "started",
       "context": "Fix emoji cache on upload"
+    },
+    {
+      "ts": "2026-04-02T05:11:39Z",
+      "event": "done",
+      "context": "Build succeeded. Here's a summary of the fix:\n\n**Root cause:** MessagePane and EmojiPicker maintained separate custom emoji caches. When a user uploaded an emoji.gg emoji via the picker, EmojiPicker refetched its own `createResource`, but MessagePane's local `customEmojis` signal (loaded once on mount) was never updated. When the newly uploaded emoji was then used as a reaction, MessagePane couldn't find its URL and rendered `:name:` text instead.\n\n**Changes made:**\n\n1. **`/mnt/data/clungcord/pa...(truncated)",
+      "artifacts": []
     }
   ]
 }
