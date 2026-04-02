@@ -14,6 +14,12 @@
       "ts": "2026-04-02T05:12:14Z",
       "event": "started",
       "context": "Add skip signal to workflow"
+    },
+    {
+      "ts": "2026-04-02T05:13:59Z",
+      "event": "done",
+      "context": "All changes applied to `/mnt/data/temporal-workflows/workflows/model_scout_wf.py`:\n\n**ModelScoutWorkflow:**\n- Added `_skip_requested` and `_refresh_requested` boolean flags (initialized in `__init__`)\n- Added `skip_vote` signal handler -- sets `_skip_requested = True`\n- Added `refresh` signal handler -- sets `_refresh_requested = True`\n- Wrapped the propose-vote-decide sequence in a `while True` loop so skipped models cycle to the next candidate\n- Vote loop checks both flags before and after eac...(truncated)",
+      "artifacts": []
     }
   ]
 }
