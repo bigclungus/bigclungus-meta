@@ -14,6 +14,12 @@
       "ts": "2026-04-02T05:06:22Z",
       "event": "started",
       "context": "Check scout workflow errors"
+    },
+    {
+      "ts": "2026-04-02T05:07:19Z",
+      "event": "done",
+      "context": "Here's the full analysis:\n\n## Errors Found\n\n**1. `fetch_json` activity failed on the together.ai models endpoint (HTTP 401: Missing API key)**\n\nThe workflow calls `fetch_json(TOGETHER_MODELS_URL, None)` at line 173 of `model_scout_wf.py`, passing `None` as headers. The together.ai `/v1/models` endpoint requires an API key (`Authorization: Bearer <key>`), but the workflow passes no auth headers.\n\nThis failed 3 times (the retry policy's max) and then the workflow correctly caught the exception and...(truncated)",
+      "artifacts": []
     }
   ]
 }
