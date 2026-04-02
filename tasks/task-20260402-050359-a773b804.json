@@ -14,6 +14,12 @@
       "ts": "2026-04-02T05:03:59Z",
       "event": "started",
       "context": "Fix datetime.now in workflow"
+    },
+    {
+      "ts": "2026-04-02T05:04:18Z",
+      "event": "done",
+      "context": "All clean. The fix replaced the single `datetime.now(timezone.utc).isoformat()` on line 209 with `workflow.now().isoformat()`. The `workflow.now()` call (from `temporalio.workflow`, already imported) returns a deterministic, replay-safe datetime. The unused `from datetime import datetime, timezone` import was also removed.\n\nNo other non-deterministic calls (`random`, `uuid4`, `time.time`, etc.) were found in the workflow methods.",
+      "artifacts": []
     }
   ]
 }
