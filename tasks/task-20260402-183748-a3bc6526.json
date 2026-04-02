@@ -1,0 +1,19 @@
+{
+  "id": "task-20260402-183748-a3bc6526",
+  "title": "check xai usage and balance",
+  "agent_id": "a3bc6526eb487b57e",
+  "agent_type": "general-purpose",
+  "session_id": "6e457a76-d639-4c73-8930-ab74edfc55cb",
+  "discord_message_id": "omni_kno05afr",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-02T18:37:48Z",
+      "event": "started",
+      "context": "check xai usage and balance"
+    }
+  ]
+}
