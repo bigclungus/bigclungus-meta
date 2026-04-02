@@ -14,6 +14,12 @@
       "ts": "2026-04-02T02:44:27Z",
       "event": "started",
       "context": "Update Giga CLAUDE.md"
+    },
+    {
+      "ts": "2026-04-02T02:45:14Z",
+      "event": "done",
+      "context": "Done. GigaClungus is active and running with the updated config.\n\n**Changes made to `/home/gigaclungus/work/claude-config/CLAUDE.md`:**\n\n1. **Added \"Core Rule: Discord Reply Tool Required\" section** at the very top — the critical callout that all replies must go through the Discord reply tool, with the warning that Claude Code text output is invisible to users.\n\n2. **Added \"Discord Behavior — When to Respond\" section** — explicit rules for when to respond (@ mentioned, called by name, following ...(truncated)",
+      "artifacts": []
     }
   ]
 }
