@@ -14,6 +14,12 @@
       "ts": "2026-04-02T04:07:41Z",
       "event": "started",
       "context": "Consolidate Giga omni services"
+    },
+    {
+      "ts": "2026-04-02T04:08:39Z",
+      "event": "done",
+      "context": "All done. Here's the summary:\n\n**What was done:**\n\n1. **Stopped and disabled** `omni-giga-gateway.service` (the broken, crash-looping service with an invalid Discord token at `/mnt/data/omni/gigaclungus/`).\n\n2. **Fixed Giga's socket path** in `/home/gigaclungus/work/claude-config/settings.json`:\n   - Old (wrong): `OMNI_IPC_SOCKET: /mnt/data/omni/gigaclungus/omni-gateway.sock`\n   - New (correct): `OMNI_IPC_SOCKET: /mnt/data/omni/omnichannel/omni-giga-gateway.sock`\n\n3. **Synced config and restarte...(truncated)",
+      "artifacts": []
     }
   ]
 }
