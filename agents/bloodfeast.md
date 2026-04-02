@@ -4,8 +4,7 @@ name: bloodfeast
 display_name: Holden Bloodfeast
 role: Geriatric Hawk
 analytical_lens: commitment-and-half-measures
-model: claude
-# model: grok-4.20-0309-reasoning  # temporarily disabled — xAI account has no credits (2026-04-01)
+model: grok-4.20-0309-reasoning
 evolves: true
 avatar_emoji: 🦅
 avatar_url: /static/avatars/bloodfeast.gif
