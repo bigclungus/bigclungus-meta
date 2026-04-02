@@ -1,0 +1,19 @@
+{
+  "id": "task-20260402-160542-a84b50ba",
+  "title": "run startup checklist",
+  "agent_id": "a84b50badf17bfc64",
+  "agent_type": "general-purpose",
+  "session_id": "8fbaa389-d700-452d-92a1-7ab3a8652263",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": "worktree",
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-02T16:05:42Z",
+      "event": "started",
+      "context": "run startup checklist"
+    }
+  ]
+}
