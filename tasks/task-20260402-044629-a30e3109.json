@@ -1,0 +1,19 @@
+{
+  "id": "task-20260402-044629-a30e3109",
+  "title": "Inject emoji.gg task to Giga",
+  "agent_id": "a30e31099cd0fe95b",
+  "agent_type": "general-purpose",
+  "session_id": "17bfb128-7a5a-4d7c-99f2-768209785acc",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-02T04:46:29Z",
+      "event": "started",
+      "context": "Inject emoji.gg task to Giga"
+    }
+  ]
+}
