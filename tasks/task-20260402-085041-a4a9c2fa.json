@@ -14,6 +14,12 @@
       "ts": "2026-04-02T08:50:41Z",
       "event": "started",
       "context": "Fix Giga channel config per jaboostin"
+    },
+    {
+      "ts": "2026-04-02T08:52:41Z",
+      "event": "done",
+      "context": "All done. Here's a summary of what was changed:\n\n**1. `/home/gigaclungus/work/start-gigaclungus.py`** — Added `\"--dangerously-load-development-channels\", \"server:omni\"` back to the args list.\n\n**2. `/mnt/data/omni/omnichannel/omni-giga.yaml`** — Commented out the Discord channel config (`gigaclungus-main` with `channel-discord` plugin). The `inject` webhook channel remains active, so Giga can still receive injected messages through omni without connecting to Discord directly.\n\n**3. Restarted ser...(truncated)",
+      "artifacts": []
     }
   ]
 }
