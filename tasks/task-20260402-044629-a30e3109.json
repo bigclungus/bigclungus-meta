@@ -14,6 +14,12 @@
       "ts": "2026-04-02T04:46:29Z",
       "event": "started",
       "context": "Inject emoji.gg task to Giga"
+    },
+    {
+      "ts": "2026-04-02T04:46:55Z",
+      "event": "done",
+      "context": "Message posted successfully to the Emojis thread (channel `1489090839287304382`). The message was delivered at `2026-04-02T04:46:49Z` with message ID `1489123923281969204`. GigaClungus will see it there.\n\nNote: The original `curl` command targeting `gigaclungus-main` via the inject endpoint failed because that channel doesn't exist in the omni gateway config. Instead, I posted directly to the Discord thread via the bot API, which is where Giga monitors.",
+      "artifacts": []
     }
   ]
 }
