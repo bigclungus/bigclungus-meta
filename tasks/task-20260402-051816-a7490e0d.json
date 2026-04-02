@@ -14,6 +14,12 @@
       "ts": "2026-04-02T05:18:16Z",
       "event": "started",
       "context": "Fix skip signal responsiveness"
+    },
+    {
+      "ts": "2026-04-02T05:18:43Z",
+      "event": "done",
+      "context": "Both vote loops in `/mnt/data/temporal-workflows/workflows/model_scout_wf.py` have been updated:\n\n1. **Model vote loop** (line ~365) — `workflow.sleep(VOTE_POLL_INTERVAL.total_seconds())` replaced with `workflow.wait_condition(lambda: self._skip_requested or self._refresh_requested, timeout=VOTE_POLL_INTERVAL)`\n\n2. **Persona vote loop** (line ~657) — `workflow.sleep(PERSONA_VOTE_POLL_INTERVAL.total_seconds())` replaced with the same `wait_condition` pattern using `PERSONA_VOTE_POLL_INTERVAL`\n\nTh...(truncated)",
+      "artifacts": []
     }
   ]
 }
