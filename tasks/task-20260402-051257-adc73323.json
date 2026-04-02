@@ -14,6 +14,12 @@
       "ts": "2026-04-02T05:12:57Z",
       "event": "started",
       "context": "Fix custom emoji click in picker"
+    },
+    {
+      "ts": "2026-04-02T05:23:51Z",
+      "event": "done",
+      "context": "Good -- standard unicode emoji buttons still use `onClick` (SolidJS delegation), which is fine since they contain text, not images.\n\nHere's a summary of what was done:\n\n**Problem:** Clicking custom emojis in the \"Your Emojis\" section of the emoji picker did nothing -- neither added reactions nor inserted into message input.\n\n**Root cause:** SolidJS event delegation (`onClick`) routes click events through a single document-level handler. When the click target is an `<img>` inside a button, the de...(truncated)",
+      "artifacts": []
     }
   ]
 }
