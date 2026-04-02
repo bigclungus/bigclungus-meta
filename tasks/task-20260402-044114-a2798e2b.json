@@ -14,6 +14,12 @@
       "ts": "2026-04-02T04:41:13Z",
       "event": "started",
       "context": "Fix Clungcord emoji issues"
+    },
+    {
+      "ts": "2026-04-02T04:45:26Z",
+      "event": "done",
+      "context": "The new CSS is in the built output. The hash might have been the same by coincidence, but the content is there. All good.\n\nHere's a summary of all four fixes:\n\n---\n\n**1. Custom emoji upload from URL (server-side fix)**\n- **File**: `/mnt/data/clungcord/packages/server/src/routes/emojis.ts`\n- `createEmoji()` is now `async`. When a URL starting with `http://` or `https://` is provided, the server fetches the image, validates the content-type is `image/*`, saves it to `/mnt/data/clungcord/data/emoji...(truncated)",
+      "artifacts": []
     }
   ]
 }
