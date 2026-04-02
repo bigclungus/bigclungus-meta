@@ -14,6 +14,12 @@
       "ts": "2026-04-02T04:54:39Z",
       "event": "started",
       "context": "Efficiency review"
+    },
+    {
+      "ts": "2026-04-02T04:55:35Z",
+      "event": "done",
+      "context": "Here are the efficiency findings, organized by severity:\n\n---\n\n## High: aiohttp session-per-call in discord_io.py\n\n**File:** `/mnt/data/temporal-workflows/activities/common/discord_io.py`, lines 25, 39, 55, 95, 119\n\nEvery activity function creates a new `aiohttp.ClientSession`, makes one request, and tears it down. This means a fresh TCP connection + TLS handshake for every single Discord API call. In the vote polling loop (which runs every 15 minutes for up to 24 hours = ~96 iterations), `disco...(truncated)",
+      "artifacts": []
     }
   ]
 }
