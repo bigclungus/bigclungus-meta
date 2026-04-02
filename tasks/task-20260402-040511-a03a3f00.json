@@ -14,6 +14,12 @@
       "ts": "2026-04-02T04:05:11Z",
       "event": "started",
       "context": "Verify Giga token status"
+    },
+    {
+      "ts": "2026-04-02T04:05:43Z",
+      "event": "done",
+      "context": "Here are the exact findings:\n\n**1. Service status:** `omni-giga-gateway.service` is crash-looping. It has restarted 39+ times, each time exiting immediately with `Error [TokenInvalid]: An invalid token was provided.`\n\n**2. Token in `/mnt/data/omni/gigaclungus/discord.env`:**\n```\nDISCORD_BOT_TOKEN=[REDACTED_TOKEN]\n```\n\n**3. Token in `/home/gigaclungus/.claude/channels/discord/.env`:** Identical -- same token verbatim.\n\n**4. Direct API valida...(truncated)",
+      "artifacts": []
     }
   ]
 }
