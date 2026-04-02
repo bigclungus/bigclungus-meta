@@ -1,0 +1,19 @@
+{
+  "id": "task-20260402-160807-a8d88246",
+  "title": "...",
+  "agent_id": "a8d882466208b4f22",
+  "agent_type": "general-purpose",
+  "session_id": "8fbaa389-d700-452d-92a1-7ab3a8652263",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-02T16:08:07Z",
+      "event": "started",
+      "context": "..."
+    }
+  ]
+}
