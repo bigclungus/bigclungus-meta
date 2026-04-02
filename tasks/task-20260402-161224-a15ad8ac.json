@@ -14,6 +14,12 @@
       "ts": "2026-04-02T16:12:24Z",
       "event": "started",
       "context": "handle [heartbeat] trigger per TRIGGERS.md"
+    },
+    {
+      "ts": "2026-04-02T16:19:57Z",
+      "event": "done",
+      "context": "",
+      "artifacts": []
     }
   ]
 }
