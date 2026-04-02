@@ -14,6 +14,12 @@
       "ts": "2026-04-02T05:04:35Z",
       "event": "started",
       "context": "Retry scout workflow test"
+    },
+    {
+      "ts": "2026-04-02T05:10:26Z",
+      "event": "done",
+      "context": "All processes killed. Here is the summary of results:\n\n---\n\n**Step 1 - Kill old processes:** No scout_worker.py was running initially.\n\n**Step 2 - Delete old schedule:** Schedule `model-scout-daily` didn't exist (already cleaned up).\n\n**Step 3 - Terminate stuck workflow:** `manual-scout-test-1` terminated successfully.\n\n**Step 4 - Start worker:** Started successfully, connected to Temporal on `scout-queue`.\n\n**Step 5 - Manual test:** Ran as `manual-scout-test-3` (test-2 had a stale termination f...(truncated)",
+      "artifacts": []
     }
   ]
 }
