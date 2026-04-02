@@ -1,0 +1,19 @@
+{
+  "id": "task-20260402-023549-abea00d1",
+  "title": "Post CRUD details to thread",
+  "agent_id": "abea00d141f26e5d0",
+  "agent_type": "general-purpose",
+  "session_id": "17bfb128-7a5a-4d7c-99f2-768209785acc",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-02T02:35:49Z",
+      "event": "started",
+      "context": "Post CRUD details to thread"
+    }
+  ]
+}
