@@ -14,6 +14,12 @@
       "ts": "2026-04-02T05:09:39Z",
       "event": "started",
       "context": "Test improved model card"
+    },
+    {
+      "ts": "2026-04-02T05:13:10Z",
+      "event": "done",
+      "context": "Worker is gone. Here's the summary:\n\n**Results of scout workflow test (manual-scout-test-3):**\n\n1. **Together.ai API failed** with 401 \"Missing API key\" (3 retries, all failed). The workflow handled this gracefully and fell back to HuggingFace-only data.\n\n2. **Model selected:** `Qwen3.5-9B-Uncensored-HauhauCS-Aggressive` (9B params, source: HuggingFace, ID: `hf:HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive`)\n\n3. **Card posted successfully** to the congress-hall Discord channel as a Discord ...(truncated)",
+      "artifacts": []
     }
   ]
 }
