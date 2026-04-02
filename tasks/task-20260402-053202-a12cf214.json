@@ -1,0 +1,19 @@
+{
+  "id": "task-20260402-053202-a12cf214",
+  "title": "Add send button to Clungcord input",
+  "agent_id": "a12cf214a4b23a3da",
+  "agent_type": "general-purpose",
+  "session_id": "17bfb128-7a5a-4d7c-99f2-768209785acc",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-02T05:32:02Z",
+      "event": "started",
+      "context": "Add send button to Clungcord input"
+    }
+  ]
+}
