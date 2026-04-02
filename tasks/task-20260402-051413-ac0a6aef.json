@@ -14,6 +14,12 @@
       "ts": "2026-04-02T05:14:13Z",
       "event": "started",
       "context": "Add skip reaction to scout"
+    },
+    {
+      "ts": "2026-04-02T05:14:57Z",
+      "event": "done",
+      "context": "All four changes are in place:\n\n1. **`EMOJI_SKIP` constant** added at line 58 (`\"%E2%8F%AD%EF%B8%8F\"`)\n2. **Seed reaction** — the skip emoji is now added alongside thumbs up/down when the proposal message is posted (line 346)\n3. **Reaction-based skip detection** — after fetching reactions in the vote poll loop, the workflow checks for non-bot ⏭️ reactions and sets `self._skip_requested = True` if 3+ voters have reacted (lines 380-388). This flows into the existing skip handler that marks the mod...(truncated)",
+      "artifacts": []
     }
   ]
 }
