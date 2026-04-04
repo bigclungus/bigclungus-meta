@@ -14,6 +14,12 @@
       "ts": "2026-04-04T06:16:12Z",
       "event": "started",
       "context": "Unretire Spengler the Doomed persona"
+    },
+    {
+      "ts": "2026-04-04T06:16:29Z",
+      "event": "done",
+      "context": "Done. Spengler the Doomed is back — `status: meme` -> `status: eligible` in `/mnt/data/bigclungus-meta/agents/spengler.md`, committed and pushed. He can participate in congress again.",
+      "artifacts": []
     }
   ]
 }
