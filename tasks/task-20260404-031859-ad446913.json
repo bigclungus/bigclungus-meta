@@ -14,6 +14,12 @@
       "ts": "2026-04-04T03:18:58Z",
       "event": "started",
       "context": "Setup Cloudflare tunnel for VictoriaMetrics on vm.clung.us"
+    },
+    {
+      "ts": "2026-04-04T03:19:23Z",
+      "event": "done",
+      "context": "No DNS record yet. Here's the full summary:\n\n---\n\n**Done on this end:**\n\n- VictoriaMetrics confirmed running on `:8428`\n- Added `vm.clung.us → http://localhost:8428` to `/home/clungus/.cloudflared/config.yml`\n- Restarted cloudflared — tunnel is active with 4 connections\n\n**One thing jaboostin needs to do:**\n\nAdd a DNS CNAME record in Cloudflare dashboard for `vm.clung.us`:\n- **Name:** `vm`\n- **Target:** `685863fc-3783-4e49-bb8d-6a405c524706.cfargotunnel.com`\n- **Proxy:** Proxied (orange cloud)\n\n...(truncated)",
+      "artifacts": []
     }
   ]
 }
