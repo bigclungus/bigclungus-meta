@@ -1,0 +1,19 @@
+{
+  "id": "task-20260404-061612-ab2ca7c9",
+  "title": "Unretire Spengler the Doomed persona",
+  "agent_id": "ab2ca7c90dbd5edb2",
+  "agent_type": "general-purpose",
+  "session_id": "da9108a1-38a8-4bfa-b1a3-181fc710beeb",
+  "discord_message_id": "omni_81r48tpf",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-04T06:16:12Z",
+      "event": "started",
+      "context": "Unretire Spengler the Doomed persona"
+    }
+  ]
+}
