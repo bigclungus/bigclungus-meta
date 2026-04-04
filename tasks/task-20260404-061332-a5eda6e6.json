@@ -14,6 +14,11 @@
       "ts": "2026-04-04T06:13:32Z",
       "event": "started",
       "context": "Generate 3 persona candidates for LFM2-24B-A2B"
+    },
+    {
+      "ts": "2026-04-04T09:05:35Z",
+      "event": "stale",
+      "context": "Marked stale by watchdog — session likely ended before task completed"
     }
   ]
 }
