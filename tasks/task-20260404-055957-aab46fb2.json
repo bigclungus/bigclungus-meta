@@ -1,0 +1,19 @@
+{
+  "id": "task-20260404-055957-aab46fb2",
+  "title": "Fix scout filter to exclude image editing models",
+  "agent_id": "aab46fb283d31c53c",
+  "agent_type": "general-purpose",
+  "session_id": "da9108a1-38a8-4bfa-b1a3-181fc710beeb",
+  "discord_message_id": "omni_3vj69flu",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-04T05:59:57Z",
+      "event": "started",
+      "context": "Fix scout filter to exclude image editing models"
+    }
+  ]
+}
