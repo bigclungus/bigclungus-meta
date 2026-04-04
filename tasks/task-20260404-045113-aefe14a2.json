@@ -1,0 +1,19 @@
+{
+  "id": "task-20260404-045113-aefe14a2",
+  "title": "Add image-to-text exclusion to congress filter",
+  "agent_id": "aefe14a2154ec8f26",
+  "agent_type": "general-purpose",
+  "session_id": "da9108a1-38a8-4bfa-b1a3-181fc710beeb",
+  "discord_message_id": "omni_t4d8hrw1",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-04T04:51:13Z",
+      "event": "started",
+      "context": "Add image-to-text exclusion to congress filter"
+    }
+  ]
+}
