@@ -14,6 +14,12 @@
       "ts": "2026-04-04T04:35:21Z",
       "event": "started",
       "context": "Simplify congress model filter to text-only"
+    },
+    {
+      "ts": "2026-04-04T04:37:17Z",
+      "event": "done",
+      "context": "The workflow imports `_is_text_only` and calls it in the post-detail check. The alias keeps that working without touching the workflow file.\n\nDone. Here's what changed in `/mnt/data/temporal-workflows/activities/scout_local.py`:\n\n**Removed:**\n- `MIN_PARAMS` / `MAX_PARAMS` constants — no more size filtering\n- The giant `_MULTIMODAL_PIPELINE_TAGS` set (23 entries) — replaced with a smaller, only-the-obvious-ones set\n- `_MULTIMODAL_NAME_PATTERNS` regex — gone entirely, no more rejecting `llava`, `w...(truncated)",
+      "artifacts": []
     }
   ]
 }
