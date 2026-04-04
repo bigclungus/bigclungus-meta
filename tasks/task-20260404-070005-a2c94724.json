@@ -14,6 +14,12 @@
       "ts": "2026-04-04T07:00:05Z",
       "event": "started",
       "context": "Run simplify on recent code changes"
+    },
+    {
+      "ts": "2026-04-04T07:02:41Z",
+      "event": "done",
+      "context": "All clean. Here's a summary of what was fixed:\n\n**Issues found and fixed:**\n\n1. **Direct workflow call to `_is_congress_model`** — the workflow was calling an activity module's private function directly at workflow execution time, bypassing Temporal's activity dispatch. Added `filter_non_text` as a proper `@activity.defn` wrapper and updated the workflow to call it via `workflow.execute_activity`. Registered it in `scout_worker.py`.\n\n2. **`skipped_ids` typed as `list` used for exclusion set** — ...(truncated)",
+      "artifacts": []
     }
   ]
 }
