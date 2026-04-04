@@ -14,6 +14,12 @@
       "ts": "2026-04-04T05:01:59Z",
       "event": "started",
       "context": "Simplify model descriptions for normal people"
+    },
+    {
+      "ts": "2026-04-04T05:02:34Z",
+      "event": "done",
+      "context": "Done. Here's what changed in `/mnt/data/temporal-workflows/activities/scout_local.py`:\n\n- **System prompt**: rewrote from \"AI model analyst for technical audience\" to plain-English explainer, explicitly banning jargon and buzzwords, targeting a friend-explanation style\n- **User prompt**: swapped the 3-5 technical-sentence ask for a 2-3 sentence prompt covering what it does, what it's good at, and why it'd be interesting in congress — all in everyday terms\n- **`max_tokens`**: 350 → 175\n- **Trunca...(truncated)",
+      "artifacts": []
     }
   ]
 }
