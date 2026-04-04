@@ -14,6 +14,12 @@
       "ts": "2026-04-04T09:04:42Z",
       "event": "started",
       "context": "handle heartbeat workflow pulse"
+    },
+    {
+      "ts": "2026-04-04T09:06:14Z",
+      "event": "done",
+      "context": "All checks done. Here's the summary:\n\n**Stale tasks: 5 found, watchdog marked them**\nAll 5 were from today (age ~2.8 hours), all related to the Flux Thompson persona work session:\n- \"Set up clungcord bridge to clungslop\"\n- \"Generate 3 persona candidates for LFM2-24B-A2B\"\n- \"Generate Flux Thompson avatar GIF\"\n- \"Test Flux Thompson persona with together.ai\"\n- \"Verify flux thompson persona is accessible\"\n\nThese look like tasks spun up during a session that ended before completion. They have no prio...(truncated)",
+      "artifacts": []
     }
   ]
 }
