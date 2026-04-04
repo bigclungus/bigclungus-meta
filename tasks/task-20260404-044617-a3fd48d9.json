@@ -1,0 +1,19 @@
+{
+  "id": "task-20260404-044617-a3fd48d9",
+  "title": "Enhance model scout descriptions with architecture/benchmarks",
+  "agent_id": "a3fd48d962da07011",
+  "agent_type": "general-purpose",
+  "session_id": "da9108a1-38a8-4bfa-b1a3-181fc710beeb",
+  "discord_message_id": "omni_3q7tseff",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-04T04:46:17Z",
+      "event": "started",
+      "context": "Enhance model scout descriptions with architecture/benchmarks"
+    }
+  ]
+}
