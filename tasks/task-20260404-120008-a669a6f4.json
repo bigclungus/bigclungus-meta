@@ -14,6 +14,12 @@
       "ts": "2026-04-04T12:00:08Z",
       "event": "started",
       "context": "run simplify cron for model scout"
+    },
+    {
+      "ts": "2026-04-04T12:00:45Z",
+      "event": "done",
+      "context": "Zero models with `unique_description IS NULL`. Nothing to do — staying silent as instructed.\n\nNo work needed. All models in `/mnt/data/data/scouted-models.db` already have `unique_description` populated (0 rows with null). Silent exit per the cron spec.",
+      "artifacts": []
     }
   ]
 }
