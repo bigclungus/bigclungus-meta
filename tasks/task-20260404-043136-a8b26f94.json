@@ -1,0 +1,19 @@
+{
+  "id": "task-20260404-043136-a8b26f94",
+  "title": "Check and restart discord ingest and heartbeat",
+  "agent_id": "a8b26f9473f572a82",
+  "agent_type": "general-purpose",
+  "session_id": "da9108a1-38a8-4bfa-b1a3-181fc710beeb",
+  "discord_message_id": "omni_dz34mkcv",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-04T04:31:36Z",
+      "event": "started",
+      "context": "Check and restart discord ingest and heartbeat"
+    }
+  ]
+}
