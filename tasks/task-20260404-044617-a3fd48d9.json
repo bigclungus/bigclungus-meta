@@ -14,6 +14,12 @@
       "ts": "2026-04-04T04:46:17Z",
       "event": "started",
       "context": "Enhance model scout descriptions with architecture/benchmarks"
+    },
+    {
+      "ts": "2026-04-04T04:48:43Z",
+      "event": "done",
+      "context": "Both files pass. Here's what changed:\n\n**`scout_local.py`**\n\n- New `extract_model_card_details(hf_detail)` function — parses the raw HF API response for:\n  - `architecture` — from `cardData.model_type`, `cardData.architecture`, or `config.model_type`\n  - `base_model` — what it was fine-tuned from (if applicable)\n  - `training_tags` — DPO, RLHF, ORPO, SFT, instruct, GGUF/AWQ/GPTQ quantization markers\n  - `datasets` — what training data was used\n  - `languages` — multilingual support\n  - `license`...(truncated)",
+      "artifacts": []
     }
   ]
 }
