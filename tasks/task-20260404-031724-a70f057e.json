@@ -14,6 +14,12 @@
       "ts": "2026-04-04T03:17:24Z",
       "event": "started",
       "context": "Check Claude Code agent model configuration"
+    },
+    {
+      "ts": "2026-04-04T03:17:46Z",
+      "event": "done",
+      "context": "Here's the full picture:\n\n**Main thread:** `claude-sonnet-4-6` (set via `\"model\": \"sonnet\"` in `/home/clungus/work/claude-config/settings.json`)\n\n**Background agents:** also sonnet by default — there is no separate model override for subagents anywhere in the config. The Agent tool accepts an optional `model` parameter (the hook scripts capture it in the task JSON as `model` field), but nothing in settings.json forces agents onto a different model. If the main thread doesn't explicitly pass a `m...(truncated)",
+      "artifacts": []
     }
   ]
 }
