@@ -1,0 +1,19 @@
+{
+  "id": "task-20260404-090343-a2488ab3",
+  "title": "test congress routing with flux thompson",
+  "agent_id": "a2488ab3ebae08df6",
+  "agent_type": "general-purpose",
+  "session_id": "da9108a1-38a8-4bfa-b1a3-181fc710beeb",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-04T09:03:43Z",
+      "event": "started",
+      "context": "test congress routing with flux thompson"
+    }
+  ]
+}
