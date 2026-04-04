@@ -1,0 +1,19 @@
+{
+  "id": "task-20260404-090153-ade3d43d",
+  "title": "verify together.ai key, test congress routing",
+  "agent_id": "ade3d43d0f33aab11",
+  "agent_type": "general-purpose",
+  "session_id": "da9108a1-38a8-4bfa-b1a3-181fc710beeb",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-04T09:01:53Z",
+      "event": "started",
+      "context": "verify together.ai key, test congress routing"
+    }
+  ]
+}
