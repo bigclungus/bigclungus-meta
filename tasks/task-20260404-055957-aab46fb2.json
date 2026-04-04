@@ -14,6 +14,12 @@
       "ts": "2026-04-04T05:59:57Z",
       "event": "started",
       "context": "Fix scout filter to exclude image editing models"
+    },
+    {
+      "ts": "2026-04-04T06:00:44Z",
+      "event": "done",
+      "context": "Looks good. Here's what changed in `/mnt/data/temporal-workflows/activities/scout_local.py`:\n\n**Pipeline tag set** (lines 46-47): added `image-editing` and `inpainting` as exact-match tags.\n\n**Tag substring set** (line 74): added `inpaint`, `image-edit`, `diffusion`, `outpaint` — so any pipeline tag containing these strings gets blocked even if it's not an exact match (e.g. `stable-diffusion-inpainting`).\n\n**Name regex** (lines 87-88): added `outpaint`, `img2img`, `image2image`, `pix2pix`, `cont...(truncated)",
+      "artifacts": []
     }
   ]
 }
