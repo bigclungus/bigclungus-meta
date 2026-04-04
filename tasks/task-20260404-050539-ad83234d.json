@@ -1,0 +1,19 @@
+{
+  "id": "task-20260404-050539-ad83234d",
+  "title": "Run model scout to pick a weird model",
+  "agent_id": "ad83234d140b78aaf",
+  "agent_type": "general-purpose",
+  "session_id": "da9108a1-38a8-4bfa-b1a3-181fc710beeb",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-04T05:05:39Z",
+      "event": "started",
+      "context": "Run model scout to pick a weird model"
+    }
+  ]
+}
