@@ -14,6 +14,12 @@
       "ts": "2026-04-04T05:54:34Z",
       "event": "started",
       "context": "Run model scout one more time for fun"
+    },
+    {
+      "ts": "2026-04-04T05:59:53Z",
+      "event": "done",
+      "context": "it posted `Qwen3.5-Omni-Offline-Demo` to congress-hall. workflow is now in the 24h vote loop. the run is live and working.\n\nHere's the summary:\n\n**What happened:**\n- There were already 3 running scout workflows from earlier today (all in vote loops or failed), plus some junk candidates in the DB (image models like wan2, Qianfan-OCR, Cohere transcribe) that slipped through the filter.\n- Fixed a gap in `_NON_TEXT_NAME_RE` — added `firered`, `image-edit`, `inpaint`, `upscal`, `img-gen`, etc. to cat...(truncated)",
+      "artifacts": []
     }
   ]
 }
