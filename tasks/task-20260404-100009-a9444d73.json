@@ -14,6 +14,12 @@
       "ts": "2026-04-04T10:00:09Z",
       "event": "started",
       "context": "run simplify cron for model scout"
+    },
+    {
+      "ts": "2026-04-04T10:02:41Z",
+      "event": "done",
+      "context": "Done. 8 models had `unique_description IS NULL` in `/mnt/data/data/scouted-models.db` — all 8 got descriptions generated via grok-3-mini and written back to the table. Discord notified with a summary.\n\nNotable: `Voxtral-4B-TTS-2603` is a TTS model — it'll get filtered by `_is_congress_model` when the scout tries to propose it for a congress session (matches `_NON_TEXT_NAME_RE` on \"voxtral\" and the Bonsai-8B-gguf is a quantized GGUF which will likely get flagged by training tags). The rest are el...(truncated)",
+      "artifacts": []
     }
   ]
 }
