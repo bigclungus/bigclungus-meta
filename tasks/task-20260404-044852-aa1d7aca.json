@@ -14,6 +14,12 @@
       "ts": "2026-04-04T04:48:52Z",
       "event": "started",
       "context": "Run model scout with enhanced descriptions"
+    },
+    {
+      "ts": "2026-04-04T04:50:58Z",
+      "event": "done",
+      "context": "Got it. The new workflow (`model-scout-manual-20260404-044946`) selected **Qianfan-OCR** and produced a solid enhanced description. The workflow is now in the voting phase for that model.\n\nHere's the summary:\n\n**Scout worker restarted** — loaded updated code with `extract_model_card_details` + enhanced `generate_model_description`.\n\n**New workflow started:** `model-scout-manual-20260404-044946`\n\n**Selected model:** `hf:baidu/Qianfan-OCR`\n\n**Enhanced Grok description (full):**\n> Qianfan-OCR, with...(truncated)",
+      "artifacts": []
     }
   ]
 }
