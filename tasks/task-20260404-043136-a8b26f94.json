@@ -14,6 +14,12 @@
       "ts": "2026-04-04T04:31:36Z",
       "event": "started",
       "context": "Check and restart discord ingest and heartbeat"
+    },
+    {
+      "ts": "2026-04-04T04:32:13Z",
+      "event": "done",
+      "context": "Here's the full picture:\n\n**discord-ingest.service** — has been failing on every timer run since at least yesterday. Root cause: `/mnt/data/scripts/discord_ingest_incremental.py` does not exist. The service unit references a script that was never created (or was deleted). The log shows the same `No such file or directory` error on every attempt going back many hours.\n\n**heartbeat.service** — does not exist at all. No service file, no timer, nothing with that name registered in systemd.\n\nTo fix d...(truncated)",
+      "artifacts": []
     }
   ]
 }
