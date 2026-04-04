@@ -14,6 +14,12 @@
       "ts": "2026-04-04T04:33:30Z",
       "event": "started",
       "context": "Check why ASR model passed text-only filter"
+    },
+    {
+      "ts": "2026-04-04T04:35:15Z",
+      "event": "done",
+      "context": "Pattern works correctly. The changes are solid. Here's what was found and fixed:\n\n---\n\n**Root cause — two independent failures that compounded:**\n\n1. **The trending API doesn't include `pipeline_tag`**. `_normalize_hf_models()` builds candidate dicts from the trending endpoint, which doesn't return `pipeline_tag`. So when `filter_candidates` / `_is_text_only()` ran, the candidate had `pipeline_tag = None`. The filter's first (most reliable) check is a no-op.\n\n2. **\"transcribe\" wasn't in the name...(truncated)",
+      "artifacts": []
     }
   ]
 }
