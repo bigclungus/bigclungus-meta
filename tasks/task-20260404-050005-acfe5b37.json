@@ -14,6 +14,12 @@
       "ts": "2026-04-04T05:00:04Z",
       "event": "started",
       "context": "Run simplify on recent code changes"
+    },
+    {
+      "ts": "2026-04-04T05:02:04Z",
+      "event": "done",
+      "context": "Both parse clean. Here's a summary of what was found and fixed:\n\n---\n\n**fixed (2 changes):**\n\n1. `/mnt/data/temporal-workflows/workflows/model_scout_wf.py` — removed the `_post_detail_rejected` boolean flag pattern. The post-detail non-text filter now just calls `continue` directly inside the `try` block (Python `continue` inside `try` targets the enclosing `while`, which is correct). Removed the now-dead `if _post_detail_rejected: continue` check below.\n\n2. `/mnt/data/temporal-workflows/activit...(truncated)",
+      "artifacts": []
     }
   ]
 }
