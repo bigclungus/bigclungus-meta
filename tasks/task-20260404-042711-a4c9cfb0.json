@@ -1,0 +1,19 @@
+{
+  "id": "task-20260404-042711-a4c9cfb0",
+  "title": "Debug why unique_description is null in model scout",
+  "agent_id": "a4c9cfb0e0844dbf6",
+  "agent_type": "general-purpose",
+  "session_id": "da9108a1-38a8-4bfa-b1a3-181fc710beeb",
+  "discord_message_id": "omni_o4kzi3pa",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-04T04:27:11Z",
+      "event": "started",
+      "context": "Debug why unique_description is null in model scout"
+    }
+  ]
+}
