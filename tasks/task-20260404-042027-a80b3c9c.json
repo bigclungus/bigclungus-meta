@@ -14,6 +14,12 @@
       "ts": "2026-04-04T04:20:27Z",
       "event": "started",
       "context": "Run model scout workflow with updated code"
+    },
+    {
+      "ts": "2026-04-04T04:23:49Z",
+      "event": "done",
+      "context": "Workflow ran successfully. Here's the summary:\n\n**Workflow ID:** `model-scout-manual-20260404-042240`\n**Status:** Running (blocked on 24h voting timer — expected behavior)\n\n**What happened:**\n- The worker had a stale process from before the `unique_description` column was added. The old in-memory code only accepted 6-7 args, causing the `db_insert_model() takes from 6 to 7 positional arguments but 8 were given` error. Killed and restarted the worker.\n- After restart, the workflow ran clean — fet...(truncated)",
+      "artifacts": []
     }
   ]
 }
