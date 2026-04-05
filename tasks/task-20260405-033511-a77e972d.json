@@ -14,6 +14,12 @@
       "ts": "2026-04-05T03:35:11Z",
       "event": "started",
       "context": "Forward crundle persona invoke"
+    },
+    {
+      "ts": "2026-04-05T03:35:18Z",
+      "event": "done",
+      "context": "Here is the full verbatim response from the persona invoke:\n\n```json\n{\n  \"ok\": true,\n  \"identity\": \"crundle\",\n  \"display_name\": \"Crundle\",\n  \"injected\": true\n}\n```\n\nThe request succeeded (`\"ok\": true`). The persona \"crundle\" (display name \"Crundle\") was invoked and the injection was confirmed. No Discord messages were posted.",
+      "artifacts": []
     }
   ]
 }
