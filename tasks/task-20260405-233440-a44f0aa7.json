@@ -1,0 +1,19 @@
+{
+  "id": "task-20260405-233440-a44f0aa7",
+  "title": "Heartbeat check for BigClungus",
+  "agent_id": "a44f0aa76b4a28178",
+  "agent_type": "general-purpose",
+  "session_id": "bbe4d04d-5929-4865-8179-390e5375b800",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-05T23:34:40Z",
+      "event": "started",
+      "context": "Heartbeat check for BigClungus"
+    }
+  ]
+}
