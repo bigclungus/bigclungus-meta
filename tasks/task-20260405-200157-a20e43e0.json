@@ -1,0 +1,19 @@
+{
+  "id": "task-20260405-200157-a20e43e0",
+  "title": "Startup checklist with inject report",
+  "agent_id": "a20e43e0d9ed2014c",
+  "agent_type": "general-purpose",
+  "session_id": "bbe4d04d-5929-4865-8179-390e5375b800",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-05T20:01:57Z",
+      "event": "started",
+      "context": "Startup checklist with inject report"
+    }
+  ]
+}
