@@ -1,0 +1,19 @@
+{
+  "id": "task-20260405-033544-a4150005",
+  "title": "Run Crundle persona and post to Discord",
+  "agent_id": "a4150005a8bd474da",
+  "agent_type": "general-purpose",
+  "session_id": "bbe4d04d-5929-4865-8179-390e5375b800",
+  "discord_message_id": "omni_286jtcih",
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-05T03:35:44Z",
+      "event": "started",
+      "context": "Run Crundle persona and post to Discord"
+    }
+  ]
+}
