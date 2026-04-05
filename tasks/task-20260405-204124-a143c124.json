@@ -1,0 +1,19 @@
+{
+  "id": "task-20260405-204124-a143c124",
+  "title": "Investigate and fix crashed graphiti container",
+  "agent_id": "a143c124b8ff085c2",
+  "agent_type": "general-purpose",
+  "session_id": "bbe4d04d-5929-4865-8179-390e5375b800",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-05T20:41:24Z",
+      "event": "started",
+      "context": "Investigate and fix crashed graphiti container"
+    }
+  ]
+}
