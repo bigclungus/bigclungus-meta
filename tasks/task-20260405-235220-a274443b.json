@@ -14,6 +14,12 @@
       "ts": "2026-04-05T23:52:20Z",
       "event": "started",
       "context": "Trigger second CongressWorkflow"
+    },
+    {
+      "ts": "2026-04-05T23:52:49Z",
+      "event": "done",
+      "context": "",
+      "artifacts": []
     }
   ]
 }
