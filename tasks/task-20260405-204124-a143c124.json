@@ -14,6 +14,12 @@
       "ts": "2026-04-05T20:41:24Z",
       "event": "started",
       "context": "Investigate and fix crashed graphiti container"
+    },
+    {
+      "ts": "2026-04-05T20:42:52Z",
+      "event": "done",
+      "context": "Findings posted successfully. Here is the full report:\n\n---\n\n**Crash Investigation: docker-graphiti-mcp-1**\n\n**Container:** `docker-graphiti-mcp-1` (image: `zepai/knowledge-graph-mcp:standalone`)\n**Status at investigation start:** `Exited (1)` — stopped ~18 hours ago (2026-04-05T02:22:03Z)\n\n**Root cause:**\nThe container did NOT crash due to a Python fatal error or OOM kill. Logs show it ran normally from March 23–28 with periodic non-fatal FalkorDB errors:\n- `Query timed out` — FalkorDB queries ...(truncated)",
+      "artifacts": []
     }
   ]
 }
