@@ -14,6 +14,12 @@
       "ts": "2026-04-05T03:05:10Z",
       "event": "started",
       "context": "Check giga-log and open tasks snapshot"
+    },
+    {
+      "ts": "2026-04-05T03:05:43Z",
+      "event": "done",
+      "context": "Startup checklist results:\n\n**1. Giga-log — Recent Interventions (last 3 entries, all from 2026-03-27):**\n\n- **wrong-congress-config** (suggestion): Passed `personas: [\"trump\"]` which fully replaced panel selection instead of augmenting it — resulted in a 1-person panel. Fix: don't pass `personas` for inclusion alongside normal seat selection; use full explicit roster or omit and rely on eligibility. Re-fired correctly as `congress-impeach-ibrahim-1774576563`.\n\n- **misidentified-model** (suggest...(truncated)",
+      "artifacts": []
     }
   ]
 }
