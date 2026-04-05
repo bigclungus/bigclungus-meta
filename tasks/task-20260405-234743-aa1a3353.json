@@ -1,0 +1,19 @@
+{
+  "id": "task-20260405-234743-aa1a3353",
+  "title": "Trigger CongressWorkflow via Temporal",
+  "agent_id": "aa1a3353a3a75db36",
+  "agent_type": "general-purpose",
+  "session_id": "bbe4d04d-5929-4865-8179-390e5375b800",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-05T23:47:43Z",
+      "event": "started",
+      "context": "Trigger CongressWorkflow via Temporal"
+    }
+  ]
+}
