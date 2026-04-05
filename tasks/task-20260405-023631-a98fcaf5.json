@@ -14,6 +14,12 @@
       "ts": "2026-04-05T02:36:31Z",
       "event": "started",
       "context": "Fix Tauri CI workflow and configs"
+    },
+    {
+      "ts": "2026-04-05T02:41:52Z",
+      "event": "done",
+      "context": "The investigation is complete. Here is the full report:\n\n---\n\n**What was broken:**\n\nAfter thorough investigation, no `/home/gigaclungus` references were found in any of the terminal viewer's active config files:\n\n- `/home/clungus/.config/systemd/user/terminal-server.service` — clean, no old paths\n- `/home/clungus/.config/systemd/user/giga-terminal.service` — clean\n- `/mnt/data/terminal/server.py` — clean (uses `/tmp/screenlog.txt`, `GIGA_TTYD_PORT=7683`, proxies to ttyd)\n- `/mnt/data/terminal/.e...(truncated)",
+      "artifacts": []
     }
   ]
 }
