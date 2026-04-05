@@ -1,0 +1,19 @@
+{
+  "id": "task-20260405-023631-a9dee4c9",
+  "title": "Fix terminal viewer path config",
+  "agent_id": "a9dee4c9a5c6a7aba",
+  "agent_type": "general-purpose",
+  "session_id": "bbe4d04d-5929-4865-8179-390e5375b800",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-05T02:36:31Z",
+      "event": "started",
+      "context": "Fix terminal viewer path config"
+    }
+  ]
+}
