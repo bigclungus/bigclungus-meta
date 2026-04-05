@@ -14,6 +14,12 @@
       "ts": "2026-04-05T03:35:44Z",
       "event": "started",
       "context": "Run Crundle persona and post to Discord"
+    },
+    {
+      "ts": "2026-04-05T03:36:11Z",
+      "event": "done",
+      "context": "Done. Here's the report:\n\n**Haiku generated:**\n> Ceiling too high here.\n> Crundle scrambles anyway.\n> Egg. Then back to this.\n\n**Discord post:** succeeded. Message ID `1490193296004354290` posted to channel `1485343472952148008`. The haiku is pure Crundle — declarative, slightly unsettling, ends on a non-sequitur and moves on. Exactly right.",
+      "artifacts": []
     }
   ]
 }
