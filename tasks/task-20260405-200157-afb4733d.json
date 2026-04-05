@@ -14,6 +14,12 @@
       "ts": "2026-04-05T20:01:57Z",
       "event": "started",
       "context": "Heartbeat + simplify catch-up run"
+    },
+    {
+      "ts": "2026-04-05T20:06:12Z",
+      "event": "done",
+      "context": "Summary injected successfully. Here's the full findings report:\n\n---\n\n**PART 1 — Heartbeat Ideation**\n\nSystem is clean: no failed services (all 30 running), no stale tasks, no journal errors in the past 2 hours.\n\n**Finding (MINOR — implemented + issue opened/closed):** `HistoryIngestWorkflow` was on a 1-minute Temporal schedule (`history-ingest-1m`) and scanning all 11,622+ JSONL files on every run, consistently finding 0 new messages in steady state. This ran 60x/hour unnecessarily.\n\nFix: Updat...(truncated)",
+      "artifacts": []
     }
   ]
 }
