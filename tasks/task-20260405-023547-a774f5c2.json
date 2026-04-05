@@ -14,6 +14,12 @@
       "ts": "2026-04-05T02:35:47Z",
       "event": "started",
       "context": "Fix terminal viewer paths"
+    },
+    {
+      "ts": "2026-04-05T02:37:53Z",
+      "event": "done",
+      "context": "Both services are running cleanly. Here is the summary:\n\n---\n\n**Investigation findings:**\n\nTwo issues found — both service files had stale paths/users from before the home directory move:\n\n1. **`giga-terminal.service`**: `ExecStart` used `sudo -u gigaclungus screen -x -S gigaclungus`, which tried to attach to a screen socket owned by the `gigaclungus` unix user (`/run/screen/S-gigaclungus`). After the home move, the `gigaclungus` screen session is now owned by `clungus` (`/run/screen/S-clungus`)...(truncated)",
+      "artifacts": []
     }
   ]
 }
