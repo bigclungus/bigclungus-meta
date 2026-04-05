@@ -1,0 +1,19 @@
+{
+  "id": "task-20260405-235220-a274443b",
+  "title": "Trigger second CongressWorkflow",
+  "agent_id": "a274443bfd5035f1b",
+  "agent_type": "general-purpose",
+  "session_id": "bbe4d04d-5929-4865-8179-390e5375b800",
+  "discord_message_id": "omni_k214wzl3",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-05T23:52:20Z",
+      "event": "started",
+      "context": "Trigger second CongressWorkflow"
+    }
+  ]
+}
