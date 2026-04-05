@@ -1,0 +1,19 @@
+{
+  "id": "task-20260405-030510-a8ae400b",
+  "title": "Check giga-log and open tasks snapshot",
+  "agent_id": "a8ae400bd212cbad8",
+  "agent_type": "general-purpose",
+  "session_id": "bbe4d04d-5929-4865-8179-390e5375b800",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-05T03:05:10Z",
+      "event": "started",
+      "context": "Check giga-log and open tasks snapshot"
+    }
+  ]
+}
