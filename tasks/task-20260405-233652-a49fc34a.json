@@ -1,0 +1,19 @@
+{
+  "id": "task-20260405-233652-a49fc34a",
+  "title": "Check task count accuracy",
+  "agent_id": "a49fc34a0e15079d0",
+  "agent_type": "general-purpose",
+  "session_id": "bbe4d04d-5929-4865-8179-390e5375b800",
+  "discord_message_id": "omni_7z9devmk",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-05T23:36:52Z",
+      "event": "started",
+      "context": "Check task count accuracy"
+    }
+  ]
+}
