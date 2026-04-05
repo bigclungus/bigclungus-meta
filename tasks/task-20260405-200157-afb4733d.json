@@ -1,0 +1,19 @@
+{
+  "id": "task-20260405-200157-afb4733d",
+  "title": "Heartbeat + simplify catch-up run",
+  "agent_id": "afb4733d0e96bf3fb",
+  "agent_type": "general-purpose",
+  "session_id": "bbe4d04d-5929-4865-8179-390e5375b800",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-05T20:01:57Z",
+      "event": "started",
+      "context": "Heartbeat + simplify catch-up run"
+    }
+  ]
+}
