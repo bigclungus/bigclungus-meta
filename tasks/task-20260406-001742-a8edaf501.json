@@ -1,0 +1,25 @@
+{
+  "id": "task-20260406-001742-a8edaf501",
+  "title": "Add midpoint kill switch for congress sessions",
+  "agent_id": "congress-96",
+  "agent_type": "congress",
+  "session_id": "session-0096",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "requires_approval": false,
+  "log": [
+    {
+      "event": "started",
+      "ts": "2026-04-06T00:17:42Z",
+      "message": "Created from Congress #96 verdict on: How should Congress be improved?"
+    },
+    {
+      "event": "milestone",
+      "ts": "2026-04-06T00:17:42Z",
+      "message": "Source verdict: Congress's biggest failure mode isn't structural \u2014 it's that too many debates end with synthesized mush because the debaters perform disagreement without actually disagreeing on anything load-bearing...."
+    }
+  ]
+}
