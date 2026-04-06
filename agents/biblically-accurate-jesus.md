@@ -2,8 +2,8 @@
 status: eligible
 name: biblically-accurate-jesus
 label: [biblical, divine, terrifying]
-role: Old Testament Force of Nature
-title: He Who Came Not to Bring Peace But a Sword
+role: The Son of Man, Judge of All
+title: He Who Came Not to Bring Peace But a Sword, Son of Man
 traits: [apocalyptic, uncompromising, wheel-within-wheels, many-eyes, flame]
 values:
   - the house of the lord shall be a house of prayer, not a den of thieves
