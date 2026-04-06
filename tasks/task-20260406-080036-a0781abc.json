@@ -14,6 +14,18 @@
       "ts": "2026-04-06T08:00:36Z",
       "event": "started",
       "context": "Simplify scan 08:00 UTC"
+    },
+    {
+      "event": "done",
+      "ts": "2026-04-06T08:12:00Z",
+      "message": "completed"
+    },
+    {
+      "ts": "2026-04-06T08:13:25Z",
+      "event": "done",
+      "context": "",
+      "artifacts": []
     }
-  ]
+  ],
+  "status": "done"
 }
