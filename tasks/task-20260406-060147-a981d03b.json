@@ -14,6 +14,12 @@
       "ts": "2026-04-06T06:01:47Z",
       "event": "started",
       "context": "Check and fix uncommitted changes"
+    },
+    {
+      "ts": "2026-04-06T06:02:37Z",
+      "event": "done",
+      "context": "Here is my analysis and what I did:\n\n**1. `bash-intercept.sh` -- REVERTED (was sabataged)**\n\nThe hook was reduced to just `#!/bin/bash` followed by `exit 0`. This completely disabled the `PreToolUse` hook that blocks Bash calls on the main thread and forces delegation to background agents. Someone (or a confused agent) neutralized it. I restored it to the original version which:\n- Allows Bash freely inside subagents (when `agent_id` is present)\n- Blocks Bash on the main thread with exit code 2 a...(truncated)",
+      "artifacts": []
     }
   ]
 }
