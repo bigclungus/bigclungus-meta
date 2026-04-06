@@ -25,6 +25,12 @@
       "event": "milestone",
       "ts": "2026-04-05T23:55:06.827563Z",
       "message": "Starting distilled vs full-size model benchmark"
+    },
+    {
+      "event": "done",
+      "ts": "2026-04-06T00:09:06.022284Z",
+      "message": "Benchmark complete: 5 models x 3 workloads = 15 tests all passed. Aggregates: Full models (Grok 4, Llama-3.3-70B) avg score 8.2/10, avg latency 13.6s, avg cost $0.00399/run. Distilled models (Grok 3 mini, Mixtral-8x7B, gpt-4o-mini) avg score 7.8/10, avg latency 5.5s, avg cost $0.000166/run. Best value: Mixtral-8x7B (7.7 score, 2.8s latency, $0.000078/run). Best quality: Grok 4 (8.3 avg score, best at all workloads but 24x cost). Distilled models achieve 95% of full model quality at 4% of cost. Results saved to /mnt/data/benchmark/benchmark_results.json"
     }
-  ]
+  ],
+  "status": "done"
 }
