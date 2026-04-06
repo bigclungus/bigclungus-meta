@@ -14,6 +14,12 @@
       "ts": "2026-04-06T10:39:21Z",
       "event": "started",
       "context": "Start NightOwl workflow"
+    },
+    {
+      "ts": "2026-04-06T10:39:40Z",
+      "event": "done",
+      "context": "The NightOwl workflow was triggered successfully. Here is the full output:\n\n```\n[nightowl] Started NightOwlWorkflow (id=nightowl-today, run_id=019d6260-5c29-765b-ab21-48707d6aba6c)\n[nightowl] Queued task: 'test'\n```\n\nThe script at `/mnt/data/scripts/nightowl_queue.py` exists and is executable. It started the NightOwlWorkflow via Temporal with workflow ID `nightowl-today` and queueed the task `test`. The workflow run ID is `019d6260-5c29-765b-ab21-48707d6aba6c`.",
+      "artifacts": []
     }
   ]
 }
