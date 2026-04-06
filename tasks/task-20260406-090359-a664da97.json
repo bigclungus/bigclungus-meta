@@ -20,6 +20,12 @@
       "event": "done",
       "context": "Good. I've now reviewed all the diffs and the key files. Here are my findings:\n\n**bigclungus-meta diff (HEAD~3)**:\n\n1. **watchdog-stale-tasks.sh** -- The asyncio heredoc fix (line 273: `asyncio.run(asyncio.wait_for(main(), timeout=15))`) was already applied correctly. The new congress stall check section (the `timeout 15 python3 -` heredoc block at lines 138-171) looks correct.\n\n2. **session_wf.py line 771 change** -- Previously there was dead code:\n```python\nverdict = _trim_synthesis(synthesis_...(truncated)",
       "artifacts": []
+    },
+    {
+      "event": "done",
+      "ts": "2026-04-06T09:13:00Z",
+      "message": "completed"
     }
-  ]
+  ],
+  "status": "done"
 }
