@@ -1,0 +1,19 @@
+{
+  "id": "task-20260406-024707-aeb2f5e2",
+  "title": "Restart temporal worker",
+  "agent_id": "aeb2f5e28c3dc634e",
+  "agent_type": "general-purpose",
+  "session_id": "20e0bfcf-3e1d-4208-9cde-479b9b5c174c",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-06T02:47:07Z",
+      "event": "started",
+      "context": "Restart temporal worker"
+    }
+  ]
+}
