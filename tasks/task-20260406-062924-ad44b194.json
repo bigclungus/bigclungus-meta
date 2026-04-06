@@ -1,0 +1,19 @@
+{
+  "id": "task-20260406-062924-ad44b194",
+  "title": "Run clean_tasks and check_simplify",
+  "agent_id": "ad44b194c4da2bbcf",
+  "agent_type": "general-purpose",
+  "session_id": "bbe4d04d-5929-4865-8179-390e5375b800",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-06T06:29:24Z",
+      "event": "started",
+      "context": "Run clean_tasks and check_simplify"
+    }
+  ]
+}
