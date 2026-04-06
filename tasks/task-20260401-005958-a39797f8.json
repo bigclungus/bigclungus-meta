@@ -18,8 +18,14 @@
     {
       "ts": "2026-04-01T01:00:19Z",
       "event": "done",
-      "context": "The errors are all coming from `openai/_base_client.py` — this is the known OpenAI noise (quota/rate limit errors from the OpenAI client library). The grep filter correctly catches `_base_client` but the first grep missed it because those lines reference the stack frame above `_base_client.py`. The errors are all originating from the OpenAI client stack, same pattern as the known noise.\n\n**All clear.** Summary:\n\n- No failed services (0 loaded units)\n- temporal-worker: active\n- Errors in temporal...(truncated)",
+      "context": "The errors are all coming from `openai/_base_client.py` \u2014 this is the known OpenAI noise (quota/rate limit errors from the OpenAI client library). The grep filter correctly catches `_base_client` but the first grep missed it because those lines reference the stack frame above `_base_client.py`. The errors are all originating from the OpenAI client stack, same pattern as the known noise.\n\n**All clear.** Summary:\n\n- No failed services (0 loaded units)\n- temporal-worker: active\n- Errors in temporal...(truncated)",
       "artifacts": []
+    },
+    {
+      "event": "done",
+      "ts": "2026-04-06T06:27:00Z",
+      "message": "Auto-resolved: agent completed"
     }
-  ]
+  ],
+  "status": "done"
 }

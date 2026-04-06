@@ -18,8 +18,14 @@
     {
       "ts": "2026-04-01T02:00:29Z",
       "event": "done",
-      "context": "All clear.\n\n- No failed services\n- No omni-gateway errors\n- Disk at 10% used (8.8G of 98G) — well within limits\n- Temporal-worker errors are all from `openai/_base_client.py` (the same quota/rate-limit path already excluded by the filter); the one non-filtered log line confirms healthcheck workflow is running fine with all sites returning 200/302\n- Healthcheck at 01:51 UTC: clung.us, labs.clung.us, temporal.clung.us, terminal.clung.us all OK",
+      "context": "All clear.\n\n- No failed services\n- No omni-gateway errors\n- Disk at 10% used (8.8G of 98G) \u2014 well within limits\n- Temporal-worker errors are all from `openai/_base_client.py` (the same quota/rate-limit path already excluded by the filter); the one non-filtered log line confirms healthcheck workflow is running fine with all sites returning 200/302\n- Healthcheck at 01:51 UTC: clung.us, labs.clung.us, temporal.clung.us, terminal.clung.us all OK",
       "artifacts": []
+    },
+    {
+      "event": "done",
+      "ts": "2026-04-06T06:27:00Z",
+      "message": "Auto-resolved: agent completed"
     }
-  ]
+  ],
+  "status": "done"
 }

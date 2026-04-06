@@ -18,8 +18,14 @@
     {
       "ts": "2026-04-01T03:10:10Z",
       "event": "done",
-      "context": "All clear.\n\n- No failed services\n- No new errors in logs\n- Disk: 10% used (8.8G / 98G) — well under threshold",
+      "context": "All clear.\n\n- No failed services\n- No new errors in logs\n- Disk: 10% used (8.8G / 98G) \u2014 well under threshold",
       "artifacts": []
+    },
+    {
+      "event": "done",
+      "ts": "2026-04-06T06:27:00Z",
+      "message": "Auto-resolved: agent completed"
     }
-  ]
+  ],
+  "status": "done"
 }

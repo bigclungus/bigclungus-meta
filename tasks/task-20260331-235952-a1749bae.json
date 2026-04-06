@@ -18,8 +18,14 @@
     {
       "ts": "2026-04-01T00:00:13Z",
       "event": "done",
-      "context": "All clear. Here's the summary:\n\n**No action needed.**\n\n- **Failed services:** None (0 loaded units listed)\n- **temporal-worker:** Active\n- **Errors:** The recurring `raise self._make_status_error_from_response` errors in temporal-worker trace back to `openai/_base_client.py` — these are OpenAI API errors (quota/rate limit), the same known noise the filter is designed to catch. The grep exclusion for `openai` missed them only because they appear on the traceback line rather than the message line....(truncated)",
+      "context": "All clear. Here's the summary:\n\n**No action needed.**\n\n- **Failed services:** None (0 loaded units listed)\n- **temporal-worker:** Active\n- **Errors:** The recurring `raise self._make_status_error_from_response` errors in temporal-worker trace back to `openai/_base_client.py` \u2014 these are OpenAI API errors (quota/rate limit), the same known noise the filter is designed to catch. The grep exclusion for `openai` missed them only because they appear on the traceback line rather than the message line....(truncated)",
       "artifacts": []
+    },
+    {
+      "event": "done",
+      "ts": "2026-04-06T06:27:00Z",
+      "message": "Auto-resolved: agent completed"
     }
-  ]
+  ],
+  "status": "done"
 }

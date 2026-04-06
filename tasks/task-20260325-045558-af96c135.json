@@ -20,6 +20,12 @@
       "event": "done",
       "context": "All clear:\n\n- **Failed services:** 0 (none)\n- **FalkorDB/Redis:** PONG\n\nEverything is healthy. No Discord notification sent.",
       "artifacts": []
+    },
+    {
+      "event": "done",
+      "ts": "2026-04-06T06:27:00Z",
+      "message": "Auto-resolved: agent completed"
     }
-  ]
+  ],
+  "status": "done"
 }

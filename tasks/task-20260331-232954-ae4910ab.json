@@ -18,8 +18,14 @@
     {
       "ts": "2026-03-31T23:30:10Z",
       "event": "done",
-      "context": "**Needs attention:**\n\n**HistoryIngestWorkflow failing continuously** — `run_history_ingest` activity has been failing every minute for the entire 30-min window. The error is `raise self._make_status_error_from_response(err.response)` which is likely an API status error (not OpenAI quota — that's filtered). This matches GitHub issue #133 (OpenAI quota exhausted for history-ingest embeddings), so it may be the same root cause just surfacing differently. Worth verifying whether this is actually the...(truncated)",
+      "context": "**Needs attention:**\n\n**HistoryIngestWorkflow failing continuously** \u2014 `run_history_ingest` activity has been failing every minute for the entire 30-min window. The error is `raise self._make_status_error_from_response(err.response)` which is likely an API status error (not OpenAI quota \u2014 that's filtered). This matches GitHub issue #133 (OpenAI quota exhausted for history-ingest embeddings), so it may be the same root cause just surfacing differently. Worth verifying whether this is actually the...(truncated)",
       "artifacts": []
+    },
+    {
+      "event": "done",
+      "ts": "2026-04-06T06:27:00Z",
+      "message": "Auto-resolved: agent completed"
     }
-  ]
+  ],
+  "status": "done"
 }
