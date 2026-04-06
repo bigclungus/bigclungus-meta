@@ -1,0 +1,19 @@
+{
+  "id": "task-20260406-001342-a09d8682",
+  "title": "Trigger CongressWorkflow - improve",
+  "agent_id": "a09d8682e02a27809",
+  "agent_type": "general-purpose",
+  "session_id": "bbe4d04d-5929-4865-8179-390e5375b800",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-06T00:13:42Z",
+      "event": "started",
+      "context": "Trigger CongressWorkflow - improve"
+    }
+  ]
+}
