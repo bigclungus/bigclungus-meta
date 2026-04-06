@@ -1,0 +1,19 @@
+{
+  "id": "task-20260406-190841-a06213e2",
+  "title": "Run startup checklist directly",
+  "agent_id": "a06213e2bafb8045e",
+  "agent_type": "general-purpose",
+  "session_id": "e2c55dd2-233f-4acc-942f-056505a95e08",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-06T19:08:41Z",
+      "event": "started",
+      "context": "Run startup checklist directly"
+    }
+  ]
+}
