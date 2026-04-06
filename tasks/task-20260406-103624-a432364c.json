@@ -1,0 +1,19 @@
+{
+  "id": "task-20260406-103624-a432364c",
+  "title": "Check NightOwl schedule",
+  "agent_id": "a432364cf6f412bff",
+  "agent_type": "general-purpose",
+  "session_id": "bbe4d04d-5929-4865-8179-390e5375b800",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-06T10:36:24Z",
+      "event": "started",
+      "context": "Check NightOwl schedule"
+    }
+  ]
+}
