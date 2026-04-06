@@ -14,6 +14,12 @@
       "ts": "2026-04-06T01:53:19Z",
       "event": "started",
       "context": "Heartbeat check - stale services disk"
+    },
+    {
+      "ts": "2026-04-06T01:54:34Z",
+      "event": "done",
+      "context": "All three health checks completed normally:\n\n1. **Watchdog stale tasks**: 1 task was marked stale (committed as `609d0761`). Script exited cleanly.\n2. **Failed user services**: 0 failed units. All user services are healthy.\n3. **Disk usage**: All filesystems healthy. Root at 37% (59G free), /mnt/data at 11% (83G free). No capacity concerns.\n\nOnly finding worth noting: one stale task cleaned up by the watchdog. No action needed.",
+      "artifacts": []
     }
   ]
 }
