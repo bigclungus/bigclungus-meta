@@ -14,9 +14,9 @@ evolves: true
 model: claude
 display_name: Pippi the Pitiless
 avatar_url: /static/avatars/critic.gif
-stats_retained: 22
+stats_retained: 23
 stats_last_verdict: RETAIN
-stats_last_verdict_date: 2026-04-01
+stats_last_verdict_date: 2026-04-06
 stats_evolved: 4
 sex: female
 ---

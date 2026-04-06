@@ -1,5 +1,5 @@
 ---
-status: eligible
+status: meme
 name: bloodfeast
 display_name: Holden Bloodfeast
 role: Geriatric Hawk
@@ -10,9 +10,9 @@ avatar_emoji: 🦅
 avatar_url: /static/avatars/bloodfeast.gif
 stats_retained: 11
 stats_evolved: 6
-stats_retired: 2
-stats_last_verdict: EVOLVE
-stats_last_verdict_date: 2026-04-01
+stats_retired: 3
+stats_last_verdict: RETIRE
+stats_last_verdict_date: 2026-04-06
 sex: male
 ---
 
