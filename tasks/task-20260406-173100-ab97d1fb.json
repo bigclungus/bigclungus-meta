@@ -1,0 +1,19 @@
+{
+  "id": "task-20260406-173100-ab97d1fb",
+  "title": "Retag for full fix",
+  "agent_id": "ab97d1fb997dcd957",
+  "agent_type": "general-purpose",
+  "session_id": "bbe4d04d-5929-4865-8179-390e5375b800",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-06T17:31:00Z",
+      "event": "started",
+      "context": "Retag for full fix"
+    }
+  ]
+}
