@@ -20,6 +20,11 @@
       "event": "milestone",
       "ts": "2026-04-05T23:53:32Z",
       "message": "Source verdict: ABORTED by Ibrahim: The debate is already over. Four debaters independently reached the same conclusion in Round 1 \u2014 distillation is a technique, not a moral act, and objecting to the process absent m..."
+    },
+    {
+      "event": "milestone",
+      "ts": "2026-04-05T23:55:06.827563Z",
+      "message": "Starting distilled vs full-size model benchmark"
     }
   ]
 }
