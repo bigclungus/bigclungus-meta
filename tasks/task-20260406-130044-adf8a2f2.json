@@ -20,6 +20,12 @@
       "event": "done",
       "context": "",
       "artifacts": []
+    },
+    {
+      "event": "done",
+      "ts": "2026-04-06T13:01:44Z",
+      "message": "completed"
     }
-  ]
+  ],
+  "status": "done"
 }
