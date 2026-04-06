@@ -14,6 +14,12 @@
       "ts": "2026-04-06T18:29:59Z",
       "event": "started",
       "context": "Check gigaclungus service"
+    },
+    {
+      "ts": "2026-04-06T18:30:48Z",
+      "event": "done",
+      "context": "Here are the findings.\n\n---\n\n**Services are listed/tracked in two main places:**\n\n### 1. Backend: Service allowlist and status API\n\n**File:** `/mnt/data/clunger/src/index.ts` (lines 763-851)\n\nThe `COCKPIT_SERVICES` array (line 764-773) defines the hardcoded list of systemd services tracked by the cockpit dashboard:\n\n```typescript\nconst COCKPIT_SERVICES = [\n  \"claude-bot.service\",\n  \"clunger.service\",\n  \"cloudflared.service\",\n  \"omni-gateway.service\",\n  \"terminal-server.service\",\n  \"temporal.serv...(truncated)",
+      "artifacts": []
     }
   ]
 }
