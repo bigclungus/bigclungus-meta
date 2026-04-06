@@ -18,8 +18,14 @@
     {
       "ts": "2026-03-26T13:02:02Z",
       "event": "done",
-      "context": "Clean — `CLUNGER_BASE_URL` is properly centralized in constants.py and used consistently. No further cleanup needed in temporal-workflows.\n\nDone. Here's a summary of what was done:\n\n**Secret scans:** Both repos came back clean — no secrets detected in recent 5 commits.\n\n**Cleanup applied (hello-world/grazing.html):**\n- `Math.sqrt(2)` was being computed inline as local variables in two separate functions (warthog driver movement and local player movement). Extracted to a module-level constant `DI...(truncated)",
+      "context": "Clean \u2014 `CLUNGER_BASE_URL` is properly centralized in constants.py and used consistently. No further cleanup needed in temporal-workflows.\n\nDone. Here's a summary of what was done:\n\n**Secret scans:** Both repos came back clean \u2014 no secrets detected in recent 5 commits.\n\n**Cleanup applied (hello-world/grazing.html):**\n- `Math.sqrt(2)` was being computed inline as local variables in two separate functions (warthog driver movement and local player movement). Extracted to a module-level constant `DI...(truncated)",
       "artifacts": []
+    },
+    {
+      "event": "done",
+      "ts": "2026-04-06T10:14:13Z",
+      "message": "Marked done retroactively by fix-all-simplify-tasks"
     }
-  ]
+  ],
+  "status": "done"
 }

@@ -20,6 +20,12 @@
       "event": "done",
       "context": "Worker restarted cleanly. No secrets found, no hello-world changes needed. Here's what was done:\n\n**Changes made** (`/mnt/data/temporal-workflows`):\n- `worker.py`: removed unused `MAIN_CHANNEL_ID` import from `activities.constants` (imported but never referenced in the file)\n- `workflows/congress_wf.py`: removed unused `MAX_DEBATERS` import from `activities.congress_act` (only appeared in a code comment, never used in executable code)\n\nCommitted as `simplify: remove unused MAIN_CHANNEL_ID import...(truncated)",
       "artifacts": []
+    },
+    {
+      "event": "done",
+      "ts": "2026-04-06T10:14:13Z",
+      "message": "Marked done retroactively by fix-all-simplify-tasks"
     }
-  ]
+  ],
+  "status": "done"
 }

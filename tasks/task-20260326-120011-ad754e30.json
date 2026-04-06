@@ -18,8 +18,14 @@
     {
       "ts": "2026-03-26T12:02:08Z",
       "event": "done",
-      "context": "The clunger repo is separate from hello-world and temporal-workflows — it's outside scope. The cleanup is done.\n\n**Summary:**\n\n- **Secret scan**: The `check-secrets.sh` script requires being run from within a git repo — no secrets found.\n- **Removed 2 unused imports** from `/mnt/data/temporal-workflows/activities/congress_act.py`: `GetSessionRequest` and `ListIdentitiesRequest` were imported from the protobuf stubs but never referenced anywhere in the file.\n- **Committed**: `simplify: remove unu...(truncated)",
+      "context": "The clunger repo is separate from hello-world and temporal-workflows \u2014 it's outside scope. The cleanup is done.\n\n**Summary:**\n\n- **Secret scan**: The `check-secrets.sh` script requires being run from within a git repo \u2014 no secrets found.\n- **Removed 2 unused imports** from `/mnt/data/temporal-workflows/activities/congress_act.py`: `GetSessionRequest` and `ListIdentitiesRequest` were imported from the protobuf stubs but never referenced anywhere in the file.\n- **Committed**: `simplify: remove unu...(truncated)",
       "artifacts": []
+    },
+    {
+      "event": "done",
+      "ts": "2026-04-06T10:14:13Z",
+      "message": "Marked done retroactively by fix-all-simplify-tasks"
     }
-  ]
+  ],
+  "status": "done"
 }

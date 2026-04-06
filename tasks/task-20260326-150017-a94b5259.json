@@ -18,8 +18,14 @@
     {
       "ts": "2026-03-26T15:02:26Z",
       "event": "done",
-      "context": "No service restart needed for a comment-only change. Scan complete — no secrets found, one stale comment cleaned up (reference to removed `MAX_DEBATERS` constant in `congress_wf.py`), no real bugs or service restarts required.",
+      "context": "No service restart needed for a comment-only change. Scan complete \u2014 no secrets found, one stale comment cleaned up (reference to removed `MAX_DEBATERS` constant in `congress_wf.py`), no real bugs or service restarts required.",
       "artifacts": []
+    },
+    {
+      "event": "done",
+      "ts": "2026-04-06T10:14:13Z",
+      "message": "Marked done retroactively by fix-all-simplify-tasks"
     }
-  ]
+  ],
+  "status": "done"
 }

@@ -20,6 +20,12 @@
       "event": "done",
       "context": "",
       "artifacts": []
+    },
+    {
+      "event": "done",
+      "ts": "2026-04-06T10:14:13Z",
+      "message": "Marked done retroactively by fix-all-simplify-tasks"
     }
-  ]
+  ],
+  "status": "done"
 }

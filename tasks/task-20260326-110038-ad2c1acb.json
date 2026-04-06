@@ -18,8 +18,14 @@
     {
       "ts": "2026-03-26T11:01:49Z",
       "event": "done",
-      "context": "Done. Here's the summary:\n\n**Secret scan:** Clean — no secrets detected in either repo.\n\n**Changes applied:**\n- `/mnt/data/temporal-workflows/activities/congress_act.py` — removed dead `import shutil` (imported but never called anywhere in the file). Committed as `simplify: remove unused shutil import from congress_act.py` and pushed.\n\n**No service restart needed** (no changes to hello-world; temporal-worker change is a dead import removal, no runtime behavior affected).\n\n**hello-world:** Nothin...(truncated)",
+      "context": "Done. Here's the summary:\n\n**Secret scan:** Clean \u2014 no secrets detected in either repo.\n\n**Changes applied:**\n- `/mnt/data/temporal-workflows/activities/congress_act.py` \u2014 removed dead `import shutil` (imported but never called anywhere in the file). Committed as `simplify: remove unused shutil import from congress_act.py` and pushed.\n\n**No service restart needed** (no changes to hello-world; temporal-worker change is a dead import removal, no runtime behavior affected).\n\n**hello-world:** Nothin...(truncated)",
       "artifacts": []
+    },
+    {
+      "event": "done",
+      "ts": "2026-04-06T10:14:13Z",
+      "message": "Marked done retroactively by fix-all-simplify-tasks"
     }
-  ]
+  ],
+  "status": "done"
 }
