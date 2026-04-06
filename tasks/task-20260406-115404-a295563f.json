@@ -1,0 +1,19 @@
+{
+  "id": "task-20260406-115404-a295563f",
+  "title": "Simplify scan 12:00 UTC",
+  "agent_id": "a295563ff3b52c41b",
+  "agent_type": "general-purpose",
+  "session_id": "bbe4d04d-5929-4865-8179-390e5375b800",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-06T11:54:04Z",
+      "event": "started",
+      "context": "Simplify scan 12:00 UTC"
+    }
+  ]
+}
