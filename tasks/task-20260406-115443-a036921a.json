@@ -1,0 +1,19 @@
+{
+  "id": "task-20260406-115443-a036921a",
+  "title": "Quick timeline check",
+  "agent_id": "a036921a0f5d7740b",
+  "agent_type": "general-purpose",
+  "session_id": "bbe4d04d-5929-4865-8179-390e5375b800",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-06T11:54:43Z",
+      "event": "started",
+      "context": "Quick timeline check"
+    }
+  ]
+}
