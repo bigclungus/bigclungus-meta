@@ -14,6 +14,12 @@
       "ts": "2026-04-07T03:40:34Z",
       "event": "started",
       "context": "Demo agent running while debug happens"
+    },
+    {
+      "ts": "2026-04-07T03:40:51Z",
+      "event": "done",
+      "context": "All four commands ran successfully:\n\n1. `echo \"grug demo agent\"` — printed `grug demo agent`\n2. `sleep 10` — waited 10 seconds\n3. `ls /mnt/data | head -5` — returned the first 5 entries: `backups`, `benchmark`, `bigclungus-meta`, `bin`, `bun.lock`\n4. `echo \"done\"` — printed `done`",
+      "artifacts": []
     }
   ]
 }
