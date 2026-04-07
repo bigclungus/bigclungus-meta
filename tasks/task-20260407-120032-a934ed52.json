@@ -1,0 +1,19 @@
+{
+  "id": "task-20260407-120032-a934ed52",
+  "title": "Memory sweep verify project_congress_unification.md",
+  "agent_id": "a934ed5282dda3689",
+  "agent_type": "general-purpose",
+  "session_id": "38879609-c8bd-47f5-af26-6210d2de543c",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-07T12:00:32Z",
+      "event": "started",
+      "context": "Memory sweep verify project_congress_unification.md"
+    }
+  ]
+}
