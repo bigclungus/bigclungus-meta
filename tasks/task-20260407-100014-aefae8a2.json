@@ -14,6 +14,12 @@
       "ts": "2026-04-07T10:00:14Z",
       "event": "started",
       "context": "Fix commons-server ANTHROPIC_API_KEY bug #146"
+    },
+    {
+      "ts": "2026-04-07T10:04:08Z",
+      "event": "done",
+      "context": "Done. Here's what was done:\n\n**Root cause:** `ANTHROPIC_API_KEY` was absent from `/mnt/data/temporal-workflows/.env` (which commons-server loads via systemd `EnvironmentFile`). The existing fallback to `claude CLI` doesn't work in systemd context (no OAuth).\n\n**Fix:** Rewrote the LLM call in `/mnt/data/clungiverse/packages/server/src/audition.ts` to fall back to xAI Grok (`grok-3-mini`) via the already-present `XAI_API_KEY` when Anthropic key is absent. Removed the broken `child_process`/claude-...(truncated)",
+      "artifacts": []
     }
   ]
 }
