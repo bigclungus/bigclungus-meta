@@ -14,6 +14,12 @@
       "ts": "2026-04-07T03:07:12Z",
       "event": "started",
       "context": "Diagnose clungiverse down"
+    },
+    {
+      "ts": "2026-04-07T03:09:24Z",
+      "event": "done",
+      "context": "Fixed. Here's what was wrong and what was done:\n\n**Root cause:** The clungiverse game client (`main.js`) was missing from `/mnt/data/hello-world/static/clungiverse/`. The HTML page loaded fine (200), but the browser would immediately fail to load the 1.2MB game bundle, leaving users with a blank canvas.\n\n**Why it was missing:** The build script at `/mnt/data/clungiverse-client-v2/build.sh` compiles `src/main.ts` → `static/clungiverse/main.js` using Bun. It had never been run (or the output was l...(truncated)",
+      "artifacts": []
     }
   ]
 }
