@@ -14,6 +14,12 @@
       "ts": "2026-04-07T04:47:58Z",
       "event": "started",
       "context": "Make subagent grid two columns"
+    },
+    {
+      "ts": "2026-04-07T04:49:37Z",
+      "event": "done",
+      "context": "Done. Here's what changed in `/mnt/data/terminal/server.py`:\n\n**`#agents-list`** — switched from `display: flex; flex-direction: column` to `display: grid; grid-template-columns: 1fr 1fr`, with `align-content: start` so cards pack to the top rather than stretching to fill the container.\n\n**`.sa-card`** — replaced `flex-shrink: 0` with `min-width: 0`, which is the correct property for grid children to prevent overflow blowout (text-overflow/ellipsis on `.sa-name` still works).\n\n**`.sa-output`** —...(truncated)",
+      "artifacts": []
     }
   ]
 }
