@@ -14,6 +14,12 @@
       "ts": "2026-04-07T03:05:54Z",
       "event": "started",
       "context": "Close unclosed task file"
+    },
+    {
+      "ts": "2026-04-07T03:06:01Z",
+      "event": "done",
+      "context": "Success. The done event was logged to `task-20260406-174838-a606d397` with the message: \"Fix landed via explicit icon paths in tauri.conf.json (commit 0b5b094). CI green on both Windows and macOS.\"",
+      "artifacts": []
     }
   ]
 }
