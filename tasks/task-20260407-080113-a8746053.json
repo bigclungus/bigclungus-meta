@@ -14,6 +14,12 @@
       "ts": "2026-04-07T08:01:13Z",
       "event": "started",
       "context": "Memory sweep verify feedback_reply_tool_param.md"
+    },
+    {
+      "ts": "2026-04-07T08:02:11Z",
+      "event": "done",
+      "context": "Done. Key findings from verification:\n\n**Claims updated (3 stale items fixed):**\n1. **Inject endpoint URL** — memory said `127.0.0.1:9876/inject`, which is the old dead discord-server. Correct URL is `127.0.0.1:8085/webhooks/<channelId>` (omni gateway). The behavioral claim (does not reach real Discord users) remains true.\n2. **Tool name** — `mcp__plugin_discord_discord__reply` no longer exists. Current tool is `omni_dispatch` with `capability: \"reply\"`.\n3. **server.ts line 538 / chunk() crash**...(truncated)",
+      "artifacts": []
     }
   ]
 }
