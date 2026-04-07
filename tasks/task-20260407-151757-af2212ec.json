@@ -14,6 +14,12 @@
       "ts": "2026-04-07T15:17:57Z",
       "event": "started",
       "context": "Heartbeat watchdog check"
+    },
+    {
+      "ts": "2026-04-07T15:18:59Z",
+      "event": "done",
+      "context": "The watchdog output was empty (no stale tasks), no failed services, no timeline candidates. Open issues are all labeled `idea` and predate today. System looks healthy — staying silent.",
+      "artifacts": []
     }
   ]
 }
