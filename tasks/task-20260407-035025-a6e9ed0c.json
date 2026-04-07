@@ -14,6 +14,12 @@
       "ts": "2026-04-07T03:50:25Z",
       "event": "started",
       "context": "Demo agent for JSONL parsing test"
+    },
+    {
+      "ts": "2026-04-07T03:50:33Z",
+      "event": "done",
+      "context": "Results:\n\n1. `echo \"grug test parsing\"` — output: `grug test parsing`\n\n2. `ls /mnt/data/clunger/src/` — contents:\n   - `auth.ts`\n   - `index.ts`\n   - `services/`\n   - `utils/`\n\n3. Service statuses — all three active:\n   - `clunger.service`: active\n   - `temporal.service`: active\n   - `omni-gateway.service`: active\n\n4. `echo \"done\"` — output: `done`",
+      "artifacts": []
     }
   ]
 }
