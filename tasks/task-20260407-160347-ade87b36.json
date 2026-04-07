@@ -1,0 +1,19 @@
+{
+  "id": "task-20260407-160347-ade87b36",
+  "title": "Fix ai_tropes memory ref + timeline session filter",
+  "agent_id": "ade87b364fba6d49b",
+  "agent_type": "general-purpose",
+  "session_id": "38879609-c8bd-47f5-af26-6210d2de543c",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-07T16:03:47Z",
+      "event": "started",
+      "context": "Fix ai_tropes memory ref + timeline session filter"
+    }
+  ]
+}
