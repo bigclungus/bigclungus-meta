@@ -14,6 +14,12 @@
       "ts": "2026-04-07T15:21:18Z",
       "event": "started",
       "context": "Update Marin listings price range to 2-2.5M"
+    },
+    {
+      "ts": "2026-04-07T15:23:50Z",
+      "event": "done",
+      "context": "Done. Summary of what happened:\n\n- `/mnt/data/temporal-workflows/criteria.json`: Marin SFH `min_price` changed from 900000 → 2000000, `max_price` from 1300000 → 2500000\n- Committed and pushed to GitHub\n- Terminated old `listings-marin-sfh` workflow (was running with old price range baked in)\n- Restarted `temporal-worker.service` — on startup it re-schedules all cron workflows from `criteria.json`, so the new workflow picked up the updated range\n- Discord notified",
+      "artifacts": []
     }
   ]
 }
