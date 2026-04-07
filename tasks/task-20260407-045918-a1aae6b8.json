@@ -14,6 +14,12 @@
       "ts": "2026-04-07T04:59:17Z",
       "event": "started",
       "context": "Sort active agents first in subagents API"
+    },
+    {
+      "ts": "2026-04-07T04:59:31Z",
+      "event": "done",
+      "context": "Done. In `restServeSubagents` at line 1214 of `/mnt/data/clunger/src/index.ts`, replaced the single-line sort with a two-key sort: `in_progress` agents float to the top (sorted by `lastModified` desc within the group), `complete` agents follow (also sorted by `lastModified` desc). Clunger restarted and is active.",
+      "artifacts": []
     }
   ]
 }
