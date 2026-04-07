@@ -1,0 +1,19 @@
+{
+  "id": "task-20260407-033234-abcb476f",
+  "title": "Demo subagent for terminal grid test",
+  "agent_id": "abcb476f55412e429",
+  "agent_type": "general-purpose",
+  "session_id": "38879609-c8bd-47f5-af26-6210d2de543c",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-07T03:32:34Z",
+      "event": "started",
+      "context": "Demo subagent for terminal grid test"
+    }
+  ]
+}
