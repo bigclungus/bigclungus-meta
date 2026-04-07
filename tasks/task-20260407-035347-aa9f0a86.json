@@ -14,6 +14,12 @@
       "ts": "2026-04-07T03:53:47Z",
       "event": "started",
       "context": "Add max-turns default to launch config"
+    },
+    {
+      "ts": "2026-04-07T03:57:15Z",
+      "event": "done",
+      "context": "Good. Here's a summary of what was found and changed:\n\n**Findings:**\n\n- The `claude` CLI has no `--max-turns` flag.\n- `maxTurns` is supported as a **frontmatter field in agent `.md` files** placed in `~/.claude/agents/` (added in v2.1.78 for plugin-shipped agents, and also works for user-defined agent overrides in `.claude/agents/`).\n- There is no `maxTurns` key in `settings.json` for the Agent tool directly.\n- The built-in `general-purpose` agent is what gets used for standard subagents (model:...(truncated)",
+      "artifacts": []
     }
   ]
 }
