@@ -14,6 +14,12 @@
       "ts": "2026-04-07T07:17:34Z",
       "event": "started",
       "context": "Heartbeat watchdog check"
+    },
+    {
+      "ts": "2026-04-07T07:18:50Z",
+      "event": "done",
+      "context": "All clean:\n- 0 stale tasks\n- 0 failed services\n- 0 timeline candidates\n- No congress orphans\n\nIssue #146 (commons-server audition needs ANTHROPIC_API_KEY) is a bug but it's already tracked. No action needed from heartbeat.\n\nSystem healthy. Staying silent.",
+      "artifacts": []
     }
   ]
 }
