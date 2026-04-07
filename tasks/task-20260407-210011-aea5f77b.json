@@ -14,6 +14,12 @@
       "ts": "2026-04-07T21:00:11Z",
       "event": "started",
       "context": "Simplify cron code review"
+    },
+    {
+      "ts": "2026-04-07T21:01:37Z",
+      "event": "done",
+      "context": "Done. Summary:\n\n- **Secret scan**: clean, no secrets in recent commits\n- **Recent commits**: all well-structured — BASE_DIR constants, session_wf dedup, congress.html helper extraction, retry bumps. Nothing to undo or rework.\n- **One fix applied**: `watchdog-stale-tasks.sh` — `HB_MIN` was computed twice (identical python3 call) in both branches of the heartbeat if/else. Hoisted before the branch. Committed and pushed as `000563f`.\n- **TODO in model_scout_wf.py line 789**: legitimate stub for fut...(truncated)",
+      "artifacts": []
     }
   ]
 }
