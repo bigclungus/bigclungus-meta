@@ -14,6 +14,12 @@
       "ts": "2026-04-07T08:00:59Z",
       "event": "started",
       "context": "Memory sweep verify feedback_allowlist_restart.md"
+    },
+    {
+      "ts": "2026-04-07T08:01:46Z",
+      "event": "done",
+      "context": "Done. Summary of findings:\n\n- `/mnt/data/.env.shared` exists and contains `GITHUB_ALLOWED_USERS` — confirmed\n- Clunger owns GitHub OAuth at `clung.us/auth/github` and `clung.us/auth/callback` — confirmed\n- `temporal-proxy.service` **no longer exists** — temporal proxy is folded into clunger per CLAUDE.md architecture\n- `terminal-server.service` and `clunger.service` still relevant\n\nMemory file updated at `/home/clungus/.claude/projects/-mnt-data/memory/feedback_allowlist_restart.md`: removed `te...(truncated)",
+      "artifacts": []
     }
   ]
 }
