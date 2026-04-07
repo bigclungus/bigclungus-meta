@@ -14,6 +14,12 @@
       "ts": "2026-04-07T08:00:48Z",
       "event": "started",
       "context": "Memory sweep complete notification"
+    },
+    {
+      "ts": "2026-04-07T08:00:58Z",
+      "event": "done",
+      "context": "Message posted. Discord API returned 200 with message ID `1490984702582980700` — landed in thread `1488205394659639407`.",
+      "artifacts": []
     }
   ]
 }
