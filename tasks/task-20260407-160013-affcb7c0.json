@@ -14,6 +14,12 @@
       "ts": "2026-04-07T16:00:13Z",
       "event": "started",
       "context": "Simplify cron code review"
+    },
+    {
+      "ts": "2026-04-07T16:02:27Z",
+      "event": "done",
+      "context": "No service restart needed — only path constants changed, no logic. No secrets found in scan.\n\nSummary of what was done:\n\n**Secret scan:** Clean, no secrets found in last 5 commits of either repo.\n\n**Fixes applied** (`/mnt/data/temporal-workflows/`):\n\n- `/mnt/data/temporal-workflows/activities/utils.py` — `.env` search paths were hardcoded `/mnt/data/...` strings; now use `TEMPORAL_WORKFLOWS_DIR` and `BASE_DIR` constants\n- `/mnt/data/temporal-workflows/activities/history_ingest_act.py` — `JSONL_G...(truncated)",
+      "artifacts": []
     }
   ]
 }
