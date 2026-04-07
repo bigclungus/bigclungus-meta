@@ -14,6 +14,12 @@
       "ts": "2026-04-07T02:59:53Z",
       "event": "started",
       "context": "general-purpose — ae81813f7027"
+    },
+    {
+      "ts": "2026-04-07T03:00:32Z",
+      "event": "done",
+      "context": "Here is the full startup report:\n\n---\n\n**Session: The Second Clungus CXLI**\n\n---\n\n**Recent Discord History**\n\nThe history search returns older indexed messages (the embedding DB appears to lag behind real-time). Most recent indexed activity shows:\n- centronias asking about dupe messages (2026-03-27)\n- kubariet asking why Discord messages are missing (2026-03-28)\n- jaboostin asking how messages get pushed to Claude (2026-03-28)\n- centronias asking \"which message does it refer to?\" (2026-03-31)\n- ...(truncated)",
+      "artifacts": []
     }
   ]
 }
