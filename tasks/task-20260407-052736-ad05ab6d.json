@@ -14,6 +14,12 @@
       "ts": "2026-04-07T05:27:36Z",
       "event": "started",
       "context": "Heartbeat watchdog check"
+    },
+    {
+      "ts": "2026-04-07T05:28:45Z",
+      "event": "done",
+      "context": "All clear:\n- 0 stale tasks\n- 0 failed services\n- 0 timeline candidates\n- No congress orphans\n\nNothing actionable. Staying silent.",
+      "artifacts": []
     }
   ]
 }
