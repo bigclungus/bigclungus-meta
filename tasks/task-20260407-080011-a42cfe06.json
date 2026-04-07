@@ -14,6 +14,12 @@
       "ts": "2026-04-07T08:00:11Z",
       "event": "started",
       "context": "Simplify cron code review"
+    },
+    {
+      "ts": "2026-04-07T08:07:09Z",
+      "event": "done",
+      "context": "Done. Two fixes in `/mnt/data/clunger/src/index.ts`, committed (`7ed9988`) and pushed:\n\n1. **Bug fix** — `parseSubagentTokens` chunked-read loop was silently dropping the final line of every agent output file. After the while loop, `leftover` held the last (newline-terminated-or-not) line but was never processed. Since completed agents always end on an assistant message with cumulative token usage, the final output token count was lost from every DB ingestion. Added EOF leftover processing block...(truncated)",
+      "artifacts": []
     }
   ]
 }
