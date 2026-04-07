@@ -14,6 +14,12 @@
       "ts": "2026-04-07T16:08:09Z",
       "event": "started",
       "context": "Heartbeat check"
+    },
+    {
+      "ts": "2026-04-07T16:11:04Z",
+      "event": "done",
+      "context": "All done. No failed services, no stale tasks. Summary:\n\n- **Issue #130 fixed and closed**: Extracted 3 status classification helpers (`isActivePersona`, `isRetiredPersona`, `normalizePersonaStatus`) into `/mnt/data/hello-world/congress.html` right after `normalizeRosterEntry`. Replaced 6 scattered inline status string comparisons with helper calls. The duplicated normalization logic in the persona modal edit form was also collapsed to a single `normalizePersonaStatus()` call. Committed and pushe...(truncated)",
+      "artifacts": []
     }
   ]
 }
