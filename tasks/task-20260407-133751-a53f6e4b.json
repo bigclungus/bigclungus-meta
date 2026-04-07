@@ -1,0 +1,19 @@
+{
+  "id": "task-20260407-133751-a53f6e4b",
+  "title": "Heartbeat watchdog check",
+  "agent_id": "a53f6e4b2b26df6c0",
+  "agent_type": "general-purpose",
+  "session_id": "38879609-c8bd-47f5-af26-6210d2de543c",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-07T13:37:51Z",
+      "event": "started",
+      "context": "Heartbeat watchdog check"
+    }
+  ]
+}
