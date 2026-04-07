@@ -14,6 +14,12 @@
       "ts": "2026-04-07T10:07:46Z",
       "event": "started",
       "context": "Heartbeat watchdog check"
+    },
+    {
+      "ts": "2026-04-07T10:08:45Z",
+      "event": "done",
+      "context": "Stale tasks script produced no output (clean), no failed services, no timeline candidates, open GitHub issues are all old `idea` label items already tracked. System healthy — staying silent.",
+      "artifacts": []
     }
   ]
 }
