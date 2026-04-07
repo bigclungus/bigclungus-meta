@@ -14,6 +14,12 @@
       "ts": "2026-04-07T15:58:23Z",
       "event": "started",
       "context": "Check Marin listings workflow status"
+    },
+    {
+      "ts": "2026-04-07T15:58:51Z",
+      "event": "done",
+      "context": "**listings-marin-sfh status:**\n\n- **Running** — started 34 minutes ago (current run). Previous run terminated 7 hours ago, run before that completed 1 day ago.\n- **Start time:** ~34 min ago. `ExecutionTime` shows 16 hours from now — workflow is sleeping/waiting for next scheduled tick.\n- **Activity:** 0 pending activities — currently idle between polling cycles.\n- **Listings found so far:** 7 total in DB (`seen_listings` table, search_name = \"Marin SFH\"). Latest seen: `2026-04-07 08:00:12` (~5 h...(truncated)",
+      "artifacts": []
     }
   ]
 }
