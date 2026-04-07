@@ -14,6 +14,12 @@
       "ts": "2026-04-07T14:00:12Z",
       "event": "started",
       "context": "Simplify cron code review"
+    },
+    {
+      "ts": "2026-04-07T14:02:51Z",
+      "event": "done",
+      "context": "Done. Here's what was done:\n\n**Changes made to `/mnt/data/temporal-workflows/activities/`:**\n\n- **`constants.py`**: Added `BASE_DIR = \"/mnt/data\"` as the root anchor. All path constants (`HELLO_WORLD_DIR`, `SCRIPTS_DIR`, etc.) now derive from it. Added 3 new constants:\n  - `CLUNGER_DIR` — was still hardcoded in `congress_act.py`\n  - `TEMPORAL_WORKFLOWS_DIR` — same\n  - `GRAPHITI_ENV` — path to graphiti `.env`, was copy-pasted in two separate activity files\n  - Also fixed `HELLO_WORLD_SESSIONS_DIR...(truncated)",
+      "artifacts": []
     }
   ]
 }
