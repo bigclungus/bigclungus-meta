@@ -1,0 +1,19 @@
+{
+  "id": "task-20260407-155823-aada625f",
+  "title": "Check Marin listings workflow status",
+  "agent_id": "aada625f4bad56a06",
+  "agent_type": "general-purpose",
+  "session_id": "38879609-c8bd-47f5-af26-6210d2de543c",
+  "discord_message_id": "omni_lztec4ra",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-07T15:58:23Z",
+      "event": "started",
+      "context": "Check Marin listings workflow status"
+    }
+  ]
+}
