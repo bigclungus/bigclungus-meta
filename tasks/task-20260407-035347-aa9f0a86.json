@@ -1,0 +1,19 @@
+{
+  "id": "task-20260407-035347-aa9f0a86",
+  "title": "Add max-turns default to launch config",
+  "agent_id": "aa9f0a86d5ae34144",
+  "agent_type": "general-purpose",
+  "session_id": "38879609-c8bd-47f5-af26-6210d2de543c",
+  "discord_message_id": "omni_e89nwqtq",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-07T03:53:47Z",
+      "event": "started",
+      "context": "Add max-turns default to launch config"
+    }
+  ]
+}
