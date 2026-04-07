@@ -1,0 +1,19 @@
+{
+  "id": "task-20260407-210136-a7d05bb9",
+  "title": "Close stale issues #101 and #104",
+  "agent_id": "a7d05bb9d6e5d7324",
+  "agent_type": "general-purpose",
+  "session_id": "38879609-c8bd-47f5-af26-6210d2de543c",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-07T21:01:36Z",
+      "event": "started",
+      "context": "Close stale issues #101 and #104"
+    }
+  ]
+}
