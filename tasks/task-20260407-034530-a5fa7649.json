@@ -14,6 +14,12 @@
       "ts": "2026-04-07T03:45:30Z",
       "event": "started",
       "context": "Demo agent for subagent grid final test"
+    },
+    {
+      "ts": "2026-04-07T03:45:45Z",
+      "event": "done",
+      "context": "All four commands ran clean. Results:\n\n1. `echo` — printed `grug demo agent, terminal grid test`\n2. `ls /mnt/data/labs/` — 9 labs found: chengyu, cron-explain, diff-narrator, print-calc, recipe-finder, snippet, template, webhook-mirror, workout\n3. Subagents API — **22 agents in grid**\n4. `echo` — printed `all good`",
+      "artifacts": []
     }
   ]
 }
