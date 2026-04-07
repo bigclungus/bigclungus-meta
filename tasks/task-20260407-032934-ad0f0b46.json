@@ -14,6 +14,12 @@
       "ts": "2026-04-07T03:29:34Z",
       "event": "started",
       "context": "Debug subagents API endpoint"
+    },
+    {
+      "ts": "2026-04-07T03:32:13Z",
+      "event": "done",
+      "context": "The fix works perfectly. The endpoint now returns only real Claude subagents (17-char hex IDs) with proper names, token counts, and statuses. All the hook files and shell script outputs are filtered out.\n\n---\n\n**Root cause:** The `/api/subagents` endpoint was including all `.output` files in the tasks directory — including `hook_XXXXXX.output` files (plain-text stderr from git hook scripts that fire on subagent start/stop) and short alphanumeric files from background shell scripts. These are not...(truncated)",
+      "artifacts": []
     }
   ]
 }
