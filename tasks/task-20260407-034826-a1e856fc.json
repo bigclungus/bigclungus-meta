@@ -14,6 +14,12 @@
       "ts": "2026-04-07T03:48:26Z",
       "event": "started",
       "context": "Fix terminal mini output JSONL parsing"
+    },
+    {
+      "ts": "2026-04-07T03:50:21Z",
+      "event": "done",
+      "context": "Running clean. Here's what changed in `/mnt/data/terminal/server.py` (the `parseOutputLine` JS function, around line 688):\n\n**Changes made:**\n\n1. **Tool use lines** (`type: \"assistant\"`, `tool_use` block): Now prefixed with `▶` and shows `toolName: description`. Falls back to `command`, `file_path`, or `pattern` if no `description` field. Was `[Bash] desc`, now `▶ Bash: desc`.\n\n2. **Tool results** (`type: \"user\"`, `tool_result` block): Strips `[rerun: bN]` noise that the Claude harness appends t...(truncated)",
+      "artifacts": []
     }
   ]
 }
