@@ -14,6 +14,12 @@
       "ts": "2026-04-07T10:00:27Z",
       "event": "started",
       "context": "Extract omni inject helper #126"
+    },
+    {
+      "ts": "2026-04-07T10:02:29Z",
+      "event": "done",
+      "context": "Done. Summary:\n\n**Created:** `/mnt/data/scripts/omni_inject.py` — shared helper with `inject(content, user, channel, chat_id, timeout)` signature, also usable as a CLI tool.\n\n**Updated 3 scripts to use the helper:**\n- `scripts/memory-sweep-cron.py` — replaced two inline urllib POST blocks with `omni_inject()` calls\n- `scripts/service-crash-alert.sh` — replaced inline `python3 -c` urllib snippet\n- `scripts/run-integration-tests.sh` — replaced inline `python3 -c` urllib snippet\n\n**Left unchanged:*...(truncated)",
+      "artifacts": []
     }
   ]
 }
