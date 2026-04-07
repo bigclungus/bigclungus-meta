@@ -14,6 +14,12 @@
       "ts": "2026-04-07T04:44:59Z",
       "event": "started",
       "context": "Add clungcord to satnav, remove voting"
+    },
+    {
+      "ts": "2026-04-07T04:47:04Z",
+      "event": "done",
+      "context": "Done. Here's what was done:\n\n**Clungcord URL:** `https://clung.us/chat/` — clunger already proxied port 8120 at `/chat/`, no new tunnel needed.\n\n**Files changed:**\n\n- `/mnt/data/hello-world/src/sitenav.ts` — replaced `{ voting, /refinery }` nav entry with `{ clungcord, /chat/ }`\n- `/mnt/data/hello-world/refinery.html` — deleted\n- `/mnt/data/clunger/src/index.ts` — removed ~200 lines of voting implementation: `getVotesDb`, `getVoteCounts`, `QUORUM`, `getWinner`, `notifySpriteTie`, `notifyVoteWinn...(truncated)",
+      "artifacts": []
     }
   ]
 }
