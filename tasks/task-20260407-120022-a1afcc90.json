@@ -14,6 +14,12 @@
       "ts": "2026-04-07T12:00:22Z",
       "event": "started",
       "context": "Memory sweep complete notification batch 2"
+    },
+    {
+      "ts": "2026-04-07T12:00:34Z",
+      "event": "done",
+      "context": "Message posted. Discord thread got it — message ID `1491045001868869743` in channel `1488205394659639407`.",
+      "artifacts": []
     }
   ]
 }
