@@ -1,0 +1,19 @@
+{
+  "id": "task-20260407-030236-a1eea90f",
+  "title": "Startup checklist - session number, discord history, tasks",
+  "agent_id": "a1eea90f58da35e8a",
+  "agent_type": "general-purpose",
+  "session_id": "5eaa5367-578e-4937-b44d-debaba6b8265",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-07T03:02:35Z",
+      "event": "started",
+      "context": "Startup checklist - session number, discord history, tasks"
+    }
+  ]
+}
