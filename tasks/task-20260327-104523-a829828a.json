@@ -20,6 +20,12 @@
       "event": "done",
       "context": "The last startup message was posted at 10:43-10:44 UTC today. Given the giga directive (5+ occurrences = hard rule: no startup Discord post unless something material has changed), I should check whether anything material has changed before deciding to post.\n\nLooking at the situation: the same 17 open tasks, same 26 services running, same disk usage, no new congress directives. Nothing material has changed vs the last startup post. I will NOT post a startup message.\n\nHere is the full startup chec...(truncated)",
       "artifacts": []
+    },
+    {
+      "event": "done",
+      "ts": "2026-04-07T03:14:26.804810Z",
+      "message": "Session ended / task completed in previous session"
     }
-  ]
+  ],
+  "status": "done"
 }

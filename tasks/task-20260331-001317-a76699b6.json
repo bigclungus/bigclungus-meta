@@ -18,8 +18,14 @@
     {
       "ts": "2026-03-31T00:14:57Z",
       "event": "done",
-      "context": "All three tasks done:\n\n1. **commons-server restarted** — `systemctl --user is-active` confirmed `active`.\n\n2. **Git pushes:**\n   - `/mnt/data/commons-server/` — only uncommitted changes were SQLite db files (`commons.db`, `.db-shm`, `.db-wal`), which shouldn't be committed. Nothing pushed; repo is already up to date on code.\n   - `/mnt/data/clungiverse-client/` — committed and pushed `src/renderer/hud.ts` (4 insertions, 5 deletions) as `255261c` to `main`.\n\n3. **Discord message posted** — Crundl...(truncated)",
+      "context": "All three tasks done:\n\n1. **commons-server restarted** \u2014 `systemctl --user is-active` confirmed `active`.\n\n2. **Git pushes:**\n   - `/mnt/data/commons-server/` \u2014 only uncommitted changes were SQLite db files (`commons.db`, `.db-shm`, `.db-wal`), which shouldn't be committed. Nothing pushed; repo is already up to date on code.\n   - `/mnt/data/clungiverse-client/` \u2014 committed and pushed `src/renderer/hud.ts` (4 insertions, 5 deletions) as `255261c` to `main`.\n\n3. **Discord message posted** \u2014 Crundl...(truncated)",
       "artifacts": []
+    },
+    {
+      "event": "done",
+      "ts": "2026-04-07T03:14:29.088653Z",
+      "message": "Session ended / task completed in previous session"
     }
-  ]
+  ],
+  "status": "done"
 }

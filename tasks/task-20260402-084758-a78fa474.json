@@ -20,6 +20,12 @@
       "event": "done",
       "context": "Service is active and running. The claude process is now launched with just `--debug --dangerously-skip-permissions` (no `--dangerously-load-development-channels`). \n\nNote that the omni MCP server is still running (last line shows bun running the omni mcp), which is fine -- Giga can still use it to dispatch messages if BigClungus delegates tasks to it via inject. It just won't receive Discord messages directly anymore since there's no development channel loaded.\n\n**Summary:**\n- **File modified:*...(truncated)",
       "artifacts": []
+    },
+    {
+      "event": "done",
+      "ts": "2026-04-07T03:14:29.293889Z",
+      "message": "Session ended / task completed in previous session"
     }
-  ]
+  ],
+  "status": "done"
 }

@@ -19,6 +19,12 @@
       "event": "cancelled",
       "ts": "2026-03-30T00:33:57.236084Z",
       "message": "Closed as stale \u2014 superseded by omni migration"
+    },
+    {
+      "event": "done",
+      "ts": "2026-04-07T03:14:29.015957Z",
+      "message": "Session ended / task completed in previous session"
     }
-  ]
+  ],
+  "status": "done"
 }

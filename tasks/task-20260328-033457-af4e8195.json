@@ -19,6 +19,11 @@
       "event": "done",
       "ts": "2026-03-28T03:56:33.714204Z",
       "message": "Closing stale task from previous session"
+    },
+    {
+      "event": "done",
+      "ts": "2026-04-07T03:14:27.266371Z",
+      "message": "Session ended / task completed in previous session"
     }
   ],
   "status": "done"

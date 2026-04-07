@@ -14,6 +14,12 @@
       "ts": "2026-04-07T03:02:35Z",
       "event": "started",
       "context": "Startup checklist - session number, discord history, tasks"
+    },
+    {
+      "event": "done",
+      "ts": "2026-04-07T03:14:30.187807Z",
+      "message": "Session ended / task completed in previous session"
     }
-  ]
+  ],
+  "status": "done"
 }

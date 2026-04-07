@@ -14,6 +14,12 @@
       "ts": "2026-04-07T03:00:40Z",
       "event": "started",
       "context": "Push unpushed commit and read learned directives"
+    },
+    {
+      "event": "done",
+      "ts": "2026-04-07T03:14:30.153961Z",
+      "message": "Session ended / task completed in previous session"
     }
-  ]
+  ],
+  "status": "done"
 }

@@ -20,6 +20,12 @@
       "event": "done",
       "context": "The startup status message was posted successfully to Discord via the inject endpoint.",
       "artifacts": []
+    },
+    {
+      "event": "done",
+      "ts": "2026-04-07T03:14:25.765831Z",
+      "message": "Session ended / task completed in previous session"
     }
-  ]
+  ],
+  "status": "done"
 }

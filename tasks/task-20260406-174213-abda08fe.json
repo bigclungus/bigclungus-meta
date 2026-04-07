@@ -20,6 +20,12 @@
       "event": "done",
       "context": "The `grep -i 'error:'` didn't match. The error is a permissions error from GitHub API. Let me get more logs.\n\"",
       "artifacts": []
+    },
+    {
+      "event": "done",
+      "ts": "2026-04-07T03:14:29.837788Z",
+      "message": "Session ended / task completed in previous session"
     }
-  ]
+  ],
+  "status": "done"
 }

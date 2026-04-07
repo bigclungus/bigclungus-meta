@@ -18,8 +18,14 @@
     {
       "ts": "2026-03-24T18:27:20Z",
       "event": "done",
-      "context": "Worker is up, `StartupWorkflow triggered` appears in the logs. Everything is clean.\n\nHere's a summary of what was done:\n\n**Files created:**\n- `/home/clungus/work/temporal-workflows/activities/startup_act.py` — 5 activities: `startup_fix_falkordb`, `startup_check_services`, `startup_check_disk`, `startup_run_watchdog`, `startup_extract_directives`\n- `/home/clungus/work/temporal-workflows/workflows/startup_wf.py` — `StartupWorkflow` that runs all 5 activities and only injects a Discord message if ...(truncated)",
+      "context": "Worker is up, `StartupWorkflow triggered` appears in the logs. Everything is clean.\n\nHere's a summary of what was done:\n\n**Files created:**\n- `/home/clungus/work/temporal-workflows/activities/startup_act.py` \u2014 5 activities: `startup_fix_falkordb`, `startup_check_services`, `startup_check_disk`, `startup_run_watchdog`, `startup_extract_directives`\n- `/home/clungus/work/temporal-workflows/workflows/startup_wf.py` \u2014 `StartupWorkflow` that runs all 5 activities and only injects a Discord message if ...(truncated)",
       "artifacts": []
+    },
+    {
+      "event": "done",
+      "ts": "2026-04-07T03:14:24.618085Z",
+      "message": "Session ended / task completed in previous session"
     }
-  ]
+  ],
+  "status": "done"
 }

@@ -18,8 +18,14 @@
     {
       "ts": "2026-03-27T10:55:46Z",
       "event": "done",
-      "context": "The dedup check correctly caught this — the last startup post was 678 seconds ago (~11 min), which is within the 15-minute window. No Discord post needed.\n\nNo unaddressed messages from users that need a response. Here's the full startup checklist summary:\n\n**Redis/FalkorDB:** Both fixes applied successfully (OK/OK).\n\n**Services:** All 26 services running — claude-bot, cloudflared, temporal stack, labs, clunger, labs-router, terminal-server, commons-server, all green. No services down.\n\n**Disk:**...(truncated)",
+      "context": "The dedup check correctly caught this \u2014 the last startup post was 678 seconds ago (~11 min), which is within the 15-minute window. No Discord post needed.\n\nNo unaddressed messages from users that need a response. Here's the full startup checklist summary:\n\n**Redis/FalkorDB:** Both fixes applied successfully (OK/OK).\n\n**Services:** All 26 services running \u2014 claude-bot, cloudflared, temporal stack, labs, clunger, labs-router, terminal-server, commons-server, all green. No services down.\n\n**Disk:**...(truncated)",
       "artifacts": []
+    },
+    {
+      "event": "done",
+      "ts": "2026-04-07T03:14:26.955732Z",
+      "message": "Session ended / task completed in previous session"
     }
-  ]
+  ],
+  "status": "done"
 }

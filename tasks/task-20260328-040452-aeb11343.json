@@ -20,6 +20,12 @@
       "event": "done",
       "context": "Here's what was done:\n\n1. **Current session**: \"Clungus CCX\" (session 210)\n2. **Nickname set immediately**: The bot's Discord nickname was updated from no nickname to \"Clungus CCX\" via the Discord API. The API returned success.\n3. **Script updated**: `/mnt/data/scripts/session-number.sh` now automatically sets the Discord bot nickname after determining the session name. The additions:\n   - Captures the session name into `$SESSION_NAME` (instead of just printing inline)\n   - Sources the Discord `...(truncated)",
       "artifacts": []
+    },
+    {
+      "event": "done",
+      "ts": "2026-04-07T03:14:27.526537Z",
+      "message": "Session ended / task completed in previous session"
     }
-  ]
+  ],
+  "status": "done"
 }

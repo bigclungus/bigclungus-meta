@@ -20,6 +20,12 @@
       "event": "done",
       "context": "Here is the restart checklist summary:\n\n---\n\n**Services (16 running, 0 failed)**\n\nAll expected services are up:\n- claude-bot.service, cloudflared.service, temporal.service, temporal-worker.service, temporal-proxy.service\n- website.service (via clunger.service), 1998.service, terminal-server.service, labs-router.service\n- Labs: labs-cron-explain, labs-diff-narrator, labs-snippet, labs-webhook-mirror\n- Also running: giga-terminal.service, dbus.service, gpg-agent.service\n\nNotable: `website.service`...(truncated)",
       "artifacts": []
+    },
+    {
+      "event": "done",
+      "ts": "2026-04-07T03:14:25.200253Z",
+      "message": "Session ended / task completed in previous session"
     }
-  ]
+  ],
+  "status": "done"
 }

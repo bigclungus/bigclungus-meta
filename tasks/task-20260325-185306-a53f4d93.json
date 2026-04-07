@@ -18,8 +18,14 @@
     {
       "ts": "2026-03-25T18:53:41Z",
       "event": "done",
-      "context": "Here is the full startup report:\n\n---\n\n## Startup Checklist — 2026-03-25\n\n### Services\nAll 11 user services are running with zero failures:\n- claude-bot, cloudflared, website, 1998, terminal-server, temporal, temporal-proxy, temporal-worker, clunger, dbus, gpg-agent\n\nNote: `clunger.service` is present and running — this is a TypeScript web server not listed in the CLAUDE.md service table; worth knowing it exists.\n\n### Disk\nBoth volumes are healthy and well under the 85% threshold:\n- `/` (root): ...(truncated)",
+      "context": "Here is the full startup report:\n\n---\n\n## Startup Checklist \u2014 2026-03-25\n\n### Services\nAll 11 user services are running with zero failures:\n- claude-bot, cloudflared, website, 1998, terminal-server, temporal, temporal-proxy, temporal-worker, clunger, dbus, gpg-agent\n\nNote: `clunger.service` is present and running \u2014 this is a TypeScript web server not listed in the CLAUDE.md service table; worth knowing it exists.\n\n### Disk\nBoth volumes are healthy and well under the 85% threshold:\n- `/` (root): ...(truncated)",
       "artifacts": []
+    },
+    {
+      "event": "done",
+      "ts": "2026-04-07T03:14:24.933395Z",
+      "message": "Session ended / task completed in previous session"
     }
-  ]
+  ],
+  "status": "done"
 }

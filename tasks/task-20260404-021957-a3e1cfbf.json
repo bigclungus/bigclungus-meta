@@ -20,6 +20,12 @@
       "event": "done",
       "context": "Here are the full startup checklist results:\n\n---\n\n**1. Redis/FalkorDB fixes:** Applied successfully (both returned OK).\n\n**2. Services:** 26 services running, all expected services present:\n- claude-bot, cloudflared, clunger, omni-gateway, terminal-server, temporal, temporal-worker, commons-server all running\n- Additional services: alert-webhook, alertmanager, clungcord, custom-exporter, giga-terminal, grok-proxy, xai-proxy, and 8 lab services\n\n**3. Disk:** 35% used (33G/97G) -- well under the ...(truncated)",
       "artifacts": []
+    },
+    {
+      "event": "done",
+      "ts": "2026-04-07T03:14:29.391602Z",
+      "message": "Session ended / task completed in previous session"
     }
-  ]
+  ],
+  "status": "done"
 }

@@ -20,6 +20,12 @@
       "event": "done",
       "context": "Here is the full startup checklist report:\n\n---\n\n**Session Identity:** Clungus CCXII (script wrote CCXI to the file but printed CCXII -- slight off-by-one; the session file says Clungus CCXI).\n\n**Redis/FalkorDB:** Both fixes applied successfully (stop-writes-on-bgsave-error=no, graph timeout=30000).\n\n**Services:** 29 services running. All expected services are up: claude-bot, cloudflared, clunger, temporal, temporal-proxy, temporal-worker, terminal-server, website, labs-router, commons-server, p...(truncated)",
       "artifacts": []
+    },
+    {
+      "event": "done",
+      "ts": "2026-04-07T03:14:27.570990Z",
+      "message": "Session ended / task completed in previous session"
     }
-  ]
+  ],
+  "status": "done"
 }
