@@ -14,6 +14,12 @@
       "ts": "2026-04-07T03:40:31Z",
       "event": "started",
       "context": "Debug terminal subagent grid not showing"
+    },
+    {
+      "ts": "2026-04-07T03:40:55Z",
+      "event": "done",
+      "context": "Service is up. Here's the summary:\n\n**Root cause:** In `/mnt/data/terminal/server.py`, the browser-side JavaScript had `const CLUNGER_BASE = 'http://localhost:8081'`. When the browser loaded `terminal.clung.us`, that JS ran on the user's machine and tried to reach `localhost:8081` on the *user's* machine — which doesn't exist there. The clunger API is only on the server.\n\n**Fix:** Changed `CLUNGER_BASE` to `'https://clung.us'` so the browser JS calls `https://clung.us/api/subagents` — the public...(truncated)",
+      "artifacts": []
     }
   ]
 }
