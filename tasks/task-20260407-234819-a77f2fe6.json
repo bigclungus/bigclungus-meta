@@ -14,6 +14,12 @@
       "ts": "2026-04-07T23:48:19Z",
       "event": "started",
       "context": "Heartbeat check"
+    },
+    {
+      "ts": "2026-04-07T23:50:50Z",
+      "event": "done",
+      "context": "Done. Found uncommitted improvements to `terminal/server.py` and `scripts/sync-claude-config.sh` — committed, pushed, and restarted terminal-server.\n\nChanges shipped:\n- `/mnt/data/terminal/server.py` — resizable split pane between terminal and agents panel (drag handle, localStorage persistence), agent cards now show cost ($) instead of raw token count, 2-column grid layout for agent cards\n- `/mnt/data/scripts/sync-claude-config.sh` — now syncs `agents/` subdirectory alongside skills and CLAUDE....(truncated)",
+      "artifacts": []
     }
   ]
 }
