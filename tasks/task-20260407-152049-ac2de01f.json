@@ -14,6 +14,12 @@
       "ts": "2026-04-07T15:20:49Z",
       "event": "started",
       "context": "Check Marin houses Temporal workflow"
+    },
+    {
+      "ts": "2026-04-07T15:20:57Z",
+      "event": "done",
+      "context": "Marin listing workflow status:\n\n- **listings-marin-sfh** — `Running` (started 7 hours ago), type `ListingsWorkflow`\n- Previous run: `Completed` (1 day ago)\n\nBerkeley/Piedmont also running alongside it. Both look healthy — recurring pattern of completed → new run started.",
+      "artifacts": []
     }
   ]
 }
