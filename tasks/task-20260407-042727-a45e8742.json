@@ -14,6 +14,12 @@
       "ts": "2026-04-07T04:27:27Z",
       "event": "started",
       "context": "Heartbeat round 4 checks"
+    },
+    {
+      "ts": "2026-04-07T04:28:24Z",
+      "event": "done",
+      "context": "All clean. Services: 0 failed. Tasks: 0 stale, no orphaned congress sessions.\n\nIssue #146 (commons-server audition needs ANTHROPIC_API_KEY) is a bug open since Apr 2 — that's a MINOR fix (env var wiring, under 30min). The others are older ideas already tracked.\n\n**Result: MINOR finding — Issue #146.** The commons-server audition is missing the `ANTHROPIC_API_KEY` env var. That's a quick env/config fix, worth actioning.",
+      "artifacts": []
     }
   ]
 }
