@@ -14,6 +14,12 @@
       "ts": "2026-04-07T12:00:48Z",
       "event": "started",
       "context": "Memory sweep verify feedback_congress_recusal.md + project_persona_models.md"
+    },
+    {
+      "ts": "2026-04-07T12:02:12Z",
+      "event": "done",
+      "context": "Both files handled. Summary:\n\n**`feedback_congress_recusal.md`** — content was accurate. Added precision: recusal logic actually lives in `session_wf.py` lines 395-421 (CongressWorkflow is now just a thin wrapper). Keyword list is broader than memory noted — also includes `kick out`, `let go`, `impeach`, `impeachment`.\n\n**`project_persona_models.md`** — **path bug fixed**. Memory had stale `active/` subdir paths (`active/bloodfeast.md`, `active/the-kid.md`, `active/jhaddu.md`, `active/trump.md`)...(truncated)",
+      "artifacts": []
     }
   ]
 }
