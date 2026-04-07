@@ -14,6 +14,12 @@
       "ts": "2026-04-07T12:57:51Z",
       "event": "started",
       "context": "Heartbeat watchdog check"
+    },
+    {
+      "ts": "2026-04-07T12:59:12Z",
+      "event": "done",
+      "context": "All clear:\n- 0 stale tasks\n- 0 failed services\n- 0 congress orphans\n- 0 timeline candidates\n\nOpen issues are all backlog ideas (labeled `idea`), no actionable bugs or blocking items. Nothing notable to post.",
+      "artifacts": []
     }
   ]
 }
