@@ -1,0 +1,19 @@
+{
+  "id": "task-20260407-160036-a7c68ff3",
+  "title": "Memory sweep verify feedback_timeline_no_sessions + feedback_ai_tropes + feedback_dm_confidentiality",
+  "agent_id": "a7c68ff316a2ee1be",
+  "agent_type": "general-purpose",
+  "session_id": "38879609-c8bd-47f5-af26-6210d2de543c",
+  "discord_message_id": "omni_wmu50wgf",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-07T16:00:36Z",
+      "event": "started",
+      "context": "Memory sweep verify feedback_timeline_no_sessions + feedback_ai_tropes + feedback_dm_confidentiality"
+    }
+  ]
+}
