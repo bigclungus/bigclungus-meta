@@ -14,6 +14,12 @@
       "ts": "2026-04-07T04:58:51Z",
       "event": "started",
       "context": "Build token usage persistence and costs dashboard"
+    },
+    {
+      "ts": "2026-04-07T05:03:26Z",
+      "event": "done",
+      "context": "Done. Here's what was built:\n\n**Part 1 — Token usage persistence**\n\n- `/mnt/data/scripts/log_token_usage.py` — CLI tool accepting `--session-id`, `--agent-id`, `--agent-name`, `--input-tokens`, `--output-tokens`, `--tool-uses`, `--duration-ms`. Writes to `/mnt/data/data/token-usage.db` with cost calc `(input * 0.000003) + (output * 0.000015)`. Creates DB/table on first run with a unique index on `agent_id` (upserts on conflict).\n\n- `POST /api/tokens/ingest` in clunger — scans all session dirs un...(truncated)",
+      "artifacts": []
     }
   ]
 }
