@@ -14,6 +14,12 @@
       "ts": "2026-04-07T03:57:39Z",
       "event": "started",
       "context": "Heartbeat checks - stale tasks, services, GitHub issues"
+    },
+    {
+      "ts": "2026-04-07T03:59:09Z",
+      "event": "done",
+      "context": "All checks complete. Here's the summary:\n\n**Stale tasks:** 0 stale, no orphaned congress sessions.\n\n**GitHub issues (open):** 5 open issues, nothing new since last check. The oldest notable one is #146 (bug: commons-server audition needs ANTHROPIC_API_KEY, opened 2026-04-02) — that's a bug that's been sitting for 5 days.\n\n**Failed services:** None. All services healthy.\n\n**Timeline ingestion:** 1 candidate found — `feat: add subagent grid to terminal.clung.us` (clungus repo). Approved and posted...(truncated)",
+      "artifacts": []
     }
   ]
 }
