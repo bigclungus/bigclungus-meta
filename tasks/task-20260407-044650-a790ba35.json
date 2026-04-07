@@ -14,6 +14,12 @@
       "ts": "2026-04-07T04:46:50Z",
       "event": "started",
       "context": "Fix terminal.clung.us 502"
+    },
+    {
+      "ts": "2026-04-07T04:47:08Z",
+      "event": "done",
+      "context": "Back up. Here's what happened and what was done:\n\n**Root cause:** The terminal-server process (PID 2972572) was stuck in `deactivating (stop-sigterm)` — it had received the stop signal but was not exiting. This left the port orphaned and systemd unable to start a new instance, causing the 502.\n\n**Fix:** Force-killed the stuck process with `kill -9`, then issued `systemctl --user restart terminal-server.service`.\n\n**Verification:** Service is now `active (running)` with a fresh PID (3236998), and...(truncated)",
+      "artifacts": []
     }
   ]
 }
