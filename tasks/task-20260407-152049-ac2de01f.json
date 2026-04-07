@@ -1,0 +1,19 @@
+{
+  "id": "task-20260407-152049-ac2de01f",
+  "title": "Check Marin houses Temporal workflow",
+  "agent_id": "ac2de01fad8d3a2fb",
+  "agent_type": "general-purpose",
+  "session_id": "38879609-c8bd-47f5-af26-6210d2de543c",
+  "discord_message_id": "omni_boyqyujg",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-07T15:20:49Z",
+      "event": "started",
+      "context": "Check Marin houses Temporal workflow"
+    }
+  ]
+}
