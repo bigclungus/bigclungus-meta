@@ -1,0 +1,19 @@
+{
+  "id": "task-20260407-044928-a535307a",
+  "title": "Fix terminal 502 and prevent stuck restarts",
+  "agent_id": "a535307a5cb266b58",
+  "agent_type": "general-purpose",
+  "session_id": "38879609-c8bd-47f5-af26-6210d2de543c",
+  "discord_message_id": "omni_f1j638nw",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-07T04:49:28Z",
+      "event": "started",
+      "context": "Fix terminal 502 and prevent stuck restarts"
+    }
+  ]
+}
