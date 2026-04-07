@@ -14,6 +14,12 @@
       "ts": "2026-04-07T03:46:50Z",
       "event": "started",
       "context": "Investigate temporal heartbeat stale alert"
+    },
+    {
+      "ts": "2026-04-07T03:47:36Z",
+      "event": "done",
+      "context": "The HeartbeatWorkflow is running again. Here's the full picture:\n\n**Root cause:** The `HeartbeatWorkflow` failed 2 days ago because `omni-gateway.service` (port 8085) was not reachable at that time — the inject activity got `[Errno 111] Connect call failed ('127.0.0.1', 8085)` after exhausting its 3 retry attempts. The workflow died and was never restarted.\n\n**What the heartbeat system is:**\n- `HeartbeatWorkflow` (`temporal-workflows/workflows/heartbeat_wf.py`) — a Temporal long-running workflow...(truncated)",
+      "artifacts": []
     }
   ]
 }
