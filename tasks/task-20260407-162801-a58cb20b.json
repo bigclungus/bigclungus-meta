@@ -14,6 +14,12 @@
       "ts": "2026-04-07T16:28:01Z",
       "event": "started",
       "context": "Heartbeat check"
+    },
+    {
+      "ts": "2026-04-07T16:31:14Z",
+      "event": "done",
+      "context": "All done. Here's a summary:\n\n**Heartbeat results:**\n- No stale tasks, no failed services, no timeline candidates — all clean\n- Framers idle → ran ideation pass\n- Found issue #127 (graphiti queue worker stranding episodes on unexpected crash) — MINOR fix\n- Applied fix: `_process_episode_queue` finally block now checks if queue is non-empty after crash and immediately spawns a fresh worker via `asyncio.create_task`\n- Committed and pushed to `bigclungus/graphiti@925ddae`, closed issue #127\n\nFix is ...(truncated)",
+      "artifacts": []
     }
   ]
 }
