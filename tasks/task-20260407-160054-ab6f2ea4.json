@@ -1,0 +1,19 @@
+{
+  "id": "task-20260407-160054-ab6f2ea4",
+  "title": "Trigger manual Marin listings run",
+  "agent_id": "ab6f2ea4ecdd4e17e",
+  "agent_type": "general-purpose",
+  "session_id": "38879609-c8bd-47f5-af26-6210d2de543c",
+  "discord_message_id": "omni_wmu50wgf",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-07T16:00:54Z",
+      "event": "started",
+      "context": "Trigger manual Marin listings run"
+    }
+  ]
+}
