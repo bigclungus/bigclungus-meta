@@ -14,6 +14,12 @@
       "ts": "2026-04-07T05:00:10Z",
       "event": "started",
       "context": "Simplify pass - skip active files"
+    },
+    {
+      "ts": "2026-04-07T05:01:05Z",
+      "event": "done",
+      "context": "The `isActive` function first calls `isActiveSameDomain` (which does URL parsing), and if that returns false, it falls through to compare `link.path` directly. Since `isActiveSameDomain` already checks `linkUrl.pathname === window.location.pathname` for same-domain links, and all nav links are same-domain (except those marked `external: true` which return early), the `link.path` fallback at lines 54-57 is dead code for all current nav entries. It won't cause bugs, just unnecessary branching.\n\nTh...(truncated)",
+      "artifacts": []
     }
   ]
 }
