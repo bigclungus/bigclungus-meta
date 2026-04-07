@@ -14,6 +14,12 @@
       "ts": "2026-04-07T03:15:44Z",
       "event": "started",
       "context": "Check and fix temporal heartbeat"
+    },
+    {
+      "ts": "2026-04-07T03:15:59Z",
+      "event": "done",
+      "context": "Temporal UI returns 200. No restarts needed.\n\n**Summary:**\n- Both `temporal.service` and `temporal-worker.service` are active and healthy — no action required.\n- The stale heartbeat alert appears to be a false alarm. The worker is actively processing workflows (healthchecks every minute, history ingest every 5 minutes).\n- Notable: several workflows have extremely high retry attempt counts (`model-scout-manual` at 471, `congress-ai-slop-songs` at 172) and `task-sweeper` has bloated history (~15k ...(truncated)",
+      "artifacts": []
     }
   ]
 }
