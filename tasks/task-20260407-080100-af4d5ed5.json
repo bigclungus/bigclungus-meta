@@ -1,0 +1,19 @@
+{
+  "id": "task-20260407-080100-af4d5ed5",
+  "title": "Memory sweep verify feedback_allowlist_restart.md",
+  "agent_id": "af4d5ed5a5021397b",
+  "agent_type": "general-purpose",
+  "session_id": "38879609-c8bd-47f5-af26-6210d2de543c",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-07T08:00:59Z",
+      "event": "started",
+      "context": "Memory sweep verify feedback_allowlist_restart.md"
+    }
+  ]
+}
