@@ -14,6 +14,12 @@
       "ts": "2026-04-07T09:00:11Z",
       "event": "started",
       "context": "Simplify cron code review"
+    },
+    {
+      "ts": "2026-04-07T09:02:11Z",
+      "event": "done",
+      "context": "Clunger restarted clean. Done.\n\nSummary:\n- Secret scan: clean on both repos\n- Temporal-workflows: no new changes to review (same repo, shared history)\n- `clunger/src/index.ts`: extracted `accumulateAssistantEntry` helper — the JSONL token/tool-use parse logic was duplicated verbatim between the chunk-read loop and the EOF leftover block in `parseSubagentTokens`. Net: -15 lines, logic in one place\n- Committed to `/mnt/data` (030d75f), pushed to GitHub, restarted clunger",
+      "artifacts": []
     }
   ]
 }
