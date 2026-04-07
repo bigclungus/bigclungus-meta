@@ -14,6 +14,12 @@
       "ts": "2026-04-07T17:58:07Z",
       "event": "started",
       "context": "Heartbeat check"
+    },
+    {
+      "ts": "2026-04-07T17:59:31Z",
+      "event": "done",
+      "context": "All steps complete. Everything healthy:\n\n- 0 stale tasks, no orphaned congress sessions\n- Services all running (0 failed)\n- No timeline candidates to review\n- GitHub issues are all tagged `idea` (not actionable without Congress/framer input)\n\nStaying silent — nothing to post.",
+      "artifacts": []
     }
   ]
 }
