@@ -14,6 +14,12 @@
       "ts": "2026-04-07T10:00:35Z",
       "event": "started",
       "context": "Simplify cron code review"
+    },
+    {
+      "ts": "2026-04-07T10:05:25Z",
+      "event": "done",
+      "context": "No service restart needed — only changed a workflow file (not clunger/src/ or activity files that require restart). The temporal worker handles workflow code dynamically.\n\nSummary of work done:\n\n- Secret scan: script timed out but no secrets surfaced in manual review of recent diffs\n- Reviewed recent changes to `clunger/src/index.ts` (4 prior simplify passes already cleaned it up well — cost constants centralized, SUBAGENT_ID_RE hoisted, helper extracted for JSONL parsing)\n- Reviewed `temporal-w...(truncated)",
+      "artifacts": []
     }
   ]
 }
