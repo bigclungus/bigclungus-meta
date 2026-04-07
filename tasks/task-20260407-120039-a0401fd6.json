@@ -14,6 +14,12 @@
       "ts": "2026-04-07T12:00:39Z",
       "event": "started",
       "context": "Memory sweep verify feedback_thread_isolation.md + feedback_try_before_asserting.md"
+    },
+    {
+      "ts": "2026-04-07T12:01:21Z",
+      "event": "done",
+      "context": "Done. Both files verified and updated:\n\n- `feedback_thread_isolation.md` — behavioral rule (never treat cross-channel messages as related without explicit reference) has no contradicting guidance in CLAUDE.md or learned-directives. Archived, verified, stamped.\n- `feedback_try_before_asserting.md` — behavioral rule (try reply before asserting failure) same — no superseding guidance. Archived, verified, stamped.\n- Lock removed.\n- Both results posted to thread 1488205394659639407 in one message.",
+      "artifacts": []
     }
   ]
 }
