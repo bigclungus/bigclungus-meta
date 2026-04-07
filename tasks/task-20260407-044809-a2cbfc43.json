@@ -1,0 +1,19 @@
+{
+  "id": "task-20260407-044809-a2cbfc43",
+  "title": "Also grey out completed agents more obviously",
+  "agent_id": "a2cbfc43cbea1d595",
+  "agent_type": "general-purpose",
+  "session_id": "38879609-c8bd-47f5-af26-6210d2de543c",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-07T04:48:09Z",
+      "event": "started",
+      "context": "Also grey out completed agents more obviously"
+    }
+  ]
+}
