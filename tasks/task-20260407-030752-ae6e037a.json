@@ -1,0 +1,19 @@
+{
+  "id": "task-20260407-030752-ae6e037a",
+  "title": "Find subagent view in clung.us",
+  "agent_id": "ae6e037a65d0c40b9",
+  "agent_type": "general-purpose",
+  "session_id": "38879609-c8bd-47f5-af26-6210d2de543c",
+  "discord_message_id": "omni_av4odlsc",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-07T03:07:52Z",
+      "event": "started",
+      "context": "Find subagent view in clung.us"
+    }
+  ]
+}
