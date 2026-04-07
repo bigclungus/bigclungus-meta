@@ -14,6 +14,12 @@
       "ts": "2026-04-07T19:28:09Z",
       "event": "started",
       "context": "Heartbeat check"
+    },
+    {
+      "ts": "2026-04-07T19:29:28Z",
+      "event": "done",
+      "context": "All clean. No stale tasks, no failed services, no timeline candidates, nothing actionable. Staying silent per heartbeat constraints.",
+      "artifacts": []
     }
   ]
 }
