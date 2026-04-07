@@ -14,6 +14,12 @@
       "ts": "2026-04-07T16:00:36Z",
       "event": "started",
       "context": "Memory sweep verify feedback_timeline_no_sessions + feedback_ai_tropes + feedback_dm_confidentiality"
+    },
+    {
+      "ts": "2026-04-07T16:02:09Z",
+      "event": "done",
+      "context": "All three done. Summary:\n\n**File 1 — `feedback_timeline_no_sessions.md`:** Rule valid. Gap found in `/mnt/data/scripts/timeline_ingest.py` — line 58 has a `congress-system` category pattern that categorizes congress/trial commits but no skip filter blocks individual session entries. A commit like \"add congress session 42 thread\" could pass through `MAJOR_KEYWORDS`. Rule intent correct, code doesn't enforce it.\n\n**File 2 — `feedback_ai_tropes.md`:** Issue found. Rule references an AI writing trop...(truncated)",
+      "artifacts": []
     }
   ]
 }
