@@ -1,0 +1,19 @@
+{
+  "id": "task-20260407-034059-a76af18c",
+  "title": "Demo agent for terminal grid verification",
+  "agent_id": "a76af18c829a01253",
+  "agent_type": "general-purpose",
+  "session_id": "38879609-c8bd-47f5-af26-6210d2de543c",
+  "discord_message_id": "omni_9eh6u3qc",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-07T03:40:59Z",
+      "event": "started",
+      "context": "Demo agent for terminal grid verification"
+    }
+  ]
+}
