@@ -14,6 +14,12 @@
       "ts": "2026-04-07T16:00:54Z",
       "event": "started",
       "context": "Trigger manual Marin listings run"
+    },
+    {
+      "ts": "2026-04-07T16:01:39Z",
+      "event": "done",
+      "context": "Done. Here's what happened:\n\n- Read `criteria.json` to pull the exact Marin SFH config (Mill Valley, Tiburon, Sausalito, San Rafael, Larkspur, Corte Madera — $2M–$2.5M)\n- Used `test_run.py` as the template pattern — started a one-off `ListingsWorkflow` via Temporal client against `listings-queue` with workflow id `listings-marin-manual-1775577682`\n- Ran with `dry_run: false` so dedup is live and seen_listings.db gets updated\n- Workflow returned **1 new listing** posted to Discord channel `138368...(truncated)",
+      "artifacts": []
     }
   ]
 }
