@@ -14,6 +14,12 @@
       "ts": "2026-04-07T12:00:13Z",
       "event": "started",
       "context": "Simplify cron code review"
+    },
+    {
+      "ts": "2026-04-07T12:02:40Z",
+      "event": "done",
+      "context": "No recent clunger changes. Nothing to clean there. Done.\n\nSummary of work done:\n\n- No secrets detected in recent 5 commits.\n- Applied `SCRIPTS_DIR` constant (already in `constants.py`) to 4 more files that were still using hardcoded `/mnt/data/scripts` paths:\n  - `/mnt/data/temporal-workflows/activities/startup_act.py` — 3 hardcoded script paths\n  - `/mnt/data/temporal-workflows/activities/mob_gen_act.py` — `RENDER_SPRITE_SCRIPT`\n  - `/mnt/data/temporal-workflows/activities/history_ingest_act.py...(truncated)",
+      "artifacts": []
     }
   ]
 }
