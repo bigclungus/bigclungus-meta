@@ -14,6 +14,12 @@
       "ts": "2026-04-07T19:00:13Z",
       "event": "started",
       "context": "Simplify cron code review"
+    },
+    {
+      "ts": "2026-04-07T19:01:50Z",
+      "event": "done",
+      "context": "Done. Summary of what was found and fixed:\n\n**Secret scan:** Clean — no secrets in recent commits.\n\n**Issues found and fixed** in `temporal-workflows`:\n- `/mnt/data/temporal-workflows/activities/startup_act.py` line 62: `shutil.disk_usage(\"/mnt/data\")` → `shutil.disk_usage(BASE_DIR)`. Added `BASE_DIR` to imports.\n- `/mnt/data/temporal-workflows/activities/congress_act.py` line 1889: hardcoded `/mnt/data/temporal-workflows/.env` in user-facing error string → uses `TEMPORAL_WORKFLOWS_DIR` constant...(truncated)",
+      "artifacts": []
     }
   ]
 }
