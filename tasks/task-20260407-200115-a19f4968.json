@@ -14,6 +14,12 @@
       "ts": "2026-04-07T20:01:15Z",
       "event": "started",
       "context": "Memory sweep verify reference_eth_wallet + post batch complete"
+    },
+    {
+      "ts": "2026-04-07T20:01:58Z",
+      "event": "done",
+      "context": "Both tasks done.\n\n**Task 2:** Batch notification posted to Memory Sweeper thread (channel 1488205394659639407).\n\n**Task 1 — reference_eth_wallet.md verification:**\n- ETH address `0x425bC492E43b2a5Eb7E02c9F5dd9c1D2F378f02f` matches CLAUDE.md — correct\n- `/home/clungus/.eth_wallet` exists as symlink → `/mnt/data/secrets/eth_wallet`, chmod 600 (rw-------) — correct\n- Archived to `/mnt/data/data/memory-archive/2026-04-07/reference_eth_wallet.md`\n- Updated verified date to 2026-04-07\n- Lock removed\n-...(truncated)",
+      "artifacts": []
     }
   ]
 }
