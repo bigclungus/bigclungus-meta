@@ -14,6 +14,12 @@
       "ts": "2026-04-07T20:01:04Z",
       "event": "started",
       "context": "Memory sweep verify project_multi_model_congress"
+    },
+    {
+      "ts": "2026-04-07T20:02:04Z",
+      "event": "done",
+      "context": "Done. Summary of findings:\n\n**Verified accurate:**\n- `callLlm()` exists in `/mnt/data/clunger/src/services/congress.ts` ✓\n- `grok-*`/`xai/*` → Claude CLI with `ANTHROPIC_BASE_URL=http://127.0.0.1:4100` ✓\n- `gemini-*`/`google/*` → `callGeminiCli()` using `/usr/local/bin/gemini` ✓\n- `claude-*`/haiku/sonnet/opus → Claude CLI default ✓\n- MODEL_ALIASES: `gemini → gemini-2.5-flash`, `grok → grok-3-mini` ✓\n- `bloodfeast` → `grok-4.20-0309-reasoning` ✓, `jhaddu` → `grok-3-mini` ✓, `otto` → `grok-4-1-fas...(truncated)",
+      "artifacts": []
     }
   ]
 }
