@@ -1,0 +1,19 @@
+{
+  "id": "task-20260407-032934-ad0f0b46",
+  "title": "Debug subagents API endpoint",
+  "agent_id": "ad0f0b466200291bf",
+  "agent_type": "general-purpose",
+  "session_id": "38879609-c8bd-47f5-af26-6210d2de543c",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-07T03:29:34Z",
+      "event": "started",
+      "context": "Debug subagents API endpoint"
+    }
+  ]
+}
