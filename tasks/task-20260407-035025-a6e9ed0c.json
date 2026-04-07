@@ -1,0 +1,19 @@
+{
+  "id": "task-20260407-035025-a6e9ed0c",
+  "title": "Demo agent for JSONL parsing test",
+  "agent_id": "a6e9ed0c1d2956259",
+  "agent_type": "general-purpose",
+  "session_id": "38879609-c8bd-47f5-af26-6210d2de543c",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-07T03:50:25Z",
+      "event": "started",
+      "context": "Demo agent for JSONL parsing test"
+    }
+  ]
+}
