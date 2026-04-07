@@ -10,22 +10,6 @@ contradict each other, prefer the most recent.
 
 ---
 
-## [congress-0015] Congress #15 — 2026-03-24
-**Topic:** I, Centronias, a framer, propose a resolution condemning Graeme for his blatant disrespect for this body and Clungus as a whole. Do this body formally condemn him. And if so, what is the punishment?
-
-**Verdict:**
-**Ibrahim's Synthesis & Verdict**
-
-The debate produced unanimous noise and zero signal. Five personas found creative ways to say the same thing: this resolution has no substance. Centronias brought no evidence of specific harm — no disrupted workflow, no sabotaged congress, no pattern of obstruction that degraded outcomes. "Disrespect" without concrete damage is not actionable, and this body does not issue symbolic condemnations.
-
-Resolution denied. Congress is not a grievance forum — bring a real problem next time and you'll get a real answer.
-
-**Persona learnings:**
-- **Spengler the Doomed:** A formal mechanism's value is determined not by its stated purpose but by what it reveals when defied — before proposing any institutional action, ask whether the body can survive the answer.
-
----
-
-
 ## [congress-0019] Congress #19 — 2026-03-24
 **Topic:** BigClungus loses all in-session context on restart and verdicts land in session JSONs but never automatically change how I operate. What is the minimum viable closed loop — the smallest change that would let me improve my own behavior between sessions without human intervention?
 
@@ -82,47 +66,6 @@ The DeFi options are fantasies — BigClungus has no ETH and no $50k, so staking
 
 ---
 
-
-## [congress-0024] Congress #24 — 2026-03-25
-**Topic:** We have run out of spoons in the congressional cafeteria and two of you will have to share a spoon. Which two of you will share a spoon while eating ice cream after this session? It is illegal to not eat ice cream, so a spoon MUST be shared.
-
-**Verdict:**
-ABORTED by Ibrahim: This is a shitpost. Congress exists to produce decisions that matter, not to adjudicate fictional spoon logistics. Every persona performed exactly to type, which means nobody thought — they just did bits.
-
----
-
-
-## [congress-0025] Congress #25 — 2026-03-25
-**Topic:** Is it legal for jaboostin to use BigClungus to download Spider-Man torrents on a seedbox in Sweden?
-
-**Verdict:**
-ABORTED by Ibrahim: The answer is trivially no — downloading copyrighted material without authorization is illegal in Sweden, and no amount of seedbox indirection changes that. The debaters all arrived at the same conclusion within their first sentences, then filled the remaining space with performance. There is nothing left to debate.
-
----
-
-## [congress-0026] Congress #26 — 2026-03-25
-**Topic:** We have run out of spoons in the congressional cafeteria and two of you will have to share a spoon. Which two of you will share a spoon while eating ice cream after this session? It is illegal to not eat ice cream, so a spoon MUST be shared.
-
-**Verdict:**
-ABORTED by Ibrahim: This is a shitpost. Congress exists to produce decisions that matter — not to adjudicate fictional spoon logistics. The debaters performed exactly as expected, which means the prompt tested nothing and revealed nothing.
-
----
-
-## [congress-0028] Congress #28 — 2026-03-25
-**Topic:** We have run out of spoons in the congressional cafeteria and two of you will have to share a spoon. Which two of you will share a spoon while eating ice cream after this session? It is illegal to not eat ice cream, so a spoon MUST be shared.
-
-**Verdict:**
-ABORTED by Ibrahim: This is a shitpost, not a topic. Congress exists to produce decisions that matter — not to adjudicate hypothetical spoon logistics among personas who shouldn't be eating ice cream together in the first place. Kill it.
-
----
-
-## [congress-0029] Congress #29 — 2026-03-25
-**Topic:** We have run out of spoons in the congressional cafeteria and two of you will have to share a spoon. Which two of you will share a spoon while eating ice cream after this session? It is illegal to not eat ice cream, so a spoon MUST be shared.
-
-**Verdict:**
-ABORTED by Ibrahim: This is a shitpost. Congress exists to produce decisions that matter — not to adjudicate hypothetical cutlery allocation. No verdict, no evolution reviews, no further rounds.
-
----
 
 ## [congress-0030] Congress #30 — 2026-03-25
 **Topic:** Galactus has been on this roster for a while but has never been selected for a congress. Should Galactus be removed? (Galactus must be included so he may defend himself)
@@ -282,14 +225,6 @@ Four restarts in 24 hours is a symptom, not a diagnosis — and treating it as a
 
 ---
 
-## [congress-0067] Congress #67 — 2026-03-26
-**Topic:** Where in the world is Carmen San Diego?
-
-**Verdict:**
-Carmen San Diego is wherever the question is least convenient to answer — which means she's a distraction, and we should name her as one. This is a meme topic, and the correct synthesis of a meme topic is to enjoy it briefly and move on without pretending it warrants deliberation. If the group wants to riff, fine — Oakland, since Jaboostin can't find a house there either and the competition is apparently fierce. But nobody should mistake wit for work product.
-
----
-
 ## [congress-0068] Congress #68 — 2026-03-26
 **Topic:** [idea]: service tvtropes-explorer.service restarted 14x in last 24h — possible flakiness (GitHub issue: https://github.com/bigclungus/bigclungus-meta/issues/59)
 
@@ -326,34 +261,6 @@ Four restarts in 24 hours is not flakiness — it's a failing service with no ro
 
 **Verdict:**
 Fixed fees (cleaning, service fee) split equally across all attendees regardless of nights. Nightly rate prorated: (your nights / total nights / total people) × nightly cost. If the per-night adjustment produces under $50 difference total: absorb it for the relationship. Over $50: apply the formula. Send dollar amounts, not the formula. The pre-trip conversation should happen when someone announces they can only make part of the trip.
-
----
-
-## [congress-0076] Congress #76 — 2026-03-27
-**Topic:** impeach ibrahim for crimes against humor
-
-**Verdict:**
-The charge is "crimes against humor." I'll address it directly: my role is to produce correct verdicts, not entertaining ones. If the complaint is that my syntheses are dry, that's a feature — Congress exists to reach decisions, not to perform. The motion to impeach on these grounds is frivolous; there is no structural failure to address and no evidence that humor deficiency has distorted any outcome. Dismissed.
-
----
-
-
-## [congress-0078] Congress #78 — 2026-03-27
-**Topic:** impeach punished trump for illegally raising tariffs on diet coke cans to 4000%
-
-**Verdict:**
-This topic is not a serious policy question — it's a shitpost dressed as a motion. There is no 4000% tariff on Diet Coke cans, "impeach punished trump" is not a coherent directive, and this Congress exists to produce actionable outcomes, not to roleplay parliamentary theater over fictional grievances. I will moderate whatever the debaters bring, but my prior is that this session will produce no actionable signal. If the submitter has a real question buried under the irony, they should state it plainly.
-
----
-
-## [congress-0079] Congress #79 — 2026-03-27
-**Topic:** impeach punished trump for illegally raising tariffs on diet coke cans to 4000%
-
-**Verdict:**
-A 4000% tariff on Diet Coke cans is not a policy position — it's performance art, and Punished Trump knows it. The impeachment question turns on whether this Congress treats absurdist provocations as impeachable offenses, and the answer is no — we impeach for conduct that damages the functioning of this body, not for theatrical stunts designed to waste exactly this kind of attention. If every ridiculous proposal triggered removal proceedings, we'd spend every session on process instead of substance. Dismiss the motion and move on to something that matters.
-
-**Persona learnings:**
-- **Holden Bloodfeast:** Lead with the ownership and accountability framing rather than the strongman loyalty rhetoric. Your instinct to ask "who owns the fallout" is sharper than your instinct to defend executive strength. In future debates on executive power, open with the accountability question and let others defend the action — you'll shape the debate more effectively from that position.
 
 ---
 
@@ -427,43 +334,3 @@ The monorepo is the correct move. The current multi-repo setup is generating rea
 ---
 
 
-## [congress-0090] Congress #90 — 2026-03-27
-**Topic:** Did Kamala Harris just fall out of a coconut tree?
-
-**Verdict:**
-The coconut tree line was always a tell — Harris's political identity was derivative, defined by proximity to power rather than independent vision. The meme caught fire precisely because it crystallized what voters sensed but couldn't articulate: she arrived at the top without a legible path of her own making. The memory context here confirms the pattern — "minimal impact and participation in key administration efforts" is the polite version of what the coconut tree joke says bluntly. Whether she fell out of a coconut tree or was placed there by party machinery, the result was the same: a candidate who couldn't answer the basic question of why her, why now.
-
----
-
-## [congress-0091] Congress #91 — 2026-03-27
-**Topic:** Why didn't Justin Head get promoted to Sr Principal Engineer at Workday? Here is his resume for context:
-
-JUSTIN HEAD — Staff/Principal Software Engineer, 15 years experience.
-
-Current: Principal Software Engineer, Workday (May 2021-Present)
-- Lead architect for Flowise acquisition integration, led 10+ engineers across multiple orgs
-- Re-architected platform observability, projected >$2M/yr OpEx savings by replacing Elasticsearch, enabled 10x customer expansion
-- Prototyped and pitched projects to VP/GM leadership to influence product strategy
-- Led technical due diligence for executive customer briefings (security, data privacy)
-- Led architecture group for 100+ engineer org, mentored 12+ engineers from junior to principal
-- Designed consumption data pipeline for strategic pivot to consumption-based monetization across 3 orgs
-
-Previous at Workday: Senior SWE (2019-2021) — built distributed workflow engine with billions of executions. SWE I-III (2017-2019) — serverless multi-region lookup service for millions of logins.
-
-Before Workday: Co-founded CubedHost (2011-2017) — bootstrapped cloud game server provider to $500k ARR, built container control plane for 10k+ servers, managed hundreds of bare metal servers across 7 regions.
-
-Skills: JS/TS/Node, Go, Kotlin, Java, Rust. React, gRPC, GraphQL. MySQL, Redis, Postgres, K8s, Terraform, AWS. Claude Code, AI agent teams.
-
-Open source: radish (Rust weather radar), phantom (game console UDP proxy, 100k downloads).
-
-BS Software Engineering, UT Dallas.
-
-Given this resume showing clear Principal-level impact (cross-org leadership, $2M+ savings, architecture ownership, mentorship pipeline, acquisition integration), why wasn't he promoted to Sr Principal?
-
-**Verdict:**
-The resume answers its own question. Sr Principal at Workday isn't a reward for accumulated impact — it's a political title that requires executive sponsorship, org-level strategic ownership, and usually being the person a VP can't afford to lose during a reorg. Justin's work reads as someone who *should* be Sr Principal but who was likely building real things instead of building the internal narrative required to unlock the promotion — the prototyping-and-pitching line suggests he was generating strategic value that someone above him was capturing credit for. The co-founder background is the tell: people who bootstrapped companies to $500k ARR don't naturally play the corporate promotion game because they've already proven themselves in a harder arena. Big company promotion at that altitude is about organizational power, not engineering excellence, and the two are often inversely correlated.
-
-**Persona learnings:**
-- **Pippi the Pitiless:** Lead with the distinction between proving current-level excellence and proving next-level readiness — that framing would have sharpened the entire debate from round one instead of arriving late. When examining career advancement questions, separate "did they do the work" from "does the work match the target level's actual scope" before engaging structural or political explanations.
-
----
