@@ -1,0 +1,19 @@
+{
+  "id": "task-20260407-080106-aebe00fa",
+  "title": "Memory sweep verify feedback_startup_dedup.md",
+  "agent_id": "aebe00fada9fc7e3e",
+  "agent_type": "general-purpose",
+  "session_id": "38879609-c8bd-47f5-af26-6210d2de543c",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-07T08:01:06Z",
+      "event": "started",
+      "context": "Memory sweep verify feedback_startup_dedup.md"
+    }
+  ]
+}
