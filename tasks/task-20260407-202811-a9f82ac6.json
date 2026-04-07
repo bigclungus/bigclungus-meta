@@ -14,6 +14,12 @@
       "ts": "2026-04-07T20:28:11Z",
       "event": "started",
       "context": "Heartbeat check"
+    },
+    {
+      "ts": "2026-04-07T20:29:50Z",
+      "event": "done",
+      "context": "All checks done. Summary:\n\n- **Stale tasks**: 0 found, watchdog healthy\n- **Failed services**: none\n- **GitHub issues**: 5 open, all labeled `idea`. Issue #101 (CongressWorkflow schema crash) references a specific stuck workflow `congress-scrap-20260331060122` but that workflow is no longer present — no action needed\n- **Timeline ingestion**: 0 new candidates, nothing to approve\n\nEverything healthy. Staying silent per constraints.",
+      "artifacts": []
     }
   ]
 }
