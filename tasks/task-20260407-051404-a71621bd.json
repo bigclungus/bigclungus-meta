@@ -14,6 +14,12 @@
       "ts": "2026-04-07T05:14:04Z",
       "event": "started",
       "context": "Write agent metadata unification plan to .md file"
+    },
+    {
+      "ts": "2026-04-07T05:14:59Z",
+      "event": "done",
+      "context": "Done. File written and pushed.\n\n**Path:** `/mnt/data/bigclungus-meta/plans/agent-metadata-unification.md`\n\nThe plan is 165 lines and covers the full arc: schema (3 tables — `agents`, `tasks`, `task_events`), 6 milestones in dependency order, a what-dies/what-stays table, risk table, and open questions. Committed to `bigclungus-meta` repo (that's where the submodule/repo lives, not the parent `/mnt/data` repo which gitignores it).",
+      "artifacts": []
     }
   ]
 }
