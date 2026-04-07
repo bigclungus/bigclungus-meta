@@ -14,6 +14,12 @@
       "ts": "2026-04-07T03:32:34Z",
       "event": "started",
       "context": "Demo subagent for terminal grid test"
+    },
+    {
+      "ts": "2026-04-07T03:32:50Z",
+      "event": "done",
+      "context": "All 6 commands completed successfully:\n\n1. `grug subagent awake` — confirmed\n2. `/mnt/data/` contains **49 items**\n3. `clunger.service` — **active**\n4. `omni-gateway.service` — **active**\n5. `/api/subagents` — **14 agents found**\n6. `grug subagent done` — confirmed\n\nBoth core services are up, the work directory has 49 entries, and clunger is tracking 14 subagents.",
+      "artifacts": []
     }
   ]
 }
