@@ -14,6 +14,12 @@
       "ts": "2026-04-07T16:18:06Z",
       "event": "started",
       "context": "Heartbeat check"
+    },
+    {
+      "ts": "2026-04-07T16:19:27Z",
+      "event": "done",
+      "context": "All clean. No stale tasks, no failed services, no timeline candidates. Everything healthy — staying silent per constraints.\n\n**Summary:** Heartbeat clean run.\n- 0 stale tasks, 0 orphaned congress sessions\n- 0 failed services\n- GitHub issues: 5 open, all tagged `idea`, none small/actionable\n- Timeline: 0 new candidates, 0 pending approval\n\nNo action taken, no Discord post sent.",
+      "artifacts": []
     }
   ]
 }
