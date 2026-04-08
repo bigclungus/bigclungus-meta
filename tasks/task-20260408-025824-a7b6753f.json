@@ -14,6 +14,12 @@
       "ts": "2026-04-08T02:58:24Z",
       "event": "started",
       "context": "Run Crundle persona response"
+    },
+    {
+      "ts": "2026-04-08T02:58:56Z",
+      "event": "done",
+      "context": "Posted. Crundle said:\n\n> Crundle does not know what M house is.\n>\n> If M is number, that is very big number. Crundle has laid eggs in smaller spaces than most houses. Eggs were fine.\n>\n> Question to consider: is ceiling right height. This matter more than price. Crundle has seen bad ceilings. Cannot fix bad ceiling.\n>\n> Also: is there darkness somewhere inside. Not full dark, just. Some dark. Room where light does not insist on itself.\n>\n> If those things are yes, rest is negotiable probably. Cr...(truncated)",
+      "artifacts": []
     }
   ]
 }
