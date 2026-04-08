@@ -14,6 +14,12 @@
       "ts": "2026-04-08T02:58:02Z",
       "event": "started",
       "context": "Invoke crundle persona"
+    },
+    {
+      "ts": "2026-04-08T02:58:09Z",
+      "event": "done",
+      "context": "HTTP response:\n\n```json\n{\n  \"ok\": true,\n  \"identity\": \"crundle\",\n  \"display_name\": \"Crundle\",\n  \"injected\": true\n}\n```\n\nClunger accepted request. Persona \"crundle\" (display name \"Crundle\") found, question forwarded, inject to BigClungus main triggered. No Discord posts made.",
+      "artifacts": []
     }
   ]
 }
