@@ -14,6 +14,12 @@
       "ts": "2026-04-08T03:40:51Z",
       "event": "started",
       "context": "Milestone 4: Cost display on /tasks"
+    },
+    {
+      "ts": "2026-04-08T03:42:41Z",
+      "event": "done",
+      "context": "Done. Changes made to `/mnt/data/hello-world/tasks.html`:\n\n**Per-task cost badge** — added a `cost-badge` span in `.card-top` between the age pill and the status badge. Shows formatted cost like `$0.0032`, `$0.124`, etc. Zero/null tasks show `—` in a dimmed style. Non-zero costs render in muted purple (`#a78bfa`, 70% opacity) so they're visible but don't compete with the status badge.\n\n**Summary bar cost pill** — added a `pill-cost` pill at the end of the summary bar (after the bg/fg pills, sepa...(truncated)",
+      "artifacts": []
     }
   ]
 }
