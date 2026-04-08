@@ -1,0 +1,19 @@
+{
+  "id": "task-20260408-023456-af4f1b87",
+  "title": "Update Marin max price to $1M + rerun",
+  "agent_id": "af4f1b8709bcbd0c2",
+  "agent_type": "general-purpose",
+  "session_id": "38879609-c8bd-47f5-af26-6210d2de543c",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-08T02:34:56Z",
+      "event": "started",
+      "context": "Update Marin max price to $1M + rerun"
+    }
+  ]
+}
