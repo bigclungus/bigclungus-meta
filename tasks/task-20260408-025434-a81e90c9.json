@@ -1,0 +1,19 @@
+{
+  "id": "task-20260408-025434-a81e90c9",
+  "title": "Fix run_marin_manual.py Discord output",
+  "agent_id": "a81e90c97ea50189a",
+  "agent_type": "general-purpose",
+  "session_id": "38879609-c8bd-47f5-af26-6210d2de543c",
+  "discord_message_id": "omni_dhlf3nja",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-08T02:54:34Z",
+      "event": "started",
+      "context": "Fix run_marin_manual.py Discord output"
+    }
+  ]
+}
