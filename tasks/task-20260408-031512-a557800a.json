@@ -14,6 +14,12 @@
       "ts": "2026-04-08T03:15:12Z",
       "event": "started",
       "context": "Beautify terminal GUI"
+    },
+    {
+      "ts": "2026-04-08T03:21:06Z",
+      "event": "done",
+      "context": "Done. Service restarted and pushed.\n\nKey changes to `/mnt/data/terminal/server.py`:\n\n**Design system**\n- Full CSS custom property system (`--bg-base`, `--accent`, `--text-primary`, etc.) — no more scattered hex literals\n- Added Inter as UI font; terminal output areas keep monospace\n\n**Session bar**\n- Cleaner tab buttons with accent-color (teal) underline when active, not purple\n- Action links (Knowledge Graph, claude.md, restart) use hover-contextual colors: blue for nav, red for destructive\n- S...(truncated)",
+      "artifacts": []
     }
   ]
 }
