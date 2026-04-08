@@ -1,0 +1,19 @@
+{
+  "id": "task-20260408-033235-a612d782",
+  "title": "Send message to sort agent about auto-refresh",
+  "agent_id": "a612d782b06f826f4",
+  "agent_type": "general-purpose",
+  "session_id": "38879609-c8bd-47f5-af26-6210d2de543c",
+  "discord_message_id": "omni_g57ryz7i",
+  "discord_user": null,
+  "run_in_background": false,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-08T03:32:35Z",
+      "event": "started",
+      "context": "Send message to sort agent about auto-refresh"
+    }
+  ]
+}

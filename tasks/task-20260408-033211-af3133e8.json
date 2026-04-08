@@ -14,6 +14,12 @@
       "ts": "2026-04-08T03:32:10Z",
       "event": "started",
       "context": "Sort subagents active-first"
+    },
+    {
+      "ts": "2026-04-08T03:32:53Z",
+      "event": "done",
+      "context": "Done. Changes in `/mnt/data/terminal/server.py` inside `renderSubagents`:\n\n1. Added sort after filtering: `in_progress` agents sort first (rank 0), all others rank 1. Within each group, sorted by `lastModified` descending so most-recently-completed floats to top of the done pile.\n\n2. Changed new card insertion from `insertBefore(card, list.firstChild)` to `appendChild` — insertion order no longer matters since the DOM gets reordered anyway.\n\n3. Added a DOM re-order loop at the end: iterates `int...(truncated)",
+      "artifacts": []
     }
   ]
 }
