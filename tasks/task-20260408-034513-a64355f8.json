@@ -1,0 +1,19 @@
+{
+  "id": "task-20260408-034513-a64355f8",
+  "title": "Fix subagent log scroll to bottom",
+  "agent_id": "a64355f8e2003955f",
+  "agent_type": "general-purpose",
+  "session_id": "38879609-c8bd-47f5-af26-6210d2de543c",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-08T03:45:13Z",
+      "event": "started",
+      "context": "Fix subagent log scroll to bottom"
+    }
+  ]
+}
