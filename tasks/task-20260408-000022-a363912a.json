@@ -14,6 +14,12 @@
       "ts": "2026-04-08T00:00:22Z",
       "event": "started",
       "context": "Memory sweep - behavioral rules + batch notification"
+    },
+    {
+      "ts": "2026-04-08T00:00:53Z",
+      "event": "done",
+      "context": "Done. All tasks complete:\n\n- **Task 0**: Batch notification posted to Memory Sweeper thread (channel 1488205394659639407).\n- **feedback_verify_clunger_before_asserting.md**: `/mnt/data/clunger/src/services/congress.ts` confirmed present. File archived to `/mnt/data/data/memory-archive/2026-04-08/`. Verified line appended.\n- **feedback_silent_during_agent.md**: Behavioral rule only, no code path to verify. File archived. Verified line appended.\n- Results posted to Memory Sweeper thread.",
+      "artifacts": []
     }
   ]
 }
