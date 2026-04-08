@@ -14,6 +14,12 @@
       "ts": "2026-04-08T01:08:41Z",
       "event": "started",
       "context": "Heartbeat check"
+    },
+    {
+      "ts": "2026-04-08T01:10:05Z",
+      "event": "done",
+      "context": "All clear. Here's the heartbeat summary:\n\n- **Stale tasks**: 0 found\n- **Failed services**: 0\n- **GitHub issues**: 5 open, all existing ideas/infra items needing jaboostin — nothing small and actionable\n- **Timeline**: 1 candidate found and approved — `feat: add listing_type support to exclude rentals from Marin SFH search` (clungus repo)\n\nNo Discord post needed. Everything healthy.",
+      "artifacts": []
     }
   ]
 }
