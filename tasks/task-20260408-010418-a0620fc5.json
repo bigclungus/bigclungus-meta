@@ -1,0 +1,19 @@
+{
+  "id": "task-20260408-010418-a0620fc5",
+  "title": "Update Marin SFH price range to 0-500k",
+  "agent_id": "a0620fc588aba6e28",
+  "agent_type": "general-purpose",
+  "session_id": "38879609-c8bd-47f5-af26-6210d2de543c",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-08T01:04:17Z",
+      "event": "started",
+      "context": "Update Marin SFH price range to 0-500k"
+    }
+  ]
+}
