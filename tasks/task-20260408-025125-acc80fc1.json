@@ -14,6 +14,12 @@
       "ts": "2026-04-08T02:51:25Z",
       "event": "started",
       "context": "Manual Marin listings run"
+    },
+    {
+      "ts": "2026-04-08T02:51:35Z",
+      "event": "done",
+      "context": "Script ran clean. Result: **0 new listings found**.\n\nFull output:\n- Workflow ID: `listings-marin-manual-1775616688`\n- Workflow completed successfully\n- `New listings posted: 0`\n- Discord was notified by the script itself (that's baked into `run_marin_manual.py`, not something I triggered)",
+      "artifacts": []
     }
   ]
 }
