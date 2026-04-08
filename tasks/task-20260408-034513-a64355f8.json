@@ -14,6 +14,12 @@
       "ts": "2026-04-08T03:45:13Z",
       "event": "started",
       "context": "Fix subagent log scroll to bottom"
+    },
+    {
+      "ts": "2026-04-08T03:46:13Z",
+      "event": "done",
+      "context": "Done. What changed:\n\n**Root cause:** `renderOutputPane` did a full `innerHTML` replacement on every SSE message. This resets `scrollTop` to 0 before the auto-scroll assignment, causing a visible flash back to top each time a line arrived.\n\n**Fix in `/mnt/data/terminal/server.py`:**\n\n1. Added `appendOutputLine(outputEl, line)` — appends a `<span>` to the DOM directly, preserving existing scroll position. Checks `isScrolledToBottom()` before appending; only scrolls to bottom if user hasn't manuall...(truncated)",
+      "artifacts": []
     }
   ]
 }
