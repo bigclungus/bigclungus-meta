@@ -75,7 +75,7 @@ class AgentTaskWorkflow:
         result = await workflow.execute_activity(
             run_agent,
             args=[input],
-            start_to_close_timeout=timedelta(minutes=45),
+            start_to_close_timeout=timedelta(minutes=input.get("start_to_close_timeout_minutes", 45)),
             heartbeat_timeout=timedelta(minutes=2),
             retry_policy=RetryPolicy(maximum_attempts=1),  # no retry on agent activity
         )
@@ -107,6 +107,7 @@ Input schema (dict keys):
 - `model` — e.g. `"claude-sonnet-4-6"`
 - `prompt` — the originating prompt/title (from pending file context)
 - `metadata` — freeform dict (discord_user, session_id, discord_message_id, run_in_background, isolation)
+- `start_to_close_timeout_minutes` — optional int, defaults to `45`. The workflow passes `timedelta(minutes=input.get("start_to_close_timeout_minutes", 45))` to `run_agent`'s `start_to_close_timeout`. Callers needing a longer-running agent can set this per-invocation.
 
 The workflow does NOT use `workflow.wait_condition` on cancel — the cancel signal sets a flag, and `run_agent` checks `activity.is_cancelled()` during heartbeat. This keeps the workflow determinism clean.
 
@@ -150,7 +151,11 @@ async def run_agent(input: dict) -> dict:
         if activity.is_cancelled():
             proc.terminate()
             break
-    stdout, stderr = await proc.communicate()
+    try:
+        stdout, stderr = await asyncio.wait_for(proc.communicate(), timeout=10.0)
+    except asyncio.TimeoutError:
+        proc.kill()
+        stdout, stderr = await proc.communicate()
     return parse_agent_output(stdout.decode(), input["agent_type"])
 ```
 
@@ -164,6 +169,8 @@ Two writes, both must succeed (activity retries handle transient failures):
 
 1. **`tasks.db` update** — mirrors `subagent-stop.ts` UPDATE: set `status="done"`, update `data` blob with `finished_at`, append done log entry
 2. **`agents.db` update** — mirrors clunger's `restHandleAgentComplete`: set `status="completed"`, `completed_at`, `input_tokens`, `output_tokens`, `cost_usd`, `duration_ms`
+
+> **Idempotency note:** activity may retry on transient failure; all DB writes must be idempotent UPSERTs. Use `INSERT OR REPLACE` for new rows and `INSERT OR IGNORE` where only missing rows should be inserted. Never use bare `INSERT` in this activity.
 
 Both writes use sqlite3 with WAL mode. The activity result is also returned to the workflow and stored in Temporal history (free audit log).
 
@@ -196,7 +203,7 @@ async function startTemporalWorkflow(taskId: string, input: TemporalInput): Prom
 
 Call with `agent_type` derived from `model` field in the pending file context (e.g. `claude-*` → `"claude"`, `gemini-*` → `"gemini"`). Default to `"claude"`.
 
-Store the `workflowId` (`agent-task-<taskId>`) in the state file alongside `task_id` so `subagent-stop.ts` can signal it.
+Store `workflowId` (`agent-task-<taskId>`) in `/tmp/bc-agents/<agentId>.json` — the same state file already used by hooks for IPC. Concretely: `subagent-start.ts` writes `workflowId` into that JSON alongside `task_id`; `subagent-stop.ts` reads it back to know which workflow to signal for completion.
 
 ### `subagent-stop.ts` changes
 
@@ -229,13 +236,19 @@ Note: in Phase 1 (shadow mode), `subagent-stop.ts` does NOT send the `cancel` si
 
 **File:** `/home/clungus/work/clunger/src/index.ts`
 
-### New endpoint: `GET /api/tasks/temporal`
+### New endpoint: `GET /api/tasks?temporal=true`
+
+Shadow endpoint — same path as the existing tasks list but with a `temporal=true` query param to opt into the Temporal-backed response. This avoids adding a new route and keeps the UI toggle simple.
 
 ```typescript
-// GET /api/tasks/temporal?status=running
-if (pathname === "/api/tasks/temporal" && req.method === "GET") {
+// GET /api/tasks?temporal=true
+if (pathname === "/api/tasks" && req.method === "GET") {
   if (!restIsAuthed(req)) { jsonResponse(res, { error: "Forbidden" }, 403); return; }
-  await restServeTemporalTasks(res, url.searchParams);
+  if (url.searchParams.get("temporal") === "true") {
+    await restServeTemporalTasks(res, url.searchParams);
+  } else {
+    await restServeTasks(res, url.searchParams);
+  }
   return;
 }
 ```
@@ -256,7 +269,19 @@ async function restServeTemporalTasks(res, params) {
 }
 ```
 
-`normalizeTemporalExecution` maps Temporal's `WorkflowExecutionInfo` fields to the existing `Task` shape used in `listTasks`: extract `workflowId` as `id`, `startTime` as `startedAt`, status as `status`, pull `agent_type`/`model`/`metadata` from the workflow's first input argument (available in the Temporal history API as `searchAttributes` or the first input).
+`normalizeTemporalExecution` maps Temporal's `WorkflowExecutionInfo` fields to the existing `Task` shape used in `listTasks`: extract `workflowId` as `id`, `startTime` as `startedAt`, status as `status`. Do NOT pull input args from workflow history — that requires a per-workflow API call and won't scale. Instead, store `task_id`, `agent_type`, and `model` as Temporal search attributes at workflow start time:
+
+```python
+workflow.upsert_typed_search_attributes(
+    TypedSearchAttributes([
+        SearchAttributePair(SearchAttributeKey.for_keyword("task_id"), input["task_id"]),
+        SearchAttributePair(SearchAttributeKey.for_keyword("agent_type"), input["agent_type"]),
+        SearchAttributePair(SearchAttributeKey.for_keyword("model"), input["model"]),
+    ])
+)
+```
+
+Clunger can then read these directly from the list API response (`execution.searchAttributes`) without extra round-trips.
 
 ### Terminal page toggle
 
@@ -265,7 +290,7 @@ The terminal graph page (`/mnt/data/terminal/graph.html`) currently has a tasks 
 <button id="task-source-toggle" onclick="toggleTaskSource()">source: legacy</button>
 ```
 
-JS logic: on toggle, flip between fetching `/api/tasks` (legacy) and `/api/tasks/temporal?status=running` (Temporal). Store preference in `localStorage`. Both responses use the same normalized shape so no rendering changes needed.
+JS logic: on toggle, flip between fetching `/api/tasks` (legacy) and `/api/tasks?temporal=true` (Temporal). Store preference in `localStorage`. Both responses use the same normalized shape so no rendering changes needed.
 
 ---
 
@@ -277,8 +302,8 @@ JS logic: on toggle, flip between fetching `/api/tasks` (legacy) and `/api/tasks
 - `tasks_worker.py` running as systemd service
 - `subagent-start.ts` and `subagent-stop.ts` POST to Temporal in addition to existing paths
 - Neither system is authoritative; Temporal failures are silent
-- Clunger gets `/api/tasks/temporal` endpoint (internal only, not surfaced in UI yet)
-- Validation: compare `/api/tasks` vs `/api/tasks/temporal` counts daily; alert on >10% divergence
+- Clunger gets `GET /api/tasks?temporal=true` endpoint (internal only, not surfaced in UI yet)
+- Validation: compare `/api/tasks` vs `/api/tasks?temporal=true` counts daily; alert on >10% divergence
 
 ### Phase 2 — Temporal authoritative for new tasks
 
@@ -297,6 +322,16 @@ Gating criteria for Phase 2: 7 consecutive days of shadow mode with <2% divergen
 - `restServeTasks` in clunger reads from Temporal (proxied) instead of `tasks.db`
 - `tasks.db` kept as read-only historical archive
 - `check_open_tasks` sweeper activity updated to query Temporal HTTP API instead of scanning JSON files
+
+---
+
+## Known Issues Before Phase 2
+
+These are confirmed blockers that must be resolved before cutting over to Phase 2 (Temporal authoritative):
+
+1. **`proc.communicate()` hang after cancel** — if the agent subprocess ignores `SIGTERM`, `proc.communicate()` blocks forever and the activity never returns, preventing Temporal from marking the workflow failed. Fixed in this plan with `asyncio.wait_for(..., timeout=10.0)` + `proc.kill()` fallback, but needs a real integration test with a stubborn subprocess before Phase 2.
+
+2. **`finalize_task` idempotency** — activity retries on transient DB failure will re-run the writes. Without `INSERT OR REPLACE` / `INSERT OR IGNORE`, a retry produces duplicate rows or constraint errors, leaving the task in a broken state. All DB writes in `finalize_task` must be audited and converted to idempotent UPSERTs before Phase 2 makes this the canonical write path.
 
 ---
 
