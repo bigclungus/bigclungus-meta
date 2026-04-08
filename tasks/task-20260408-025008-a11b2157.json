@@ -14,6 +14,12 @@
       "ts": "2026-04-08T02:50:08Z",
       "event": "started",
       "context": "Sort listings by price descending"
+    },
+    {
+      "ts": "2026-04-08T02:50:33Z",
+      "event": "done",
+      "context": "Done. Summary:\n\n- **Field sorted on:** `price` (float, set in `redfin.py` from the `list_price` column)\n- **Sort added in:** `/mnt/data/temporal-workflows/workflows/listings.py`, line 72 — immediately before the `new_listings[:1]` cap, so highest-priced listing is always the one posted to Discord\n- Committed as `feat: sort listings by price descending` (d4af50d), pushed, temporal-worker restarted and active",
+      "artifacts": []
     }
   ]
 }
