@@ -14,6 +14,12 @@
       "ts": "2026-04-08T01:04:37Z",
       "event": "started",
       "context": "Manual Marin SFH listings run $0-500k"
+    },
+    {
+      "ts": "2026-04-08T01:05:00Z",
+      "event": "done",
+      "context": "Workflow ran and completed. Results:\n\n- Workflow ID: `listings-marin-manual-1775610290`\n- New listings found and posted: **1**\n- Discord notified via inject endpoint: `marin manual run ($0-$500k): found 1 new listings`\n- Script saved at `/mnt/data/temporal-workflows/run_marin_manual.py` for future reuse",
+      "artifacts": []
     }
   ]
 }
