@@ -1,0 +1,19 @@
+{
+  "id": "task-20260408-010630-a9af3ccf",
+  "title": "Exclude rentals from Marin criteria + rerun",
+  "agent_id": "a9af3ccf6e58d7a1e",
+  "agent_type": "general-purpose",
+  "session_id": "38879609-c8bd-47f5-af26-6210d2de543c",
+  "discord_message_id": "omni_97l4kule",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-08T01:06:30Z",
+      "event": "started",
+      "context": "Exclude rentals from Marin criteria + rerun"
+    }
+  ]
+}
