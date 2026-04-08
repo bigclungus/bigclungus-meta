@@ -1,0 +1,19 @@
+{
+  "id": "task-20260408-024947-a7774aac",
+  "title": "Fix Marin price range to 2-2.5M",
+  "agent_id": "a7774aac439865af4",
+  "agent_type": "general-purpose",
+  "session_id": "38879609-c8bd-47f5-af26-6210d2de543c",
+  "discord_message_id": null,
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-08T02:49:47Z",
+      "event": "started",
+      "context": "Fix Marin price range to 2-2.5M"
+    }
+  ]
+}
