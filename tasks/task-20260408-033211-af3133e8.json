@@ -1,0 +1,19 @@
+{
+  "id": "task-20260408-033211-af3133e8",
+  "title": "Sort subagents active-first",
+  "agent_id": "af3133e8b72697e22",
+  "agent_type": "general-purpose",
+  "session_id": "38879609-c8bd-47f5-af26-6210d2de543c",
+  "discord_message_id": "omni_g57ryz7i",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-08T03:32:10Z",
+      "event": "started",
+      "context": "Sort subagents active-first"
+    }
+  ]
+}
