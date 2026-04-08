@@ -1,0 +1,477 @@
+Final Redrafted Implementation Plan: Consistent Foreground Subagent Tracking with Multimodel Support
+
+Created: 2026-04-08
+Status: Final
+Goal: Provide one consistent, reliable path to start foreground subagents using the claude CLI, support arbitrary models and per-subagent API keys, track full usage/metadata, and make Temporal the durable system of record with infinite retention.
+
+Core Idioms Applied (from Temporal Best Practices)
+Workflow as durable orchestrator, Activities for all external/non-deterministic work (CLI execution, DB writes).1(opens in new tab)
+Long-running execute_agent Activity with regular heartbeats (25s interval) and proper cancellation handling.2(opens in new tab)
+Fine-grained Activities where practical; one long-running Activity is acceptable for external CLI processes.3(opens in new tab)
+Heavy use of Search Attributes for visibility, filtering by model, user, status.4(opens in new tab)
+Signals for metadata updates and cancellation; Queries for status retrieval.5(opens in new tab)
+Fixed, predictable workflowId (agent-task-{task_id}) for idempotent starts from external hooks.6(opens in new tab)
+All Activities must be idempotent.
+Local Activities for fast DB operations.
+Shadow mode transition before making Temporal authoritative.
+1. Namespace & Infrastructure
+Create namespace tasks with infinite retention (run once):
+
+bash
+
+
+curl -X POST http://127.0.0.1:8233/api/v1/namespaces \
+  -H "Content-Type: application/json" \
+  -d '{
+    "namespace": "tasks",
+    "description": "Foreground Subagent Tracking - Infinite Retention",
+    "workflowExecutionRetentionPeriod": "0s"
+  }'
+Register these Search Attributes (one-time):
+
+AgentType (Text)
+Model (Text)
+TaskID (Text)
+DiscordUser (Text)
+SessionID (Text)
+IsForeground (Bool)
+CostUSD (Double)
+2. Project Structure
+
+
+/mnt/data/temporal-workflows/
+├── types.py
+├── worker.py
+├── activities/
+│   ├── task_db.py
+│   ├── agent_executor.py
+├── workflows/
+│   └── agent_task_workflow.py
+├── systemd/tasks-worker.service
+3. Core Types (types.py)
+python
+
+
+from dataclasses import dataclass, field
+from datetime import datetime
+from typing import Any, Literal
+AgentType = Literal["claude", "gemini", "gpt", "custom"]
+@dataclass
+class AgentTaskInput:
+    task_id: str
+    agent_type: AgentType = "claude"
+    model: str = "claude-3-5-sonnet-20240620"
+    prompt: str
+    api_key: str | None = None
+    extra_cli_args: list[str] = field(default_factory=list)
+    is_foreground: bool = True
+    metadata: dict[str, Any] = field(default_factory=dict)
+    started_at: datetime | None = None
+4. Workflow (workflows/agent_task_workflow.py)
+python
+
+
+from datetime import timedelta
+from temporalio import workflow
+from temporalio.exceptions import ActivityError, CancelledError
+from temporalio.common import RetryPolicy
+from ..types import AgentTaskInput
+from ..activities.task_db import create_task_record, finalize_task, record_error
+from ..activities.agent_executor import execute_agent
+@workflow.defn(name="AgentTaskWorkflow")
+class AgentTaskWorkflow:
+    def __init__(self) -> None:
+        self._status = "running"
+        self._metadata: dict = {}
+        self._result: dict | None = None
+    @workflow.run
+    async def run(self, input: AgentTaskInput) -> dict:
+        await workflow.execute_local_activity(
+            create_task_record,
+            input,
+            start_to_close_timeout=timedelta(seconds=10),
+        )
+        try:
+            result = await workflow.execute_activity(
+                execute_agent,
+                input,
+                start_to_close_timeout=timedelta(minutes=90),
+                heartbeat_timeout=timedelta(seconds=90),
+                retry_policy=RetryPolicy(maximum_attempts=1),
+            )
+            self._result = result
+            self._status = "completed"
+        except ActivityError as e:
+            if isinstance(e.cause, CancelledError) or "cancelled" in str(e).lower():
+                self._status = "cancelled"
+            else:
+                self._status = "failed"
+                await workflow.execute_local_activity(
+                    record_error, [input.task_id, str(e)]
+                )
+            raise
+        finally:
+            await workflow.execute_local_activity(
+                finalize_task,
+                [input, self._result or {"status": self._status}],
+                start_to_close_timeout=timedelta(seconds=30),
+            )
+        return self._result or {}
+    @workflow.signal
+    async def add_metadata(self, data: dict) -> None:
+        self._metadata.update(data)
+    @workflow.signal
+    async def cancel(self) -> None:
+        self._status = "cancelled"
+    @workflow.query
+    def get_status(self) -> dict:
+        return {
+            "task_id": workflow.info().workflow_id,
+            "status": self._status,
+            "metadata": self._metadata,
+            "result": self._result,
+        }
+5. Activities
+activities/agent_executor.py (runs claude CLI with model + api_key support + heartbeat):
+
+python
+
+
+import asyncio
+import os
+from temporalio import activity
+from temporalio.exceptions import CancelledError
+from ..types import AgentTaskInput
+@activity.defn
+async def execute_agent(input: AgentTaskInput) -> dict:
+    if activity.is_cancelled():
+        raise CancelledError()
+    cmd = ["claude", "-p", input.prompt, "--model", input.model]
+    if input.extra_cli_args:
+        cmd.extend(input.extra_cli_args)
+    env = os.environ.copy()
+    if input.api_key:
+        env["ANTHROPIC_API_KEY"] = input.api_key
+        cmd.extend(["--api-key", input.api_key])
+    proc = await asyncio.create_subprocess_exec(
+        *cmd, env=env, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
+    )
+    heartbeat_task = asyncio.create_task(_heartbeat_loop(proc, input.task_id))
+    try:
+        stdout, stderr = await proc.communicate()
+        if proc.returncode != 0:
+            raise RuntimeError(f"claude exited {proc.returncode}: {stderr.decode()}")
+        return _parse_output(stdout.decode(), input.model)
+    finally:
+        if not heartbeat_task.done():
+            heartbeat_task.cancel()
+async def _heartbeat_loop(proc, task_id: str):
+    while True:
+        await asyncio.sleep(25)
+        activity.heartbeat({"task_id": task_id, "status": "running", "pid": proc.pid})
+def _parse_output(output: str, model: str) -> dict:
+    return {
+        "status": "success",
+        "model": model,
+        "output": output.strip(),
+        "input_tokens": 0,   # replace with real parsing
+        "output_tokens": 0,
+        "cost_usd": 0.0,
+        "raw": output,
+    }
+activities/task_db.py should contain idempotent SQLite writes (create record, finalize with usage data, error recording). Use upserts and WAL mode.
+
+6. TypeScript Hooks (subagent-start.ts / subagent-stop.ts)
+Use fixed workflowId, idempotent start via HTTP API (shadow mode), save reference in /tmp for stop hook, send add_metadata signal on completion. All Temporal calls must be non-blocking (try/catch that never affects hook exit code).
+
+7. Clunger Integration
+Add GET /api/tasks/temporal that queries Temporal Visibility API using Search Attributes (filter by IsForeground=true, Model, etc.). Normalize results to existing Task shape. Add UI toggle between legacy and Temporal.
+
+8. Worker & Service
+Dedicated worker.py connecting to namespace tasks, task queue agent-tasks-queue, with the workflow and activities registered. Run as separate systemd service.
+
+9. Rollout Phases
+Phase 0: Namespace, Search Attributes, project structure, worker.
+Phase 1: Core workflow + activities (test manually).
+Phase 2 (Shadow): Hooks start Temporal in addition to legacy path. Compare counts daily.
+Phase 3 (Authoritative): Hooks call Temporal first. finalize_task becomes sole writer to DBs. UI defaults to Temporal.
+Phase 4: Remove legacy DB writes from hooks; Temporal is source of truth.
+
+Gating for Phase 3: Minimum 7–14 days of shadow mode with <1% divergence, stable worker, all required metadata (model, usage, discord fields) correctly stored and queryable via Search Attributes or get_status query.
+
+This plan follows current Temporal idioms for AI/agent orchestration: durable orchestration via Workflow + heartbeat-enabled long-running Activities, rich observability via Search Attributes/Signals/Queries, and safe external triggering via idempotent workflow IDs.7(opens in new tab)
+
+The design gives you one consistent function (startForegroundSubagent(context)) that accepts model, api_key, prompt, and metadata, while storing everything durably forever.
+
+
+7 sources
+·
+
+50,170 tokens
+·
+25,557ms
+i think you need to provide examples of the control flow in the plan too
+
+Final Redrafted Implementation Plan
+
+Title: Consistent Tracking of Foreground Subagents with Multimodel Support using Temporal
+Created: 2026-04-08
+Status: Final
+Goal: Provide one consistent, reliable entry point to start foreground subagents using the claude CLI tool, support arbitrary models + per-subagent api_key, store rich metadata, track full usage (model, tokens, cost, duration), and use Temporal as the durable system of record with infinite retention.
+
+Core Principles & Temporal Idioms Used
+This plan follows current best practices for AI/agent orchestration with Temporal (Python SDK):
+
+Workflow as orchestrator: Deterministic control flow, all side effects in Activities.1(opens in new tab)
+Long-running Activity with heartbeats: The claude CLI runs inside one Activity using 25-second heartbeats + heartbeat_timeout of 90 seconds. This is the accepted pattern for external CLI processes.2(opens in new tab)
+Signals for runtime updates (add_metadata, cancel).
+Queries for reading current state without side effects.
+Search Attributes for observability and filtering by Model, IsForeground, DiscordUser, etc.
+Local Activities for fast, reliable DB writes (tasks.db, agents.db).
+Fixed workflow ID (agent-task-{task_id}) for idempotent starts from hooks.
+Shadow mode rollout to maintain compatibility with existing tasks.db / agents.db / clunger system.
+All Activities are idempotent.
+Infinite retention ("workflowExecutionRetentionPeriod": "0s").
+1. Infrastructure Setup (Run Once)
+Namespace creation (infinite retention):
+
+bash
+
+
+curl -X POST http://127.0.0.1:8233/api/v1/namespaces \
+  -H "Content-Type: application/json" \
+  -d '{
+    "namespace": "tasks",
+    "description": "Foreground Subagent Tracking - Infinite Retention",
+    "workflowExecutionRetentionPeriod": "0s"
+  }'
+Search Attributes (register once via temporal CLI):
+
+AgentType (Text)
+Model (Text)
+TaskID (Text)
+IsForeground (Bool)
+DiscordUser (Text)
+SessionID (Text)
+CostUSD (Double)
+2. Project Structure
+
+
+/mnt/data/temporal-workflows/
+├── types.py
+├── worker.py
+├── activities/
+│   ├── task_db.py
+│   ├── agent_executor.py
+├── workflows/
+│   └── agent_task_workflow.py
+└── systemd/tasks-worker.service
+3. Core Types (types.py)
+python
+
+
+from dataclasses import dataclass, field
+from datetime import datetime
+from typing import Any, Literal
+AgentType = Literal["claude", "gemini", "gpt", "custom"]
+@dataclass
+class AgentTaskInput:
+    task_id: str
+    agent_type: AgentType = "claude"
+    model: str = "claude-3-5-sonnet-20240620"
+    prompt: str
+    api_key: str | None = None
+    extra_cli_args: list[str] = field(default_factory=list)
+    is_foreground: bool = True
+    metadata: dict[str, Any] = field(default_factory=dict)
+    started_at: datetime | None = None
+4. Workflow (workflows/agent_task_workflow.py)
+python
+
+
+from datetime import timedelta
+from temporalio import workflow
+from temporalio.exceptions import ActivityError, CancelledError
+from temporalio.common import RetryPolicy
+from ..types import AgentTaskInput
+from ..activities.task_db import create_task_record, finalize_task, record_error
+from ..activities.agent_executor import execute_agent
+@workflow.defn(name="AgentTaskWorkflow")
+class AgentTaskWorkflow:
+    def __init__(self) -> None:
+        self._status = "running"
+        self._metadata: dict = {}
+        self._result: dict | None = None
+    @workflow.run
+    async def run(self, input: AgentTaskInput) -> dict:
+        await workflow.execute_local_activity(
+            create_task_record, input, start_to_close_timeout=timedelta(seconds=10)
+        )
+        try:
+            result = await workflow.execute_activity(
+                execute_agent,
+                input,
+                start_to_close_timeout=timedelta(minutes=90),
+                heartbeat_timeout=timedelta(seconds=90),
+                retry_policy=RetryPolicy(maximum_attempts=1),
+            )
+            self._result = result
+            self._status = "completed"
+        except ActivityError as e:
+            if isinstance(e.cause, CancelledError) or "cancelled" in str(e).lower():
+                self._status = "cancelled"
+            else:
+                self._status = "failed"
+                await workflow.execute_local_activity(record_error, [input.task_id, str(e)])
+            raise
+        finally:
+            await workflow.execute_local_activity(
+                finalize_task, [input, self._result or {"status": self._status}],
+                start_to_close_timeout=timedelta(seconds=30)
+            )
+        return self._result or {}
+    @workflow.signal
+    async def add_metadata(self, data: dict) -> None:
+        self._metadata.update(data)
+    @workflow.signal
+    async def cancel(self) -> None:
+        self._status = "cancelled"
+    @workflow.query
+    def get_status(self) -> dict:
+        return {
+            "task_id": workflow.info().workflow_id,
+            "status": self._status,
+            "metadata": self._metadata,
+            "result": self._result,
+        }
+5. Activities (Key Files)
+activities/agent_executor.py (CLI execution with model + api_key support)
+
+python
+
+
+import asyncio
+import os
+from temporalio import activity
+from temporalio.exceptions import CancelledError
+from ..types import AgentTaskInput
+@activity.defn
+async def execute_agent(input: AgentTaskInput) -> dict:
+    if activity.is_cancelled():
+        raise CancelledError()
+    cmd = ["claude", "-p", input.prompt, "--model", input.model]
+    if input.extra_cli_args:
+        cmd.extend(input.extra_cli_args)
+    env = os.environ.copy()
+    if input.api_key:
+        env["ANTHROPIC_API_KEY"] = input.api_key
+        cmd.extend(["--api-key", input.api_key])
+    proc = await asyncio.create_subprocess_exec(
+        *cmd, env=env, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
+    )
+    heartbeat_task = asyncio.create_task(_heartbeat_loop(proc, input.task_id))
+    try:
+        stdout, stderr = await proc.communicate()
+        if proc.returncode != 0:
+            raise RuntimeError(f"claude exited with code {proc.returncode}")
+        return _parse_output(stdout.decode(), input.model)
+    finally:
+        if not heartbeat_task.done():
+            heartbeat_task.cancel()
+async def _heartbeat_loop(proc, task_id: str):
+    while True:
+        await asyncio.sleep(25)
+        activity.heartbeat({"task_id": task_id, "status": "running", "pid": proc.pid})
+def _parse_output(output: str, model: str) -> dict:
+    return {
+        "status": "success",
+        "model": model,
+        "output": output.strip(),
+        "input_tokens": 0,   # Replace with real parsing from claude output
+        "output_tokens": 0,
+        "cost_usd": 0.0,
+        "raw": output,
+    }
+activities/task_db.py (not shown in full — must implement idempotent SQLite INSERT/UPDATE using WAL mode for tasks.db and agents.db, mirroring your existing schema plus usage fields).
+
+6. Control Flow Examples
+Example 1: Starting a Foreground Subagent (Happy Path)
+
+subagent-start.ts receives prompt + context (model, api_key, discord_user, etc.).
+Generates task_id and workflowId = "agent-task-{task_id}".
+Calls Temporal HTTP API to start AgentTaskWorkflow with AgentTaskInput (includes is_foreground: true, model, api_key, metadata).
+Workflow executes:
+create_task_record (Local Activity) → writes initial row to tasks.db and agents.db.
+execute_agent (Activity with heartbeat) → runs claude --model {model} -p "{prompt}" --api-key {key}.
+subagent-start.ts also performs legacy DB write + clunger POST (shadow mode).
+Hook writes workflow reference to /tmp/subagent-{task_id}.json.
+Example 2: During Execution (Metadata Update + Cancellation)
+
+External code (or subagent-stop.ts) calls:
+bash
+
+
+POST /api/v1/namespaces/tasks/workflows/agent-task-xxx/signal/add_metadata
+{ "input": [{"progress": "thinking", "partial_tokens": 1234}] }
+Workflow receives add_metadata signal → updates self._metadata.
+To cancel: send cancel signal → workflow sets _status = "cancelled".
+execute_agent Activity checks activity.is_cancelled() on each heartbeat and terminates the claude subprocess cleanly.
+Example 3: Completion & Finalization
+
+execute_agent finishes → returns usage dict.
+Workflow runs finalize_task (Local Activity) → updates both DBs with final status, tokens, cost, finished_at, and appends to history.
+subagent-stop.ts loads workflow reference from /tmp and sends one final add_metadata signal with last message.
+Workflow completes. Result is permanently stored in Temporal history (infinite retention).
+Example 4: Querying / Getting Back Data
+
+UI calls GET /api/tasks/temporal?model=claude-3-5-sonnet...&is_foreground=true → Temporal Visibility API using Search Attributes.
+Or direct query on a running workflow: client.get_workflow_handle(workflow_id).query(AgentTaskWorkflow.get_status).
+7. TypeScript Hooks (Simplified)
+subagent-start.ts (core consistent entry point):
+
+ts
+
+
+async function startForegroundSubagent(context: any): Promise<string> {
+  const taskId = `fg-${Date.now()}-${Math.random().toString(36).slice(2,8)}`;
+  const workflowId = `agent-task-${taskId}`;
+  const input = {
+    task_id: taskId,
+    model: context.model || "claude-3-5-sonnet-20240620",
+    prompt: context.prompt,
+    api_key: context.apiKey,
+    is_foreground: true,
+    metadata: { discord_user: context.discordUser, ...context.extra }
+  };
+  // Temporal start (shadow)
+  await fetch(`http://127.0.0.1:8233/api/v1/namespaces/tasks/workflows`, {
+    method: "POST",
+    body: JSON.stringify({ workflow_id: workflowId, workflow_type: "AgentTaskWorkflow", task_queue: "agent-tasks-queue", input: [input] })
+  }).catch(() => {});   // never break hook
+  // save reference + legacy path
+  writeFileSync(`/tmp/subagent-${taskId}.json`, JSON.stringify({workflow_id: workflowId}));
+  await legacyWrite(taskId, input);
+  return taskId;
+}
+subagent-stop.ts sends add_metadata signal using the saved workflow ID (non-blocking).
+
+8. Clunger & UI
+Add GET /api/tasks/temporal endpoint that queries Temporal with Search Attributes and normalizes to your existing Task shape. Add toggle in graph.html between legacy and Temporal sources.
+
+9. Worker (worker.py)
+Separate systemd service connecting to namespace="tasks", task_queue="agent-tasks-queue", registering the workflow and activities.
+
+10. Rollout Phases
+Phase 0: Namespace, Search Attributes, files, worker running.
+Phase 1: Test core workflow + activities manually with sample inputs.
+Phase 2 (Shadow): Hooks call Temporal in addition to legacy path. Compare daily counts. Run for 10+ days with <1% divergence.
+Phase 3 (Authoritative): Hooks call Temporal first. finalize_task becomes sole writer to DBs. UI defaults to Temporal.
+Phase 4: Drop legacy writes from hooks. Temporal is single source of truth.
+This plan gives you one clear function to start any foreground subagent (startForegroundSubagent({model, api_key, prompt, ...})), durable tracking forever, and clean control flows for start → run → update → finalize → query.
+
+
+2 sources
+·
+
+52,186 tokens
+·
