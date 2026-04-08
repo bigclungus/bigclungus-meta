@@ -14,6 +14,12 @@
       "ts": "2026-04-08T03:18:40Z",
       "event": "started",
       "context": "Heartbeat watchdog run"
+    },
+    {
+      "ts": "2026-04-08T03:19:59Z",
+      "event": "done",
+      "context": "All clear. Here's the report:\n\n**Stale tasks:** 0 stale tasks. Heartbeat OK. No orphaned congress sessions.\n\n**Failed services:** None. All services running.\n\n**GitHub issues (open, 10 most recent):** 10 open idea issues, all labeled `idea`. None are small/actionable — they're all feature proposals (IRC bridge, Congress replay controls, TTS improvements, user profile pages, etc.) or infra items requiring jaboostin (#98, #94). No quick wins to action.\n\n**Timeline:** 0 new candidates from last 24h...(truncated)",
+      "artifacts": []
     }
   ]
 }
