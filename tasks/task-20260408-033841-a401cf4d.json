@@ -14,6 +14,12 @@
       "ts": "2026-04-08T03:38:41Z",
       "event": "started",
       "context": "Heartbeat watchdog run"
+    },
+    {
+      "ts": "2026-04-08T03:40:00Z",
+      "event": "done",
+      "context": "All clear. Here's the summary:\n\n**Stale tasks:** 0 stale, heartbeat OK, no orphaned congress sessions.\n\n**Failed services:** None.\n\n**Open issues (10):** All labeled `idea`, nothing small/immediately actionable — they're all feature proposals (IRC bridge, Congress replay controls, Commons NPC history, user profile pages, etc.) or infra items requiring jaboostin (#98, #94). No quick fixes to grab.\n\n**Timeline:** 0 new candidates from last 24h. Nothing to approve or reject.\n\n**Timestamp:** written...(truncated)",
+      "artifacts": []
     }
   ]
 }
