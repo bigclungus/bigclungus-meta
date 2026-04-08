@@ -1,0 +1,19 @@
+{
+  "id": "task-20260408-033708-a830cbc1",
+  "title": "Milestone 2: Instrument agent spawn/complete",
+  "agent_id": "a830cbc1182aca8f6",
+  "agent_type": "general-purpose",
+  "session_id": "38879609-c8bd-47f5-af26-6210d2de543c",
+  "discord_message_id": "omni_pl9gn2ud",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-08T03:37:07Z",
+      "event": "started",
+      "context": "Milestone 2: Instrument agent spawn/complete"
+    }
+  ]
+}
