@@ -1,0 +1,19 @@
+{
+  "id": "task-20260408-034051-a38cc2af",
+  "title": "Milestone 4: Cost display on /tasks",
+  "agent_id": "a38cc2af52001bd01",
+  "agent_type": "general-purpose",
+  "session_id": "38879609-c8bd-47f5-af26-6210d2de543c",
+  "discord_message_id": "omni_pl9gn2ud",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-08T03:40:51Z",
+      "event": "started",
+      "context": "Milestone 4: Cost display on /tasks"
+    }
+  ]
+}
