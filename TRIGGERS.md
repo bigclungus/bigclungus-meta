@@ -191,6 +191,27 @@ Constraints (from Congress verdict RFC-1 + jaboostin clarification 2026-03-26):
 
 ---
 
+## `[grok] <prompt>` / `[grok:<model>] <prompt>`
+
+Fires an xAI/Grok temporal workflow for the given prompt.
+Model defaults to `grok-3-mini` unless overridden with `[grok:grok-3] <prompt>`.
+
+When you receive this trigger:
+1. Parse the model (default: `grok-3-mini`) and prompt from the message
+2. Use the helper script to fire the workflow and get back task_id + workflow_id:
+   ```bash
+   bash /mnt/data/scripts/fire-xai-task.sh "<model>" "<full prompt>"
+   ```
+3. React with 🔧, reply with: "grok on it — task_id: `<task_id>`"
+4. When the workflow completes (task result arrives via inject), relay the output to Discord
+
+**Model variants:**
+- `[grok] <prompt>` → `grok-3-mini`
+- `[grok:grok-3] <prompt>` → `grok-3`
+- `[grok:grok-3-mini-fast] <prompt>` → `grok-3-mini-fast`
+
+---
+
 ## `[nightowl_task_id: xxx]` (suffix pattern)
 
 NightOwl tasks arrive via the inject endpoint (user field will be `nightowl`). The message will end with `[nightowl_task_id: xxx]`. Treat it as a normal autonomous task:
