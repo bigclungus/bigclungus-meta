@@ -14,6 +14,12 @@
       "ts": "2026-04-08T03:08:40Z",
       "event": "started",
       "context": "Heartbeat watchdog run"
+    },
+    {
+      "ts": "2026-04-08T03:09:57Z",
+      "event": "done",
+      "context": "All clear. Here's the summary:\n\n**Stale tasks:** 0 stale, heartbeat OK, no orphaned congress sessions.\n\n**Failed services:** None.\n\n**GitHub issues:** 10 open, all tagged `idea`. None are small/immediately actionable by BigClungus — issues #98 and #94 (gigaclungus-watchdog bus error, GigaClungus observation gap) are flagged as infra-level and need jaboostin. The rest (NPC history view, congress replay controls, IRC plugin, etc.) are feature ideas awaiting Congress or explicit tasking.\n\n**Timelin...(truncated)",
+      "artifacts": []
     }
   ]
 }
