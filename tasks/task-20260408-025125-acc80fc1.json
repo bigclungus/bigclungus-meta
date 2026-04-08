@@ -1,0 +1,19 @@
+{
+  "id": "task-20260408-025125-acc80fc1",
+  "title": "Manual Marin listings run",
+  "agent_id": "acc80fc1eefaf8328",
+  "agent_type": "general-purpose",
+  "session_id": "38879609-c8bd-47f5-af26-6210d2de543c",
+  "discord_message_id": "omni_j4zkwii2",
+  "discord_user": null,
+  "run_in_background": true,
+  "isolation": null,
+  "model": null,
+  "log": [
+    {
+      "ts": "2026-04-08T02:51:25Z",
+      "event": "started",
+      "context": "Manual Marin listings run"
+    }
+  ]
+}
