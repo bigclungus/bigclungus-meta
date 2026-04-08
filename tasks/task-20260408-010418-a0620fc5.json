@@ -14,6 +14,12 @@
       "ts": "2026-04-08T01:04:17Z",
       "event": "started",
       "context": "Update Marin SFH price range to 0-500k"
+    },
+    {
+      "ts": "2026-04-08T01:04:29Z",
+      "event": "done",
+      "context": "Done. Marin SFH `min_price` changed from 2000000 → 0, `max_price` from 2500000 → 500000 in `/mnt/data/temporal-workflows/criteria.json`. Discord notified.",
+      "artifacts": []
     }
   ]
 }
