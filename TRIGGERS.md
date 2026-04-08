@@ -105,7 +105,7 @@ Constraints:
 
 ## `[heartbeat]`
 
-A 15-minute watchdog pulse from the HeartbeatWorkflow. Its job is to check if anything is on fire and act if so — not to manufacture work.
+An hourly watchdog pulse from the HeartbeatWorkflow. Its job is to check if anything is on fire and act if so — not to manufacture work.
 
 ### Congress threshold (read this first)
 
