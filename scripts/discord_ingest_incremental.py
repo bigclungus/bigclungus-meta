@@ -12,7 +12,6 @@ Or directly (if graphiti deps are on the path):
 
 import argparse
 import asyncio
-import json
 import logging
 import os
 import sys

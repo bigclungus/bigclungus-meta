@@ -14,7 +14,6 @@ Exit code: 0 if all pass, 1 if any fail.
 """
 
 import json
-import os
 import socket
 import subprocess
 import sys
